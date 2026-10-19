@@ -39,6 +39,17 @@
 
 **Open.** Two further works that Hendrickx and colleagues (2025, p. 439) cite for the name were not read. A paper that formally extends the Sakaraha Formation into the Mahajanga Basin would reopen the question. Separately, the entry's `rank: formation` sits uneasily with Maganuco and colleagues (2005), who call Isalo IIIb a "Subunit", and with Geiger and colleagues (2004), who treat the Isalo III divisions as informal; that rank was not reviewed here.
 
+## When did Collignon's Tsinjorano note appear?
+
+*2026-10-18*
+
+**Conclusion.** 1954. The note is in volume 31 of the *Bulletin de l'Académie Malgache*, and the bibliographies that date it independently of Buffetaut give 1954, which reads as a volume issued the year after its date. The store key is `collignon1954a`, with 1953 kept as a cited form because Buffetaut (2005) prints it. This supersedes the year in "Collignon (1953)" in the 2026-10-09 entry above. The volume's own imprint was not seen. Governs the citation on [Isalo IIIb](../../../stratigraphy/i/isalo-iiib.yml).
+
+**Evidence.**
+- collignon1954a, the English translation (2000): "Original citation: Collignon, M. 1954. Découverte de dinosauriens à Tsinjorano, District d'Ambato-Boéni. Bulletin de l'Academie Malgache 31:59-61."
+- mannion2010a, reference list: "COLLIGNON, M. 1954. Découverte de dinosauriens à Tsinjorano, district d'Ambato-Boeni. Bulletin de l'Académie malgache, 31, 59–61"; in the text, "(Collignon 1954)".
+- buffetaut2005a, reference list: "COLLIGNON M. (1953)", with the same volume and pages.
+
 ## References
 
 - `geiger2004a`: Geiger, M.; Clark, D. N.; Mette, W. (2004). Reappraisal of the timing of the breakup of Gondwana based on sedimentological and seismic evidence from the Morondava Basin, Madagascar. *Journal of African Earth Sciences* 38(4): 363-381. doi:10.1016/j.jafrearsci.2004.02.003
@@ -50,7 +61,4 @@
 - `rauhut2009a`: Rauhut, O. W. M.; López-Arbarello, A. (2009). Considerations on the age of the Tiouaren Formation (Iullemmeden Basin, Niger, Africa): Implications for Gondwanan Mesozoic terrestrial vertebrate faunas. *Palaeogeography, Palaeoclimatology, Palaeoecology* 271: 259-267. doi:10.1016/j.palaeo.2008.10.019
 - `royo-torres2020a`: Royo-Torres, R.; Cobos, A.; Mocho, P.; Alcalá, L. (2020). Origin and evolution of turiasaur dinosaurs set by means of a new 'rosetta' specimen from Spain. *Zoological Journal of the Linnean Society* 191(1): 201-227. doi:10.1093/zoolinnean/zlaa091
 - `hendrickx2025a`: Hendrickx, C.; Soto Núñez, M.; Araújo, R.; Meso, J. G.; Maganuco, S.; Ben-Salahuddin, A. (2025). Isolated abelisaurid teeth from Gondwana and dental evolution in Abelisauridae. *Ameghiniana* 62(6): 407-451. doi:10.5710/amgh.17.09.2025.3654
-
-## Other references
-
-- `collignon1953a`: Collignon, M. (1953). Découverte de dinosauriens à Tsinjorano, district d'Ambato-Boeni [Discovery of dinosaurs at Tsinjorano, Ambato-Boeni district]. *Bulletin de l'Académie Malgache* 31: 59-61.
+- `collignon1954a`: Collignon, M. (1954). Découverte de dinosauriens à Tsinjorano, district d'Ambato-Boeni [Discovery of dinosaurs at Tsinjorano, Ambato-Boeni district]. *Bulletin de l'Académie Malgache* 31: 59-61.
