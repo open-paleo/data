@@ -10,19 +10,53 @@ description: >
   an arrangement known as functional didactyly. Most deinonychosaurs were
   predators, though some of the smaller troodontids appear to have been at least
   omnivorous. The group has long been considered among the closest relatives of
-  birds, but its exact makeup remains debated: some analyses place troodontids
-  nearer to birds than to dromaeosaurids (Hartman and colleagues, 2019), which
-  would leave the composition of the clade unstable beyond the dromaeosaurids
-  themselves.
+  birds.
 erected_in: colbert1969a
+described_in: sereno1998a
 diagnostic_features:
   - Enlarged, retractable sickle-shaped ungual on pedal digit II
   - Functionally didactyl foot with a raised second toe
   - Elongate penultimate phalanx on pedal digit II
   - Modified metatarsal II permitting hyperextension of the second toe
+dispute:
+  summary: >
+    Whether dromaeosaurids and troodontids form a clade to the exclusion of
+    birds is unresolved. Analyses on the Theropod Working Group matrix and
+    its descendants usually recover Deinonychosauria, with low support
+    (Turner and colleagues, 2012; Pei and colleagues, 2020; Freimuth and
+    colleagues, 2026), as do Hartman and colleagues (2019), who find that
+    moving troodontids closer to birds costs a single step. Analyses on
+    Cau's matrix place troodontids closer to birds (Cau and Madzia, 2021;
+    Lee and colleagues, 2022); Foth and colleagues (2025) place
+    dromaeosaurids closer to birds; and Agnolín and colleagues (2019) leave
+    the paravian clades in a polytomy. The clade is retained in its
+    traditional, broadly used sense pending consensus.
+  history:
+    - date: "2026-10-19"
+      note: >
+        Retained as the clade most current analyses on the Theropod
+        Working Group matrix recover; the Troodontidae–Avialae and
+        Dromaeosauridae–Avialae hypotheses are recorded, not adopted.
+        Member families carry no per-taxon dispute for this clade-level
+        debate.
 references:
   - id: colbert1969a
   - id: hartman2019a
-    notes: Reviewed analyses that place troodontids closer to birds than to
-      dromaeosaurids, and tested Deinonychosauria in a large maniraptoran
-      matrix.
+    notes: Recovered Deinonychosauria with troodontids inside it, and found
+      that placing troodontids closer to birds costs one step.
+  - id: sereno1998a
+    notes: Gave the node-based definition, with Troodon and Velociraptor as reference taxa.
+  - id: turner2012a
+    notes: Recovered Deinonychosauria with low jackknife support (GC 3); collapsing the node costs one step.
+  - id: pei2020a
+    notes: Recovered Deinonychosauria as the sister of Avialae, with low group support.
+  - id: freimuth2026a
+    notes: Recovered Deinonychosauria as the sister of Avialae on the Pei and colleagues (2020) dataset.
+  - id: cau2021a
+    notes: Recovered troodontids closer to birds; the traditional Deinonychosauria costs 12 steps.
+  - id: lee2022a
+    notes: Recovered Dromaeosauridae as the sister of Troodontidae plus Avialae.
+  - id: foth2025a
+    notes: Recovered Dromaeosauridae, not Troodontidae, as the sister of Avialae.
+  - id: agnolín2019a
+    notes: Recovered the paravian clades in a polytomy at the base of Pennaraptora.
