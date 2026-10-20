@@ -1,5 +1,22 @@
 # *Riabininohadros*
 
+## Where does *Riabininohadros* sit?
+
+*2026-10-20*
+
+**Conclusion.** A non-hadrosauroid member of Styracosterna, as its describers identify it. No phylogenetic analysis has included it; the placement rests on comparison of the hind limb and the astragalus. No later work has disputed it. Governs `parent: Styracosterna` on [*Riabininohadros weberae*](../../../genera/R/Riabininohadros.yml).
+
+**Evidence.**
+- lopatin2018a: "its phylogenetic position is determined as Styracosterna indet."; "a non-hadrosauroid representative of the clade Styracosterna".
+- averianov2019a, p. 398: "its phylogenetic position can be defined as Styracosterna indet."; in the metatarsals "Riabininohadros is closest to the iguanodontid Hypselospinus fittoni".
+- lopatin2020a, p. 321: "Riabininohadros is interpreted as a non-hadrosauroid representative of the clade Styracosterna, which is included in Ankylopollexia (Averianov and Lopatin, 2019)".
+
+**Ruled out.**
+- *Ankylopollexia as the parent.* Averianov and Lopatin (2019) and Lopatin and Averianov (2020) head the taxon "Ankylopollexia incertae sedis", but their text places it more narrowly, in Styracosterna.
+- *Hadrosauridae.* Riabinin (1945) described the material as a species of *Orthomerus*, and Ulansky (2015) named the genus as a hadrosaurid. Lopatin and colleagues (2018) separate its astragalus from that of hadrosauroids.
+
+**Open.** Its position in a phylogenetic analysis.
+
 ## What age is the Riabininohadros holotype?
 
 *2026-09-03*
@@ -31,7 +48,12 @@
 
 ## References
 
+- `lopatin2018a`: Lopatin, A. V.; Averianov, A. O.; Alifanov, V. R. (2018). New Data on Dinosaurs of the Crimean Peninsula. *Doklady Biological Sciences* 482(1): 206-209. doi:10.1134/s0012496618050150
 - `averianov2019a`: Averianov, A. O.; Lopatin, A. V. (2019). Dinosaur Fossils from the Upper Cretaceous of Crimea. *Paleontological Journal* 53(4): 398-410. doi:10.1134/S0031030119040026
 - `lopatin2020a`: Lopatin, A. V.; Averianov, A. O. (2020). Riabininohadros, a New Genus for the Ornithischian Dinosaur Orthomerus weberae (Ornithopoda, Iguanodontia) from the Late Cretaceous of Crimea. *Paleontological Journal* 54(3): 320-322. doi:10.1134/S0031030120030089
 - `riabinin1945a`: Riabinin, A. N. (1945). Dinosaur remains in the Upper Cretaceous of Crimea. *Paleontologiya i Stratigrafiya*: 4-10.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+
+## Other references
+
+- `ulansky2015a`: Ulansky, R. E. (2015). Riabininohadros, novyy rod dlya gadrozavra iz maastrikhta Kryma Rossiya [Riabininohadros, a new genus for hadrosaur from Maastrichtian of Crimea, Russia]. *Dinologia*: 1-10.
