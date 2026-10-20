@@ -1,5 +1,23 @@
 # *Cristatusaurus*
 
+## Is *Cristatusaurus* a valid genus, and is it a baryonychine?
+
+*2026-10-19*
+
+**Conclusion.** Its validity is disputed, and its placement within Spinosauridae is unresolved. Carrano and colleagues (2012) treat it as an indeterminate baryonychine, almost certainly the same animal as *Suchomimus*. Lacerda and colleagues (2022) find it a valid species and recover it as the earliest-diverging spinosaurid, outside Baryonychinae. The parent is Spinosauridae, which both accept. Governs `parent: Spinosauridae`, `status: disputed` and the dispute on [*Cristatusaurus lapparenti*](../../../genera/C/Cristatusaurus.yml).
+
+**Evidence.**
+- carrano2012a, p. 253: "Cristatusaurus can only be identified as an indeterminate baryonychine spinosaurid. However, we also consider it unlikely that two baryonychines are present at Gadoufaoua, and therefore Cristatusaurus and Suchomimus almost certainly represent the same animal."
+- sales2017a, p. 18: "a taxon that may be a nomen dubium and/or a synonym of Suchomimus"; the paper notes differences between the two Nigerien taxa with possible taxonomic significance.
+- lacerda2022a, p. 2089, Abstract: "The phylogenetic inference recovered C. lapparenti outside Baryonychinae, which was composed by B. walkeri and S. tenerensis"; p. 2104: "a basally branching spinosaurid and the sister taxon of the clade Baryonychinae + Spinosaurinae"; p. 2105: "our results support that C. lapparenti is a valid species, distinct from both, Baryonyx walkeri and Su. tenerensis."
+
+**Ruled out.**
+- *Lacerda and colleagues (2022) as finding it "likely synonymous with Suchomimus".* Their stated conclusion is the reverse, and the only synonymy they entertain is hypothetical: should more complete material show *C. lapparenti* to be a senior synonym of *Su. tenerensis*, the differences could be ontogenetic or intraspecific (p. 2099).
+- *Baryonychinae as the parent.* It takes Carrano and colleagues' side against the one phylogenetic analysis that includes both genera as terminals.
+- *Jones (2026) as the source for its validity.* Jones reports Lacerda and colleagues' conclusion correctly (jones2026c, *Cristatusaurus* entry), but the claim belongs to the primary.
+
+**Open.** Whether a later analysis including both genera supports the result. Lacerda and colleagues themselves, noting the debate over its status, "suggest caution with these results until new materials or better descriptions become public" (p. 2104).
+
 ## Is "niveau des Innocents" the *Cristatusaurus* holotype's locality or its bed?
 
 *2026-09-16*
@@ -34,9 +52,12 @@
 
 ## References
 
+- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
+- `sales2017a`: Sales, M. A. F.; Schultz, C. L. (2017). Spinosaur taxonomy and evolution of craniodental features: Evidence from Brazil. *PLOS ONE* 12(11): e0187070. doi:10.1371/journal.pone.0187070
+- `lacerda2022a`: Lacerda, M. B. S.; Grillo, O. N.; Romano, P. S. R. (2022). Rostral morphology of Spinosauridae (Theropoda, Megalosauroidea): premaxilla shape variation and a new phylogenetic inference. *Historical Biology* 34(11): 2089-2109. doi:10.1080/08912963.2021.2000974
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `taquet1998a`: Taquet, P.; Russell, D. A. (1998). New data on spinosaurid dinosaurs from the early cretaceous of the Sahara. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 327(5): 347-353. doi:10.1016/s1251-8050(98)80054-2
 - `galton1982a`: Galton, P. M.; Taquet, P. (1982). Valdosaurus, a hypsilophodontid dinosaur from the Lower Cretaceous of Europe and Africa. *Geobios* 15(2): 147-159.
 - `sereno1999a`: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Larsson, H. C. E.; Lyon, G. H.; Moussa, B.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. J.; Wilson, G. P.; Wilson, J. A. (1999). Cretaceous Sauropods from the Sahara and the Uneven Rate of Skeletal Evolution Among Dinosaurs. *Science* 286(5443): 1342-1347. doi:10.1126/science.286.5443.1342
 - `taquet1976a`: Taquet, P. (1976). Géologie et paléontologie du gisement de Gadoufaoua (Aptien du Niger). *Cahiers de Paléontologie*.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
-- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

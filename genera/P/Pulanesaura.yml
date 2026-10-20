@@ -3,17 +3,29 @@ parent: Sauropoda
 placement: incertae sedis
 dispute:
   summary: >
-    Pulanesaura sits at the sauropod/sauropodiform boundary. McPhee and colleagues
-    (2015) recover it as either the least-derived sauropod or the sister
-    taxon to Sauropoda, depending on whether a node- or stem-based
-    definition is used, and Rauhut and colleagues (2020) place it as a non-
-    sauropodan sauropodiform. Jones (2026) retains it within Sauropoda.
+    Pulanesaura eocollum is recovered just outside the clade of Vulcanodon
+    and Eusauropoda, and outside Gravisauria, in most analyses (McPhee and
+    colleagues, 2015, 2017; Rauhut and colleagues, 2020; Zhang and
+    colleagues, 2020; Hu and colleagues, 2026). Whether that makes it a
+    sauropod depends on the definition of Sauropoda. It is the
+    earliest-diverging sauropod under the stem-based definition of Yates
+    (2007), all taxa closer to Saltasaurus than to Melanorosaurus, which Pol
+    and colleagues (2022) and Rincón and colleagues (2022) use. It is the
+    sister of Sauropoda under the node-based definition of Salgado and
+    colleagues (1997), which McPhee and colleagues (2017), Rauhut and
+    colleagues (2020) and Barrett and Choiniere (2024) use.
   history:
     - date: "2026-06-29"
       note: >
         Placed at Sauropoda incertae sedis following Jones (2026); the
         sister-to-Sauropoda and non-sauropod sauropodiform alternatives
         (McPhee and colleagues, 2015; Rauhut and colleagues, 2020) are unresolved.
+    - date: "2026-10-19"
+      note: >
+        Retained at Sauropoda pending a definition of the clade; under
+        the node-based definition it falls outside Sauropoda. Supersedes
+        the 2026-06-29 reliance on Jones (2026), whose placement follows
+        the stem-based definition.
 etymology: "From Sesotho 'Pulane' meaning 'rain-maker/bringer' (in reference to the heavy rain conditions during collection) and Latin 'saura' (feminine of sauros) meaning 'lizard'."
 pronunciation:
   phonetic: PU-lan-SOR-ruh
@@ -93,13 +105,31 @@ species:
       completeness: fragmentary
 references:
   - id: mcphee2015a
+    notes: Named Pulanesaura and recovered it as the sister of Vulcanodon plus
+      later sauropods, a sauropod or not depending on the definition used.
   - id: mcphee2017a
-    notes: Comprehensive osteological description of Pulanesaura eocollum;
-      retains the original (McPhee and colleagues 2015) diagnosis and confirms the
-      holotype catalog number as BP/1/6982.
+    notes: Redescribed Pulanesaura, retaining the 2015 diagnosis and
+      confirming holotype BP/1/6982; prefers a node-based Sauropoda, under
+      which Pulanesaura is its sister.
   - id: paul2024a
     notes: Source of the body length and mass estimates.
   - id: jones2026b
-    notes: Source of the hip height estimate.
+    notes: Source of the hip height estimate; places the genus in Sauropoda
+      under the stem-based definition the book adopts.
   - id: rauhut2020a
-    notes: Sauropodomorph description placed Pulanesaura as a non-sauropodan sauropodiform.
+    notes: Recovered Pulanesaura outside Sauropoda as defined node-based on
+      Vulcanodon and Saltasaurus, among the sauropodiform outgroups.
+  - id: yates2007a
+    notes: Proposed the stem-based definition of Sauropoda, all taxa closer to Saltasaurus than to Melanorosaurus.
+  - id: salgado1997a
+    notes: Gave the node-based definition of Sauropoda anchored on Vulcanodon.
+  - id: zhang2020a
+    notes: Recovered Pulanesaura as the sister of Isanosaurus plus a node-based Sauropoda.
+  - id: hu2026a
+    notes: Recovered Pulanesaura as the sister of a node-based Sauropoda.
+  - id: barrett2024b
+    notes: Advocated the node-based definition of Sauropoda, which places Pulanesaura in the labile zone outside it.
+  - id: pol2022a
+    notes: Used the stem-based definition of Sauropoda, which includes Pulanesaura.
+  - id: rincón2022a
+    notes: Used the stem-based definition of Sauropoda, under which Pulanesaura is a sauropod.
