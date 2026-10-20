@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-20T05:17:41.198Z",
+    "built_at": "2026-10-20T17:13:49.521Z",
     "clade_count": 188,
-    "genus_count": 1427,
+    "genus_count": 1426,
     "license": "CC-BY-4.0",
     "schema_version": "2.0.0",
     "version": "2026.10"
@@ -5916,7 +5916,7 @@
           "volume": "110",
           "pages": "103341",
           "doi": "10.1016/j.jsames.2021.103341",
-          "notes": "Recovered Herrerasauria as a broader clade rather than a bare synonym of Herrerasauridae"
+          "notes": "Recovered Herrerasauria as a broader clade outside Eusaurischia, and summarizes the three hypotheses for its position."
         },
         {
           "id": "jones2026c",
@@ -5926,6 +5926,57 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Uses Herrerasauria as another name for Herrerasauridae, placed within Saurischia but outside Theropoda."
+        },
+        {
+          "id": "nesbitt2009a",
+          "authors": "Nesbitt, S. J.; Smith, N. D.; Irmis, R. B.; Turner, A. H.; Downs, A.; Norell, M. A.",
+          "year": 2009,
+          "title": "A Complete Skeleton of a Late Triassic Saurischian and the Early Evolution of Dinosaurs",
+          "journal": "Science",
+          "publisher": "American Association for the Advancement of Science (AAAS)",
+          "volume": "326",
+          "issue": "5959",
+          "pages": "1530-1533",
+          "doi": "10.1126/science.1180350",
+          "notes": "Recovered Herrerasauridae at the base of Theropoda, with weak support."
+        },
+        {
+          "id": "sues2011a",
+          "authors": "Sues, H. D.; Nesbitt, S. J.; Berman, D. S.; Henrici, A. C.",
+          "year": 2011,
+          "title": "A late-surviving basal theropod dinosaur from the latest Triassic of North America",
+          "journal": "Proceedings of the Royal Society B: Biological Sciences",
+          "publisher": "The Royal Society",
+          "volume": "278",
+          "issue": "1723",
+          "pages": "3459-3464",
+          "doi": "10.1098/rspb.2011.0410",
+          "notes": "Supported a basal theropod position for herrerasaurids rather than a basal saurischian one."
+        },
+        {
+          "id": "baron2017a",
+          "authors": "Baron, M. G.; Norman, D. B.; Barrett, P. M.",
+          "year": 2017,
+          "title": "A new hypothesis of dinosaur relationships and early dinosaur evolution",
+          "journal": "Nature",
+          "volume": "543",
+          "issue": "7646",
+          "pages": "501-506",
+          "doi": "10.1038/nature21700",
+          "notes": "Recovered Herrerasauridae as the sister of Sauropodomorpha in a redefined Saurischia."
+        },
+        {
+          "id": "baron2018c",
+          "authors": "Baron, M. G.; Williams, M. E.",
+          "year": 2018,
+          "title": "A re-evaluation of the enigmatic dinosauriform Caseosaurus crosbyensis from the Late Triassic of Texas, USA and its implications for early dinosaur evolution",
+          "journal": "Acta Palaeontologica Polonica",
+          "publisher": "Polish Academy of Sciences",
+          "volume": "63",
+          "issue": "1",
+          "pages": "129-145",
+          "doi": "10.4202/app.00372.2017",
+          "notes": "Recovered Herrerasauria outside Dinosauria on the dataset of Baron and colleagues (2017)."
         }
       ]
     },
@@ -48993,14 +49044,18 @@
     },
     "Bradycneme": {
       "genus": "Bradycneme",
-      "parent": "Maniraptora",
+      "parent": "Tetanurae",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Bradycneme is a fragmentary Romanian maniraptoran of highly uncertain affinity. It was originally described as a giant owl (Harrison and Walker, 1975), later treated by Naish and Dyke (2004) as an indeterminate maniraptoran, and an alvarezsauroid affinity has more recently gained traction (Jones, 2026). Given the spread of hypotheses and the fragmentary holotype it is placed conservatively at Maniraptora incertae sedis.\n",
+        "summary": "Bradycneme rests on a single distal tibiotarsus, described as a giant owl (Harrison and Walker, 1975). Csiki and Grigorescu (1998) found it to be a non-maniraptoran tetanuran, excluded from the derived coelurosaurs by the groove on its astragalar condyles, while Naish and Dyke (2004) regard it as an indeterminate maniraptoran by its compressed distal shape.\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Moved from Troodontidae to Maniraptora incertae sedis (owl, troodontid, and alvarezsauroid hypotheses all proposed; not supported as a troodontid by any analysis)."
+          },
+          {
+            "date": "2026-10-19",
+            "note": "Status set to nomen dubium, diagnostic features dropped, and parent widened to Tetanurae."
           }
         ]
       },
@@ -49013,13 +49068,6 @@
       "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
-      ],
-      "diagnostic_features": [
-        "Distal end of tibiotarsus broad and antero-posteriorly flattened.",
-        "Distal projection of external condyle beyond internal condyle very marked.",
-        "Internal and external condyles projecting anteriorly to same extent; projection of internal condyle also directed internally to some extent.",
-        "Anterior intercondylar fossa transverse and deep.",
-        "Well-developed groove on external side terminating at large external ligamental prominence, proximally situated on external surface of external condyle."
       ],
       "appearance": {
         "integument": "feathered",
@@ -49039,7 +49087,7 @@
         {
           "name": "Bradycneme draculae",
           "etymology": "From Romanian 'dracul' meaning 'the dragon', a reference to the Dracula legend of Transylvania, where the fossil was found.",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -49083,7 +49131,8 @@
           "volume": "18",
           "issue": "3",
           "pages": "563-570",
-          "doi": "10.5281/zenodo.16385950"
+          "doi": "10.5281/zenodo.16385950",
+          "notes": "Named Bradycneme draculae for the distal end of a right tibiotarsus, BMNH A 1588, as a giant owl."
         },
         {
           "id": "csiki1998a",
@@ -49094,7 +49143,7 @@
           "publisher": "Musée des Dinosaures d'Espéraza",
           "volume": "1",
           "pages": "87-104",
-          "notes": "Places Andrews's limb bones, BMNH A.1588 among them, in the Sânpetru Formation of the Sibișel Valley, on a personal communication."
+          "notes": "Treats the tibiotarsus as a non-maniraptoran tetanuran, keeps the name only informally, and places the bones in the Sânpetru Formation."
         },
         {
           "id": "naish2004b",
@@ -49114,7 +49163,38 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Theropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
-          "notes": "Illustrated by E. Viola.\n"
+          "notes": "Reports Bradycneme with Heptasteornis as possible alvarezsaurids."
+        },
+        {
+          "id": "osmólska1987a",
+          "authors": "Osmólska, H.",
+          "year": 1987,
+          "title": "Borogovia gracilicrus gen. et sp. n., a new troodontid dinosaur from the Late Cretaceous of Mongolia",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "32",
+          "issue": "1-2",
+          "pages": "133-150",
+          "notes": "Held that Bradycneme cannot be considered valid, since troodontid distal tibiotarsi are too alike to diagnose."
+        },
+        {
+          "id": "olshevsky1991a",
+          "authors": "Olshevsky, G.",
+          "year": 1991,
+          "title": "A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia",
+          "journal": "Mesozoic Meanderings",
+          "volume": "2",
+          "pages": "1-196",
+          "notes": "Lists Bradycneme draculae as a nomen dubium."
+        },
+        {
+          "id": "makovicky2004b",
+          "authors": "Makovicky, P. J.; Norell, M. A.",
+          "year": 2004,
+          "title": "Troodontidae",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "184-195",
+          "notes": "Listed Bradycneme draculae among the nomina dubia of Troodontidae."
         }
       ],
       "taxonomy": [
@@ -49131,10 +49211,7 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora"
+        "Tetanurae"
       ],
       "authors": "Harrison, C. J. O.; Walker, C. A.",
       "described": 1975
@@ -88855,136 +88932,6 @@
       "authors": "Lambe, L. M.",
       "described": 1910
     },
-    "Euronychodon": {
-      "genus": "Euronychodon",
-      "parent": "Paraves",
-      "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Euronychodon is a tooth taxon based on isolated teeth originally identified as Paronychodon, tentatively referred to Dromaeosauridae by Antunes and Sigogneau-Russell (1991) and later compared with the troodontid Byronosaurus; it is widely regarded as a nomen dubium and a possible junior synonym of Paronychodon, and Jones (2026) lists it among nomina dubia. It is placed conservatively at Paraves incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-01",
-            "note": "Retained at Paraves incertae sedis as a dubious deinonychosaur-grade tooth taxon, a nomen dubium."
-          }
-        ]
-      },
-      "pronunciation": {
-        "phonetic": "YOOR-oh-NY-koh-don"
-      },
-      "etymology": "A contraction of \"Europe\" and Paronychodon (the genus whose teeth Euronychodon's resemble); the popular gloss is \"European claw tooth\".",
-      "description": "Euronychodon is the name given to a genus of coelurosaur dinosaur from the Late Cretaceous of Europe and Asia. It is known from teeth only, which are similar to those of another coelurosaur tooth genus, Paronychodon.\n",
-      "diet": "carnivore",
-      "locomotion": "bipedal",
-      "paleoenvironment": [
-        "fluvial",
-        "deltaic"
-      ],
-      "appearance": {
-        "integument": "feathered",
-        "evidence": "inferred"
-      },
-      "identifiers": [
-        {
-          "source": "pbdb",
-          "id": "65027"
-        },
-        {
-          "source": "wikidata",
-          "id": "Q1577405"
-        },
-        {
-          "source": "gbif",
-          "id": "4822820"
-        }
-      ],
-      "species": [
-        {
-          "name": "Euronychodon portucalensis",
-          "etymology": "From portucalensis (\"of Portugal\"), referring to the country of origin of the holotype.",
-          "status": "nomen dubium",
-          "type_species": true,
-          "period": {
-            "name": [
-              "Late Cretaceous"
-            ],
-            "stage": [
-              "Campanian",
-              "Maastrichtian"
-            ],
-            "from_ma": 83.6,
-            "to_ma": 66
-          },
-          "location": {
-            "country": "PT",
-            "region": "Coimbra",
-            "locality": "Taveiro",
-            "formation": "Taveiro",
-            "region_code": "PT-06"
-          },
-          "size": {
-            "length_m": {
-              "min": 2,
-              "max": 2
-            }
-          },
-          "type_specimen": {
-            "specimen_id": [
-              "CEPUNL TV 20"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Centro de Estratigrafia e Paleobiologia, Universidade Nova de Lisboa",
-            "material": "A single isolated tooth, preserved as a recurved crown with an anteroposterior length of 1.45 mm.",
-            "completeness": "fragmentary"
-          },
-          "erected_in": "antunes1991a",
-          "authors": "Antunes, M. T.; Sigogneau-Russell, D.",
-          "described": 1991
-        }
-      ],
-      "references": [
-        {
-          "id": "antunes1991a",
-          "authors": "Antunes, M. T.; Sigogneau-Russell, D.",
-          "year": 1991,
-          "title": "Nouvelles données sur les dinosaures du Crétacé supérieur du Portugal [New Data on the Dinosaurs of the Upper Cretaceous of Portugal]",
-          "journal": "Comptes Rendus de l'Académie des Sciences, Paris, Série II",
-          "volume": "313",
-          "pages": "113-119",
-          "notes": "Erects Euronychodon portucalensis on isolated tooth material from the Maastrichtian of Taveiro, Portugal. Tentatively assigns Euronychodon to Dromaeosauridae."
-        },
-        {
-          "id": "jones2026c",
-          "authors": "Jones, B.",
-          "year": 2026,
-          "title": "The Princeton Encyclopedia of Dinosaurs: Theropods",
-          "publisher": "Princeton University Press",
-          "isbn": "978-0-691-25021-2",
-          "notes": "Illustrated by E. Viola.\n"
-        }
-      ],
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora",
-        "Paraves"
-      ],
-      "authors": "Antunes, M. T.; Sigogneau-Russell, D.",
-      "described": 1991
-    },
     "Europasaurus": {
       "genus": "Europasaurus",
       "parent": "Camarasauromorpha",
@@ -101586,11 +101533,15 @@
       },
       "description": "Gryponyx is an extinct genus of massopod sauropodomorph known from southern Free State, central South Africa.",
       "dispute": {
-        "summary": "Gryponyx africanus has been recovered as a basal massospondylid (Vasconcelos and Yates, 2004); some referred species are nomina dubia and the validity of the genus is debated (Jones, 2026).\n",
+        "summary": "Gryponyx africanus, known from a largely complete postcranial skeleton, was treated as a junior synonym of Massospondylus carinatus (Galton, 1990) and later as a nomen dubium (Galton and Upchurch, 2004). Vasconcelos and Yates (2004) revived it as a basal massospondylid, and McPhee and colleagues (2017) note that it may be distinct from Massospondylus, though Yates and colleagues (2011) report lingering doubts. Barrett and colleagues (2019) observe that the earlier decisions rested on provenance rather than on detailed consideration of anatomy.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Massospondylidae incertae sedis; basal massospondylid affinity with contested validity."
+          },
+          {
+            "date": "2026-10-20",
+            "note": "Summary credits the validity debate to the primaries; supersedes the reliance on Jones (2026).\n"
           }
         ]
       },
@@ -101694,7 +101645,7 @@
           "book": "Geoscience Africa, Abstract Volume",
           "volume": "2",
           "pages": "670",
-          "notes": "Recovered Gryponyx as a basal massospondylid."
+          "notes": "Revived Gryponyx africanus as a basal massospondylid, as reported by Knoll (2010)."
         },
         {
           "id": "jones2026b",
@@ -101703,7 +101654,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Sauropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats the status of Gryponyx africanus as uncertain."
         },
         {
           "id": "haughton1924a",
@@ -101713,6 +101664,73 @@
           "journal": "Annals of the South African Museum",
           "volume": "12",
           "pages": "323-497"
+        },
+        {
+          "id": "galton1990a",
+          "authors": "Galton, P. M.",
+          "year": 1990,
+          "title": "Basal Sauropodomorpha-Prosauropoda",
+          "book": "The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "320-344",
+          "notes": "Listed Gryponyx africanus as a junior synonym of Massospondylus carinatus."
+        },
+        {
+          "id": "galton2004a",
+          "authors": "Galton, P. M.; Upchurch, P.",
+          "year": 2004,
+          "title": "Prosauropoda",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "232-258",
+          "notes": "Listed Gryponyx africanus among the nomina dubia of Prosauropoda."
+        },
+        {
+          "id": "knoll2010a",
+          "authors": "Knoll, F.",
+          "year": 2010,
+          "title": "A primitive sauropodomorph from the upper Elliot Formation of Lesotho",
+          "journal": "Geological Magazine",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "147",
+          "issue": "6",
+          "pages": "814-829",
+          "doi": "10.1017/s001675681000018x",
+          "notes": "Reports the revival of Gryponyx africanus as a basal massospondylid by Vasconcelos and Yates (2004)."
+        },
+        {
+          "id": "yates2011a",
+          "authors": "Yates, A. M.; Bonnan, M. F.; Neveling, J.",
+          "year": 2011,
+          "title": "A new basal sauropodomorph dinosaur from the Early Jurassic of South Africa",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "31",
+          "issue": "3",
+          "pages": "610-625",
+          "doi": "10.1080/02724634.2011.560626",
+          "notes": "Reports the revival of Gryponyx africanus, noting lingering doubts about its distinctiveness."
+        },
+        {
+          "id": "mcphee2017b",
+          "authors": "McPhee, B. W.; Bordy, E. M.; Sciscio, L.; Choiniere, J. N.",
+          "year": 2017,
+          "title": "The sauropodomorph biostratigraphy of the Elliot Formation of southern Africa: tracking the evolution of Sauropodomorpha across the Triassic-Jurassic boundary",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "62",
+          "issue": "3",
+          "pages": "441-465",
+          "notes": "Notes the suggestion that Gryponyx may be distinct from Massospondylus."
+        },
+        {
+          "id": "barrett2019a",
+          "authors": "Barrett, P. M.; Chapelle, K. E. J.; Staunton, C. K.; Botha, J.; Choiniere, J. N.",
+          "year": 2019,
+          "title": "Postcranial osteology of the neotype specimen of Massospondylus carinatus Owen, 1854 (Dinosauria: Sauropodomorpha) from the upper Elliot Formation of South Africa",
+          "journal": "Palaeontologia Africana",
+          "volume": "53",
+          "pages": "114-178",
+          "notes": "Notes that earlier synonymy and nomen dubium decisions rested on provenance rather than anatomy."
         }
       ],
       "taxonomy": [
@@ -109152,11 +109170,15 @@
       "genus": "Huaxiagnathus",
       "parent": "Compsognathidae",
       "dispute": {
-        "summary": "Huaxiagnathus was described as a basal compsognathid, a placement largely upheld (Jones, 2026), though Hartman and colleagues (2019) recovered it just outside a reduced Compsognathidae. Cau and Paterna (2025) proposed that the proceratosaurid Sinotyrannus is a mature individual of Huaxiagnathus, which would make it a junior synonym and imply a tyrannosauroid-grade affinity; Jones (2026) rejects this, treating Sinotyrannus as a valid proceratosaurid. It is retained in Compsognathidae pending resolution of the synonymy.\n",
+        "summary": "Huaxiagnathus was described as the most basal compsognathid (Hwang and colleagues, 2004), and Dal Sasso and Maganuco (2011) and Xing and colleagues (2020) recover it within Compsognathidae, though Hartman and colleagues (2019) recover it just outside a reduced Compsognathidae. Cau and Paterna (2025) proposed that the tyrannosauroid Sinotyrannus is a mature individual of Huaxiagnathus, on shared ilium morphology and differences they attribute to growth; Powers and colleagues (2026) keep Sinotyrannus as a separate tyrannosauroid without discussing the proposal.\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Retained at Compsognathidae; contested Sinotyrannus synonymy (Cau and Paterna, 2025, versus Jones, 2026) remains unresolved."
+          },
+          {
+            "date": "2026-10-20",
+            "note": "Summary credits the placement and the synonymy proposal to the primaries; supersedes the reliance on Jones (2026).\n"
           }
         ]
       },
@@ -109265,7 +109287,8 @@
           "volume": "2",
           "issue": "1",
           "pages": "13-30",
-          "doi": "10.1017/s1477201903001081"
+          "doi": "10.1017/s1477201903001081",
+          "notes": "Named Huaxiagnathus and recovered it as the sister of Sinosauropteryx plus Compsognathus in Compsognathidae."
         },
         {
           "id": "paul2024a",
@@ -109285,7 +109308,7 @@
           "issue": "2",
           "pages": "162-185",
           "doi": "10.3301/IJG.2025.10",
-          "notes": "Proposed that the proceratosaurid Sinotyrannus is a mature individual of Huaxiagnathus."
+          "notes": "Proposed that Sinotyrannus is a mature individual of Huaxiagnathus, on shared ilium morphology and differences attributed to growth."
         },
         {
           "id": "hartman2019a",
@@ -109306,7 +109329,40 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Theropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
-          "notes": "Illustrated by E. Viola.\n"
+          "notes": "Treats Huaxiagnathus as a compsognathid."
+        },
+        {
+          "id": "dalsasso2011a",
+          "authors": "Dal Sasso, C.; Maganuco, S.",
+          "year": 2011,
+          "title": "Scipionyx samniticus (Theropoda: Compsognathidae) from the Lower Cretaceous of Italy — osteology, ontogenetic assessment, phylogeny, soft tissue anatomy, taphonomy and palaeobiology",
+          "journal": "Memorie della Società Italiana di Scienze Naturali e del Museo Civico di Storia Naturale di Milano",
+          "volume": "37",
+          "issue": "1",
+          "pages": "1-281",
+          "notes": "Recovered Huaxiagnathus within Compsognathidae, in a clade with Juravenator."
+        },
+        {
+          "id": "xing2020a",
+          "authors": "Xing, L.; Miyashita, T.; Wang, D.; Niu, K.; Currie, P. J.",
+          "year": 2020,
+          "title": "A new compsognathid theropod dinosaur from the oldest assemblage of the Jehol Biota in the Lower Cretaceous Huajiying Formation, northeastern China",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "107",
+          "doi": "10.1016/j.cretres.2019.104285",
+          "notes": "Recovered Huaxiagnathus within Compsognathidae, in a polytomy with Compsognathus and Juravenator."
+        },
+        {
+          "id": "powers2026a",
+          "authors": "Powers, M. J.; Napoli, J. G.; Coppock, C. C.; Sharpe, H. S.; Garros, C. W.; Demers-Potvin, A. V.; Raun, G. S.; Stock, J. C.; Miyashita, T.; Currie, P. J.",
+          "year": 2026,
+          "title": "A new albertosaurine from the Oldman Formation, Alberta, Canada, illuminates ambiguity between albertosaurine and tyrannosaurine characteristics",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "pages": "e2728669",
+          "doi": "10.1080/02724634.2026.2728669",
+          "notes": "Recovered Sinotyrannus with Yutyrannus as a separate tyrannosauroid."
         }
       ],
       "taxonomy": [
@@ -172806,6 +172862,10 @@
           {
             "date": "2026-10-19",
             "note": "Summary limited to the open question of placement and credited to the primaries; the nomen dubium status rests on the sources noted in the references.\n"
+          },
+          {
+            "date": "2026-10-19",
+            "note": "Euronychodon sunk into Paronychodon as a junior subjective synonym, following Sues and Averianov (2013); its record is removed.\n"
           }
         ]
       },
@@ -172835,6 +172895,13 @@
         {
           "source": "gbif",
           "id": "4822821"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Euronychodon",
+          "type": "junior subjective",
+          "reason": "Sues and Averianov (2013) found the type teeth of Euronychodon portucalensis Antunes and Sigogneau-Russell, 1991 indistinguishable from the Paronychodon morphotype."
         }
       ],
       "species": [
@@ -172939,6 +173006,27 @@
           "publisher": "University of California Press, Berkeley",
           "pages": "184-195",
           "notes": "Listed Paronychodon lacustris as a nomen dubium in Troodontidae."
+        },
+        {
+          "id": "antunes1991a",
+          "authors": "Antunes, M. T.; Sigogneau-Russell, D.",
+          "year": 1991,
+          "title": "Nouvelles données sur les dinosaures du Crétacé supérieur du Portugal [New Data on the Dinosaurs of the Upper Cretaceous of Portugal]",
+          "journal": "Comptes Rendus de l'Académie des Sciences, Paris, Série II",
+          "volume": "313",
+          "pages": "113-119",
+          "notes": "Named Euronychodon portucalensis for unserrated teeth from Taveiro, Portugal, as a dromaeosaur related to Paronychodon."
+        },
+        {
+          "id": "csiki-sava2015a",
+          "authors": "Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L.",
+          "year": 2015,
+          "title": "Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago",
+          "journal": "ZooKeys",
+          "volume": "469",
+          "pages": "1-161",
+          "doi": "10.3897/zookeys.469.8439",
+          "notes": "Reports Euronychodon as a subjective junior synonym of Paronychodon."
         }
       ],
       "taxonomy": [
@@ -210306,11 +210394,15 @@
       },
       "description": "Stegosaurides is a genus of herbivorous thyreophoran (perhaps ankylosaurid or possibly stegosaurian) dinosaur. It lived during the Cretaceous. Its fossils were found in the Xinminpu Group near Heishan in Gansu Province in China. These fossils consist of fragmentary material, including dermal spine elements. The genus is occasionally misspelled as \"Stegosauroides\".",
       "dispute": {
-        "summary": "Stegosaurides is a nomen dubium based on fragmentary thyreophoran remains from the Cretaceous of China that cannot be assigned to either Stegosauria or Ankylosauria with confidence (Jones, 2026).\n",
+        "summary": "Bohlin (1953) provisionally placed Stegosaurides excavatus in Stegosauridae, but later reviews refer it to Ankylosauria (Maryańska, 1977; Coombs, 1978; Vickaryous and colleagues, 2004), and Arbour and Currie (2015) find its affinities impossible to determine beyond a questionable thyreophoran, since the spine base occurs in both stegosaurs and ankylosaurs.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Retained at Thyreophora incertae sedis; nomen dubium, indeterminate thyreophoran."
+          },
+          {
+            "date": "2026-10-19",
+            "note": "Summary limited to the open question of placement and credited to the primaries; supersedes the reliance on Jones (2026).\n"
           }
         ]
       },
@@ -210381,7 +210473,8 @@
           "title": "VI. Vertebrate Palaeontology 6. Fossil reptiles from Mongolia and Kansu",
           "journal": "Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication",
           "volume": "37",
-          "pages": "1-113"
+          "pages": "1-113",
+          "notes": "Named Stegosaurides for two vertebrae and the base of a dermal spine, provisionally in Stegosauridae."
         },
         {
           "id": "jones2026a",
@@ -210390,7 +210483,61 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Lists the genus among nomina dubia, as an indeterminate thyreophoran."
+        },
+        {
+          "id": "maryańska1977a",
+          "authors": "Maryańska, T.",
+          "year": 1977,
+          "title": "Ankylosauridae (Dinosauria) from Mongolia",
+          "journal": "Palaeontologia Polonica",
+          "volume": "37",
+          "pages": "85-151",
+          "notes": "Treated Stegosaurides as a nomen dubium on very incomplete, badly preserved material, a questionable ankylosaur."
+        },
+        {
+          "id": "coombs1978a",
+          "authors": "Coombs, W. P. Jr.",
+          "year": 1978,
+          "title": "The families of the ornithischian dinosaur order Ankylosauria",
+          "journal": "Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "143-170",
+          "notes": "Listed Stegosaurides in Ankylosauridae; examined a cast of the type, AMNH 2070."
+        },
+        {
+          "id": "carpenter2001d",
+          "authors": "Carpenter, K.",
+          "year": 2001,
+          "title": "Phylogenetic analysis of the Ankylosauria",
+          "book": "The Armored Dinosaurs",
+          "publisher": "Indiana University Press, Bloomington",
+          "pages": "455-483",
+          "notes": "Listed Stegosaurides among ankylosaur taxa whose material does not allow a diagnosis."
+        },
+        {
+          "id": "vickaryous2004a",
+          "authors": "Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B.",
+          "year": 2004,
+          "title": "Ankylosauria",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "363-392",
+          "notes": "Listed Stegosaurides excavatus among the nomina dubia of Ankylosauria."
+        },
+        {
+          "id": "arbour2015a",
+          "authors": "Arbour, V. M.; Currie, P. J.",
+          "year": 2015,
+          "title": "Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "14",
+          "issue": "5",
+          "pages": "385-444",
+          "doi": "10.1080/14772019.2015.1059985",
+          "notes": "Found the affinities of Stegosaurides impossible to determine; nomen dubium, ?Thyreophora indet."
         }
       ],
       "taxonomy": [
