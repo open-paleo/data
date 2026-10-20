@@ -1,17 +1,20 @@
 genus: Bradycneme
-parent: Maniraptora
+parent: Tetanurae
 placement: incertae sedis
 dispute:
   summary: >
-    Bradycneme is a fragmentary Romanian maniraptoran of highly uncertain affinity.
-    It was originally described as a giant owl (Harrison and Walker, 1975), later
-    treated by Naish and Dyke (2004) as an indeterminate maniraptoran, and an
-    alvarezsauroid affinity has more recently gained traction (Jones, 2026). Given
-    the spread of hypotheses and the fragmentary holotype it is placed
-    conservatively at Maniraptora incertae sedis.
+    Bradycneme rests on a single distal tibiotarsus, described as a giant
+    owl (Harrison and Walker, 1975). Csiki and Grigorescu (1998) found it to
+    be a non-maniraptoran tetanuran, excluded from the derived coelurosaurs
+    by the groove on its astragalar condyles, while Naish and Dyke (2004)
+    regard it as an indeterminate maniraptoran by its compressed distal
+    shape.
   history:
     - date: "2026-07-01"
       note: Moved from Troodontidae to Maniraptora incertae sedis (owl, troodontid, and alvarezsauroid hypotheses all proposed; not supported as a troodontid by any analysis).
+    - date: "2026-10-19"
+      note: Status set to nomen dubium, diagnostic features dropped, and parent
+        widened to Tetanurae.
 etymology: From Ancient Greek bradys (βραδύς) meaning 'slow, ponderous' + kneme
   (κνήμη) meaning 'leg'; overall meaning 'ponderous leg', referring to the
   robust leg bone on which the genus is based.
@@ -26,15 +29,6 @@ diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
-diagnostic_features:
-  - Distal end of tibiotarsus broad and antero-posteriorly flattened.
-  - Distal projection of external condyle beyond internal condyle very marked.
-  - Internal and external condyles projecting anteriorly to same extent;
-    projection of internal condyle also directed internally to some extent.
-  - Anterior intercondylar fossa transverse and deep.
-  - Well-developed groove on external side terminating at large external
-    ligamental prominence, proximally situated on external surface of external
-    condyle.
 appearance:
   integument: feathered
   evidence: inferred
@@ -47,7 +41,7 @@ species:
   - name: Bradycneme draculae
     etymology: "From Romanian 'dracul' meaning 'the dragon', a reference to the
       Dracula legend of Transylvania, where the fossil was found."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -74,10 +68,19 @@ species:
     erected_in: harrison1975a
 references:
   - id: harrison1975a
+    notes: Named Bradycneme draculae for the distal end of a right tibiotarsus,
+      BMNH A 1588, as a giant owl.
   - id: csiki1998a
-    notes: Places Andrews's limb bones, BMNH A.1588 among them, in the Sânpetru
-      Formation of the Sibișel Valley, on a personal communication.
+    notes: Treats the tibiotarsus as a non-maniraptoran tetanuran, keeps the name
+      only informally, and places the bones in the Sânpetru Formation.
   - id: naish2004b
     notes: Classified Bradycneme as an indeterminate maniraptoran; the alvarezsaurid
       referral in that paper applies to Heptasteornis, not Bradycneme.
   - id: jones2026c
+    notes: Reports Bradycneme with Heptasteornis as possible alvarezsaurids.
+  - id: osmólska1987a
+    notes: Held that Bradycneme cannot be considered valid, since troodontid distal tibiotarsi are too alike to diagnose.
+  - id: olshevsky1991a
+    notes: Lists Bradycneme draculae as a nomen dubium.
+  - id: makovicky2004b
+    notes: Listed Bradycneme draculae among the nomina dubia of Troodontidae.
