@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-20T00:57:45.842Z
+  built_at: 2026-10-20T05:17:41.198Z
   clade_count: 188
   genus_count: 1427
   license: CC-BY-4.0
@@ -33967,17 +33967,20 @@ genera:
     described: 1975
   Barilium:
     genus: Barilium
-    parent: Hadrosauriformes
+    parent: Styracosterna
     etymology: "From Greek barys meaning 'heavy' combined with Latin ilium (the hip bone). Full meaning: 'heavy ilium', referring to the robust hip bone."
     pronunciation:
       phonetic: bar-il-ee-um
     description: Barilium is a genus of iguanodontian dinosaur which was first described as a species of Iguanodon (I. dawsoni) by Richard Lydekker in 1888, the specific epithet honoring the discoverer Charles Dawson, who collected the holotype during the 1880s.
     dispute:
       summary: |
-        Barilium dawsoni is recovered within a monophyletic Iguanodontidae by Lockwood and colleagues (2024), but Jones (2026) places it in Styracosterna outside Iguanodontidae, and the family is traditionally paraphyletic.
+        Barilium dawsoni is recovered close to Iguanodon and Mantellisaurus, within Hadrosauriformes, in most analyses (Norman, 2015; Verdú and colleagues, 2017; Lockwood and colleagues, 2021, 2024), and Lockwood and colleagues (2024) group the three with Comptonatus in an Iguanodontidae. Other analyses place it below Hadrosauriformes (Boyd and Pagnac, 2015; Párraga and Prieto-Márquez, 2019; Bertozzo and colleagues, 2025), and several on the McDonald matrix leave it unresolved at the base of the clade.
       history:
         - date: 2026-06-29
           note: Placed at Hadrosauriformes, the least-inclusive uncontested node; the monophyletic Iguanodontidae of Lockwood and colleagues (2024) reflected, not adopted.
+        - date: 2026-10-19
+          note: |
+            Moved from Hadrosauriformes to Styracosterna: three analyses place it below Hadrosauriformes. Supersedes the 2026-06-29 note.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -34079,14 +34082,14 @@ genera:
         volume: "22"
         issue: "1"
         doi: 10.1080/14772019.2024.2346573
-        notes: Comptonatus description's phylogeny recovered Barilium within a monophyletic Iguanodontidae.
+        notes: Recovered Barilium in an Iguanodontidae with Iguanodon, Mantellisaurus and Comptonatus, within Hadrosauriformes.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports Barilium as close to Iguanodon and Mantellisaurus.
       - id: lydekker1888b
         authors: Lydekker, R.
         year: 1888
@@ -34096,6 +34099,65 @@ genera:
         issue: "173"
         pages: 46-61
         doi: 10.1144/gsl.jgs.1888.044.01-04.08
+      - id: norman2015a
+        authors: Norman, D. B.
+        year: 2015
+        title: "On the history, osteology, and systematic position of the Wealden (Hastings group) dinosaur Hypselospinus fittoni (Iguanodontia: Styracosterna)"
+        journal: Zoological Journal of the Linnean Society
+        volume: "173"
+        pages: 92-189
+        doi: 10.1111/zoj.12193
+        notes: Recovered Barilium in an iguanodontoid clade with Iguanodon, Mantellisaurus, Proa, Jinzhousaurus and Bolong.
+      - id: verdú2017a
+        authors: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2017
+        title: "New systematic and phylogenetic data about the early Barremian Iguanodon galvensis (Ornithopoda: Iguanodontoidea) from Spain"
+        journal: Historical Biology
+        volume: "30"
+        issue: "4"
+        pages: 437-474
+        doi: 10.1080/08912963.2017.1287179
+        notes: Recovered Barilium with the two Iguanodon species in Iguanodontoidea, within Hadrosauriformes.
+      - id: lockwood2021a
+        authors: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R.
+        year: 2021
+        title: A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "19"
+        issue: "12"
+        pages: 847-888
+        doi: 10.1080/14772019.2021.1978005
+        notes: Recovered Barilium within Hadrosauriformes, paired with Iguanodon in the majority-rule tree.
+      - id: boyd2015b
+        authors: Boyd, C. A.; Pagnac, D. C.
+        year: 2015
+        title: Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "3"
+        pages: e1263
+        doi: 10.7717/peerj.1263
+        notes: Recovered Barilium with Lanzhousaurus and Bolong below Hadrosauriformes.
+      - id: párraga2019a
+        authors: Párraga, J.; Prieto-Márquez, A.
+        year: 2019
+        title: "Pareisactus evrostos, a new basal iguanodontian (Dinosauria: Ornithopoda) from the Upper Cretaceous of southwestern Europe"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "4555"
+        issue: "2"
+        doi: 10.11646/zootaxa.4555.2.5
+        notes: Recovered Barilium as the sister of the clade of Hypselospinus, Hippodraco and Hadrosauriformes.
+      - id: bertozzo2025a
+        authors: Bertozzo, F.; Camilo, B.; Araújo, R.; Manucci, F.; Kullberg, J. C.; Cerio, D. G.; de Carvalho, V. F.; Marrecas, P.; Figueiredo, S. D.; Godefroit, P.
+        year: 2025
+        title: Cariocecus bocagei, a new basal hadrosauroid from the Lower Cretaceous of Portugal
+        journal: Journal of Systematic Palaeontology
+        volume: "23"
+        issue: "1"
+        doi: 10.1080/14772019.2025.2536347
+        notes: Recovered Barilium in a more basal position, outside Hadrosauriformes, dissolving Iguanodontidae.
     taxonomy:
       - Life
       - Animalia
@@ -34115,7 +34177,6 @@ genera:
       - Dryomorpha
       - Ankylopollexia
       - Styracosterna
-      - Hadrosauriformes
     authors: Norman, D. B.
     described: 2010
   Barosaurus:
@@ -34773,10 +34834,13 @@ genera:
     description: Batyrosaurus is an extinct genus of herbivorous basal hadrosauroid dinosaur known from the Late Cretaceous Bostobe Formation (Santonian to Campanian stage) of central Kazakhstan. It contains a single species, Batyrosaurus rozhdestvenskyi. It is possible that Batyrosaurus represents the same taxon as the doubtful Arstanosaurus akkurganensis as both were found from the same formation.
     dispute:
       summary: |
-        Batyrosaurus rozhdestvenskyi is generally placed within basal Hadrosauroidea (Jones, 2026), though it retains a surangular foramen and at least one analysis recovers it more basally as the most basal styracosternan (Norman, 2015).
+        Batyrosaurus rozhdestvenskyi was described as a basal hadrosauroid (Godefroit and colleagues, 2012), and most later analyses recover it there, often as the sister of Penelopognathus (Verdú and colleagues, 2017; Lockwood and colleagues, 2021; Poole, 2022; Bonsor and colleagues, 2023). Analyses on Norman's matrix instead place it as the earliest-diverging styracosternan, outside Hadrosauriformes (Gasulla and colleagues, 2015; Norman, 2015).
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauroidea following the prevailing view.
+        - date: 2026-10-19
+          note: |
+            Retained at Hadrosauroidea on the analyses that recover it there; supersedes the 2026-06-27 reliance on the prevailing view.
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -34840,6 +34904,7 @@ genera:
         book: Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)
         publisher: Indiana University Press, Bloomington
         pages: 334-358
+        notes: Named Batyrosaurus and recovered it as a basal hadrosauroid, more primitive than Probactrosaurus.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
@@ -34855,7 +34920,59 @@ genera:
         volume: "173"
         pages: 92-189
         doi: 10.1111/zoj.12193
-        notes: Scored Batyrosaurus as the most basal styracosternan, the node-based definer of Styracosterna.
+        notes: Recovered Batyrosaurus as the most basal styracosternan, and used it as a specifier of a node-based Styracosterna.
+      - id: verdú2017a
+        authors: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2017
+        title: "New systematic and phylogenetic data about the early Barremian Iguanodon galvensis (Ornithopoda: Iguanodontoidea) from Spain"
+        journal: Historical Biology
+        volume: "30"
+        issue: "4"
+        pages: 437-474
+        doi: 10.1080/08912963.2017.1287179
+        notes: Recovered Batyrosaurus as a hadrosauroid, the sister of Proa, rejecting its placement among Norman's iguanodontoids.
+      - id: lockwood2021a
+        authors: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R.
+        year: 2021
+        title: A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "19"
+        issue: "12"
+        pages: 847-888
+        doi: 10.1080/14772019.2021.1978005
+        notes: Recovered Batyrosaurus as the sister of Penelopognathus within Hadrosauriformes.
+      - id: poole2022a
+        authors: Poole, K. E.
+        year: 2022
+        title: Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality
+        journal: Palaeontologia Electronica
+        volume: "25"
+        issue: "3"
+        pages: a30
+        doi: 10.26879/702
+        notes: Recovered Batyrosaurus as a basal hadrosauroid.
+      - id: bonsor2023a
+        authors: Bonsor, J. A.; Lockwood, J. A. F.; Leite, J. V.; Scott-Murray, A.; Maidment, S. C. R.
+        year: 2023
+        title: The osteology of the holotype of the British iguanodontian dinosaur Mantellisaurus atherfieldensis
+        journal: Monographs of the Palaeontographical Society
+        volume: "177"
+        issue: "665"
+        pages: 1-63
+        doi: 10.1080/02693445.2023.2234156
+        notes: Recovered Batyrosaurus as the sister of Penelopognathus.
+      - id: gasulla2015a
+        authors: Gasulla, J. M.; Escaso, F.; Narváez, I.; Ortega, F.; Sanz, J. L.
+        year: 2015
+        title: "A New Sail-Backed Styracosternan (Dinosauria: Ornithopoda) from the Early Cretaceous of Morella, Spain"
+        journal: PLOS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "10"
+        issue: "12"
+        pages: e0144167
+        doi: 10.1371/journal.pone.0144167
+        notes: Recovered Batyrosaurus as the most basal styracosternan on Norman's matrix.
     taxonomy:
       - Life
       - Animalia
@@ -53388,17 +53505,20 @@ genera:
     described: 2002
   Cristatusaurus:
     genus: Cristatusaurus
-    parent: Baryonychinae
+    parent: Spinosauridae
     dispute:
       summary: |
-        Cristatusaurus lapparenti is a fragmentary baryonychine that Carrano and colleagues (2012) considered an indeterminate baryonychine almost certainly synonymous with Suchomimus tenerensis; Lacerda and colleagues (2022), reported by Jones (2026), instead found it distinct and valid. Its validity and possible synonymy remain contested.
+        Cristatusaurus lapparenti is known from fragmentary premaxillae and jaw pieces from the same formation as Suchomimus tenerensis. Carrano and colleagues (2012) treat it as an indeterminate baryonychine that almost certainly represents the same animal as Suchomimus. Sales and Schultz (2017) note differences with possible taxonomic significance but leave its validity open. Lacerda and colleagues (2022), comparing the premaxillae morphometrically and including both genera in a phylogenetic analysis, find it a valid species distinct from Suchomimus and Baryonyx, and recover it as the earliest-diverging spinosaurid, outside Baryonychinae.
       history:
         - date: 2026-07-01
           note: Placed at Baryonychinae following Carrano and colleagues (2012); retained as a valid genus pending resolution of the proposed synonymy with Suchomimus.
+        - date: 2026-10-19
+          note: |
+            Moved from Baryonychinae to Spinosauridae, the clade both Carrano and colleagues (2012) and Lacerda and colleagues (2022) accept; the reference note on Lacerda and colleagues corrected to their stated conclusion.
     pronunciation:
       phonetic: kris-TAY-tuh-SAWR-us
     etymology: From Latin 'cristatus' meaning 'crested' and Greek 'sauros' meaning 'lizard', referring to the crested skull of this spinosaurid dinosaur.
-    description: Cristatusaurus is a genus of theropod dinosaur that lived during the Early Cretaceous period of what is now Niger, 112 million years ago. It was a baryonychine member of the Spinosauridae, a group of large bipedal carnivores with well-built forelimbs and elongated, crocodile-like skulls. The type species Cristatusaurus lapparenti was named in 1998 by scientists Philippe Taquet and Dale Russell, on the basis of jaw bones and some vertebrae. Two claw fossils were also later assigned to Cristatusaurus. The animal's generic name, which means "crested reptile", alludes to a sagittal crest on top of its snout; while the specific name is in honor of the French paleontologist Albert-Félix de Lapparent. Cristatusaurus is known from the Albian to Aptian Elrhaz Formation, where it would have coexisted with sauropod and iguanodontian dinosaurs, other theropods, and various crocodylomorphs.
+    description: Cristatusaurus is a genus of theropod dinosaur that lived during the Early Cretaceous period of what is now Niger, 112 million years ago. It was a member of the Spinosauridae, a group of large bipedal carnivores with well-built forelimbs and elongated, crocodile-like skulls. The type species Cristatusaurus lapparenti was named in 1998 by scientists Philippe Taquet and Dale Russell, on the basis of jaw bones and some vertebrae. Two claw fossils were also later assigned to Cristatusaurus. The animal's generic name, which means "crested reptile", alludes to a sagittal crest on top of its snout; while the specific name is in honor of the French paleontologist Albert-Félix de Lapparent. Cristatusaurus is known from the Albian to Aptian Elrhaz Formation, where it would have coexisted with sauropod and iguanodontian dinosaurs, other theropods, and various crocodylomorphs.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -53478,14 +53598,14 @@ genera:
         issue: "2"
         pages: 211-300
         doi: 10.1080/14772019.2011.630927
-        notes: Considered Cristatusaurus an indeterminate baryonychine likely synonymous with Suchomimus.
+        notes: Considered Cristatusaurus an indeterminate baryonychine that almost certainly represents the same animal as Suchomimus.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reviews the competing assessments of the genus's validity.
       - id: lacerda2022a
         authors: Lacerda, M. B. S.; Grillo, O. N.; Romano, P. S. R.
         year: 2022
@@ -53496,7 +53616,17 @@ genera:
         issue: "11"
         pages: 2089-2109
         doi: 10.1080/08912963.2021.2000974
-        notes: Considered Cristatusaurus an indeterminate baryonychine, likely synonymous with Suchomimus tenerensis.
+        notes: Found Cristatusaurus a valid species distinct from Baryonyx and Suchomimus, on premaxillary morphometrics, and recovered it as the earliest-diverging spinosaurid, outside Baryonychinae.
+      - id: sales2017a
+        authors: Sales, M. A. F.; Schultz, C. L.
+        year: 2017
+        title: "Spinosaur taxonomy and evolution of craniodental features: Evidence from Brazil"
+        journal: PLOS ONE
+        volume: "12"
+        issue: "11"
+        pages: e0187070
+        doi: 10.1371/journal.pone.0187070
+        notes: Noted premaxillary and maxillary differences from Suchomimus with possible taxonomic significance, leaving the validity of Cristatusaurus open.
     taxonomy:
       - Life
       - Animalia
@@ -53515,7 +53645,6 @@ genera:
       - Megalosauroidea
       - Megalosauria
       - Spinosauridae
-      - Baryonychinae
     authors: Taquet, P.; Russell, D. A.
     described: 1998
   Crittendenceratops:
@@ -72566,15 +72695,18 @@ genera:
     described: 2000
   Fukuisaurus:
     genus: Fukuisaurus
-    parent: Hadrosauriformes
+    parent: Styracosterna
     etymology: From Fukui (the prefecture in Japan where it was discovered) + Greek sauros, 'lizard'; means 'Fukui lizard'. The article notes that Fukui itself means 'Fortunate Well' in Japanese
     description: Fukuisaurus is a genus of herbivorous ornithopod dinosaur that lived during the Early Cretaceous in what is now Japan. The type species is Fukuisaurus tetoriensis, which was named and described in 2003.
     dispute:
       summary: |
-        Fukuisaurus tetoriensis has been placed in basal Styracosterna (Madzia and colleagues, 2021) and among Hadrosauriformes (Jones, 2026), and in some analyses as a basal hadrosauroid.
+        Fukuisaurus tetoriensis was described as more derived than Iguanodon (Kobayashi and Azuma, 2003), and several analyses place it within Hadrosauriformes, often as the sister of Proa (Shibata and Azuma, 2015; Párraga and Prieto-Márquez, 2019; Poole, 2022). Analyses on the McDonald and Verdú matrices instead leave it in a polytomy with Hadrosauriformes at the base of Styracosterna (McDonald and colleagues, 2012; Verdú and colleagues, 2017; Santos-Cubedo and colleagues, 2021).
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna, the least-inclusive clade these results agree on.
+        - date: 2026-10-19
+          note: |
+            Moved from Hadrosauriformes to Styracosterna, the clade every analysis accepts, matching the 2026-06-27 note.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -72653,6 +72785,7 @@ genera:
         issue: "1"
         pages: 166-175
         doi: 10.1671/0272-4634(2003)23[166:anidof]2.0.co;2
+        notes: Named Fukuisaurus and recovered it as more derived than Iguanodon and Ouranosaurus.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -72667,14 +72800,14 @@ genera:
         volume: "9"
         pages: e12362
         doi: 10.7717/peerj.12362
-        notes: Ornithischian phylogenetic nomenclature paper placing Fukuisaurus in basal Styracosterna.
+        notes: Lists Fukuisaurus in Styracosterna, outside Hadrosauriformes, on a reference phylogeny; runs no analysis of its own.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports the placement among the basalmost hadrosauriforms.
       - id: azuma2016a
         authors: Azuma, Y.; Xu, X.; Shibata, M.; Kawabe, S.; Miyata, K.; Imai, T.
         year: 2016
@@ -72694,6 +72827,57 @@ genera:
         volume: "3914"
         issue: "4"
         doi: 10.11646/zootaxa.3914.4.3
+        notes: Recovered Fukuisaurus as a non-hadrosauroid hadrosauriform, the sister of Proa.
+      - id: párraga2019a
+        authors: Párraga, J.; Prieto-Márquez, A.
+        year: 2019
+        title: "Pareisactus evrostos, a new basal iguanodontian (Dinosauria: Ornithopoda) from the Upper Cretaceous of southwestern Europe"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "4555"
+        issue: "2"
+        doi: 10.11646/zootaxa.4555.2.5
+        notes: Recovered Fukuisaurus as the sister of Proa within Hadrosauriformes.
+      - id: poole2022a
+        authors: Poole, K. E.
+        year: 2022
+        title: Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality
+        journal: Palaeontologia Electronica
+        volume: "25"
+        issue: "3"
+        pages: a30
+        doi: 10.26879/702
+        notes: Recovered Fukuisaurus with Proa in an Iguanodontidae that includes Iguanodon.
+      - id: mcdonald2012a
+        authors: McDonald, A. T.; Espílez, E.; Mampel, L.; Kirkland, J. I.; Alcalá, L.
+        year: 2012
+        title: "An unusual new basal iguanodont (Dinosauria: Ornithopoda) from the Lower Cretaceous of Teruel, Spain"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "3595"
+        issue: "1"
+        doi: 10.11646/zootaxa.3595.1.3
+        notes: Recovered Fukuisaurus in a polytomy with Barilium and Hadrosauriformes.
+      - id: verdú2017a
+        authors: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2017
+        title: "New systematic and phylogenetic data about the early Barremian Iguanodon galvensis (Ornithopoda: Iguanodontoidea) from Spain"
+        journal: Historical Biology
+        volume: "30"
+        issue: "4"
+        pages: 437-474
+        doi: 10.1080/08912963.2017.1287179
+        notes: Recovered Fukuisaurus in the basal polytomy of Styracosterna, outside Hadrosauriformes.
+      - id: santos-cubedo2021a
+        authors: Santos-Cubedo, A.; de Santisteban, C.; Poza, B.; Meseguer, S.
+        year: 2021
+        title: "A new styracosternan hadrosauroid (Dinosauria: Ornithischia) from the Early Cretaceous of Portell, Spain"
+        journal: PLoS ONE
+        volume: "16"
+        issue: "7"
+        pages: e0253599:1-30
+        doi: 10.1371/journal.pone.0253599
+        notes: Recovered Fukuisaurus in a polytomy with Barilium and the clade of Iguanodontidae and Hadrosauroidea.
     taxonomy:
       - Life
       - Animalia
@@ -72713,7 +72897,6 @@ genera:
       - Dryomorpha
       - Ankylopollexia
       - Styracosterna
-      - Hadrosauriformes
     authors: Kobayashi, Y.; Azuma, Y.
     described: 2003
   Fukuititan:
@@ -78505,10 +78688,13 @@ genera:
     description: Gongbusaurus is a genus of ornithischian, perhaps ornithopod, dinosaur that lived between about 160 and 157 million years ago, in the Late Jurassic period. A small herbivore, it is very poorly known. Two species have been assigned to it, but as the original name is based on teeth, there is no concrete evidence to connect the two species. Its fossils have been found in China.
     dispute:
       summary: |
-        Gongbusaurus is based on isolated teeth from the Jurassic of China, and the type species is an indeterminate basal ornithischian (Jones, 2026); a second referred species may represent a separate taxon. It was formerly placed in the deprecated Fabrosauridae.
+        Gongbusaurus shiyii was named for two isolated teeth from the Shaximiao Formation and first placed in Fabrosauridae (Dong and colleagues, 1983). Later reviews treat it as a nomen dubium, an indeterminate ornithischian (Weishampel and Witmer, 1990; Norman and colleagues, 2004), and Galton (2007) finds the teeth closer to ankylosaurs than to ornithopods. Butler and colleagues (2008) and Boyd (2015) exclude it from their analyses as a taxon based only on teeth. The referred species "G." wucaiwanensis, from Xinjiang, rests on postcranial material whose holotype is now unlocated (Butler and colleagues, 2008).
       history:
         - date: 2026-06-29
           note: Reparented from the deprecated Fabrosauridae to Ornithischia incertae sedis; tooth-based nomen dubium.
+        - date: 2026-10-19
+          note: |
+            Species status set to nomen dubium, matching the 2026-06-29 note, following Galton (2007).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -78533,7 +78719,7 @@ genera:
     species:
       - name: Gongbusaurus shiyii
         etymology: Named for the rank of shi yi ('junior consultant') held by the Tang dynasty poet Du Fu while working in Sichuan for the imperial ministry of public works; the epithet also puns on a secondary meaning of 'register of lost objects', alluding to the teeth being found separately among the collected bones.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -78577,13 +78763,58 @@ genera:
         volume: "162"
         issue: "23"
         pages: 1-136
+        notes: Named Gongbusaurus shiyii for two isolated teeth and placed it in Fabrosauridae.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Lists the genus among nomina dubia, as an indeterminate basal ornithischian.
+      - id: weishampel1990a
+        authors: Weishampel, D. B.; Witmer, L. M.
+        year: 1990
+        title: Lesothosaurus, Pisanosaurus, and Technosaurus
+        book: The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
+        publisher: University of California Press, Berkeley
+        pages: 416-425
+        notes: Listed Gongbusaurus shiyii among nomina dubia, on two isolated teeth.
+      - id: norman2004c
+        authors: Norman, D. B.; Witmer, L. M.; Weishampel, D. B.
+        year: 2004
+        title: Basal Ornithischia
+        book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
+        publisher: University of California Press, Berkeley
+        pages: 325-334
+        notes: Listed Gongbusaurus shiyii among nomina dubia and as Ornithischia indet.
+      - id: galton2007c
+        authors: Galton, P. M.
+        year: 2007
+        title: Teeth of ornithischian dinosaurs (mostly Ornithopoda) from the Morrison Formation (Upper Jurassic) of the western United States
+        book: "Horns and Beaks: Ceratopsian and Ornithopod Dinosaurs"
+        publisher: Indiana University Press, Bloomington
+        pages: 17-47
+        notes: Called Gongbusaurus shiyii a nomen dubium, probably an ankylosaur rather than an ornithopod.
+      - id: butler2008b
+        authors: Butler, R. J.; Upchurch, P.; Norman, D. B.
+        year: 2008
+        title: The phylogeny of the ornithischian dinosaurs
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "1"
+        pages: 1-40
+        doi: 10.1017/S1477201907002271
+        notes: Excluded Gongbusaurus shiyii as a tooth taxon; reported the holotype of 'G.' wucaiwanensis unlocated.
+      - id: boyd2015a
+        authors: Boyd, C. A.
+        year: 2015
+        title: The systematic relationships and biogeographic history of ornithischian dinosaurs
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "3"
+        pages: e1523
+        doi: 10.7717/peerj.1523
+        notes: Excluded Gongbusaurus shiyii as of dubious validity, being based solely on two isolated teeth.
     taxonomy:
       - Life
       - Animalia
@@ -94666,10 +94897,13 @@ genera:
     description: Jingshanosaurus is a genus of sauropodomorph dinosaurs from the early Jurassic period (201.4 to 196.5 million years ago, Hettangian age) of China. The type and only species is Jingshanosaurus xinwaensis. Its maximum weight was around 4.3 t (4.7 short tons) with an adult femur length of 845 mm (33.3 in). The genus grew up to 5 m (16 ft) long.
     dispute:
       summary: |
-        Jingshanosaurus xinwaensis is most commonly recovered among the basalmost Sauropodiformes (Jones, 2026), but Rauhut and colleagues (2020) place it within Massospondylidae.
+        Jingshanosaurus xinwaensis is recovered on the sauropod side of Massospondylidae, within Sauropodiformes as McPhee and colleagues (2014) define it, in most analyses of the Yates matrix and its successors, often as the sister of Seitaad (McPhee and colleagues, 2014; Zhang and colleagues, 2020; Fernández and Werneburg, 2022; Hu and colleagues, 2026). Rauhut and colleagues (2020) instead recover it with Seitaad and Yunnanosaurus within Massospondylidae, a result Fernández and Werneburg (2022) did not recover on a version of the same matrix, and Chapelle and Choiniere (2018) recover Jingshanosaurus and Seitaad outside both Massospondylidae and Sauropodiformes.
       history:
         - date: 2026-06-29
           note: Placed at Sauropodiformes incertae sedis following the prevailing view and Jones (2026); the Massospondylidae alternative is recorded.
+        - date: 2026-10-19
+          note: |
+            Retained at Sauropodiformes on the analyses that recover it there; supersedes the 2026-06-29 note's reliance on the prevailing view and Jones (2026).
     locomotion: facultative
     paleoenvironment:
       - fluvial
@@ -94751,7 +94985,7 @@ genera:
         volume: "303"
         pages: 759-771
         doi: 10.1002/ar.24113
-        notes: Redescription of the cranium; gives the holotype as LFGT-ZLJ0113 (field number LV003) and provides an emended cranial diagnosis.
+        notes: Redescription of the cranium; gives the holotype as LFGT-ZLJ0113 (field number LV003), provides an emended cranial diagnosis, and recovers Jingshanosaurus among the earliest-diverging sauropodiforms.
       - id: jones2026b
         authors: Jones, B.
         year: 2026
@@ -94768,7 +95002,47 @@ genera:
         volume: "113"
         issue: "1"
         doi: 10.1186/s00015-020-00360-8
-        notes: New sauropodomorph description placed Jingshanosaurus within Massospondylidae.
+        notes: Recovered Jingshanosaurus with Seitaad and Yunnanosaurus as a subclade within Massospondylidae.
+      - id: mcphee2014a
+        authors: McPhee, B. W.; Yates, A. M.; Choiniere, J. N.; Abdala, F.
+        year: 2014
+        title: "The complete anatomy and phylogenetic relationships of Antetonitrus ingenipes (Sauropodiformes, Dinosauria): implications for the origins of Sauropoda"
+        journal: Zoological Journal of the Linnean Society
+        volume: "171"
+        issue: "1"
+        pages: 151-205
+        doi: 10.1111/zoj.12127
+        notes: Defined Sauropodiformes as all taxa closer to Saltasaurus than to Massospondylus, and recovered Jingshanosaurus as the sister of Seitaad within it.
+      - id: fernández2022a
+        authors: Fernández, O. R. R.; Werneburg, I.
+        year: 2022
+        title: A new massopodan sauropodomorph from Trossingen Formation (Germany) hidden as 'Plateosaurus' for 100 years in the historical Tübingen collection
+        journal: Vertebrate Zoology
+        publisher: Pensoft Publishers
+        volume: "72"
+        pages: 771-822
+        doi: 10.3897/vz.72.e86348
+        notes: Recovered Jingshanosaurus at the base of Sauropodiformes on a version of the Rauhut and colleagues (2020) matrix.
+      - id: hu2026a
+        authors: Hu, S. B.; Wang, Y. C.; Mo, X.; Zhang, X. Q.; Zeng, W. T.; Wang, T.; Sun, Z. B.; Dong, Q. X.; Guan, Q.; Liu, Y. H.; Zhang, Y. S.; Bing, Y.; Wang, Y. M.; You, H. L.
+        year: 2026
+        title: A new sauropodomorph dinosaur from the Lower Jurassic Fengjiahe Formation of Dali of Yunnan Province, China
+        journal: Royal Society Open Science
+        publisher: The Royal Society
+        volume: "13"
+        issue: "3"
+        doi: 10.1098/rsos.252219
+        notes: Recovered Jingshanosaurus and Seitaad as the sister group of Sauropodiformes in the narrower sense, on the sauropod side of Massospondylidae.
+      - id: chapelle2018a
+        authors: Chapelle, K. E. J.; Choiniere, J. N.
+        year: 2018
+        title: "A revised cranial description of Massospondylus carinatus Owen (Dinosauria: Sauropodomorpha) based on computed tomographic scans and a review of cranial characters for basal Sauropodomorpha"
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "6"
+        pages: e4224
+        doi: 10.7717/peerj.4224
+        notes: Recovered Jingshanosaurus and Seitaad as the sister of Massospondylidae plus Sauropodiformes.
     taxonomy:
       - Life
       - Animalia
@@ -135184,10 +135458,13 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Paronychodon lacustris is a classic tooth taxon founded on isolated teeth (Cope, 1876) and is widely regarded as a nomen dubium; the teeth have been attributed to many theropod lineages, most likely some member of Eumaniraptora (Jones, 2026, which lists it among nomina dubia). It is placed conservatively at Paraves incertae sedis.
+        The teeth assigned to Paronychodon lacustris cannot be placed below Paraves. Currie and colleagues (1990) referred most of them to known theropods such as Troodon and Saurornitholestes, as probable growth abnormalities, and Sues and Averianov (2013) regard them as possible developmental stages of various paravian theropods, whose affinities "remain uncertain".
       history:
         - date: 2026-07-01
           note: Retained at Paraves incertae sedis as a dubious tooth taxon; a nomen dubium.
+        - date: 2026-10-19
+          note: |
+            Summary limited to the open question of placement and credited to the primaries; the nomen dubium status rests on the sources noted in the references.
     etymology: From Greek 'para' meaning 'beside', 'onyx' meaning 'claw', and 'odon' meaning 'tooth'; translates as 'beside claw tooth', referring to the claw-like nature of the tooth.
     pronunciation:
       phonetic: PAH-ro-NIK-o-don
@@ -135260,8 +135537,34 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: |
-          Illustrated by E. Viola.
+        notes: Lists the genus as a tooth taxon, most likely from a eumaniraptoran.
+      - id: currie1990a
+        authors: Currie, P. J.; Rigby, J. K.; Sloan, R. E.
+        year: 1990
+        title: Theropod teeth from the Judith River Formation of southern Alberta, Canada
+        book: "Dinosaur Systematics: Perspectives and Approaches (Carpenter, K.; Currie, P. J., eds.)"
+        publisher: Cambridge University Press, Cambridge
+        pages: 107-126
+        doi: 10.1017/cbo9780511608377.011
+        notes: Referred most Paronychodon-type teeth to known genera as growth abnormalities and restricted the name to unserrated teeth.
+      - id: sues2013a
+        authors: Sues, H. D.; Averianov, A.
+        year: 2013
+        title: Enigmatic teeth of small theropod dinosaurs from the Upper Cretaceous (Cenomanian–Turonian) of Uzbekistan
+        journal: Canadian Journal of Earth Sciences
+        volume: "50"
+        issue: "3"
+        pages: 306-314
+        doi: 10.1139/e2012-033
+        notes: Treated Paronychodon as an organ taxon, not a diagnosable species; possibly developmental stages of various paravians.
+      - id: makovicky2004b
+        authors: Makovicky, P. J.; Norell, M. A.
+        year: 2004
+        title: Troodontidae
+        book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
+        publisher: University of California Press, Berkeley
+        pages: 184-195
+        notes: Listed Paronychodon lacustris as a nomen dubium in Troodontidae.
     taxonomy:
       - Life
       - Animalia
@@ -136550,7 +136853,7 @@ genera:
     described: 2012
   Peishansaurus:
     genus: Peishansaurus
-    parent: Thyreophora
+    parent: Genasauria
     placement: incertae sedis
     pronunciation:
       ipa: /ˌbeɪˌʃɑːnˈsɔːrəs/
@@ -136558,12 +136861,15 @@ genera:
     description: Peishansaurus was a genus of ornithischian dinosaur that lived during the Late Cretaceous period (late Santonian-Campanian stages), roughly 85-72 million years ago.
     dispute:
       summary: |
-        Peishansaurus is a nomen dubium based on a fragmentary jaw from the Late Cretaceous of China, most likely a thyreophoran (possibly an ankylosaur); the holotype is now lost (Jones, 2026).
+        Peishansaurus philemys rests on the front of a small lower jaw. Bohlin (1953) tentatively placed it in Nodosauridae, but Vickaryous and colleagues (2004) consider it doubtfully ankylosaurian, and Arbour and Currie (2015) find it impossible to tell from the published figures whether it is an ankylosaur, listing it as a questionable thyreophoran. Carpenter (2001) lists the jaw as a possible pachycephalosaur.
       history:
         - date: 2026-06-29
           note: Retained at Thyreophora incertae sedis; nomen dubium, holotype lost.
         - date: 2026-10-08
           note: Type species set to nomen dubium and diagnostic features removed; Arbour and Currie (2015) cannot confirm even an ankylosaurian identity.
+        - date: 2026-10-19
+          note: |
+            Moved from Thyreophora to Genasauria: the thyreophoran assignment is itself questioned, and a pachycephalosaur reading has been suggested.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -136613,13 +136919,14 @@ genera:
         journal: Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication
         volume: "37"
         pages: 1-113
+        notes: Named Peishansaurus for the front of a right lower jaw and placed it tentatively in Nodosauridae.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Lists the genus among nomina dubia, possibly an ankylosaur.
       - id: arbour2015a
         authors: Arbour, V. M.; Currie, P. J.
         year: 2015
@@ -136631,6 +136938,30 @@ genera:
         pages: 385-444
         doi: 10.1080/14772019.2015.1059985
         notes: Finds it impossible to confirm from the figures that the type is ankylosaurian; no diagnosis was ever given.
+      - id: maryańska1977a
+        authors: Maryańska, T.
+        year: 1977
+        title: Ankylosauridae (Dinosauria) from Mongolia
+        journal: Palaeontologia Polonica
+        volume: "37"
+        pages: 85-151
+        notes: Listed Peishansaurus philemys as a nomen dubium and questionable ankylosaur, the type uncatalogued at the IVPP.
+      - id: vickaryous2004a
+        authors: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B.
+        year: 2004
+        title: Ankylosauria
+        book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
+        publisher: University of California Press, Berkeley
+        pages: 363-392
+        notes: Listed Peishansaurus philemys among nomina dubia as doubtfully ankylosaurian.
+      - id: carpenter2001d
+        authors: Carpenter, K.
+        year: 2001
+        title: Phylogenetic analysis of the Ankylosauria
+        book: The Armored Dinosaurs
+        publisher: Indiana University Press, Bloomington
+        pages: 455-483
+        notes: Listed the jaw among undiagnosable ankylosaur taxa, as a possible pachycephalosaur.
     taxonomy:
       - Life
       - Animalia
@@ -136643,7 +136974,6 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Thyreophora
     authors: Bohlin, B.
     described: 1953
   Pelecanimimus:
@@ -141905,10 +142235,13 @@ genera:
     description: Proa is a genus of basal iguanodont dinosaur from the Early Cretaceous Escucha Formation of Aragón, Spain. The type and only species, Proa valdearinnoensis, is known from fragmentary remains and represents an unusual hadrosauriform from the Albian stage.
     dispute:
       summary: |
-        Proa valdearinnoensis has been recovered at the base of Hadrosauriformes (McDonald and colleagues, 2012; Norman, 2015) and within basal Hadrosauroidea (Madzia and colleagues, 2019); Jones (2026) places it in basal Styracosterna.
+        Proa valdearinnoensis was recovered at the base of Hadrosauriformes by its describers (McDonald and colleagues, 2012), and most later analyses place it within that clade, as a basal hadrosauroid or close to Fukuisaurus or Iguanodon (Norman, 2015; Madzia and colleagues, 2019; Poole, 2022). Other analyses place it on the stem below Hadrosauriformes (Boyd and Pagnac, 2015; Bonsor and colleagues, 2023; Bertozzo and colleagues, 2025).
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna, the least-inclusive clade these results agree on; finer hadrosauriform/hadrosauroid placements reflected, not adopted.
+        - date: 2026-10-19
+          note: |
+            Retained at Styracosterna: several analyses place it below Hadrosauriformes.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -141986,6 +142319,7 @@ genera:
         volume: "3595"
         issue: "1"
         doi: 10.11646/zootaxa.3595.1.3
+        notes: Named Proa and recovered it in a polytomy with Iguanodon and Hadrosauroidea at the base of Hadrosauriformes.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -142018,6 +142352,45 @@ genera:
         pages: 92-189
         doi: 10.1111/zoj.12193
         notes: Recovered Proa at the base of Hadrosauriformes.
+      - id: poole2022a
+        authors: Poole, K. E.
+        year: 2022
+        title: Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality
+        journal: Palaeontologia Electronica
+        volume: "25"
+        issue: "3"
+        pages: a30
+        doi: 10.26879/702
+        notes: Recovered Proa with Fukuisaurus in an Iguanodontidae that includes Iguanodon.
+      - id: boyd2015b
+        authors: Boyd, C. A.; Pagnac, D. C.
+        year: 2015
+        title: Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "3"
+        pages: e1263
+        doi: 10.7717/peerj.1263
+        notes: Recovered Proa and Koshisaurus as non-hadrosauriform ankylopollexians.
+      - id: bonsor2023a
+        authors: Bonsor, J. A.; Lockwood, J. A. F.; Leite, J. V.; Scott-Murray, A.; Maidment, S. C. R.
+        year: 2023
+        title: The osteology of the holotype of the British iguanodontian dinosaur Mantellisaurus atherfieldensis
+        journal: Monographs of the Palaeontographical Society
+        volume: "177"
+        issue: "665"
+        pages: 1-63
+        doi: 10.1080/02693445.2023.2234156
+        notes: Recovered Proa on the stem below Hadrosauriformes.
+      - id: bertozzo2025a
+        authors: Bertozzo, F.; Camilo, B.; Araújo, R.; Manucci, F.; Kullberg, J. C.; Cerio, D. G.; de Carvalho, V. F.; Marrecas, P.; Figueiredo, S. D.; Godefroit, P.
+        year: 2025
+        title: Cariocecus bocagei, a new basal hadrosauroid from the Lower Cretaceous of Portugal
+        journal: Journal of Systematic Palaeontology
+        volume: "23"
+        issue: "1"
+        doi: 10.1080/14772019.2025.2536347
+        notes: Recovered Proa as the sister of Lurdusaurus, outside the node containing Iguanodon.
     taxonomy:
       - Life
       - Animalia
@@ -143591,13 +143964,16 @@ genera:
     pronunciation:
       phonetic: PROH-to-HAD-ros
     etymology: From Greek 'protos' meaning 'first' and 'hadros' meaning 'thick' (as in Hadrosauridae), meaning 'first hadrosaur.' The specific name byrdi honors discoverer Gary Byrd.
-    description: Protohadros is a genus of basal hadrosaurid dinosaur from the early Late Cretaceous (Cenomanian stage, approximately 100-93.9 million years ago) of what is now Texas, United States. It is represented by the species Protohadros byrdi, known from a partially complete skull and associated postcranial remains recovered from the Woodbine Formation. Protohadros was one of the earliest derived hadrosaurs in North America.
+    description: Protohadros is a genus of hadrosauromorph dinosaur from the early Late Cretaceous (Cenomanian stage, approximately 100-93.9 million years ago) of what is now Texas, United States. It is represented by the species Protohadros byrdi, known from a partially complete skull and associated postcranial remains recovered from the Lewisville Formation of the Woodbine Group. It is among the earliest hadrosauroids known from North America.
     dispute:
       summary: |
-        Protohadros byrdi was described as a basal hadrosaurid (Head, 1998), who defined Hadrosauridae to include it; more recent assessments (Jones, 2026) instead regard it as a non-hadrosaurid hadrosauromorph, whereas Norman (2014) recovered it outside Hadrosauromorpha, retaining the plesiomorphic surangular foramen lost in that clade.
+        Protohadros byrdi was described as the most basal hadrosaurid under the expanded Hadrosauridae of Head (1998), which he diagnosed without the loss of the surangular foramen that Protohadros retains. Later analyses place it outside Hadrosauridae. Most recover it closer to hadrosaurids than Probactrosaurus, within Hadrosauromorpha as Norman (2014) defines it, often as the sister of Eolambia (Prieto-Márquez, 2010; Xing and colleagues, 2014; Wang and colleagues, 2017). Analyses on Norman's matrices instead place it below Probactrosaurus, outside Hadrosauromorpha (Norman, 2004, 2014).
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauromorpha following the prevailing recent view; the more basal position of Norman (2014) and the historical basal-hadrosaurid interpretation (Head, 1998) reflected, not adopted.
+        - date: 2026-10-19
+          note: |
+            Retained at Hadrosauromorpha on the analyses that place it closer to hadrosaurids than Probactrosaurus; supersedes the 2026-06-27 reliance on the prevailing recent view.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -143685,14 +144061,55 @@ genera:
         book: Hadrosaurs
         publisher: Indiana University Press, Bloomington
         pages: 10-43
-        notes: Scored Protohadros outside Hadrosauromorpha, retaining the plesiomorphic surangular foramen lost in hadrosauromorphs.
+        notes: Named Hadrosauromorpha and recovered Protohadros below Probactrosaurus, outside it.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports the placement within Hadrosauromorpha.
+      - id: norman2004a
+        authors: Norman, D. B.
+        year: 2004
+        title: Basal Iguanodontia
+        book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
+        publisher: University of California Press, Berkeley
+        pages: 413-437
+        notes: Recovered Protohadros below Probactrosaurus, which is the sister of Hadrosauridae in that analysis.
+      - id: xing2014a
+        authors: Xing, H.; Wang, D.; Han, F.; Sullivan, C.; Ma, Q.; He, Y.; Hone, D. W. E.; Yan, R.; Du, F.; Xu, X.
+        year: 2014
+        title: "A New Basal Hadrosauroid Dinosaur (Dinosauria: Ornithopoda) with Transitional Features from the Late Cretaceous of Henan Province, China"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "9"
+        issue: "6"
+        pages: e98821
+        doi: 10.1371/journal.pone.0098821
+        notes: Recovered Protohadros with Eolambia as a North American clade more derived than Probactrosaurus.
+      - id: wang2017c
+        authors: Wang, R. F.; You, H. L.; Wang, S. Z.; Xu, S. C.; Yi, J.; Xie, L. J.; Jia, L.; Xing, H.
+        year: 2017
+        title: A second hadrosauroid dinosaur from the early Late Cretaceous of Zuoyun, Shanxi Province, China
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "29"
+        issue: "1"
+        pages: 17-24
+        doi: 10.1080/08912963.2015.1118688
+        notes: Recovered Eolambia and Protohadros as slightly more derived than Probactrosaurus and the other basal Asian hadrosauroids.
+      - id: prieto-márquez2010c
+        authors: Prieto-Márquez, A.
+        year: 2010
+        title: "Global phylogeny of Hadrosauridae (Dinosauria: Ornithopoda) using parsimony and Bayesian methods"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "159"
+        issue: "2"
+        pages: 435-502
+        doi: 10.1111/j.1096-3642.2009.00617.x
+        notes: Recovered Protohadros as the sister of Eolambia, above Probactrosaurus, in a global hadrosaurid analysis.
     taxonomy:
       - Life
       - Animalia
@@ -144889,11 +145306,14 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Pulanesaura sits at the sauropod/sauropodiform boundary. McPhee and colleagues (2015) recover it as either the least-derived sauropod or the sister taxon to Sauropoda, depending on whether a node- or stem-based definition is used, and Rauhut and colleagues (2020) place it as a non- sauropodan sauropodiform. Jones (2026) retains it within Sauropoda.
+        Pulanesaura eocollum is recovered just outside the clade of Vulcanodon and Eusauropoda, and outside Gravisauria, in most analyses (McPhee and colleagues, 2015, 2017; Rauhut and colleagues, 2020; Zhang and colleagues, 2020; Hu and colleagues, 2026). Whether that makes it a sauropod depends on the definition of Sauropoda. It is the earliest-diverging sauropod under the stem-based definition of Yates (2007), all taxa closer to Saltasaurus than to Melanorosaurus, which Pol and colleagues (2022) and Rincón and colleagues (2022) use. It is the sister of Sauropoda under the node-based definition of Salgado and colleagues (1997), which McPhee and colleagues (2017), Rauhut and colleagues (2020) and Barrett and Choiniere (2024) use.
       history:
         - date: 2026-06-29
           note: |
             Placed at Sauropoda incertae sedis following Jones (2026); the sister-to-Sauropoda and non-sauropod sauropodiform alternatives (McPhee and colleagues, 2015; Rauhut and colleagues, 2020) are unresolved.
+        - date: 2026-10-19
+          note: |
+            Retained at Sauropoda pending a definition of the clade; under the node-based definition it falls outside Sauropoda. Supersedes the 2026-06-29 reliance on Jones (2026), whose placement follows the stem-based definition.
     etymology: From Sesotho 'Pulane' meaning 'rain-maker/bringer' (in reference to the heavy rain conditions during collection) and Latin 'saura' (feminine of sauros) meaning 'lizard'.
     pronunciation:
       phonetic: PU-lan-SOR-ruh
@@ -144977,6 +145397,7 @@ genera:
         volume: "5"
         issue: "1"
         doi: 10.1038/srep13224
+        notes: Named Pulanesaura and recovered it as the sister of Vulcanodon plus later sauropods, a sauropod or not depending on the definition used.
       - id: mcphee2017a
         authors: McPhee, B. W.; Choiniere, J. N.
         year: 2017
@@ -144984,7 +145405,7 @@ genera:
         journal: Zoological Journal of the Linnean Society
         publisher: Oxford University Press (OUP)
         doi: 10.1093/zoolinnean/zlx074
-        notes: Comprehensive osteological description of Pulanesaura eocollum; retains the original (McPhee and colleagues 2015) diagnosis and confirms the holotype catalog number as BP/1/6982.
+        notes: Redescribed Pulanesaura, retaining the 2015 diagnosis and confirming holotype BP/1/6982; prefers a node-based Sauropoda, under which Pulanesaura is its sister.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -144997,7 +145418,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Source of the hip height estimate.
+        notes: Source of the hip height estimate; places the genus in Sauropoda under the stem-based definition the book adopts.
       - id: rauhut2020a
         authors: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.
         year: 2020
@@ -145007,7 +145428,76 @@ genera:
         volume: "113"
         issue: "1"
         doi: 10.1186/s00015-020-00360-8
-        notes: Sauropodomorph description placed Pulanesaura as a non-sauropodan sauropodiform.
+        notes: Recovered Pulanesaura outside Sauropoda as defined node-based on Vulcanodon and Saltasaurus, among the sauropodiform outgroups.
+      - id: yates2007a
+        authors: Yates, A. M.
+        year: 2007
+        title: "Solving a dinosaurian puzzle: the identity of Aliwalia rex Galton"
+        journal: Historical Biology
+        volume: "19"
+        issue: "1"
+        pages: 93-123
+        doi: 10.1080/08912960600866953
+        notes: Proposed the stem-based definition of Sauropoda, all taxa closer to Saltasaurus than to Melanorosaurus.
+      - id: salgado1997a
+        authors: Salgado, L.; Coria, R. A.; Calvo, J. O.
+        year: 1997
+        title: "Evolution of titanosaurid sauropods. I: phylogenetic analysis based on the postcranial evidence"
+        journal: Ameghiniana
+        volume: "34"
+        pages: 3-32
+        notes: Gave the node-based definition of Sauropoda anchored on Vulcanodon.
+      - id: zhang2020a
+        authors: Zhang, Q. N.; Wang, T.; Yang, Z. W.; You, H. L.
+        year: 2020
+        title: "Redescription of the cranium of Jingshanosaurus xinwaensis (Dinosauria: Sauropodomorpha) from the Lower Jurassic Lufeng Formation of Yunnan Province, China"
+        journal: The Anatomical Record
+        publisher: Wiley
+        volume: "303"
+        pages: 759-771
+        doi: 10.1002/ar.24113
+        notes: Recovered Pulanesaura as the sister of Isanosaurus plus a node-based Sauropoda.
+      - id: hu2026a
+        authors: Hu, S. B.; Wang, Y. C.; Mo, X.; Zhang, X. Q.; Zeng, W. T.; Wang, T.; Sun, Z. B.; Dong, Q. X.; Guan, Q.; Liu, Y. H.; Zhang, Y. S.; Bing, Y.; Wang, Y. M.; You, H. L.
+        year: 2026
+        title: A new sauropodomorph dinosaur from the Lower Jurassic Fengjiahe Formation of Dali of Yunnan Province, China
+        journal: Royal Society Open Science
+        publisher: The Royal Society
+        volume: "13"
+        issue: "3"
+        doi: 10.1098/rsos.252219
+        notes: Recovered Pulanesaura as the sister of a node-based Sauropoda.
+      - id: barrett2024b
+        authors: Barrett, P. M.; Choiniere, J. N.
+        year: 2024
+        title: "Melanorosaurus readi Haughton, 1924 (Dinosauria, Sauropodomorpha) from the Late Triassic of South Africa: osteology and designation of a lectotype"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "44"
+        issue: "1"
+        pages: e2337802
+        doi: 10.1080/02724634.2024.2337802
+        notes: Advocated the node-based definition of Sauropoda, which places Pulanesaura in the labile zone outside it.
+      - id: pol2022a
+        authors: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L.
+        year: 2022
+        title: Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda
+        book: "South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution"
+        series: Springer Earth System Sciences
+        publisher: Springer International Publishing
+        pages: 131-163
+        doi: 10.1007/978-3-030-95959-3_4
+        notes: Used the stem-based definition of Sauropoda, which includes Pulanesaura.
+      - id: rincón2022a
+        authors: Rincón, A. F.; Raad Pájaro, D. A.; Jiménez Velandia, H. F.; Ezcurra, M. D.; Wilson Mantilla, J. A.
+        year: 2022
+        title: A sauropod from the Lower Jurassic La Quinta Formation (Dept. Cesar, Colombia) and the initial diversification of eusauropods at low latitudes
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "42"
+        issue: "1"
+        doi: 10.1080/02724634.2021.2077112
+        notes: Used the stem-based definition of Sauropoda, under which Pulanesaura is a sauropod.
     taxonomy:
       - Life
       - Animalia
@@ -148001,7 +148491,7 @@ genera:
     description: Ratchasimasaurus is a genus of iguanodontian ornithopod dinosaur from Early Cretaceous (Aptian stage) Khok Kruat Formation of Nakhon Ratchasima province in northeastern Thailand. The type and only species is R. suranareae, named after Thao Suranari, a 19th-century war heroine. It is diagnosed by a uniquely elongated, dorsoventrally compressed dentary ramus, though one study regarded the genus as a nomen dubium on the grounds that its characters are widespread in Styracosterna.
     dispute:
       summary: |
-        Ratchasimasaurus suranareae is diagnosed by an elongate, dorsoventrally compressed dentary ramus (Shibata and colleagues, 2011). Its position is debated between basal Styracosterna (Jones, 2026) and basal Hadrosauroidea (Madzia and colleagues, 2021).
+        Ratchasimasaurus suranareae is diagnosed by an elongate, dorsoventrally compressed dentary ramus (Shibata and colleagues, 2011), whose describers considered it a basal non-hadrosaurid iguanodontian. The one analysis that resolves it recovers it within Hadrosauroidea, paired with Proa (Madzia and colleagues, 2019).
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna, the least-inclusive clade these results agree on; nomen dubium.
@@ -148009,6 +148499,9 @@ genera:
           note: Retained as valid; the dentary autapomorphy is upheld by recent literature (Jones, 2026), with the nomen dubium view treated as a minority opinion.
         - date: 2026-10-09
           note: Status confirmed valid; the summary credits the diagnosis to Shibata and colleagues (2011) and drops an unsourced minority nomen dubium view.
+        - date: 2026-10-19
+          note: |
+            Summary credits the placement to the primaries; supersedes the reliance on Jones (2026).
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -148083,14 +148576,24 @@ genera:
         volume: "9"
         pages: e12362
         doi: 10.7717/peerj.12362
-        notes: Placed Ratchasimasaurus within basal Hadrosauroidea rather than Styracosterna
+        notes: Lists Ratchasimasaurus in Hadrosauroidea under the reference phylogeny of Madzia and colleagues (2019).
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats it as a valid styracosternan.
+      - id: madzia2019a
+        authors: Madzia, D.; Jagt, J. W. M.; Mulder, E. W. A.
+        year: 2019
+        title: Osteology, phylogenetic affinities and taxonomic status of the enigmatic late Maastrichtian ornithopod taxon Orthomerus dolloi (Dinosauria, Ornithischia)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "108"
+        pages: "104334"
+        doi: 10.1016/j.cretres.2019.104334
+        notes: Recovered Ratchasimasaurus within Hadrosauroidea, paired with Proa.
     taxonomy:
       - Life
       - Animalia
@@ -157978,14 +158481,14 @@ genera:
     described: 1998
   Siamodon:
     genus: Siamodon
-    parent: Hadrosauroidea
+    parent: Hadrosauriformes
     etymology: Named after Siam (the historical name for Thailand) where it was found, combined with Greek odon, "tooth" — derived from the country of origin
     pronunciation:
       phonetic: si-am-o-don
     description: Siamodon is an extinct genus of iguanodontian ornithopod dinosaur from Early Cretaceous deposits of northeastern Thailand.
     dispute:
       summary: |
-        Siamodon nimngami is a hadrosauroid diagnosed by maxillary characters and most similar to Probactrosaurus; recent work treats it as distinct from the contemporaneous Ratchasimasaurus (Jones, 2026). Norman (2015) earlier regarded it as a nomen dubium pending more material.
+        Siamodon nimngami was named for a maxilla from the Khok Kruat Formation and compared most closely with Probactrosaurus among advanced iguanodontians (Buffetaut and Suteethorn, 2011). Norman (2015) finds no autapomorphies in its diagnosis, treats it as a nomen dubium until more material is described, and suggests it may belong to Ratchasimasaurus, from the same formation; Poole (2022) notes that the two were named on non-overlapping material. In the one analysis that resolves it, it falls in a polytomy at the base of Hadrosauriformes, outside Hadrosauroidea (Madzia and colleagues, 2019).
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauroidea; nomen dubium.
@@ -157993,6 +158496,9 @@ genera:
           note: Retained as valid; the maxillary diagnosis is upheld by recent literature (Jones, 2026), with Norman's (2015) nomen dubium view treated as a minority opinion.
         - date: 2026-10-09
           note: Status confirmed disputed; a nomen dubium for Norman (2015), distinguished from other Thai iguanodontians by Shibata and colleagues (2015).
+        - date: 2026-10-19
+          note: |
+            Moved from Hadrosauroidea to Hadrosauriformes: the only analysis that resolves it places it outside Hadrosauroidea. Supersedes the 2026-07-14 reliance on Jones (2026).
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -158059,6 +158565,7 @@ genera:
         issue: 1-2
         pages: 51-62
         doi: 10.1016/j.annpal.2011.08.001
+        notes: Named Siamodon for a maxilla and compared it most closely with Probactrosaurus.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
@@ -158074,7 +158581,7 @@ genera:
         volume: "173"
         pages: 92-189
         doi: 10.1111/zoj.12193
-        notes: Considered Siamodon a nomen dubium pending more material.
+        notes: Considered Siamodon a nomen dubium pending more material, possibly referable to Ratchasimasaurus.
       - id: shibata2015a
         authors: Shibata, M.; Jintasakul, P.; Azuma, Y.; You, H. L.
         year: 2015
@@ -158086,6 +158593,26 @@ genera:
         pages: e0145904
         doi: 10.1371/journal.pone.0145904
         notes: Records a co-author's dispute over the type locality, holding it to be Ban Nong Rangka rather than Ban Saphan Hin.
+      - id: madzia2019a
+        authors: Madzia, D.; Jagt, J. W. M.; Mulder, E. W. A.
+        year: 2019
+        title: Osteology, phylogenetic affinities and taxonomic status of the enigmatic late Maastrichtian ornithopod taxon Orthomerus dolloi (Dinosauria, Ornithischia)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "108"
+        pages: "104334"
+        doi: 10.1016/j.cretres.2019.104334
+        notes: Recovered Siamodon in a polytomy at the base of Hadrosauriformes, outside Hadrosauroidea.
+      - id: poole2022a
+        authors: Poole, K. E.
+        year: 2022
+        title: Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality
+        journal: Palaeontologia Electronica
+        volume: "25"
+        issue: "3"
+        pages: a30
+        doi: 10.26879/702
+        notes: Excluded Siamodon and Ratchasimasaurus as fragmentary, noting that they were named on non-overlapping material.
     taxonomy:
       - Life
       - Animalia
@@ -158106,7 +158633,6 @@ genera:
       - Ankylopollexia
       - Styracosterna
       - Hadrosauriformes
-      - Hadrosauroidea
     authors: Buffetaut, E.; Suteethorn, V.
     described: 2011
   Siamosaurus:
@@ -187960,12 +188486,15 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Xinjiangovenator is known only from a lower hind limb (originally referred to the nomen dubium Phaedrolosaurus ilikensis). Rauhut and Xu (2005) tentatively referred it to Maniraptora, possibly close to Bagaraatan, but with low support, and Jones (2026) notes that its bone features are more suggestive of tyrannosauroids or megaraptorans. Given the sparse material it is placed conservatively at Coelurosauria incertae sedis.
+        Xinjiangovenator is known only from a lower hind limb, originally referred to the nomen dubium Phaedrolosaurus ilikensis. Rauhut and Xu (2005) recovered it within Maniraptora as the sister of Bagaraatan, with low support, but later works treat it as a basal coelurosaur not assignable to any established subclade (Turner and colleagues, 2012), and Foth and Rauhut (2026) recover it in an unresolved polytomy at the base of Coelurosauria.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); weakly supported maniraptoran versus tyrannosauroid/megaraptoran signals, fragmentary holotype.
         - date: 2026-10-09
           note: Status confirmed valid, following Rauhut and Xu (2005); the nomen dubium named in the summary is Phaedrolosaurus, not this genus.
+        - date: 2026-10-19
+          note: |
+            Summary limited to the analyses; the tyrannosauroid or megaraptoran suggestion, unsupported in the sources read, removed.
     etymology: Named after Xinjiang, the autonomous region of China where it was found, combined with Latin venator meaning 'hunter'; translates as 'Xinjiang hunter'
     pronunciation:
       phonetic: SHEEN-JEE-yon-go-VEN-uh-tuh
@@ -188046,7 +188575,7 @@ genera:
         issue: "1"
         pages: 107-118
         doi: 10.1671/0272-4634(2005)025[0107:tstdta]2.0.co;2
-        notes: Gives the holotype from Wuerho, Lianmugin Formation, and its age as "?Valanginian-Albian".
+        notes: Recovers it in Maniraptora as the sister of Bagaraatan; gives the holotype from Wuerho, Lianmugin Formation, "?Valanginian-Albian".
       - id: xu2018c
         authors: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L.
         year: 2018
@@ -188064,8 +188593,27 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: |
-          Illustrated by E. Viola.
+        notes: Reports the tentative maniraptoran referral.
+      - id: turner2012a
+        authors: Turner, A. H.; Makovicky, P. J.; Norell, M. A.
+        year: 2012
+        title: A Review of Dromaeosaurid Systematics and Paravian Phylogeny
+        journal: Bulletin of the American Museum of Natural History
+        volume: "371"
+        pages: 1-206
+        doi: 10.1206/748.1
+        notes: Lists Xinjiangovenator among small basal coelurosaurs not assignable to an established subclade.
+      - id: foth2026a
+        authors: Foth, C.; Rauhut, O. W. M.
+        year: 2026
+        title: Considerations on the taxonomy of Late Jurassic Avialae (Theropoda) from the Solnhofen Archipelago
+        journal: Fossil Record
+        publisher: Pensoft Publishers
+        volume: "29"
+        issue: "2"
+        pages: 731-758
+        doi: 10.3897/fr.29.200245
+        notes: Recovered Xinjiangovenator in the polytomy at the base of Coelurosauria.
     taxonomy:
       - Life
       - Animalia
