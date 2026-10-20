@@ -33,4 +33,4 @@
 
 - `eberth1993c`: Eberth, D. A. (1993). Depositional environments and facies transitions of dinosaur-bearing Upper Cretaceous redbeds at Bayan Mandahu (Inner Mongolia, People's Republic of China). *Canadian Journal of Earth Sciences* 30: 2196-2213.
 - `jerzykiewicz1993a`: Jerzykiewicz, T.; Currie, P. J.; Eberth, D. A.; Johnston, P. A.; Koster, E. H.; Zheng, J. J. (1993). Djadokhta Formation correlative strata in Chinese Inner Mongolia: an overview of the stratigraphy, sedimentary geology, and paleontology and comparisons with the type locality in the pre-Altai Gobi. *Canadian Journal of Earth Sciences* 30: 2180-2195. doi:10.1139/e93-190
-- `tan2016a`: Tan, Q. (2016). Research on dinosaur fauna and contemporary sedimentary environment in Bayan Mandahu, Inner Mongolia. Masters thesis, China University of Geosciences, Beijing.
+- `tan2016a`: Tan, Q. (2016). 内蒙古巴音满都呼地区恐龙生物群及同时代沉积环境研究 [Research on the dinosaur fauna and contemporary sedimentary environment of the Bayan Mandahu area, Inner Mongolia]. Masters thesis, China University of Geosciences, Beijing.

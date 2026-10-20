@@ -43,4 +43,4 @@
 
 ## Other references
 
-- `tan2016a`: Tan, Q. (2016). Research on dinosaur fauna and contemporary sedimentary environment in Bayan Mandahu, Inner Mongolia. Masters thesis, China University of Geosciences, Beijing.
+- `tan2016a`: Tan, Q. (2016). 内蒙古巴音满都呼地区恐龙生物群及同时代沉积环境研究 [Research on the dinosaur fauna and contemporary sedimentary environment of the Bayan Mandahu area, Inner Mongolia]. Masters thesis, China University of Geosciences, Beijing.
