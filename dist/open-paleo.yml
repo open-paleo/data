@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-21T18:31:48.322Z
+  built_at: 2026-10-21T19:18:46.179Z
   clade_count: 188
   genus_count: 1426
   license: CC-BY-4.0
@@ -12373,15 +12373,18 @@ genera:
     described: 1975
   Abrosaurus:
     genus: Abrosaurus
-    parent: Macronaria
+    parent: Eusauropoda
     placement: incertae sedis
     dispute:
       summary: |
-        Abrosaurus, originally described as a camarasaurid, is most often placed as Macronaria incertae sedis (Upchurch and colleagues, 2004; Jones, 2026); some analyses have allied it with basal eusauropods, but undescribed cranial material limits its resolution.
+        Abrosaurus was described as a camarasaurid (Ouyang, 1989) but has not been included in a phylogenetic analysis. Upchurch and colleagues (2004) provisionally regard it as a basal macronarian, Wilson (2005) lists it among basal eusauropods, and Peng and colleagues (2005) assign it to Mamenchisauridae; undescribed cranial material limits its resolution.
       history:
         - date: 2026-06-29
           note: |
             Moved from Mamenchisauridae to Macronaria incertae sedis following Jones (2026); finer placement within Macronaria remains unresolved.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Eusauropoda; its macronarian placement is provisional and untested.
     pronunciation:
       phonetic: AB-ro-SAWR-us
       ipa: /ˌæbroʊˈsɔːrəs/
@@ -12467,14 +12470,31 @@ genera:
         book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
         publisher: University of California Press, Berkeley
         pages: 259-322
-        notes: Sauropoda chapter placing Abrosaurus as Macronaria incertae sedis.
+        notes: Provisionally regards Abrosaurus as a basal macronarian.
       - id: jones2026b
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Abrosaurus as Macronaria incertae sedis.
+      - id: wilson2005a
+        authors: Wilson, J. A.
+        year: 2005
+        title: "Redescription of the Mongolian sauropod Nemegtosaurus mongoliensis Nowinski (Dinosauria: Saurischia) and comments on Late Cretaceous sauropod diversity"
+        journal: Journal of Systematic Palaeontology
+        volume: "3"
+        issue: "3"
+        pages: 283-318
+        doi: 10.1017/s1477201905001628
+        notes: Lists Abrosaurus among basal eusauropods.
+      - id: peng2005a
+        authors: Peng, G.; Ye, Y.; Gao, Y.; Shu, C.; Jiang, S.
+        year: 2005
+        title: Zìgòng dìqū zhū luó jì kǒnglóng dòngwù qún [Jurassic Dinosaur Faunas in Zigong]
+        publisher: People's Publishing House, Sichuan Publishing Group
+        pages: 1-236
+        notes: Assigns Abrosaurus to Mamenchisauridae.
     taxonomy:
       - Life
       - Animalia
@@ -12494,8 +12514,6 @@ genera:
       - Sauropoda
       - Gravisauria
       - Eusauropoda
-      - Neosauropoda
-      - Macronaria
     authors: Ouyang, H.
     described: 1989
   Abydosaurus:
@@ -21682,7 +21700,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Amygdalodon is a fragmentary early sauropod whose position is labile. Pol and Gomez (2022) recover it near the base of Sauropoda in a polytomy with Gongxianosaurus, outside Eusauropoda, and Jones (2026) likewise places it near the base of Sauropoda without assigning it to Gravisauria; older treatments regarded it as a basal eusauropod or cetiosaurid.
+        Amygdalodon is a fragmentary early sauropod whose position is labile. Pol and Gomez (2022) recover it near the base of Gravisauria, in a polytomy with Gongxianosaurus outside Eusauropoda, whereas Rauhut (2003) regarded it as a very basal eusauropod and earlier authors as a cetiosaurid.
       history:
         - date: 2026-06-29
           note: |
@@ -21784,7 +21802,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Places Amygdalodon near the base of Sauropoda.
       - id: nullo1975a
         authors: Nullo, F.; Proserpio, C.
         year: 1975
@@ -46062,7 +46080,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Long allied with diplodocoids, Cetiosauriscus is no longer regarded as a member of Diplodocoidea. Tschopp and colleagues (2015) recovered it outside Neosauropoda as a non-neosauropod eusauropod (near Omeisaurus) under implied weighting, though within Diplodocimorpha under equal weighting; the non-neosauropod eusauropod reading follows Moore and colleagues (2020) and is continued by later work (Jones, 2026). Its precise position among eusauropods is unresolved.
+        Long allied with diplodocoids, Cetiosauriscus is no longer regarded as a member of Diplodocoidea. Tschopp and colleagues (2015) recovered it outside Neosauropoda as a non-neosauropod eusauropod (near Omeisaurus) under implied weighting, though within Diplodocimorpha under equal weighting; Moore and colleagues (2020, 2023) recover it as a non-neosauropod eusauropod near Omeisaurus in most of their analyses. Its precise position among eusauropods is unresolved.
       history:
         - date: 2026-06-30
           note: |
@@ -47453,7 +47471,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Chebsaurus was erected within Cetiosauridae (Mahammed and colleagues, 2005), a referral its describers presented as untested pending a phylogenetic analysis. That analysis (Läng and Mahammed, 2010) recovered Cetiosauridae sensu Bonaparte (1986) as paraphyletic and placed Chebsaurus in an unresolved polytomy with Lapparentosaurus, Ferganasaurus and Cetiosaurus, referring the genus no further than Eusauropoda. Subsequent treatments follow that reading, listing it as a non-neosauropod eusauropod (Mannion and colleagues, 2019) or as a cetiosaurid only conditionally on the family being valid (Jones, 2026). No numerical analysis has recovered it within a monophyletic Cetiosauridae.
+        Chebsaurus was erected within Cetiosauridae (Mahammed and colleagues, 2005), a referral its describers presented as untested pending a phylogenetic analysis. That analysis (Läng and Mahammed, 2010) recovered Cetiosauridae sensu Bonaparte (1986) as paraphyletic and placed Chebsaurus in an unresolved polytomy with Lapparentosaurus, Ferganasaurus and Cetiosaurus, referring the genus no further than Eusauropoda. Subsequent treatments follow that reading, listing it as a non-neosauropod eusauropod (Mannion and colleagues, 2019). No numerical analysis has recovered it within a monophyletic Cetiosauridae.
       history:
         - date: 2026-08-04
           note: |
@@ -63954,7 +63972,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Dystrophaeus is a poorly known taxon whose long-standing diplodocoid identification has been rejected. Tschopp and colleagues (2015) consistently recovered it within Dicraeosauridae under implied weighting but found it too unstable to place under equal weighting, with constrained searches supporting dicraeosaurid and camarasaurid positions nearly equally; Foster and colleagues (2016) rule out a diplodocoid identity but leave a macronarian versus outside-Neosauropoda position unresolved, and Jones (2026) favors basal Macronaria or a pre-Neosauropoda position. Its candidate positions span non-neosauropod Eusauropoda to several neosauropod clades.
+        Dystrophaeus is a poorly known taxon whose long-standing diplodocoid identification has been rejected. Tschopp and colleagues (2015) consistently recovered it within Dicraeosauridae under implied weighting but found it too unstable to place under equal weighting, with constrained searches supporting dicraeosaurid and camarasaurid positions nearly equally; Foster and colleagues (2016) rule out a diplodocoid identity but leave a macronarian versus outside-Neosauropoda position unresolved. Its candidate positions span non-neosauropod Eusauropoda to several neosauropod clades.
       history:
         - date: 2026-06-29
           note: |
@@ -64049,7 +64067,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Favors basal Macronaria or a position outside Neosauropoda.
     taxonomy:
       - Life
       - Animalia
@@ -74708,15 +74726,18 @@ genera:
     described: 1972
   Galvesaurus:
     genus: Galvesaurus
-    parent: Titanosauriformes
+    parent: Eusauropoda
     placement: incertae sedis
     dispute:
       summary: |
-        Galvesaurus has been recovered as a non-neosauropod eusauropod within Turiasauria (Royo-Torres and colleagues, 2006, a placement favored by Mocho and colleagues, 2014) and as a basal titanosauriform or basal macronarian near the base of Titanosauriformes (Mannion and colleagues, 2017; Perez-Pueyo and colleagues, 2019; Jones, 2026). The more recent and dedicated analyses favor a basal titanosauriform position.
+        Galvesaurus has been recovered within Turiasauria, outside Neosauropoda (Royo-Torres and colleagues, 2006; Mocho and colleagues, 2014), but most later analyses recover it as a macronarian outside Titanosauriformes, as the sister of Titanosauriformes or a basal camarasauromorph (Carballido and colleagues, 2011; Mannion and colleagues, 2017; Gomez and colleagues, 2024; Zhang and colleagues, 2026). Pérez-Pueyo and colleagues (2019) instead recover it within Titanosauriformes, as a brachiosaurid with Lusotitan.
       history:
         - date: 2026-06-30
           note: |
             Moved from Brachiosauridae to Titanosauriformes incertae sedis following the recent consensus (Mannion and colleagues, 2017; Perez-Pueyo and colleagues, 2019; Jones, 2026); the turiasaurian alternative is noted.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Eusauropoda; analyses place it in Turiasauria, among basal macronarians or within Titanosauriformes.
     etymology: Galve lizard; named after Galve, the town in Spain where fossils were found, combined with Greek sauros (lizard)
     pronunciation:
       phonetic: GAL-vay-SOR-us
@@ -74824,7 +74845,7 @@ genera:
         issue: "4"
         pages: 875-916
         doi: 10.1111/zoj.12113
-        notes: Did not analyze Galvesaurus but favored its Turiasauria placement (Royo-Torres and colleagues) over the basal-macronarian alternative, in a Lourinhasaurus reassessment.
+        notes: Recovered Galvesaurus within Turiasauria on both of its matrices.
       - id: mannion2017a
         authors: Mannion, P. D.; Allain, R.; Moine, O.
         year: 2017
@@ -74834,14 +74855,14 @@ genera:
         volume: "5"
         pages: e3217
         doi: 10.7717/peerj.3217
-        notes: Recovered Galvesaurus as a basal titanosauriform/macronarian near Titanosauriformes' base.
+        notes: Recovered Galvesaurus as a macronarian, the sister of Titanosauriformes.
       - id: jones2026b
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Galvesaurus as a basal titanosauriform or macronarian.
       - id: pérez-pueyo2019a
         authors: Pérez-Pueyo, M.; Moreno-Azanza, M.; Barco, J. L.; Canudo, J. I.
         year: 2019
@@ -74851,7 +74872,39 @@ genera:
         issue: "3"
         pages: 375-392
         doi: 10.21701/bolgeomin.130.3.001
-        notes: Assessed the phylogenetic position of Galvesaurus herreroi.
+        notes: Recovered Galvesaurus as a brachiosaurid, the sister of Lusotitan.
+      - id: carballido2011a
+        authors: Carballido, J. L.; Rauhut, O. W. M.; Pol, D.; Salgado, L.
+        year: 2011
+        title: Osteology and phylogenetic relationships of Tehuelchesaurus benitezii (Dinosauria, Sauropoda) from the Upper Jurassic of Patagonia
+        journal: Zoological Journal of the Linnean Society
+        publisher: Wiley
+        volume: "163"
+        issue: "2"
+        pages: 605-662
+        doi: 10.1111/j.1096-3642.2011.00723.x
+        notes: Recovered Galvesaurus as a camarasauromorph, the sister of Tehuelchesaurus.
+      - id: gomez2024a
+        authors: Gomez, K. L.; Carballido, J. L.; Pol, D.
+        year: 2024
+        title: Cranial anatomy of Bagualia alba (Dinosauria, Eusauropoda) from the Early Jurassic of Patagonia and the implications for sauropod cranial evolution
+        journal: Journal of Systematic Palaeontology
+        volume: "22"
+        issue: "1"
+        pages: "2400471"
+        doi: 10.1080/14772019.2024.2400471
+        notes: Recovered Galvesaurus as a macronarian outside Titanosauriformes.
+      - id: zhang2026a
+        authors: Zhang, X. Q.; Wang, Y. M.; Wang, Z. J.; Wang, Y. C.; Wang, T.; Wang, G. F.; Zou, Y.; Dong, Q. X.; Su, X.; Jiang, H.; Wang, Y. J.; You, H. L.
+        year: 2026
+        title: "The first turiasaurian sauropod (Dinosauria: Eusauropoda) from East Asia"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press
+        volume: "206"
+        issue: "2"
+        article_number: zlaf201
+        doi: 10.1093/zoolinnean/zlaf201
+        notes: Recovered Galvesaurus within Macronaria in all four analyses.
     taxonomy:
       - Life
       - Animalia
@@ -74871,10 +74924,6 @@ genera:
       - Sauropoda
       - Gravisauria
       - Eusauropoda
-      - Neosauropoda
-      - Macronaria
-      - Camarasauromorpha
-      - Titanosauriformes
     authors: Barco, J. L.; Canudo, J. I.; Cuenca-Bescós, G.; Ruiz-Omeñaca, J. I.
     described: 2005
   Gandititan:
@@ -82264,14 +82313,18 @@ genera:
     described: 2026
   Haplocanthosaurus:
     genus: Haplocanthosaurus
-    parent: Diplodocoidea
+    parent: Neosauropoda
+    placement: incertae sedis
     dispute:
       summary: |
-        Haplocanthosaurus is most often recovered as the basalmost member of Diplodocoidea (Whitlock, 2011; Jones, 2026), lying outside Diplodocimorpha. The placement is weakly supported, and some analyses instead recover it as a basal neosauropod outside Diplodocoidea or as a non-neosauropod eusauropod; the conservative placement reflects the prevailing but unstable diplodocoid assignment.
+        Haplocanthosaurus is recovered as the earliest diplodocoid by some analyses (Whitlock, 2011; Tschopp and colleagues, 2015; Mannion and colleagues, 2019), but as a basal macronarian or an unplaced neosauropod outside Diplodocoidea by others (Läng and Mahammed, 2010; Carballido and colleagues, 2011; Britt and colleagues, 2017; Gomez and colleagues, 2024), and Mannion and colleagues (2011) recover it outside Neosauropoda in some of their trees. Its position is weakly supported throughout.
       history:
         - date: 2026-06-30
           note: |
             Retained at Diplodocoidea as a non-diplodocimorph diplodocoid following the prevailing view (Whitlock, 2011; Jones, 2026); a more basal neosauropod position recovered by some analyses is unresolved.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Neosauropoda; analyses split between Diplodocoidea and Macronaria.
     pronunciation:
       phonetic: hap-lo-KAN-tho-SAWR-us
     etymology: Simple spined lizard; from Greek haploos (simple), akantha (spine or thorn), and sauros (lizard)
@@ -82437,6 +82490,80 @@ genera:
         pages: 872-915
         doi: 10.1111/j.1096-3642.2010.00665.x
         notes: Recovered Haplocanthosaurus as the basalmost diplodocoid.
+      - id: tschopp2015a
+        authors: Tschopp, E.; Mateus, O.; Benson, R. B. J.
+        year: 2015
+        title: A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "3"
+        pages: e857
+        doi: 10.7717/peerj.857
+        notes: Recovered Haplocanthosaurus as the earliest diplodocoid under implied weights.
+      - id: mannion2019a
+        authors: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O.
+        year: 2019
+        title: "Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "185"
+        issue: "3"
+        pages: 784-909
+        doi: 10.1093/zoolinnean/zly068
+        notes: Recovered Haplocanthosaurus as a basal diplodocoid.
+      - id: läng2010a
+        authors: Läng, É.; Mahammed, F.
+        year: 2010
+        title: New anatomical data and phylogenetic relationships of Chebsaurus algeriensis (Dinosauria, Sauropoda) from the Middle Jurassic of Algeria
+        journal: Historical Biology
+        publisher: Taylor & Francis
+        volume: "22"
+        issue: 1-3
+        pages: 142-164
+        doi: 10.1080/08912960903515570
+        notes: Recovered Haplocanthosaurus as a basal macronarian, with Atlasaurus.
+      - id: carballido2011a
+        authors: Carballido, J. L.; Rauhut, O. W. M.; Pol, D.; Salgado, L.
+        year: 2011
+        title: Osteology and phylogenetic relationships of Tehuelchesaurus benitezii (Dinosauria, Sauropoda) from the Upper Jurassic of Patagonia
+        journal: Zoological Journal of the Linnean Society
+        publisher: Wiley
+        volume: "163"
+        issue: "2"
+        pages: 605-662
+        doi: 10.1111/j.1096-3642.2011.00723.x
+        notes: Recovered Haplocanthosaurus as a basal macronarian.
+      - id: britt2017a
+        authors: Britt, B. B.; Scheetz, R. D.; Whiting, M. F.; Wilhite, D. R.
+        year: 2017
+        title: Moabosaurus utahensis, n. gen., n. sp., a new sauropod from the Early Cretaceous (Aptian) of North America
+        journal: Contributions from the Museum of Paleontology, University of Michigan
+        volume: "32"
+        issue: "11"
+        pages: 189-243
+        url: https://hdl.handle.net/2027.42/136227
+        notes: Recovered Haplocanthosaurus in a basal neosauropod polytomy outside Diplodocoidea.
+      - id: gomez2024a
+        authors: Gomez, K. L.; Carballido, J. L.; Pol, D.
+        year: 2024
+        title: Cranial anatomy of Bagualia alba (Dinosauria, Eusauropoda) from the Early Jurassic of Patagonia and the implications for sauropod cranial evolution
+        journal: Journal of Systematic Palaeontology
+        volume: "22"
+        issue: "1"
+        pages: "2400471"
+        doi: 10.1080/14772019.2024.2400471
+        notes: Recovered Haplocanthosaurus as the earliest macronarian.
+      - id: mannion2011a
+        authors: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H.
+        year: 2011
+        title: "New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "10"
+        issue: "3"
+        pages: 521-551
+        doi: 10.1080/14772019.2011.595432
+        notes: Recovered Haplocanthosaurus variously as a basal diplodocoid, a macronarian, or a basal eusauropod across its most parsimonious trees.
     taxonomy:
       - Life
       - Animalia
@@ -82457,7 +82584,6 @@ genera:
       - Gravisauria
       - Eusauropoda
       - Neosauropoda
-      - Diplodocoidea
     authors: Hatcher, J. B.
     described: 1903
   Haplocheirus:
@@ -92481,11 +92607,14 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Iuticosaurus was erected for "Titanosaurus" valdensis and interpreted as an early titanosaur (Le Loeuff, 1993), but its caudal vertebrae are now regarded as those of an indeterminate titanosauriform (Mannion and colleagues, 2013; Jones, 2026).
+        Iuticosaurus is a nomen dubium. It was erected for "Titanosaurus" valdensis and interpreted as an early titanosaurid (Le Loeuff, 1993), but Wilson and Upchurch (2003) found that its validity "cannot be sustained", and Mannion and colleagues (2013) doubt the titanosaurian affinity of procoelous caudal vertebrae of its kind.
       history:
         - date: 2026-06-30
           note: |
             Retained at Titanosauriformes incertae sedis as an indeterminate, likely dubious taxon following Mannion and colleagues (2013) and Jones (2026).
+        - date: 2026-10-21
+          note: |
+            Status set to nomen dubium and diagnostic features dropped.
     pronunciation:
       phonetic: YOO-ti-ko-SAWR-us
     etymology: Named after the Jutes (Iuti in Latin), the Germanic people associated with the Isle of Wight; meaning "Jute lizard"
@@ -92494,11 +92623,6 @@ genera:
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Deeply procoelous caudal vertebrae with posterior ridge on lateral face of centrum
-      - Promontory at base of neural arch formed by rising centrum from posterior ridge
-      - Extremely developed postzygapophyses extending to end of centrum
-      - Neural arch anteriorly placed on caudal centra
     appearance:
       integument: scaled
       evidence: inferred
@@ -92513,7 +92637,7 @@ genera:
     species:
       - name: Iuticosaurus valdensis
         etymology: From 'Wealden', for the Lower Cretaceous Wealden strata of the Isle of Wight that yielded the type material.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -92566,7 +92690,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Iuticosaurus as an indeterminate titanosauriform.
       - id: mannion2013a
         authors: Mannion, P. D.; Upchurch, P.; Barnes, R. N.; Mateus, O.
         year: 2013
@@ -92577,7 +92701,7 @@ genera:
         issue: "1"
         pages: 98-206
         doi: 10.1111/zoj.12029
-        notes: Bearing on the titanosaurian affinities of Iuticosaurus.
+        notes: Doubts the titanosaurian affinity of procoelous caudals such as those of Iuticosaurus.
       - id: wilson2003b
         authors: Wilson, J. A.; Upchurch, P.
         year: 2003
@@ -92588,7 +92712,7 @@ genera:
         issue: "3"
         pages: 125-160
         doi: 10.1017/S1477201903001044
-        notes: Refers the lectotype's Wealden beds to the Wessex Formation; Huene and Le Loeuff give only the informal facies name.
+        notes: Refers the lectotype's Wealden beds to the Wessex Formation, and regards the name as a nomen dubium.
     taxonomy:
       - Life
       - Animalia
@@ -118939,7 +119063,7 @@ genera:
     parent: Turiasauria
     dispute:
       summary: |
-        Moabosaurus was originally described as a basal titanosauriform (macronarian) neosauropod (Britt and colleagues, 2017), but most subsequent analyses recover it within Turiasauria, closely related to Mierasaurus (Royo-Torres and colleagues, 2017; Mannion and colleagues, 2019; Zhang and colleagues, 2026; Jones, 2026).
+        Moabosaurus was originally described as a basal titanosauriform (macronarian) neosauropod (Britt and colleagues, 2017), but most subsequent analyses recover it within Turiasauria, closely related to Mierasaurus (Royo-Torres and colleagues, 2017; Mannion and colleagues, 2019; Zhang and colleagues, 2026).
       history:
         - date: 2026-06-29
           note: |
@@ -150247,7 +150371,7 @@ genera:
     parent: Gravisauria
     dispute:
       summary: |
-        Rhoetosaurus is recovered as a non-eusauropodan gravisaurian, possibly the most derived of all known non-eusauropods (Nair and Salisbury, 2012), a placement followed by Jones (2026). Some earlier treatments allied it with basal eusauropods or the historical Cetiosauridae.
+        Rhoetosaurus is recovered as a non-eusauropodan gravisaurian, possibly the most derived of all known non-eusauropods (Nair and Salisbury, 2012). Some earlier treatments allied it with basal eusauropods or the historical Cetiosauridae.
       history:
         - date: 2026-06-29
           note: |
@@ -164331,7 +164455,7 @@ genera:
     parent: Eusauropoda
     dispute:
       summary: |
-        Spinophorosaurus is recovered either as a basal eusauropod in a small clade with Bagualia, Patagosaurus, and Nebulasaurus (Gomez and colleagues, 2024; Pol and Gomez, 2022) or as the sister taxon to Eusauropoda lying just outside the clade (Remes and colleagues, 2009; Holwerda and Pol, 2018). Jones (2026) places it within Eusauropoda with explicit caveats.
+        Spinophorosaurus is recovered as a basal eusauropod, with Volkheimeria as the sister of Barapasaurus (Holwerda and Pol, 2018) or in a small clade with Bagualia, Patagosaurus and Nebulasaurus (Pol and Gomez, 2022; Gomez and colleagues, 2024). Its describers instead recovered it as the sister taxon of Eusauropoda, just outside the clade (Remes and colleagues, 2009).
       history:
         - date: 2026-06-29
           note: |
@@ -172022,7 +172146,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Tehuelchesaurus was originally interpreted as a camarasauromorph, a position supported by Carballido and Sander (2013), the camarasaurid analysis of Mocho and colleagues (2014), and Mannion and colleagues (2013), and treated as the traditional view by Jones (2026). More recent analyses instead pull it out of Macronaria: Mannion and colleagues (2019) recover it in Turiasauria under equal weighting (but a macronarian under implied weighting), and Mocho and colleagues (2023) recover it outside Macronaria as a basal eusauropod-grade taxon.
+        Tehuelchesaurus was originally interpreted as a camarasauromorph, a position supported by Carballido and Sander (2013), the camarasaurid analysis of Mocho and colleagues (2014), and Mannion and colleagues (2013). More recent analyses instead pull it out of Macronaria: Mannion and colleagues (2019) recover it in Turiasauria under equal weighting (but a macronarian under implied weighting), and Mocho and colleagues (2023) recover it outside Macronaria as a basal eusauropod-grade taxon.
       history:
         - date: 2026-06-30
           note: |
