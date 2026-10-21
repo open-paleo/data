@@ -1,5 +1,20 @@
 # *Abrosaurus*
 
+## Is *Abrosaurus* a macronarian?
+
+*2026-10-21*
+
+**Conclusion.** Not established; it sits at Eusauropoda incertae sedis. No phylogenetic analysis has included it, and the published opinions range from basal macronarian to mamenchisaurid. Governs `parent: Eusauropoda`, `placement: incertae sedis` and the dispute on [*Abrosaurus dongpoi*](../../../genera/A/Abrosaurus.yml).
+
+**Evidence.**
+- upchurch2004a, pp. 305–306: three characters "are strongly indicative of macronarian affinities. More information is needed before a definitive referral can be made", and "for the time being we regard Abrosaurus as a basal member of Macronaria".
+- mannion2019a, p. 864: *Abrosaurus* has not been included in a phylogenetic analysis.
+
+**Ruled out.**
+- *Macronaria as the parent.* The referral is provisional and untested, and Wilson (2005) and Peng and colleagues (2005) place it elsewhere among eusauropods.
+
+**Open.** Its position once its cranial material is described and analysed.
+
 ## What does Ouyang's "Lower Jurassic Xiaximiao Fm." give for *Abrosaurus dongpoi*?
 
 *2026-08-11*
@@ -19,6 +34,12 @@
 
 ## References
 
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
+- `mannion2019a`: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O. (2019). Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution. *Zoological Journal of the Linnean Society* 185(3): 784-909. doi:10.1093/zoolinnean/zly068
 - `ouyang1989a`: Ouyang, H. (1989). [A new sauropod from Dashanpu, Zigong Co., Sichuan Province (Abrosaurus dongpoensis gen. et sp. nov.)]. *Zigong Dinosaur Museum Newsletter* 2: 10-14.
 - `lucas2001b`: Lucas, S. G. (2001). Chinese Fossil Vertebrates. Columbia University Press, New York. doi:10.7312/luca08482
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
+
+## Other references
+
+- `wilson2005a`: Wilson, J. A. (2005). Redescription of the Mongolian sauropod Nemegtosaurus mongoliensis Nowinski (Dinosauria: Saurischia) and comments on Late Cretaceous sauropod diversity. *Journal of Systematic Palaeontology* 3(3): 283-318. doi:10.1017/s1477201905001628
+- `peng2005a`: Peng, G.; Ye, Y.; Gao, Y.; Shu, C.; Jiang, S. (2005). Zìgòng dìqū zhū luó jì kǒnglóng dòngwù qún [Jurassic Dinosaur Faunas in Zigong]. People's Publishing House, Sichuan Publishing Group.
