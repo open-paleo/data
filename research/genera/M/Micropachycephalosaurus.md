@@ -1,5 +1,21 @@
 # *Micropachycephalosaurus*
 
+## Is *Micropachycephalosaurus* a marginocephalian?
+
+*2026-10-21*
+
+**Conclusion.** Yes; it sits at Marginocephalia incertae sedis. Every analysis that includes it places it within Marginocephalia, though they disagree between ceratopsian and pachycephalosaurian positions. Governs `parent: Marginocephalia`, `placement: incertae sedis` and the dispute on [*Micropachycephalosaurus hongtuyanensis*](../../../genera/M/Micropachycephalosaurus.yml).
+
+**Evidence.**
+- butler2009b, p. 75: it "cannot be assigned beyond the level of Cerapoda incertae sedis"; p. 69: Butler and colleagues (2008) grouped it "with basal ceratopsians rather than pachycephalosaurs".
+- butler2011a, Fig. 10, p. 680: within Marginocephalia, in an unresolved basal polytomy with *Chaoyangsaurus*, a ceratopsian clade and a pachycephalosaur clade.
+- fonseca2024a, p. 32: it "remains a pachycephalosaur under all results".
+
+**Ruled out.**
+- *Cerapoda as the parent.* The redescription found no unambiguous synapomorphies for a narrower placement, but no analysis places it outside Marginocephalia.
+
+**Open.** Whether it is a ceratopsian or a pachycephalosaur.
+
 ## Which formation of the Wangshi Group is the Micropachycephalosaurus holotype from?
 
 *2026-08-30*
@@ -34,8 +50,14 @@
 
 ## References
 
+- `butler2009b`: Butler, R. J.; Zhao, Q. (2009). The small-bodied ornithischian dinosaurs Micropachycephalosaurus hongtuyanensis and Wannanosaurus yansiensis from the Late Cretaceous of China. *Cretaceous Research* 30(1): 63-77. doi:10.1016/j.cretres.2008.03.002
+- `butler2011a`: Butler, R. J.; Jin, L.; Chen, J.; Godefroit, P. (2011). The postcranial osteology and phylogenetic position of the small ornithischian dinosaur Changchunsaurus parvus from the Quantou Formation (Cretaceous: Aptian–Cenomanian) of Jilin Province, north-eastern China. *Palaeontology* 55(3): 667-683. doi:10.1111/j.1475-4983.2011.01046.x
+- `fonseca2024a`: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T. (2024). A comprehensive phylogenetic analysis on early ornithischian evolution. *Journal of Systematic Palaeontology* 22: 2346577. doi:10.1080/14772019.2024.2346577
 - `dong1978b`: Dong, Z. (1978). [A new genus of Pachycephalosauria from Laiyang, Shantung]. *Vertebrata PalAsiatica* 16(4): 225-228.
 - `zhang2019a`: Zhang, J.; Wang, X.; Wang, Q.; Jiang, S.; Cheng, X.; Li, N.; Qiu, R. (2019). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of Shandong, China. *Anais da Academia Brasileira de Ciências* 91(suppl 2). doi:10.1590/0001-3765201720160920
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `butler2009b`: Butler, R. J.; Zhao, Q. (2009). The small-bodied ornithischian dinosaurs Micropachycephalosaurus hongtuyanensis and Wannanosaurus yansiensis from the Late Cretaceous of China. *Cretaceous Research* 30(1): 63-77. doi:10.1016/j.cretres.2008.03.002
 - `sullivan2006a`: Sullivan, R. M. (2006). A taxonomic review of the Pachycephalosauridae (Dinosauria: Ornithischia). In *Late Cretaceous Vertebrates from the Western Interior*, pp. 348-365.
+
+## Other references
+
+- `butler2008b`: Butler, R. J.; Upchurch, P.; Norman, D. B. (2008). The phylogeny of the ornithischian dinosaurs. *Journal of Systematic Palaeontology* 6(1): 1-40. doi:10.1017/S1477201907002271
