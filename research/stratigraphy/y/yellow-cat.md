@@ -1,5 +1,21 @@
 # Yellow Cat
 
+## Do Kirkland and Madsen's 125–120 Ma and Mori's "Early Aptian" put the member in the Aptian?
+
+*2026-10-21*
+
+**Conclusion.** No. Both repeat the pattern the 2026-10-07 entry rejected. Kirkland and Madsen's (2007) figures are estimates fitted to the fauna, and Mori's (2009) stage is an older chart's label for maximum depositional ages. Governs `stages: [Berriasian, Valanginian, Hauterivian, Barremian]` on [Yellow Cat](../../../stratigraphy/y/yellow-cat.yml), unchanged.
+
+**Evidence.**
+- kirkland2007a, p. 9: "The dinosaurs, together with pollen and charophytes (green algae), suggest that the Yellow Cat Member rocks are approximately 125-120 million years old"; the sentence names no stage. p. 6, Fig. 4 (modified after Kirkland and colleagues, 1999): the member is plotted in the Barremian, with a query above it in the lower Aptian.
+- mori2009a, p. 27: "the Yellow Cat and Poison Strip Members are 124 to 122 M old"; p. 30: "125 to 121 Ma (Early Aptian)", offered as preliminary age brackets from detrital zircon maximum ages such as 121.8 ± 2.2 Ma at Crystal Geyser (pp. 13–14).
+
+**Ruled out.**
+- *Aptian from the 120 Ma end of Kirkland and Madsen's range.* On the ICS chart v2024/12 (Aptian base 121.4 Ma) 120 Ma is Aptian, but the number is attached to a faunal, pollen and charophyte correlation rather than measured. CONTRIBUTING places a bare number on the current chart only when the number is the measurement. The paper's own chart queries the Aptian, and a query adds no stage.
+- *Aptian from Mori's "Early Aptian".* The ages are maxima, which are limits rather than ages, and they are Barremian on the current chart except at the very top of the bracket. Mori's work is also a thesis, which never carries a value alone (research/methods.md).
+
+**Open.** Nothing.
+
 ## Does the Yellow Cat Member reach the Aptian?
 
 *2026-10-07*
@@ -35,11 +51,12 @@
 
 ## References
 
+- `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
+- `mori2009a`: Mori, H. (2009). Dinosaurian faunas of the Cedar Mountain Formation and LA-ICP-MS detrital zircon ages for three stratigraphic sections. Masters thesis, Brigham Young University.
 - `joeckel2019a`: Joeckel, R. M.; Ludvigson, G. A.; Möller, A.; Hotton, C. L.; Suarez, M. B.; Suarez, C. A.; Sames, B.; Kirkland, J. I.; Hendrix, B. (2019). Chronostratigraphy and terrestrial palaeoclimatology of Berriasian–Hauterivian strata of the Cedar Mountain Formation, Utah, USA. *Geological Society, London, Special Publications* 498(1): 75-100. doi:10.1144/SP498-2018-133
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `joeckel2023a`: Joeckel, R. M.; Suarez, C. A.; McLean, N. M.; Möller, A.; Ludvigson, G. A.; Suarez, M. B.; Kirkland, J. I.; Andrew, J.; Kiessling, S.; Hatzell, G. A. (2023). Berriasian–Valanginian geochronology and carbon-isotope stratigraphy of the Yellow Cat Member, Cedar Mountain Formation, eastern Utah, USA. *Geosciences* 13(2): 32. doi:10.3390/geosciences13020032
 - `senter2012b`: Senter, P.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S.; Toth, N. (2012). New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail. *PLoS ONE* 7(5): e36790. doi:10.1371/journal.pone.0036790
-- `mori2009a`: Mori, H. (2009). Dinosaurian faunas of the Cedar Mountain Formation and LA-ICP-MS detrital zircon ages for three stratigraphic sections. Masters thesis, Brigham Young University.
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `britt2017a`: Britt, B. B.; Scheetz, R. D.; Whiting, M. F.; Wilhite, D. R. (2017). Moabosaurus utahensis, n. gen., n. sp., a new sauropod from the Early Cretaceous (Aptian) of North America. *Contributions from the Museum of Paleontology, University of Michigan* 32(11): 189-243.
 - `eberth2006a`: Eberth, D. A.; Britt, B. B.; Scheetz, R.; Stadtman, K. L.; Brinkman, D. B. (2006). Dalton Wells: geology and significance of debris-flow-hosted dinosaur bonebeds in the Cedar Mountain Formation (Lower Cretaceous) of eastern Utah, USA. *Palaeogeography, Palaeoclimatology, Palaeoecology* 236(3): 217-245. doi:10.1016/j.palaeo.2005.11.020
