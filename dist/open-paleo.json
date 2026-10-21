@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-21T00:37:38.275Z",
+    "built_at": "2026-10-21T05:04:36.776Z",
     "clade_count": 188,
     "genus_count": 1426,
     "license": "CC-BY-4.0",
@@ -94862,15 +94862,6 @@
     "Gannansaurus": {
       "genus": "Gannansaurus",
       "parent": "Somphospondyli",
-      "dispute": {
-        "summary": "Gannansaurus is known from very limited material and was placed within Somphospondyli, allied to Euhelopus, by its describers (Lü and colleagues, 2013). Jones (2026), citing similar anatomy in later-described titanosaurs, instead considers it most likely a titanosaur.\n",
-        "history": [
-          {
-            "date": "2026-06-30",
-            "note": "Placed conservatively at Somphospondyli following the original description; the titanosaurian alternative (Jones, 2026) is noted.\n"
-          }
-        ]
-      },
       "etymology": "Gannan lizard; named after the Gannan region (Ganzhou Basin) of Jiangxi Province, China, combined with Greek sauros (lizard)",
       "pronunciation": {
         "phonetic": "ga-nan-SOR-us"
@@ -94957,7 +94948,8 @@
           "volume": "87",
           "issue": "3",
           "pages": "678-685",
-          "doi": "10.1111/1755-6724.12079"
+          "doi": "10.1111/1755-6724.12079",
+          "notes": "Named Gannansaurus and assigned it to Somphospondyli, closest to Euhelopus, on vertebral characters without an analysis."
         },
         {
           "id": "jones2026b",
@@ -94966,7 +94958,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Sauropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Suggests Gannansaurus is a titanosaur, by comparison with later-described material."
         },
         {
           "id": "mo2023a",
@@ -94979,7 +94971,7 @@
           "issue": "11",
           "pages": "2443-2457",
           "doi": "10.1080/08912963.2023.2259413",
-          "notes": "Places the Jiangxititan holotype at Tankou Town in Nankang, about five kilometers from Longling Town, separating the two localities."
+          "notes": "Places the Jiangxititan holotype about five kilometers from Longling Town, and recovers Gannansaurus in a basal titanosauriform polytomy."
         }
       ],
       "taxonomy": [
@@ -136044,21 +136036,12 @@
     },
     "Lingyuanosaurus": {
       "genus": "Lingyuanosaurus",
-      "parent": "Therizinosauria",
+      "parent": "Therizinosauroidea",
       "pronunciation": {
         "phonetic": "ling-YWEN-oh-SAWR-us"
       },
       "etymology": "Named for the county-level city of Lingyuan in Liaoning Province, China, where it was discovered, combined with Ancient Greek 'sauros' meaning 'lizard'; the specific name sihedangensis also references the discovery locality, the town of Sihedang.",
       "description": "Lingyuanosaurus is a genus of therizinosaurian theropod from the Early Cretaceous of Liaoning Province, China. The type and only species is L. sihedangensis. It was uncovered within one of the formations that make up the Jehol biota, although the exact geological formation — and therefore also its precise geological age — is unknown.",
-      "dispute": {
-        "summary": "Lingyuanosaurus is a transitional therizinosaur whose precise position is weakly resolved. Its describers (Yao and colleagues, 2019) recovered it within Therizinosauroidea, in an intermediate position between early-diverging genera such as Beipiaosaurus and later therizinosaurs, but support was low (a Bremer support of 1) and only a small fraction of the character matrix could be scored for the taxon. The Princeton Encyclopedia (Jones, 2026) instead treats it as a basal member of Therizinosauria, most closely related to Jianchangosaurus and Beipiaosaurus. It is placed conservatively at Therizinosauria.\n",
-        "history": [
-          {
-            "date": "2026-07-01",
-            "note": "Placed at Therizinosauria; Yao and colleagues (2019) recover it within Therizinosauroidea, but the position is weakly supported and Jones (2026) treats it as a basal therizinosaurian.\n"
-          }
-        ]
-      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -136143,7 +136126,8 @@
           "volume": "9",
           "issue": "5026",
           "pages": "5026:1-12",
-          "doi": "10.1038/s41598-019-41560-z"
+          "doi": "10.1038/s41598-019-41560-z",
+          "notes": "Named Lingyuanosaurus and recovered it within Therizinosauroidea, more derived than Beipiaosaurus, with low support."
         },
         {
           "id": "jones2026c",
@@ -136152,7 +136136,32 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Theropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Places Lingyuanosaurus after Beipiaosaurus among early therizinosaurs."
+        },
+        {
+          "id": "kobayashi2022a",
+          "authors": "Kobayashi, Y.; Takasaki, R.; Fiorillo, A. R.; Chinzorig, T.; Hikida, Y.",
+          "year": 2022,
+          "title": "New therizinosaurid dinosaur from the marine Osoushinai Formation (Upper Cretaceous, Japan) provides insight for function and evolution of therizinosaur claws",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "12",
+          "issue": "1",
+          "doi": "10.1038/s41598-022-11063-5",
+          "notes": "Recovered Lingyuanosaurus more derived than Beipiaosaurus, as in Yao and colleagues (2019)."
+        },
+        {
+          "id": "liao2026a",
+          "authors": "Liao, C. C.; Freimuth, W. J.; Zanno, L. E.; Xu, X.",
+          "year": 2026,
+          "title": "A new therizinosaur from the Early Cretaceous Jehol Biota and ecomorphological patterns among early therizinosaurians",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "24",
+          "issue": "2",
+          "pages": "2710287",
+          "doi": "10.1080/14772019.2026.2710287",
+          "notes": "Recovered Lingyuanosaurus within Therizinosauroidea, more derived than Beipiaosaurus."
         }
       ],
       "taxonomy": [
@@ -136173,7 +136182,8 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptoriformes",
-        "Therizinosauria"
+        "Therizinosauria",
+        "Therizinosauroidea"
       ],
       "authors": "Yao, X.; Liao, C. C.; Sullivan, C.; Xu, X.",
       "described": 2019
@@ -137890,11 +137900,15 @@
       "genus": "Lophostropheus",
       "parent": "Coelophysoidea",
       "dispute": {
-        "summary": "Lophostropheus airelensis is recovered within Coelophysoidea as sister to Coelophysidae by its describers (Ezcurra and Cuny, 2007) but grouped with the stem-averostran dilophosaur grade by Jones (2026).\n",
+        "summary": "Lophostropheus airelensis is recovered within Coelophysoidea as the sister of Coelophysidae by its describers (Ezcurra and Cuny, 2007) and at the base of Coelophysoidea by Ezcurra (2012), while Baron (2024) recovers it as the sister of Liliensternus in an unresolved polytomy at the base of Neotheropoda, with Dilophosaurus, the coelophysids and Averostra.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed at Coelophysoidea following the dedicated systematic revision.\n"
+          },
+          {
+            "date": "2026-10-20",
+            "note": "Alternative credited to Baron (2024).\n"
           }
         ]
       },
@@ -137993,7 +138007,8 @@
           "volume": "27",
           "issue": "1",
           "pages": "73-86",
-          "doi": "10.1671/0272-4634(2007)27[73:tclagn]2.0.co;2"
+          "doi": "10.1671/0272-4634(2007)27[73:tclagn]2.0.co;2",
+          "notes": "Named Lophostropheus and recovered it as the sister of Coelophysidae."
         },
         {
           "id": "jones2026c",
@@ -138002,7 +138017,29 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Theropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Places Lophostropheus close to Dilophosaurus."
+        },
+        {
+          "id": "ezcurra2012a",
+          "authors": "Ezcurra, M. D.",
+          "year": 2012,
+          "title": "Phylogenetic analysis of Late Triassic–Early Jurassic neotheropod dinosaurs: implications for the early theropod radiation",
+          "book": "Journal of Vertebrate Paleontology, 72nd Annual Meeting",
+          "pages": "91",
+          "notes": "Recovered Lophostropheus at the base of Coelophysoidea."
+        },
+        {
+          "id": "baron2024a",
+          "authors": "Baron, M. G.",
+          "year": 2024,
+          "title": "A new name for old bones: A reassessment of Early Jurassic theropod remains from Dorset, England",
+          "journal": "Palaeontologia Electronica",
+          "publisher": "Coquina Press",
+          "volume": "27",
+          "issue": "1",
+          "pages": "1-12",
+          "doi": "10.26879/1346",
+          "notes": "Recovered Lophostropheus as the sister of Liliensternus in a basal neotheropod polytomy."
         }
       ],
       "taxonomy": [
