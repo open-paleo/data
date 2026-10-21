@@ -1,5 +1,21 @@
 # *Qantassaurus*
 
+## Is *Qantassaurus* an elasmarian?
+
+*2026-10-20*
+
+**Conclusion.** Not shown; it sits at Ornithopoda incertae sedis. No analysis recovers it within Elasmaria: one leaves it in a polytomy of Gondwanan ornithopods and another prunes it as a wildcard, suggesting only that its teeth resemble an elasmarian's. Governs `parent: Ornithopoda`, `placement: incertae sedis` and the dispute on [*Qantassaurus intrepidus*](../../../genera/Q/Qantassaurus.yml).
+
+**Evidence.**
+- rich1999b, p. 167: named among "hypsilophodontid dinosaurs".
+- madzia2017a, p. 6: *Burianosaurus* "situated in a polytomy along with eight Gondwanan ornithopods", *Qantassaurus* among them, outside Iguanodontia.
+- herne2019a, p. 573: "Iterative PCR of the IW MPTs also identified Q. intrepidus and Diluvicursor pickeringi as wildcard taxa"; pp. 578–579: comparisons of the dentary teeth "suggest that Q. intrepidus might be an elasmarian".
+
+**Ruled out.**
+- *Elasmaria as the parent.* No analysis recovers it there.
+
+**Open.** Its position in an analysis that retains it.
+
 ## Which printed coordinate is the holotype's?
 
 *2026-09-02*
@@ -18,4 +34,5 @@
 ## References
 
 - `rich1999b`: Rich, T. H.; Vickers-Rich, P. (1999). The Hypsilophodontidae from southeastern Australia. *Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs* 15: 167-180.
+- `madzia2017a`: Madzia, D.; Boyd, C. A.; Mazuch, M. (2017). A basal ornithopod dinosaur from the Cenomanian of the Czech Republic. *Journal of Systematic Palaeontology* 16(11): 967-979. doi:10.1080/14772019.2017.1371258
 - `herne2019a`: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M. (2019). New small-bodied ornithopods (Dinosauria, Neornithischia) from the Early Cretaceous Wonthaggi Formation (Strzelecki Group) of the Australian-Antarctic rift system, with revision of Qantassaurus intrepidus Rich and Vickers-Rich, 1999. *Journal of Paleontology* 93(3): 543-584. doi:10.1017/jpa.2018.95
