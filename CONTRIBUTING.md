@@ -110,6 +110,11 @@ and any future placement change.
   `placement: incertae sedis`. The rule above picks X; the flag records whether
   the agreement goes any further. A nomen dubium parented at the broadest node
   its material supports therefore carries the flag.
+- **The children of a clade are unordered.** The tree holds only named clades,
+  as in a taxobox; it has no unnamed nodes. Listing several subclades and
+  genera under one clade says nothing about which of them are closest to each
+  other. Finer relationships within a clade go in `dispute:` prose and
+  reference notes, not in the tree.
 - **Adding a subclade is a claim about its parent's genera.** Under the rule
   above, a new clade under X places every unflagged genus at X outside it. When
   adding one, review the genera directly under X: move its members into the new
