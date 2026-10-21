@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-21T21:06:15.437Z
+  built_at: 2026-10-21T21:38:22.582Z
   clade_count: 188
   genus_count: 1426
   license: CC-BY-4.0
@@ -57,12 +57,12 @@ tree:
                                               Velociraptorinae: {}
                                               Saurornitholestinae: {}
                                             Unenlagiinae: {}
-                                            Halszkaraptorinae: {}
                                           Troodontidae:
                                             Troodontinae: {}
                                             Sinovenatorinae: {}
                                             Jinfengopteryginae: {}
                                         Avialae: {}
+                                        Halszkaraptorinae: {}
                                         Anchiornithidae: {}
                                     Oviraptorosauria:
                                       Caudipterygidae: {}
@@ -5010,8 +5010,6 @@ clades:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     type_genus: Halszkaraptor
     described: 2017
@@ -5069,7 +5067,18 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Groups Halszkaraptorinae with Unenlagiinae as Unenlagiidae.
+        notes: Treats Halszkaraptorinae with Unenlagiinae as Unenlagiidae.
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+        notes: Recovered Halszkaraptorinae with Unenlagiinae closer to birds than to dromaeosaurids and troodontids.
   Herrerasauria:
     description: |
       Herrerasauria is a clade of carnivorous dinosaurs from the Late Triassic, among the oldest dinosaurs known, first appearing roughly 233 million years ago during the Carnian stage. Its best-known members come from South America, including Herrerasaurus and Staurikosaurus of Argentina and Brazil, though possible relatives have also been recovered in North America, Africa, and perhaps other continents. Most were small to mid-sized predators, typically no more than about 4 meters long. Their anatomy blends primitive and derived features: they only superficially resemble later theropods and are not thought to be ancestral to any later dinosaur group. Distinctive traits include a hip socket that is only partly open, just two sacral vertebrae (the fewest of any dinosaur), and a hinged lower jaw. Their exact position on the dinosaur family tree remains debated, with analyses variously placing them as basal saurischians that diverged before the split between theropods and sauropodomorphs, or as early theropods.
@@ -26426,7 +26435,7 @@ genera:
     parent: Avialae
     dispute:
       summary: |
-        Archaeopteryx is traditionally the basalmost avialan (Turner and colleagues, 2012; Pei and colleagues, 2020; Jones, 2026), but a number of analyses instead recover it among the basal deinonychosaurs, close to the anchiornithids and troodontids (Xu and colleagues, 2011; Godefroit and colleagues, 2013; Hartman and colleagues, 2019). It is placed at Avialae following the prevailing recent view.
+        Archaeopteryx is traditionally the basalmost avialan (Turner and colleagues, 2012), or an avialan just crownward of the anchiornithines (Pei and colleagues, 2020), but a number of analyses instead recover it among the basal deinonychosaurs, close to the anchiornithids and troodontids (Xu and colleagues, 2011; Godefroit and colleagues, 2013; Hartman and colleagues, 2019). It is placed at Avialae following the prevailing recent view.
       history:
         - date: 2026-07-01
           note: Retained at Avialae following the prevailing view, with the competing basal-deinonychosaur hypothesis recorded.
@@ -56906,7 +56915,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Daurlong is a short-armed Jehol dromaeosaurid recovered by its describers in a clade with Tianyuraptor and Zhenyuanlong, placed crownward of Microraptorinae and stemward of Eudromaeosauria (Wang and colleagues, 2022; Jones, 2026). This "short-armed" grouping is weakly supported and not recovered by all analyses, so it is placed at Dromaeosauridae incertae sedis.
+        Daurlong is a short-armed Jehol dromaeosaurid recovered by its describers in a clade with Tianyuraptor and Zhenyuanlong, crownward of Microraptorinae and stemward of Eudromaeosauria (Wang and colleagues, 2022), a grouping Wang and colleagues (2026) recover again. The relationships of this clade are weakly supported, and Wang and colleagues (2023) do not recover it, so Daurlong is placed at Dromaeosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal short-armed-dromaeosaurid grouping with Tianyuraptor and Zhenyuanlong weakly supported.
@@ -57018,6 +57027,17 @@ genera:
         pages: 1142-1145
         doi: 10.1111/1755-6724.14348
         notes: Dates the tuff of the Pigeon Hill fossil-bearing bed at 121.23 ± 0.74 Ma by zircon U-Pb.
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+        notes: Recovered Daurlong with Zhenyuanlong and Tianyuraptor.
     taxonomy:
       - Life
       - Animalia
@@ -81752,7 +81772,7 @@ genera:
     pronunciation:
       phonetic: HALSH-kuh-RAP-tor
       ipa: /ˈhɑːlʃkəræptər/
-    description: Halszkaraptor is a genus of waterfowl-like dromaeosaurid dinosaurs from Mongolia that lived during the Late Cretaceous period. It contains only one known species, Halszkaraptor escuilliei.
+    description: Halszkaraptor is a genus of waterfowl-like halszkaraptorine dinosaurs from Mongolia that lived during the Late Cretaceous period. It contains only one known species, Halszkaraptor escuilliei.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -81870,8 +81890,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.
     described: 2017
@@ -87505,8 +87523,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Osmólska, H.
     described: 1982
@@ -111806,7 +111822,7 @@ genera:
     parent: Halszkaraptorinae
     dispute:
       summary: |
-        Mahakala was originally described as the basalmost dromaeosaurid (Turner and colleagues, 2007) and is still recovered in that position by some analyses. Cau and colleagues (2017) instead recovered it within Halszkaraptorinae, the placement followed, as by Jones (2026), though Jasinski and colleagues (2020) recovered it outside that clade. It is placed in Halszkaraptorinae following the prevailing recent view.
+        Mahakala was originally described as the basalmost dromaeosaurid (Turner and colleagues, 2007), a position recovered by analyses that do not include the other halszkaraptorines (Turner and colleagues, 2012; Pei and colleagues, 2020). Cau and colleagues (2017) recovered it within Halszkaraptorinae, the placement followed, though Jasinski and colleagues (2020) recovered it outside that clade, in a basal dromaeosaurid polytomy.
       history:
         - date: 2026-07-01
           note: Placed in Halszkaraptorinae following Cau and colleagues (2017) and Jones (2026); the basalmost-dromaeosaurid reading is noted.
@@ -111917,6 +111933,26 @@ genera:
         issue: "1"
         doi: 10.1038/s41598-020-61480-7
         notes: Recovered Mahakala outside Halszkaraptorinae in their dromaeosaurid phylogeny.
+      - id: turner2012a
+        authors: Turner, A. H.; Makovicky, P. J.; Norell, M. A.
+        year: 2012
+        title: A Review of Dromaeosaurid Systematics and Paravian Phylogeny
+        journal: Bulletin of the American Museum of Natural History
+        volume: "371"
+        pages: 1-206
+        doi: 10.1206/748.1
+        notes: Recovered Mahakala as the basalmost dromaeosaurid.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Mahakala as the earliest-diverging dromaeosaurid.
     taxonomy:
       - Life
       - Animalia
@@ -111937,8 +111973,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Turner, A. H.; Pol, D.; Clarke, J. A.; Erickson, G. M.; Norell, M. A.
     described: 2007
@@ -123604,7 +123638,7 @@ genera:
     etymology: From Latin nato ('to swim') and venator ('hunter'), meaning 'swimming hunter', reflecting the proposed semi-aquatic lifestyle of this halszkaraptorine
     pronunciation:
       phonetic: NAY-toe-VEN-uh-tuh
-    description: Natovenator is a genus of halszkaraptorine dromaeosaurid dinosaur from the Late Cretaceous Baruungoyot Formation of Mongolia. The genus is known from a single species, N. polydontus. Natovenator is crucial to the understanding of halszkaraptorines due to it providing more support for the semi-aquatic lifestyle that has been proposed for this clade. This discovery is important as the semi-aquatic lifestyles of halszkaraptorines (mainly Halszkaraptor) was contested in early 2022.
+    description: Natovenator is a genus of halszkaraptorine theropod dinosaur from the Late Cretaceous Baruungoyot Formation of Mongolia. The genus is known from a single species, N. polydontus. Natovenator is crucial to the understanding of halszkaraptorines due to it providing more support for the semi-aquatic lifestyle that has been proposed for this clade. This discovery is important as the semi-aquatic lifestyles of halszkaraptorines (mainly Halszkaraptor) was contested in early 2022.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -123701,8 +123735,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Lee, S.; Lee, Y. N.; Currie, P. J.; Sissons, R.; Park, J. Y.; Kim, S. H.; Barsbold, R.; Tsogtbaatar, K.
     described: 2022
@@ -157726,7 +157758,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Shanag is a small basal dromaeosaurid whose finer placement is unsettled. It is most often recovered among the basal dromaeosaurids, between Microraptorinae and Eudromaeosauria (Turner and colleagues, 2012; Jones, 2026), but is sometimes recovered within Microraptorinae, and Agnolín and Novas (2013) suggested it may be a basal averaptoran closer to birds. It is placed at Dromaeosauridae incertae sedis pending resolution.
+        Shanag is a small basal dromaeosaurid whose finer placement is unsettled. It is most often recovered between Microraptorinae and Eudromaeosauria (Turner and colleagues, 2012; Pei and colleagues, 2020), but within Microraptorinae by Longrich and Currie (2009) and Jasinski and colleagues (2020), and Agnolín and Novas (2013) suggested it may be a basal averaptoran closer to birds. It is placed at Dromaeosauridae incertae sedis pending resolution.
       history:
         - date: 2026-07-01
           note: Moved from Microraptorinae to Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal-dromaeosaurid, microraptorine, and averaptoran hypotheses proposed.
@@ -157828,6 +157860,38 @@ genera:
         publisher: Springer Netherlands
         doi: 10.1007/978-94-007-5637-3
         notes: Suggested Shanag may be a basal averaptoran closer to birds.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Shanag as the sister of Microraptorinae plus Eudromaeosauria.
+      - id: longrich2009a
+        authors: Longrich, N. R.; Currie, P. J.
+        year: 2009
+        title: A microraptorine (Dinosauria-Dromaeosauridae) from the Late Cretaceous of North America
+        journal: Proceedings of the National Academy of Sciences
+        publisher: Proceedings of the National Academy of Sciences
+        volume: "106"
+        issue: "13"
+        pages: 5002-5007
+        doi: 10.1073/pnas.0811664106
+        notes: Recovered Shanag within Microraptorinae.
+      - id: jasinski2020a
+        authors: Jasinski, S. E.; Sullivan, R. M.; Dodson, P.
+        year: 2020
+        title: New Dromaeosaurid Dinosaur (Theropoda, Dromaeosauridae) from New Mexico and Biodiversity of Dromaeosaurids at the end of the Cretaceous
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "10"
+        issue: "1"
+        doi: 10.1038/s41598-020-61480-7
+        notes: Recovered Shanag in a microraptorine polytomy.
     taxonomy:
       - Life
       - Animalia
@@ -175904,7 +175968,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The finer placement of Tianyuraptor is unsettled. It has been recovered as a basal microraptorine (Turner and colleagues, 2012; Agnolín and Novas, 2013) and, more often in recent work, as a short-armed basal dromaeosaurid just outside Microraptorinae and stemward of Eudromaeosauria, sometimes in a clade with Zhenyuanlong and Daurlong (Lü and Brusatte, 2015; Wang and colleagues, 2022; Jones, 2026). It is placed at Dromaeosauridae incertae sedis pending resolution.
+        The finer placement of Tianyuraptor is unsettled. It has been recovered as a basal microraptorine (Turner and colleagues, 2012; Agnolín and Novas, 2013) and, more often in recent work, as a short-armed basal dromaeosaurid just outside Microraptorinae and stemward of Eudromaeosauria, sometimes in a clade with Zhenyuanlong and Daurlong (Lü and Brusatte, 2015; Wang and colleagues, 2022). It is placed at Dromaeosauridae incertae sedis pending resolution.
       history:
         - date: 2026-07-01
           note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); microraptorine and basal short-armed-dromaeosaurid hypotheses proposed.
@@ -189485,7 +189549,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu and colleagues, 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei and colleagues, 2020; Xu and colleagues, 2023; Jones, 2026), as a more stemward avialan outside the anchiornithids (Foth and colleagues, 2025), as a sinovenatorine troodontid (Hartman and colleagues, 2019), and as a basal scansoriopterygid (Lefèvre and colleagues, 2017). The competing avialan and deinonychosaur hypotheses agree only on Eumaniraptora, where it is placed.
+        Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu and colleagues, 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei and colleagues, 2020; Xu and colleagues, 2023), as a more stemward avialan outside the anchiornithids (Foth and colleagues, 2025), as a sinovenatorine troodontid (Hartman and colleagues, 2019), and as a basal scansoriopterygid (Lefèvre and colleagues, 2017). The competing avialan and deinonychosaur hypotheses agree only on Eumaniraptora, where it is placed.
       history:
         - date: 2026-07-01
           note: Moved from Paraves to Eumaniraptora incertae sedis — the two-camp consensus (anchiornithid-avialan versus troodontid); the lone basal-scansoriopterygid recovery (Lefèvre and colleagues, 2017) is noted but does not control the placement.
@@ -196131,7 +196195,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Zhenyuanlong is a large, short-armed Jehol dromaeosaurid whose finer placement is unresolved. Its describers recovered the Liaoning dromaeosaurids in a basal polytomy and explicitly did not recover a Zhenyuanlong + Tianyuraptor clade (Lü and Brusatte, 2015), whereas Wang and colleagues (2022) and Jones (2026) group it with Tianyuraptor and Daurlong just stemward of Eudromaeosauria. It is placed at Dromaeosauridae incertae sedis.
+        Zhenyuanlong is a large, short-armed Jehol dromaeosaurid whose finer placement is unresolved. Its describers recovered the Liaoning dromaeosaurids in a basal polytomy and explicitly did not recover a Zhenyuanlong + Tianyuraptor clade (Lü and Brusatte, 2015), whereas Wang and colleagues (2022, 2026) group it with Tianyuraptor and Daurlong just stemward of Eudromaeosauria. It is placed at Dromaeosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal position with weak support, short-armed grouping with Tianyuraptor and Daurlong not universally recovered.
@@ -196225,6 +196289,17 @@ genera:
         isbn: 978-0-691-25021-2
         notes: |
           Illustrated by E. Viola.
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+        notes: Recovered Zhenyuanlong with Daurlong and Tianyuraptor.
     taxonomy:
       - Life
       - Animalia
