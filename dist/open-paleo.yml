@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-21T22:57:44.586Z
+  built_at: 2026-10-21T23:52:43.608Z
   clade_count: 188
   genus_count: 1426
   license: CC-BY-4.0
@@ -28379,7 +28379,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The phylogenetic position of Asfaltovenator vialidadi is unstable. Its describers recovered it as a basal allosauroid and noted that its mosaic of megalosauroid and allosauroid characters destabilizes tetanuran topology (Rauhut and Pol, 2019); Jones (2026) likewise treats it as a basal allosauroid outside both Allosauria and Metriacanthosauridae. Other analyses instead place it within Allosauridae as the sister taxon of Allosaurus (Rauhut and colleagues, 2024; Kellermann and colleagues, 2025). It is placed conservatively at Allosauroidea incertae sedis.
+        The phylogenetic position of Asfaltovenator vialidadi is unstable. Its describers recovered it as a basal allosauroid and noted that its mosaic of megalosauroid and allosauroid characters destabilizes tetanuran topology (Rauhut and Pol, 2019), a position Kellermann and colleagues (2025) also recover in their unweighted analyses. Other analyses instead place it within Allosauridae as the sister taxon of Allosaurus (Rauhut and colleagues, 2024; Kellermann and colleagues, 2025). It is placed conservatively at Allosauroidea incertae sedis.
       history:
         - date: 2026-07-02
           note: Placed at Allosauroidea incertae sedis; recovered as a basal allosauroid by Rauhut and Pol (2019) but within Allosauridae by later analyses.
@@ -28493,7 +28493,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Asfaltovenator as a basal allosauroid.
     taxonomy:
       - Life
       - Animalia
@@ -48164,7 +48164,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable. It has been recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson and colleagues, 2010; Carrano and colleagues, 2012; Rauhut and colleagues, 2024; Kellermann and colleagues, 2025; Jones, 2026), as a non-megaraptoran tetanuran of uncertain affinity (Novas and colleagues, 2013), and as a megaraptoran within Tyrannosauroidea (Naish and Cau, 2022). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
+        Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable. It has been recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson and colleagues, 2010; Carrano and colleagues, 2012; Rauhut and colleagues, 2024; Kellermann and colleagues, 2025), as a non-megaraptoran tetanuran of uncertain affinity (Novas and colleagues, 2013), and as a megaraptoran within Tyrannosauroidea (Naish and Cau, 2022). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-07-01
           note: Moved from the deprecated Neovenatoridae to Avetheropoda incertae sedis.
@@ -51635,7 +51635,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The placement of Coelurus is debated. It is commonly recovered near the base of Tyrannosauroidea, sometimes in a reduced Coeluridae with Tanycolagreus (Hartman and colleagues, 2019; Jones, 2026), but a base-of-Compsognathidae position has not been ruled out, and Delcourt and colleagues (2025) recovered it as the earliest-branching ornithomimosaur. It is placed conservatively at Coelurosauria incertae sedis.
+        The placement of Coelurus is debated. Naish and Cau (2022) recover it in a Coeluridae with Tugulusaurus and Tanycolagreus, the sister of the other tyrannosauroids, and Hartman and colleagues (2019) find coelurids branching just after the tyrannosauroids; Rauhut (2003) instead recovered it with the compsognathids, and Delcourt and colleagues (2025) as the earliest-branching ornithomimosaur. It is placed conservatively at Coelurosauria incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); Coeluridae/basal-Tyrannosauroidea and ornithomimosaur hypotheses proposed. Coeluridae not adopted as a node (contested, sparsely populated).
@@ -51800,6 +51800,25 @@ genera:
         issue: "124"
         pages: 339-341
         doi: 10.2475/ajs.s3-21.124.339
+      - id: naish2022a
+        authors: Naish, D.; Cau, A.
+        year: 2022
+        title: The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "10"
+        pages: e12727
+        doi: 10.7717/peerj.12727
+        notes: Recovered Coelurus in a Coeluridae with Tugulusaurus and Tanycolagreus, the sister of the other tyrannosauroids.
+      - id: rauhut2003b
+        authors: Rauhut, O. W. M.
+        year: 2003
+        title: The interrelationships and evolution of basal theropod dinosaurs
+        journal: Special Papers in Palaeontology
+        volume: "69"
+        pages: 1-213
+        publisher: The Palaeontological Association
+        notes: Recovered Coelurus with the compsognathids in a Coeluridae.
     taxonomy:
       - Life
       - Animalia
@@ -71261,7 +71280,7 @@ genera:
     parent: Megalosauridae
     dispute:
       summary: |
-        Eustreptospondylus oxoniensis is a basal megalosaurid whose exact position is unresolved. Carrano and colleagues (2012) and Benson (2010) recover it as the basalmost megalosaurid outside the two subfamilies, Rauhut and colleagues (2016) place it in the megalosaurid subfamily they call Eustreptospondylinae, and Jones (2026) treats it as a basal member of Megalosauria. Proposed synonymies with Magnosaurus and Streptospondylus have been rejected.
+        Eustreptospondylus oxoniensis is a basal megalosaurid whose exact position is unresolved. Carrano and colleagues (2012) and Benson (2010) recover it as the basalmost megalosaurid outside the two subfamilies, Rauhut and colleagues (2016) place it in the megalosaurid subfamily they call Eustreptospondylinae, while Sadleir and colleagues (2008) recovered it as the sister of Spinosauridae, with weak support. Proposed synonymies with Magnosaurus and Streptospondylus have been rejected.
       history:
         - date: 2026-07-01
           note: Placed at Megalosauridae (basal) following Carrano and colleagues (2012) and Benson (2010); the finer subfamily assignment is unresolved.
@@ -96778,14 +96797,17 @@ genera:
     described: 2013
   Juravenator:
     genus: Juravenator
-    parent: Coelurosauria
+    parent: Tetanurae
     placement: incertae sedis
     dispute:
       summary: |
-        The affinities of Juravenator are uncertain because the holotype is an immature individual. It was described as a small basal coelurosaur close to Compsognathus, loosely within Compsognathidae (Chiappe and Göhlich, 2010), and Jones (2026) places it there. However, Rauhut and colleagues (2012) and Foth and colleagues (2020) showed that its coelurosaurian characters may be juvenile artifacts, that it is drawn toward the base of Tetanurae as the sister taxon of the megalosauroid Sciurumimus when both juveniles are analyzed together, and that its supposed tail "scales" are better interpreted as adipocere. It is placed conservatively at Coelurosauria incertae sedis.
+        The affinities of Juravenator are uncertain because the holotype is an immature individual. Göhlich and Chiappe (2006) recovered it within Compsognathidae, but Rauhut and colleagues (2012) and Foth and colleagues (2020) showed that its coelurosaurian characters may be juvenile artifacts and that it is drawn toward the base of Tetanurae, as the sister taxon of the megalosauroid Sciurumimus, when both juveniles are analyzed together, and Cau (2024) places it among the allosauroids. Its supposed tail "scales" are better interpreted as adipocere.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis; compsognathid-grade (Chiappe and Göhlich, 2010) versus basal-tetanuran/megalosauroid juvenile-artifact (Rauhut and colleagues, 2012; Foth and colleagues, 2020) hypotheses unresolved.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Tetanurae; analyses place it among coelurosaurs, allosauroids or basal tetanurans.
     etymology: Named after the Franconian Jura region of Germany (where it was found) combined with Latin venator (hunter); meaning 'Jura hunter'
     description: Juravenator is a genus of tetanuran theropod dinosaur which lived about 152 or 151 million years ago in modern day Franconian Jura of Germany (Torleite Formation) during the Late Jurassic. It is known from a single, juvenile specimen measuring about 75 cm (2.46 ft) in length.
     diet: carnivore
@@ -96865,6 +96887,7 @@ genera:
         issue: "7082"
         pages: 329-332
         doi: 10.1038/nature04579
+        notes: Named Juravenator and recovered it within Compsognathidae.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -96901,6 +96924,16 @@ genera:
         pages: 79-101
         doi: 10.1007/978-3-030-27223-4_6
         notes: Assigns the holotype to the Torleite Formation, following Niebuhr and Pürner; the describing paper names none. Also places it near Megalosauroidea, reading its coelurosaurian traits as juvenile.
+      - id: cau2024a
+        authors: Cau, A.
+        year: 2024
+        title: A Unified Framework for Predatory Dinosaur Macroevolution
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "63"
+        issue: "1"
+        pages: 1-19
+        doi: 10.4435/BSPI.2024.08
+        notes: Places Juravenator among the allosauroids.
     taxonomy:
       - Life
       - Animalia
@@ -96916,8 +96949,6 @@ genera:
       - Neotheropoda
       - Averostra
       - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
     authors: Göhlich, U. B.; Chiappe, L. M.
     described: 2006
   Kaatedocus:
@@ -109388,7 +109419,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The affinities of Lourinhanosaurus are highly uncertain. It has variously been referred to Allosauroidea (as a sinraptorid/metriacanthosaurid), to Megalosauroidea, and to Coelurosauria. Carrano and colleagues (2012) recovered it weakly allied with Coelurosauria, while Hartman and colleagues (2019) and Jones (2026) place it near the base of Avetheropoda without resolving whether it is an allosauroid or a coelurosaur. It is placed conservatively at Avetheropoda incertae sedis, the least-inclusive clade common to the competing hypotheses.
+        The affinities of Lourinhanosaurus are highly uncertain. It has been recovered at the base of Avetheropoda (Mateus, 1998), as a metriacanthosaurid allosauroid (Benson, 2010), weakly allied with Coelurosauria (Carrano and colleagues, 2012; Rauhut and colleagues, 2016), and, in one implied-weights analysis, as a megalosaurid (Rauhut and colleagues, 2024). It is placed conservatively at Avetheropoda incertae sedis, the least-inclusive clade common to most competing hypotheses.
       history:
         - date: 2026-07-01
           note: Moved from Coelurosauria to Avetheropoda incertae sedis; allosauroid, megalosauroid, and coelurosaur hypotheses unresolved (Carrano and colleagues, 2012; Hartman and colleagues, 2019).
@@ -109540,6 +109571,38 @@ genera:
         pages: e7247
         doi: 10.7717/peerj.7247
         notes: Paravian phylogeny bearing on Lourinhanosaurus's coelurosaurian affinities.
+      - id: benson2010c
+        authors: Benson, R. B. J.
+        year: 2010
+        title: "A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "158"
+        issue: "4"
+        pages: 882-935
+        doi: 10.1111/j.1096-3642.2009.00569.x
+        notes: Recovered Lourinhanosaurus with Metriacanthosaurus and Sinraptor.
+      - id: rauhut2016a
+        authors: Rauhut, O. M.; Hübner, T.; Lanser, K.
+        year: 2016
+        title: "A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic"
+        journal: Palaeontologia Electronica
+        volume: "19"
+        issue: "2"
+        pages: 26A
+        publisher: Coquina Press
+        doi: 10.26879/654
+        notes: Recovered Lourinhanosaurus within Coelurosauria.
+      - id: rauhut2024a
+        authors: Rauhut, O. W. M.; Bakirov, A. A.; Wings, O.; Fernandes, A. E.; Hübner, T. R.
+        year: 2024
+        title: A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "201"
+        issue: "4"
+        doi: 10.1093/zoolinnean/zlae090
+        notes: Recovered Lourinhanosaurus within Megalosauridae under implied weights.
     taxonomy:
       - Life
       - Animalia
@@ -124094,14 +124157,17 @@ genera:
     described: 2013
   Nedcolbertia:
     genus: Nedcolbertia
-    parent: Coelurosauria
+    parent: Avetheropoda
     placement: incertae sedis
     dispute:
       summary: |
-        The placement of Nedcolbertia is contested. Originally described as an indeterminate coelurosaur, it has been narrowed by recent reviews and by Hartman and colleagues (2019) and Jones (2026) to a basal ornithomimosaur, whereas Cau (2024) recovered it among early-diverging allosauroids. Given the fragmentary holotype and the ornithomimosaur-versus-allosauroid conflict, it is placed conservatively at Coelurosauria incertae sedis.
+        The placement of Nedcolbertia is contested. Originally described as a basal coelurosaur (Kirkland and colleagues, 1998), it was reinterpreted as an ornithomimosaur by Brownstein (2017) and recovered as one by Hartman and colleagues (2019), whereas Cau (2024) recovered it among early-diverging allosauroids. Given the fragmentary holotype and this conflict, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); basal-ornithomimosaur (Hartman and colleagues, 2019; Jones, 2026) versus allosauroid (Cau, 2024) hypotheses unresolved.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Avetheropoda; the analyses split between Ornithomimosauria and Allosauroidea.
     pronunciation:
       phonetic: ned-kohl-BER-tee-a
     etymology: Named in honor of Edwin H. 'Ned' Colbert, the prominent American vertebrate paleontologist
@@ -124172,6 +124238,7 @@ genera:
         series: New Mexico Museum of Natural History and Science Bulletin
         volume: "14"
         pages: 239-248
+        notes: Named Nedcolbertia as a basal coelurosaur, without an analysis.
       - id: cau2024a
         authors: Cau, A.
         year: 2024
@@ -124191,15 +124258,24 @@ genera:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Narrowed Nedcolbertia's coelurosaur affinities in large paravian phylogenetic analysis.
+        notes: Recovered Nedcolbertia as an ornithomimosaur.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: |
-          Illustrated by E. Viola.
+        notes: Treats Nedcolbertia as a basal ornithomimosaur.
+      - id: brownstein2017a
+        authors: Brownstein, C. D.
+        year: 2017
+        title: 'Description of Arundel Clay ornithomimosaur material and a reinterpretation of Nedcolbertia justinhofmanni as an "Ostrich Dinosaur": biogeographic implications'
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "5"
+        pages: e3110
+        doi: 10.7717/peerj.3110
+        notes: Reinterpreted Nedcolbertia as a basal ornithomimosaur on shared manual and pedal characters, without a phylogenetic analysis.
     taxonomy:
       - Life
       - Animalia
@@ -124216,7 +124292,6 @@ genera:
       - Averostra
       - Tetanurae
       - Avetheropoda
-      - Coelurosauria
     authors: Kirkland, J. I.; Britt, B. B.; Whittle, C. H.; Madsen, S. K.; Burge, D. L.
     described: 1998
   Nedoceratops:
@@ -156417,7 +156492,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Sciurumimus albersdoerferi is based on a juvenile skeleton, and its affinities are contested. It was described as a basal megalosauroid (Rauhut and colleagues, 2012) and recovered within Megalosauroidea by later analyses (Cau, 2024), but the maniraptoromorph analysis of Hartman and colleagues (2019), followed by Jones (2026), instead recovered it as a compsognathid coelurosaur.
+        Sciurumimus albersdoerferi is based on a juvenile skeleton, and its affinities are contested. It was described as a basal megalosauroid (Rauhut and colleagues, 2012) and recovered within Megalosauroidea by later analyses (Cau, 2024), but Hartman and colleagues (2019) instead recovered it as a compsognathid coelurosaur, seven steps from Megalosauroidea.
       history:
         - date: 2026-07-01
           note: Placed at Megalosauroidea following the describing paper and Cau (2024); the compsognathid alternative (Hartman and colleagues, 2019) remains unresolved given the juvenile holotype.
@@ -158335,7 +158410,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Shaochilong maortuensis is recovered as a derived carcharodontosaurid, the first from Asia (Brusatte and colleagues, 2009; Carrano and colleagues, 2012; Jones, 2026), but the two most recent analyses instead place it within Coelurosauria: Kellermann and colleagues (2025) recover it as a tyrannosauroid in all their analyses (rebutting the proposed carcharodontosaurid characters), and Rauhut and colleagues (2024) recover it as a coelurosaur. Carcharodontosauridae (Allosauroidea) and Tyrannosauroidea (Coelurosauria) are the two branches of Avetheropoda, the least-inclusive clade all these hypotheses accept.
+        Shaochilong maortuensis is recovered as a derived carcharodontosaurid, the first from Asia (Brusatte and colleagues, 2009; Carrano and colleagues, 2012; Novas and colleagues, 2013), but the two most recent analyses instead place it within Coelurosauria: Kellermann and colleagues (2025) recover it as a tyrannosauroid in all their analyses (rebutting the proposed carcharodontosaurid characters), and Rauhut and colleagues (2024) recover it as a coelurosaur. Carcharodontosauridae (Allosauroidea) and Tyrannosauroidea (Coelurosauria) are the two branches of Avetheropoda, the least-inclusive clade all these hypotheses accept.
       history:
         - date: 2026-07-01
           note: Retained at Carcharodontosauridae incertae sedis (prevailing view; P5), with the recent tyrannosauroid hypothesis (Kellermann and colleagues, 2025) reflected but not adopted.
@@ -158479,6 +158554,14 @@ genera:
         pages: e0311096
         doi: 10.1371/journal.pone.0311096
         notes: Recovered Shaochilong within Tyrannosauroidea, not Carcharodontosauridae.
+      - id: novas2013a
+        authors: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Porfiri, J.; Canale, J. I.
+        year: 2013
+        title: "Evolution of the carnivorous dinosaurs during the Cretaceous: The evidence from Patagonia"
+        journal: Cretaceous Research
+        volume: "45"
+        pages: 174-215
+        notes: Recovered Shaochilong as the sister of Carcharodontosaurinae.
     taxonomy:
       - Life
       - Animalia
@@ -170390,7 +170473,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The placement of Tanycolagreus is unsettled. It is frequently recovered near the base of Tyrannosauroidea, sometimes with Coelurus in a reduced Coeluridae (Hartman and colleagues, 2019; Jones, 2026); Cau (2024) recovered it within Tyrannosauroidea, while Delcourt and colleagues (2025), under implied weights, recovered it among the earliest-branching Maniraptoromorpha with Santanaraptor and Mirischia. It is placed conservatively at Coelurosauria incertae sedis.
+        The placement of Tanycolagreus is unsettled. Naish and Cau (2022) recover it with Coelurus in a Coeluridae at the base of Tyrannosauroidea, and Cau (2024) treats it as a tyrannosauroid, while Delcourt and colleagues (2025), under implied weights, recovered it among the earliest-branching Maniraptoromorpha with Santanaraptor. It is placed conservatively at Coelurosauria incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); basal-Tyrannosauroidea/Coeluridae and earliest-maniraptoromorph hypotheses proposed. Coeluridae not adopted as a node.
@@ -170503,6 +170586,16 @@ genera:
         pages: ar.70085
         doi: 10.1002/ar.70085
         notes: Recovered Tanycolagreus among earliest-branching Maniraptoromorpha with Santanaraptor and Mirischia.
+      - id: naish2022a
+        authors: Naish, D.; Cau, A.
+        year: 2022
+        title: The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "10"
+        pages: e12727
+        doi: 10.7717/peerj.12727
+        notes: Recovered Tanycolagreus with Coelurus in a Coeluridae at the base of Tyrannosauroidea.
     taxonomy:
       - Life
       - Animalia
