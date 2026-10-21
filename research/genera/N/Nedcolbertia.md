@@ -1,5 +1,22 @@
 # *Nedcolbertia*
 
+## Is *Nedcolbertia* an ornithomimosaur?
+
+*2026-10-21*
+
+**Conclusion.** Unresolved; it sits at Avetheropoda incertae sedis. Hartman and colleagues (2019) recover it as an ornithomimosaur and Cau (2024) among the early allosauroids, positions that share only Avetheropoda. Governs `parent: Avetheropoda`, `placement: incertae sedis` and the dispute on [*Nedcolbertia justinhofmanni*](../../../genera/N/Nedcolbertia.yml).
+
+**Evidence.**
+- kirkland1998c, p. 246: "a basal coelurosaur near Compsognathus and Ornitholestes".
+- brownstein2017a: "Nedcolbertia is therefore considered as a basal ornithomimosaur due to its non-arctometatarsalian pedal condition", on characters it shares with ornithomimosaurs in the manus and pes; no phylogenetic analysis.
+- hartman2019a, p. 30: "Arkansaurus and Nedcolbertia are both resolved as ornithomimosaurs for the first time".
+- cau2024a, p. ix: "reconstructed among early-diverging allosauroids".
+
+**Ruled out.**
+- *Coelurosauria as the parent.* Cau (2024) places it outside the clade.
+
+**Open.** Whether further analyses converge.
+
 ## Is the *Nedcolbertia* holotype from the lower or the upper Yellow Cat Member?
 
 *2026-08-31*
@@ -49,6 +66,9 @@
 ## References
 
 - `kirkland1998c`: Kirkland, J. I.; Britt, B. B.; Whittle, C. H.; Madsen, S. K.; Burge, D. L. (1998). A small coelurosaurian theropod from the Yellow Cat Member of the Cedar Mountain Formation (Lower Cretaceous, Barremian) of eastern Utah. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 239-248.
+- `brownstein2017a`: Brownstein, C. D. (2017). Description of Arundel Clay ornithomimosaur material and a reinterpretation of Nedcolbertia justinhofmanni as an "Ostrich Dinosaur": biogeographic implications. *PeerJ* 5: e3110. doi:10.7717/peerj.3110
+- `hartman2019a`: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M. (2019). A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight. *PeerJ* 7: e7247. doi:10.7717/peerj.7247
+- `cau2024a`: Cau, A. (2024). A Unified Framework for Predatory Dinosaur Macroevolution. *Bollettino della Società Paleontologica Italiana* 63(1): 1-19. doi:10.4435/BSPI.2024.08
 - `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
