@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-21T05:49:59.983Z",
+    "built_at": "2026-10-21T16:49:22.454Z",
     "clade_count": 188,
     "genus_count": 1426,
     "license": "CC-BY-4.0",
@@ -46774,7 +46774,7 @@
       },
       "description": "Bolong is a genus of iguanodontian dinosaur known from the Early Cretaceous Yixian Formation of western Liaoning Province, China. It lived about 125 million years ago in the earliest Aptian.",
       "dispute": {
-        "summary": "Bolong yixianensis is placed among the basalmost hadrosauroids by Jones (2026) and subsequent work, though a later analysis by the describing authors (Wu and Godefroit, 2012) recovered it as the basalmost hadrosauroid, next to a monophyletic Iguanodontidae.\n",
+        "summary": "Bolong yixianensis was described as a basal iguanodontoid (Wu and colleagues, 2010), and a later analysis by the describing authors recovered it as the basalmost hadrosauroid, next to a monophyletic Iguanodontidae (Wu and Godefroit, 2012). McDonald and colleagues (2017) recover it with Jinzhousaurus as a small basal hadrosauroid clade, whereas Norman (2015) places it in an iguanodontoid clade outside Hadrosauriformes.\n",
         "history": [
           {
             "date": "2026-06-29",
@@ -46895,7 +46895,8 @@
           "journal": "Geology and Resources",
           "volume": "19",
           "issue": "2",
-          "pages": "127-133"
+          "pages": "127-133",
+          "notes": "Named Bolong as a basal iguanodontoid."
         },
         {
           "id": "zheng2013b",
@@ -46926,6 +46927,28 @@
           "publisher": "Indiana University Press, Bloomington",
           "isbn": "9780253357212",
           "notes": "Recovers Bolong as the basalmost hadrosauroid. Gives the horizon as \"Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the middle part of Yixian Formation\" (p. 296).\n"
+        },
+        {
+          "id": "mcdonald2017a",
+          "authors": "McDonald, A. T.; Gates, T. A.; Zanno, L. E.; Makovicky, P. J.",
+          "year": 2017,
+          "title": "Anatomy, taphonomy, and phylogenetic implications of a new specimen of Eolambia caroljonesa (Dinosauria: Ornithopoda) from the Cedar Mountain Formation, Utah, USA",
+          "journal": "PLOS ONE",
+          "volume": "12",
+          "issue": "5",
+          "doi": "10.1371/journal.pone.0176896",
+          "notes": "Recovered Bolong with Jinzhousaurus as a small basal hadrosauroid clade."
+        },
+        {
+          "id": "norman2015a",
+          "authors": "Norman, D. B.",
+          "year": 2015,
+          "title": "On the history, osteology, and systematic position of the Wealden (Hastings group) dinosaur Hypselospinus fittoni (Iguanodontia: Styracosterna)",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "173",
+          "pages": "92-189",
+          "doi": "10.1111/zoj.12193",
+          "notes": "Placed Bolong in an iguanodontoid clade outside Hadrosauriformes."
         }
       ],
       "taxonomy": [
@@ -50054,18 +50077,23 @@
     },
     "Brighstoneus": {
       "genus": "Brighstoneus",
-      "parent": "Hadrosauriformes",
+      "parent": "Styracosterna",
+      "placement": "incertae sedis",
       "etymology": "Named after Brighstone, a village on the Isle of Wight, England, near where the fossil was found, combined with Latin/Greek -eus suffix. Full meaning: 'one from Brighstone'.",
       "pronunciation": {
         "phonetic": "bri-STO-nee-us"
       },
       "description": "Brighstoneus is a genus of hadrosauriform dinosaur from the Early Cretaceous Wessex Formation of the Isle of Wight, England. The genus contains a single species, Brighstoneus simmondsi, known from a partial skeleton.",
       "dispute": {
-        "summary": "Brighstoneus simmondsi was described as a basal hadrosauriform (Lockwood and colleagues, 2021; followed by Jones, 2026), but Lockwood and colleagues (2024) recovered it outside Hadrosauriformes as the earliest-diverging hadrosauroid.\n",
+        "summary": "Brighstoneus simmondsi was described as a non-hadrosaurid hadrosauriform, though its describers recovered it outside Hadrosauriformes, as the sister of Ouranosaurus, in their majority-rule tree (Lockwood and colleagues, 2021). Lockwood and colleagues (2024) recovered it as the earliest-diverging hadrosauroid, outside Hadrosauriformes and Iguanodontidae, and Rotatori and colleagues (2026) place it in a clade with Ouranosaurus and Morelladon that is the sister of Hadrosauriformes.\n",
         "history": [
           {
             "date": "2026-06-27",
             "note": "Placed at Hadrosauriformes following the original description and Jones (2026); the basal-hadrosauroid result of Lockwood and colleagues (2024) reflected, not adopted."
+          },
+          {
+            "date": "2026-10-20",
+            "note": "Parent widened to Styracosterna; analyses place it inside or just outside Hadrosauriformes.\n"
           }
         ]
       },
@@ -50159,7 +50187,8 @@
           "volume": "19",
           "issue": "12",
           "pages": "847-888",
-          "doi": "10.1080/14772019.2021.1978005"
+          "doi": "10.1080/14772019.2021.1978005",
+          "notes": "Named Brighstoneus as a hadrosauriform; its majority-rule tree places it outside Hadrosauriformes, with Ouranosaurus."
         },
         {
           "id": "paul2024a",
@@ -50179,7 +50208,7 @@
           "volume": "22",
           "issue": "1",
           "doi": "10.1080/14772019.2024.2346573",
-          "notes": "Comptonatus description's phylogeny recovered Brighstoneus outside Hadrosauriformes as an early styracosternan."
+          "notes": "Recovered Brighstoneus as the earliest-diverging hadrosauroid, outside Hadrosauriformes and Iguanodontidae."
         },
         {
           "id": "jones2026a",
@@ -50188,7 +50217,19 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Brighstoneus as a basal hadrosauriform."
+        },
+        {
+          "id": "rotatori2026a",
+          "authors": "Rotatori, F. M.; Chiarenza, A. A.; Fanti, F.; Moreno-Azanza, M.",
+          "year": 2026,
+          "title": "The early origin of Iguanodontia: new insights into the macroevolution, diversity and biogeography of the clade",
+          "journal": "Palaeontology",
+          "volume": "69",
+          "issue": "2",
+          "pages": "e70057",
+          "doi": "10.1111/pala.70057",
+          "notes": "Recovered Brighstoneus with Ouranosaurus and Morelladon as the sister of Hadrosauriformes."
         }
       ],
       "taxonomy": [
@@ -50209,8 +50250,7 @@
         "Iguanodontia",
         "Dryomorpha",
         "Ankylopollexia",
-        "Styracosterna",
-        "Hadrosauriformes"
+        "Styracosterna"
       ],
       "authors": "Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R.",
       "described": 2021
@@ -63659,7 +63699,7 @@
       "etymology": "From Greek klao (κλάω) meaning 'broken' and Greek sauros (σαῦρος) meaning 'lizard'. Full meaning: 'broken lizard', referring to the unusual position of the fossils when discovered.",
       "description": "Claosaurus is a genus of hadrosauroid dinosaur that lived during the Late Cretaceous Period (Santonian-Campanian) of what is now North America. The type and only known valid species is Claosaurus agilis. Traditionally classified as an early member of the family Hadrosauridae, a 2008 analysis found Claosaurus to be outside of the clade containing Hadrosaurus and other hadrosaurids, making it the closest non-hadrosaurid relative of true hadrosaurids within the clade Hadrosauromorpha.",
       "dispute": {
-        "summary": "Claosaurus agilis has at times been called a basal hadrosaurid, but recent analyses consistently place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Tsogtbaatar and colleagues, 2019; Jones, 2026).\n",
+        "summary": "Claosaurus agilis has been called a basal hadrosaurid (Carpenter and colleagues, 1995), but later work consistently places it outside Hadrosauridae, among the non-hadrosaurid hadrosauromorphs (Prieto-Márquez, 2011; Tsogtbaatar and colleagues, 2019).\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -68708,7 +68748,7 @@
       },
       "description": "Cumnoria is a genus of basal iguanodontian dinosaur that lived during the Late Jurassic period (Kimmeridgian age) in what is now Oxfordshire, United Kingdom.",
       "dispute": {
-        "summary": "The position of Cumnoria prestwichii is unresolved across three incompatible hypotheses. It has been recovered as a basal styracosternan (McDonald, 2011), within a camptosaurid grouping alongside Camptosaurus dispar (Sánchez-Fenollosa and colleagues, 2023; Fonseca and colleagues, 2024; Dieudonné and colleagues, 2026), and outside Ankylopollexia altogether (Maidment and colleagues, 2023; Rotatori and colleagues, 2026; Jones, 2026). Because Camptosauridae and Styracosterna are complementary stem clades defined on Camptosaurus dispar and Iguanodon bernissartensis, the second and third hypotheses both exclude it from Styracosterna. Some analyses cannot place it at all and prune it as an unstable wildcard (Poole, 2022). It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis. Its separation from the North American Camptosaurus is also contested. Carpenter and Lamanna (2015) regarded Cumnoria as a junior subjective synonym of Camptosaurus, holding that its sole recognized autapomorphy, a small intramaxillary fossa, warranted distinction at the specific rather than the generic level, and Sánchez-Fenollosa and colleagues (2023) followed them. The redescription by Maidment and colleagues (2023) instead diagnosed Cumnoria on two autapomorphies of the pectoral girdle and recovered it outside Ankylopollexia, and subsequent work has continued to treat it as a distinct genus (Rotatori and colleagues, 2026). It is retained as a valid genus.\n",
+        "summary": "The position of Cumnoria prestwichii is unresolved across three incompatible hypotheses. It has been recovered as a basal styracosternan (McDonald, 2011), within a camptosaurid grouping alongside Camptosaurus dispar (Sánchez-Fenollosa and colleagues, 2023; Fonseca and colleagues, 2024; Dieudonné and colleagues, 2026), and outside Ankylopollexia altogether (Maidment and colleagues, 2023; Rotatori and colleagues, 2026). Because Camptosauridae and Styracosterna are complementary stem clades defined on Camptosaurus dispar and Iguanodon bernissartensis, the second and third hypotheses both exclude it from Styracosterna. Some analyses cannot place it at all and prune it as an unstable wildcard (Poole, 2022). It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis. Its separation from the North American Camptosaurus is also contested. Carpenter and Lamanna (2015) regarded Cumnoria as a junior subjective synonym of Camptosaurus, holding that its sole recognized autapomorphy, a small intramaxillary fossa, warranted distinction at the specific rather than the generic level, and Sánchez-Fenollosa and colleagues (2023) followed them. The redescription by Maidment and colleagues (2023) instead diagnosed Cumnoria on two autapomorphies of the pectoral girdle and recovered it outside Ankylopollexia, and subsequent work has continued to treat it as a distinct genus (Rotatori and colleagues, 2026). It is retained as a valid genus.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -85032,7 +85072,7 @@
       "etymology": "From Greek eos (dawn) + Lambeosaurinae: 'dawn lambeosaurine', indicating it is an early relative of lambeosaurine hadrosaurs.",
       "description": "Eolambia is a genus of herbivorous hadrosauroid dinosaur from the early Late Cretaceous of the United States. It contains a single species, E. caroljonesa, named by paleontologist James Kirkland in 1998. The type specimen of Eolambia was discovered by Carole and Ramal Jones in 1993; the species name honors Carole. Since then, hundreds of bones have been discovered from both adults and juveniles, representing nearly every element of the skeleton. All of the specimens have thus far been found in Emery County, Utah, in a layer of rock known as the Mussentuchit Member of the Cedar Mountain Formation.",
       "dispute": {
-        "summary": "Eolambia caroljonesa was originally described as a lambeosaurine hadrosaurid (Kirkland, 1998), but Head (2001) reidentified it as a basal hadrosauroid, and it is now consistently recovered as a basal hadrosauromorph well outside Hadrosauridae (McDonald and colleagues, 2017; Jones, 2026).\n",
+        "summary": "Eolambia caroljonesa was originally described as a lambeosaurine hadrosaurid (Kirkland, 1998), but Head (2001) reidentified it as a basal hadrosauroid, and it is now consistently recovered as a basal hadrosauromorph well outside Hadrosauridae (McDonald and colleagues, 2012, 2017).\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -85218,7 +85258,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Eolambia as a basal hadrosauromorph."
         }
       ],
       "taxonomy": [
@@ -96961,7 +97001,7 @@
       },
       "description": "Gideonmantellia is an extinct genus of basal ornithopod dinosaur known from the Early Cretaceous (Barremian stage) Camarillas Formation of Galve, Province of Teruel, Spain. It contains a single species, Gideonmantellia amosanjuanae.",
       "dispute": {
-        "summary": "Gideonmantellia is placed as a basal ornithopod outside Iguanodontia, the position recovered by Madzia and colleagues (2017) and by Jones (2026). Fonseca and colleagues (2024) instead recover it within a restricted Hypsilophodontidae as the sister taxon of Hypsilophodon.\n",
+        "summary": "Its describers placed Gideonmantellia as a basal ornithopod more derived than Hypsilophodon (Ruiz-Omeñaca and colleagues, 2012), and Madzia and colleagues (2017) recover it as the basalmost branch within Ornithopoda, outside Iguanodontia. Fonseca and colleagues (2024) instead recover it within a restricted Hypsilophodontidae as the sister taxon of Hypsilophodon.\n",
         "history": [
           {
             "date": "2026-06-29",
@@ -97076,7 +97116,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Gideonmantellia as a basal ornithopod outside Iguanodontia."
         }
       ],
       "taxonomy": [
@@ -98474,7 +98514,7 @@
       },
       "description": "Glishades is a genus of hadrosauroid dinosaur that lived in the Late Cretaceous in North America. It is based on AMNH 27414, two partial premaxillae discovered in the Upper Cretaceous rocks of the upper Two Medicine Formation in Montana, dated to about 74.5 million years ago. Cladistic analysis conducted by Prieto-Márquez suggests that Glishades is a non-hadrosaurid hadrosauroid, probably a sister taxon to Bactrosaurus johnsoni. The type species is Glishades ericksoni. In 2012, Campione and colleagues suggest the holotype specimen of Glishades might actually be an indeterminate juvenile saurolophine hadrosaurid and consider it to be a nomen dubium.",
       "dispute": {
-        "summary": "Glishades ericksoni was described as a non-hadrosaurid hadrosauroid (Prieto-Márquez, 2010) but is widely regarded as a nomen dubium, its holotype possibly a juvenile saurolophine (Campione and colleagues, 2012; Jones, 2026).\n",
+        "summary": "Glishades ericksoni was described as a non-hadrosaurid hadrosauroid (Prieto-Márquez, 2010) but Campione and colleagues (2012) refer the holotype to an indeterminate juvenile saurolophine and regard the name as a nomen dubium.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -98562,7 +98602,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Glishades as a nomen dubium."
         },
         {
           "id": "campione2012a",
@@ -98575,7 +98615,7 @@
           "issue": "1",
           "pages": "65-75",
           "doi": "10.1007/s12549-012-0097-1",
-          "notes": "Regarded Glishades ericksoni as an indeterminate juvenile hadrosaurid."
+          "notes": "Referred the Glishades holotype to an indeterminate juvenile saurolophine and regarded the name as a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -121324,7 +121364,7 @@
       },
       "description": "Jintasaurus is a genus of hadrosauriform dinosaur that lived during the Early Cretaceous of what is now Jiuquan, Gansu, northwestern China. The type species is J. meniscus, described by Hai-Lu You and Da-Qing Li in 2009. The holotype and only known specimen includes the postorbital skull, lacking the jugal and quadratojugal, whose discovery supports the theory that hadrosaurs originated in Asia.",
       "dispute": {
-        "summary": "Jintasaurus meniscus is placed within Hadrosauromorpha by recent analyses (Madzia and colleagues, 2021; Jones, 2026), but is based on a partial skull and its validity and distinctness from sympatric Xuwulong have been questioned (Norman, 2015).\n",
+        "summary": "Jintasaurus meniscus was recovered as the sister of Hadrosauroidea by its describers (You and Li, 2009) and as a basal hadrosauroid by You and colleagues (2014), and Madzia and colleagues (2021) list it in Hadrosauromorpha. It is based on a partial skull, and Norman (2015) doubts its validity as a taxon separate from the sympatric Xuwulong.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -121422,7 +121462,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement in Hadrosauromorpha and source of the body length estimate."
+          "notes": "Source of the body length estimate."
         },
         {
           "id": "madzia2021a",
@@ -121433,7 +121473,7 @@
           "volume": "9",
           "pages": "e12362",
           "doi": "10.7717/peerj.12362",
-          "notes": "Placed Jintasaurus within Hadrosauromorpha based on partial skull material"
+          "notes": "Lists Jintasaurus in Hadrosauromorpha."
         },
         {
           "id": "norman2015a",
@@ -127321,7 +127361,7 @@
       },
       "description": "Koshisaurus is a monospecific genus of basal hadrosauroid from the Kitadani Formation in Japan. The discovery of the genus suggests that hadrosauroids had higher diversity along the eastern margin of Asia in the Early Cretaceous. \"Koshi\" means an old Japanese regional name including Fukui prefecture where fossils of the genus were discovered.",
       "dispute": {
-        "summary": "Koshisaurus katsuyama is generally recovered as a basal hadrosauroid (Madzia and colleagues, 2019; Jones, 2026), but Tsogtbaatar and colleagues (2019) recovered it as the sister to Hadrosauriformes, outside Hadrosauroidea.\n",
+        "summary": "Koshisaurus katsuyama was recovered at the base of Hadrosauroidea by its describers (Shibata and Azuma, 2015) and among Eurasian hadrosauroids by Madzia and colleagues (2019), but Tsogtbaatar and colleagues (2019) recovered it as the sister to Hadrosauriformes, outside Hadrosauroidea.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -137780,7 +137820,7 @@
       "etymology": "From Greek 'lophos' meaning 'crested' and 'rhothon' meaning 'nose', giving the meaning 'crested nose', referring to the nasal crest of the holotype.",
       "description": "Lophorhothon is a genus of hadrosauroid dinosaur from the Late Cretaceous of Alabama, and possibly Georgia and North Carolina. It was the first dinosaur genus discovered in Alabama, in the United States.",
       "dispute": {
-        "summary": "Lophorhothon atopus was originally described as a basal hadrosaurine, inside Hadrosauridae (Langston, 1960), but later analyses place it within Hadrosauromorpha just outside Hadrosauridae, among the closest non-hadrosaurid relatives of the family (Alarcón-Muñoz and colleagues, 2023; Jones, 2026).\n",
+        "summary": "Lophorhothon atopus was originally described as a basal hadrosaurine, inside Hadrosauridae (Langston, 1960), but later analyses place it within Hadrosauromorpha just outside Hadrosauridae, among the closest non-hadrosaurid relatives of the family (Gates and Lamb, 2021; Alarcón-Muñoz and colleagues, 2023).\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -137916,7 +137956,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Lophorhothon as a non-hadrosaurid hadrosauromorph."
         }
       ],
       "taxonomy": [
@@ -162776,7 +162816,7 @@
       "etymology": "From Greek 'notos' meaning 'south wind' (indicating its southern provenance in South America) combined with the genus name Hypsilophodon, indicating its similarity to that ornithopod.",
       "description": "Notohypsilophodon is a genus of ornithopod dinosaur from the Late Cretaceous of Argentina. It was described as the only \"hypsilophodont\" known from South America, although this assessment is not universally supported, and Gasparinisaura is now believed to have been a basal euornithopod as well.",
       "dispute": {
-        "summary": "Notohypsilophodon is recovered within Elasmaria by dedicated analyses of Gondwanan ornithopods (Rozadilla and colleagues, 2016), by Boyd (2015), and by Jones (2026). Madzia and colleagues (2017) instead recover it within Thescelosaurinae without Elasmaria support.\n",
+        "summary": "Notohypsilophodon was described as a hypsilophodontid (Martínez, 1998). Rozadilla and colleagues (2016) and Boyd (2015) recover it within Elasmaria, which Boyd places among the thescelosaurines; Madzia and colleagues (2017) instead recover it within Thescelosaurinae outside Elasmaria, and Ibiricu and colleagues (2014) find its position highly unstable.\n",
         "history": [
           {
             "date": "2026-06-29",
@@ -162914,7 +162954,7 @@
           "issue": "11",
           "pages": "967-979",
           "doi": "10.1080/14772019.2017.1371258",
-          "notes": "Recovered Notohypsilophodon within Thescelosaurinae in basal ornithopod phylogenetic matrix."
+          "notes": "Recovered Notohypsilophodon within Thescelosaurinae, outside Elasmaria."
         },
         {
           "id": "jones2026a",
@@ -162923,7 +162963,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Notohypsilophodon as an elasmarian."
         },
         {
           "id": "boyd2015a",
@@ -186991,7 +187031,8 @@
     },
     "Qantassaurus": {
       "genus": "Qantassaurus",
-      "parent": "Elasmaria",
+      "parent": "Ornithopoda",
+      "placement": "incertae sedis",
       "pronunciation": {
         "ipa": "/ˌkwɑːntəˈsɔːrəs/",
         "phonetic": "KWAHN-tuh-SOR-uhs"
@@ -186999,11 +187040,15 @@
       "etymology": "Named after Qantas, the Australian airline, combined with Greek 'sauros' (lizard); honors the national carrier of the country where it was discovered.",
       "description": "Qantassaurus is a genus of basal two-legged, plant-eating elasmarian ornithischian dinosaur that lived in Australia about 125-112 million years ago, when the continent was still partly south of the Antarctic Circle. It was described by Patricia Vickers-Rich and Tom Rich, a married couple, in 1999 after a find near Inverloch, and named after Qantas, the Australian airline.",
       "dispute": {
-        "summary": "Qantassaurus is referred to Elasmaria following Madzia and colleagues (2017) and the assessment of Jones (2026). It behaves as an unstable wildcard in several analyses (Herne and colleagues, 2019; Bell and colleagues, 2018), in which it could not be placed with confidence, and it is known only from dentaries.\n",
+        "summary": "Qantassaurus is known only from dentaries and was named as a hypsilophodontid (Rich and Vickers-Rich, 1999). Madzia and colleagues (2017) leave it in a polytomy of Gondwanan ornithopods outside Iguanodontia, and Herne and colleagues (2019) find it a wildcard and prune it, though they note it might be an elasmarian from the resemblance of its teeth to those of Talenkauen.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Elasmaria following Madzia and colleagues (2017) and Jones (2026); recovered as an unstable wildcard by Herne and colleagues (2019) and Bell and colleagues (2018)."
+          },
+          {
+            "date": "2026-10-20",
+            "note": "Parent widened to Ornithopoda; no analysis recovers it in Elasmaria.\n"
           }
         ]
       },
@@ -187091,7 +187136,8 @@
           "title": "The Hypsilophodontidae from southeastern Australia",
           "journal": "Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs",
           "volume": "15",
-          "pages": "167-180"
+          "pages": "167-180",
+          "notes": "Named Qantassaurus as a hypsilophodontid."
         },
         {
           "id": "madzia2017a",
@@ -187104,7 +187150,7 @@
           "issue": "11",
           "pages": "967-979",
           "doi": "10.1080/14772019.2017.1371258",
-          "notes": "Supports referral of Qantassaurus to Elasmaria."
+          "notes": "Recovered Qantassaurus in a polytomy of Gondwanan ornithopods outside Iguanodontia."
         },
         {
           "id": "herne2019a",
@@ -187117,7 +187163,7 @@
           "issue": "3",
           "pages": "543-584",
           "doi": "10.1017/jpa.2018.95",
-          "notes": "Recovered Qantassaurus as an unstable wildcard taxon in ornithopod analysis."
+          "notes": "Found Qantassaurus a wildcard and pruned it; notes it might be an elasmarian from its teeth."
         },
         {
           "id": "bell2018a",
@@ -187129,7 +187175,7 @@
           "volume": "6",
           "pages": "e6008",
           "doi": "10.7717/peerj.6008",
-          "notes": "Recovered Qantassaurus as an unstable wildcard among Griman Creek ornithopods."
+          "notes": "Compares the dentary teeth of Qantassaurus with Griman Creek ornithopods."
         },
         {
           "id": "jones2026a",
@@ -187138,7 +187184,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Qantassaurus as an elasmarian."
         }
       ],
       "taxonomy": [
@@ -187155,8 +187201,7 @@
         "Genasauria",
         "Neornithischia",
         "Cerapoda",
-        "Ornithopoda",
-        "Elasmaria"
+        "Ornithopoda"
       ],
       "authors": "Rich, T. H.; Vickers-Rich, P.",
       "described": 1999
@@ -220139,7 +220184,7 @@
       "etymology": "From Greek telma/telmat-, \"swamp\" or \"marsh\", combined with Greek sauros, \"lizard\" — means \"marsh lizard\"",
       "description": "Telmatosaurus is a genus of basal hadrosauromorph dinosaur from the Late Cretaceous of Romania. It was relatively small for its group, measuring approximately 5 m (16 ft) in length and 600 kg (1,300 lb) in body mass, which has been explained as an instance of insular dwarfism.",
       "dispute": {
-        "summary": "Telmatosaurus transsylvanicus was historically treated as the most basal hadrosaurid (Weishampel and colleagues, 1993), but recent analyses place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Tsogtbaatar and colleagues, 2019; Jones, 2026). Analyses on several matrices recover it as the sister taxon of Tethyshadros (Xing and colleagues, 2014; Lockwood and colleagues, 2021), while others place the two at successive nodes below Hadrosauridae (Prieto-Márquez and colleagues, 2013). Magyar and colleagues (2026) name the group, with Kryptohadros, as the clade Telmatosauridae.\n",
+        "summary": "Telmatosaurus transsylvanicus was historically treated as the most basal hadrosaurid (Weishampel and colleagues, 1993), but recent analyses place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Xing and colleagues, 2014; Tsogtbaatar and colleagues, 2019). Analyses on several matrices recover it as the sister taxon of Tethyshadros (Xing and colleagues, 2014; Lockwood and colleagues, 2021), while others place the two at successive nodes below Hadrosauridae (Prieto-Márquez and colleagues, 2013). Magyar and colleagues (2026) name the group, with Kryptohadros, as the clade Telmatosauridae.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -220375,7 +220420,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Telmatosaurus as a non-hadrosaurid hadrosauromorph."
         },
         {
           "id": "nopcsa1915a",
@@ -227626,7 +227671,7 @@
       },
       "description": "Transylvanosaurus is an extinct genus of rhabdodontid ornithopod dinosaur from the Late Cretaceous (Maastrichtian) Hateg Basin of Romania. The type species is Transylvanosaurus platycephalus, known from a fragmentary skull.",
       "dispute": {
-        "summary": "Transylvanosaurus platycephalus was described as a rhabdodontid, and Jones (2026) places it within Rhabdodontidae, but Czepiński and Madzia (2025) recover it as an early-diverging rhabdodontomorph outside Rhabdodontidae.\n",
+        "summary": "Transylvanosaurus platycephalus was described as a rhabdodontid, recovered in a poorly resolved Rhabdodontidae (Augustin and colleagues, 2022), but Czepiński and Madzia (2025) recover it as an early-diverging rhabdodontomorph outside Rhabdodontidae.\n",
         "history": [
           {
             "date": "2026-06-29",
@@ -227714,7 +227759,8 @@
           "publisher": "Informa UK Limited",
           "volume": "42",
           "issue": "2",
-          "doi": "10.1080/02724634.2022.2133610"
+          "doi": "10.1080/02724634.2022.2133610",
+          "notes": "Named Transylvanosaurus and recovered it in a poorly resolved Rhabdodontidae."
         },
         {
           "id": "czepiński2025a",
@@ -227735,7 +227781,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Transylvanosaurus as a rhabdodontid."
         },
         {
           "id": "therrien2005a",
