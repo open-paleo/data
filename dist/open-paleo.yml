@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-20T21:34:43.210Z
+  built_at: 2026-10-21T00:16:28.271Z
   clade_count: 188
   genus_count: 1426
   license: CC-BY-4.0
@@ -187,10 +187,10 @@ tree:
                                   Pachycephalosaurinae: {}
                             Ornithopoda:
                               Hypsilophodontidae: {}
+                              Elasmaria: {}
                               Iguanodontia:
                                 Rhabdodontomorpha:
                                   Rhabdodontidae: {}
-                                Elasmaria: {}
                                 Dryomorpha:
                                   Dryosauridae: {}
                                   Ankylopollexia:
@@ -4029,7 +4029,6 @@ clades:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     described: 2007
     authors: Calvo, J. O.; Porfiri, J. D.; Novas, F. E.
@@ -4104,6 +4103,76 @@ clades:
         pages: e1523
         doi: 10.7717/peerj.1523
         notes: Ornithischian phylogenetic analysis bearing on the placement of Elasmaria.
+      - id: madzia2017a
+        authors: Madzia, D.; Boyd, C. A.; Mazuch, M.
+        year: 2017
+        title: A basal ornithopod dinosaur from the Cenomanian of the Czech Republic
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "16"
+        issue: "11"
+        pages: 967-979
+        doi: 10.1080/14772019.2017.1371258
+        notes: Recovered Elasmaria within Ornithopoda, outside Iguanodontia.
+      - id: herne2019a
+        authors: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M.
+        year: 2019
+        title: New small-bodied ornithopods (Dinosauria, Neornithischia) from the Early Cretaceous Wonthaggi Formation (Strzelecki Group) of the Australian-Antarctic rift system, with revision of Qantassaurus intrepidus Rich and Vickers-Rich, 1999
+        journal: Journal of Paleontology
+        publisher: Cambridge University Press (CUP)
+        volume: "93"
+        issue: "3"
+        pages: 543-584
+        doi: 10.1017/jpa.2018.95
+        notes: Recovered Elasmaria as the sister of Clypeodonta, within Ornithopoda.
+      - id: cruzado-caballero2019a
+        authors: Cruzado-Caballero, P.; Gasca, J. M.; Filippi, L. S.; Cerda, I. A.; Garrido, A. C.
+        year: 2019
+        title: A new ornithopod dinosaur from the Santonian of Northern Patagonia (Rincón de los Sauces, Argentina)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "98"
+        pages: 211-229
+        doi: 10.1016/j.cretres.2019.02.014
+        notes: Recovered Elasmaria in a polytomy sister to Iguanodontia.
+      - id: dieudonné2020a
+        authors: Dieudonné, P. E.; Cruzado-Caballero, P.; Godefroit, P.; Tortosa, T.
+        year: 2020
+        title: A new phylogeny of cerapodan dinosaurs
+        journal: Historical Biology
+        volume: "33"
+        issue: "10"
+        pages: 2335-2355
+        doi: 10.1080/08912963.2020.1793979
+        notes: Recovered Elasmaria within Iguanodontia, with Eousdryosaurus as the sister of Dryomorpha.
+      - id: rotatori2023a
+        authors: Rotatori, F. M.; Ferrari, L.; Sequero, C.; Camilo, B.; Mateus, O.; Moreno-Azanza, M.
+        year: 2023
+        title: An unexpected early-diverging iguanodontian dinosaur (Ornithischia, Ornithopoda) from the Upper Jurassic of Portugal
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "43"
+        issue: "4"
+        doi: 10.1080/02724634.2024.2310066
+        notes: Recovered Elasmaria within Iguanodontia, as the sister of Dryomorpha.
+      - id: bertozzo2025a
+        authors: Bertozzo, F.; Camilo, B.; Araújo, R.; Manucci, F.; Kullberg, J. C.; Cerio, D. G.; de Carvalho, V. F.; Marrecas, P.; Figueiredo, S. D.; Godefroit, P.
+        year: 2025
+        title: Cariocecus bocagei, a new basal hadrosauroid from the Lower Cretaceous of Portugal
+        journal: Journal of Systematic Palaeontology
+        volume: "23"
+        issue: "1"
+        doi: 10.1080/14772019.2025.2536347
+        notes: Recovered elasmarians in a polytomy with Iguanodontia.
+      - id: coria2024a
+        authors: Coria, R. A.; Cerda, I. A.; Escaso, F.; Baiano, M. A.; Bellardini, F.; Braun, A.; Coria, L. M.; Gutierrez, J. M.; Pino, D.; Windholz, G. J.; Currie, P. J.; Ortega, F.
+        year: 2024
+        title: First Valanginian (Early Cretaceous) ornithopod (Dinosauria, Ornithischia) from Patagonia
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "166"
+        doi: 10.1016/j.cretres.2024.106027
+        notes: Did not recover Elasmaria as a clade.
   Euceratopsia:
     description: |
       Euceratopsia is a clade of neoceratopsian dinosaurs that groups the more derived horned forms while excluding the most basal members of that lineage. Defined as the smallest group containing Leptoceratops, Protoceratops, and Triceratops, it brings together the Leptoceratopsidae — a mostly North American assemblage of small-bodied, quadrupedal ceratopsians — with Coronosauria and all more advanced ceratopsians. The coronosaurs within it show the first development of the neck frill and the fusion of the first several neck vertebrae to support an increasingly heavy head, a trend that reaches its extreme in the large, horned ceratopsids of the Late Cretaceous.
@@ -19257,10 +19326,13 @@ genera:
       Alocodon is a genus of ornithischian dinosaur known from multiple teeth from the Middle or Late Jurassic Cabaços Formation of Portugal, and also the Forest Marble and Chipping Norton Formations of England. A single species is known, A. kuehnei.
     dispute:
       summary: |
-        Alocodon is a nomen dubium based on isolated teeth from the Middle to Late Jurassic of Portugal; its affinities are highly uncertain, having been suggested to be an ornithopod or a thyreophoran but not demonstrable (Jones, 2026). It was formerly placed in the deprecated Fabrosauridae.
+        Alocodon is a nomen dubium based on isolated teeth from the Middle to Late Jurassic of Portugal (Weishampel, 1990). Thulborn (1973) described it as an ornithopod in Hypsilophodontidae, then referred it to the now-abandoned Fabrosauridae; its affinities within Ornithischia cannot be demonstrated from the teeth.
       history:
         - date: 2026-06-29
           note: Reparented from the deprecated Fabrosauridae to Ornithischia incertae sedis; tooth-based nomen dubium.
+        - date: 2026-10-20
+          note: |
+            Affinities credited to Thulborn (1973) and the nomen dubium to Weishampel (1990).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -19320,7 +19392,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Alocodon as a dubious genus of uncertain ornithopod affinity.
       - id: mateus2009b
         authors: Mateus, O.; Milàn, J.
         year: 2009
@@ -20797,17 +20869,21 @@ genera:
     described: 2019
   Ampelognathus:
     genus: Ampelognathus
-    parent: Rhabdodontomorpha
+    parent: Ornithopoda
+    placement: incertae sedis
     etymology: From Greek 'ampelos' meaning 'grapevine' and 'gnathos' meaning 'jaw'; meaning 'grapevine jaw', named in reference to Grapevine Lake where the holotype was found
     pronunciation:
       phonetic: am-pell-o-nath-us
     description: Ampelognathus is an extinct genus of possibly rhabdodontomorph ornithopod dinosaurs from the Late Cretaceous (Cenomanian) Lewisville Formation of Texas. The type species is Ampelognathus coheni.
     dispute:
       summary: |
-        Ampelognathus coheni is recovered within Rhabdodontomorpha by Czepiński and Madzia (2025), but Jones (2026) treats it as a basal ornithopod between Thescelosauridae and Iguanodontia.
+        Ampelognathus coheni was described as a non-iguanodontian ornithopod, the sister of Thescelosaurus plus Iguanodontia, a position its describers found weakly supported (Tykoski and colleagues, 2023). Czepiński and Madzia (2025) instead recover it in a basal polytomy within Rhabdodontomorpha under implied weighting, its precise placement uncertain.
       history:
         - date: 2026-06-29
           note: Placed at Rhabdodontomorpha following Czepiński and Madzia (2025); the basal-ornithopod alternative reflected, not adopted.
+        - date: 2026-10-20
+          note: |
+            Parent widened to Ornithopoda; its describers place it outside Iguanodontia and Czepiński and Madzia (2025) within Rhabdodontomorpha.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -20873,6 +20949,7 @@ genera:
         volume: "43"
         issue: "2"
         doi: 10.1080/02724634.2023.2257238
+        notes: Named Ampelognathus and recovered it as the sister of Thescelosaurus plus Iguanodontia, with low support.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
@@ -20889,7 +20966,7 @@ genera:
         volume: "15"
         issue: "1"
         doi: 10.1038/s41598-025-98083-z
-        notes: Recovered Ampelognathus within Rhabdodontomorpha.
+        notes: Recovered Ampelognathus in a basal polytomy within Rhabdodontomorpha under implied weighting.
     taxonomy:
       - Life
       - Animalia
@@ -20905,8 +20982,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
-      - Rhabdodontomorpha
     authors: Tykoski, R. S.; Contreras, D. L.; Noto, C.
     described: 2023
   Ampelosaurus:
@@ -21835,7 +21910,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Coria, R. A.; Calvo, J. O.
     described: 2002
@@ -29608,7 +29682,7 @@ genera:
       phonetic: AT-las-KOP-ko-SAWR-us
       ipa: /ˌætləsˌkɒpkəˈsɔːrəs/
     etymology: Named for Atlas Copco, the company whose equipment sponsored the Dinosaur Cove excavation in Australia, combined with Greek 'sauros' meaning 'lizard'.
-    description: Atlascopcosaurus is a genus of herbivorous basal iguanodont dinosaur from the Early Cretaceous Eumeralla Formation of Australia.
+    description: Atlascopcosaurus is a genus of herbivorous ornithopod dinosaur from the Early Cretaceous Eumeralla Formation of Australia.
     dispute:
       summary: |
         Atlascopcosaurus loadsi is based on limited material; it is recovered in Elasmaria by recent analyses but treated as a nomen dubium by some and placed in an unnamed basal-iguanodontian clade by Boyd (2015).
@@ -29726,7 +29800,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Rich, T. H.; Vickers-Rich, P.
     described: 1989
@@ -34622,10 +34695,13 @@ genera:
     description: Barsboldia is a genus of large hadrosaurid dinosaur from the Maastrichtian Nemegt Formation of Ömnogöv, Mongolia. It is known from a partial vertebral column, partial pelvis, and some ribs.
     dispute:
       summary: |
-        Barsboldia sicinskii has been interpreted as a lambeosaurine (Maryańska and Osmólska, 1981), as a saurolophine of uncertain position (Prieto-Márquez, 2011), and as an indeterminate basal hadrosaurid (Jones, 2026); its poorly preserved holotype has rarely been included in phylogenetic analyses.
+        Barsboldia sicinskii was described as a lambeosaurine (Maryańska and Osmólska, 1981), but Prieto-Márquez (2010, 2011) found lambeosaurine affinity unsupported and recovered it as a saurolophine of uncertain position; the 2010 analysis prunes it from the reduced consensus.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauridae incertae sedis; subfamily assignment unresolved across sources.
+        - date: 2026-10-20
+          note: |
+            Saurolophine placement credited to Prieto-Márquez (2010, 2011).
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -34695,6 +34771,7 @@ genera:
         volume: "26"
         issue: 3-1
         pages: 243-255
+        notes: Named Barsboldia as a lambeosaurine.
       - id: gradziński1972a
         authors: Gradziński, R.; Jerzykiewicz, T.
         year: 1972
@@ -34710,17 +34787,27 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the appearance features.
-      - id: prieto-márquez2011b
+      - id: prieto-márquez2011c
         authors: Prieto-Márquez, A.
         year: 2011
-        title: "Revised diagnoses of Hadrosaurus foulkii Leidy, 1858 (the type genus and species of Hadrosauridae Cope, 1869) and Claosaurus agilis Marsh, 1872 (Dinosauria: Ornithopoda) from the Late Cretaceous of North America"
-        journal: Zootaxa
-        publisher: Magnolia Press
-        volume: "2765"
-        issue: "1"
-        pages: 61-68
-        doi: 10.11646/zootaxa.2765.1.6
+        title: A reapprisal of Barsboldia sicinskii (Dinosauria, Hadrosauridae) from the Late Cretaceous of Mongolia
+        journal: Journal of Paleontology
+        volume: "85"
+        issue: "3"
+        pages: 468-477
+        doi: 10.1666/10-106.1
         notes: Placed Barsboldia sicinskii within Saurolophinae based on iliac and character comparisons
+      - id: prieto-márquez2010c
+        authors: Prieto-Márquez, A.
+        year: 2010
+        title: "Global phylogeny of Hadrosauridae (Dinosauria: Ornithopoda) using parsimony and Bayesian methods"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "159"
+        issue: "2"
+        pages: 435-502
+        doi: 10.1111/j.1096-3642.2009.00617.x
+        notes: Found lambeosaurine affinity unsupported and recovered Barsboldia within Saurolophinae.
     taxonomy:
       - Life
       - Animalia
@@ -42053,12 +42140,15 @@ genera:
     description: Callovosaurus is a genus of iguanodontian dinosaur known from most of a left thigh bone discovered in Middle Jurassic-age rocks of England. At times, it has been considered dubious or a valid genus of basal iguanodontian, perhaps a dryosaurid.
     dispute:
       summary: |
-        Callovosaurus leedsi, based only on a femur, is regarded as the earliest dryosaurid by Ruiz-Omeñaca and colleagues (2007) and Jones (2026), but its limited material leaves the assignment weakly constrained — McDonald and colleagues (2012) recovered it in an unresolved basal Iguanodontia polytomy — and its validity is sometimes questioned.
+        Callovosaurus leedsi, based only on a femur, was named as a camptosaurid (Galton, 1980) and is regarded as the earliest dryosaurid by Ruiz-Omeñaca and colleagues (2007), but its limited material leaves the assignment weakly constrained: McDonald and colleagues (2012) recovered it in an unresolved basal Iguanodontia polytomy.
       history:
         - date: 2026-06-29
           note: Placed at Dryosauridae following the prevailing view (Jones, 2026); the more basal alternatives reflected, not adopted.
         - date: 2026-07-09
           note: Re-evaluated; retained at Dryosauridae. Czepiński and Madzia (2025) does not include Callovosaurus, so the dryosaurid assignment (Ruiz-Omeñaca and colleagues 2007; Jones 2026) stands against only an unresolved basal-Iguanodontia polytomy (McDonald and colleagues 2012); no broadening is warranted.
+        - date: 2026-10-20
+          note: |
+            Dryosaurid placement credited to Ruiz-Omeñaca and colleagues (2007).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -42125,6 +42215,7 @@ genera:
         issue: "1"
         pages: 73-95
         doi: 10.1127/njgpa/160/1980/73
+        notes: Named Callovosaurus as a camptosaurid.
       - id: ruiz-omeñaca2007a
         authors: Ruiz-Omeñaca, J. I.; Pereda-Suberbiola, X.; Galton, P. M.
         year: 2007
@@ -46475,7 +46566,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Nogueira, R. A.; Rozadilla, S.; Agnolín, F. L.; García Marsà, J. A.; Motta, M. J.; Novas, F. E.
     described: 2024
@@ -59290,7 +59380,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Herne, M. C.; Tait, A. M.; Weisbecker, V.; Hall, M.; Nair, J. P.; Cleeland, M.; Salisbury, S. W.
     described: 2018
@@ -72278,7 +72367,7 @@ genera:
     etymology: Named for Robert Foster, the miner who discovered the bone bed at the Sheepyard opal field.
     pronunciation:
       phonetic: foss-TOR-ee-uh
-    description: Fostoria is a genus of iguanodontian ornithopod dinosaur from the Griman Creek Formation of New South Wales, Australia. The type and only species, Fostoria dhimbangunmal was described in 2019.
+    description: Fostoria is a genus of ornithopod dinosaur from the Griman Creek Formation of New South Wales, Australia. The type and only species, Fostoria dhimbangunmal was described in 2019.
     dispute:
       summary: |
         Fostoria dhimbangunmal was placed within Rhabdodontomorpha by Madzia and colleagues (2021), but the two most recent dedicated analyses — Fonseca and colleagues (2024) and Czepiński and Madzia (2025) — recover it within Elasmaria alongside Muttaburrasaurus, treating its rhabdodontomorph resemblances as convergence; its fragmentary material limits confidence.
@@ -72416,7 +72505,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Bell, P. R.; Brougham, T.; Herne, M. C.; Frauenfelder, T.; Smith, E. T.
     described: 2019
@@ -74355,7 +74443,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M.
     described: 2019
@@ -75738,7 +75825,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Coria, R. A.; Salgado, L.
     described: 1996
@@ -80770,7 +80856,7 @@ genera:
     description: Gualicho is an enigmatic genus of theropod dinosaurs. The type species is Gualicho shinyae. It lived in what is now northern Patagonia, on what was then a South American island continent split off from the supercontinent Gondwana. The fossils were found in the Huincul Formation, dating to the late Cenomanian-early Turonian age of the upper Cretaceous Period, around 91 million years ago.
     dispute:
       summary: |
-        The position of Gualicho shinyae is highly unstable. Apesteguía and colleagues (2016) recovered it as a neovenatorid carcharodontosaurian (an allosauroid) sister to Deltadromeus, arguing its tyrannosaurid-like didactyl manus is convergent rather than evidence of tyrannosauroid affinity; other analyses instead place it within Coelurosauria (Porfiri and colleagues, 2018) or as an early-branching ornithomimosaur alongside Deltadromeus (Delcourt and colleagues, 2025), and ceratosaurian traits have also been noted (Jones, 2026). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis. It is not a tyrannosauroid.
+        The position of Gualicho shinyae is highly unstable. Apesteguía and colleagues (2016) recovered it as a neovenatorid carcharodontosaurian (an allosauroid) sister to Deltadromeus, arguing its tyrannosaurid-like didactyl manus is convergent rather than evidence of tyrannosauroid affinity, and noted a mosaic of ceratosaurian and tetanuran characters; other analyses instead place it within Coelurosauria (Porfiri and colleagues, 2018) or as an early-branching ornithomimosaur alongside Deltadromeus (Delcourt and colleagues, 2025). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-06-25
           note: |
@@ -80778,6 +80864,9 @@ genera:
         - date: 2026-07-02
           note: |
             Confirmed placement at Avetheropoda incertae sedis; the allosauroid-versus-coelurosaur-versus-ornithomimosaur position remains unresolved.
+        - date: 2026-10-20
+          note: |
+            Ceratosaurian characters credited to Apesteguía and colleagues (2016).
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -80876,7 +80965,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports the allosauroid and coelurosaur placements.
       - id: cerroni2020a
         authors: Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E.
         year: 2020
@@ -83165,10 +83254,13 @@ genera:
     parent: Alvarezsauridae
     dispute:
       summary: |
-        Heptasteornis andrewsi, from the Maastrichtian of Romania, is based on a distal tibiotarsus that Naish and Dyke (2004) identified as the first European alvarezsaurid on the basis of an alvarezsaurid-type astragalar notch; they nonetheless regarded the genus as a nomen dubium for lack of distinguishing autapomorphies. Meso and colleagues (2024) recovered it as an unstable alvarezsaurid, and Jones (2026) treats its alvarezsaurid identity as a gaining-traction hypothesis rather than a settled result.
+        Heptasteornis andrewsi, from the Maastrichtian of Romania, is based on a distal tibiotarsus that Naish and Dyke (2004) identified as the first European alvarezsaurid on the basis of an alvarezsaurid-type astragalar notch; they nonetheless regarded the genus as a nomen dubium for lack of distinguishing autapomorphies. Hartman and colleagues (2019) recover it as an alvarezsaurid, and Meso and colleagues (2024) find it unstable and prune it; Csiki and Grigorescu (1998) had regarded the tibiotarsi as possibly from a non-maniraptoran tetanuran.
       history:
         - date: 2026-07-01
           note: Placed at Alvarezsauridae following Naish and Dyke (2004); retained as a nomen-dubium-grade alvarezsaurid whose finer position cannot be resolved.
+        - date: 2026-10-20
+          note: |
+            Alvarezsaurid identity credited to the analyses that recover it.
     pronunciation:
       phonetic: hep-tas-tee-OR-nis
     etymology: From Greek 'hepta' meaning 'seven', 'asty' meaning 'city', and 'ornis' meaning 'bird', referencing the Latin 'septum urbium' / German 'Siebenbürgen' ('seven cities/castles') — historical names for the Transylvanian region.
@@ -83233,7 +83325,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports the alvarezsaurid hypothesis.
       - id: meso2024a
         authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
         year: 2024
@@ -83244,7 +83336,7 @@ genera:
         issue: "2"
         pages: 135-155
         doi: 10.1111/cla.12600
-        notes: Recovered Heptasteornis as an unstable alvarezsaurid.
+        notes: Found Heptasteornis an unstable taxon and pruned it from the reduced consensus.
       - id: naish2004b
         authors: Naish, D.; Dyke, G. J.
         year: 2004
@@ -83262,7 +83354,17 @@ genera:
         publisher: Musée des Dinosaures d'Espéraza
         volume: "1"
         pages: 87-104
-        notes: Traces the holotype's provenance to the Sanpetru Formation of the Sibișel Valley, which the describing paper does not state.
+        notes: Traces the holotype's provenance to the Sanpetru Formation of the Sibișel Valley, which the describing paper does not state. Regards the tibiotarsi as possibly from a non-maniraptoran tetanuran.
+      - id: hartman2019a
+        authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
+        year: 2019
+        title: A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "7"
+        pages: e7247
+        doi: 10.7717/peerj.7247
+        notes: Recovered Heptasteornis as an alvarezsaurid.
     taxonomy:
       - Life
       - Animalia
@@ -91522,7 +91624,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L.
     described: 2019
@@ -95907,11 +96008,14 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Jobaria is most often recovered as a derived non-neosauropodan eusauropod (Sereno and colleagues, 1999, outside the neosauropod radiation; Mannion and colleagues, 2019, as sister to Cetiosauriscus), with Zhang and colleagues (2026) and Jones (2026) placing it close to or within Turiasauria; some analyses instead recover it as a basal macronarian (Nair and Salisbury, 2012).
+        Jobaria is most often recovered as a derived non-neosauropodan eusauropod (Sereno and colleagues, 1999, outside the neosauropod radiation; Mannion and colleagues, 2019, as sister to Cetiosauriscus), with Zhang and colleagues (2026) placing it within Turiasauria, in a clade with Atlasaurus and Lapparentosaurus; some analyses instead recover it as a basal macronarian (Nair and Salisbury, 2012).
       history:
         - date: 2026-06-29
           note: |
             Retained at Eusauropoda incertae sedis following the prevailing non- neosauropod view (Jones, 2026); the Turiasauria and basal-Macronaria alternatives are unresolved.
+        - date: 2026-10-20
+          note: |
+            Turiasaurian placement credited to Zhang and colleagues (2026); the non-neosauropod placement to Sereno and colleagues (1999) and Mannion and colleagues (2019).
     pronunciation:
       phonetic: joh-BAHR-ee-uh
     etymology: Named after Jobar, a mythical giant beast from local Tuareg tradition in Niger, whose bones local people believed the fossils to be
@@ -96011,7 +96115,7 @@ genera:
         issue: "2"
         article_number: zlaf201
         doi: 10.1093/zoolinnean/zlaf201
-        notes: Recovers Jobaria within a new clade sister to Turiasauria, alongside Lapparentosaurus and Atlasaurus
+        notes: Recovered Jobaria within Turiasauria, in a clade with Atlasaurus and Lapparentosaurus sister to the traditional turiasaurs.
       - id: mannion2019a
         authors: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O.
         year: 2019
@@ -99773,10 +99877,13 @@ genera:
     description: Koreaceratops is a genus of basal ceratopsian dinosaur discovered in Albian-aged (Early Cretaceous) rocks of South Korea.
     dispute:
       summary: |
-        Koreaceratops hwaseongensis has been recovered just stemward of Euceratopsia as a basal neoceratopsian and, in some analyses, within Leptoceratopsidae (Morschhauser and colleagues, 2018); Jones (2026) leans toward the basal position.
+        Koreaceratops hwaseongensis was described as a basal neoceratopsian, outside the clade of Cerasinops, Leptoceratopsidae and more derived ceratopsians (Lee and colleagues, 2011), while Morschhauser and colleagues (2018) recover it within the leptoceratopsid polytomy, with Montanoceratops in their agreement subtree.
       history:
         - date: 2026-06-27
           note: Placed at Neoceratopsia (basal) following the prevailing view (Jones, 2026); leptoceratopsid alternative reflected.
+        - date: 2026-10-20
+          note: |
+            Placements credited to Lee and colleagues (2011) and Morschhauser and colleagues (2018).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -99842,6 +99949,7 @@ genera:
         issue: "1"
         pages: 39-49
         doi: 10.1007/s00114-010-0739-y
+        notes: Named Koreaceratops and recovered it as a basal neoceratopsian.
       - id: morschhauser2018a
         authors: Morschhauser, E. M.; You, H.; Li, D.; Dodson, P.
         year: 2018
@@ -99852,14 +99960,14 @@ genera:
         issue: sup1
         pages: 117-147
         doi: 10.1080/02724634.2018.1509866
-        notes: Recovered Koreaceratops as a basal neoceratopsian, within Leptoceratopsidae in some analyses.
+        notes: Recovered Koreaceratops within the leptoceratopsid polytomy, and with Montanoceratops in the agreement subtree.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Koreaceratops as just stemward of Leptoceratopsidae.
     taxonomy:
       - Life
       - Animalia
@@ -102721,10 +102829,13 @@ genera:
     description: Lapampasaurus is an extinct genus of hadrosaurid known from the Late Cretaceous Allen Formation (late Campanian or early Maastrichtian stage) of La Pampa Province, Argentina. It contains a single species, Lapampasaurus cholinoi. The generic name refers to the Argentine province of La Pampa. The specific name honors the late collector José Cholino. The material includes cervical, dorsal, sacral and caudal vertebrae, the forelimb girdle, and the partial hindlimb.
     dispute:
       summary: |
-        Lapampasaurus cholinoi is known from very fragmentary remains, coded for only 11 of 365 characters by Alarcón-Muñoz and colleagues (2023), who excluded it from their results; when included it falls within Saurolophinae near Kamuysaurus, but Jones (2026) treats it as an indeterminate hadrosaurid.
+        Lapampasaurus cholinoi is known from very fragmentary remains, which its describers judged too incomplete for a cladistic analysis while referring it to Hadrosauridae on synapomorphies (Coria and colleagues, 2012). Alarcón-Muñoz and colleagues (2023) coded it for only 11 of 365 characters and excluded it from their results; when included it falls within Saurolophinae near Kamuysaurus.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauridae incertae sedis; tentative saurolophine affinity (Alarcón-Muñoz and colleagues, 2023) too weakly supported to adopt.
+        - date: 2026-10-20
+          note: |
+            Hadrosaurid referral credited to its describers.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -102788,6 +102899,7 @@ genera:
         issue: "4"
         pages: 552-572
         doi: 10.5710/amgh.9.4.2012.487
+        notes: Named Lapampasaurus and referred it to Hadrosauridae on synapomorphies, without a cladistic analysis.
       - id: alarcón-muñoz2023a
         authors: Alarcón-Muñoz, J.; Vargas, A. O.; Püschel, H. P.; Soto-Acuña, S.; Manríquez, L.; Leppe, M.; Kaluza, J.; Milla, V.; Gutstein, C. S.; Palma-Liberona, J.; Stinnesbeck, W.; Frey, E.; Pino, J. P.; Bajor, D.; Núñez, E.; Ortiz, H.; Rubilar-Rogers, D.; Cruzado-Caballero, P.
         year: 2023
@@ -102804,7 +102916,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Lapampasaurus as a hadrosaurid of indeterminate placement.
     taxonomy:
       - Life
       - Animalia
@@ -103849,7 +103961,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Rich, T. H.; Vickers-Rich, P.
     described: 1989
@@ -110700,7 +110811,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Calvo, J. O.; Porfiri, J. D.; Novas, F. E.
     described: 2007
@@ -111547,7 +111657,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Cruzado-Caballero, P.; Gasca, J. M.; Filippi, L. S.; Cerda, I. A.; Garrido, A. C.
     described: 2019
@@ -120257,7 +120366,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Rozadilla, S.; Agnolín, F. L.; Novas, F. E.; Aranciaga Rolando, A. M.; Motta, M. J.; Lirio, J. M.; Isasi, M. P.
     described: 2016
@@ -120803,7 +120911,7 @@ genera:
     pronunciation:
       phonetic: muht-a-BUHR-a-SAWR-us
     etymology: Named for Muttaburra, a town in Queensland, Australia near where the fossil was discovered, combined with Greek '-saurus' meaning 'lizard'.
-    description: Muttaburrasaurus was a genus of herbivorous iguanodontian ornithopod dinosaur that lived in what is now north-eastern Australia during the Cenomanian stage of the Late Cretaceous period, about 96 million years ago. It has been recovered in some analyses as a member of the iguanodontian clade Rhabdodontomorpha, or alternately as a member of Elasmaria. After Kunbarrasaurus, it is Australia's most completely known dinosaur from skeletal remains. It was named after Muttaburra, the site in Queensland, Australia, where it was found. The dinosaur was selected from twelve candidates to become the official fossil emblem of the State of Queensland.
+    description: Muttaburrasaurus was a genus of herbivorous ornithopod dinosaur that lived in what is now north-eastern Australia during the Cenomanian stage of the Late Cretaceous period, about 96 million years ago. It has been recovered in some analyses as a member of the iguanodontian clade Rhabdodontomorpha, or alternately as a member of Elasmaria. After Kunbarrasaurus, it is Australia's most completely known dinosaur from skeletal remains. It was named after Muttaburra, the site in Queensland, Australia, where it was found. The dinosaur was selected from twelve candidates to become the official fossil emblem of the State of Queensland.
     dispute:
       summary: |
         Muttaburrasaurus langdoni was long recovered within Rhabdodontomorpha (Dieudonné and colleagues, 2016; Madzia and colleagues, 2021), but Fonseca and colleagues (2024) recovered it within Elasmaria, interpreting its rhabdodontomorph resemblances as convergence, and Czepiński and Madzia (2025) likewise placed it outside Rhabdodontomorpha. Its redescription by Herne and colleagues (2026) found it craniodentally distant from rhabdodontomorphs but undertook no phylogenetic analysis, leaving its relationships unresolved.
@@ -120987,7 +121095,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Bartholomai, A.; Molnar, R. E.
     described: 1981
@@ -127674,7 +127781,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Martínez, R. D.
     described: 1998
@@ -137835,12 +137941,6 @@ genera:
     pronunciation:
       phonetic: pen-el-o-pog-nay-thus
     description: Penelopognathus is a genus of hadrosauroid dinosaur which lived in the Early Cretaceous Bayin-Gobi Formation in what is now China. The discovery of this taxon contributes to the hypothesis that hadrosauroids originated in Asia.
-    dispute:
-      summary: |
-        Penelopognathus weishampeli is a fragmentary taxon recovered as a basal hadrosauroid (Jones, 2026) and, in other analyses, among Hadrosauromorpha (Magyar and colleagues, 2026).
-      history:
-        - date: 2026-06-27
-          note: Placed at Hadrosauroidea following Jones (2026); the more derived hadrosauromorph position reflected, not adopted.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -137908,6 +138008,7 @@ genera:
         issue: "8"
         pages: 697-705
         doi: 10.1016/j.crpv.2005.07.004
+        notes: Named Penelopognathus as a basal hadrosauroid between Altirhinus and Probactrosaurus, without a phylogenetic analysis.
       - id: magyar2026a
         authors: Magyar, J.; Ősi, A.; Csiki-Sava, Z.; Budai, S.; Botfalvai, G.
         year: 2026
@@ -137918,14 +138019,25 @@ genera:
         issue: "1"
         pages: "2607800"
         doi: 10.1080/14772019.2025.2607800
-        notes: New Hațeg hadrosauroid description placed Penelopognathus among Hadrosauromorpha.
+        notes: Places Penelopognathus in an East Asian clade of non-hadrosaurid hadrosauroids.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Penelopognathus as a basal hadrosauroid.
+      - id: mcdonald2010a
+        authors: McDonald, A. T.; Wolfe, D. G.; Kirkland, J. I.
+        year: 2010
+        title: "A new basal hadrosauroid (Dinosauria: Ornithopoda) from the Turonian of New Mexico"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "30"
+        issue: "3"
+        pages: 799-812
+        doi: 10.1080/02724631003763516
+        notes: Recovered Penelopognathus among basal hadrosauroids, supporting the position Godefroit and colleagues (2005) proposed.
     taxonomy:
       - Life
       - Animalia
@@ -146446,7 +146558,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Rich, T. H.; Vickers-Rich, P.
     described: 1999
@@ -156679,7 +156790,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Ibiricu, L. M.; Casal, G. A.; Martínez, R. D.; Luna, M.; Canale, J. I.; Álvarez, B. N.; González Riga, B.
     described: 2019
@@ -168481,7 +168591,7 @@ genera:
     etymology: "From the Aonikenk (Tehuelche) language: 'talenk' meaning 'small' and 'kauen' meaning 'skull', referring to the relatively small skull of the specimen"
     pronunciation:
       phonetic: ta-LEN-ca-wen
-    description: Talenkauen is a genus of basal iguanodont dinosaur from the Campanian or Maastrichtian age of the Late Cretaceous Cerro Fortaleza Formation, formerly known as the Pari Aike Formation of Patagonian Lake Viedma, in the Austral Basin of Santa Cruz, Argentina. It is based on MPM-10001A, a partial articulated skeleton missing the rear part of the skull, the tail, and the hands. The type and only species is Talenkauen santacrucensis.
+    description: Talenkauen is a genus of ornithopod dinosaur from the Campanian or Maastrichtian age of the Late Cretaceous Cerro Fortaleza Formation, formerly known as the Pari Aike Formation of Patagonian Lake Viedma, in the Austral Basin of Santa Cruz, Argentina. It is based on MPM-10001A, a partial articulated skeleton missing the rear part of the skull, the tail, and the hands. The type and only species is Talenkauen santacrucensis.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -168594,7 +168704,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Novas, F. E.; Cambiaso, A. V.; Ambrosio, A.
     described: 2004
@@ -175811,7 +175920,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V.
     described: 2024
@@ -178923,7 +179031,6 @@ genera:
       - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Iguanodontia
       - Elasmaria
     authors: Coria, R. A.; Moly, J. J.; Reguero, M.; Santillana, S.; Marenssi, S.
     described: 2013
@@ -182259,10 +182366,13 @@ genera:
     parent: Troodontinae
     dispute:
       summary: |
-        Urbacodon is a fragmentary troodontid known mainly from a dentary. It has been recovered as a derived troodontine near Zanabazar (Hartman and colleagues, 2019; Wang and colleagues, 2024), where it is placed, but Jones (2026) notes its fragmentary nature leaves its position indeterminate.
+        Urbacodon is a fragmentary troodontid known mainly from a dentary. It has been recovered as a derived troodontine near Zanabazar (Hartman and colleagues, 2019; Wang and colleagues, 2024), where it is placed, while Cau and Madzia (2021) find it a wildcard within Troodontidae.
       history:
         - date: 2026-07-01
           note: Placed in Troodontinae following Hartman and colleagues (2019); fragmentary, position weakly constrained.
+        - date: 2026-10-20
+          note: |
+            Instability credited to Cau and Madzia (2021).
     etymology: Named after URBAC (an acronym honoring Uzbek, Russian, British, American, and Canadian scientists who collaborated on Central Asian paleontological expeditions), combined with Greek odon meaning 'tooth'
     description: "Urbacodon is a genus of troodontid theropod dinosaur. Two species have been described, both of which are known from a partial dentary: U. itemirensis from the Dzharakuduk Formation (Cenomanian) of Uzbekistan and U. norelli from the Iren Dabasu Formation of China. Possible remains are also known from the Bissekty Formation (Turonian) of Uzbekistan."
     diet: carnivore
@@ -182361,8 +182471,17 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: |
-          Illustrated by E. Viola.
+        notes: Treats Urbacodon's placement as indeterminate.
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Found Urbacodon a wildcard within Troodontidae.
     taxonomy:
       - Life
       - Animalia
@@ -188423,11 +188542,14 @@ genera:
     parent: Somphospondyli
     dispute:
       summary: |
-        Xianshanosaurus has an uncertain placement. D'Emic (2012) referred it to Lithostrotia on a single character, and Han and colleagues (2024) recovered it within Titanosauria as the sister taxon of Daxiatitan, while the Princeton Encyclopedia (Jones, 2026) leaves its position within Somphospondyli unresolved. It is retained conservatively at Somphospondyli.
+        Most analyses recover Xianshanosaurus within Titanosauria, usually as the sister of Daxiatitan just outside Lithostrotia (Mannion and colleagues, 2013; Upchurch and colleagues, 2015; Han and colleagues, 2024; Averianov and colleagues, 2025), and some implied-weights analyses place it within Lithostrotia (Mannion and colleagues, 2019). Gallina and colleagues (2021) instead recover it as a euhelopodid, with Huabeisaurus and Daxiatitan, and Moore and colleagues (2020) find it labile, recovering it in a non-neosauropod Euhelopodidae in their Bayesian analysis.
       history:
         - date: 2026-06-30
           note: |
             Placed conservatively at Somphospondyli given the unresolved euhelopodid versus titanosaurian debate; finer placement remains unresolved.
+        - date: 2026-10-20
+          note: |
+            Placement credited to the analyses; Gallina and colleagues (2021) supply the euhelopodid alternative.
     pronunciation:
       phonetic: shyen-SHAHN-oh-SAWR-us
     etymology: Named after Xianshan Hill near the fossil locality in the Ruyang Basin, Henan Province, China, combined with Greek 'sauros' meaning 'lizard'.
@@ -188503,6 +188625,7 @@ genera:
         volume: "25"
         issue: "1"
         pages: 43-56
+        notes: Named Xianshanosaurus and placed it provisionally in Neosauropoda, outside Titanosauridae.
       - id: jones2026b
         authors: Jones, B.
         year: 2026
@@ -188530,6 +188653,67 @@ genera:
         pages: 624-671
         doi: 10.1111/j.1096-3642.2012.00853.x
         notes: Referred Xianshanosaurus to Lithostrotia on the basis of a single character.
+      - id: mannion2013a
+        authors: Mannion, P. D.; Upchurch, P.; Barnes, R. N.; Mateus, O.
+        year: 2013
+        title: Osteology of the Late Jurassic Portuguese sauropod dinosaur Lusotitan atalaiensis (Macronaria) and the evolutionary history of basal titanosauriforms
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "168"
+        issue: "1"
+        pages: 98-206
+        doi: 10.1111/zoj.12029
+        notes: Recovered Xianshanosaurus just outside Lithostrotia, with Daxiatitan.
+      - id: upchurch2015a
+        authors: Upchurch, P.; Mannion, P. D.; Taylor, M. P.
+        year: 2015
+        title: The Anatomy and Phylogenetic Relationships of "Pelorosaurus" becklesii (Neosauropoda, Macronaria) from the Early Cretaceous of England
+        journal: PLOS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "10"
+        issue: "6"
+        pages: e0125819
+        doi: 10.1371/journal.pone.0125819
+        notes: Recovered Xianshanosaurus as a titanosaur in all analyses.
+      - id: mannion2019b
+        authors: Mannion, P. D.; Upchurch, P.; Jin, X.; Zheng, W.
+        year: 2019
+        title: "New information on the Cretaceous sauropod dinosaurs of Zhejiang Province, China: impact on Laurasian titanosauriform phylogeny and biogeography"
+        journal: Royal Society Open Science
+        volume: "6"
+        issue: "8"
+        pages: "191057"
+        doi: 10.1098/rsos.191057
+        notes: Recovered Xianshanosaurus with Daxiatitan just outside Lithostrotia under equal weights, and as a basal lithostrotian under implied weights.
+      - id: gallina2021a
+        authors: Gallina, P. A.; Canale, J. I.; Carballido, J. L.
+        year: 2021
+        title: The Earliest Known Titanosaur Sauropod Dinosaur
+        journal: Ameghiniana
+        publisher: Asociacion Paleontologica Argentina
+        volume: "58"
+        issue: "1"
+        doi: 10.5710/amgh.20.08.2020.3376
+        notes: Recovered Xianshanosaurus as a euhelopodid, with Huabeisaurus and Daxiatitan.
+      - id: moore2020a
+        authors: Moore, A. J.; Upchurch, P.; Barrett, P. M.; Clark, J. M.; Xu, X.
+        year: 2020
+        title: Osteology of Klamelisaurus gobiensis (Dinosauria, Eusauropoda) and the evolutionary history of Middle-Late Jurassic Chinese sauropods
+        journal: Journal of Systematic Palaeontology
+        volume: "18"
+        issue: "16"
+        pages: 1299-1393
+        doi: 10.1080/14772019.2020.1759706
+        notes: Found Xianshanosaurus labile, as a titanosaur or turiasaurian under equal weights, a lithostrotian under implied weights, and a non-neosauropod euhelopodid in the Bayesian analysis.
+      - id: averianov2025b
+        authors: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P.
+        year: 2025
+        title: A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria
+        journal: Cretaceous Research
+        volume: "181"
+        pages: "106271"
+        doi: 10.1016/j.cretres.2025.106271
+        notes: Recovered Xianshanosaurus with Daxiatitan as the sister of Lithostrotia.
     taxonomy:
       - Life
       - Animalia
