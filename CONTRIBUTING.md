@@ -103,6 +103,17 @@ and any future placement change.
   (often an *incertae sedis* position within a backbone node such as `Tetanurae`
   or `Neosauropoda`), and the finer disagreement is recorded in a `dispute:`
   block rather than resolved by picking a side.
+- **An unflagged parent means outside its subclades.** `parent: X` with no
+  `placement` says the genus is inside X *and outside every named subclade of
+  X*, as the agreed analyses recover it: a basal member of X. When membership
+  in X is agreed but the genus's position relative to X's subclades is not, set
+  `placement: incertae sedis`. The rule above picks X; the flag records whether
+  the agreement goes any further. A nomen dubium parented at the broadest node
+  its material supports therefore carries the flag.
+- **Adding a subclade is a claim about its parent's genera.** Under the rule
+  above, a new clade under X places every unflagged genus at X outside it. When
+  adding one, review the genera directly under X: move its members into the new
+  clade, and flag any whose side of it is unknown.
 - **Weigh independent analyses, not papers.** A reused matrix is one data point;
   recency, taxon and character sampling, and dedicated-versus-incidental scope
   all matter. A single new study is *reflected* in a dispute, but only *adopted*
