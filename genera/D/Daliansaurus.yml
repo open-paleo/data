@@ -1,14 +1,20 @@
 genus: Daliansaurus
-parent: Sinovenatorinae
+parent: Troodontidae
+placement: incertae sedis
 dispute:
   summary: >
-    Daliansaurus was described as a member of Sinovenatorinae (Shen and
-    colleagues, 2017), the placement followed, but later analyses (Hartman and
-    colleagues, 2019) and Jones (2026) instead recover it in a more derived
-    position closer to Troodontinae.
+    Daliansaurus was described as a member of Sinovenatorinae, the sister of
+    Sinusonasus (Shen and colleagues, 2017), but every later analysis
+    recovers it in a more derived position, outside that subfamily (Hartman
+    and colleagues, 2019; Cau and Madzia, 2021; Sellés and colleagues, 2021;
+    Wang and colleagues, 2023; Kubota and colleagues, 2024).
   history:
     - date: "2026-07-01"
       note: Moved from Troodontidae to Sinovenatorinae following its describers (Shen and colleagues, 2017); the closer-to-Troodontinae alternative (Hartman and colleagues, 2019) is noted.
+    - date: "2026-10-21"
+      note: >
+        Parent widened to Troodontidae; only its describers recover it
+        in Sinovenatorinae.
 etymology: Named after Dalian, a city in Liaoning Province, China, + Greek sauros ('lizard' or 'reptile'), meaning 'Dalian reptile'.
 pronunciation:
   phonetic: DAH-ly-uhn-SOR-us
@@ -87,9 +93,20 @@ species:
     erected_in: shen2017b
 references:
   - id: shen2017b
+    notes: Named Daliansaurus and erected Sinovenatorinae, recovering it as the
+      sister of Sinusonasus.
   - id: paul2024a
     notes: Source of the mass estimate.
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
   - id: hartman2019a
-    notes: Later paravian phylogeny shifted Daliansaurus's placement from the prior position.
+    notes: Recovered Daliansaurus outside Sinovenatorinae; forcing it in costs four
+      steps.
+  - id: cau2021a
+    notes: Recovered Daliansaurus outside Sinovenatorinae.
+  - id: sellés2021a
+    notes: Recovered Daliansaurus as the sister of Tochisaurus.
+  - id: wang2023a
+    notes: Recovered Daliansaurus as the sister of the late-diverging troodontids.
+  - id: kubota2024a
+    notes: Recovered Daliansaurus outside Sinovenatorinae.
