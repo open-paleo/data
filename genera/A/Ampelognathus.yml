@@ -1,5 +1,6 @@
 genus: Ampelognathus
-parent: Rhabdodontomorpha
+parent: Ornithopoda
+placement: incertae sedis
 etymology: From Greek 'ampelos' meaning 'grapevine' and 'gnathos' meaning 'jaw'; meaning 'grapevine jaw', named in reference to Grapevine Lake where the holotype was found
 pronunciation:
   phonetic: am-pell-o-nath-us
@@ -8,13 +9,21 @@ description: Ampelognathus is an extinct genus of possibly rhabdodontomorph
   Formation of Texas. The type species is Ampelognathus coheni.
 dispute:
   summary: >
-    Ampelognathus coheni is recovered within Rhabdodontomorpha by
-    Czepiński and Madzia (2025), but Jones (2026) treats it as a basal
-    ornithopod between Thescelosauridae and Iguanodontia.
+    Ampelognathus coheni was described as a non-iguanodontian ornithopod,
+    the sister of Thescelosaurus plus Iguanodontia, a position its
+    describers found weakly supported (Tykoski and colleagues, 2023).
+    Czepiński and Madzia (2025) instead recover it in a basal polytomy
+    within Rhabdodontomorpha under implied weighting, its precise placement
+    uncertain.
   history:
     - date: "2026-06-29"
       note: Placed at Rhabdodontomorpha following Czepiński and Madzia
         (2025); the basal-ornithopod alternative reflected, not adopted.
+    - date: "2026-10-20"
+      note: >
+        Parent widened to Ornithopoda; its describers place it outside
+        Iguanodontia and Czepiński and Madzia (2025) within
+        Rhabdodontomorpha.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -70,7 +79,10 @@ species:
       completeness: fragmentary
 references:
   - id: tykoski2023a
+    notes: Named Ampelognathus and recovered it as the sister of Thescelosaurus
+      plus Iguanodontia, with low support.
   - id: jones2026a
     notes: Source of the body length, mass, and hip height estimates.
   - id: czepiński2025a
-    notes: Recovered Ampelognathus within Rhabdodontomorpha.
+    notes: Recovered Ampelognathus in a basal polytomy within Rhabdodontomorpha
+      under implied weighting.

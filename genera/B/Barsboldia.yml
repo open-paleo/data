@@ -10,15 +10,17 @@ description: Barsboldia is a genus of large hadrosaurid dinosaur from the
   partial vertebral column, partial pelvis, and some ribs.
 dispute:
   summary: >
-    Barsboldia sicinskii has been interpreted as a lambeosaurine
-    (Maryańska and Osmólska, 1981), as a saurolophine of uncertain
-    position (Prieto-Márquez, 2011), and as an indeterminate basal
-    hadrosaurid (Jones, 2026); its poorly preserved holotype has rarely
-    been included in phylogenetic analyses.
+    Barsboldia sicinskii was described as a lambeosaurine (Maryańska and
+    Osmólska, 1981), but Prieto-Márquez (2010, 2011) found lambeosaurine
+    affinity unsupported and recovered it as a saurolophine of uncertain
+    position; the 2010 analysis prunes it from the reduced consensus.
   history:
     - date: "2026-06-27"
       note: Placed at Hadrosauridae incertae sedis; subfamily assignment
         unresolved across sources.
+    - date: "2026-10-20"
+      note: >
+        Saurolophine placement credited to Prieto-Márquez (2010, 2011).
 diet: herbivore
 locomotion: facultative
 paleoenvironment:
@@ -87,10 +89,13 @@ species:
     erected_in: maryańska1981a
 references:
   - id: maryańska1981a
+    notes: Named Barsboldia as a lambeosaurine.
   - id: gradziński1972a
     notes: Maps the expedition's numbered Nemegt sites; its site 23 is the
       holotype, logged there as Saurolophus angustirostris.
   - id: jones2026a
     notes: Source of the appearance features.
-  - id: prieto-márquez2011b
+  - id: prieto-márquez2011c
     notes: Placed Barsboldia sicinskii within Saurolophinae based on iliac and character comparisons
+  - id: prieto-márquez2010c
+    notes: Found lambeosaurine affinity unsupported and recovered Barsboldia within Saurolophinae.
