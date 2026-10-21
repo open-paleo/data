@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-21T17:39:08.187Z
+  built_at: 2026-10-21T18:31:48.322Z
   clade_count: 188
   genus_count: 1426
   license: CC-BY-4.0
@@ -20116,14 +20116,18 @@ genera:
     described: 1993
   Amanzia:
     genus: Amanzia
-    parent: Turiasauria
+    parent: Eusauropoda
+    placement: incertae sedis
     dispute:
       summary: |
-        Amanzia is recovered as a non-neosauropodan eusauropod, either within Turiasauria as the sister taxon of Zby or just outside the clade in a slightly more derived position (Schwarz and colleagues, 2020); only the implied- weighting analysis places it firmly within Turiasauria. Jones (2026) classifies it as a turiasaur.
+        Amanzia is recovered as a non-neosauropodan eusauropod, as the sister of Neosauropoda under equal weights and within Turiasauria, as the sister of Zby, under implied weights (Schwarz and colleagues, 2020); both results are weakly supported.
       history:
         - date: 2026-06-29
           note: |
             Placed in Turiasauria following Schwarz and colleagues (2020) and Jones (2026); the just-outside-Turiasauria alternative is recorded.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Eusauropoda; only the implied-weights analysis places it in Turiasauria.
     etymology: Named for Swiss geologist Amanz Gressly, who is associated with the geological work in the region where the specimen was found.
     pronunciation:
       phonetic: am-an-zee-uh
@@ -20256,6 +20260,7 @@ genera:
         volume: "113"
         issue: "1"
         doi: 10.1186/s00015-020-00355-5
+        notes: Named Amanzia and recovered it as the sister of Neosauropoda under equal weights, and of Zby within Turiasauria under implied weights.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -20288,7 +20293,6 @@ genera:
       - Sauropoda
       - Gravisauria
       - Eusauropoda
-      - Turiasauria
     authors: Schwarz, D.; Mannion, P. D.; Wings, O.; Meyer, C. A.
     described: 2020
   Amargasaurus:
@@ -34046,10 +34050,10 @@ genera:
     described: 2009
   Barapasaurus:
     genus: Barapasaurus
-    parent: Sauropoda
+    parent: Eusauropoda
     dispute:
       summary: |
-        Barapasaurus is placed as a basal, non-eusauropod sauropod. Under the node-based definition of Eusauropoda applied in this dataset (anchored on Shunosaurus), the two strongest cladistic analyses exclude it: Wilson (2002) recovers it just above Vulcanodon (a basal gravisaurian), while its redescription (Bandyopadhyay and colleagues, 2010) recovers it below Vulcanodon, outside Gravisauria. Because those two results disagree on Gravisauria membership, it is placed conservatively at Sauropoda, the most basal node consistent with both. Stem-based analyses (Wilson and Sereno, 1998) and reference works (Jones, 2026) instead treat it as a eusauropod, but that rests on a broader Eusauropoda concept than the one it is placed under.
+        Barapasaurus is recovered as an early eusauropod by most analyses, more derived than Vulcanodon and Shunosaurus (Wilson and Sereno, 1998; Wilson, 2002; Pol and colleagues, 2022). Its redescription instead recovers it outside Eusauropoda, more basal than Vulcanodon, though forcing it into Eusauropoda costs only three steps (Bandyopadhyay and colleagues, 2010).
       history:
         - date: 2026-06-29
           note: |
@@ -34057,6 +34061,9 @@ genera:
         - date: 2026-07-13
           note: |
             Moved from Eusauropoda to Sauropoda. Node-based analyses (Wilson, 2002; Bandyopadhyay and colleagues, 2010) place Barapasaurus outside Eusauropoda but disagree on whether it falls within Gravisauria (above Vulcanodon) or below it; Sauropoda is the most basal node consistent with both.
+        - date: 2026-10-21
+          note: |
+            Parent narrowed to Eusauropoda; only the redescription places it outside the clade.
     etymology: From 'bara' meaning 'big' and 'pa' meaning 'leg' in several Indian languages including Bengali, combined with Greek 'sauros' meaning 'lizard', meaning 'big-legged lizard', referring to a femur measuring over 1.7 m. The species name honors Bengali poet Rabindranath Tagore.
     pronunciation:
       ipa: /bəˌrɑːpəˈsɔːrəs/
@@ -34161,7 +34168,7 @@ genera:
         issue: "2"
         pages: 215-275
         doi: 10.1046/j.1096-3642.2002.00029.x
-        notes: Recovered Barapasaurus just outside Eusauropoda, sister to the more derived sauropods.
+        notes: Recovered Barapasaurus within Eusauropoda, more derived than Shunosaurus.
       - id: bandyopadhyay2010a
         authors: Bandyopadhyay, S.; Gillette, D. D.; Ray, S.; Sengupta, D. P.
         year: 2010
@@ -34171,7 +34178,17 @@ genera:
         issue: "3"
         pages: 533-569
         doi: 10.1111/j.1475-4983.2010.00933.x
-        notes: Redescription placed Barapasaurus outside Eusauropoda, more basal than Vulcanodon
+        notes: Redescription placed Barapasaurus outside Eusauropoda, more basal than Vulcanodon; forcing it into Eusauropoda costs three steps.
+      - id: pol2022a
+        authors: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L.
+        year: 2022
+        title: Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda
+        book: "South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution"
+        series: Springer Earth System Sciences
+        publisher: Springer International Publishing
+        pages: 131-163
+        doi: 10.1007/978-3-030-95959-3_4
+        notes: Recovered Barapasaurus within Eusauropoda.
     taxonomy:
       - Life
       - Animalia
@@ -34189,6 +34206,8 @@ genera:
       - Massopoda
       - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
     authors: Jain, S. L.; Kutty, T. S.; Roy-Chowdhury, T.; Chatterjee, S.
     described: 1975
   Barilium:
@@ -37346,7 +37365,7 @@ genera:
     description: Blikanasaurus is a genus of sauropodomorph dinosaur from the late Triassic of South Africa. The generic name Blikanasaurus is derived from Greek, meaning "lizard from Blikana". The species name cromptoni is taken from the surname of A.W. "Fuzz" Crompton, an American paleontologist who led numerous field expeditions in Elliot Formation outcrop localities in South Africa. Blikanasaurus is only known from partial hindlimb bones that were recovered from the lower Elliot Formation (LEF) in the Eastern Cape.
     dispute:
       summary: |
-        Blikanasaurus cromptoni is a robust, derived sauropodiform known from a partial hindlimb; it is recovered as a basal sauropod by some analyses (McPhee and colleagues, 2014; Jones, 2026) and as a non-sauropodan sauropodiform by others.
+        Blikanasaurus cromptoni is a robust, derived sauropodiform known from a partial hindlimb. McPhee and colleagues (2014) recover it as the earliest sauropod under the definition of Yates (2007), and Apaldetti and colleagues (2011) in a polytomy within Sauropoda, whereas McPhee and colleagues (2017) and Rauhut and colleagues (2020) recover it as a non-sauropodan sauropodiform outside Sauropoda.
       history:
         - date: 2026-06-29
           note: Placed at Sauropodiformes incertae sedis; the basal-Sauropoda placement is recorded, but the boundary remains unresolved.
@@ -37462,6 +37481,37 @@ genera:
         pages: 151-205
         doi: 10.1111/zoj.12127
         notes: Phylogenetic analysis of Antetonitrus recovered Blikanasaurus as a basal sauropod.
+      - id: apaldetti2011a
+        authors: Apaldetti, C.; Martínez, R. N.; Alcober, O. A.; Pol, D.
+        year: 2011
+        title: "A New Basal Sauropodomorph (Dinosauria: Saurischia) from Quebrada del Barro Formation (Marayes-El Carrizal Basin), Northwestern Argentina"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "6"
+        issue: "11"
+        pages: e26964
+        doi: 10.1371/journal.pone.0026964
+        notes: Recovered Blikanasaurus in a polytomy within Sauropoda.
+      - id: rauhut2020a
+        authors: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.
+        year: 2020
+        title: A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland
+        journal: Swiss Journal of Geosciences
+        publisher: Pensoft Publishers
+        volume: "113"
+        issue: "1"
+        doi: 10.1186/s00015-020-00360-8
+        notes: Recovered Blikanasaurus as an outgroup to Sauropoda under implied weights.
+      - id: yates2007a
+        authors: Yates, A. M.
+        year: 2007
+        title: "Solving a dinosaurian puzzle: the identity of Aliwalia rex Galton"
+        journal: Historical Biology
+        volume: "19"
+        issue: "1"
+        pages: 93-123
+        doi: 10.1080/08912960600866953
+        notes: Defines Sauropoda as the most inclusive clade containing Saltasaurus but not Melanorosaurus.
     taxonomy:
       - Life
       - Animalia
@@ -48385,7 +48435,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Chindesaurus bryansmalli is recovered as a non-herrerasaurid herrerasaurian outside Theropoda, in the clade later named Morphoraptora, by recent analyses (Novas and colleagues, 2021; Ezcurra and colleagues, 2025; Srivastava and colleagues, 2026), but as the sister taxon of Tawa at the base of Theropoda by Marsh and colleagues (2019) and Jones (2026).
+        Chindesaurus bryansmalli is recovered as a non-herrerasaurid herrerasaurian outside Theropoda, in the clade later named Morphoraptora, by recent analyses (Novas and colleagues, 2021; Ezcurra and colleagues, 2025; Srivastava and colleagues, 2026), but as the sister taxon of Tawa at the base of Theropoda by Marsh and colleagues (2019), a position Ezcurra and colleagues (2025) also recover under strong implied weighting on one of their matrices.
       history:
         - date: 2026-06-30
           note: |
@@ -48508,7 +48558,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Chindesaurus as the sister of Tawa at the base of Theropoda.
     taxonomy:
       - Life
       - Animalia
@@ -67712,7 +67762,7 @@ genera:
     description: Eoraptor is a genus of small, lightly built, basal sauropodomorph dinosaur. One of the earliest-known dinosaurs and one of the earliest sauropodomorphs, it lived approximately 231 to 228 million years ago, during the Late Triassic in Western Gondwana, in the region that is now northwestern Argentina. The type and only species, Eoraptor lunensis, was first described in 1993, and is known from an almost complete and well-preserved skeleton and several fragmentary ones. Eoraptor had multiple tooth shapes, which suggests that it was omnivorous.
     dispute:
       summary: |
-        Eoraptor lunensis was originally described as a basal theropod (Sereno and colleagues, 1993) and later argued to be a basal saurischian outside both Theropoda and Sauropodomorpha. Most analyses since its 2012 redescription (Sereno and others; Martínez and colleagues, 2012) recover it as a basal sauropodomorph, the view followed by Jones (2026).
+        Eoraptor lunensis was originally described as a basal theropod (Sereno and colleagues, 1993) and later recovered as a basal saurischian outside both Theropoda and Sauropodomorpha (Langer, 2004). Most analyses since its 2012 redescription recover it as a basal sauropodomorph (Martínez and colleagues, 2012; Sereno and colleagues, 2013).
       history:
         - date: 2026-06-29
           note: Placed at Sauropodomorpha incertae sedis (basal) following the prevailing post-2012 view and Jones (2026); the basal-theropod and basal-saurischian alternatives are recorded.
@@ -67815,6 +67865,15 @@ genera:
         pages: 51-69
         doi: 10.1080/02724634.2013.819361
         notes: Redescribed Eoraptor and recovered it as a basal sauropodomorph rather than a basal theropod
+      - id: langer2004a
+        authors: Langer, M. C.
+        year: 2004
+        title: Basal Saurischia
+        book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
+        publisher: University of California Press, Berkeley
+        pages: 25-46
+        doi: 10.1525/california/9780520242098.003.0004
+        notes: Recovered Eoraptor with the herrerasaurids at the base of Saurischia, outside Theropoda and Sauropodomorpha.
     taxonomy:
       - Life
       - Animalia
@@ -70921,7 +70980,7 @@ genera:
     described: 2013
   Euskelosaurus:
     genus: Euskelosaurus
-    parent: Plateosauridae
+    parent: Sauropodomorpha
     placement: incertae sedis
     etymology: From Greek eu ("good"), skelos ("leg"), and sauros ("lizard"); meaning "good-legged lizard", chosen by Huxley in reference to the unusually large femur of the type material.
     pronunciation:
@@ -70930,10 +70989,13 @@ genera:
       Euskelosaurus is a sauropodomorph dinosaur from the Late Triassic of South Africa and Lesotho. Fossils have only been recovered from the lower Elliot Formation in South Africa and Lesotho, and in one locality in Zimbabwe.
     dispute:
       summary: |
-        Euskelosaurus browni is widely regarded as a nomen dubium wastebasket taxon; its material is plateosaurid-grade in nature but lacks diagnostic features (Jones, 2026).
+        Euskelosaurus browni is a nomen dubium: Yates (2003) found no derived characters or unique combination of characters distinguishing it from other early sauropodomorphs, and its material cannot be identified further than Sauropodomorpha. It was earlier treated as an anchisaurid (Galton, 1985) or a melanorosaurid (Cooper, 1980).
       history:
         - date: 2026-06-29
           note: Reparented to Plateosauridae incertae sedis; nomen dubium, material plateosaurid in nature.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Sauropodomorpha; its material is not diagnostic below that level.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -71051,7 +71113,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Euskelosaurus as a plateosaurid-grade nomen dubium.
       - id: lydekker1889c
         authors: Lydekker, R.
         year: 1889
@@ -71061,6 +71123,14 @@ genera:
         pages: 352-356
         doi: 10.1017/S0016756800176587
         notes: Coined Orinosaurus (=Orosaurus) capensis, later referred to Euskelosaurus.
+      - id: yates2003c
+        authors: Yates, A. M.
+        year: 2003
+        title: "A definite prosauropod dinosaur from the Lower Elliot Formation (Norian: Upper Triassic) of South Africa"
+        journal: Palaeontologia africana
+        volume: "39"
+        pages: 63-68
+        notes: Regards Euskelosaurus browni as a nomen dubium that cannot be identified further than Sauropodomorpha.
     taxonomy:
       - Life
       - Animalia
@@ -71073,9 +71143,6 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Plateosauridae
     authors: Huxley, T. H.
     described: 1866
   Eustreptospondylus:
@@ -91397,7 +91464,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Isanosaurus is placed as a basal, non-eusauropodan sauropod, but its position at the sauropod/sauropodiform boundary is unsettled. Pol and Gomez (2022) recover it within Sauropoda but outside Eusauropoda (grouped with Gongxianosaurus and vulcanodontids), and Jones (2026) likewise treats it as a basal sauropod, whereas Rauhut and colleagues (2020) recover it as a non-sauropodan sauropodiform lying immediately outside Sauropoda under the node-based definition (Vulcanodon plus Saltasaurus).
+        Isanosaurus is placed as a basal, non-eusauropodan sauropod, but its position at the sauropod/sauropodiform boundary is unsettled. Pol and Gomez (2022) recover it within Sauropoda but outside Eusauropoda (grouped with Gongxianosaurus and vulcanodontids),, whereas Rauhut and colleagues (2020) recover it as a non-sauropodan sauropodiform lying immediately outside Sauropoda under the node-based definition (Vulcanodon plus Saltasaurus).
       history:
         - date: 2026-06-29
           note: |
@@ -98979,7 +99046,7 @@ genera:
     description: Kholumolumo , formerly "Kholumolumosaurus" or "Thotobolosaurus", is an extinct genus of massopodan sauropodomorph dinosaur, which was closely related to Sarahsaurus, from the lower Elliot Formation of Maphutseng, Lesotho. The type species, Kholumolumo ellenbergerorum was formally described in 2020.
     dispute:
       summary: |
-        Kholumolumo ellenbergerorum is recovered as an early-branching massopodan, sandwiched between Plateosauridae and Massospondylidae (Peyre de Fabrègues and Allain, 2019), the position followed by Jones (2026); it has also been associated with Lessemsauridae.
+        Kholumolumo ellenbergerorum is recovered as an early-branching massopodan, sandwiched between Plateosauridae and Massospondylidae (Peyre de Fabrègues and Allain, 2019), as the sister taxon of Sarahsaurus.
       history:
         - date: 2026-06-29
           note: Placed at Massopoda incertae sedis following Peyre de Fabrègues and Allain (2019) and Jones (2026); the Lessemsauridae alternative is recorded.
@@ -102565,7 +102632,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Lamplughsaura is of uncertain affinity, recovered as either a basal sauropod between Blikanasaurus and Kotasaurus or as a more basal non- sauropodan sauropodomorph (Kutty and colleagues, 2007). Jones (2026) treats it as most likely a true, basal sauropod.
+        Lamplughsaura is of uncertain affinity. Its describers recovered it as a basal sauropod between Blikanasaurus and Kotasaurus on one matrix and as a non-sauropodan sauropodomorph on another, and favored the sauropod position (Kutty and colleagues, 2007).
       history:
         - date: 2026-06-29
           note: |
@@ -153142,7 +153209,7 @@ genera:
     description: Sarahsaurus is a genus of basal sauropodomorph dinosaur which lived during the Early Jurassic period in what is now northeastern Arizona, United States.
     dispute:
       summary: |
-        Sarahsaurus aurifontanalis is recovered just outside Massospondylidae as a basal massopodan by Apaldetti and colleagues (2011) but within Massospondylidae by Chapelle and colleagues (2019); Jones (2026) leaves it unresolved between the two.
+        Sarahsaurus aurifontanalis was recovered by its describers as a basal sauropodomorph well outside Massospondylidae (Rowe and colleagues, 2011), and just outside Massospondylidae by Apaldetti and colleagues (2011), but within Massospondylidae, as the sister of Ignavusaurus, by Chapelle and colleagues (2019).
       history:
         - date: 2026-06-29
           note: Placed at Massopoda incertae sedis; Massospondylidae membership (Chapelle and colleagues, 2019) is recorded but not adopted.
@@ -153269,7 +153336,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Leaves Sarahsaurus unresolved between Massospondylidae and its outgroups.
     taxonomy:
       - Life
       - Animalia
@@ -171690,7 +171757,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Tawa hallae is recovered within Morphoraptora in Herrerasauria by recent analyses (Novas and colleagues, 2021; Srivastava and colleagues, 2026) but as the sister taxon of Chindesaurus at the base of Theropoda by Marsh and colleagues (2019) and Jones (2026); its mosaic anatomy drives the instability.
+        Tawa hallae is recovered within Morphoraptora in Herrerasauria by recent analyses (Novas and colleagues, 2021; Srivastava and colleagues, 2026) but as an early theropod, the sister of Neotheropoda (Nesbitt and colleagues, 2009) or of Chindesaurus (Marsh and colleagues, 2019); its mosaic anatomy drives the instability.
       history:
         - date: 2026-06-30
           note: |
@@ -171816,7 +171883,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Tawa as the sister of Chindesaurus at the base of Theropoda.
     taxonomy:
       - Life
       - Animalia
