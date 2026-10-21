@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-21T21:38:22.582Z",
+    "built_at": "2026-10-21T22:57:44.586Z",
     "clade_count": 188,
     "genus_count": 1426,
     "license": "CC-BY-4.0",
@@ -2611,6 +2611,18 @@
           "pages": "201184",
           "doi": "10.1098/rsos.201184",
           "notes": "Recognized the basal caudipterygids as one of four main oviraptorosaur clades."
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Did not recover Caudipterygidae; Caudipteryx is the sister of Microvenator."
         }
       ]
     },
@@ -11652,7 +11664,7 @@
       ]
     },
     "Sinovenatorinae": {
-      "description": "Sinovenatorinae is a subfamily of small, basal troodontids from the Early Cretaceous Jehol Biota of China, grouping Sinovenator with Mei, Sinusonasus, and Daliansaurus, and in some analyses Jianianhualong. Its members are among the smallest and most basal of the troodontids, the bird-like, gracile theropods known for their large braincases and long, slender legs built for fast running. Members of the group share a distinctively wide, flattened fourth metatarsal. The clade's exact composition and internal relationships remain debated, with some analyses instead recovering these Chinese taxa as a graded succession of lineages rather than a single well-defined clade.\n",
+      "description": "Sinovenatorinae is a subfamily of small, basal troodontids from the Early Cretaceous Jehol Biota of China, grouping Sinovenator with Mei. Its erecting analysis also included Sinusonasus and Daliansaurus (Shen and colleagues, 2017), and some analyses add Jianianhualong, but later analyses often place these three outside the subfamily. Its members are among the smallest and most basal of the troodontids, the bird-like, gracile theropods known for their large braincases and long, slender legs built for fast running. Members of the group share a distinctively wide, flattened fourth metatarsal. The clade's exact composition and internal relationships remain debated, with some analyses instead recovering these Chinese taxa as a graded succession of lineages rather than a single well-defined clade.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -70271,13 +70283,18 @@
     },
     "Daliansaurus": {
       "genus": "Daliansaurus",
-      "parent": "Sinovenatorinae",
+      "parent": "Troodontidae",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Daliansaurus was described as a member of Sinovenatorinae (Shen and colleagues, 2017), the placement followed, but later analyses (Hartman and colleagues, 2019) and Jones (2026) instead recover it in a more derived position closer to Troodontinae.\n",
+        "summary": "Daliansaurus was described as a member of Sinovenatorinae, the sister of Sinusonasus (Shen and colleagues, 2017), but every later analysis recovers it in a more derived position, outside that subfamily (Hartman and colleagues, 2019; Cau and Madzia, 2021; Sellés and colleagues, 2021; Wang and colleagues, 2023; Kubota and colleagues, 2024).\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Moved from Troodontidae to Sinovenatorinae following its describers (Shen and colleagues, 2017); the closer-to-Troodontinae alternative (Hartman and colleagues, 2019) is noted."
+          },
+          {
+            "date": "2026-10-21",
+            "note": "Parent widened to Troodontidae; only its describers recover it in Sinovenatorinae.\n"
           }
         ]
       },
@@ -70380,7 +70397,8 @@
           "volume": "91",
           "issue": "3",
           "pages": "763-780",
-          "doi": "10.1111/1755-6724.13307"
+          "doi": "10.1111/1755-6724.13307",
+          "notes": "Named Daliansaurus and erected Sinovenatorinae, recovering it as the sister of Sinusonasus."
         },
         {
           "id": "paul2024a",
@@ -70409,7 +70427,54 @@
           "volume": "7",
           "pages": "e7247",
           "doi": "10.7717/peerj.7247",
-          "notes": "Later paravian phylogeny shifted Daliansaurus's placement from the prior position."
+          "notes": "Recovered Daliansaurus outside Sinovenatorinae; forcing it in costs four steps."
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Recovered Daliansaurus outside Sinovenatorinae."
+        },
+        {
+          "id": "sellés2021a",
+          "authors": "Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.",
+          "year": 2021,
+          "title": "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "11",
+          "issue": "1",
+          "doi": "10.1038/s41598-021-83745-5",
+          "notes": "Recovered Daliansaurus as the sister of Tochisaurus."
+        },
+        {
+          "id": "wang2023a",
+          "authors": "Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.",
+          "year": 2023,
+          "title": "A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "151",
+          "doi": "10.1016/j.cretres.2023.105605",
+          "notes": "Recovered Daliansaurus as the sister of the late-diverging troodontids."
+        },
+        {
+          "id": "kubota2024a",
+          "authors": "Kubota, K.; Kobayashi, Y.; Ikeda, T.",
+          "year": 2024,
+          "title": "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "14",
+          "issue": "1",
+          "doi": "10.1038/s41598-024-66815-2",
+          "notes": "Recovered Daliansaurus outside Sinovenatorinae."
         }
       ],
       "taxonomy": [
@@ -70433,8 +70498,7 @@
         "Paraves",
         "Eumaniraptora",
         "Deinonychosauria",
-        "Troodontidae",
-        "Sinovenatorinae"
+        "Troodontidae"
       ],
       "authors": "Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H.",
       "described": 2017
@@ -92969,7 +93033,7 @@
       },
       "description": "Fukuivenator is an extinct genus of maniraptoran theropod dinosaur from the Early Cretaceous Kitadani Formation of Japan.",
       "dispute": {
-        "summary": "The affinities of Fukuivenator are disputed. Its original description (Azuma and colleagues, 2016) recovered it as a basal maniraptoran of uncertain position that could not be referred to any known coelurosaurian subgroup, and Hartman and colleagues (2019) placed it near the base of Maniraptora. A CT-based osteological restudy by the same group (Hattori and colleagues, 2021) instead recovered it as the basalmost member of Therizinosauria, citing therizinosaurian synapomorphies such as a subotic recess, eleven or more cervical vertebrae, and anterior humeral condyles, though the authors caution that support for this position is weak. The Princeton Encyclopedia (Jones, 2026) adopts the basalmost therizinosaur placement. Maniraptora is the least-inclusive clade all these hypotheses accept.\n",
+        "summary": "The affinities of Fukuivenator are disputed. Its original description (Azuma and colleagues, 2016) recovered it as a basal maniraptoran of uncertain position that could not be referred to any known coelurosaurian subgroup, and Hartman and colleagues (2019) placed it near the base of Maniraptora. A CT-based osteological restudy by the same group (Hattori and colleagues, 2021) instead recovered it as the basalmost member of Therizinosauria, citing therizinosaurian synapomorphies such as a subotic recess, eleven or more cervical vertebrae, and anterior humeral condyles, though the authors caution that support for this position is weak. Cau and Madzia (2021) instead recover it at the base of Paraves. Maniraptora is the least-inclusive clade all these hypotheses accept.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -93118,6 +93182,18 @@
           "volume": "20",
           "pages": "1-82",
           "notes": "CT-based restudy recovered Fukuivenator as the basalmost therizinosaurian based on new synapomorphies"
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Recovered Fukuivenator as the earliest paravian."
         }
       ],
       "taxonomy": [
@@ -120693,13 +120769,18 @@
     },
     "Jianianhualong": {
       "genus": "Jianianhualong",
-      "parent": "Sinovenatorinae",
+      "parent": "Troodontidae",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Jianianhualong is consistently recovered as a basal troodontid and is placed in Sinovenatorinae by Hartman and colleagues (2019) and Jones (2026), the placement followed, although Cau and Madzia (2021) recover it outside that subfamily and its describers placed it in a polytomy near Sinusonasus.\n",
+        "summary": "Jianianhualong is consistently recovered as a basal troodontid, but analyses split on whether it belongs to Sinovenatorinae. Hartman and colleagues (2019), Sellés and colleagues (2021) and Kubota and colleagues (2024) place it within the subfamily, whereas Cau and Madzia (2021), Pei and colleagues (2021) and Wang and colleagues (2023) recover it outside; its describers placed it crownward of Mei and Sinovenator (Xu and colleagues, 2017).\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Placed in Sinovenatorinae following Hartman and colleagues (2019); the membership instability of Sinovenatorinae is recorded on the clade file."
+          },
+          {
+            "date": "2026-10-21",
+            "note": "Parent widened to Troodontidae; analyses split on membership in Sinovenatorinae.\n"
           }
         ]
       },
@@ -120796,7 +120877,8 @@
           "publisher": "Springer Science and Business Media LLC",
           "volume": "8",
           "issue": "1",
-          "doi": "10.1038/ncomms14972"
+          "doi": "10.1038/ncomms14972",
+          "notes": "Named Jianianhualong and recovered it crownward of Mei and Sinovenator."
         },
         {
           "id": "jones2026c",
@@ -120830,6 +120912,52 @@
           "pages": "e7247",
           "doi": "10.7717/peerj.7247",
           "notes": "Recovered Jianianhualong as a basal troodontid within Sinovenatorinae."
+        },
+        {
+          "id": "sellés2021a",
+          "authors": "Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.",
+          "year": 2021,
+          "title": "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "11",
+          "issue": "1",
+          "doi": "10.1038/s41598-021-83745-5",
+          "notes": "Recovered Jianianhualong within Sinovenatorinae."
+        },
+        {
+          "id": "kubota2024a",
+          "authors": "Kubota, K.; Kobayashi, Y.; Ikeda, T.",
+          "year": 2024,
+          "title": "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "14",
+          "issue": "1",
+          "doi": "10.1038/s41598-024-66815-2",
+          "notes": "Recovered Jianianhualong within Sinovenatorinae."
+        },
+        {
+          "id": "pei2021a",
+          "authors": "Pei, R.; Qin, Y.; Wen, A.; Zhao, Q.; Wang, Z.; Liu, Z.; Guo, W.; Liu, P.; Ye, W.; Wang, L.; Yin, Z.; Dai, R.; Xu, X.",
+          "year": 2021,
+          "title": "A new troodontid from the Upper Cretaceous Gobi Basin of inner Mongolia, China",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "130",
+          "doi": "10.1016/j.cretres.2021.105052",
+          "notes": "Recovered Jianianhualong outside Sinovenatorinae."
+        },
+        {
+          "id": "wang2023a",
+          "authors": "Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.",
+          "year": 2023,
+          "title": "A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "151",
+          "doi": "10.1016/j.cretres.2023.105605",
+          "notes": "Recovered Jianianhualong outside Sinovenatorinae."
         }
       ],
       "taxonomy": [
@@ -120853,8 +120981,7 @@
         "Paraves",
         "Eumaniraptora",
         "Deinonychosauria",
-        "Troodontidae",
-        "Sinovenatorinae"
+        "Troodontidae"
       ],
       "authors": "Xu, X.; Currie, P.; Pittman, M.; Xing, L.; Meng, Q.; Lü, J.; Hu, D.; Yu, C.",
       "described": 2017
@@ -126987,13 +127114,18 @@
     },
     "Kol": {
       "genus": "Kol",
-      "parent": "Alvarezsauridae",
+      "parent": "Maniraptora",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Kol ghuva was described by Turner and colleagues (2009) as a derived alvarezsaurid, more derived than Alvarezsaurus and Patagonykus, on the basis of its extreme arctometatarsalian foot. Because the holotype is a single articulated foot, the placement is poorly constrained, and some subsequent authors have suggested it may instead be a basal oviraptorosaurian. It is placed in Alvarezsauridae following the describing analysis and Jones (2026).\n",
+        "summary": "Kol ghuva was described as a large alvarezsaurid on the basis of its extreme arctometatarsalian foot (Turner and colleagues, 2009), and Cau and colleagues (2017) recover it among the alvarezsauroids. Agnolín and colleagues (2012) found it more reminiscent of oviraptorosaurs, Hartman and colleagues (2019) recover it as a relative of Avimimus, and Averianov and Lopatin (2021) exclude it from Alvarezsauridae. The holotype is a single articulated foot.\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Moved from Coelurosauria to Alvarezsauridae following Turner and colleagues (2009) and Jones (2026); fragmentary holotype, with a basal oviraptorosaurian alternative proposed."
+          },
+          {
+            "date": "2026-10-21",
+            "note": "Parent widened to Maniraptora; its alvarezsaurid identity is contested.\n"
           }
         ]
       },
@@ -127093,7 +127225,8 @@
           "publisher": "American Museum of Natural History (BioOne sponsored)",
           "volume": "3648",
           "pages": "1-14",
-          "doi": "10.1206/639.1"
+          "doi": "10.1206/639.1",
+          "notes": "Named Kol as an alvarezsaurid, without a phylogenetic analysis."
         },
         {
           "id": "jones2026c",
@@ -127103,6 +127236,56 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the body length, mass, and hip height estimates, and the appearance features."
+        },
+        {
+          "id": "cau2017a",
+          "authors": "Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.",
+          "year": 2017,
+          "title": "Synchrotron scanning reveals amphibious ecomorphology in a new clade of bird-like dinosaurs",
+          "journal": "Nature",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "552",
+          "issue": "7685",
+          "pages": "395-399",
+          "doi": "10.1038/nature24679",
+          "notes": "Recovered Kol among the alvarezsauroids."
+        },
+        {
+          "id": "agnolín2012a",
+          "authors": "Agnolín, F. L.; Powell, J. E.; Novas, F. E.; Kundrát, M.",
+          "year": 2012,
+          "title": "New alvarezsaurid (Dinosauria, Theropoda) from uppermost Cretaceous of north-western Patagonia with associated eggs",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "35",
+          "pages": "33-56",
+          "doi": "10.1016/j.cretres.2011.11.014",
+          "notes": "Found Kol more reminiscent of oviraptorosaurs than alvarezsaurids."
+        },
+        {
+          "id": "hartman2019a",
+          "authors": "Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.",
+          "year": 2019,
+          "title": "A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "7",
+          "pages": "e7247",
+          "doi": "10.7717/peerj.7247",
+          "notes": "Recovered Kol as a relative of Avimimus; one step places it in Alvarezsauridae."
+        },
+        {
+          "id": "averianov2021d",
+          "authors": "Averianov, A. O.; Lopatin, A. V.",
+          "year": 2021,
+          "title": "A re-appraisal of Parvicursor remotus from the Late Cretaceous of Mongolia: implications for the phylogeny and taxonomy of alvarezsaurid theropod dinosaurs",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "19",
+          "issue": "16",
+          "pages": "1097-1128",
+          "doi": "10.1080/14772019.2021.2013965",
+          "notes": "Excludes Kol from Alvarezsauridae."
         }
       ],
       "taxonomy": [
@@ -127122,9 +127305,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Coelurosauria",
-        "Maniraptora",
-        "Alvarezsauroidea",
-        "Alvarezsauridae"
+        "Maniraptora"
       ],
       "authors": "Turner, A. H.; Nesbitt, S. J.; Norell, M. A.",
       "described": 2009
@@ -150493,7 +150674,7 @@
       "parent": "Maniraptora",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Migmanychion laiyang is known only from a forelimb and is confidently referred only to Maniraptora. Its describers recovered it as the sister taxon of Fukuivenator (Wang and colleagues, 2023); Jones (2026) places that pair within Therizinosauria, while alternative constrained positions within Oviraptorosauria or Paraves are only slightly less parsimonious. It is placed conservatively at Maniraptora incertae sedis.\n",
+        "summary": "Migmanychion laiyang is known only from a forelimb and is confidently referred only to Maniraptora. Its describers recovered it as the sister taxon of Fukuivenator (Wang and colleagues, 2023); forcing the pair into Therizinosauria, or Migmanychion into Oviraptorosauria or Paraves, costs only two or three steps. It is placed conservatively at Maniraptora incertae sedis.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -177538,7 +177719,7 @@
       "genus": "Philovenator",
       "parent": "Troodontinae",
       "dispute": {
-        "summary": "Philovenator (originally described from a juvenile once referred to Saurornithoides) is recovered as a derived troodontine, close to Linhevenator, by most analyses (Tsuihiji and colleagues, 2014; van der Reest and Currie, 2017; Hartman and colleagues, 2019; Jones, 2026), and it is placed there. Sellés and colleagues (2021) instead recover it within Jinfengopteryginae.\n",
+        "summary": "Philovenator (originally described from a juvenile once referred to Saurornithoides) is recovered as a derived troodontine, the sister of Linhevenator, by most analyses (Xu and colleagues, 2012; Tsuihiji and colleagues, 2014; van der Reest and Currie, 2017; Cau and Madzia, 2021), and it is placed there. Sellés and colleagues (2021) instead recover it within Jinfengopteryginae, and Kubota and colleagues (2024) outside Troodontinae.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -177705,6 +177886,30 @@
           "pages": "919-935",
           "doi": "10.1139/cjes-2017-0031",
           "notes": "Described new troodontid material from the Dinosaur Park Formation of Alberta"
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Recovered Philovenator within Troodontinae with Linhevenator."
+        },
+        {
+          "id": "kubota2024a",
+          "authors": "Kubota, K.; Kobayashi, Y.; Ikeda, T.",
+          "year": 2024,
+          "title": "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "14",
+          "issue": "1",
+          "doi": "10.1038/s41598-024-66815-2",
+          "notes": "Recovered Philovenator outside Troodontinae."
         }
       ],
       "taxonomy": [
@@ -208338,13 +208543,18 @@
     },
     "Sinusonasus": {
       "genus": "Sinusonasus",
-      "parent": "Sinovenatorinae",
+      "parent": "Troodontidae",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Sinusonasus was recovered within Sinovenatorinae by its subfamily's erecting analysis (Shen and colleagues, 2017), where it is placed, but Hartman and colleagues (2019) instead recover it in a more derived position (paired with Xixiasaurus, near Hesperornithoides), and Jones (2026) notes its position is unstable.\n",
+        "summary": "Sinusonasus is a basal troodontid whose grouping varies. Shen and colleagues (2017) and Pei and colleagues (2020) recover it within Sinovenatorinae, but other analyses place it outside that subfamily, often as the sister of Xixiasaurus (Xu and colleagues, 2012; Hartman and colleagues, 2019; Cau and Madzia, 2021; Sellés and colleagues, 2021; Kubota and colleagues, 2024).\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Moved from Troodontidae to Sinovenatorinae following Shen and colleagues (2017); the derived-position alternative (Hartman and colleagues, 2019) is noted."
+          },
+          {
+            "date": "2026-10-21",
+            "note": "Parent widened to Troodontidae; analyses split on membership in Sinovenatorinae.\n"
           }
         ]
       },
@@ -208453,7 +208663,8 @@
           "volume": "78",
           "issue": "1",
           "pages": "22-26",
-          "doi": "10.1111/j.1755-6724.2004.tb00671.x"
+          "doi": "10.1111/j.1755-6724.2004.tb00671.x",
+          "notes": "Named Sinusonasus as a troodontid."
         },
         {
           "id": "jones2026c",
@@ -208474,7 +208685,7 @@
           "volume": "7",
           "pages": "e7247",
           "doi": "10.7717/peerj.7247",
-          "notes": "Recovered Sinusonasus in a more derived position near Hesperornithoides."
+          "notes": "Recovered Sinusonasus as the sister of Xixiasaurus, outside Sinovenatorinae."
         },
         {
           "id": "shen2017b",
@@ -208487,7 +208698,67 @@
           "issue": "3",
           "pages": "763-780",
           "doi": "10.1111/1755-6724.13307",
-          "notes": "Erecting analysis of Daliansaurus placed Sinusonasus within the new subfamily Sinovenatorinae"
+          "notes": "Recovered Sinusonasus within Sinovenatorinae, as the sister of Daliansaurus."
+        },
+        {
+          "id": "pei2020a",
+          "authors": "Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.",
+          "year": 2020,
+          "title": "Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds",
+          "journal": "Current Biology",
+          "publisher": "Elsevier BV",
+          "volume": "30",
+          "issue": "20",
+          "pages": "4033-4046.e8",
+          "doi": "10.1016/j.cub.2020.06.105",
+          "notes": "Recovered Sinusonasus within Sinovenatorinae."
+        },
+        {
+          "id": "xu2012b",
+          "authors": "Xu, X.; Zhao, Q.; Sullivan, C.; Tan, Q. W.; Sander, M.; Ma, Q. Y.",
+          "year": 2012,
+          "title": "The taxonomy of the troodontid IVPP V 10597 reconsidered",
+          "journal": "Vertebrata PalAsiatica",
+          "volume": "50",
+          "issue": "2",
+          "pages": "140-150",
+          "notes": "Recovered Sinusonasus as the sister of a clade of derived troodontines."
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Recovered Sinusonasus as the sister of Sinornithoides."
+        },
+        {
+          "id": "sellés2021a",
+          "authors": "Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.",
+          "year": 2021,
+          "title": "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "11",
+          "issue": "1",
+          "doi": "10.1038/s41598-021-83745-5",
+          "notes": "Recovered Sinusonasus as the sister of Xixiasaurus."
+        },
+        {
+          "id": "kubota2024a",
+          "authors": "Kubota, K.; Kobayashi, Y.; Ikeda, T.",
+          "year": 2024,
+          "title": "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "14",
+          "issue": "1",
+          "doi": "10.1038/s41598-024-66815-2",
+          "notes": "Recovered Sinusonasus as the sister of Xixiasaurus."
         }
       ],
       "taxonomy": [
@@ -208511,8 +208782,7 @@
         "Paraves",
         "Eumaniraptora",
         "Deinonychosauria",
-        "Troodontidae",
-        "Sinovenatorinae"
+        "Troodontidae"
       ],
       "authors": "Xu, X.; Wang, X.",
       "described": 2004
@@ -243540,7 +243810,7 @@
       "parent": "Troodontidae",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Xixiasaurus is a poorly understood, unserrated-toothed troodontid whose position varies widely across analyses — near Byronosaurus, with Sinovenator and Mei, with Zanabazar and Saurornithoides, or paired with Sinusonasus (Hartman and colleagues, 2019) — and Jones (2026) concludes its placement will remain ambiguous without more material. It is placed at Troodontidae incertae sedis.\n",
+        "summary": "Xixiasaurus is a poorly understood, unserrated-toothed troodontid whose position varies widely across analyses: with Sinovenator and Mei (Turner and colleagues, 2012), near Byronosaurus (Pei and colleagues, 2020), with Zanabazar and Saurornithoides within Troodontinae (Cau and Madzia, 2021), or paired with Sinusonasus (Hartman and colleagues, 2019; Sellés and colleagues, 2021). It is placed at Troodontidae incertae sedis.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -243645,7 +243915,8 @@
           "volume": "55",
           "issue": "3",
           "pages": "381-388",
-          "doi": "10.4202/app.2009.0047"
+          "doi": "10.4202/app.2009.0047",
+          "notes": "Named Xixiasaurus and compared it most closely with Byronosaurus."
         },
         {
           "id": "hartman2019a",
@@ -243667,6 +243938,54 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Illustrated by E. Viola.\n"
+        },
+        {
+          "id": "turner2012a",
+          "authors": "Turner, A. H.; Makovicky, P. J.; Norell, M. A.",
+          "year": 2012,
+          "title": "A Review of Dromaeosaurid Systematics and Paravian Phylogeny",
+          "journal": "Bulletin of the American Museum of Natural History",
+          "volume": "371",
+          "pages": "1-206",
+          "doi": "10.1206/748.1",
+          "notes": "Recovered Xixiasaurus with Sinovenator and Mei."
+        },
+        {
+          "id": "pei2020a",
+          "authors": "Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.",
+          "year": 2020,
+          "title": "Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds",
+          "journal": "Current Biology",
+          "publisher": "Elsevier BV",
+          "volume": "30",
+          "issue": "20",
+          "pages": "4033-4046.e8",
+          "doi": "10.1016/j.cub.2020.06.105",
+          "notes": "Recovered Xixiasaurus with Byronosaurus."
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Recovered Xixiasaurus within Troodontinae, as the sister of Zanabazar plus Saurornithoides."
+        },
+        {
+          "id": "sellés2021a",
+          "authors": "Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.",
+          "year": 2021,
+          "title": "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "11",
+          "issue": "1",
+          "doi": "10.1038/s41598-021-83745-5",
+          "notes": "Recovered Xixiasaurus as the sister of Sinusonasus."
         }
       ],
       "taxonomy": [
@@ -246434,7 +246753,7 @@
       "parent": "Maniraptora",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "There is no consensus on the position of Yixianosaurus longimanus, known from a shoulder girdle and forelimbs. Its describers placed it as a basal deinonychosaur; later studies have recovered it as a basal paravian (Foth and Rauhut, 2017), an anchiornithid close to Xiaotingia (Cau and colleagues, 2017; Jones, 2026), and, under implied weighting, near the base of Pennaraptora (Foth and colleagues, 2025). It is placed conservatively at Maniraptora incertae sedis.\n",
+        "summary": "There is no consensus on the position of Yixianosaurus longimanus, known from a shoulder girdle and forelimbs. Its describers placed it as a basal deinonychosaur; later studies have recovered it as a basal paravian (Foth and Rauhut, 2017), an anchiornithid close to Xiaotingia (Cau and colleagues, 2017; Wang and colleagues, 2023), a dromaeosaurid (Hartman and colleagues, 2019), and, under implied weighting, near the base of Pennaraptora (Foth and colleagues, 2025). It is placed conservatively at Maniraptora incertae sedis.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -246595,6 +246914,29 @@
           "pages": "17-43",
           "doi": "10.3897/fr.28.131671",
           "notes": "Recovered Yixianosaurus near the base of Pennaraptora under implied weighting."
+        },
+        {
+          "id": "wang2023a",
+          "authors": "Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.",
+          "year": 2023,
+          "title": "A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "151",
+          "doi": "10.1016/j.cretres.2023.105605",
+          "notes": "Recovered Yixianosaurus as the sister of Xiaotingia within Avialae."
+        },
+        {
+          "id": "hartman2019a",
+          "authors": "Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.",
+          "year": 2019,
+          "title": "A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "7",
+          "pages": "e7247",
+          "doi": "10.7717/peerj.7247",
+          "notes": "Recovered Yixianosaurus within Dromaeosauridae."
         }
       ],
       "taxonomy": [
