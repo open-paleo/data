@@ -1,17 +1,13 @@
 genus: Barapasaurus
-parent: Sauropoda
+parent: Eusauropoda
 dispute:
   summary: >
-    Barapasaurus is placed as a basal, non-eusauropod sauropod. Under the
-    node-based definition of Eusauropoda applied in this dataset (anchored on
-    Shunosaurus), the two strongest cladistic analyses exclude it: Wilson (2002)
-    recovers it just above Vulcanodon (a basal gravisaurian), while its
-    redescription (Bandyopadhyay and colleagues, 2010) recovers it below Vulcanodon,
-    outside Gravisauria. Because those two results disagree on Gravisauria
-    membership, it is placed conservatively at Sauropoda, the most basal node
-    consistent with both. Stem-based analyses (Wilson and Sereno, 1998) and
-    reference works (Jones, 2026) instead treat it as a eusauropod, but that
-    rests on a broader Eusauropoda concept than the one it is placed under.
+    Barapasaurus is recovered as an early eusauropod by most analyses, more
+    derived than Vulcanodon and Shunosaurus (Wilson and Sereno, 1998;
+    Wilson, 2002; Pol and colleagues, 2022). Its redescription instead
+    recovers it outside Eusauropoda, more basal than Vulcanodon, though
+    forcing it into Eusauropoda costs only three steps (Bandyopadhyay and
+    colleagues, 2010).
   history:
     - date: "2026-06-29"
       note: >
@@ -24,6 +20,10 @@ dispute:
         Bandyopadhyay and colleagues, 2010) place Barapasaurus outside Eusauropoda
         but disagree on whether it falls within Gravisauria (above Vulcanodon)
         or below it; Sauropoda is the most basal node consistent with both.
+    - date: "2026-10-21"
+      note: >
+        Parent narrowed to Eusauropoda; only the redescription places it
+        outside the clade.
 etymology: "From 'bara' meaning 'big' and 'pa' meaning 'leg' in several Indian
   languages including Bengali, combined with Greek 'sauros' meaning 'lizard',
   meaning 'big-legged lizard', referring to a femur measuring over 1.7 m. The
@@ -112,6 +112,10 @@ references:
   - id: wilson1998a
     notes: Recovered Barapasaurus within Eusauropoda under a stem-based definition; weakly supported.
   - id: wilson2002a
-    notes: Recovered Barapasaurus just outside Eusauropoda, sister to the more derived sauropods.
+    notes: Recovered Barapasaurus within Eusauropoda, more derived than
+      Shunosaurus.
   - id: bandyopadhyay2010a
-    notes: Redescription placed Barapasaurus outside Eusauropoda, more basal than Vulcanodon
+    notes: Redescription placed Barapasaurus outside Eusauropoda, more basal than
+      Vulcanodon; forcing it into Eusauropoda costs three steps.
+  - id: pol2022a
+    notes: Recovered Barapasaurus within Eusauropoda.

@@ -1,5 +1,20 @@
 # *Euskelosaurus*
 
+## How far can *Euskelosaurus* be identified?
+
+*2026-10-21*
+
+**Conclusion.** Only to Sauropodomorpha; it sits at Sauropodomorpha incertae sedis as a nomen dubium. Earlier assignments to anchisaurids or melanorosaurids predate the finding that its material lacks derived characters. Governs `parent: Sauropodomorpha`, `placement: incertae sedis` and the dispute on [*Euskelosaurus browni*](../../../genera/E/Euskelosaurus.yml).
+
+**Evidence.**
+- yates2003a, p. 1754: "Euskelosaurus browni (Huxley 1866) is almost certainly a nomen dubium because it has no derived characters or unique combination of characters that allow it to be distinguished from several early sauropodomorphs".
+- yates2003c, p. 63: "Euskelosaurus browni is a nomen dubium based on material that cannot be identified further than Sauropodomorpha".
+
+**Ruled out.**
+- *Plateosauridae.* Galton (1985) treated it as an anchisaurid, but no later work identifies diagnostic characters below Sauropodomorpha.
+
+**Open.** Nothing.
+
 ## Does the *Euskelosaurus* locality name the Stormberg range?
 
 *2026-10-12*
@@ -47,9 +62,14 @@
 
 ## References
 
+- `yates2003a`: Yates, A. M.; Kitching, J. W. (2003). The earliest known sauropod dinosaur and the first steps towards sauropod locomotion. *Proceedings of the Royal Society of London. Series B: Biological Sciences* 270(1525): 1753-1758. doi:10.1098/rspb.2003.2417
+- `yates2003c`: Yates, A. M. (2003). A definite prosauropod dinosaur from the Lower Elliot Formation (Norian: Upper Triassic) of South Africa. *Palaeontologia africana* 39: 63-68.
 - `huxley1867b`: Huxley, T. H. (1867). On some Remains of large Dinosaurian Reptiles from the Stormberg Mountains, South Africa. *Quarterly Journal of the Geological Society of London* 23(1-2): 1-6. doi:10.1144/gsl.jgs.1867.023.01-02.07
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
 - `galton1985a`: Galton, P. M. (1985). Notes on the Melanorosauridae, a family of large Prosauropod Dinosaurs (Saurischia: Sauropodomorpha). *Geobios* 18(5): 671-676. doi:10.1016/s0016-6995(85)80065-6
-- `yates2003c`: Yates, A. M. (2003). A definite prosauropod dinosaur from the Lower Elliot Formation (Norian: Upper Triassic) of South Africa. *Palaeontologia africana* 39: 63-68.
 - `vanheerden1979a`: Van Heerden, J. (1979). The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa. *Navorsinge van die Nasionale Museum* 4: 21-84.
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
+
+## Other references
+
+- `cooper1980a`: Cooper, M. R. (1980). The first record of the prosauropod dinosaur Euskelosaurus from Zimbabwe (Rhodesia). *Arnoldia (Zimbabwe)* 9(3): 1-17.
