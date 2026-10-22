@@ -1,5 +1,21 @@
 # Tremp
 
+## Does Pujalte and Schmitz's "upper Maastrichtian–Danian" put the Talarn in the Danian?
+
+*2026-10-21*
+
+**Conclusion.** No. Pujalte and Schmitz (2005) give the Talarn that age after redefining its top by a lithohorizon alone, which in the Esplugafreda ravine moves beds previously assigned to the Esplugafreda Formation into the Talarn. Their Danian belongs to the formation as they redraw it, not to the Talarn of Cuevas (1992) that the registry follows, so the 2026-10-07 conclusion stands; this entry adds the paper, which that entry did not weigh. Governs `stages: [Maastrichtian]` on [Talarn](../../../stratigraphy/t/talarn.yml), unchanged.
+
+**Evidence.**
+- pujalte2005a, p. 82: "la Fm Talarn corresponde al Maastrichtiense superior-Daniense" ("the Talarn Fm corresponds to the upper Maastrichtian-Danian", translated), the age resting on the Tremp-Colmenar horizon, which "separa carbonatos Danienses y Thanetienses en el corte de Campo (Eichenseer, 1988)" ("separates Danian and Thanetian carbonates in the Campo section", translated).
+- pujalte2005a, p. 81: "nuestra propuesta ... es fijar los límites inferiores de las Fms Esplugafreda y Claret exclusivamente mediante el criterio de litohorizontes" ("our proposal ... is to fix the lower boundaries of the Esplugafreda and Claret Fms exclusively by means of the lithohorizon criterion", translated).
+- cuevas1992a, p. 101: the Talarn type section in the Barranco de La Mata is about 140 m, its top the Esplugafreda Formation west of the Noguera Pallaresa and the Suterranya and Sant Salvador limestones east of it.
+
+**Ruled out.**
+- *The Danian for the Talarn of Cuevas (1992).* The age comes from a boundary drawn higher than his, and the Danian of the Tremp Group is already recorded on the group, where the beds in question fall under either scheme.
+
+**Open.** Whether the registry should follow Pujalte and Schmitz's boundary instead of Cuevas's. That is a choice between schemes, and it would move the Talarn's top and add the Danian together.
+
 ## Does the Tremp Group reach the Danian, and does the Talarn?
 
 *2026-10-07*
@@ -35,6 +51,7 @@
 
 ## References
 
+- `pujalte2005a`: Pujalte, V.; Schmitz, B. (2005). Revisión de la estratigrafía del Grupo Tremp ("Garumniense", Cuenca de Tremp-Graus, Pirineos meridionales) [Revision of the stratigraphy of the Tremp Group ("Garumnian", Tremp-Graus Basin, southern Pyrenees)]. *Geogaceta* 38: 79-82.
 - `cuevas1992a`: Cuevas, J. L. (1992). Estratigrafía del "Garumniense" de la Conca de Tremp, Prepirineo de Lérida [Stratigraphy of the "Garumnian" of the Conca de Tremp, Lleida Pre-Pyrenees]. *Acta Geologica Hispanica* 27: 95-108.
 - `díez-canseco2014a`: Díez-Canseco, D.; Arz, J. A.; Benito, M. I.; Díaz-Molina, M.; Arenillas, I. (2014). Tidal influence in redbeds: a palaeoenvironmental and biochronostratigraphic reconstruction of the Lower Tremp Formation (South-Central Pyrenees, Spain) around the Cretaceous/Paleogene boundary. *Sedimentary Geology* 312: 31-49. doi:10.1016/j.sedgeo.2014.06.008
 - `rosell2001a`: Rosell, J.; Linares, R.; Llompart, C. (2001). El "Garumniense" Prepirenaico [The Pre-Pyrenean "Garumnian"]. *Revista de la Sociedad Geológica de España* 14(1-2): 47-56.
