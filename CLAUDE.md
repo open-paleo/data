@@ -44,7 +44,7 @@ issues; do not create a checked-in file to track them.
 
 The one exception is state a skill itself reads and writes, which lives beside
 that skill's scripts — for example
-`.claude/skills/audit-disputes/reaudit-queue.yml`.
+`.claude/skills/reference-records/adjudicated.yml`.
 
 ## Research Notes
 
