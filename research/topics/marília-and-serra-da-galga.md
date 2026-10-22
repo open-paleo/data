@@ -1,5 +1,20 @@
 # Marília and Serra da Galga formations
 
+## Does Soares and colleagues' "between the Santonian and the Maastrichtian" widen the Marília?
+
+*2026-10-21*
+
+**Conclusion.** No. The paper that defines the Marília reaches the range by tying its deposition to regional uplift and to volcanism dated 80 to 60 million years, not by dating the formation, and its Marília is the broad unit that still included the Serra da Galga. The 2026-10-01 entry stands. Governs `stages: [Maastrichtian]` on [Marília](../../stratigraphy/m/marília.yml).
+
+**Evidence.**
+- soares1980a, p. 184: "The sedimentation of this Formation was contemporaneous with the uplift of the northern part of the Serra do Mar and of the Canastra arch (Soares and Landim, 1975) or of the Alto Parnaíba (Saad et al., 1971), and with the associated volcanism, with ages between 80 and 60 million years. Thus, the sedimentation of the Marília Formation took place between the Santonian and the Maastrichtian" (translated).
+- soares1980a, p. 184: the base of the unit is dated by a fauna "similar to that of the Adamantina Formation", including titanosaurid remains at Colina "to which a Senonian age was attributed" (translated).
+
+**Ruled out.**
+- *Santonian or Campanian for the Marília.* An age for uplift and volcanism elsewhere is the age of other events, and CONTRIBUTING does not let a correlation date a unit. The 80 to 60 Ma figures are relayed without a method. The faunal Senonian is attributed in the passive, with no author, and dates only the lower part of the broad Marília.
+
+**Open.** Nothing.
+
 ## Does the Marília ruling govern *Ypupiara*?
 
 *2026-10-10*
@@ -38,6 +53,7 @@
 
 ## References
 
+- `soares1980a`: Soares, P. C.; Landim, P. M. B.; Fúlfaro, V. J.; Sobreiro Neto, A. F. (1980). Ensaio de caracterização estratigráfica do Cretáceo no Estado de São Paulo: Grupo Bauru [Essay on the stratigraphic characterization of the Cretaceous in São Paulo State: Bauru Group]. *Revista Brasileira de Geociências* 10(3): 177-185.
 - `brum2021a`: Brum, A. S.; Pêgas, R. V.; Bandeira, K. L. N.; Souza, L. G.; Campos, D. A.; Kellner, A. W. A. (2021). A new unenlagiine (Theropoda, Dromaeosauridae) from the Upper Cretaceous of Brazil. *Papers in Palaeontology* 7(4): 2075-2099. doi:10.1002/spp2.1375
 - `soares2020a`: Soares, M. V. T.; Basilici, G.; Marinho, T. S.; Martinelli, A. G.; Marconato, A.; Mountney, N. P.; Colombera, L.; Mesquita, Á. F.; Vasques, J. T.; Abrantes Junior, F. R.; Ribeiro, L. C. B. (2020). Sedimentology of a distributive fluvial system: the Serra da Galga Formation, a new lithostratigraphic unit (Upper Cretaceous, Bauru Basin, Brazil). *Geological Journal* 56(2): 951-975. doi:10.1002/gj.3987
 - `iori2021a`: Iori, F. V.; de Araújo-Júnior, H. I. de; Tavares, S. A. S.; Marinho, T. da S.; Martinelli, A. G. (2021). New theropod dinosaur from the Late Cretaceous of Brazil improves abelisaurid diversity. *Journal of South American Earth Sciences* 112. doi:10.1016/j.jsames.2021.103551
@@ -52,3 +68,8 @@
 - `cavalcanti2026a`: Cavalcanti, J. A. D.; da Silva, M. S.; Schobbenhaus, C.; Seer, H. J.; de Moraes, L. C.; Baptista, M. C. (2026). Assessment of paleontological geosites of Uberaba UNESCO Global Geopark (Minas Gerais, Brazil). *International Journal of Geoheritage and Parks* 14(2): 100280. doi:10.1016/j.ijgeop.2026.100280
 - `fernandes2000a`: Fernandes, L. A.; Coimbra, A. M. (2000). Revisão estratigráfica da parte oriental da Bacia Bauru (Neocretáceo) [Stratigraphic review of the eastern portion of the Bauru Basin (Neocretaceous)]. *Revista Brasileira de Geociências* 30(4): 717-728. doi:10.25249/0375-7536.2000304717728
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
+
+## Other references
+
+- `soares1975a`: Soares, P. C.; Landim, P. M. B. (1975). Comparison between the tectonic evolution of the intracratonic and marginal basins in South Brazil. *Anais da Academia Brasileira de Ciências* 48 (supplement): 313-324.
+- `saad1971a`: Saad, J. H. G.; Cardoso, R. N.; Costa, M. I. (1971). Formações cretácicas em Minas Gerais: uma revisão [Cretaceous formations in Minas Gerais: a review]. *Revista Brasileira de Geociências* 1(1): 2-21.
