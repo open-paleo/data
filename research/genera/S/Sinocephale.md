@@ -1,5 +1,20 @@
 # *Sinocephale*
 
+## Is the position or validity of *Sinocephale* disputed?
+
+*2026-10-22*
+
+**Conclusion.** No. Evans and colleagues (2021) recover it within Pachycephalosaurinae, with weak support for its exact position, and answer Sullivan's (2006) nomen dubium on anatomy. No later work read proposes another placement or questions validity. Weak support within one agreed clade is not a dispute. Governs `parent: Pachycephalosaurinae`, `status: valid` and the absence of a `dispute` block on [*Sinocephale bexelli*](../../../genera/S/Sinocephale.yml).
+
+**Evidence.**
+- evans2021a, Results: "hypothesized to be a *Prenocephale*-grade member of Pachycephalosaurinae here"; "support for its specific phylogenetic position is fairly weak at this time".
+- evans2021a, Taxonomic comment: the holotype's distinctiveness and the phylogenetic results "support a distinct taxon at both the specific and generic levels (contra Sullivan 2006)".
+
+**Ruled out.**
+- *Nomen dubium.* Sullivan (2006): "I consider "*Stegoceras*" *bexelli* to be a *nomen dubium*" (sullivan2006a). Evans and colleagues answer it.
+
+**Open.** When the species was first referred to *Stegoceras*. Evans and colleagues credit the combination "*Stegoceras*" *bexelli* to Sullivan (2006: 361) and list Kuhn (1964) among the earlier generic assignments; Kuhn (1964), kuhn1964a, has not been read.
+
 ## Which formation is the *Sinocephale* locality, Tsondolein-Khuduk, in?
 
 *2026-09-05*
@@ -34,7 +49,9 @@
 
 ## References
 
-- `bohlin1953a`: Bohlin, B. (1953). VI. Vertebrate Palaeontology 6. Fossil reptiles from Mongolia and Kansu. *Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication* 37: 1-113.
 - `evans2021a`: Evans, D. C.; Brown, C. M.; You, H.; Campione, N. E. (2021). Description and revised diagnosis of Asia's first recorded pachycephalosaurid, Sinocephale bexelli gen. nov., from the Upper Cretaceous of Inner Mongolia, China. *Canadian Journal of Earth Sciences* 58(10): 981-992. doi:10.1139/cjes-2020-0190
+- `sullivan2006a`: Sullivan, R. M. (2006). A taxonomic review of the Pachycephalosauridae (Dinosauria: Ornithischia). In *Late Cretaceous Vertebrates from the Western Interior*, pp. 348-365.
+- `kuhn1964a`: Kuhn, O. (1964). Ornithischia (Supplementum I). *Fossilium Catalogus I: Animalia* 105.
+- `bohlin1953a`: Bohlin, B. (1953). VI. Vertebrate Palaeontology 6. Fossil reptiles from Mongolia and Kansu. *Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication* 37: 1-113.
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

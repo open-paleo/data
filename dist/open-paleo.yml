@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-21T21:06:15.437Z
+  built_at: 2026-10-23T20:49:01.623Z
   clade_count: 188
   genus_count: 1426
   license: CC-BY-4.0
@@ -57,12 +57,12 @@ tree:
                                               Velociraptorinae: {}
                                               Saurornitholestinae: {}
                                             Unenlagiinae: {}
-                                            Halszkaraptorinae: {}
                                           Troodontidae:
                                             Troodontinae: {}
                                             Sinovenatorinae: {}
                                             Jinfengopteryginae: {}
                                         Avialae: {}
+                                        Halszkaraptorinae: {}
                                         Anchiornithidae: {}
                                     Oviraptorosauria:
                                       Caudipterygidae: {}
@@ -2198,6 +2198,16 @@ clades:
         pages: "201184"
         doi: 10.1098/rsos.201184
         notes: Recognized the basal caudipterygids as one of four main oviraptorosaur clades.
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Did not recover Caudipterygidae; Caudipteryx is the sister of Microvenator.
   Centrosaurinae:
     description: |
       Centrosaurinae is one of the two subfamilies of horned ceratopsid dinosaurs, encompassing large quadrupedal herbivores of the Late Cretaceous. Its fossils come primarily from the northern part of Laramidia, in present-day Alberta, Montana, and Alaska, with isolated members reaching as far south as Utah and Mexico and one debated occurrence in China. Centrosaurines are typically marked by a prominent nasal horn, short horns over the eyes, and an ornamented frill projecting from the back of the skull, and are relatively small for ceratopsids, roughly the size of a rhinoceros at body lengths of about 2.5 to 8 meters. The subfamily is divided into several tribes, including the early-diverging nasutoceratopsins and albertaceratopsins and the more derived centrosaurins and pachyrhinosaurins; the last group replaces the nasal horn with a thickened bony boss. Their classification is complicated by wide variation between individuals and growth stages, and Wilson and colleagues (2020) could not reject the hypothesis that the eucentrosaurans evolved as a single changing lineage, with Stellasaurus as a transitional form.
@@ -5010,8 +5020,6 @@ clades:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     type_genus: Halszkaraptor
     described: 2017
@@ -5069,7 +5077,18 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Groups Halszkaraptorinae with Unenlagiinae as Unenlagiidae.
+        notes: Treats Halszkaraptorinae with Unenlagiinae as Unenlagiidae.
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+        notes: Recovered Halszkaraptorinae with Unenlagiinae closer to birds than to dromaeosaurids and troodontids.
   Herrerasauria:
     description: |
       Herrerasauria is a clade of carnivorous dinosaurs from the Late Triassic, among the oldest dinosaurs known, first appearing roughly 233 million years ago during the Carnian stage. Its best-known members come from South America, including Herrerasaurus and Staurikosaurus of Argentina and Brazil, though possible relatives have also been recovered in North America, Africa, and perhaps other continents. Most were small to mid-sized predators, typically no more than about 4 meters long. Their anatomy blends primitive and derived features: they only superficially resemble later theropods and are not thought to be ancestral to any later dinosaur group. Distinctive traits include a hip socket that is only partly open, just two sacral vertebrae (the fewest of any dinosaur), and a hinged lower jaw. Their exact position on the dinosaur family tree remains debated, with analyses variously placing them as basal saurischians that diverged before the split between theropods and sauropodomorphs, or as early theropods.
@@ -10019,7 +10038,7 @@ clades:
         notes: Recovered Shamosaurinae (Gobisaurus + Shamosaurus) as sister to Ankylosaurinae.
   Sinovenatorinae:
     description: |
-      Sinovenatorinae is a subfamily of small, basal troodontids from the Early Cretaceous Jehol Biota of China, grouping Sinovenator with Mei, Sinusonasus, and Daliansaurus, and in some analyses Jianianhualong. Its members are among the smallest and most basal of the troodontids, the bird-like, gracile theropods known for their large braincases and long, slender legs built for fast running. Members of the group share a distinctively wide, flattened fourth metatarsal. The clade's exact composition and internal relationships remain debated, with some analyses instead recovering these Chinese taxa as a graded succession of lineages rather than a single well-defined clade.
+      Sinovenatorinae is a subfamily of small, basal troodontids from the Early Cretaceous Jehol Biota of China, grouping Sinovenator with Mei. Its erecting analysis also included Sinusonasus and Daliansaurus (Shen and colleagues, 2017), and some analyses add Jianianhualong, but later analyses often place these three outside the subfamily. Its members are among the smallest and most basal of the troodontids, the bird-like, gracile theropods known for their large braincases and long, slender legs built for fast running. Members of the group share a distinctively wide, flattened fourth metatarsal. The clade's exact composition and internal relationships remain debated, with some analyses instead recovering these Chinese taxa as a graded succession of lineages rather than a single well-defined clade.
     taxonomy:
       - Life
       - Animalia
@@ -15452,14 +15471,6 @@ genera:
       phonetic: ag-uh-THAW-mus
     etymology: From Ancient Greek 'αγαν' (agan, 'much') and 'θαυμα' (thauma, 'wonder'); meaning 'much wonder', given by Cope in reference to the large size of the type material.
     description: Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). It was seen as the largest land animal known at the time of its discovery.
-    dispute:
-      summary: |
-        Agathaumas is a nomen dubium based on postcranial material that lacks diagnostic ceratopsid characters and is widely regarded as indeterminate. It cannot be assigned to either subfamily and is retained at Ceratopsidae incertae sedis.
-      history:
-        - date: 2026-06-26
-          note: Placed at Ceratopsidae incertae sedis, undiagnostic holotype precludes subfamily assignment.
-        - date: 2026-10-08
-          note: Type species set to nomen dubium and diagnostic features removed; Olshevsky (1991), The Dinosauria (Weishampel and colleagues, 2004) and Jones (2026) treat it as undiagnostic.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -15497,7 +15508,7 @@ genera:
             - AMNH FR 4000
           specimen_type: holotype
           institution: American Museum of Natural History
-          material: Sixteen vertebrae (including sacrum with associated dorsals and caudals), both iliac bones (one nearly perfect), limb bones, ribs, and other undetermined parts.
+          material: Sixteen vertebrae (including a sacrum, with dorsals and caudals), both ilia and other pelvic bones (those of one side nearly perfect), limb bones, ribs, and other undetermined parts.
           completeness: partial
         erected_in: cope1872a
         authors: Cope, E. D.
@@ -15516,7 +15527,7 @@ genera:
         journal: Mesozoic Meanderings
         volume: "2"
         pages: 1-196
-        notes: Lists Agathaumas as a nomen dubium.
+        notes: Lists Agathaumas as a nomen dubium and queries its synonymy with Brachyceratops.
       - id: weishampel2004a
         authors: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.)
         year: 2004
@@ -21568,7 +21579,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Amtosaurus as a nomen dubium, an indeterminate ornithischian.
     taxonomy:
       - Life
       - Animalia
@@ -22147,7 +22158,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Anasazisaurus as a synonym of Kritosaurus.
     taxonomy:
       - Life
       - Animalia
@@ -24786,7 +24797,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports alvarezsauroid, basal coelurosaur and compsognathid placements for Aorun.
       - id: meso2024a
         authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
         year: 2024
@@ -26426,7 +26437,7 @@ genera:
     parent: Avialae
     dispute:
       summary: |
-        Archaeopteryx is traditionally the basalmost avialan (Turner and colleagues, 2012; Pei and colleagues, 2020; Jones, 2026), but a number of analyses instead recover it among the basal deinonychosaurs, close to the anchiornithids and troodontids (Xu and colleagues, 2011; Godefroit and colleagues, 2013; Hartman and colleagues, 2019). It is placed at Avialae following the prevailing recent view.
+        Archaeopteryx is traditionally the basalmost avialan (Turner and colleagues, 2012), or an avialan just crownward of the anchiornithines (Pei and colleagues, 2020), but a number of analyses instead recover it among the basal deinonychosaurs, close to the anchiornithids and troodontids (Xu and colleagues, 2011; Godefroit and colleagues, 2013; Hartman and colleagues, 2019). It is placed at Avialae following the prevailing recent view.
       history:
         - date: 2026-07-01
           note: Retained at Avialae following the prevailing view, with the competing basal-deinonychosaur hypothesis recorded.
@@ -28360,7 +28371,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The phylogenetic position of Asfaltovenator vialidadi is unstable. Its describers recovered it as a basal allosauroid and noted that its mosaic of megalosauroid and allosauroid characters destabilizes tetanuran topology (Rauhut and Pol, 2019); Jones (2026) likewise treats it as a basal allosauroid outside both Allosauria and Metriacanthosauridae. Other analyses instead place it within Allosauridae as the sister taxon of Allosaurus (Rauhut and colleagues, 2024; Kellermann and colleagues, 2025). It is placed conservatively at Allosauroidea incertae sedis.
+        The phylogenetic position of Asfaltovenator vialidadi is unstable. Its describers recovered it as a basal allosauroid and noted that its mosaic of megalosauroid and allosauroid characters destabilizes tetanuran topology (Rauhut and Pol, 2019), a position Kellermann and colleagues (2025) also recover in their unweighted analyses. Other analyses instead place it within Allosauridae as the sister taxon of Allosaurus (Rauhut and colleagues, 2024; Kellermann and colleagues, 2025). It is placed conservatively at Allosauroidea incertae sedis.
       history:
         - date: 2026-07-02
           note: Placed at Allosauroidea incertae sedis; recovered as a basal allosauroid by Rauhut and Pol (2019) but within Allosauridae by later analyses.
@@ -28474,7 +28485,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Asfaltovenator as a basal allosauroid.
     taxonomy:
       - Life
       - Animalia
@@ -28500,10 +28511,10 @@ genera:
     pronunciation:
       phonetic: AY-zha-SER-a-tops
     etymology: From Asia (the continent where the genus was found) + Greek keras (κέρας) meaning 'horn' + ops (ὤψ) meaning 'face'; overall meaning 'Asian horned face'.
-    description: Asiaceratops is a genus of herbivorous ceratopsian dinosaur. It lived during the Early-Late Cretaceous. The type species, A. salsopaludalis is known from Uzbekistan, while A. sulcidens is known from China and Mongolia.
+    description: Asiaceratops is a genus of small herbivorous ceratopsian dinosaur from Uzbekistan. Nessov and colleagues (1989) also tentatively referred Microceratops sulcidens Bohlin, 1953, from China, to the genus.
     dispute:
       summary: |
-        Asiaceratops salsopaludalis is based on fragmentary material and is often regarded as a nomen dubium, though several analyses include it as a basal neoceratopsian.
+        Sereno (2000) regards Asiaceratops salsopaludalis as a nomen dubium, finding no autapomorphies in the holotype maxilla or the referred material. Makovicky and Norell (2006), Morschhauser and colleagues (2018) and Son and colleagues (2022) include it in phylogenetic analyses provisionally, assuming that all the referred material belongs to one taxon. Those analyses place it either as the earliest-diverging leptoceratopsid (Makovicky and Norell, 2006; Farke and colleagues, 2014; He and colleagues, 2015; Arbour and Evans, 2019) or among basal neoceratopsians outside Leptoceratopsidae (Chinnery, 2004; Morschhauser and colleagues, 2018; Son and colleagues, 2022).
       history:
         - date: 2026-06-27
           note: Placed at Neoceratopsia (basal); nomen dubium.
@@ -28578,6 +28589,87 @@ genera:
         publisher: Cambridge University Press, Cambridge
         pages: 480-516
         notes: Finds no autapomorphies in the holotype maxilla or referred material and regards Asiaceratops as a nomen dubium.
+      - id: bohlin1953a
+        authors: Bohlin, B.
+        year: 1953
+        title: VI. Vertebrate Palaeontology 6. Fossil reptiles from Mongolia and Kansu
+        journal: Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication
+        volume: "37"
+        pages: 1-113
+        notes: Names Microceratops sulcidens on teeth from Chia-yü-kuan, Kansu.
+      - id: chinnery2004a
+        authors: Chinnery, B.
+        year: 2004
+        title: "Description of Prenoceratops pieganensis gen. et sp. nov. (Dinosauria: Neoceratopsia) from the Two Medicine Formation of Montana"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "24"
+        issue: "3"
+        pages: 572-590
+        doi: 10.1671/0272-4634(2004)024[0572:doppge]2.0.co;2
+        notes: Recovers Asiaceratops with Chaoyangosaurus within Neoceratopsia, outside Leptoceratopsidae.
+      - id: makovicky2006a
+        authors: Makovicky, P. J.; Norell, M. A.
+        year: 2006
+        title: "Yamaceratops dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia"
+        journal: American Museum Novitates
+        publisher: American Museum of Natural History (BioOne sponsored)
+        volume: "3530"
+        pages: 1-42
+        doi: 10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
+        notes: Includes it provisionally, assuming the referred material belongs to one taxon; recovers it as the sister of the other leptoceratopsids.
+      - id: farke2014a
+        authors: Farke, A. A.; Maxwell, W. D.; Cifelli, R. L.; Wedel, M. J.
+        year: 2014
+        title: A Ceratopsian Dinosaur from the Lower Cretaceous of Western North America, and the Biogeography of Neoceratopsia
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "9"
+        issue: "12"
+        pages: e112055
+        doi: 10.1371/journal.pone.0112055
+        notes: Recovers it as the earliest-diverging leptoceratopsid.
+      - id: he2015a
+        authors: He, Y.; Makovicky, P. J.; Wang, K.; Chen, S.; Sullivan, C.; Han, F.; Xu, X.
+        year: 2015
+        title: A new leptoceratopsid (Ornithischia, Ceratopsia) with a unique ischium from the Upper Cretaceous of Shandong Province, China
+        journal: PLOS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "10"
+        issue: "12"
+        pages: e0144148
+        doi: 10.1371/journal.pone.0144148
+        notes: Recovers it as the earliest-diverging leptoceratopsid.
+      - id: morschhauser2018a
+        authors: Morschhauser, E. M.; You, H.; Li, D.; Dodson, P.
+        year: 2018
+        title: "Phylogenetic history of Auroraceratops rugosus (Ceratopsia: Ornithischia) from the Lower Cretaceous of Gansu Province, China"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "38"
+        issue: sup1
+        pages: 117-147
+        doi: 10.1080/02724634.2018.1509866
+        notes: Includes it provisionally and recovers it in a pectinate series of basal neoceratopsians, not as a leptoceratopsid.
+      - id: arbour2019a
+        authors: Arbour, V. M.; Evans, D. C.
+        year: 2019
+        title: A new leptoceratopsid dinosaur from Maastrichtian-aged deposits of the Sustut Basin, northern British Columbia, Canada
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "7"
+        pages: e7926
+        doi: 10.7717/peerj.7926
+        notes: Recovers it as the earliest-diverging leptoceratopsid; with the Morschhauser matrix, it falls in a neoceratopsian polytomy.
+      - id: son2022a
+        authors: Son, M.; Lee, Y. N.; Zorigt, B.; Kobayashi, Y.; Park, J. Y.; Lee, S.; Kim, S. H.; Lee, K. Y.
+        year: 2022
+        title: A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia
+        journal: PeerJ
+        volume: "10"
+        pages: e13176
+        doi: 10.7717/peerj.13176
+        notes: Recovers it among basal neoceratopsians, more derived than Liaoceratops and more basal than Archaeoceratops.
     taxonomy:
       - Life
       - Animalia
@@ -36920,7 +37012,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Bienosaurus as a nomen dubium, possibly synonymous with Tatisaurus.
       - id: irmis2008a
         authors: Irmis, R. B.; Knoll, F.
         year: 2008
@@ -38986,18 +39078,12 @@ genera:
     described: 1903
   Brachyceratops:
     genus: Brachyceratops
-    parent: Ceratopsidae
+    parent: Centrosaurinae
     placement: incertae sedis
     pronunciation:
       phonetic: BRAK-i-SER-a-tops
     etymology: "From Greek brachys (βραχύς) meaning 'short', Greek keras (κέρας) meaning 'horn', and Greek ops (ὤψ) meaning 'face'. Full meaning: 'short horned face'."
-    description: Brachyceratops is a dubious genus of ceratopsian dinosaur from the late Cretaceous Period of Montana, United States. Brachyceratops has historically been known from juvenile remains, with one specimen having since been re-classified as Rubeosaurus ovatus. Because the holotype is too incomplete and juvenile to preserve diagnostic features, Sampson and colleagues (1997) and McDonald (2011) regarded Brachyceratops as a nomen dubium.
-    dispute:
-      summary: |
-        Brachyceratops is a nomen dubium based on incomplete juvenile material; Sampson and colleagues (1997) and McDonald (2011) found the holotype too immature to diagnose, and a referred specimen has been reassigned to Rubeosaurus. Though almost certainly a centrosaurine, it cannot be placed reliably below family level and is retained at Ceratopsidae incertae sedis.
-      history:
-        - date: 2026-06-26
-          note: Moved from Centrosaurinae to Ceratopsidae incertae sedis, undiagnostic juvenile holotype; the centrosaurine analyses and Jones (2026) leave it unplaced.
+    description: Brachyceratops is a dubious genus of ceratopsian dinosaur from the late Cretaceous Period of Montana, United States. Brachyceratops has historically been known from juvenile remains, with one specimen having since been re-classified as Rubeosaurus ovatus. Sampson and colleagues (1997) and McDonald (2011) identify the type material as juvenile centrosaurines, but because the holotype is too incomplete and juvenile to preserve diagnostic features, they regard Brachyceratops as a nomen dubium.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -39094,7 +39180,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Lists Brachyceratops among nomina dubia, as unidentifiable juvenile ceratopsid remains.
     taxonomy:
       - Life
       - Animalia
@@ -39116,6 +39202,7 @@ genera:
       - Coronosauria
       - Ceratopsoidea
       - Ceratopsidae
+      - Centrosaurinae
     authors: Gilmore, C. W.
     described: 1914
   Brachylophosaurus:
@@ -39408,7 +39495,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Lists Brachypodosaurus among nomina dubia; its stegosaur identification has been challenged.
     taxonomy:
       - Life
       - Animalia
@@ -39992,12 +40079,6 @@ genera:
       phonetic: BREV-i-SER-a-tops
     etymology: From Latin brevis meaning 'short' + Greek keras (κέρας) meaning 'horn' + ops (ὤψ) meaning 'face'; overall meaning 'short horned face'.
     description: Breviceratops is a genus of protoceratopsid dinosaur that lived during the Late Cretaceous in what is now the Baruungoyot Formation, Mongolia.
-    dispute:
-      summary: |
-        Much of the material historically referred to Breviceratops kozlowskii has been reassigned to the sympatric Bagaceratops rozhdestvenskyi. Czepiński (2019) restricted Breviceratops kozlowskii to its holotype (ZPAL MgD-I/117) and one referred skull (ZPAL MgD-I/116), reassigning the remaining referred specimens — including Kurzanov's (1990) Hermiin Tsav skulls — to Bagaceratops, but upheld Breviceratops as a valid taxon distinct from both Bagaceratops and Protoceratops.
-      history:
-        - date: 2026-07-20
-          note: Referred material restricted to the holotype and ZPAL MgD-I/116 following Czepiński (2019); genus retained as valid and distinct from Bagaceratops.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -40089,7 +40170,7 @@ genera:
         volume: "32"
         pages: 1394-1421
         doi: 10.1080/08912963.2019.1593404
-        notes: Restricted Breviceratops kozlowskii to the holotype and ZPAL MgD-I/116, reassigning other referred material to Bagaceratops, and upheld it as a distinct taxon.
+        notes: Restricted the species to the holotype and ZPAL MgD-I/116, moved most referred material to Bagaceratops, left ZPAL MgD-I/119, 121 and 122 as Protoceratopsidae indet., and upheld it as distinct.
       - id: gradziński1972a
         authors: Gradziński, R.; Jerzykiewicz, T.
         year: 1972
@@ -42361,7 +42442,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Callovosaurus as a valid dryosaurid.
     taxonomy:
       - Life
       - Animalia
@@ -48145,7 +48226,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable. It has been recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson and colleagues, 2010; Carrano and colleagues, 2012; Rauhut and colleagues, 2024; Kellermann and colleagues, 2025; Jones, 2026), as a non-megaraptoran tetanuran of uncertain affinity (Novas and colleagues, 2013), and as a megaraptoran within Tyrannosauroidea (Naish and Cau, 2022). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
+        Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable. It has been recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson and colleagues, 2010; Carrano and colleagues, 2012; Rauhut and colleagues, 2024; Kellermann and colleagues, 2025), as a non-megaraptoran tetanuran of uncertain affinity (Novas and colleagues, 2013), and as a megaraptoran within Tyrannosauroidea (Naish and Cau, 2022). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-07-01
           note: Moved from the deprecated Neovenatoridae to Avetheropoda incertae sedis.
@@ -49230,7 +49311,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Classifies Choyrodon as a hadrosauroid of uncertain precise position.
       - id: norman2015a
         authors: Norman, D. B.
         year: 2015
@@ -51616,7 +51697,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The placement of Coelurus is debated. It is commonly recovered near the base of Tyrannosauroidea, sometimes in a reduced Coeluridae with Tanycolagreus (Hartman and colleagues, 2019; Jones, 2026), but a base-of-Compsognathidae position has not been ruled out, and Delcourt and colleagues (2025) recovered it as the earliest-branching ornithomimosaur. It is placed conservatively at Coelurosauria incertae sedis.
+        The placement of Coelurus is debated. Naish and Cau (2022) recover it in a Coeluridae with Tugulusaurus and Tanycolagreus, the sister of the other tyrannosauroids, and Hartman and colleagues (2019) find coelurids branching just after the tyrannosauroids; Rauhut (2003) instead recovered it with the compsognathids, and Delcourt and colleagues (2025) as the earliest-branching ornithomimosaur. It is placed conservatively at Coelurosauria incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); Coeluridae/basal-Tyrannosauroidea and ornithomimosaur hypotheses proposed. Coeluridae not adopted as a node (contested, sparsely populated).
@@ -51781,6 +51862,25 @@ genera:
         issue: "124"
         pages: 339-341
         doi: 10.2475/ajs.s3-21.124.339
+      - id: naish2022a
+        authors: Naish, D.; Cau, A.
+        year: 2022
+        title: The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "10"
+        pages: e12727
+        doi: 10.7717/peerj.12727
+        notes: Recovered Coelurus in a Coeluridae with Tugulusaurus and Tanycolagreus, the sister of the other tyrannosauroids.
+      - id: rauhut2003b
+        authors: Rauhut, O. W. M.
+        year: 2003
+        title: The interrelationships and evolution of basal theropod dinosaurs
+        journal: Special Papers in Palaeontology
+        volume: "69"
+        pages: 1-213
+        publisher: The Palaeontological Association
+        notes: Recovered Coelurus with the compsognathids in a Coeluridae.
     taxonomy:
       - Life
       - Animalia
@@ -53439,7 +53539,7 @@ genera:
     described: 1914
   Craspedodon:
     genus: Craspedodon
-    parent: Ceratopsia
+    parent: Cerapoda
     placement: incertae sedis
     etymology: From Greek 'kraspedon' (edge, fringe, border) and 'odon' (tooth); meaning 'edge tooth', in reference to the ridges and denticles ornamenting the tooth crowns.
     pronunciation:
@@ -53448,7 +53548,7 @@ genera:
       Craspedodon is an extinct genus of ornithischian dinosaur from the Late Cretaceous Lonzée Member of Belgium. Only a single species, C. lonzeensis, is known.
     dispute:
       summary: |
-        Craspedodon lonzeensis is based on fragmentary teeth from Belgium reinterpreted as neoceratopsian by Godefroit and Lambert (2007); Maidment and colleagues (2026) caution that such teeth are difficult to distinguish from those of ornithopods. Treated as a nomen dubium.
+        Craspedodon lonzeensis is based on isolated teeth from Belgium. Dollo (1883) placed it among the ornithopods, and Godefroit and Lambert (2007) reinterpreted it as a basal neoceratopsian; Ősi and colleagues (2010) suggested it may instead be a hadrosauroid ornithopod. Maidment and colleagues (2026) caution that convergence makes such teeth very difficult to distinguish between ceratopsians and ornithopods. It is placed at Cerapoda incertae sedis, the nearest clade both readings accept.
       history:
         - date: 2026-06-27
           note: Placed at Ceratopsia incertae sedis; nomen dubium.
@@ -53504,7 +53604,7 @@ genera:
         journal: Bulletin du Musée royal d'Histoire naturelle de Belgique
         volume: "2"
         pages: 205-221
-        notes: Original description of Craspedodon lonzeensis on two teeth; Dollo placed it within Ornithopoda based on tooth morphology, more derived than Iguanodon.
+        notes: Original description on two teeth; places it within Ornithopoda on tooth morphology, listing its crown ornament after that of Iguanodon in a series of dental modifications.
       - id: godefroit2007a
         authors: Godefroit, P.; Lambert, O.
         year: 2007
@@ -53534,7 +53634,7 @@ genera:
         issue: "8105"
         pages: 397-403
         doi: 10.1038/s41586-025-09897-w
-        notes: Did not analyze Craspedodon, cautioning that isolated teeth like its type material are difficult to assign confidently to a clade.
+        notes: Did not analyze Craspedodon, cautioning that convergence makes such fragmentary teeth very difficult to distinguish between ceratopsians and ornithopods.
     taxonomy:
       - Life
       - Animalia
@@ -53549,8 +53649,6 @@ genera:
       - Genasauria
       - Neornithischia
       - Cerapoda
-      - Marginocephalia
-      - Ceratopsia
     authors: Dollo, L.
     described: 1883
   Craterosaurus:
@@ -54265,7 +54363,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Cryolophosaurus ellioti was originally described as an allosaurid and has been recovered as a basal tetanuran in some analyses, but recent work places it outside Averostra and Tetanurae as a non-averostran neotheropod in a grade with Dilophosaurus and Zupaysaurus (Nesbitt and colleagues, 2009; Marsh and Rowe, 2020; Jones, 2026). It is placed conservatively at Neotheropoda incertae sedis.
+        Cryolophosaurus ellioti was described with possible ceratosaurian, tetanuran or abelisaurian affinities (Hammer and Hickerson, 1994) and has been recovered as the earliest stem tetanuran (Carrano and colleagues, 2012), but most analyses place it outside Averostra and Tetanurae as a non-averostran neotheropod in a grade with Dilophosaurus and Zupaysaurus (Smith and colleagues, 2007; Nesbitt and colleagues, 2009; Marsh and Rowe, 2020). It is placed conservatively at Neotheropoda incertae sedis.
       history:
         - date: 2026-07-02
           note: Moved from Tetanurae to Neotheropoda incertae sedis following the prevailing view that it is a non-averostran (pre-tetanuran) neotheropod.
@@ -54383,7 +54481,28 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Cryolophosaurus as a neotheropod close to Dilophosaurus, outside Tetanurae.
+      - id: carrano2012a
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        doi: 10.1080/14772019.2011.630927
+        notes: Recovered Cryolophosaurus as the earliest stem tetanuran.
+      - id: smith2007b
+        authors: Smith, N. D.; Makovicky, P. J.; Hammer, W. R.; Currie, P. J.
+        year: 2007
+        title: "Osteology of Cryolophosaurus ellioti (Dinosauria: Theropoda) from the Early Jurassic of Antarctica and implications for early theropod evolution"
+        journal: Zoological Journal of the Linnean Society
+        volume: "151"
+        issue: "2"
+        pages: 377-421
+        doi: 10.1111/j.1096-3642.2007.00325.x
+        notes: Recovered Cryolophosaurus outside Averostra.
     taxonomy:
       - Life
       - Animalia
@@ -55742,13 +55861,17 @@ genera:
     described: 2015
   Daliansaurus:
     genus: Daliansaurus
-    parent: Sinovenatorinae
+    parent: Troodontidae
+    placement: incertae sedis
     dispute:
       summary: |
-        Daliansaurus was described as a member of Sinovenatorinae (Shen and colleagues, 2017), the placement followed, but later analyses (Hartman and colleagues, 2019) and Jones (2026) instead recover it in a more derived position closer to Troodontinae.
+        Daliansaurus was described as a member of Sinovenatorinae, the sister of Sinusonasus (Shen and colleagues, 2017), but every later analysis recovers it in a more derived position, outside that subfamily (Hartman and colleagues, 2019; Cau and Madzia, 2021; Sellés and colleagues, 2021; Wang and colleagues, 2023; Kubota and colleagues, 2024).
       history:
         - date: 2026-07-01
           note: Moved from Troodontidae to Sinovenatorinae following its describers (Shen and colleagues, 2017); the closer-to-Troodontinae alternative (Hartman and colleagues, 2019) is noted.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Troodontidae; only its describers recover it in Sinovenatorinae.
     etymology: Named after Dalian, a city in Liaoning Province, China, + Greek sauros ('lizard' or 'reptile'), meaning 'Dalian reptile'.
     pronunciation:
       phonetic: DAH-ly-uhn-SOR-us
@@ -55825,6 +55948,7 @@ genera:
         issue: "3"
         pages: 763-780
         doi: 10.1111/1755-6724.13307
+        notes: Named Daliansaurus and erected Sinovenatorinae, recovering it as the sister of Sinusonasus.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -55847,7 +55971,46 @@ genera:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Later paravian phylogeny shifted Daliansaurus's placement from the prior position.
+        notes: Recovered Daliansaurus outside Sinovenatorinae; forcing it in costs four steps.
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Recovered Daliansaurus outside Sinovenatorinae.
+      - id: sellés2021a
+        authors: Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.
+        year: 2021
+        title: "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "11"
+        issue: "1"
+        doi: 10.1038/s41598-021-83745-5
+        notes: Recovered Daliansaurus as the sister of Tochisaurus.
+      - id: wang2023a
+        authors: Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.
+        year: 2023
+        title: A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "151"
+        doi: 10.1016/j.cretres.2023.105605
+        notes: Recovered Daliansaurus as the sister of the late-diverging troodontids.
+      - id: kubota2024a
+        authors: Kubota, K.; Kobayashi, Y.; Ikeda, T.
+        year: 2024
+        title: "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "14"
+        issue: "1"
+        doi: 10.1038/s41598-024-66815-2
+        notes: Recovered Daliansaurus outside Sinovenatorinae.
     taxonomy:
       - Life
       - Animalia
@@ -55870,7 +56033,6 @@ genera:
       - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
-      - Sinovenatorinae
     authors: Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H.
     described: 2017
   Dandakosaurus:
@@ -56666,7 +56828,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports carcharodontosaurian, basal coelurosaur and megaraptoran placements for Datanglong.
       - id: cau2014a
         authors: Cau, A.
         year: 2014
@@ -56906,7 +57068,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Daurlong is a short-armed Jehol dromaeosaurid recovered by its describers in a clade with Tianyuraptor and Zhenyuanlong, placed crownward of Microraptorinae and stemward of Eudromaeosauria (Wang and colleagues, 2022; Jones, 2026). This "short-armed" grouping is weakly supported and not recovered by all analyses, so it is placed at Dromaeosauridae incertae sedis.
+        Daurlong is a short-armed Jehol dromaeosaurid recovered by its describers in a clade with Tianyuraptor and Zhenyuanlong, crownward of Microraptorinae and stemward of Eudromaeosauria (Wang and colleagues, 2022), a grouping Wang and colleagues (2026) recover again. The relationships of this clade are weakly supported, and Wang and colleagues (2023) do not recover it, so Daurlong is placed at Dromaeosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal short-armed-dromaeosaurid grouping with Tianyuraptor and Zhenyuanlong weakly supported.
@@ -57018,6 +57180,17 @@ genera:
         pages: 1142-1145
         doi: 10.1111/1755-6724.14348
         notes: Dates the tuff of the Pigeon Hill fossil-bearing bed at 121.23 ± 0.74 Ma by zircon U-Pb.
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+        notes: Recovered Daurlong with Zhenyuanlong and Tianyuraptor.
     taxonomy:
       - Life
       - Animalia
@@ -66660,7 +66833,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports Enigmosaurus as a therizinosaurid or a basal therizinosauroid.
       - id: kobayashi2025a
         authors: Kobayashi, Y.; Zelenitsky, D. K.; Fiorillo, A. R.; Chinzorig, T.
         year: 2025
@@ -71188,7 +71361,7 @@ genera:
     parent: Megalosauridae
     dispute:
       summary: |
-        Eustreptospondylus oxoniensis is a basal megalosaurid whose exact position is unresolved. Carrano and colleagues (2012) and Benson (2010) recover it as the basalmost megalosaurid outside the two subfamilies, Rauhut and colleagues (2016) place it in the megalosaurid subfamily they call Eustreptospondylinae, and Jones (2026) treats it as a basal member of Megalosauria. Proposed synonymies with Magnosaurus and Streptospondylus have been rejected.
+        Eustreptospondylus oxoniensis is a basal megalosaurid whose exact position is unresolved. Carrano and colleagues (2012) and Benson (2010) recover it as the basalmost megalosaurid outside the two subfamilies, Rauhut and colleagues (2016) place it in the megalosaurid subfamily they call Eustreptospondylinae, while Sadleir and colleagues (2008) recovered it as the sister of Spinosauridae, with weak support. Proposed synonymies with Magnosaurus and Streptospondylus have been rejected.
       history:
         - date: 2026-07-01
           note: Placed at Megalosauridae (basal) following Carrano and colleagues (2012) and Benson (2010); the finer subfamily assignment is unresolved.
@@ -71598,15 +71771,15 @@ genera:
     described: 2005
   Ferenceratops:
     genus: Ferenceratops
-    parent: Ceratopsia
+    parent: Cerapoda
     placement: incertae sedis
     etymology: From Hungarian 'Ferenc' (Francis), the birth name of paleontologist Franz Nopcsa von Felső-Szilvás (1877-1933), who first reported dinosaur remains from the Haţeg Basin, and Greek 'keras/keratos' (horn) and 'ops' (face).
     pronunciation:
       phonetic: feh-ren-seh-ruh-tops
-    description: Ferenceratops is an extinct genus of basal ceratopsian dinosaur from the Maastrichtian Sânpetru Formation of the Haţeg Basin, western Romania. The single species, Ferenceratops shqiperorum, was originally described by Weishampel and colleagues (2003) as a second species of the rhabdodontid ornithopod Zalmoxes; Maidment and colleagues (2026) reanalysed the holotype postcrania and recovered it as a ceratopsian, erecting a new genus and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised European ceratopsian lineage that also includes Ajkaceratops from Hungary.
+    description: Ferenceratops is an extinct genus of ceratopsian dinosaur from the Maastrichtian Sânpetru Formation of the Haţeg Basin, western Romania. The single species, Ferenceratops shqiperorum, was originally described by Weishampel and colleagues (2003) as a second species of the rhabdodontid ornithopod Zalmoxes; Maidment and colleagues (2026) reanalysed the holotype postcrania and recovered it as a ceratopsian, erecting a new genus and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised European ceratopsian lineage that also includes Ajkaceratops from Hungary.
     dispute:
       summary: |
-        Ferenceratops shqiperorum was erected by Maidment and colleagues (2026) for material formerly assigned to the ornithopod Zalmoxes shqiperorum, which they recovered as a European ceratopsian near the Ceratopsoidea. Its affinities within Ceratopsia are not yet corroborated by other analyses.
+        Ferenceratops shqiperorum was erected by Maidment and colleagues (2026) for material formerly assigned to the ornithopod Zalmoxes shqiperorum, which they recovered within Ceratopsia, in a clade with Ajkaceratops, Zuniceratops, Turanoceratops and the ceratopsids. A later parsimony analysis by Dieudonné and colleagues (2026), whose matrix samples ceratopsians, recovered it instead as the sister taxon of Zalmoxes robustus among rhabdodontid ornithopods. It is placed at Cerapoda incertae sedis, the nearest clade both results accept.
       history:
         - date: 2026-06-27
           note: Placed at Ceratopsia incertae sedis following Maidment and colleagues (2026); finer placement unresolved.
@@ -71675,7 +71848,7 @@ genera:
         issue: "8105"
         pages: 397-403
         doi: 10.1038/s41586-025-09897-w
-        notes: Erects Ferenceratops for Zalmoxes shqiperorum Weishampel and colleagues 2003; reanalyses the holotype postcrania and recovers it as a ceratopsian alongside Ajkaceratops in a new European clade.
+        notes: Its parsimony and Bayesian analyses recover it within Ceratopsia, with Zuniceratops, Turanoceratops and the ceratopsids; the Bayesian runs group it with Ajkaceratops and Zalmoxes robustus.
       - id: weishampel2003a
         authors: Weishampel, D. B.; Jianu, C.; Csiki, Z.; Norman, D. B.
         year: 2003
@@ -71687,6 +71860,15 @@ genera:
         pages: 65-123
         doi: 10.1017/s1477201903001032
         notes: Originally described Ferenceratops shqiperorum as a species of Zalmoxes.
+      - id: dieudonné2026b
+        authors: Dieudonné, P. E.; Paulina-Carabajal, A.; Cruzado-Caballero, P.
+        year: 2026
+        title: A redescription of the holotype skull of the ornithischian dinosaur Gasparinisaura cincosaltensis (Dryosauridae, Dysalotosaurinae clade nov.) and phylogenetic implications
+        journal: Cretaceous Research
+        volume: "189"
+        article_number: "106478"
+        doi: 10.1016/j.cretres.2026.106478
+        notes: Scores the taxon as Ferenceratops shqiperorum in a matrix that samples ceratopsians, and recovers it as the sister taxon of Zalmoxes robustus among rhabdodontid ornithopods.
       - id: augustin2023a
         authors: Augustin, F. J.; Ősi, A.; Csiki-Sava, Z.
         year: 2023
@@ -71712,8 +71894,6 @@ genera:
       - Genasauria
       - Neornithischia
       - Cerapoda
-      - Marginocephalia
-      - Ceratopsia
     authors: Maidment, S. C. R.; Butler, R. J.; Brusatte, S. L.; Meade, L. E.; Augustin, F. J.; Csiki-Sava, Z.; Ősi, A.
     described: 2026
   Ferganasaurus:
@@ -71929,7 +72109,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Ferganocephale as a nomen dubium, an ornithischian of uncertain placement.
     taxonomy:
       - Life
       - Animalia
@@ -73387,7 +73567,7 @@ genera:
     description: Fukuivenator is an extinct genus of maniraptoran theropod dinosaur from the Early Cretaceous Kitadani Formation of Japan.
     dispute:
       summary: |
-        The affinities of Fukuivenator are disputed. Its original description (Azuma and colleagues, 2016) recovered it as a basal maniraptoran of uncertain position that could not be referred to any known coelurosaurian subgroup, and Hartman and colleagues (2019) placed it near the base of Maniraptora. A CT-based osteological restudy by the same group (Hattori and colleagues, 2021) instead recovered it as the basalmost member of Therizinosauria, citing therizinosaurian synapomorphies such as a subotic recess, eleven or more cervical vertebrae, and anterior humeral condyles, though the authors caution that support for this position is weak. The Princeton Encyclopedia (Jones, 2026) adopts the basalmost therizinosaur placement. Maniraptora is the least-inclusive clade all these hypotheses accept.
+        The affinities of Fukuivenator are disputed. Its original description (Azuma and colleagues, 2016) recovered it as a basal maniraptoran of uncertain position that could not be referred to any known coelurosaurian subgroup, and Hartman and colleagues (2019) placed it near the base of Maniraptora. A CT-based osteological restudy by the same group (Hattori and colleagues, 2021) instead recovered it as the basalmost member of Therizinosauria, citing therizinosaurian synapomorphies such as a subotic recess, eleven or more cervical vertebrae, and anterior humeral condyles, though the authors caution that support for this position is weak. Cau and Madzia (2021) instead recover it at the base of Paraves. Maniraptora is the least-inclusive clade all these hypotheses accept.
       history:
         - date: 2026-07-01
           note: |
@@ -73498,6 +73678,16 @@ genera:
         volume: "20"
         pages: 1-82
         notes: CT-based restudy recovered Fukuivenator as the basalmost therizinosaurian based on new synapomorphies
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Recovered Fukuivenator as the earliest paravian.
     taxonomy:
       - Life
       - Animalia
@@ -76639,7 +76829,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Geranosaurus as a dubious heterodontosaurid.
       - id: norman2011a
         authors: Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J.
         year: 2011
@@ -79515,7 +79705,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Gongxianosaurus as possibly among the basalmost sauropods.
     taxonomy:
       - Life
       - Animalia
@@ -81752,7 +81942,7 @@ genera:
     pronunciation:
       phonetic: HALSH-kuh-RAP-tor
       ipa: /ˈhɑːlʃkəræptər/
-    description: Halszkaraptor is a genus of waterfowl-like dromaeosaurid dinosaurs from Mongolia that lived during the Late Cretaceous period. It contains only one known species, Halszkaraptor escuilliei.
+    description: Halszkaraptor is a genus of waterfowl-like halszkaraptorine dinosaurs from Mongolia that lived during the Late Cretaceous period. It contains only one known species, Halszkaraptor escuilliei.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -81870,8 +82060,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.
     described: 2017
@@ -82104,7 +82292,7 @@ genera:
     description: Hanssuesia is a genus of pachycephalosaurid dinosaurs from the late Cretaceous period. It lived in what is now Alberta and Montana, and contains the single species Hanssuesia sternbergi.
     dispute:
       summary: |
-        The validity of Hanssuesia is contested. Dyer and colleagues (2023) found that Hanssuesia sternbergi falls within the variation of Stegoceras validum and proposed synonymy, while Woodruff and colleagues (2025) provisionally retained it pending a fuller ontogenetic assessment. It is kept as a valid basal pachycephalosaurid for now.
+        Whether Hanssuesia is a junior synonym of Stegoceras validum is unsettled. Dyer and colleagues (2023) found no taxonomically significant morphometric distinction between Hanssuesia sternbergi and Stegoceras validum and proposed synonymy. Woodruff and colleagues (2025) agreed it is probably synonymous, but kept it as a separate terminal in their analysis pending a more detailed ontogenetic assessment.
       history:
         - date: 2026-06-26
           note: Placed at Pachycephalosauridae (Stegoceras-grade), kept valid pending consensus; synonymy with Stegoceras proposed but not yet settled.
@@ -82207,7 +82395,7 @@ genera:
         volume: "205"
         issue: "2"
         doi: 10.1093/zoolinnean/zlaf087
-        notes: Provisionally retained Hanssuesia pending a fuller ontogenetic assessment.
+        notes: Agrees with Dyer and colleagues (2023) that it is probably a synonym of Stegoceras validum, but scores it as a separate terminal pending an ontogenetic study; recovers it as sister to Colepiocephale.
       - id: dyer2023a
         authors: Dyer, A. D.; Powers, M. J.; Currie, P. J.
         year: 2023
@@ -83335,7 +83523,7 @@ genera:
     description: Helioceratops is a genus of herbivorous neoceratopsian dinosaur from the Middle Cretaceous of China.
     dispute:
       summary: |
-        Helioceratops brachygnathus is persistently unstable in neoceratopsian phylogenies, a consequence of its fragmentary material. Jin and colleagues (2009), describing the genus, treated it as a non-coronosaurian neoceratopsian alongside Auroraceratops and Yamaceratops, mapping characters onto an existing cladogram rather than running an analysis. Morschhauser and colleagues (2018) recovered it within Leptoceratopsidae as sister to all other members, a composition adopted in the formal definition of that clade by Madzia and colleagues (2021). Other analyses leave it unresolved: Arbour and Evans (2019) place it in a polytomy outside Coronosauria in their strict consensus, though it is the leptoceratopsid outgroup in 63% of individual trees; Ryan and colleagues (2023) and Tanaka and colleagues (2024) both leave it unresolved among the leptoceratopsids and their relatives; and Son and colleagues (2022) treat it as an unstable wildcard whose removal resolves the basal neoceratopsian polytomy.
+        Helioceratops brachygnathus is persistently unstable in neoceratopsian phylogenies, a consequence of its fragmentary material. Jin and colleagues (2009), describing the genus, treated it as a non-coronosaurian neoceratopsian alongside Auroraceratops and Yamaceratops, mapping characters onto an existing cladogram rather than running an analysis. Morschhauser and colleagues (2018) recovered it within Leptoceratopsidae as sister to all other members, the tree Madzia and colleagues (2021) used as the reference phylogeny when formally defining that clade. Other analyses leave it unresolved: Arbour and Evans (2019) place it in a polytomy outside Coronosauria in their strict consensus, though it is the leptoceratopsid outgroup in 63% of individual trees; Ryan and colleagues (2023) and Tanaka and colleagues (2024) both leave it unresolved among the leptoceratopsids and their relatives; and Son and colleagues (2022) treat it as an unstable wildcard whose removal resolves the basal neoceratopsian polytomy.
       history:
         - date: 2026-06-27
           note: Placed at Neoceratopsia (basal) following the prevailing view (Jones, 2026); leptoceratopsid alternative reflected.
@@ -83471,7 +83659,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports basal neoceratopsian and leptoceratopsid placements for Helioceratops.
     taxonomy:
       - Life
       - Animalia
@@ -83980,7 +84168,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Hesperonyx as an early iguanodontian, likely a dryosaurid.
     taxonomy:
       - Life
       - Animalia
@@ -85159,7 +85347,7 @@ genera:
     description: Homalocephale is a genus of pachycephalosaurid dinosaur that lived during the Late Cretaceous period of what is now the Nemegt Formation, Mongolia. The genus was described in 1974 by Halszka Osmólska and Teresa Maryańska, and consists of a single species, H. calathocercos. Though Homalocephale has been regarded as a synonym (and juvenile form) of Prenocephale, juvenile specimens of the latter indicate that they were distinct. Homalocephale was 1.8 m (5.9 ft) long and possibly an omnivore.
     dispute:
       summary: |
-        Homalocephale has been proposed to be a juvenile or female of Prenocephale (Longrich and colleagues, 2010), but Evans and colleagues (2018) showed that juvenile Prenocephale retain a parietosquamosal ornamentation pattern distinct from Homalocephale, supporting its validity. Its exact position within Pachycephalosaurinae is unstable.
+        Homalocephale has been proposed to be a juvenile or female of Prenocephale (Longrich and colleagues, 2010; still regarded as plausible by Longrich and Saitta, 2024), but Evans and colleagues (2018) showed that juvenile Prenocephale retain a parietosquamosal ornamentation pattern distinct from Homalocephale, supporting its validity. Its position is uncertain because the only specimen is immature (Evans and colleagues, 2011, 2021): Longrich and colleagues (2010) recovered it in a weakly supported Asian clade on the Pachycephalosaurus side of the tree, while Woodruff and colleagues (2025) left it unresolved within Pachycephalosauridae.
       history:
         - date: 2026-06-26
           note: Placed at Pachycephalosaurinae, recovered closer to Pachycephalosaurus than to Stegoceras; ontogenetic synonymy with Prenocephale raised and rejected.
@@ -85251,6 +85439,17 @@ genera:
         pages: 274-284
         doi: 10.1016/j.cretres.2009.12.002
         notes: Proposed Homalocephale is a juvenile or female of Prenocephale.
+      - id: evans2011a
+        authors: Evans, D. C.; Brown, C. M.; Ryan, M. J.; Tsogtbaatar, K.
+        year: 2011
+        title: "Cranial ornamentation and ontogenetic status of Homalocephale calathocercos (Ornithischia: Pachycephalosauria) from the Nemegt Formation, Mongolia"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "31"
+        issue: "1"
+        pages: 84-92
+        doi: 10.1080/02724634.2011.546287
+        notes: Finds the holotype immature and its parietosquamosal ornamentation distinct from that of Prenocephale prenes.
       - id: evans2018a
         authors: Evans, D. C.; Hayashi, S.; Chiba, K.; Watabe, M.; Ryan, M. J.; Lee, Y. N.; Currie, P. J.; Tsogtbaatar, K.; Barsbold, R.
         year: 2018
@@ -85261,6 +85460,37 @@ genera:
         pages: 121-134
         doi: 10.1016/j.palaeo.2017.11.029
         notes: Showed juvenile Prenocephale differ from Homalocephale, supporting its validity.
+      - id: evans2021a
+        authors: Evans, D. C.; Brown, C. M.; You, H.; Campione, N. E.
+        year: 2021
+        title: Description and revised diagnosis of Asia's first recorded pachycephalosaurid, Sinocephale bexelli gen. nov., from the Upper Cretaceous of Inner Mongolia, China
+        journal: Canadian Journal of Earth Sciences
+        publisher: Canadian Science Publishing
+        volume: "58"
+        issue: "10"
+        pages: 981-992
+        doi: 10.1139/cjes-2020-0190
+        notes: Considers its phylogenetic position uncertain because the known material is juvenile.
+      - id: woodruff2025a
+        authors: Woodruff, D. C.; Horner, J. R.; Goodwin, M. B.; Evans, D. C.
+        year: 2025
+        title: "The first pachycephalosaurid from the Late Cretaceous Two Medicine Formation: effects of the Western Interior Seaway on North American pachycephalosaurid evolution"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "205"
+        issue: "2"
+        doi: 10.1093/zoolinnean/zlaf087
+        notes: Leaves it unresolved within Pachycephalosauridae, paired with Goyocephale.
+      - id: longrich2024d
+        authors: Longrich, N. R.; Saitta, E. T.
+        year: 2024
+        title: "Taxonomic Status of Nanotyrannus lancensis (Dinosauria: Tyrannosauroidea) — A Distinct Taxon of Small-Bodied Tyrannosaur"
+        journal: Fossil Studies
+        volume: "2"
+        issue: "1"
+        pages: 1-65
+        doi: 10.3390/fossils2010001
+        notes: Still regards the synonymy with Prenocephale as plausible.
       - id: gradziński1969a
         authors: Gradziński, R.; Kaźmierczak, J.; Lefeld, J.
         year: 1969
@@ -87505,8 +87735,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Osmólska, H.
     described: 1982
@@ -93533,7 +93761,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports turiasaur and basal macronarian placements for Janenschia.
     taxonomy:
       - Life
       - Animalia
@@ -94083,7 +94311,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Jeholosaurus as a basal neornithischian of Jeholosauridae.
       - id: boyd2015a
         authors: Boyd, C. A.
         year: 2015
@@ -94953,13 +95181,17 @@ genera:
     described: 2023
   Jianianhualong:
     genus: Jianianhualong
-    parent: Sinovenatorinae
+    parent: Troodontidae
+    placement: incertae sedis
     dispute:
       summary: |
-        Jianianhualong is consistently recovered as a basal troodontid and is placed in Sinovenatorinae by Hartman and colleagues (2019) and Jones (2026), the placement followed, although Cau and Madzia (2021) recover it outside that subfamily and its describers placed it in a polytomy near Sinusonasus.
+        Jianianhualong is consistently recovered as a basal troodontid, but analyses split on whether it belongs to Sinovenatorinae. Hartman and colleagues (2019), Sellés and colleagues (2021) and Kubota and colleagues (2024) place it within the subfamily, whereas Cau and Madzia (2021), Pei and colleagues (2021) and Wang and colleagues (2023) recover it outside; its describers placed it crownward of Mei and Sinovenator (Xu and colleagues, 2017).
       history:
         - date: 2026-07-01
           note: Placed in Sinovenatorinae following Hartman and colleagues (2019); the membership instability of Sinovenatorinae is recorded on the clade file.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Troodontidae; analyses split on membership in Sinovenatorinae.
     etymology: Named after Jianianhua (the company that funded the research) combined with Chinese long (dragon); meaning "Jianianhua dragon"
     description: Jianianhualong is a genus of troodontid theropod dinosaur from the Early Cretaceous of China. It contains a single species, Jianianhualong tengi, named in 2017 by Xu Xing and colleagues based on an articulated skeleton preserving feathers. The feathers at the middle of the tail of Jianianhualong are asymmetric, being the first record of asymmetrical feathers among the troodontids. Despite aerodynamic differences from the flight feathers of modern birds, the feathers in the tail vane of Jianianhualong could have functioned in drag reduction while the animal was moving. The discovery of Jianianhualong supports the notion that asymmetrical feathers appeared early in the evolutionary history of the Paraves.
     diet: carnivore
@@ -95031,6 +95263,7 @@ genera:
         volume: "8"
         issue: "1"
         doi: 10.1038/ncomms14972
+        notes: Named Jianianhualong and recovered it crownward of Mei and Sinovenator.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -95058,6 +95291,44 @@ genera:
         pages: e7247
         doi: 10.7717/peerj.7247
         notes: Recovered Jianianhualong as a basal troodontid within Sinovenatorinae.
+      - id: sellés2021a
+        authors: Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.
+        year: 2021
+        title: "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "11"
+        issue: "1"
+        doi: 10.1038/s41598-021-83745-5
+        notes: Recovered Jianianhualong within Sinovenatorinae.
+      - id: kubota2024a
+        authors: Kubota, K.; Kobayashi, Y.; Ikeda, T.
+        year: 2024
+        title: "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "14"
+        issue: "1"
+        doi: 10.1038/s41598-024-66815-2
+        notes: Recovered Jianianhualong within Sinovenatorinae.
+      - id: pei2021a
+        authors: Pei, R.; Qin, Y.; Wen, A.; Zhao, Q.; Wang, Z.; Liu, Z.; Guo, W.; Liu, P.; Ye, W.; Wang, L.; Yin, Z.; Dai, R.; Xu, X.
+        year: 2021
+        title: A new troodontid from the Upper Cretaceous Gobi Basin of inner Mongolia, China
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "130"
+        doi: 10.1016/j.cretres.2021.105052
+        notes: Recovered Jianianhualong outside Sinovenatorinae.
+      - id: wang2023a
+        authors: Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.
+        year: 2023
+        title: A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "151"
+        doi: 10.1016/j.cretres.2023.105605
+        notes: Recovered Jianianhualong outside Sinovenatorinae.
     taxonomy:
       - Life
       - Animalia
@@ -95080,7 +95351,6 @@ genera:
       - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
-      - Sinovenatorinae
     authors: Xu, X.; Currie, P.; Pittman, M.; Xing, L.; Meng, Q.; Lü, J.; Hu, D.; Yu, C.
     described: 2017
   Jinbeisaurus:
@@ -96657,14 +96927,17 @@ genera:
     described: 2013
   Juravenator:
     genus: Juravenator
-    parent: Coelurosauria
+    parent: Tetanurae
     placement: incertae sedis
     dispute:
       summary: |
-        The affinities of Juravenator are uncertain because the holotype is an immature individual. It was described as a small basal coelurosaur close to Compsognathus, loosely within Compsognathidae (Chiappe and Göhlich, 2010), and Jones (2026) places it there. However, Rauhut and colleagues (2012) and Foth and colleagues (2020) showed that its coelurosaurian characters may be juvenile artifacts, that it is drawn toward the base of Tetanurae as the sister taxon of the megalosauroid Sciurumimus when both juveniles are analyzed together, and that its supposed tail "scales" are better interpreted as adipocere. It is placed conservatively at Coelurosauria incertae sedis.
+        The affinities of Juravenator are uncertain because the holotype is an immature individual. Göhlich and Chiappe (2006) recovered it within Compsognathidae, but Rauhut and colleagues (2012) and Foth and colleagues (2020) showed that its coelurosaurian characters may be juvenile artifacts and that it is drawn toward the base of Tetanurae, as the sister taxon of the megalosauroid Sciurumimus, when both juveniles are analyzed together, and Cau (2024) places it among the allosauroids. Its supposed tail "scales" are better interpreted as adipocere.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis; compsognathid-grade (Chiappe and Göhlich, 2010) versus basal-tetanuran/megalosauroid juvenile-artifact (Rauhut and colleagues, 2012; Foth and colleagues, 2020) hypotheses unresolved.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Tetanurae; analyses place it among coelurosaurs, allosauroids or basal tetanurans.
     etymology: Named after the Franconian Jura region of Germany (where it was found) combined with Latin venator (hunter); meaning 'Jura hunter'
     description: Juravenator is a genus of tetanuran theropod dinosaur which lived about 152 or 151 million years ago in modern day Franconian Jura of Germany (Torleite Formation) during the Late Jurassic. It is known from a single, juvenile specimen measuring about 75 cm (2.46 ft) in length.
     diet: carnivore
@@ -96744,6 +97017,7 @@ genera:
         issue: "7082"
         pages: 329-332
         doi: 10.1038/nature04579
+        notes: Named Juravenator and recovered it within Compsognathidae.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -96780,6 +97054,16 @@ genera:
         pages: 79-101
         doi: 10.1007/978-3-030-27223-4_6
         notes: Assigns the holotype to the Torleite Formation, following Niebuhr and Pürner; the describing paper names none. Also places it near Megalosauroidea, reading its coelurosaurian traits as juvenile.
+      - id: cau2024a
+        authors: Cau, A.
+        year: 2024
+        title: A Unified Framework for Predatory Dinosaur Macroevolution
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "63"
+        issue: "1"
+        pages: 1-19
+        doi: 10.4435/BSPI.2024.08
+        notes: Places Juravenator among the allosauroids.
     taxonomy:
       - Life
       - Animalia
@@ -96795,8 +97079,6 @@ genera:
       - Neotheropoda
       - Averostra
       - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
     authors: Göhlich, U. B.; Chiappe, L. M.
     described: 2006
   Kaatedocus:
@@ -99869,13 +100151,17 @@ genera:
     described: 1993
   Kol:
     genus: Kol
-    parent: Alvarezsauridae
+    parent: Maniraptora
+    placement: incertae sedis
     dispute:
       summary: |
-        Kol ghuva was described by Turner and colleagues (2009) as a derived alvarezsaurid, more derived than Alvarezsaurus and Patagonykus, on the basis of its extreme arctometatarsalian foot. Because the holotype is a single articulated foot, the placement is poorly constrained, and some subsequent authors have suggested it may instead be a basal oviraptorosaurian. It is placed in Alvarezsauridae following the describing analysis and Jones (2026).
+        Kol ghuva was described as a large alvarezsaurid on the basis of its extreme arctometatarsalian foot (Turner and colleagues, 2009), and Cau and colleagues (2017) recover it among the alvarezsauroids. Agnolín and colleagues (2012) found it more reminiscent of oviraptorosaurs, Hartman and colleagues (2019) recover it as a relative of Avimimus, and Averianov and Lopatin (2021) exclude it from Alvarezsauridae. The holotype is a single articulated foot.
       history:
         - date: 2026-07-01
           note: Moved from Coelurosauria to Alvarezsauridae following Turner and colleagues (2009) and Jones (2026); fragmentary holotype, with a basal oviraptorosaurian alternative proposed.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Maniraptora; its alvarezsaurid identity is contested.
     pronunciation:
       phonetic: khol
     description: Kol is an extinct genus of coelurosaurian theropod dinosaur from the Late Cretaceous of Mongolia. The type and only species is Kol ghuva. The type specimen was excavated from the Ukhaa Tolgod locality of the Djadokhta Formation, dating to about 75 million years ago. It is believed to have been about twice the size of the contemporaneous Shuvuuia. However, unlike Shuvuuia, which is known from many well preserved specimens, and although Ukhaa Tolgod has been thoroughly explored, Kol is known only from one complete foot, suggesting that it must have been relatively rare in that ecosystem.
@@ -99949,6 +100235,7 @@ genera:
         volume: "3648"
         pages: 1-14
         doi: 10.1206/639.1
+        notes: Named Kol as an alvarezsaurid, without a phylogenetic analysis.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -99956,6 +100243,48 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the body length, mass, and hip height estimates, and the appearance features.
+      - id: cau2017a
+        authors: Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.
+        year: 2017
+        title: Synchrotron scanning reveals amphibious ecomorphology in a new clade of bird-like dinosaurs
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "552"
+        issue: "7685"
+        pages: 395-399
+        doi: 10.1038/nature24679
+        notes: Recovered Kol among the alvarezsauroids.
+      - id: agnolín2012a
+        authors: Agnolín, F. L.; Powell, J. E.; Novas, F. E.; Kundrát, M.
+        year: 2012
+        title: New alvarezsaurid (Dinosauria, Theropoda) from uppermost Cretaceous of north-western Patagonia with associated eggs
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "35"
+        pages: 33-56
+        doi: 10.1016/j.cretres.2011.11.014
+        notes: Found Kol more reminiscent of oviraptorosaurs than alvarezsaurids.
+      - id: hartman2019a
+        authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
+        year: 2019
+        title: A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "7"
+        pages: e7247
+        doi: 10.7717/peerj.7247
+        notes: Recovered Kol as a relative of Avimimus; one step places it in Alvarezsauridae.
+      - id: averianov2021d
+        authors: Averianov, A. O.; Lopatin, A. V.
+        year: 2021
+        title: "A re-appraisal of Parvicursor remotus from the Late Cretaceous of Mongolia: implications for the phylogeny and taxonomy of alvarezsaurid theropod dinosaurs"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "19"
+        issue: "16"
+        pages: 1097-1128
+        doi: 10.1080/14772019.2021.2013965
+        notes: Excludes Kol from Alvarezsauridae.
     taxonomy:
       - Life
       - Animalia
@@ -99974,8 +100303,6 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
-      - Alvarezsauroidea
-      - Alvarezsauridae
     authors: Turner, A. H.; Nesbitt, S. J.; Norell, M. A.
     described: 2009
   Koleken:
@@ -102315,7 +102642,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Lajasvenator ascheriae is recovered as a basal carcharodontosaurid, variously as sister to Eocarcharia (Coria and colleagues, 2020; Jones, 2026) or in a polytomy of basal carcharodontosaurids with Lusovenator and Concavenator (Canale and colleagues, 2022). It is placed at Carcharodontosauridae incertae sedis.
+        Lajasvenator ascheriae is recovered as a basal carcharodontosaurid, in a polytomy with Concavenator and Eocarcharia (Coria and colleagues, 2020) or in a polytomy of basal carcharodontosaurids with Lusovenator and Concavenator (Canale and colleagues, 2022). It is placed at Carcharodontosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Carcharodontosauridae incertae sedis as a basal member; its finer position is unresolved.
@@ -104024,7 +104351,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Latirhinus as a lambeosaurine.
     taxonomy:
       - Life
       - Animalia
@@ -104636,7 +104963,7 @@ genera:
     parent: Neotheropoda
     dispute:
       summary: |
-        Lepidus praecisio is recovered deeply within Coelophysidae as sister to Coelophysis by some analyses (Ezcurra, 2017; Ezcurra and colleagues, 2020) but as a basal neotheropod outside Coelophysoidea, among the successive sister taxa of Neotheropoda, by others (Nesbitt and Ezcurra, 2015; Martínez and colleagues, 2025; Jones, 2026).
+        Lepidus praecisio is recovered deeply within Coelophysidae as sister to Coelophysis by some analyses (Ezcurra, 2017; Ezcurra and colleagues, 2020) but as a basal neotheropod outside Coelophysoidea, among the successive sister taxa of Neotheropoda, by others (Nesbitt and Ezcurra, 2015, in their combined analysis; Martínez and colleagues, 2025).
       history:
         - date: 2026-06-30
           note: |
@@ -106678,7 +107005,7 @@ genera:
     parent: Neotheropoda
     dispute:
       summary: |
-        Liliensternus liliensterni is recovered at the base of Coelophysoidea by some analyses (Ezcurra and colleagues, 2020) but outside Coelophysoidea as a basal neotheropod by others (Spiekman and colleagues, 2021; Marsh and Rowe, 2020; Jones, 2026).
+        Liliensternus liliensterni is recovered at the base of Coelophysoidea by some analyses (Ezcurra and colleagues, 2020) but outside Coelophysoidea as a basal neotheropod by others (Spiekman and colleagues, 2021; Marsh and Rowe, 2020).
       history:
         - date: 2026-06-30
           note: |
@@ -106804,7 +107131,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Liliensternus as a basal neotheropod.
       - id: sues2025a
         authors: Sues, H. D.; Schoch, R. R.
         year: 2025
@@ -109222,7 +109549,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The affinities of Lourinhanosaurus are highly uncertain. It has variously been referred to Allosauroidea (as a sinraptorid/metriacanthosaurid), to Megalosauroidea, and to Coelurosauria. Carrano and colleagues (2012) recovered it weakly allied with Coelurosauria, while Hartman and colleagues (2019) and Jones (2026) place it near the base of Avetheropoda without resolving whether it is an allosauroid or a coelurosaur. It is placed conservatively at Avetheropoda incertae sedis, the least-inclusive clade common to the competing hypotheses.
+        The affinities of Lourinhanosaurus are highly uncertain. It has been recovered at the base of Avetheropoda (Mateus, 1998), as a metriacanthosaurid allosauroid (Benson, 2010), weakly allied with Coelurosauria (Carrano and colleagues, 2012; Rauhut and colleagues, 2016), and, in one implied-weights analysis, as a megalosaurid (Rauhut and colleagues, 2024). It is placed conservatively at Avetheropoda incertae sedis, the least-inclusive clade common to most competing hypotheses.
       history:
         - date: 2026-07-01
           note: Moved from Coelurosauria to Avetheropoda incertae sedis; allosauroid, megalosauroid, and coelurosaur hypotheses unresolved (Carrano and colleagues, 2012; Hartman and colleagues, 2019).
@@ -109374,6 +109701,38 @@ genera:
         pages: e7247
         doi: 10.7717/peerj.7247
         notes: Paravian phylogeny bearing on Lourinhanosaurus's coelurosaurian affinities.
+      - id: benson2010c
+        authors: Benson, R. B. J.
+        year: 2010
+        title: "A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "158"
+        issue: "4"
+        pages: 882-935
+        doi: 10.1111/j.1096-3642.2009.00569.x
+        notes: Recovered Lourinhanosaurus with Metriacanthosaurus and Sinraptor.
+      - id: rauhut2016a
+        authors: Rauhut, O. M.; Hübner, T.; Lanser, K.
+        year: 2016
+        title: "A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic"
+        journal: Palaeontologia Electronica
+        volume: "19"
+        issue: "2"
+        pages: 26A
+        publisher: Coquina Press
+        doi: 10.26879/654
+        notes: Recovered Lourinhanosaurus within Coelurosauria.
+      - id: rauhut2024a
+        authors: Rauhut, O. W. M.; Bakirov, A. A.; Wings, O.; Fernandes, A. E.; Hübner, T. R.
+        year: 2024
+        title: A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "201"
+        issue: "4"
+        doi: 10.1093/zoolinnean/zlae090
+        notes: Recovered Lourinhanosaurus within Megalosauridae under implied weights.
     taxonomy:
       - Life
       - Animalia
@@ -110389,7 +110748,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Lusovenator santosi, one of the oldest known carcharodontosaurians, is recovered as a basal member of Carcharodontosauria outside Carcharodontosauridae (Malafaia and colleagues, 2020; Jones, 2026), or as a basal carcharodontosaurid close to Lajasvenator (Kellermann and colleagues, 2025). It is placed at Carcharodontosauria incertae sedis.
+        Lusovenator santosi, one of the oldest known carcharodontosaurians, is recovered as a basal member of Carcharodontosauria outside Carcharodontosauridae (Malafaia and colleagues, 2020), or as a basal carcharodontosaurid close to Lajasvenator (Kellermann and colleagues, 2025). It is placed at Carcharodontosauria incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Carcharodontosauria incertae sedis; membership in Carcharodontosauridae is unresolved.
@@ -111806,7 +112165,7 @@ genera:
     parent: Halszkaraptorinae
     dispute:
       summary: |
-        Mahakala was originally described as the basalmost dromaeosaurid (Turner and colleagues, 2007) and is still recovered in that position by some analyses. Cau and colleagues (2017) instead recovered it within Halszkaraptorinae, the placement followed, as by Jones (2026), though Jasinski and colleagues (2020) recovered it outside that clade. It is placed in Halszkaraptorinae following the prevailing recent view.
+        Mahakala was originally described as the basalmost dromaeosaurid (Turner and colleagues, 2007), a position recovered by analyses that do not include the other halszkaraptorines (Turner and colleagues, 2012; Pei and colleagues, 2020). Cau and colleagues (2017) recovered it within Halszkaraptorinae, the placement followed, though Jasinski and colleagues (2020) recovered it outside that clade, in a basal dromaeosaurid polytomy.
       history:
         - date: 2026-07-01
           note: Placed in Halszkaraptorinae following Cau and colleagues (2017) and Jones (2026); the basalmost-dromaeosaurid reading is noted.
@@ -111917,6 +112276,26 @@ genera:
         issue: "1"
         doi: 10.1038/s41598-020-61480-7
         notes: Recovered Mahakala outside Halszkaraptorinae in their dromaeosaurid phylogeny.
+      - id: turner2012a
+        authors: Turner, A. H.; Makovicky, P. J.; Norell, M. A.
+        year: 2012
+        title: A Review of Dromaeosaurid Systematics and Paravian Phylogeny
+        journal: Bulletin of the American Museum of Natural History
+        volume: "371"
+        pages: 1-206
+        doi: 10.1206/748.1
+        notes: Recovered Mahakala as the basalmost dromaeosaurid.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Mahakala as the earliest-diverging dromaeosaurid.
     taxonomy:
       - Life
       - Animalia
@@ -111937,8 +112316,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Turner, A. H.; Pol, D.; Clarke, J. A.; Erickson, G. M.; Norell, M. A.
     described: 2007
@@ -118148,7 +118525,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Migmanychion laiyang is known only from a forelimb and is confidently referred only to Maniraptora. Its describers recovered it as the sister taxon of Fukuivenator (Wang and colleagues, 2023); Jones (2026) places that pair within Therizinosauria, while alternative constrained positions within Oviraptorosauria or Paraves are only slightly less parsimonious. It is placed conservatively at Maniraptora incertae sedis.
+        Migmanychion laiyang is known only from a forelimb and is confidently referred only to Maniraptora. Its describers recovered it as the sister taxon of Fukuivenator (Wang and colleagues, 2023); forcing the pair into Therizinosauria, or Migmanychion into Oviraptorosauria or Paraves, costs only two or three steps. It is placed conservatively at Maniraptora incertae sedis.
       history:
         - date: 2026-07-01
           note: Retained at Maniraptora incertae sedis; the sister-to-Fukuivenator result leaves it unresolved between therizinosaur and pennaraptoran affinities.
@@ -119871,20 +120248,12 @@ genera:
     described: 1990
   Monoclonius:
     genus: Monoclonius
-    parent: Ceratopsidae
+    parent: Centrosaurinae
     placement: incertae sedis
     pronunciation:
       phonetic: mon-o-KLOHN-ee-us
     etymology: From Greek 'monos' (single) and 'klonos' (sprout or twig); meaning 'single sprout', likely referring to the single root of its teeth.
     description: Monoclonius is an extinct dubious genus of herbivorous ceratopsian dinosaur found in the Late Cretaceous layers of the Judith River Formation in Montana, United States, and the uppermost rock layers of the Dinosaur Park Formation in Alberta, Canada dated to between 75 and 74.6 million years ago.
-    dispute:
-      summary: |
-        Monoclonius is a nomen dubium; Ryan and Russell (2006) reaffirmed M. crassus as undiagnostic and reassessed the referred M. lowei as a subadult centrosaurine. Although a centrosaurine, it is not reliably placeable below family level and is retained at Ceratopsidae incertae sedis.
-      history:
-        - date: 2026-06-26
-          note: Moved from Centrosaurinae to Ceratopsidae incertae sedis, most specimens reassigned to Centrosaurus.
-        - date: 2026-10-08
-          note: Type species set to nomen dubium and diagnostic features removed, following Sampson and colleagues (1997) and Ryan and Russell (2006).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -119980,6 +120349,7 @@ genera:
       - Coronosauria
       - Ceratopsoidea
       - Ceratopsidae
+      - Centrosaurinae
     authors: Cope, E. D.
     described: 1876
   Monolophosaurus:
@@ -123604,7 +123974,7 @@ genera:
     etymology: From Latin nato ('to swim') and venator ('hunter'), meaning 'swimming hunter', reflecting the proposed semi-aquatic lifestyle of this halszkaraptorine
     pronunciation:
       phonetic: NAY-toe-VEN-uh-tuh
-    description: Natovenator is a genus of halszkaraptorine dromaeosaurid dinosaur from the Late Cretaceous Baruungoyot Formation of Mongolia. The genus is known from a single species, N. polydontus. Natovenator is crucial to the understanding of halszkaraptorines due to it providing more support for the semi-aquatic lifestyle that has been proposed for this clade. This discovery is important as the semi-aquatic lifestyles of halszkaraptorines (mainly Halszkaraptor) was contested in early 2022.
+    description: Natovenator is a genus of halszkaraptorine theropod dinosaur from the Late Cretaceous Baruungoyot Formation of Mongolia. The genus is known from a single species, N. polydontus. Natovenator is crucial to the understanding of halszkaraptorines due to it providing more support for the semi-aquatic lifestyle that has been proposed for this clade. This discovery is important as the semi-aquatic lifestyles of halszkaraptorines (mainly Halszkaraptor) was contested in early 2022.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -123701,8 +124071,6 @@ genera:
       - Maniraptora
       - Paraves
       - Eumaniraptora
-      - Deinonychosauria
-      - Dromaeosauridae
       - Halszkaraptorinae
     authors: Lee, S.; Lee, Y. N.; Currie, P. J.; Sissons, R.; Park, J. Y.; Kim, S. H.; Barsbold, R.; Tsogtbaatar, K.
     described: 2022
@@ -123912,14 +124280,17 @@ genera:
     described: 2013
   Nedcolbertia:
     genus: Nedcolbertia
-    parent: Coelurosauria
+    parent: Avetheropoda
     placement: incertae sedis
     dispute:
       summary: |
-        The placement of Nedcolbertia is contested. Originally described as an indeterminate coelurosaur, it has been narrowed by recent reviews and by Hartman and colleagues (2019) and Jones (2026) to a basal ornithomimosaur, whereas Cau (2024) recovered it among early-diverging allosauroids. Given the fragmentary holotype and the ornithomimosaur-versus-allosauroid conflict, it is placed conservatively at Coelurosauria incertae sedis.
+        The placement of Nedcolbertia is contested. Originally described as a basal coelurosaur (Kirkland and colleagues, 1998), it was reinterpreted as an ornithomimosaur by Brownstein (2017) and recovered as one by Hartman and colleagues (2019), whereas Cau (2024) recovered it among early-diverging allosauroids. Given the fragmentary holotype and this conflict, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); basal-ornithomimosaur (Hartman and colleagues, 2019; Jones, 2026) versus allosauroid (Cau, 2024) hypotheses unresolved.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Avetheropoda; the analyses split between Ornithomimosauria and Allosauroidea.
     pronunciation:
       phonetic: ned-kohl-BER-tee-a
     etymology: Named in honor of Edwin H. 'Ned' Colbert, the prominent American vertebrate paleontologist
@@ -123990,6 +124361,7 @@ genera:
         series: New Mexico Museum of Natural History and Science Bulletin
         volume: "14"
         pages: 239-248
+        notes: Named Nedcolbertia as a basal coelurosaur, without an analysis.
       - id: cau2024a
         authors: Cau, A.
         year: 2024
@@ -124009,15 +124381,24 @@ genera:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Narrowed Nedcolbertia's coelurosaur affinities in large paravian phylogenetic analysis.
+        notes: Recovered Nedcolbertia as an ornithomimosaur.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: |
-          Illustrated by E. Viola.
+        notes: Treats Nedcolbertia as a basal ornithomimosaur.
+      - id: brownstein2017a
+        authors: Brownstein, C. D.
+        year: 2017
+        title: 'Description of Arundel Clay ornithomimosaur material and a reinterpretation of Nedcolbertia justinhofmanni as an "Ostrich Dinosaur": biogeographic implications'
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "5"
+        pages: e3110
+        doi: 10.7717/peerj.3110
+        notes: Reinterpreted Nedcolbertia as a basal ornithomimosaur on shared manual and pedal characters, without a phylogenetic analysis.
     taxonomy:
       - Life
       - Animalia
@@ -124034,7 +124415,6 @@ genera:
       - Averostra
       - Tetanurae
       - Avetheropoda
-      - Coelurosauria
     authors: Kirkland, J. I.; Britt, B. B.; Whittle, C. H.; Madsen, S. K.; Burge, D. L.
     described: 1998
   Nedoceratops:
@@ -124047,7 +124427,7 @@ genera:
       Nedoceratops is a controversial genus of ceratopsid dinosaur from the Late Cretaceous period Lance Formation of North America. It is known only from a single skull discovered in Wyoming. Its status is the subject of ongoing debate among paleontologists: some authors consider Nedoceratops a valid, distinct taxon, while others consider it to be an unusual specimen of Triceratops.
     dispute:
       summary: |
-        The validity of Nedoceratops is actively contested. Scannella and Horner (2010, 2011) treated USNM 2412 as a transitional or ontogenetic morph within Triceratops, arguing that Triceratops, Torosaurus, and Nedoceratops together represent different growth stages of a single anagenetic lineage. Farke (2011) rebutted this, treating Nedoceratops as a distinct chasmosaurine genus diagnosed by an undifferentiated nasal horncore, near-vertical postorbital horncores, and small parietal fenestrae; Maiorino and colleagues (2013) found its morphometric affinities equivocal, with the squamosal and frill within Triceratops morphospace though overall skull shape is ambiguous. No broad consensus has been reached.
+        The validity of Nedoceratops is actively contested. Scannella and Horner (2010) treated USNM 2412 as a transitional growth stage of Triceratops. Farke (2011) disagreed, tentatively treating Nedoceratops as a distinct chasmosaurine genus diagnosed by an undifferentiated nasal horncore, near-vertical postorbital horncores, and small parietal fenestrae. Scannella and Horner (2011) replied, maintaining that the Triceratops, Torosaurus and Nedoceratops morphologies are growth stages of a single genus, Triceratops. Maiorino and colleagues (2013) found its morphometric affinities equivocal, with the squamosal and frill within Triceratops morphospace though overall skull shape is ambiguous. No broad consensus has been reached.
       history:
         - date: 2026-06-26
           note: Placed at Chasmosaurinae, the least-inclusive clade accepted whether Nedoceratops is a valid chasmosaurine or a growth stage of Triceratops; tribes dropped. Validity unresolved.
@@ -124676,7 +125056,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Nemegtonykus as a parvicursorine alvarezsaurid.
       - id: meso2024a
         authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
         year: 2024
@@ -125656,7 +126036,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Lists Newtonsaurus as an informally named, dubious taxon.
       - id: rauhut2000a
         authors: Rauhut, O. W. M.; Hungerbühler, A.
         year: 2000
@@ -129273,7 +129653,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Ojoraptorsaurus as a caenagnathid.
       - id: funston2024a
         authors: Funston, G. F.; Williamson, T. E.; Brusatte, S. L.
         year: 2024
@@ -134286,7 +134666,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats the placement of Pampadromaeus within Sauropodomorpha as uncertain.
       - id: langer2018a
         authors: Langer, M. C.; Ramezani, J.; Da Rosa, Á. A. S.
         year: 2018
@@ -136344,7 +136724,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Parksosaurus as a thescelosaurine.
       - id: boyd2015a
         authors: Boyd, C. A.
         year: 2015
@@ -139179,7 +139559,7 @@ genera:
     parent: Troodontinae
     dispute:
       summary: |
-        Philovenator (originally described from a juvenile once referred to Saurornithoides) is recovered as a derived troodontine, close to Linhevenator, by most analyses (Tsuihiji and colleagues, 2014; van der Reest and Currie, 2017; Hartman and colleagues, 2019; Jones, 2026), and it is placed there. Sellés and colleagues (2021) instead recover it within Jinfengopteryginae.
+        Philovenator (originally described from a juvenile once referred to Saurornithoides) is recovered as a derived troodontine, the sister of Linhevenator, by most analyses (Xu and colleagues, 2012; Tsuihiji and colleagues, 2014; van der Reest and Currie, 2017; Cau and Madzia, 2021), and it is placed there. Sellés and colleagues (2021) instead recover it within Jinfengopteryginae, and Kubota and colleagues (2024) outside Troodontinae.
       history:
         - date: 2026-07-01
           note: Moved from Jinfengopteryginae to Troodontinae following the prevailing view (Hartman and colleagues, 2019; van der Reest and Currie, 2017); the jinfengopterygine alternative (Sellés and colleagues, 2021) noted.
@@ -139305,6 +139685,26 @@ genera:
         pages: 919-935
         doi: 10.1139/cjes-2017-0031
         notes: Described new troodontid material from the Dinosaur Park Formation of Alberta
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Recovered Philovenator within Troodontinae with Linhevenator.
+      - id: kubota2024a
+        authors: Kubota, K.; Kobayashi, Y.; Ikeda, T.
+        year: 2024
+        title: "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "14"
+        issue: "1"
+        doi: 10.1038/s41598-024-66815-2
+        notes: Recovered Philovenator outside Troodontinae.
     taxonomy:
       - Life
       - Animalia
@@ -141625,7 +142025,7 @@ genera:
     parent: Coelophysoidea
     dispute:
       summary: |
-        Podokesaurus holyokensis is a coelophysoid theropod whose holotype was destroyed in a 1917 fire and cannot be rescored in modern phylogenetic analyses, so its affinities rest on the original description and later assessments rather than direct restudy. Most workers place it within Coelophysoidea: Carrano and Sampson (2004) treated it as a coelophysoid in their review of the group, Bristowe and Raath (2004) listed it as a junior synonym of Coelophysis without discussion, and Paul (2016) and Jones (2026) placed it as a coelophysid. Tykoski and Rowe (2004) accepted that it shows coelophysoid features but declined to place it more precisely than Theropoda incertae sedis. It is placed in Coelophysoidea, the least-inclusive clade the majority of assessments support.
+        Podokesaurus holyokensis is a theropod whose holotype was destroyed in a 1917 fire and cannot be rescored in modern phylogenetic analyses, so its affinities rest on the original description and later assessments rather than direct restudy. Carrano and Sampson (2004) treated it as a coelophysid in their review of Coelophysoidea, Tykoski and Rowe (2004) as Coelophysoidea incertae sedis, finding no derived characters uniting it with Coelophysis, and Bristowe and Raath (2004) listed it as a junior synonym of Coelophysis without discussion. Holtz (1994) regarded it as an indeterminate small theropod.
       history:
         - date: 2026-06-30
           note: |
@@ -141633,6 +142033,9 @@ genera:
         - date: 2026-07-22
           note: |
             Dispute expanded to document the support for the Coelophysoidea placement (Carrano and Sampson, 2004; Bristowe and Raath, 2004; Paul, 2016) against the single more conservative treatment as Theropoda incertae sedis (Tykoski and Rowe, 2004); the placement is treated as resolved rather than incertae sedis.
+        - date: 2026-10-21
+          note: |
+            Placement credited to the assessments of Carrano and Sampson (2004) and Tykoski and Rowe (2004); Tykoski and Rowe place it in Coelophysoidea.
     pronunciation:
       phonetic: po-DOH-kee-SAWR-us
     etymology: From Greek podoces (πόδας ὠκύς, podas okys, 'swift-footed'), meaning 'swift-footed lizard', referring to its presumed agility
@@ -141741,7 +142144,15 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Podokesaurus as a coelophysid.
+      - id: holtz1994a
+        authors: Holtz, T. R.
+        year: 1994
+        title: "The phylogenetic position of the Tyrannosauridae: implications for theropod systematics"
+        journal: Journal of Paleontology
+        volume: "68"
+        pages: 1100-1117
+        notes: Regards Podokesaurus as an indeterminate small theropod.
     taxonomy:
       - Life
       - Animalia
@@ -142244,15 +142655,7 @@ genera:
     pronunciation:
       phonetic: pol-ee-OH-naks
     etymology: From Greek 'polys' meaning 'many' and 'anax' meaning 'master' or 'lord', meaning 'master over many.'
-    description: Polyonax is a genus of ceratopsid dinosaur from the Late Cretaceous (late Maastrichtian) Denver Formation of Colorado, United States. Founded upon poor remains, it is today regarded as a dubious name.
-    dispute:
-      summary: |
-        Polyonax is a nomen dubium founded on fragmentary remains; Hatcher (1907) judged them ceratopsian but too inadequate to support a name, and Carpenter and Young (2002) concur. It is kept at Ceratopsidae incertae sedis.
-      history:
-        - date: 2026-06-26
-          note: Placed at Ceratopsidae incertae sedis, fragmentary indeterminate holotype.
-        - date: 2026-10-08
-          note: Type species set to nomen dubium and diagnostic features removed, following Hatcher (1907) and Carpenter and Young (2002).
+    description: Polyonax is a dubious genus of ceratopsid dinosaur from the Late Cretaceous (Maastrichtian) of Colorado, United States, founded on fragmentary remains probably from the Laramie Formation.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -142324,7 +142727,7 @@ genera:
         publisher: United States Geological Survey
         volume: "49"
         pages: 1-300
-        notes: Abandoned Polyonax, removing it from Ceratopsia as based on inadequate, fragmentary material.
+        notes: Abandoned Polyonax as founded on totally inadequate material, while holding that the remains are undoubtedly ceratopsian and that Cope's supposed ischia are frontal horn cores.
       - id: carpenter2002a
         authors: Carpenter, K.; Young, D. B.
         year: 2002
@@ -142333,7 +142736,7 @@ genera:
         volume: "37"
         issue: "2"
         pages: 237-254
-        notes: Source of the Laramie Formation attribution and of the East Bijou Creek locality, both reconstructed from Cope's 1873 route rather than from Cope's own account, which names no formation.
+        notes: Lists the holotype as an indeterminate ceratopsid, concurring with Hatcher (1907). Source of the Laramie attribution and the East Bijou Creek locality, reconstructed from Cope's 1873 route.
     taxonomy:
       - Life
       - Animalia
@@ -143835,7 +144238,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Procompsognathus as a valid coelophysoid of uncertain status.
     taxonomy:
       - Life
       - Animalia
@@ -144337,7 +144740,7 @@ genera:
     parent: Baryonychinae
     dispute:
       summary: |
-        Protathlitis cinctorrensis was described as a basal baryonychine (Santos-Cubedo and colleagues, 2023) and treated as a valid baryonychine by Jones (2026), but Rauhut and colleagues (2025) regard it as a probably chimeric nomen dubium whose spinosaurid affinities are questionable.
+        Protathlitis cinctorrensis was described as a basal baryonychine (Santos-Cubedo and colleagues, 2023), but Rauhut and colleagues (2025) regard it as a probably chimeric nomen dubium whose spinosaurid affinities are questionable.
       history:
         - date: 2026-07-01
           note: Placed at Baryonychinae following the describing analysis; retained as valid pending resolution of the nomen-dubium/chimera hypothesis of Rauhut and colleagues (2025).
@@ -150214,7 +150617,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Regnosaurus as a nomen dubium.
       - id: naish2008a
         authors: Naish, D.; Martill, D. M.
         year: 2008
@@ -156215,7 +156618,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Sciurumimus albersdoerferi is based on a juvenile skeleton, and its affinities are contested. It was described as a basal megalosauroid (Rauhut and colleagues, 2012) and recovered within Megalosauroidea by later analyses (Cau, 2024), but the maniraptoromorph analysis of Hartman and colleagues (2019), followed by Jones (2026), instead recovered it as a compsognathid coelurosaur.
+        Sciurumimus albersdoerferi is based on a juvenile skeleton, and its affinities are contested. It was described as a basal megalosauroid (Rauhut and colleagues, 2012) and recovered within Megalosauroidea by later analyses (Cau, 2024), but Hartman and colleagues (2019) instead recovered it as a compsognathid coelurosaur, seven steps from Megalosauroidea.
       history:
         - date: 2026-07-01
           note: Placed at Megalosauroidea following the describing paper and Cau (2024); the compsognathid alternative (Hartman and colleagues, 2019) remains unresolved given the juvenile holotype.
@@ -157726,7 +158129,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Shanag is a small basal dromaeosaurid whose finer placement is unsettled. It is most often recovered among the basal dromaeosaurids, between Microraptorinae and Eudromaeosauria (Turner and colleagues, 2012; Jones, 2026), but is sometimes recovered within Microraptorinae, and Agnolín and Novas (2013) suggested it may be a basal averaptoran closer to birds. It is placed at Dromaeosauridae incertae sedis pending resolution.
+        Shanag is a small basal dromaeosaurid whose finer placement is unsettled. It is most often recovered between Microraptorinae and Eudromaeosauria (Turner and colleagues, 2012; Pei and colleagues, 2020), but within Microraptorinae by Longrich and Currie (2009) and Jasinski and colleagues (2020), and Agnolín and Novas (2013) suggested it may be a basal averaptoran closer to birds. It is placed at Dromaeosauridae incertae sedis pending resolution.
       history:
         - date: 2026-07-01
           note: Moved from Microraptorinae to Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal-dromaeosaurid, microraptorine, and averaptoran hypotheses proposed.
@@ -157828,6 +158231,38 @@ genera:
         publisher: Springer Netherlands
         doi: 10.1007/978-94-007-5637-3
         notes: Suggested Shanag may be a basal averaptoran closer to birds.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Shanag as the sister of Microraptorinae plus Eudromaeosauria.
+      - id: longrich2009a
+        authors: Longrich, N. R.; Currie, P. J.
+        year: 2009
+        title: A microraptorine (Dinosauria-Dromaeosauridae) from the Late Cretaceous of North America
+        journal: Proceedings of the National Academy of Sciences
+        publisher: Proceedings of the National Academy of Sciences
+        volume: "106"
+        issue: "13"
+        pages: 5002-5007
+        doi: 10.1073/pnas.0811664106
+        notes: Recovered Shanag within Microraptorinae.
+      - id: jasinski2020a
+        authors: Jasinski, S. E.; Sullivan, R. M.; Dodson, P.
+        year: 2020
+        title: New Dromaeosaurid Dinosaur (Theropoda, Dromaeosauridae) from New Mexico and Biodiversity of Dromaeosaurids at the end of the Cretaceous
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "10"
+        issue: "1"
+        doi: 10.1038/s41598-020-61480-7
+        notes: Recovered Shanag in a microraptorine polytomy.
     taxonomy:
       - Life
       - Animalia
@@ -158101,7 +158536,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Shaochilong maortuensis is recovered as a derived carcharodontosaurid, the first from Asia (Brusatte and colleagues, 2009; Carrano and colleagues, 2012; Jones, 2026), but the two most recent analyses instead place it within Coelurosauria: Kellermann and colleagues (2025) recover it as a tyrannosauroid in all their analyses (rebutting the proposed carcharodontosaurid characters), and Rauhut and colleagues (2024) recover it as a coelurosaur. Carcharodontosauridae (Allosauroidea) and Tyrannosauroidea (Coelurosauria) are the two branches of Avetheropoda, the least-inclusive clade all these hypotheses accept.
+        Shaochilong maortuensis is recovered as a derived carcharodontosaurid, the first from Asia (Brusatte and colleagues, 2009; Carrano and colleagues, 2012; Novas and colleagues, 2013), but the two most recent analyses instead place it within Coelurosauria: Kellermann and colleagues (2025) recover it as a tyrannosauroid in all their analyses (rebutting the proposed carcharodontosaurid characters), and Rauhut and colleagues (2024) recover it as a coelurosaur. Carcharodontosauridae (Allosauroidea) and Tyrannosauroidea (Coelurosauria) are the two branches of Avetheropoda, the least-inclusive clade all these hypotheses accept.
       history:
         - date: 2026-07-01
           note: Retained at Carcharodontosauridae incertae sedis (prevailing view; P5), with the recent tyrannosauroid hypothesis (Kellermann and colleagues, 2025) reflected but not adopted.
@@ -158245,6 +158680,14 @@ genera:
         pages: e0311096
         doi: 10.1371/journal.pone.0311096
         notes: Recovered Shaochilong within Tyrannosauroidea, not Carcharodontosauridae.
+      - id: novas2013a
+        authors: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Porfiri, J.; Canale, J. I.
+        year: 2013
+        title: "Evolution of the carnivorous dinosaurs during the Cretaceous: The evidence from Patagonia"
+        journal: Cretaceous Research
+        volume: "45"
+        pages: 174-215
+        notes: Recovered Shaochilong as the sister of Carcharodontosaurinae.
     taxonomy:
       - Life
       - Animalia
@@ -158383,7 +158826,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Shidaisaurus jinae is a basal metriacanthosaurid. Carrano, Benson and Sampson (2012) allowed for the possibility that it belongs to Metriacanthosaurinae, and Jones (2026) places it there, but dedicated analyses more often recover it in an unresolved basal position within Metriacanthosauridae (Zou and colleagues, 2025). It is placed conservatively at Metriacanthosauridae incertae sedis.
+        Shidaisaurus jinae is a basal metriacanthosaurid. Carrano, Benson and Sampson (2012) recover it as a basal metriacanthosaurine once unstable taxa are pruned, but in an unresolved basal position within Metriacanthosauridae in their full analysis, and Zou and colleagues (2025) and Rauhut and colleagues (2024) place it outside Metriacanthosaurinae. It is placed conservatively at Metriacanthosauridae incertae sedis.
       history:
         - date: 2026-07-02
           note: Placed at Metriacanthosauridae incertae sedis; its possible assignment to Metriacanthosaurinae is unresolved.
@@ -158495,6 +158938,16 @@ genera:
         pages: e19218
         doi: 10.7717/peerj.19218
         notes: New metriacanthosaurid description bearing on Shidaisaurus's basal position.
+      - id: rauhut2024a
+        authors: Rauhut, O. W. M.; Bakirov, A. A.; Wings, O.; Fernandes, A. E.; Hübner, T. R.
+        year: 2024
+        title: A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "201"
+        issue: "4"
+        doi: 10.1093/zoolinnean/zlae090
+        notes: Recovered Shidaisaurus as the earliest-branching metriacanthosaurid.
     taxonomy:
       - Life
       - Animalia
@@ -159063,7 +159516,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Shuangbaisaurus anlongbaoensis is a basal neotheropod described as a distinct crested theropod close to Sinosaurus and Dilophosaurus (Wang and colleagues, 2017), but it has also been treated as a junior synonym of Sinosaurus triassicus (Cau, 2017; Jones, 2026). It tracks the uncertain position of Sinosaurus and is placed conservatively at Neotheropoda incertae sedis.
+        Shuangbaisaurus anlongbaoensis is a basal neotheropod described as a distinct crested theropod close to Sinosaurus and Dilophosaurus (Wang and colleagues, 2017). Its suggested synonymy with Sinosaurus triassicus is unpublished, and Zhang and colleagues (2023) keep it valid. It tracks the uncertain position of Sinosaurus and is placed conservatively at Neotheropoda incertae sedis.
       history:
         - date: 2026-06-30
           note: Reparented to Averostra.
@@ -159136,24 +159589,23 @@ genera:
         volume: "55"
         issue: "2"
         pages: 177-186
-      - id: cau2017a
-        authors: Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.
-        year: 2017
-        title: Synchrotron scanning reveals amphibious ecomorphology in a new clade of bird-like dinosaurs
-        journal: Nature
-        publisher: Springer Science and Business Media LLC
-        volume: "552"
-        issue: "7685"
-        pages: 395-399
-        doi: 10.1038/nature24679
-        notes: Synchrotron study of a bird-like theropod clade bore on treating Shuangbaisaurus as a junior synonym.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Lists Shuangbaisaurus as a junior synonym of Sinosaurus.
+      - id: zhang2023a
+        authors: Zhang, Z. C.; Wang, T.; You, H. L.
+        year: 2023
+        title: "A new specimen of Sinosaurus triassicus (Dinosauria: Theropoda) from the Early Jurassic of Lufeng, Yunnan, China"
+        journal: Historical Biology
+        volume: "36"
+        issue: "4"
+        pages: 857-871
+        doi: 10.1080/08912963.2023.2190760
+        notes: Keeps Shuangbaisaurus valid, distinct from Sinosaurus.
     taxonomy:
       - Life
       - Animalia
@@ -159845,7 +160297,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports Siamosaurus as widely considered a nomen dubium.
       - id: smyth2020a
         authors: Smyth, R. S. H.; Ibrahim, N.; Martill, D. M.
         year: 2020
@@ -161506,13 +161958,7 @@ genera:
     etymology: From Latin 'Sinae' (China) + Greek 'kephale' (head), meaning 'Chinese head', referring to its country of origin and the distinctive domed head typical of pachycephalosaurids.
     pronunciation:
       phonetic: SI-no-SEPH-uh-lee
-    description: Sinocephale is a genus of pachycephalosaurid dinosaur that lived in what is now Inner Mongolia, China, during the Cretaceous period. The genus contains a single species, Sinocephale bexelli, which was originally named as a species of the genus Troodon in 1953, and later transferred to the genus Stegoceras in 1964. After decades of being considered dubious, it was re-evaluated in 2021 and recognized as a valid taxon, being given its own genus, Sinocephale. The original holotype was lost, with modern research conducted using rediscovered plaster casts.
-    dispute:
-      summary: |
-        Sinocephale is known only from plastotypes of a lost holotype and is diagnosed by a single autapomorphy. Evans and colleagues (2021) recovered it as a Prenocephale-grade member of Pachycephalosaurinae but cautioned that support for its precise position is weak.
-      history:
-        - date: 2026-06-26
-          note: Placed at Pachycephalosaurinae following Evans and colleagues (2021), with weak support and plastotype-only material.
+    description: Sinocephale is a genus of pachycephalosaurid dinosaur that lived in what is now Inner Mongolia, China, during the Cretaceous period. The genus contains a single species, Sinocephale bexelli, which was originally named as a species of the genus Troodon in 1953, and later referred to the genus Stegoceras. After decades of being considered dubious, it was re-evaluated in 2021 and recognized as a valid taxon, being given its own genus, Sinocephale. The original holotype was lost, with modern research conducted using rediscovered plaster casts.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -161572,6 +162018,7 @@ genera:
         issue: "10"
         pages: 981-992
         doi: 10.1139/cjes-2020-0190
+        notes: Recovers it as a Prenocephale-grade pachycephalosaurine, with weak support for its position within the subfamily.
     taxonomy:
       - Life
       - Animalia
@@ -162396,7 +162843,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Sinosaurus triassicus is a basal neotheropod of uncertain position. With corrected character coding it is recovered as a stem-averostran ("pre-tetanuran") near Dilophosaurus and Cryolophosaurus, outside Averostra (Rauhut, 2003; Wang and colleagues, 2017; Jones, 2026), though earlier work placed it as a basal tetanuran inside Averostra (Carrano and colleagues, 2012). It is placed conservatively at Neotheropoda incertae sedis. The species "Dilophosaurus" sinensis is referred to Sinosaurus.
+        Sinosaurus triassicus is a basal neotheropod of uncertain position. Carrano and colleagues (2012) recovered it as a basal tetanuran inside Averostra, but other analyses place it outside Averostra near Dilophosaurus and Cryolophosaurus (Smith and colleagues, 2007; Rauhut and colleagues, 2024), and Xing (2012) leaves it in a polytomy with Tetanurae. It is placed conservatively at Neotheropoda incertae sedis. The species "Dilophosaurus" sinensis is referred to Sinosaurus.
       history:
         - date: 2026-06-30
           note: Reparented to Averostra.
@@ -162545,7 +162992,7 @@ genera:
         volume: "55"
         issue: "2"
         pages: 177-186
-        notes: Corrected coding for tall parasagittal crest recovers Sinosaurus as stem-averostran near Dilophosaurus and Cryolophosaurus
+        notes: Reports Sinosaurus as recovered both as a basal tetanuran and near the base of Averostra.
       - id: carrano2012a
         authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
         year: 2012
@@ -162565,14 +163012,34 @@ genera:
         volume: "69"
         pages: 1-213
         publisher: The Palaeontological Association
-        notes: Recovered Sinosaurus as a stem-averostran outside Averostra.
+        notes: Excluded "Dilophosaurus" sinensis from its analysis as too poorly known to code.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Sinosaurus as a stem-averostran.
+      - id: smith2007b
+        authors: Smith, N. D.; Makovicky, P. J.; Hammer, W. R.; Currie, P. J.
+        year: 2007
+        title: "Osteology of Cryolophosaurus ellioti (Dinosauria: Theropoda) from the Early Jurassic of Antarctica and implications for early theropod evolution"
+        journal: Zoological Journal of the Linnean Society
+        volume: "151"
+        issue: "2"
+        pages: 377-421
+        doi: 10.1111/j.1096-3642.2007.00325.x
+        notes: Recovered "Dilophosaurus" sinensis outside Averostra.
+      - id: rauhut2024a
+        authors: Rauhut, O. W. M.; Bakirov, A. A.; Wings, O.; Fernandes, A. E.; Hübner, T. R.
+        year: 2024
+        title: A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "201"
+        issue: "4"
+        doi: 10.1093/zoolinnean/zlae090
+        notes: Recovered "Dilophosaurus" sinensis outside Averostra.
     taxonomy:
       - Life
       - Animalia
@@ -162868,12 +163335,6 @@ genera:
   Sinraptor:
     genus: Sinraptor
     parent: Metriacanthosaurinae
-    dispute:
-      summary: |
-        Sinraptor is assigned to Metriacanthosaurinae by the analysis that erected the subfamily and by subsequent work (Carrano, Benson and Sampson, 2012; Rauhut and colleagues, 2024; Jones, 2026), but Zou and colleagues (2025) instead recover Sinraptor on the Yangchuanosaurus branch of Metriacanthosauridae, outside Metriacanthosaurinae. It is placed at Metriacanthosaurinae following the prevailing view.
-      history:
-        - date: 2026-07-02
-          note: Placed at Metriacanthosaurinae following Carrano, Benson and Sampson (2012) and Rauhut and colleagues (2024); Zou and colleagues (2025) recover it outside the subfamily.
     pronunciation:
       phonetic: sien-RAP-tor
       ipa: /sɪnˈræptər/
@@ -163010,13 +163471,17 @@ genera:
     described: 1993
   Sinusonasus:
     genus: Sinusonasus
-    parent: Sinovenatorinae
+    parent: Troodontidae
+    placement: incertae sedis
     dispute:
       summary: |
-        Sinusonasus was recovered within Sinovenatorinae by its subfamily's erecting analysis (Shen and colleagues, 2017), where it is placed, but Hartman and colleagues (2019) instead recover it in a more derived position (paired with Xixiasaurus, near Hesperornithoides), and Jones (2026) notes its position is unstable.
+        Sinusonasus is a basal troodontid whose grouping varies. Shen and colleagues (2017) and Pei and colleagues (2020) recover it within Sinovenatorinae, but other analyses place it outside that subfamily, often as the sister of Xixiasaurus (Xu and colleagues, 2012; Hartman and colleagues, 2019; Cau and Madzia, 2021; Sellés and colleagues, 2021; Kubota and colleagues, 2024).
       history:
         - date: 2026-07-01
           note: Moved from Troodontidae to Sinovenatorinae following Shen and colleagues (2017); the derived-position alternative (Hartman and colleagues, 2019) is noted.
+        - date: 2026-10-21
+          note: |
+            Parent widened to Troodontidae; analyses split on membership in Sinovenatorinae.
     etymology: From Latin 'sinus' (wave, curve, bay) + Latin 'nasus' (nose), meaning 'wavy nose' or 'sinuous nose', referring to the sinusoid (wave-like) form of the nasal bones in lateral view.
     pronunciation:
       phonetic: sih-NOO-soh-NAH-sus
@@ -163095,6 +163560,7 @@ genera:
         issue: "1"
         pages: 22-26
         doi: 10.1111/j.1755-6724.2004.tb00671.x
+        notes: Named Sinusonasus as a troodontid.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -163111,7 +163577,7 @@ genera:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Recovered Sinusonasus in a more derived position near Hesperornithoides.
+        notes: Recovered Sinusonasus as the sister of Xixiasaurus, outside Sinovenatorinae.
       - id: shen2017b
         authors: Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H.
         year: 2017
@@ -163122,7 +163588,57 @@ genera:
         issue: "3"
         pages: 763-780
         doi: 10.1111/1755-6724.13307
-        notes: Erecting analysis of Daliansaurus placed Sinusonasus within the new subfamily Sinovenatorinae
+        notes: Recovered Sinusonasus within Sinovenatorinae, as the sister of Daliansaurus.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Sinusonasus within Sinovenatorinae.
+      - id: xu2012b
+        authors: Xu, X.; Zhao, Q.; Sullivan, C.; Tan, Q. W.; Sander, M.; Ma, Q. Y.
+        year: 2012
+        title: The taxonomy of the troodontid IVPP V 10597 reconsidered
+        journal: Vertebrata PalAsiatica
+        volume: "50"
+        issue: "2"
+        pages: 140-150
+        notes: Recovered Sinusonasus as the sister of a clade of derived troodontines.
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Recovered Sinusonasus as the sister of Sinornithoides.
+      - id: sellés2021a
+        authors: Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.
+        year: 2021
+        title: "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "11"
+        issue: "1"
+        doi: 10.1038/s41598-021-83745-5
+        notes: Recovered Sinusonasus as the sister of Xixiasaurus.
+      - id: kubota2024a
+        authors: Kubota, K.; Kobayashi, Y.; Ikeda, T.
+        year: 2024
+        title: "Early Cretaceous troodontine troodontid (Dinosauria: Theropoda) from the Ohyamashimo Formation of Japan reveals the early evolution of Troodontinae"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "14"
+        issue: "1"
+        doi: 10.1038/s41598-024-66815-2
+        notes: Recovered Sinusonasus as the sister of Xixiasaurus.
     taxonomy:
       - Life
       - Animalia
@@ -163145,7 +163661,6 @@ genera:
       - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
-      - Sinovenatorinae
     authors: Xu, X.; Wang, X.
     described: 2004
   Sirindhorna:
@@ -170102,7 +170617,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The placement of Tanycolagreus is unsettled. It is frequently recovered near the base of Tyrannosauroidea, sometimes with Coelurus in a reduced Coeluridae (Hartman and colleagues, 2019; Jones, 2026); Cau (2024) recovered it within Tyrannosauroidea, while Delcourt and colleagues (2025), under implied weights, recovered it among the earliest-branching Maniraptoromorpha with Santanaraptor and Mirischia. It is placed conservatively at Coelurosauria incertae sedis.
+        The placement of Tanycolagreus is unsettled. Naish and Cau (2022) recover it with Coelurus in a Coeluridae at the base of Tyrannosauroidea, and Cau (2024) treats it as a tyrannosauroid, while Delcourt and colleagues (2025), under implied weights, recovered it among the earliest-branching Maniraptoromorpha with Santanaraptor. It is placed conservatively at Coelurosauria incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); basal-Tyrannosauroidea/Coeluridae and earliest-maniraptoromorph hypotheses proposed. Coeluridae not adopted as a node.
@@ -170215,6 +170730,16 @@ genera:
         pages: ar.70085
         doi: 10.1002/ar.70085
         notes: Recovered Tanycolagreus among earliest-branching Maniraptoromorpha with Santanaraptor and Mirischia.
+      - id: naish2022a
+        authors: Naish, D.; Cau, A.
+        year: 2022
+        title: The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "10"
+        pages: e12727
+        doi: 10.7717/peerj.12727
+        notes: Recovered Tanycolagreus with Coelurus in a Coeluridae at the base of Tyrannosauroidea.
     taxonomy:
       - Life
       - Animalia
@@ -171619,16 +172144,6 @@ genera:
         pages: 641-674
         doi: 10.1080/14772019.2016.1210683
         notes: Groups the name with ceratopsians erected on immature specimens whose status is held in question and which are seldom used in phylogenetic work.
-      - id: lehman2016a
-        authors: Lehman, T. M.; Wick, S. L.; Wagner, J. R.
-        year: 2016
-        title: Hadrosaurian dinosaurs from the Maastrichtian Javelina Formation, Big Bend National Park, Texas
-        journal: Journal of Paleontology
-        publisher: Cambridge University Press
-        volume: "90"
-        issue: "2"
-        pages: 333-356
-        doi: 10.1017/jpa.2016.48
     taxonomy:
       - Life
       - Animalia
@@ -173898,25 +174413,16 @@ genera:
   Texacephale:
     genus: Texacephale
     parent: Pachycephalosauridae
+    placement: incertae sedis
     etymology: From 'Texas', the U.S. state where the fossil was found, and Greek 'kephale' meaning 'head', in reference to its place of discovery.
     pronunciation:
       phonetic: tek-sa-SEH-fuh-lee
-    description: Texacephale is a possibly dubious genus of pachycephalosaurid dinosaur from the Campanian stage of the Late Cretaceous. Its fossils come from the Aguja Formation of Big Bend National Park, in Texas, and were described in 2010 by Longrich, Sankey and Tanke. The generic name means Texas + "head" (kephale in Greek) in reference to its place of discovery, and the specific name langstoni honors Wann Langston. It may be a synonym of Stegoceras.
-    dispute:
-      summary: |
-        The validity of Texacephale is contested. It was described as a valid pachycephalosaurid with three autapomorphies (Longrich and colleagues, 2010), but Jasinski and Sullivan (2011) and Woodruff and colleagues (2025) regard its diagnostic traits as artifacts of taphonomic distortion and treat it as dubious. It is retained at Pachycephalosauridae pending revision.
-      history:
-        - date: 2026-06-26
-          note: Placed at Pachycephalosauridae (basal, no subfamily), valid per Longrich and colleagues (2010) but regarded as dubious by later authors.
+    description: Texacephale is a dubious genus of pachycephalosaurid dinosaur from the Campanian stage of the Late Cretaceous. Its fossils come from the Aguja Formation of Big Bend National Park, in Texas, and were described in 2010 by Longrich, Sankey and Tanke. The generic name means Texas + "head" (kephale in Greek) in reference to its place of discovery, and the specific name langstoni honors Wann Langston. Wick and Lehman (2024) suggested on morphometric grounds that the holotype is probably an adult Stegoceras.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
       - fluvial
       - coastal
-    diagnostic_features:
-      - Parietal articulating with postorbital via series of flange-like processes
-      - Tall, narrow nasal boss with convex dorsal margin in lateral view
-      - Skull roof elevated above braincase roof by low pedicel
     appearance:
       integument: scaled
       evidence: inferred
@@ -173930,7 +174436,7 @@ genera:
     species:
       - name: Texacephale langstoni
         etymology: Named for Wann Langston, honored in connection with the study of this pachycephalosaurid from Texas.
-        status: disputed
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -173969,6 +174475,46 @@ genera:
         issue: "2"
         pages: 274-284
         doi: 10.1016/j.cretres.2009.12.002
+      - id: lehman2010a
+        authors: Lehman, T. M.
+        year: 2010
+        title: Pachycephalosauridae from the San Carlos and Aguja Formations (Upper Cretaceous) of West Texas, and observations of the frontoparietal dome
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "30"
+        issue: "3"
+        pages: 786-798
+        doi: 10.1080/02724631003763532
+        notes: Finds all three diagnostic characters of Texacephale expressed in specimens referred to other pachycephalosaur taxa.
+      - id: jasinski2011a
+        authors: Jasinski, S. E.; Sullivan, R. M.
+        year: 2011
+        title: Re-evaluation of pachycephalosaurids from the Fruitland-Kirtland transition (Kirtlandian, late Campanian), San Juan Basin, New Mexico, with a description of a new species of Stegoceras and a reassessment of Texacephale langstoni
+        journal: New Mexico Museum of Natural History and Science Bulletin
+        publisher: New Mexico Museum of Natural History and Science
+        volume: "53"
+        pages: 202-215
+        notes: Found two of the three diagnostic characters in other pachycephalosaurids and the pedicel a product of erosion; called it a nomen dubium and its holotype Pachycephalosauridae indeterminate.
+      - id: williamson2016a
+        authors: Williamson, T. E.; Brusatte, S. L.
+        year: 2016
+        title: "Pachycephalosaurs (Dinosauria: Ornithischia) from the Upper Cretaceous (upper Campanian) of New Mexico: A reassessment of Stegoceras novomexicanum"
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "62"
+        pages: 29-43
+        doi: 10.1016/j.cretres.2016.01.012
+        notes: Agrees with Jasinski and Sullivan (2011) that it is a nomen dubium.
+      - id: wick2024a
+        authors: Wick, S. L.; Lehman, T. M.
+        year: 2024
+        title: "A rare 'flat-headed' pachycephalosaur (Dinosauria: Pachycephalosauridae) from West Texas, USA, with morphometric and heterochronic considerations"
+        journal: Geobios
+        publisher: Elsevier BV
+        volume: "86"
+        pages: 89-106
+        doi: 10.1016/j.geobios.2024.08.006
+        notes: Suggested on morphometric grounds that the holotype is probably an adult Stegoceras.
       - id: woodruff2025a
         authors: Woodruff, D. C.; Horner, J. R.; Goodwin, M. B.; Evans, D. C.
         year: 2025
@@ -173978,16 +174524,7 @@ genera:
         volume: "205"
         issue: "2"
         doi: 10.1093/zoolinnean/zlaf087
-        notes: Treated Texacephale as dubious, its diagnostic traits taphonomic artifacts.
-      - id: jasinski2011a
-        authors: Jasinski, S. E.; Sullivan, R. M.
-        year: 2011
-        title: Re-evaluation of pachycephalosaurids from the Fruitland-Kirtland transition (Kirtlandian, late Campanian), San Juan Basin, New Mexico, with a description of a new species of Stegoceras and a reassessment of Texacephale langstoni
-        journal: New Mexico Museum of Natural History and Science Bulletin
-        publisher: New Mexico Museum of Natural History and Science
-        volume: "53"
-        pages: 202-215
-        notes: Reassessed Texacephale langstoni, treating its diagnostic traits as taphonomic artifacts.
+        notes: Excluded it from its phylogenetic analysis because the holotype is taphonomically distorted, and questioned its validity.
     taxonomy:
       - Life
       - Animalia
@@ -175904,7 +176441,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The finer placement of Tianyuraptor is unsettled. It has been recovered as a basal microraptorine (Turner and colleagues, 2012; Agnolín and Novas, 2013) and, more often in recent work, as a short-armed basal dromaeosaurid just outside Microraptorinae and stemward of Eudromaeosauria, sometimes in a clade with Zhenyuanlong and Daurlong (Lü and Brusatte, 2015; Wang and colleagues, 2022; Jones, 2026). It is placed at Dromaeosauridae incertae sedis pending resolution.
+        The finer placement of Tianyuraptor is unsettled. It has been recovered as a basal microraptorine (Turner and colleagues, 2012; Agnolín and Novas, 2013) and, more often in recent work, as a short-armed basal dromaeosaurid just outside Microraptorinae and stemward of Eudromaeosauria, sometimes in a clade with Zhenyuanlong and Daurlong (Lü and Brusatte, 2015; Wang and colleagues, 2022). It is placed at Dromaeosauridae incertae sedis pending resolution.
       history:
         - date: 2026-07-01
           note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); microraptorine and basal short-armed-dromaeosaurid hypotheses proposed.
@@ -177752,7 +178289,7 @@ genera:
     description: Torosaurus is a genus of herbivorous chasmosaurine ceratopsian dinosaur that lived during the late Maastrichtian age of the Late Cretaceous period, between 68 and 66 million years ago, though it is possible that the species range might extend to as far back as 69 million years ago. Fossils have been discovered across the Western Interior of North America, from as far north as Saskatchewan to as far south as Texas.
     dispute:
       summary: |
-        Whether Torosaurus is a valid genus or the fully mature growth stage of Triceratops is contested. Scannella and Horner (2010) argued from frill ontogeny and bone histology that all known Torosaurus skulls are senescent Triceratops, formally synonymizing the two. Longrich (2011), Maiorino and colleagues (2013, proportional mismatches), and Mallon and colleagues (2022, putative subadult Torosaurus specimens) rejected the synonymy on the absence of transitional forms, and most recent phylogenetic analyses (Dalman and colleagues, 2022) continue to recover the two as distinct. No broad consensus has been reached.
+        Whether Torosaurus is a valid genus or the fully mature growth stage of Triceratops is contested. Scannella and Horner (2010) argued from frill ontogeny and bone histology that all known Torosaurus skulls are senescent Triceratops, formally synonymizing the two. Longrich (2011) and Longrich and Field (2012) rejected the synonymy on the absence of transitional forms, and Maiorino and colleagues (2013) on morphometric grounds. Mallon and colleagues (2022) described a Torosaurus they judged a late subadult or early adult (EM P16.1) and concluded that the evidence weighs in favor of two genera, while noting that younger Torosaurus are needed to reject the synonymy outright. A phylogenetic analysis by Dalman and colleagues (2022) recovered Torosaurus latus outside the clade containing the Triceratops species. No broad consensus has been reached.
       history:
         - date: 2026-06-26
           note: Placed at Chasmosaurinae, the least-inclusive clade accepted whether Torosaurus is a distinct triceratopsin or mature Triceratops; tribes dropped. Validity unresolved.
@@ -177874,7 +178411,7 @@ genera:
         journal: New Mexico Museum of Natural History and Science Bulletin
         volume: "90"
         pages: 127-153
-        notes: Phylogenetic analysis recovers Torosaurus and Triceratops as distinct genera within Triceratopsini
+        notes: Phylogenetic analysis recovers Torosaurus latus within Triceratopsini, outside the clade containing the Triceratops species.
       - id: scannella2010a
         authors: Scannella, J.; Horner, J. R.
         year: 2010
@@ -177896,6 +178433,17 @@ genera:
         pages: 264-276
         doi: 10.1016/j.cretres.2010.12.007
         notes: Argued Torosaurus is distinct from Triceratops.
+      - id: longrich2012b
+        authors: Longrich, N. R.; Field, D. J.
+        year: 2012
+        title: "Torosaurus is not Triceratops: ontogeny in chasmosaurine ceratopsids as a case study in dinosaur taxonomy"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "7"
+        issue: "2"
+        pages: e32623
+        doi: 10.1371/journal.pone.0032623
+        notes: Ordered Torosaurus and Triceratops skulls by maturity, found mature and immature individuals of both and no intermediate frills, and concluded Torosaurus is a distinct genus.
       - id: maiorino2013a
         authors: Maiorino, L.; Farke, A. A.; Kotsakis, T.; Piras, P.
         year: 2013
@@ -180533,7 +181081,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Tugulusaurus as a basal alvarezsauroid.
       - id: meso2024a
         authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
         year: 2024
@@ -187073,13 +187621,7 @@ genera:
     pronunciation:
       phonetic: WAHN-NAHN-o-SAWR-us
     etymology: Named for Wannan (southern Anhui), the region of China where the fossils were discovered, combined with Greek 'sauros' meaning 'lizard'.
-    description: Wannanosaurus is a genus of basal pachycephalosaurian dinosaur from the Maastrichtian-aged (Upper Cretaceous) Xiaoyan Formation, about 70 million years ago, in what is now Anhui, China. The type species Wannanosaurus yansiensis was described by Hou Lian-Hai in 1977.
-    dispute:
-      summary: |
-        Wannanosaurus is consistently recovered as the basal-most pachycephalosaur, outside the crown family Pachycephalosauridae (Schott and Evans, 2016; Chinzorig and colleagues, 2025), though its position may be influenced by the immaturity of the only known specimens. It is retained at Pachycephalosauria incertae sedis.
-      history:
-        - date: 2026-06-26
-          note: Placed at Pachycephalosauria incertae sedis, the basal-most pachycephalosaur outside Pachycephalosauridae.
+    description: Wannanosaurus is a genus of basal pachycephalosaurian dinosaur from the Campanian-aged (Upper Cretaceous) Xiaoyan Formation, in what is now Anhui, China. The type species Wannanosaurus yansiensis was described by Hou Lian-Hai in 1977.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -187162,7 +187704,7 @@ genera:
         issue: "8087"
         pages: 1138-1145
         doi: 10.1038/s41586-025-09213-6
-        notes: Recovered Wannanosaurus's basal position among pachycephalosaurs, though with some instability.
+        notes: Recovered Wannanosaurus as the earliest-branching pachycephalosaurian, but cautions that the immaturity of the holotype may influence its position.
     taxonomy:
       - Life
       - Animalia
@@ -189434,7 +189976,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reports Xiaosaurus as provisionally valid.
       - id: barrett2005a
         authors: Barrett, P. M.; Butler, R. J.; Knoll, F.
         year: 2005
@@ -189485,7 +190027,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu and colleagues, 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei and colleagues, 2020; Xu and colleagues, 2023; Jones, 2026), as a more stemward avialan outside the anchiornithids (Foth and colleagues, 2025), as a sinovenatorine troodontid (Hartman and colleagues, 2019), and as a basal scansoriopterygid (Lefèvre and colleagues, 2017). The competing avialan and deinonychosaur hypotheses agree only on Eumaniraptora, where it is placed.
+        Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu and colleagues, 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei and colleagues, 2020; Xu and colleagues, 2023), as a more stemward avialan outside the anchiornithids (Foth and colleagues, 2025), as a sinovenatorine troodontid (Hartman and colleagues, 2019), and as a basal scansoriopterygid (Lefèvre and colleagues, 2017). The competing avialan and deinonychosaur hypotheses agree only on Eumaniraptora, where it is placed.
       history:
         - date: 2026-07-01
           note: Moved from Paraves to Eumaniraptora incertae sedis — the two-camp consensus (anchiornithid-avialan versus troodontid); the lone basal-scansoriopterygid recovery (Lefèvre and colleagues, 2017) is noted but does not control the placement.
@@ -190420,7 +190962,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Xixiasaurus is a poorly understood, unserrated-toothed troodontid whose position varies widely across analyses — near Byronosaurus, with Sinovenator and Mei, with Zanabazar and Saurornithoides, or paired with Sinusonasus (Hartman and colleagues, 2019) — and Jones (2026) concludes its placement will remain ambiguous without more material. It is placed at Troodontidae incertae sedis.
+        Xixiasaurus is a poorly understood, unserrated-toothed troodontid whose position varies widely across analyses: with Sinovenator and Mei (Turner and colleagues, 2012), near Byronosaurus (Pei and colleagues, 2020), with Zanabazar and Saurornithoides within Troodontinae (Cau and Madzia, 2021), or paired with Sinusonasus (Hartman and colleagues, 2019; Sellés and colleagues, 2021). It is placed at Troodontidae incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); highly unstable across analyses.
@@ -190498,6 +191040,7 @@ genera:
         issue: "3"
         pages: 381-388
         doi: 10.4202/app.2009.0047
+        notes: Named Xixiasaurus and compared it most closely with Byronosaurus.
       - id: hartman2019a
         authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
         year: 2019
@@ -190516,6 +191059,46 @@ genera:
         isbn: 978-0-691-25021-2
         notes: |
           Illustrated by E. Viola.
+      - id: turner2012a
+        authors: Turner, A. H.; Makovicky, P. J.; Norell, M. A.
+        year: 2012
+        title: A Review of Dromaeosaurid Systematics and Paravian Phylogeny
+        journal: Bulletin of the American Museum of Natural History
+        volume: "371"
+        pages: 1-206
+        doi: 10.1206/748.1
+        notes: Recovered Xixiasaurus with Sinovenator and Mei.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Xixiasaurus with Byronosaurus.
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Recovered Xixiasaurus within Troodontinae, as the sister of Zanabazar plus Saurornithoides.
+      - id: sellés2021a
+        authors: Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.
+        year: 2021
+        title: "A fast-growing basal troodontid (Dinosauria: Theropoda) from the latest Cretaceous of Europe"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "11"
+        issue: "1"
+        doi: 10.1038/s41598-021-83745-5
+        notes: Recovered Xixiasaurus as the sister of Sinusonasus.
     taxonomy:
       - Life
       - Animalia
@@ -192427,7 +193010,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Yimenosaurus as a plateosaurid of uncertain position.
     taxonomy:
       - Life
       - Animalia
@@ -192673,7 +193256,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        There is no consensus on the position of Yixianosaurus longimanus, known from a shoulder girdle and forelimbs. Its describers placed it as a basal deinonychosaur; later studies have recovered it as a basal paravian (Foth and Rauhut, 2017), an anchiornithid close to Xiaotingia (Cau and colleagues, 2017; Jones, 2026), and, under implied weighting, near the base of Pennaraptora (Foth and colleagues, 2025). It is placed conservatively at Maniraptora incertae sedis.
+        There is no consensus on the position of Yixianosaurus longimanus, known from a shoulder girdle and forelimbs. Its describers placed it as a basal deinonychosaur; later studies have recovered it as a basal paravian (Foth and Rauhut, 2017), an anchiornithid close to Xiaotingia (Cau and colleagues, 2017; Wang and colleagues, 2023), a dromaeosaurid (Hartman and colleagues, 2019), and, under implied weighting, near the base of Pennaraptora (Foth and colleagues, 2025). It is placed conservatively at Maniraptora incertae sedis.
       history:
         - date: 2026-07-01
           note: Retained at Maniraptora incertae sedis; recovered placements span Pennaraptora to Avialae and none prevails.
@@ -192794,6 +193377,25 @@ genera:
         pages: 17-43
         doi: 10.3897/fr.28.131671
         notes: Recovered Yixianosaurus near the base of Pennaraptora under implied weighting.
+      - id: wang2023a
+        authors: Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.
+        year: 2023
+        title: A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "151"
+        doi: 10.1016/j.cretres.2023.105605
+        notes: Recovered Yixianosaurus as the sister of Xiaotingia within Avialae.
+      - id: hartman2019a
+        authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
+        year: 2019
+        title: A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "7"
+        pages: e7247
+        doi: 10.7717/peerj.7247
+        notes: Recovered Yixianosaurus within Dromaeosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -194329,7 +194931,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Yunnanosaurus as near the base of Sauropodiformes.
       - id: lü2007d
         authors: Lü, J.; Li, T.; Zhong, S.; Azuma, Y.; Fujita, M.; Dong, Z.; Ji, Q.
         year: 2007
@@ -196131,7 +196733,7 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Zhenyuanlong is a large, short-armed Jehol dromaeosaurid whose finer placement is unresolved. Its describers recovered the Liaoning dromaeosaurids in a basal polytomy and explicitly did not recover a Zhenyuanlong + Tianyuraptor clade (Lü and Brusatte, 2015), whereas Wang and colleagues (2022) and Jones (2026) group it with Tianyuraptor and Daurlong just stemward of Eudromaeosauria. It is placed at Dromaeosauridae incertae sedis.
+        Zhenyuanlong is a large, short-armed Jehol dromaeosaurid whose finer placement is unresolved. Its describers recovered the Liaoning dromaeosaurids in a basal polytomy and explicitly did not recover a Zhenyuanlong + Tianyuraptor clade (Lü and Brusatte, 2015), whereas Wang and colleagues (2022, 2026) group it with Tianyuraptor and Daurlong just stemward of Eudromaeosauria. It is placed at Dromaeosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal position with weak support, short-armed grouping with Tianyuraptor and Daurlong not universally recovered.
@@ -196225,6 +196827,17 @@ genera:
         isbn: 978-0-691-25021-2
         notes: |
           Illustrated by E. Viola.
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+        notes: Recovered Zhenyuanlong with Daurlong and Tianyuraptor.
     taxonomy:
       - Life
       - Animalia
@@ -196575,7 +197188,7 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Zhongyuansaurus as a synonym of Gobisaurus.
     taxonomy:
       - Life
       - Animalia

@@ -1,34 +1,21 @@
 genus: Texacephale
 parent: Pachycephalosauridae
+placement: incertae sedis
 etymology: From 'Texas', the U.S. state where the fossil was found, and Greek 'kephale' meaning 'head', in reference to its place of discovery.
 pronunciation:
   phonetic: tek-sa-SEH-fuh-lee
-description: Texacephale is a possibly dubious genus of pachycephalosaurid
+description: Texacephale is a dubious genus of pachycephalosaurid
   dinosaur from the Campanian stage of the Late Cretaceous. Its fossils come
   from the Aguja Formation of Big Bend National Park, in Texas, and were
   described in 2010 by Longrich, Sankey and Tanke. The generic name means Texas
   + "head" (kephale in Greek) in reference to its place of discovery, and the
-  specific name langstoni honors Wann Langston. It may be a synonym of
-  Stegoceras.
-dispute:
-  summary: >
-    The validity of Texacephale is contested. It was described as a valid
-    pachycephalosaurid with three autapomorphies (Longrich and colleagues, 2010), but
-    Jasinski and Sullivan (2011) and Woodruff and colleagues (2025) regard its diagnostic
-    traits as artifacts of taphonomic distortion and treat it as dubious. It is
-    retained at Pachycephalosauridae pending revision.
-  history:
-    - date: "2026-06-26"
-      note: Placed at Pachycephalosauridae (basal, no subfamily), valid per Longrich and colleagues (2010) but regarded as dubious by later authors.
+  specific name langstoni honors Wann Langston. Wick and Lehman (2024) suggested
+  on morphometric grounds that the holotype is probably an adult Stegoceras.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
   - coastal
-diagnostic_features:
-  - Parietal articulating with postorbital via series of flange-like processes
-  - Tall, narrow nasal boss with convex dorsal margin in lateral view
-  - Skull roof elevated above braincase roof by low pedicel
 appearance:
   integument: scaled
   evidence: inferred
@@ -42,7 +29,7 @@ identifiers:
 species:
   - name: Texacephale langstoni
     etymology: "Named for Wann Langston, honored in connection with the study of this pachycephalosaurid from Texas."
-    status: disputed
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -65,7 +52,18 @@ species:
       completeness: fragmentary
 references:
   - id: longrich2010b
-  - id: woodruff2025a
-    notes: Treated Texacephale as dubious, its diagnostic traits taphonomic artifacts.
+  - id: lehman2010a
+    notes: Finds all three diagnostic characters of Texacephale expressed in
+      specimens referred to other pachycephalosaur taxa.
   - id: jasinski2011a
-    notes: Reassessed Texacephale langstoni, treating its diagnostic traits as taphonomic artifacts.
+    notes: Found two of the three diagnostic characters in other
+      pachycephalosaurids and the pedicel a product of erosion; called it a
+      nomen dubium and its holotype Pachycephalosauridae indeterminate.
+  - id: williamson2016a
+    notes: Agrees with Jasinski and Sullivan (2011) that it is a nomen dubium.
+  - id: wick2024a
+    notes: Suggested on morphometric grounds that the holotype is probably an
+      adult Stegoceras.
+  - id: woodruff2025a
+    notes: Excluded it from its phylogenetic analysis because the holotype is
+      taphonomically distorted, and questioned its validity.
