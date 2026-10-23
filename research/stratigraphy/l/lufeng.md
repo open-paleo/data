@@ -1,5 +1,19 @@
 # Lufeng
 
+## Does Wang and colleagues' "Sinemurian to Pliensbachian" put the Zhangjiawa Member in the Pliensbachian?
+
+*2026-10-23*
+
+**Conclusion.** No. Wang and colleagues (2025) reach the upper unit of the Lufeng Formation without naming the member, and their range is an inference from below: the underlying Yubacun Formation is Hettangian to early Sinemurian, so the upper Lufeng is "probably constrained" to younger ages. That sets a floor, not a top, and the paper gives no evidence for the Pliensbachian end. Governs `stages: [Hettangian, Sinemurian]` on [Zhangjiawa](../../../stratigraphy/z/zhangjiawa.yml), unchanged.
+
+**Evidence.**
+- wang2025a, p. 7: "The upper unit of the Lufeng Formation, which has also produced a large number of non-sauropodan sauropodomorphs, is then probably constrained from Sinemurian to Pliensbachian"; p. 2: the Yubacun Formation is "Hettangian to early Sinemurian".
+
+**Ruled out.**
+- *Pliensbachian for the Zhangjiawa.* The upper bound has no stated basis, and a younger age inferred from an older unit beneath is a limit, not a dating of the member.
+
+**Open.** A date from within the upper Lufeng would settle its top.
+
 ## Does the upper member keep the headword Zhangjiawa?
 
 *2026-10-06*
@@ -52,6 +66,7 @@
 
 ## References
 
+- `wang2025a`: Wang, Y. M.; Zhang, Q. N.; Wang, Y. C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H. L. (2025). A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia. *Scientific Reports* 15(1). doi:10.1038/s41598-025-12185-2
 - `irmis2004a`: Irmis, R. B. (2004). First report of Megapnosaurus (Theropoda: Coelophysoidea) from China. *PaleoBios* 24(3): 11-18.
 - `norman2007a`: Norman, D. B.; Butler, R. J.; Maidment, S. C. R. (2007). Reconsidering the status and affinities of the ornithischian dinosaur Tatisaurus oehleri Simmons, 1965. *Zoological Journal of the Linnean Society* 150(4): 865-874. doi:10.1111/j.1096-3642.2007.00301.x
 - `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press, Cambridge.
@@ -66,6 +81,5 @@
 - `pang2002a`: Pang, Q. Q.; Fang, X. S.; Zhang, Z. X.; Li, Y. A.; Li, P. X.; Cheng, Z. W. (2002). 滇中鱼坝村组的建立及陆相侏罗系底界 [Establishment of the Yubacun Formation in central Yunnan and the base of the continental Jurassic]. *Geological Review* 48(1): 1-8. doi:10.16509/j.georeview.2002.01.001
 - `chen2026a`: Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z. (2026). Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal. *Communications Earth & Environment* 7: 91. doi:10.1038/s43247-025-03083-6
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
-- `wang2025a`: Wang, Y. M.; Zhang, Q. N.; Wang, Y. C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H. L. (2025). A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia. *Scientific Reports* 15(1). doi:10.1038/s41598-025-12185-2
 - `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
 - `liang2024a`: Liang, Q.; Falkingham, P. L.; Xing, L. (2024). Virtual skeleton and body mass for revealing the life strategies of Sinosaurus. *Historical Biology*: 1-15. doi:10.1080/08912963.2024.2385615
