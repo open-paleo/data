@@ -1,5 +1,20 @@
 # *Monoclonius*
 
+## Where does *Monoclonius* sit?
+
+*2026-10-22*
+
+**Conclusion.** Centrosaurinae incertae sedis. Both assessments that call the type species a nomen dubium identify it as a centrosaurine, and every genus they name as a possible referent is a centrosaurine. The material is undiagnostic within the subfamily, not within Ceratopsidae. Governs `parent: Centrosaurinae` and `placement: incertae sedis` on [*Monoclonius crassus*](../../../genera/M/Monoclonius.yml).
+
+**Evidence.**
+- sampson1997a, p. 328: "Undoubtedly the most problematic centrosaurine has been *Monoclonius* Cope"; "the genus *Monoclonius* may consist of immature *Styracosaurus*, *Centrosaurus*, *Einiosaurus*, and/or *Achelousaurus*."
+- ryan2006a, p. 62: "The late Campanian centrosaurine ceratopsid Monoclonius crassus, including the junior synonym M. lowei, was declared a nomen dubium by Sampson et al. in 1997".
+
+**Ruled out.**
+- *Ceratopsidae incertae sedis.* Neither paper says the material cannot be placed below the family. A nomen dubium among centrosaurines is unplaceable within Centrosaurinae, which the incertae sedis flag records.
+
+**Open.** Nothing.
+
 ## Is the Monoclonius crassus type from the Coal Ridge Member?
 
 *2026-08-30*
@@ -32,10 +47,10 @@
 
 ## References
 
+- `sampson1997a`: Sampson, S. D.; Ryan, M. J.; Tanke, D. H. (1997). Craniofacial ontogeny in centrosaurine dinosaurs (Ornithischia: Ceratopsidae): taphonomic and behavioral implications. *Zoological Journal of the Linnean Society* 121: 293-337. doi:10.1111/j.1096-3642.1997.tb00340.x
+- `ryan2006a`: Ryan, M. J.; Russell, A. P. (2006). The status of the problematic taxon Monoclonius (Ornithischia: Ceratopsidae) and the recognition of adult-sized dinosaur taxa. *Geological Society of America Abstracts with Programs* 38(4): 62.
 - `hatcher1907a`: Hatcher, J. B.; Marsh, O. C.; Lull, R. S. (1907). The Ceratopsia. *Monographs of the United States Geological Survey* 49: 1-300.
 - `mallon2016a`: Mallon, J. C.; Ott, C. J.; Larson, P. L.; Iuliano, E. M.; Evans, D. C. (2016). Spiclypeus shipporum gen. et sp. nov., a Boldly Audacious New Chasmosaurine Ceratopsid (Dinosauria: Ornithischia) from the Judith River Formation (Upper Cretaceous: Campanian) of Montana, USA. *PLOS ONE* 11(5): e0154218. doi:10.1371/journal.pone.0154218
 - `cope1876a`: Cope, E. D. (1876). Descriptions of some vertebrate remains from the Fort Union Beds of Montana. *Proceedings of the Academy of Natural Sciences of Philadelphia* 28: 248-261.
-- `sampson1997a`: Sampson, S. D.; Ryan, M. J.; Tanke, D. H. (1997). Craniofacial ontogeny in centrosaurine dinosaurs (Ornithischia: Ceratopsidae): taphonomic and behavioral implications. *Zoological Journal of the Linnean Society* 121: 293-337. doi:10.1111/j.1096-3642.1997.tb00340.x
-- `ryan2006a`: Ryan, M. J.; Russell, A. P. (2006). The status of the problematic taxon Monoclonius (Ornithischia: Ceratopsidae) and the recognition of adult-sized dinosaur taxa. *Geological Society of America Abstracts with Programs* 38(4): 62.
 - `ishikawa2023a`: Ishikawa, H.; Tsuihiji, T.; Manabe, M. (2023). Furcatoceratops elucidans, a new centrosaurine (Ornithischia: Ceratopsidae) from the upper Campanian Judith River Formation, Montana, USA. *Cretaceous Research* 151. doi:10.1016/j.cretres.2023.105660
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
