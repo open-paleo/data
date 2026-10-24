@@ -1,5 +1,19 @@
 # *Craterosaurus*
 
+## Does Galton's 1981 monograph give its own basis for a Neocomian source?
+
+*2026-10-23*
+
+**Conclusion.** Yes, and it allows the Lower Aptian too. Galton (1981) reasons from the predominance of *Iguanodon* among the derived dinosaurs to a source "probably Neocomian or possibly Lower Aptian", which supports the 2026-10-10 Conclusion (Berriasian to Aptian) and answers its Open question. Governs `period.stage` and `location.notes` on [*Craterosaurus pottonensis*](../../../genera/C/Craterosaurus.yml).
+
+**Evidence.**
+- galton1981b, p. 29: the bed's "indigenous fossils give an Upper Aptian age"; "the dinosaurs are chiefly represented by bones of Iguanodon (SEELEY 1874, CASEY 1961) so the original age of Craterosaurus is probably Lower Cretaceous (probably Neocomian or possibly Lower Aptian)."
+
+**Ruled out.**
+- *Berriasian to Hauterivian alone.* Galton himself allows the Lower Aptian.
+
+**Open.** Nothing.
+
 ## What stages does the reworked *Craterosaurus* holotype take?
 
 *2026-10-10*
@@ -53,6 +67,7 @@
 
 ## References
 
+- `galton1981b`: Galton, P. M. (1981). Craterosaurus pottonensis Seeley, a stegosaurian dinosaur from the Lower Cretaceous of England, and a review of Cretaceous stegosaurs. *Neues Jahrbuch für Geologie und Paläontologie, Abhandlungen* 161(1): 28-46. doi:10.1127/njgpa/161/1981/28
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
 - `casey1961a`: Casey, R. (1961). The stratigraphical palaeontology of the Lower Greensand. *Palaeontology* 3: 487-621.
 - `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.

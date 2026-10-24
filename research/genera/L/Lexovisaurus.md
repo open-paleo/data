@@ -1,5 +1,20 @@
 # *Lexovisaurus*
 
+## Where does *Lexovisaurus* sit?
+
+*2026-10-23*
+
+**Conclusion.** Stegosauridae incertae sedis. Maidment and colleagues (2008) call the holotype an indeterminate member of their clade C, which lies inside Stegosauridae in their tree; later trees break up clade C, so no subfamily is agreed. Governs `parent: Stegosauridae` and `placement: incertae sedis` on [*Lexovisaurus durobrivensis*](../../../genera/L/Lexovisaurus.yml).
+
+**Evidence.**
+- maidment2008a, p. 383: the holotype "is clearly a stegosaur because of the overall morphology of the ilia"; "BMNH R1989-1992 bears no unique characters or character combinations and is regarded as an indeterminate clade C stegosaurs."
+- maidment2008a, Fig. 11A, p. 390 (figure reading): clade C (*Loricatosaurus*, *Tuojiangosaurus*, *Paranthodon*, *Stegosaurus*) is nested within Stegosauridae.
+
+**Ruled out.**
+- *Stegosaurinae.* Clade C sits inside it in Maidment and colleagues' tree, but Raven and colleagues (2023) place *Loricatosaurus*, the best-known member, between the stegosaurines and the other stegosaurids.
+
+**Open.** Maidment and colleagues give no holotype character that ties it to clade C; the tall-plate synapomorphy they cite comes from referred plates.
+
 ## Is the *Lexovisaurus* holotype from the Oxford Clay at Fletton?
 
 *2026-08-29*
@@ -35,8 +50,8 @@
 
 ## References
 
+- `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
 - `hulke1887a`: Hulke, J. W. (1887). Note on some dinosaurian remains in the collection of A. Leeds, Esq, of Eyebury, Northamptonshire. *Quarterly Journal of the Geological Society of London* 43: 695-702.
 - `hoffstetter1957a`: Hoffstetter, R. (1957). Quelques observations sur les Stégosaurinés [Some Observations on the Stegosaurinae]. *Bulletin du Muséum National d'Histoire Naturelle, Paris, 2nde série* 29: 537-547.
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
-- `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
