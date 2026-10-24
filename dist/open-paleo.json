@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-24T04:05:43.312Z",
+    "built_at": "2026-10-24T04:56:37.824Z",
     "clade_count": 188,
     "genus_count": 1426,
     "license": "CC-BY-4.0",
@@ -21926,20 +21926,12 @@
     "Alcovasaurus": {
       "genus": "Alcovasaurus",
       "parent": "Stegosauridae",
+      "placement": "incertae sedis",
       "pronunciation": {
         "phonetic": "al-KOH-vuh-SAWR-us"
       },
       "etymology": "Named after Alcova, Wyoming, where the holotype was discovered",
-      "description": "Alcovasaurus is an extinct genus of herbivorous stegosaurian dinosaurs that lived in the Late Jurassic. It was found in the Morrison Formation of Wyoming, United States. The genus contains a single species, Alcovasaurus longispinus, originally assigned to the genus Stegosaurus. It is likely a member of the Dacentrurinae, and has been referred to the genus Miragaia by some authors.",
-      "dispute": {
-        "summary": "Alcovasaurus has an unstable position, recovered outside Eurypoda by Raven and Maidment (2017, attributed to missing data and possible immaturity) and within Dacentrurinae after recoding by Sánchez-Fenollosa and Cobos (2025). It is placed at Stegosauridae without a subfamily pending stable resolution.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauridae, subfamily placement unstable across analyses."
-          }
-        ]
-      },
+      "description": "Alcovasaurus is an extinct genus of herbivorous stegosaurian dinosaurs that lived in the Late Jurassic. It was found in the Morrison Formation of Wyoming, United States. The genus contains a single species, Alcovasaurus longispinus, originally assigned to the genus Stegosaurus. Costa and Mateus (2019) referred it to Miragaia, and Sánchez-Fenollosa, Escaso and Cobos (2025) returned it to Alcovasaurus. Its subfamily is unsettled; some analyses place it in Dacentrurinae and others elsewhere within Stegosauridae.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -22067,7 +22059,7 @@
           "volume": "75",
           "pages": "165-189",
           "doi": "10.3897/vz.75.e146618",
-          "notes": "Recovered Alcovasaurus within Dacentrurinae after recoding its data."
+          "notes": "Recovered Alcovasaurus as the earliest-diverging member of Dacentrurinae in a new data matrix, tracing its earlier position outside Eurypoda to miscoded characters."
         },
         {
           "id": "raven2017a",
@@ -22097,7 +22089,66 @@
           "year": 2014,
           "title": "Evolution of the stegosaurs (Dinosauria; Ornithischia)",
           "journal": "Dinologia",
-          "notes": "Erected the nomen nudum Natronasaurus longispinus for the species longispinus."
+          "notes": "Proposed Natronasaurus as a new genus for longispinus; the name is unavailable."
+        },
+        {
+          "id": "ulansky2014a",
+          "authors": "Ulansky, R. E.",
+          "year": 2014,
+          "title": "Dinosaurs Classification. Basal Thyreophora & Stegosauria",
+          "journal": "Dinologia",
+          "pages": "1-8",
+          "notes": "Listed Natronasaurus longispinus as a new genus (unavailable name)."
+        },
+        {
+          "id": "maidment2020a",
+          "authors": "Maidment, S. C. R.; Raven, T. J.; Ouarhache, D.; Barrett, P. M.",
+          "year": 2020,
+          "title": "North Africa's first stegosaur: Implications for Gondwanan thyreophoran dinosaur diversity",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "77",
+          "pages": "82-97",
+          "doi": "10.1016/j.gr.2019.07.007",
+          "notes": "Recovers Alcovasaurus with Tuojiangosaurus and Paranthodon, outside the clade holding Dacentrurus."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "Recovers Alcovasaurus as the sister of Loricatosaurus, a bridge taxon between the stegosaurines and the other stegosaurids."
+        },
+        {
+          "id": "costa2019a",
+          "authors": "Costa, F.; Mateus, O.",
+          "year": 2019,
+          "title": "Dacentrurine stegosaurs (Dinosauria): A new specimen of Miragaia longicollum from the Late Jurassic of Portugal resolves taxonomical validity and shows the occurrence of the clade in North America",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "14",
+          "issue": "11",
+          "pages": "e0224263",
+          "doi": "10.1371/journal.pone.0224263",
+          "notes": "Refers longispinus to Miragaia, within Dacentrurinae, on caudal vertebrae and tail spines it shares with Miragaia longicollum."
+        },
+        {
+          "id": "sánchez-fenollosa2024a",
+          "authors": "Sánchez-Fenollosa, S.; Escaso, F.; Cobos, A.",
+          "year": 2024,
+          "title": "A new specimen of Dacentrurus armatus Owen, 1875 (Ornithischia: Thyreophora) from the Upper Jurassic of Spain and its taxonomic relevance in the European stegosaurian diversity",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "203",
+          "issue": "3",
+          "pages": "zlae074",
+          "doi": "10.1093/zoolinnean/zlae074",
+          "notes": "Returns longispinus to Alcovasaurus, listing it in Stegosauridae without a subfamily."
         }
       ],
       "taxonomy": [
@@ -24852,16 +24903,7 @@
         "phonetic": "ah-MAR-guh-STEG-os"
       },
       "etymology": "From 'Amarga' (the Argentine La Amarga Formation that yielded the type material) and Greek 'stegos' (roof, in reference to stegosaurs); intended sense 'La Amarga roof'.",
-      "description": "Amargastegos is a nomen dubium genus of stegosaurian dinosaur informally proposed by Ulansky (2014) for the partial skeleton MACN N-43 from the Barremian La Amarga Formation of Neuquén Province, Argentina. The same material had previously been formally described by Pereda-Suberbiola and colleagues (2013) as Stegosauria indet., on the grounds that it lacks any autapomorphies allowing referral to a particular stegosaurian taxon. Galton and Carpenter (2016) declared Amargastegos brevicollus a nomen dubium on ICZN Article 13 grounds (the informal Dinologia venue) and confirmed Stegosauria indet. as the correct identification of the type material.\n",
-      "dispute": {
-        "summary": "Amargastegos is an informally named taxon (nomen dubium) regarded as an indeterminate stegosaur (Galton and Carpenter, 2016). It is retained at Stegosauria incertae sedis pending a formal description; a dedicated literature review is tracked separately.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauria incertae sedis, nomen dubium and an indeterminate stegosaur."
-          }
-        ]
-      },
+      "description": "Amargastegos is a nomen dubium genus of stegosaurian dinosaur informally proposed by Ulansky (2014) for the partial skeleton MACN N-43 from the Barremian La Amarga Formation of Neuquén Province, Argentina. The same material had previously been formally described by Pereda-Suberbiola and colleagues (2013) as Stegosauria indet.; they noted differences from other stegosaurs suggesting a distinct taxon but judged it too incomplete to name a new genus and species. Galton and Carpenter (2016) treated Amargastegos brevicollus as a nomen dubium: Ulansky gave no description of differentiating characters (ICZN Article 13), Dinologia does not meet the ICZN requirements for a valid publication, and the material lacks autapomorphies. They confirmed Stegosauria indet. as the correct identification of the type material.\n",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -24954,7 +24996,7 @@
           "issue": "2",
           "pages": "185-208",
           "doi": "10.1127/njgpa/2016/0551",
-          "notes": "Declares Amargastegos brevicollus a nomen dubium on ICZN Art. 13 grounds (Dinologia venue) and confirms Stegosauria indet. as the correct identification of MACN N-43."
+          "notes": "Treats Amargastegos brevicollus as a nomen dubium (no diagnosis under ICZN Art. 13, Dinologia not a valid publication, no autapomorphies); confirms MACN N-43 as Stegosauria indet."
         }
       ],
       "taxonomy": [
@@ -60144,19 +60186,6 @@
       },
       "etymology": "Named after the Chialing River (now Jialing River) in Sichuan Province, China, where fossils were discovered, + Greek sauros ('lizard'), meaning 'Chialing lizard'.",
       "description": "Chialingosaurus is a genus of herbivorous stegosaurian dinosaur similar to Kentrosaurus from the Upper Shaximiao Formation, Late Jurassic beds in Sichuan Province in China. Its age makes it one of the oldest species of stegosaurs, living about 160 million years ago. Since it was an herbivore, scientists think that Chialingosaurus probably ate ferns and cycads, which were plentiful during the period when Chialingosaurus was alive.",
-      "dispute": {
-        "summary": "Chialingosaurus is a nomen dubium: its holotype is a juvenile, and no autapomorphies have been identified (Maidment and Wei, 2006). It is retained at Stegosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauria incertae sedis, nomen dubium with no diagnostic features."
-          },
-          {
-            "date": "2026-10-08",
-            "note": "Type species set to nomen dubium and diagnostic features removed, following Maidment and Wei (2006) and Maidment and colleagues (2008)."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -62857,7 +62886,7 @@
       "etymology": "Named after Chongqing (formerly romanized as Chungking), the city in Sichuan Province, China where fossils were found, + Greek sauros ('lizard'), meaning 'Chongqing lizard'.",
       "description": "Chungkingosaurus is a genus of stegosaurian dinosaur from the Late Jurassic Upper Shaximiao Formation in what is now China. The type species is Chungkingosaurus jiangbeiensis.",
       "dispute": {
-        "summary": "Chungkingosaurus has been recovered within Stegosauridae (Maidment and colleagues, 2008), in a basal clade with Huayangosaurus (Raven and Maidment, 2017), and as the earliest-diverging stegosaurid (Sánchez-Fenollosa and Cobos, 2025). With its family placement unresolved and Huayangosauridae not retained, it is placed at Stegosauria incertae sedis.\n",
+        "summary": "Chungkingosaurus has been recovered as the sister taxon of Huayangosaurus in Huayangosauridae (Maidment and colleagues, 2008), in a basal clade with Huayangosaurus (Raven and Maidment, 2017), and as the earliest-diverging stegosaurid (Sánchez-Fenollosa and Cobos, 2025). With its family placement unresolved and Huayangosauridae not retained, it is placed at Stegosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -63005,7 +63034,7 @@
           "issue": "4",
           "pages": "367-407",
           "doi": "10.1017/S1477201908002459",
-          "notes": "Recovered Chungkingosaurus within Stegosauridae/Stegosaurinae in its Stegosauria phylogeny."
+          "notes": "Recovered Chungkingosaurus as the sister taxon of Huayangosaurus in Huayangosauridae in its Stegosauria phylogeny."
         },
         {
           "id": "sánchez-fenollosa2025a",
@@ -67562,20 +67591,7 @@
       "pronunciation": {
         "phonetic": "KRAY-tuh-ro-SOR-us"
       },
-      "description": "Craterosaurus is a dubious genus of stegosaurian dinosaur that lived during the Early Cretaceous of England, known from a fossil reworked into the Woburn Sands Formation. Estimated to measure around 4 m (13 ft) in length and weighing approximately 560 kg (1,230 lb), Craterosaurus may actually be a junior synonym of Regnosaurus, but only one fossil, a partial vertebra, was recovered.",
-      "dispute": {
-        "summary": "Craterosaurus is a nomen dubium based on a single partial vertebra whose features are now known to be widespread in Stegosauria (Maidment and colleagues, 2008). It is retained at Stegosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauria incertae sedis, nomen dubium based on an undiagnostic vertebra."
-          },
-          {
-            "date": "2026-10-08",
-            "note": "Type species set to nomen dubium, following Maidment and colleagues (2008)."
-          }
-        ]
-      },
+      "description": "Craterosaurus is a dubious genus of stegosaurian dinosaur from the Early Cretaceous of England, known only from a partial dorsal vertebra reworked into the Woburn Sands Formation.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -67626,7 +67642,7 @@
             "locality": "Old coprolite workings near Potton",
             "formation": "Woburn Sands",
             "bed": "Potton Nodule Bed",
-            "notes": "The specimen is reworked into the Potton Nodule Bed, which was deposited in the late Aptian to early Albian (Galton, 2009). Its source beds are not established. Galton (1985) gives them as \"probably\" Neocomian, the Berriasian to Hauterivian (Gale and colleagues, 2020), citing Casey (1961), but Casey lists derived Lower Aptian ammonites alongside Neocomian sandstone in the bed and holds that worn bones there prove no older source, as \"Iguanodon was still living in Aptian times\". The age therefore spans every stage from the Berriasian to the Aptian.\n",
+            "notes": "The specimen is reworked into the Potton Nodule Bed, which was deposited in the late Aptian to early Albian (Galton, 2009). Its source beds are not established. Galton (1981) gives the source as \"probably Neocomian or possibly Lower Aptian\", the Neocomian being the Berriasian to Hauterivian (Gale and colleagues, 2020), reasoning from the predominance of Iguanodon bones among the derived dinosaurs. Casey (1961) lists derived Lower Aptian ammonites alongside Neocomian sandstone in the bed and holds that worn bones there prove no older source, as \"Iguanodon was still living in Aptian times\". The age therefore spans every stage from the Berriasian to the Aptian.\n",
             "region_code": "GB-CBF"
           },
           "size": {
@@ -67677,7 +67693,20 @@
           "issue": "4",
           "pages": "367-407",
           "doi": "10.1017/S1477201908002459",
-          "notes": "Stegosauria systematics work showed Craterosaurus features are widespread, supporting nomen dubium status."
+          "notes": "Regards it as a nomen dubium; the excavation behind the prezygapophyses that Galton (1981) took as diagnostic also occurs in Kentrosaurus and Loricatosaurus and has been deepened by erosion."
+        },
+        {
+          "id": "galton1981b",
+          "authors": "Galton, P. M.",
+          "year": 1981,
+          "title": "Craterosaurus pottonensis Seeley, a stegosaurian dinosaur from the Lower Cretaceous of England, and a review of Cretaceous stegosaurs",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie, Abhandlungen",
+          "publisher": "Schweizerbart",
+          "volume": "161",
+          "issue": "1",
+          "pages": "28-46",
+          "doi": "10.1127/njgpa/161/1981/28",
+          "notes": "Refers the vertebra to Stegosauria and diagnoses the genus by a deep cavity behind the prezygapophyses that he holds is natural, not erosional."
         },
         {
           "id": "galton1985d",
@@ -99034,26 +99063,12 @@
     },
     "Glyptodontopelta": {
       "genus": "Glyptodontopelta",
-      "parent": "Ankylosauria",
-      "placement": "incertae sedis",
+      "parent": "Nodosauridae",
       "pronunciation": {
         "phonetic": "GLIP-to-don-to-PEL-tuh"
       },
       "etymology": "Glyptodon shield; named for resemblance of its armor to that of the prehistoric mammal Glyptodon, combined with Greek pelta (shield)",
       "description": "Glyptodontopelta is a monospecific genus of nodosaurid dinosaur from New Mexico that lived during the Late Cretaceous (lower to upper Maastrichtian, 69 to 66 Ma) in what is now the Naashoibito member of the Ojo Alamo Formation. The type and only species, Glyptodontopelta mimus, is known from numerous specimens that consist of osteoderms, a dentary, supraorbital and bone fragments. It was named in 2000 by Tracy Ford. Edmontonia australis is a junior synonym of Glyptodontopelta.",
-      "dispute": {
-        "summary": "Glyptodontopelta is known almost entirely from osteoderms. Vickaryous and colleagues (2004) listed the osteoderm taxon Edmontonia australis — since synonymized into Glyptodontopelta and revalidated by Burns (2008) — as a nomen dubium; the genus cannot be placed below Ankylosauria. It is retained at Ankylosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Ankylosauria incertae sedis, armor-based and not placeable to family."
-          },
-          {
-            "date": "2026-10-09",
-            "note": "Status confirmed valid, following Burns (2008) and Arbour and Currie (2015)."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -99145,7 +99160,7 @@
           "issue": "4",
           "pages": "1102-1109",
           "doi": "10.1671/0272-4634-28.4.1102",
-          "notes": "Recognized Glyptodontopelta as valid within Ankylosauria, and gives its type locality as Barrel Springs Arroyo in the Naashoibito Member."
+          "notes": "Assigns it to Nodosauridae on osteoderm histology, shows it valid, synonymizes Edmontonia australis with it, and gives its type locality as Barrel Springs Arroyo in the Naashoibito Member."
         },
         {
           "id": "vickaryous2004a",
@@ -99155,7 +99170,7 @@
           "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
           "publisher": "University of California Press, Berkeley",
           "pages": "363-392",
-          "notes": "Listed the osteoderm species Edmontonia australis — later synonymized into Glyptodontopelta by Burns (2008) — as a nomen dubium."
+          "notes": "Listed Glyptodontopelta mimus, and the osteoderm species Edmontonia australis that Burns (2008) later synonymized with it, as nomina dubia."
         },
         {
           "id": "arbour2015a",
@@ -99184,7 +99199,8 @@
         "Ornithischia",
         "Genasauria",
         "Thyreophora",
-        "Ankylosauria"
+        "Ankylosauria",
+        "Nodosauridae"
       ],
       "authors": "Ford, T. L.",
       "described": 2000
@@ -110417,7 +110433,7 @@
       "etymology": "From Huayang (華陽), an alternate historical name for Sichuan Province, China, combined with Greek sauros (lizard); meaning 'Huayang lizard'",
       "description": "Huayangosaurus is a genus of stegosaurian dinosaur from the Middle Jurassic of China. The name derives from \"Huayang\" (華陽), an alternate name for Sichuan (the province where it was discovered), and \"saurus\", meaning \"lizard\". It lived during the Bathonian to Callovian stages, around 165 million years ago, some 20 million years before its famous relative, Stegosaurus appeared in North America. At only approximately 4 meters (13 ft) long, it was also much smaller than its famous cousin. Found in the Lower Shaximiao Formation, Huayangosaurus shared the local Middle Jurassic landscape with the sauropods Shunosaurus, Datousaurus, Omeisaurus and Protognathosaurus, the ornithopod Xiaosaurus and the carnivorous Gasosaurus.",
       "dispute": {
-        "summary": "Huayangosaurus is an early-diverging stegosaur in every analysis read, though not always the earliest (Maidment and colleagues 2008). It is the type of Huayangosauridae, defined by Madzia and colleagues (2021) as all taxa closer to Huayangosaurus than to Stegosaurus, but the clade's content differs between analyses: Chungkingosaurus alone in the reference phylogeny of Madzia and colleagues (2021), five genera without Chungkingosaurus in Sánchez-Fenollosa and colleagues (2025), and no such clade in Raven and colleagues (2023). Huayangosaurus is therefore placed at Stegosauria incertae sedis.\n",
+        "summary": "Huayangosaurus is an early-diverging stegosaur in the preferred analysis of each work read, though not always the earliest (Maidment and colleagues 2008). It is the type of Huayangosauridae, defined by Madzia and colleagues (2021) as all taxa closer to Huayangosaurus than to Stegosaurus, but the clade's content differs between analyses: Huayangosaurus and Chungkingosaurus only in the reference phylogeny of Madzia and colleagues (2021), five genera without Chungkingosaurus in most analyses of Sánchez-Fenollosa and Cobos (2025), and no such clade in Raven and colleagues (2023). Huayangosaurus is therefore placed at Stegosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -110617,7 +110633,7 @@
           "issue": "1",
           "pages": "2205433",
           "doi": "10.1080/14772019.2023.2205433",
-          "notes": "Finds Huayangosaurus an early-diverging stegosaur but recovers no Huayangosauridae."
+          "notes": "In its preferred analysis finds Huayangosaurus an early stegosaur, sister to Isaberrysaura, with no Huayangosauridae; its equal-weights and Bayesian analyses place both outside Eurypoda."
         }
       ],
       "taxonomy": [
@@ -112891,9 +112907,9 @@
         "phonetic": "HIP-si-ROH-fus"
       },
       "etymology": "From Greek hypsi (high) and rhophos (roof); meaning \"high roof\", referring to the tall dorsal vertebrae. Cope's original spelling \"Hypsirophus\" (without the second h) is considered a typesetting variant.",
-      "description": "Hypsirhophus is a genus of stegosaurian dinosaurs. It contains a single species, Hypsirhophus discurus, which is known only from a fragmentary specimen. The fossil consists of partial vertebrae from the back, three from the tail, and a piece of rib.\n",
+      "description": "Hypsirhophus is a genus of stegosaurian dinosaurs. It contains a single species, Hypsirhophus discurus, which is known only from a fragmentary specimen. The fossil consists of a partial dorsal vertebra, a rib fragment, two neural arches from the front of the tail, and two centra from farther down the tail.\n",
       "dispute": {
-        "summary": "The validity of Hypsirhophus is contested. Maidment and colleagues (2008) treated Hypsirhophus discursus as a junior synonym of Stegosaurus armatus, while other workers retain it as a poorly known but possibly distinct stegosaur (Galton, 2010). It is retained at Stegosauria incertae sedis.\n",
+        "summary": "The validity of Hypsirhophus is contested. Maidment and colleagues (2008) treated Hypsirhophus discursus as a junior synonym of Stegosaurus armatus, while other workers retain it as a poorly known but possibly distinct stegosaur (Carpenter and colleagues, 2001; Galton, 2010). It is retained at Stegosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -113003,7 +113019,7 @@
           "journal": "American Naturalist",
           "volume": "13",
           "pages": "402-404",
-          "notes": "Reaffirms the affinities of Hypsirhophus and erects H. seeleyanus as a second species (later treated as a nomen nudum); same paper also names Camarasaurus leptodirus."
+          "notes": "Treats Hypsirhophus as a carnivorous dinosaur on associated vertebrae, limb bones and teeth, and erects H. seeleyanus (later a nomen nudum); also names Camarasaurus leptodirus."
         },
         {
           "id": "carpenter2001b",
@@ -116527,16 +116543,7 @@
       "pronunciation": {
         "phonetic": "ih-zah-BEH-ree-SOH-ruh"
       },
-      "description": "Isaberrysaura is an extinct genus of stegosaurian ornithischian dinosaurs from the Middle Jurassic Los Molles Formation of Patagonia, Argentina. The genus contains a single species, I. mollensis, described by Salgado in 2017 based on a single specimen. Although initially classified as a basal neornithischian, subsequent analyses have allied it with the Stegosauria as the morphology of its skull resembles those of other members of the group.",
-      "dispute": {
-        "summary": "The affinities of Isaberrysaura are contested. The describing authors (Salgado and colleagues, 2017) recovered it as a basal neornithischian outside Thyreophora, whereas subsequent analyses (Han and colleagues, 2018; Raven and Maidment, 2018; Sánchez-Fenollosa and Cobos, 2025) recover it as a basal stegosaur. Its membership in Stegosauria is not yet settled.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauria incertae sedis, recovered as a basal stegosaur by recent analyses but originally described as a basal neornithischian."
-          }
-        ]
-      },
+      "description": "Isaberrysaura is an extinct genus of stegosaurian ornithischian dinosaurs from the Middle Jurassic Los Molles Formation of Patagonia, Argentina. The genus contains a single species, I. mollensis, described by Salgado in 2017 based on a single specimen. Salgado and colleagues (2017) described it as a basal neornithischian; later analyses place it within Thyreophora, most of them as an early stegosaur close to Huayangosaurus.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -116627,7 +116634,8 @@
           "volume": "7",
           "issue": "1",
           "pages": "42778:1-10",
-          "doi": "10.1038/srep42778"
+          "doi": "10.1038/srep42778",
+          "notes": "Describes it as a basal neornithischian, but constrained searches do not reject a basal thyreophoran position."
         },
         {
           "id": "paul2024a",
@@ -116679,7 +116687,31 @@
           "volume": "6",
           "pages": "e4529",
           "doi": "10.7717/peerj.4529",
-          "notes": "Recovered Isaberrysaura as a basal stegosaur."
+          "notes": "Sister to Gigantspinosaurus in its stegosaur matrix, among neornithischians in two basal-ornithischian matrices; concludes it is likely a thyreophoran needing further study."
+        },
+        {
+          "id": "dieudonné2020a",
+          "authors": "Dieudonné, P. E.; Cruzado-Caballero, P.; Godefroit, P.; Tortosa, T.",
+          "year": 2020,
+          "title": "A new phylogeny of cerapodan dinosaurs",
+          "journal": "Historical Biology",
+          "volume": "33",
+          "issue": "10",
+          "pages": "2335-2355",
+          "doi": "10.1080/08912963.2020.1793979",
+          "notes": "Recovers Isaberrysaura as the sister taxon of Stegosauria."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "In its preferred analysis recovers Isaberrysaura as an early stegosaur, sister to Huayangosaurus; its equal-weights and Bayesian analyses place both outside Eurypoda."
         }
       ],
       "taxonomy": [
@@ -134674,22 +134706,13 @@
     },
     "Lexovisaurus": {
       "genus": "Lexovisaurus",
-      "parent": "Stegosauria",
+      "parent": "Stegosauridae",
       "placement": "incertae sedis",
       "etymology": "From the Lexovii (a Gallic people who inhabited the region of present-day Lisieux in Normandy, where Hoffstetter's French stegosaurine specimens were found) and Greek 'sauros' (lizard).",
       "pronunciation": {
         "phonetic": "lek-SOH-vi-SOR-us"
       },
       "description": "Lexovisaurus is a genus of stegosaurian dinosaur known from limb bones and armor fragments from Middle to Late Jurassic-aged strata of Europe.\n",
-      "dispute": {
-        "summary": "Lexovisaurus is a nomen dubium; its holotype preserves no diagnostic features and referred material was reassigned to Loricatosaurus (Maidment and colleagues, 2008). It is retained at Stegosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauria incertae sedis, nomen dubium with diagnostic material referred to Loricatosaurus."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -134906,7 +134929,8 @@
         "Ornithischia",
         "Genasauria",
         "Thyreophora",
-        "Stegosauria"
+        "Stegosauria",
+        "Stegosauridae"
       ],
       "authors": "Hoffstetter, R.",
       "described": 1957
@@ -151720,14 +151744,14 @@
     },
     "Miragaia": {
       "genus": "Miragaia",
-      "parent": "Dacentrurinae",
+      "parent": "Stegosauridae",
       "etymology": "Named for the village of Miragaia, in Lourinhã, Portugal, and the geological unit of the same name. The stem can also be read as Latin mira, wonderful, and Gaia, the Greek goddess of the Earth.",
       "pronunciation": {
         "phonetic": "MEE-ruh-GAH-yuh"
       },
-      "description": "Miragaia is a genus of long-necked stegosaurid dinosaur. Its fossils have been found in Upper Jurassic rocks in Portugal (Lourinhã Formation, Sobral Unit) and possibly also Wyoming and Utah, United States (Morrison Formation). Miragaia has the longest neck known for any stegosaurian, which included at least seventeen vertebrae. Some researchers consider this taxon to be a junior synonym of Dacentrurus.",
+      "description": "Miragaia is a genus of long-necked stegosaurid dinosaur. Its fossils have been found in Upper Jurassic rocks in Portugal (Lourinhã Formation, Sobral Unit) and possibly also Wyoming and Utah, United States (Morrison Formation), from which Costa (2026) refers isolated caudal spines and a cervical plate to Miragaia. Miragaia has the longest neck known for any stegosaurian, which included at least seventeen vertebrae. Some researchers consider this taxon to be a junior synonym of Dacentrurus.",
       "dispute": {
-        "summary": "The validity of Miragaia is contested. It was erected as a long-necked dacentrurine (Mateus and colleagues, 2009) and is widely treated as valid, but Sánchez-Fenollosa and Cobos (2025) synonymized it with Dacentrurus armatus. Either way it falls within Dacentrurinae.\n",
+        "summary": "The validity of Miragaia is contested. It was erected as a long-necked dacentrurine (Mateus and colleagues, 2009). Raven and Maidment (2017) re-erected the genus, and Costa and Mateus (2019) concluded from a second, more complete specimen that it is valid and distinct from Dacentrurus armatus. Sánchez-Fenollosa, Escaso and Cobos (2025) proposed it as a subjective junior synonym of D. armatus, following a suggestion by Cobos and colleagues (2010). Its position is disputed too: Mateus and colleagues (2009) and Costa and Mateus (2019) placed it in Dacentrurinae as sister to Dacentrurus, and the synonymy would also put it there, while Raven and Maidment (2017) recovered it as sister to Hesperosaurus, and Raven and colleagues (2023) as sister to Adratiklit, closer to Stegosaurus than to Dacentrurus in both cases. It is placed at Stegosauridae, the nearest clade all of these accept.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -151866,7 +151890,83 @@
           "volume": "75",
           "pages": "165-189",
           "doi": "10.3897/vz.75.e146618",
-          "notes": "Synonymized Miragaia with Dacentrurus armatus in their stegosaurian phylogeny/skull study."
+          "notes": "Follows the synonymy with Dacentrurus armatus, coding D. armatus partly from Miragaia material; recovers D. armatus in Dacentrurinae with Alcovasaurus, Kentrosaurus, Thyreosaurus and Adratiklit."
+        },
+        {
+          "id": "cobos2010a",
+          "authors": "Cobos, A.; Royo-Torres, R.; Luque, L.; Alcalá, L.; Mampel, L.",
+          "year": 2010,
+          "title": "An Iberian stegosaurs paradise: The Villar del Arzobispo Formation (Tithonian–Berriasian) in Teruel (Spain)",
+          "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+          "publisher": "Elsevier BV",
+          "volume": "293",
+          "issue": "1-2",
+          "pages": "223-236",
+          "doi": "10.1016/j.palaeo.2010.05.024",
+          "notes": "Suggests from the Teruel stegosaur material that Dacentrurus and Miragaia are synonymous."
+        },
+        {
+          "id": "raven2017a",
+          "authors": "Raven, T. J.; Maidment, S. C. R.",
+          "year": 2017,
+          "title": "A new phylogeny of Stegosauria (Dinosauria, Ornithischia)",
+          "journal": "Palaeontology",
+          "volume": "60",
+          "issue": "3",
+          "pages": "401-408",
+          "doi": "10.1111/pala.12291",
+          "notes": "Recovers Miragaia as sister to Hesperosaurus and re-erects the genus."
+        },
+        {
+          "id": "costa2019a",
+          "authors": "Costa, F.; Mateus, O.",
+          "year": 2019,
+          "title": "Dacentrurine stegosaurs (Dinosauria): A new specimen of Miragaia longicollum from the Late Jurassic of Portugal resolves taxonomical validity and shows the occurrence of the clade in North America",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "14",
+          "issue": "11",
+          "pages": "e0224263",
+          "doi": "10.1371/journal.pone.0224263",
+          "notes": "Describes a second specimen and concludes that Miragaia longicollum is valid and distinct from Dacentrurus armatus, within Dacentrurinae."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "In its preferred analysis recovers Miragaia as sister to Adratiklit, closer to Stegosaurus than to Dacentrurus."
+        },
+        {
+          "id": "sánchez-fenollosa2024a",
+          "authors": "Sánchez-Fenollosa, S.; Escaso, F.; Cobos, A.",
+          "year": 2024,
+          "title": "A new specimen of Dacentrurus armatus Owen, 1875 (Ornithischia: Thyreophora) from the Upper Jurassic of Spain and its taxonomic relevance in the European stegosaurian diversity",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "203",
+          "issue": "3",
+          "pages": "zlae074",
+          "doi": "10.1093/zoolinnean/zlae074",
+          "notes": "Proposes Miragaia longicollum as a subjective junior synonym of Dacentrurus armatus."
+        },
+        {
+          "id": "costa2026a",
+          "authors": "Costa, F.",
+          "year": 2026,
+          "title": "Dacentrurine Stegosaurs in North America: New Occurrences from the Upper Jurassic of USA (Morrison Formation)",
+          "journal": "Diversity",
+          "publisher": "MDPI AG",
+          "volume": "18",
+          "issue": "3",
+          "pages": "143",
+          "doi": "10.3390/d18030143",
+          "notes": "Refers caudal spines from the Cleveland-Lloyd Quarry, Utah, to Miragaia sp. and a cervical plate to cf. Miragaia longicollum."
         }
       ],
       "taxonomy": [
@@ -151883,8 +151983,7 @@
         "Genasauria",
         "Thyreophora",
         "Stegosauria",
-        "Stegosauridae",
-        "Dacentrurinae"
+        "Stegosauridae"
       ],
       "authors": "Mateus, O.; Maidment, S. C. R.; Christiansen, N. A.",
       "described": 2009
@@ -152986,19 +153085,6 @@
       },
       "etymology": "Named for Markam County (also known as Monko), the region of Tibet where the holotype was found, combined with Greek 'sauros' meaning 'lizard'.",
       "description": "Monkonosaurus is a dubious genus of stegosaurian dinosaur from the Loe-ein Formation of eastern Tibet, of uncertain Late Jurassic to Early Cretaceous age. The type species is Monkonosaurus lawulacus.",
-      "dispute": {
-        "summary": "Monkonosaurus is a nomen dubium; its fragmentary material preserves no unique identifiable characters (Maidment and Wei, 2006). It is retained at Stegosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Stegosauria incertae sedis, nomen dubium with no diagnostic features."
-          },
-          {
-            "date": "2026-07-20",
-            "note": "Species status set to nomen dubium and the holotype corrected to the unnumbered IVPP material following Maidment and Wei (2006); the inflated Oxfordian–Albian age narrowed to the Kimmeridgian–Hauterivian range given by Dong (1990) and Maidment and Wei (2006)."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -153056,7 +153142,7 @@
             "status": "uncatalogued",
             "material": "Two partial vertebrae, three dermal plates, and a complete ilio-sacral block.",
             "completeness": "fragmentary",
-            "notes": "The holotype was never assigned a catalog number. Only the ilio-sacral block has been relocated at the IVPP, damaged since it was figured by Dong (1990); the vertebrae and dermal plates are now lost."
+            "notes": "The holotype was never assigned a catalog number. Only the ilio-sacral block has been relocated at the IVPP, damaged since it was figured by Dong (1990); the whereabouts of the vertebrae and dermal plates are unknown."
           },
           "size": {
             "length_m": {
@@ -153072,6 +153158,17 @@
       ],
       "references": [
         {
+          "id": "zhao1983a",
+          "authors": "Zhao, X.",
+          "year": 1983,
+          "title": "Phylogeny and evolutionary stages of Dinosauria",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "28",
+          "issue": "1-2",
+          "pages": "295-306",
+          "notes": "Names the genus Monkonosaurus without a species or description, a nomen nudum."
+        },
+        {
           "id": "zhao1986a",
           "authors": "Zhao, X.",
           "year": 1986,
@@ -153080,7 +153177,17 @@
           "publisher": "Geological Publishing House",
           "volume": "12",
           "pages": "67-73",
-          "notes": "Established the binomial Monkonosaurus lawulacus without a description, leaving it a nomen nudum."
+          "notes": "Credited by Olshevsky (1991) with the binomial Monkonosaurus lawulacus, a nomen nudum; Dong (1990) instead credits the binomial to Zhao (1983), which gives only the genus."
+        },
+        {
+          "id": "olshevsky1991a",
+          "authors": "Olshevsky, G.",
+          "year": 1991,
+          "title": "A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia",
+          "journal": "Mesozoic Meanderings",
+          "volume": "2",
+          "pages": "1-196",
+          "notes": "Lists Monkonosaurus Zhao, 1983 and M. lawulacus Zhao, 1986 as nomina nuda, made available by Dong (1990)."
         },
         {
           "id": "dong1990b",
@@ -153104,6 +153211,19 @@
           "pages": "621-634",
           "doi": "10.1017/s0016756806002500",
           "notes": "Reviewed the holotype, rejected each of the original diagnostic characters, and treated Monkonosaurus lawulacus as a nomen dubium."
+        },
+        {
+          "id": "maidment2008a",
+          "authors": "Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.",
+          "year": 2008,
+          "title": "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "6",
+          "issue": "4",
+          "pages": "367-407",
+          "doi": "10.1017/S1477201908002459",
+          "notes": "Maintained Monkonosaurus lawulacus as a nomen dubium and listed the IVPP ilio-sacral block as Stegosauria indet."
         }
       ],
       "taxonomy": [
@@ -210767,15 +210887,6 @@
       "placement": "incertae sedis",
       "etymology": "From Latin 'spica' meaning 'spike' and Latin 'mellum' meaning 'collar', referring to the spiked osteoderms fused to the rib of the holotype specimen",
       "description": "Spicomellus is an extinct genus of unusual early ankylosaurian dinosaur from the El Mers III Formation (Bathonian age) of Morocco. The genus contains a single species, Spicomellus afer, representing the oldest named definitive ankylosaur. The species was initially described in 2021 based on a single rib with fused osteoderms, rendering its life appearance and relationships uncertain. In 2025, several additional bones, including osteoderms and cranial and postcranial remains, were described, revealing that it bears a unique array of spines over the body, including extremely elongated spikes around the neck and pelvis. It likely had a tail weapon, making it the oldest known ankylosaur with this structure.",
-      "dispute": {
-        "summary": "Spicomellus is the earliest known definitive ankylosaur, but its position is unresolved; Maidment and colleagues (2025) recover it as an early-diverging ankylosaurid while reference works leave it unplaced to family. It is retained at Ankylosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Ankylosauria incertae sedis, family placement of this earliest ankylosaur not firmly resolved."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -210888,7 +210999,8 @@
           "title": "Extreme armour in the world's oldest ankylosaur",
           "journal": "Nature",
           "pages": "1-6",
-          "doi": "10.1038/s41586-025-09453-6"
+          "doi": "10.1038/s41586-025-09453-6",
+          "notes": "Considers it most likely an early-diverging ankylosaurid, inside Ankylosauridae in the implied-weights tree and in a polytomy with Ankylosauridae and Nodosauridae in the reduced consensus tree."
         },
         {
           "id": "maidment2021a",
@@ -225162,20 +225274,7 @@
         "phonetic": "tyen-CHIH-SAWR-us"
       },
       "etymology": "From Chinese meaning 'heavenly pool lizard', referring to Tianchi (Heavenly Lake) near the discovery locality in Xinjiang, China.",
-      "description": "Tianchisaurus, also invalidly called Tianchiasaurus and \"Jurassosaurus\", is a genus of ankylosaurian dinosaur from the Late Jurassic (Oxfordian-Kimmeridgian) Toutunhe Formation of China. While many later-diverging ankylosaurids had bony clubs at the tips of their tails, Tianchisaurus likely lacked such a structure.",
-      "dispute": {
-        "summary": "Tianchisaurus is a nomen dubium; its material is lost and the holotype lacked distinguishing characters (Arbour and Currie, 2015), leaving it Ankylosauria indeterminate. It is retained at Ankylosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Ankylosauria incertae sedis, nomen dubium with lost, undiagnostic material."
-          },
-          {
-            "date": "2026-10-08",
-            "note": "Type species set to nomen dubium and diagnostic features removed, following Arbour and Currie (2015)."
-          }
-        ]
-      },
+      "description": "Tianchisaurus, also invalidly called Tianchiasaurus and \"Jurassosaurus\", is a genus of ankylosaurian dinosaur from the Middle Jurassic Toutunhe Formation of China. While many later-diverging ankylosaurids had bony clubs at the tips of their tails, Tianchisaurus likely lacked such a structure.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -225304,7 +225403,7 @@
           "issue": "5",
           "pages": "385-444",
           "doi": "10.1080/14772019.2015.1059985",
-          "notes": "Regarded Tianchisaurus as Ankylosauria indeterminate, its holotype undiagnostic."
+          "notes": "Regards it as a nomen dubium, Ankylosauria indet.; the holotype could not be located in 2010, its supposed tail club is probably not one, and it lacks distinguishing characters."
         }
       ],
       "taxonomy": [
@@ -225701,7 +225800,7 @@
       },
       "description": "Tianzhenosaurus is a genus of ankylosaurid dinosaurs known from the Late Cretaceous Huiquanpu Formation of Shanxi Province, China. The genus contains two species, T. youngi (the type species) and T. chengi.\n",
       "dispute": {
-        "summary": "The validity of Tianzhenosaurus is contested. Sullivan (1999) and Arbour and Currie (2015) treated T. youngi as a junior subjective synonym of the Mongolian ankylosaurid Saichania chulsanensis, finding no taxonomically significant differences between the holotype skulls. In 2024, Pang, Li and Guo described a second species, T. chengi, treating Tianzhenosaurus as a valid genus. No broad consensus has been reached.\n",
+        "summary": "The validity of Tianzhenosaurus is contested. Sullivan (1999) treated T. youngi as a junior subjective synonym of the Mongolian ankylosaurid Saichania chulsanensis on overall skull similarity, despite differences in the arrangement of cranial osteoderms, and Arbour and Currie (2015) formalized the synonymy, finding no taxonomically significant differences between the holotype skulls. In 2024, Pang, Li and Guo described a second species, T. chengi, treating Tianzhenosaurus as a valid genus. No broad consensus has been reached.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -240912,7 +241011,7 @@
       "etymology": "From 'Wuerho', the town in Xinjiang near which the fossils were collected, and Greek 'sauros' ('lizard'); meaning 'Wuerho lizard'.",
       "description": "Wuerhosaurus is an extinct genus of stegosaurine stegosaur dinosaurs from the Early Cretaceous of China. The genus contains two species, Wuerhosaurus homheni, the type species named in 1973, and Wuerhosaurus ordosensis, named in 1993. It is one of the youngest (most recent) known stegosaurs in the fossil record, alongside Mongolostegus and Yanbeilong.",
       "dispute": {
-        "summary": "The validity of Wuerhosaurus has been contested, though recent work favors retaining it. Maidment and colleagues (2008) found the type species nested among species of Stegosaurus and recombined it as Stegosaurus homheni, treating the genus as invalid. Raven and colleagues (2023) reinstated it, noting the labile phylogenetic position of Hesperosaurus, Stegosaurus and Wuerhosaurus and preferring to recognize the three as distinct genera; Jia and colleagues (2024) likewise count the genus among the few valid Cretaceous stegosaurs, and Sánchez-Fenollosa and colleagues (2025) report tree topologies that challenge the synonymization directly. The genus is retained. Its diagnosis remains weak, however: Sánchez-Fenollosa and colleagues (2025) undermine the one candidate autapomorphy, so the current case for the genus rests on phylogenetic conservatism rather than on a secure diagnosis.\n",
+        "summary": "The validity of Wuerhosaurus has been contested, though recent work favors retaining it. Maidment and colleagues (2008) found the type species nested among species of Stegosaurus and recombined it as Stegosaurus homheni, treating the genus as invalid. Raven and colleagues (2023) reinstated it, noting the labile phylogenetic position of Hesperosaurus, Stegosaurus and Wuerhosaurus and preferring to recognize the three as distinct genera. Zafaty and colleagues (2024) still treat the species as Stegosaurus homheni, recovering it with S. stenops in a strongly supported clade. Jia and colleagues (2024) likewise count the genus among the few valid Cretaceous stegosaurs, and Sánchez-Fenollosa and Cobos (2025) report tree topologies that challenge the synonymization directly. The genus is retained. Its diagnosis remains weak, however: Sánchez-Fenollosa and Cobos (2025) find the one candidate autapomorphy also in Yanbeilong and the Zhongpu stegosaur and call for a taxonomic revision of the Early Cretaceous Chinese stegosaurs.\n",
         "history": [
           {
             "date": "2026-08-07",
@@ -241071,6 +241170,18 @@
           "pages": "165-189",
           "doi": "10.3897/vz.75.e146618",
           "notes": "Reports topologies that challenge the synonymization with Stegosaurus, while undermining the candidate autapomorphy."
+        },
+        {
+          "id": "zafaty2024a",
+          "authors": "Zafaty, O.; Oukassou, M.; Riguetti, F.; Company, J.; Bendrioua, S.; Tabuce, R.; Charrière, A.; Pereda-Suberbiola, X.",
+          "year": 2024,
+          "title": "A new stegosaurian dinosaur (Ornithischia: Thyreophora) with a remarkable dermal armour from the Middle Jurassic of North Africa",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "131",
+          "pages": "344-362",
+          "doi": "10.1016/j.gr.2024.03.009",
+          "notes": "Still treats the species as Stegosaurus homheni, recovering it with S. stenops in a strongly supported clade."
         },
         {
           "id": "carpenter2001b",
@@ -251209,9 +251320,9 @@
         "phonetic": "juh-JAHNG-oh-SAWR-us"
       },
       "etymology": "Named after Zhejiang Province, eastern China where it was found, combined with Greek sauros meaning 'lizard'; translates as 'Zhejiang lizard'",
-      "description": "Zhejiangosaurus is an extinct genus of ankylosaurian dinosaur from the Upper Cretaceous (Cenomanian stage) of Zhejiang, eastern China. It was first named by a group of Chinese authors Lü Junchang, Jin Xingsheng, Sheng Yiming and Li Yihong in 2007 and the type species is Zhejiangosaurus lishuiensis (\"from Lishui\", where the fossil was found). It has no diagnostic features, and thus is a nomen dubium.",
+      "description": "Zhejiangosaurus is an extinct genus of ankylosaurian dinosaur from the Upper Cretaceous (Cenomanian stage) of Zhejiang, eastern China. It was named by Lü Junchang and colleagues in 2007, and the type species is Zhejiangosaurus lishuiensis (\"from Lishui\", where the fossil was found). It has no diagnostic features, and thus is a nomen dubium.",
       "dispute": {
-        "summary": "Zhejiangosaurus is a nomen dubium; Arbour and Currie (2015) found its preserved traits too widespread to diagnose. It is retained at Ankylosauria incertae sedis.\n",
+        "summary": "Lü and colleagues (2007) described Zhejiangosaurus as a nodosaurid. Arbour and Currie (2015) recovered it as a derived ankylosaurid in a polytomy with ankylosaurines, and treated it as a nomen dubium because the holotype has no autapomorphy or unique combination of characters. Oyabu and colleagues (2026) place it outside Nodosauridae. It is placed at Ankylosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -251336,6 +251447,17 @@
           "pages": "385-444",
           "doi": "10.1080/14772019.2015.1059985",
           "notes": "Found Zhejiangosaurus too poorly diagnosable to uphold, a nomen dubium."
+        },
+        {
+          "id": "oyabu2026a",
+          "authors": "Oyabu, S.; Kobayashi, Y.; Zelenitsky, D. K.; Fiorillo, A. R.; Kano, M.",
+          "year": 2026,
+          "title": "A new nodosaurid ankylosaur (Dinosauria: Ornithischia) from the Upper Cretaceous Hikagenosawa Formation in Japan reveals dispersal pattern of Asian nodosaurid ankylosaurs",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "pages": "106477",
+          "doi": "10.1016/j.cretres.2026.106477",
+          "notes": "Places it outside Nodosauridae under its definition of that clade, and prunes it a posteriori as unstable."
         },
         {
           "id": "ma2016a",
@@ -251955,9 +252077,9 @@
         "phonetic": "johng-YWEN-SAWR-us"
       },
       "etymology": "Zhongyuan lizard",
-      "description": "Zhongyuansaurus is an extinct genus of ankylosaurid dinosaurs known from the Early Cretaceous Haoling Formation of what is now Henan Province, China. The genus contains two species, Z. luoyangensis, named in 2007, and Z. junchangi, named in 2025, both known from a single partial skeleton. Zhongyuansaurus is similar to Gobisaurus, prompting some researchers to regard the genera as synonymous.",
+      "description": "Zhongyuansaurus is an extinct genus of ankylosaurid dinosaurs known from the Early Cretaceous Haoling Formation of what is now Henan Province, China. The genus contains two species, Z. luoyangensis, named in 2007, and Z. junchangi, named in 2025, each known from a single partial skeleton. Zhongyuansaurus is similar to Gobisaurus, and Arbour and Currie (2015) treated the two as synonyms.",
       "dispute": {
-        "summary": "The validity of Zhongyuansaurus is contested. Arbour and Currie (2015) found its remains indistinguishable from Gobisaurus and treated it as a junior synonym, a view followed by Jones (2026); it is retained as a valid shamosaurine pending broad consensus.\n",
+        "summary": "The validity of Zhongyuansaurus is contested. Arbour and Currie (2015) found its remains indistinguishable from Gobisaurus and treated it as a junior synonym, a view followed by Jones (2026). Zhang and colleagues (2025) reject the synonymy, citing a longer tooth row (31.7% of skull length against 26.7% in Gobisaurus) and a straight rather than arched preorbital profile, and name a second species, Z. junchangi. Arbour and Currie (2015) group it, as Gobisaurus, with Shamosaurus in Shamosaurinae; Zhang and colleagues (2025) assign it only to Ankylosauridae.\n",
         "history": [
           {
             "date": "2026-06-26",
@@ -252013,7 +252135,7 @@
             "region": "Henan",
             "locality": "Liudian Township",
             "formation": "Haoling",
-            "notes": "Xu and colleagues (2007) and Arbour and Currie (2015) give the Mangchuan Formation, which Lü and colleagues (2013) divide into the Xiahedong, Haoling and Shangdonggou formations, placing their own sauropod in the Haoling near Santun and Liudian. No source places this holotype in one of the three.",
+            "notes": "Xu and colleagues (2007) and Arbour and Currie (2015) give the Mangchuan Formation, which Lü and colleagues (2013) divide into the Xiahedong, Haoling and Shangdonggou formations. Zhang and colleagues (2025) place the holotype in the upper Haoling Formation.",
             "region_code": "CN-HA"
           },
           "size": {
@@ -252138,7 +252260,7 @@
           "issue": "1",
           "pages": "60-73",
           "doi": "10.19800/j.cnki.aps.2023037",
-          "notes": "Names Z. junchangi from the upper Haoling (top of the Haoling to lower Shangdonggou in its setting section), tentatively Albian, and revises the genus diagnosis."
+          "notes": "Names Z. junchangi, revises the genus diagnosis, and rejects the synonymy with Gobisaurus on tooth-row length and a straight preorbital profile; places both species in the upper Haoling."
         }
       ],
       "taxonomy": [
