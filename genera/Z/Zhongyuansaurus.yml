@@ -20,17 +20,14 @@ locomotion: quadrupedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Skull length to width ratio approximately 1.4:1, with flat parietal region
-    and straight posterior and lateral margins posterior to orbits in dorsal
-    view
-  - No premaxillary teeth; maxillary tooth row straight with 18 teeth;
-    semi-circular depression ventral to occipital condyle
-  - Paroccipital process not fused with squamosal
-  - Widths of humerus at proximal and distal ends nearly equal; M. latissimus
-    dorsi and M. teres major attachments are concave depressions rather than
-    scars on posterior proximal humerus
-  - Ischial shaft relatively straight, differing from other nodosaurids with
-    curved shafts
+  - Frontonasal region rugose, with irregular cranial ornamentation not divisible
+    into distinct caputegulae
+  - Longitudinal groove on the dorsal surface of the premaxilla (also in
+    Shamosaurus)
+  - Squamosal horn shorter and more rounded than in Crichtonpelta
+  - Preorbital region straight in lateral view (arched in Shamosaurus and
+    Gobisaurus)
+  - Tooth row 31.7% of skull length (40% in Shamosaurus, 26.7% in Gobisaurus)
 appearance:
   integument: armored
   evidence: direct
@@ -77,6 +74,40 @@ species:
         one pubis; osteoderms; dorsal ribs.
       completeness: partial
     erected_in: xu2007a
+  - name: Zhongyuansaurus junchangi
+    etymology: Honors Lü Junchang, the late Chinese vertebrate paleontologist who
+      contributed to paleontological research in Henan.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Aptian
+        - Albian
+    location:
+      country: CN
+      region: CN-HA
+      locality: Zhongwa Village, Liudian Township, Ruyang County
+      formation: Haoling
+      part: upper
+      coordinates: [34.105205, 112.510380]
+    type_specimen:
+      specimen_id:
+        - HGM 41HIII-0708
+      specimen_type: holotype
+      institution: HGM
+      material: Right mandible; 14 caudal vertebrae; 7 fused terminal caudal
+        vertebrae forming the tail club handle; 4 ribs; 10 haemal arches; left
+        humerus; right metatarsal II; 41 osteoderms.
+      completeness: partial
+    diagnostic_features:
+      - At least five swallowtail-shaped, imbricate osteoderms in the tail region
+      - Small osteoderms attached to the surface of the tail club handle (absent
+        in Z. luoyangensis)
+      - Ratio of humeral shaft circumference to humeral length 0.46 (0.55 in Z.
+        luoyangensis)
+    erected_in: zhang2025z
 references:
   - id: xu2007a
   - id: arbour2015a
@@ -86,3 +117,7 @@ references:
       Xiahedong, Haoling and Shangdonggou formations.
   - id: jones2026a
     notes: Treats Zhongyuansaurus as a synonym of Gobisaurus.
+  - id: zhang2025z
+    notes: Names Z. junchangi from the upper Haoling (top of the Haoling to lower
+      Shangdonggou in its setting section), tentatively Albian, and revises the
+      genus diagnosis.
