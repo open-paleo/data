@@ -1,5 +1,19 @@
 # *Chingkankousaurus*
 
+## Does the provincial lithostratigraphy place the *Chingkankousaurus* holotype in a formation?
+
+*2026-10-23*
+
+**Conclusion.** Yes, the Hongtuya. The provincial lithostratigraphy lists "*Chinkangkousaurus fragivis*" from the Tianqiaotun area of Laiyang in the Hongtuya Formation; see the [Wangshi](../../stratigraphy/w/wangshi.md) entry of the same date. Governs `location.formation: Hongtuya` on [*Chingkankousaurus fragilis*](../../../genera/C/Chingkankousaurus.yml). Supersedes the 2026 entry below, which stopped at the Wangshi Group because no source read named a formation.
+
+**Evidence.**
+- zhang1996a, p. 247: "The area around Tianqiaotun, Laiyang, yields *Tsintaosaurus spinorhinus*, *Tanius chinkangkouensis*, *T. sinensis*, *Chinkangkousaurus fragivis*" (translated), in the Hongtuya fauna.
+
+**Ruled out.**
+- *The Jingangkou Formation.* The genus name takes the place Chingkankou, but the provincial Jingangkou Formation is the lake beds above the hadrosaur horizon.
+
+**Open.** The volume lists the taxon by area, not by specimen; reading the entry as the holotype IVPP V836 is our inference.
+
 ## Which unit is the *Chingkankousaurus* holotype from?
 
 *2026-08-15*
@@ -16,6 +30,7 @@
 
 ## References
 
+- `zhang1996a`: Zhang, Z. Q.; Liu, M. W. (eds.) (1996). 山东省岩石地层 [Stratigraphy (Lithostratigraphic) of Shandong Province]. China University of Geosciences Press, Wuhan.
 - `brusatte2013a`: Brusatte, S. L.; Hone, D. W. E.; Xu, X. (2013). Phylogenetic revision of Chingkankousaurus fragilis, a forgotten tyrannosauroid specimen from the Late Cretaceous of China. In *Tyrannosaurid Paleobiology*. Indiana University Press, Bloomington.
 - `buffetaut1995a`: Buffetaut, E. (1995). An ankylosaurid dinosaur from the Upper Cretaceous of Shandong (China). *Geological Magazine* 132(6): 683-692. doi:10.1017/S0016756800018914
 - `zhang2019a`: Zhang, J.; Wang, X.; Wang, Q.; Jiang, S.; Cheng, X.; Li, N.; Qiu, R. (2019). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of Shandong, China. *Anais da Academia Brasileira de Ciências* 91(suppl 2). doi:10.1590/0001-3765201720160920

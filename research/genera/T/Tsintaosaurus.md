@@ -1,5 +1,20 @@
 # *Tsintaosaurus*
 
+## Which formation is the *Tsintaosaurus* holotype from, after the provincial scheme?
+
+*2026-10-23*
+
+**Conclusion.** The Hongtuya Formation. The provincial lithostratigraphy lists *Tsintaosaurus spinorhinus* from the Tianqiaotun area of Laiyang in the Hongtuya and places the Jingangkou hadrosaur sites in it, restricting its Jingangkou Formation to the lake beds above; the reasoning is in the [Wangshi](../../stratigraphy/w/wangshi.md) entry of the same date. Governs `location.formation: Hongtuya` on [*Tsintaosaurus spinorhinus*](../../../genera/T/Tsintaosaurus.yml). Supersedes the formation in the 2026 entries below, which took "Jingangkou Formation" from Prieto-Márquez and Wagner (2013), and answers their Open note on An and colleagues' (2015) Hongtuya.
+
+**Evidence.**
+- zhang1996a, p. 247: "The area around Tianqiaotun, Laiyang, yields *Tsintaosaurus spinorhinus*" (translated), in the Hongtuya fauna; p. 239: hadrosaurs "at Tianqiaotun, Jiangjunding, and Jingangkou" in the Hongtuya.
+- an2015a, p. 81: *Tsintaosaurus spinorhinus* among taxa "reported in recent years from the Hongtuya Formation".
+
+**Ruled out.**
+- *The Jingangkou Formation.* Prieto-Márquez and Wagner (2013) use the name in the wider sense of Hu and colleagues (2001); the provincial Jingangkou is the lake unit above.
+
+**Open.** Nothing beyond the Wangshi entry's.
+
 ## Is the *Tsintaosaurus* holotype from the Hsikou gully near Chingkankou?
 
 *2026-09-08*
@@ -47,9 +62,10 @@
 
 ## References
 
+- `zhang1996a`: Zhang, Z. Q.; Liu, M. W. (eds.) (1996). 山东省岩石地层 [Stratigraphy (Lithostratigraphic) of Shandong Province]. China University of Geosciences Press, Wuhan.
+- `an2015a`: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X. (2015). Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China. *Journal of Palaeogeography* 5(1): 72-99. doi:10.1016/j.jop.2015.11.002
 - `prieto-márquez2013b`: Prieto-Márquez, A.; Wagner, J. R. (2013). The "unicorn" dinosaur that wasn't: a new reconstruction of the crest of Tsintaosaurus and the early evolution of the lambeosaurine crest and rostrum. *PLOS ONE* 8(11): e82268. doi:10.1371/journal.pone.0082268
 - `chure2000a`: Chure, D. J. (2000). A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae. Doctoral thesis, Columbia University.
 - `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 438-463. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `yao2026a`: Yao, H.; Qiu, W.; Yu, J.; Yang, L.; Wang, H.; Cao, S.; Zhao, K.; Xu, M.; Shi, G.; Lou, F.; Zeng, C.; Lu, P.; Wu, R.; Xu, X.; Han, F.; Xing, H. (2026). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of South China, providing further support for the possible Asian origin of Brachylophosaurini. *Journal of Systematic Palaeontology* 24(1): 2635569. doi:10.1080/14772019.2026.2635569
-- `an2015a`: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X. (2015). Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China. *Journal of Palaeogeography* 5(1): 72-99. doi:10.1016/j.jop.2015.11.002
