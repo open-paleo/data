@@ -20,16 +20,11 @@ paleoenvironment:
   - fluvial
   - lacustrine
 diagnostic_features:
-  - Sacral vertebrae composed of more than nine vertebral centra (exceeding all
-    other Hadrosaurinae genera), with a relatively deep ventral groove
-  - Dorsal surface of skull relatively flat with ventral concavity from
-    posterior supratemporal fenestra forward to middle of frontal bone
-  - Long dental battery with a single dental groove and a long toothless region
-    anterior to the dentary
-  - Ischium straight and long with extremely weak, small apical expansion at
-    terminal end
-  - Exceptionally large body size with total assembled length exceeding the
-    known Hadrosaurinae
+  - Maxilla with 62 or more tooth positions
+  - Dentary with 60 or more alveoli
+  - Paired exoccipitals with a strongly posterodorsally expanded central shelf,
+    2.5 to 3.0 times as tall as the foramen magnum
+  - Gigantic size, significantly larger than Edmontosaurus regalis
 appearance:
   features:
     - elongate snout
@@ -49,9 +44,10 @@ identifiers:
 synonyms:
   - name: Huaxiaosaurus
     type: junior subjective
-    reason: Interpreted (along with Zhuchengosaurus) as intraspecific variation
-      within Shantungosaurus, with apparent differences attributed to ontogeny
-      and individual polymorphism.
+    reason: Huaxiaosaurus aigahtens Zhao and colleagues, 2011. Xing and
+      colleagues (2014) treat the differences given for it, in the sacral count
+      and sulcus, the supratemporal fenestra and femur length, as intraspecific
+      variation or distortion.
 species:
   - name: Shantungosaurus giganteus
     etymology: "From Latin 'giganteus' meaning 'gigantic', a reference to this
@@ -86,17 +82,29 @@ species:
       specimen_id: [ GMV 1780-1 ]
       specimen_type: holotype
       institution: GMC
-      material: Portion of skull posterior to orbit, including left quadrate, left and
-        right maxillae, left prefrontal, left and right dentary fragments, partial
-        premaxilla, anterior vomer, and right jugal
+      material: Partial, articulated posterior portion of a skull, including most of
+        the braincase and some neighboring dermal bones of the skull roof (paired
+        postorbitals and squamosals)
       completeness: fragmentary
     synonyms:
       - name: Zhuchengosaurus
         type: junior subjective
-        reason: Z. maximus is interpreted as an earlier growth stage of Shantungosaurus
-          giganteus.
+        reason: Zhuchengosaurus maximus Zhao and colleagues, 2007. Xing and
+          colleagues (2014) treat the differences between it, Huaxiaosaurus and
+          S. giganteus as intraspecific variation or distortion.
     erected_in: hu1973a
+    described_in: xing2014b
 references:
   - id: hu1973a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: xing2014b
+    notes: >
+      Source of the amended diagnosis and the synonymies; restricts the
+      holotype GMV 1780-1 to the posterior skull.
+  - id: hu2001a
+    notes: >
+      Redescribes the type material bone by bone and numbers the holotype and
+      paratype; its diagnosis restates Hu (1973).
+  - id: zhao2007a
+  - id: zhao2011a
