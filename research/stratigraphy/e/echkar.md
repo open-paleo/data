@@ -1,5 +1,23 @@
 # Echkar
 
+## Are the Iguidi beds Echkar or Farak, and what age does the Echkar keep?
+
+*2026-10-23*
+
+**Conclusion.** The Iguidi (In Abangharit) beds are Farak, and the Echkar is dated only by position, Albian to Cenomanian. Sereno and colleagues (2026) take both formations from Faure's (1966) type sections north of Tanout: the Echkar is barren cross-bedded sandstone, the Farak lies above it, directly below the Cenomanian–Turonian limestone, and Iguidi's fauna and position under that limestone tie it to the Farak. The Iguidi assignments to the Echkar came from the same group's earlier papers, which gave no reason for them. With the Iguidi fauna moved, no dated fossil remains in the Echkar; it lies above the Aptian–Albian Elrhaz and below the Early–Middle Cenomanian Farak. Governs `stages: [Albian, Cenomanian]` and `period: [Early Cretaceous, Late Cretaceous]` on [Echkar](../../../stratigraphy/e/echkar.yml), superseding `[Cenomanian]`, which rested on the Iguidi fauna; and `formation: Farak` on [*Rugops primus*](../../../genera/R/Rugops.yml) and [*Carcharodontosaurus iguidensis*](../../../genera/C/Carcharodontosaurus.yml).
+
+**Evidence.**
+- sereno2026a, supplementary materials §2.1: "Based on our field work, we identify the strata in these two fossil areas as the Farak Formation (previously identified as the Echkar Formation)"; "it is impossible to make an assignment of formation to the outcrops in either Iguidi or Jenguebi areas without reference to the sections Faure described for each formation north of Tanout".
+- sereno2026a, supplementary materials §2.2: at Mount Echkar, "light-colored, crossbedded sandstones", and "we were unable to find fossils of any kind on Mount Echkar including petrified wood"; "the barren Echkar Formation lies at the top of the Tegama Series (GAD7, 8) below the fossiliferous Farak Formation, as Faure (12) described in his composite section northeast of Tanout"; the Farak strata "underlie the Cenomanian-Turonian limestone, which is exposed to the south and west of Jenguebi and Iguidi, respectively".
+- sereno2026a, supplementary materials §2.1: the Farak "is the fossil-bearing unit preserving the remains of *S. mirabilis* and its associated Early-Middle Cenomanian vertebrate fauna"; earlier Iguidi papers placed their localities in the Echkar, and Young and colleagues "offered no reasoning for either the formational assignment or the age designation".
+- sereno2004a and brusatte2007a: *Rugops* and *C. iguidensis* from the "Echkar Formation" at Iguidi, without a stratigraphic argument.
+
+**Ruled out.**
+- *Cenomanian for the Echkar.* It rested on the Iguidi fauna (brusatte2007a; sereno2004a), now assigned to the Farak.
+- *Albian alone.* Sereno and colleagues relay Taquet's Tegama succession as "ending in the Albian", but Taquet's geology chapters have not been read, and a relayed age adds nothing until the original is.
+
+**Open.** The reassignment rests on correlation from Faure's sections, outcrop continuity and fauna; no section was measured at Iguidi. Faure (1966) and Taquet's (1976) geology chapters, which define the formations and the GAD levels, have not been read. Whether the Farak belongs to the Tegama Group is unstated, so the entry carries no parent.
+
 ## Does the lowest Echkar Formation share the Aptian–Albian GAD 5 level at Gadoufaoua?
 
 *2026-10-23*
@@ -19,6 +37,9 @@
 
 ## References
 
+- `sereno2026a`: Sereno, P. C.; Vidal, D.; Myhrvold, N. P.; Johnson-Ransom, E.; Ciudad Real, M.; Baumgart, S. L.; Sánchez Fontela, N.; Green, T. L.; Saitta, E. T.; Adamou, B.; Bop, L. L.; Keillor, T. M.; Fitzgerald, E. C.; Dutheil, D. B.; Laroche, R. A. S.; Demers-Potvin, A. V.; Simarro, Á.; Gascó-Lluna, F.; Lázaro, A.; Gamonal, A.; Beightol, C. V.; Reneleau, V.; Vautrin, R.; Bertozzo, F.; Granados, A.; Kinney-Broderick, G.; Mallon, J. C.; Lindoso, R. M.; Ramezani, J. (2026). Scimitar-crested Spinosaurus species from the Sahara caps stepwise spinosaurid radiation. *Science* 391: eadx5486. doi:10.1126/science.adx5486
+- `sereno2004a`: Sereno, P. C.; Wilson, J. A.; Conrad, J. L. (2004). New dinosaurs link southern landmasses in the Mid-Cretaceous. *Proceedings of the Royal Society of London. Series B: Biological Sciences* 271(1546): 1325-1330. doi:10.1098/rspb.2004.2692
+- `brusatte2007a`: Brusatte, S. L.; Sereno, P. C. (2007). A new species of Carcharodontosaurus (Dinosauria: Theropoda) from the Cenomanian of Niger and a revision of the genus. *Journal of Vertebrate Paleontology* 27(4): 902-916. doi:10.1671/0272-4634(2007)27[902:ANSOCD]2.0.CO;2
 - `taquet1976a`: Taquet, P. (1976). Géologie et paléontologie du gisement de Gadoufaoua (Aptien du Niger). *Cahiers de Paléontologie*.
 - `taquet1999a`: Taquet, P.; Russell, D. A. (1999). A massively-constructed iguanodont from Gadoufaoua, lower Cretaceous of Niger. *Annales de Paléontologie* 85(1): 85-96. doi:10.1016/s0753-3969(99)80009-3
 - `galton1982a`: Galton, P. M.; Taquet, P. (1982). Valdosaurus, a hypsilophodontid dinosaur from the Lower Cretaceous of Europe and Africa. *Geobios* 15(2): 147-159.
