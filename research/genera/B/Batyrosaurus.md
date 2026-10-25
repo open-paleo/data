@@ -22,7 +22,7 @@
 
 ## References
 
-- `godefroit2012a`: Godefroit, P.; Escuillié, F.; Bolotsky, Y. L.; Lauters, P. (2012). A new basal hadrosauroid dinosaur from the Upper Cretaceus of Kazakhstan. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*, pp. 334-358. Indiana University Press, Bloomington.
+- `godefroit2012a`: Godefroit, P.; Escuillié, F.; Bolotsky, Y. L.; Lauters, P. (2012). A new basal hadrosauroid dinosaur from the Upper Cretaceous of Kazakhstan. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*, pp. 334-358. Indiana University Press, Bloomington.
 - `verdú2017a`: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L. (2017). New systematic and phylogenetic data about the early Barremian Iguanodon galvensis (Ornithopoda: Iguanodontoidea) from Spain. *Historical Biology* 30(4): 437-474. doi:10.1080/08912963.2017.1287179
 - `poole2022a`: Poole, K. E. (2022). Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality. *Palaeontologia Electronica* 25(3): a30. doi:10.26879/702
 - `lockwood2021a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2021). A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England. *Journal of Systematic Palaeontology* 19(12): 847-888. doi:10.1080/14772019.2021.1978005
