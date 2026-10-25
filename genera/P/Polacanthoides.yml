@@ -1,25 +1,13 @@
 genus: Polacanthoides
 parent: Ankylosauria
 placement: incertae sedis
+erected_in: nopcsa1928a
 pronunciation:
   phonetic: pol-uh-KAN-thoy-deez
 etymology: From Polacanthus (the related genus) and Greek -oides (-οειδής,
   'resembling' or 'like'), meaning 'resembling Polacanthus'
 description: Polacanthoides is a dubious genus of ankylosaurian dinosaur from the
-  Weald Clay of England. The type species is P. ponderosus.
-dispute:
-  summary: >
-    Polacanthoides is a nomen dubium. Its name-bearing material is a chimera
-    assembled by Nopcsa (1928) from a partial scapula from the Wealden of
-    Sussex, previously referred to Hylaeosaurus, together with a humerus and
-    tibia from the Wessex Formation of the Isle of Wight that are now known
-    only from casts. Raven and colleagues (2020) found no autapomorphies of
-    Hylaeosaurus on the scapula and none of Polacanthus on the humerus and
-    tibia, and regarded all of the material as indeterminate ankylosaur
-    remains. It is retained at Ankylosauria incertae sedis.
-  history:
-    - date: "2026-06-26"
-      note: Placed at Ankylosauria incertae sedis; indeterminate nomen dubium.
+  Wealden of southern England. The type species is P. ponderosus.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -56,16 +44,25 @@ species:
       group: Wealden
     type_specimen:
       specimen_id: [ NHMUK PV OR 2584 ]
-      specimen_type: holotype
+      specimen_type: syntype
       institution: NHMUK
-    erected_in: nopcsa1928a
+      notes: Nopcsa (1929) names the scapula and the humerus NHMUK PV R 1106
+        together as the type. Only the scapula is listed here, because the
+        humerus, now known from a cast, comes from the Wessex Formation of the
+        Isle of Wight (Raven and colleagues, 2020), not from Sussex.
+    erected_in: nopcsa1929a
 references:
-  - id: mantell1833b
-    notes: First referred the holotype specimen (NHMUK PV OR 2584) to Hylaeosaurus;
-      Nopcsa (1928) later made it the type of Polacanthoides.
+  - id: mantell1841a
+    notes: Referred a scapula from Bolney, Sussex (NHMUK PV OR 2584), to
+      Hylaeosaurus; Nopcsa (1928) later included it in the type material of
+      Polacanthoides.
   - id: nopcsa1928a
-    notes: Erects Polacanthoides ponderosus on a scapula, humerus and tibia as a
-      brief note, deferring the full description to a later paper.
+    notes: Names the genus Polacanthoides, without a species, in a footnote on
+      a scapula, humerus and tibia, deferring the redescription to a later
+      paper.
+  - id: nopcsa1929a
+    notes: Names the species ponderosus for the genus Nopcsa (1928) had erected
+      without one, on the scapula and humerus.
   - id: raven2020a
     notes: Reassessed the Polacanthoides type material as indeterminate ankylosaur
       remains lacking the diagnostic features of either Hylaeosaurus or Polacanthus,
