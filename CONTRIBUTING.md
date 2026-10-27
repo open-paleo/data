@@ -186,6 +186,10 @@ taken from the literature rather than from a taxobox.
   not state. A quotation keeps its source's wording.
 - **One dash style.** A dash in prose is a spaced em dash ( — ); a range
   takes an unspaced en dash (Aptian–Albian, 163–145 Ma).
+- **`-like` compounds take a hyphen.** Write "bird-like", "blade-like",
+  "cup-like", not "birdlike" or "cuplike". Established words that are not
+  built that way (unlike, alike, lifelike) are unaffected, and a quotation
+  or a title keeps its source's form.
 
 ## Inline Reference Format
 

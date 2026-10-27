@@ -17,5 +17,6 @@
     }
   ],
   "dictionaries": ["taxonomy", "etymology-roots"],
+  "ignoreRegExpList": ["/\\b\\p{Lu}\\p{Ll}?\\. \\p{Ll}[\\p{Ll}-]*/gu"],
   "ignorePaths": ["dist/**", "media/**", "node_modules/**"]
 }
