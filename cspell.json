@@ -9,8 +9,13 @@
       "name": "taxonomy",
       "path": "./dictionaries/taxonomy.txt",
       "addWords": true
+    },
+    {
+      "name": "etymology-roots",
+      "path": "./dictionaries/etymology-roots.txt",
+      "addWords": true
     }
   ],
-  "dictionaries": ["taxonomy"],
+  "dictionaries": ["taxonomy", "etymology-roots"],
   "ignorePaths": ["dist/**", "media/**", "node_modules/**"]
 }
