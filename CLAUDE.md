@@ -21,6 +21,7 @@ Key rules that are easy to miss:
   each `return`/`continue`/`break`, chain them as `if`/`else if` instead
   of separate blocks
 - **No `// ---` section dividers**
+- **Exact dependency versions** — no `^` or `~` in `package.json`
 
 ESLint enforces formatting for `scripts/` and `.github/scripts/`.
 Always run `npm run lint` before considering code complete.

@@ -10,7 +10,7 @@
     "generate-dictionary": "node --experimental-strip-types scripts/generate-dictionary.ts",
     "lint": "eslint scripts/ .github/scripts/",
     "lint:fix": "eslint scripts/ .github/scripts/ --fix",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "node node_modules/typescript7/bin/tsc --noEmit",
     "research": "node --experimental-strip-types scripts/research.ts",
     "report-missing-fields": "node --experimental-strip-types scripts/report-missing-fields.ts",
     "audit-dois": "node --env-file-if-exists=.env --experimental-strip-types scripts/audit-dois.ts",
@@ -36,15 +36,16 @@
     "node": ">=24"
   },
   "dependencies": {
-    "yaml": "^2.8.3"
+    "yaml": "2.8.3"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^22.19.15",
+    "@stylistic/eslint-plugin": "5.10.0",
+    "@types/node": "24.19.2",
     "cspell": "8.17.5",
     "eslint": "9.18.0",
-    "json-schema-to-typescript": "^15.0.4",
-    "typescript": "5.7.3",
-    "typescript-eslint": "8.22.0"
+    "json-schema-to-typescript": "15.0.4",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "typescript-eslint": "8.72.1",
+    "typescript7": "npm:typescript@7.0.2"
   }
 }
