@@ -104,19 +104,21 @@ function runCspell(root: string, cspellArguments: Array<string>, input: string):
 }
 
 /**
- * Reduces a prose field to the text cspell should judge: quoted spans and
- * non-Latin script become spaces, and line breaks are folded so that each
- * field is one line of cspell's input.
+ * Reduces a prose field to the text cspell should judge: double-quoted spans
+ * (the spans the validator's `stripQuotedSpans` removes), non-Latin script and
+ * line breaks become spaces, so that each field is one line of cspell's input.
+ * Every character is replaced one for one, so a column cspell reports is also
+ * a position in the field's own text.
  *
  * @param text - The field's text.
- * @param stripQuotedSpans - The validator's quoted-span remover.
  * @returns The text to check.
  */
-function prepareText(text: string, stripQuotedSpans: (text: string) => string): string
+function prepareText(text: string): string
 {
-    return stripQuotedSpans(text)
-        .replace(/[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]+/gu, " ")
-        .replace(/\s+/g, " ");
+    return text
+        .replace(/"[^"]*"/g, (span) => " ".repeat(span.length))
+        .replace(/[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/gu, (character) => " ".repeat(character.length))
+        .replace(/\s/g, " ");
 }
 
 /**
@@ -156,8 +158,8 @@ function suggestionsFor(root: string, words: Array<string>): Map<string, Array<s
 }
 
 const context = loadValidationContext();
-const { root, proseFields, stripQuotedSpans } = context;
-const inputLines = proseFields.map((field) => prepareText(field.text, stripQuotedSpans));
+const { root, proseFields } = context;
+const inputLines = proseFields.map((field) => prepareText(field.text));
 const unknownWords = new Map<string, UnknownWord>();
 
 for (const line of runCspell(root, ["stdin", "--no-progress", "--no-summary", "--no-color"], inputLines.join("\n") + "\n").split("\n"))
@@ -171,10 +173,10 @@ for (const line of runCspell(root, ["stdin", "--no-progress", "--no-summary", "-
         const column = Number.parseInt(match[2], 10) - 1;
         const word = match[3];
         const field = proseFields[index];
-        const text = inputLines[index];
+        const text = field.text;
         const start = Math.max(0, column - snippetRadius);
         const end = Math.min(text.length, column + word.length + snippetRadius);
-        const snippet = `${start > 0 ? "…" : ""}${text.slice(start, end).trim()}${end < text.length ? "…" : ""}`;
+        const snippet = `${start > 0 ? "…" : ""}${text.slice(start, end).replace(/\s+/g, " ").trim()}${end < text.length ? "…" : ""}`;
         const entry = unknownWords.get(word) ?? { word, occurrences: new Array<Occurrence>(), suggestions: new Array<string>() };
 
         entry.occurrences.push({ file: path.relative(root, field.filePath), fieldPath: field.fieldPath, snippet });
