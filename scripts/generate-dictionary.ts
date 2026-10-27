@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
-import type { GenusData, InstitutionEntry, Reference, TreeNode } from "./types.ts";
+import type { CladeData, GenusData, InstitutionEntry, Reference, TreeNode } from "./types.ts";
 import {
     collectAllKeys,
     findYamlFiles,
@@ -156,11 +156,18 @@ for (const regionName of Object.values(loadRegionRegistry(path.join(root, "regio
     addNameWords(regionName);
 }
 
-const paleoVocabPath = path.join(root, "dictionaries", "paleo-vocab.txt");
-
-if (fs.existsSync(paleoVocabPath))
+// The curated lists: vocabulary, and taxon names the prose cites that no
+// record carries in a name field.
+for (const curatedName of ["paleo-vocab.txt", "taxon-names.txt"])
 {
-    const lines = fs.readFileSync(paleoVocabPath, "utf8").split("\n");
+    const curatedPath = path.join(root, "dictionaries", curatedName);
+
+    if (!fs.existsSync(curatedPath))
+    {
+        continue;
+    }
+
+    const lines = fs.readFileSync(curatedPath, "utf8").split("\n");
 
     for (const line of lines)
     {
@@ -213,6 +220,18 @@ for (const file of findYamlFiles(path.join(root, "genera")))
         words.add(data.genus);
     }
 
+    // Synonyms are taxon names too, and prose cites them by name: the junior
+    // synonyms a genus absorbed, and the species it was once filed under.
+    for (const synonym of data.synonyms ?? [])
+    {
+        addNameWords(synonym.name);
+    }
+
+    for (const specimen of data.notable_specimens ?? [])
+    {
+        addNameWords(specimen.species);
+    }
+
     if (data.species)
     {
         for (const species of data.species)
@@ -223,6 +242,11 @@ for (const file of findYamlFiles(path.join(root, "genera")))
                 {
                     words.add(part);
                 }
+            }
+
+            for (const synonym of species.synonyms ?? [])
+            {
+                addNameWords(synonym.name);
             }
 
             // Every rank, not just the formation: a member or bed name is
@@ -244,6 +268,14 @@ for (const file of findYamlFiles(path.join(root, "genera")))
                 }
             }
         }
+    }
+}
+
+for (const file of findYamlFiles(path.join(root, "clades")))
+{
+    for (const synonym of parseYaml<CladeData>(file)?.synonyms ?? [])
+    {
+        addNameWords(synonym.name);
     }
 }
 

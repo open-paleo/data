@@ -104,7 +104,7 @@ open-paleo/
   media/                    # Images (specimen photos, reconstructions, skeletal diagrams)
   dist/                     # Built outputs (JSON, YAML, JSON Schema, Newick, NEXUS, BibTeX; typed bindings under dist/bindings/)
   scripts/                  # Validation, build, and automation scripts
-  dictionaries/             # Auto-generated custom dictionary for spell checking
+  dictionaries/             # Spell-check dictionaries: taxonomy.txt is generated, the other lists are curated
   .github/                  # Workflows and CODEOWNERS
 ```
 

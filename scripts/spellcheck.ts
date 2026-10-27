@@ -9,9 +9,12 @@
 // keeps its source's spelling, and so are words in a non-Latin script, which
 // the English dictionaries cannot judge.
 //
-// Each unknown word is either missing from the dictionaries (add it to
-// dictionaries/paleo-vocab.txt, or teach scripts/generate-dictionary.ts the
-// source it comes from) or wrong in the data (fix the record).
+// Each unknown word is either missing from the dictionaries or wrong in the
+// data (fix the record). A missing word goes to the list it belongs in: a
+// term to dictionaries/paleo-vocab.txt, a taxon name no record carries to
+// dictionaries/taxon-names.txt, a quoted etymological root to
+// dictionaries/etymology-roots.txt. A word a data field already holds is
+// a source for scripts/generate-dictionary.ts to read instead.
 //
 // Output: scratch/spellcheck.md, one checklist line per unknown word with its
 // suggestions and where it occurs, and scratch/spellcheck.json with every
@@ -201,7 +204,7 @@ const reportLines = [
     "",
     `Generated ${new Date().toISOString()} by \`npm run spellcheck\`. ${summary}`,
     "",
-    "Each word is either missing from the dictionaries (add it to `dictionaries/paleo-vocab.txt`, or to the source `scripts/generate-dictionary.ts` reads) or wrong in the data (fix the record). Words are listed most frequent first.",
+    "Each word is either missing from the dictionaries or wrong in the data (fix the record). A missing term goes to `dictionaries/paleo-vocab.txt`, a taxon name no record carries to `dictionaries/taxon-names.txt`, a quoted etymological root to `dictionaries/etymology-roots.txt`; a word a data field already holds is a source for `scripts/generate-dictionary.ts`. Words are listed most frequent first.",
     "",
 ];
 
