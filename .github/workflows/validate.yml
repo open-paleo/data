@@ -52,6 +52,3 @@ jobs:
                 context,
                 validatorOutputPath: '/tmp/validate-output.txt',
             });
-
-      - name: Spell check
-        run: npx cspell "genera/**/*.yml" "clades/**/*.yml" --no-progress

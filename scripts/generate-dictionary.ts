@@ -5,7 +5,9 @@ import type { GenusData, InstitutionEntry, Reference, TreeNode } from "./types.t
 import {
     collectAllKeys,
     findYamlFiles,
+    loadRegionRegistry,
     loadSchema,
+    loadStratigraphyRegistry,
     parseYaml,
 } from "./utilities.ts";
 
@@ -42,11 +44,64 @@ for (const term of commonTerms)
     words.add(term);
 }
 
+/**
+ * Adds each word of a name to the dictionary: the letter runs of the text,
+ * split at hyphens and apostrophes, so "Muséum national d'Histoire naturelle"
+ * contributes "Muséum", "national", "Histoire" and "naturelle".
+ *
+ * @param name - The name to split.
+ */
+function addNameWords(name: string | undefined): void
+{
+    for (const token of name?.match(/\p{L}[\p{L}'’-]*/gu) ?? [])
+    {
+        for (const part of token.split(/[-'’]/))
+        {
+            if (part.length > 1)
+            {
+                words.add(part);
+            }
+        }
+    }
+}
+
+/**
+ * Endings of formal clade names and the informal forms prose builds from them:
+ * Abelisauridae gives "abelisaurid", Titanosauria "titanosaurian" and
+ * "titanosaur", Sauropodomorpha "sauropodomorph". A rule that yields a word no
+ * one writes costs nothing, since the word is still built from a real name.
+ */
+const cladeEndings: Array<[RegExp, Array<string>]> = [
+    [/idae$/, ["id"]],
+    [/inae$/, ["ine"]],
+    [/ini$/, ["in"]],
+    [/oidea$/, ["oid", "oidean"]],
+    [/iformes$/, ["iform"]],
+    [/morpha$/, ["morph", "morphan"]],
+    [/ia$/, ["ian", ""]],
+    [/a$/, ["an", ""]],
+    [/es$/, ["ian"]],
+];
+
 const tree = parseYaml<TreeNode>(path.join(root, "tree.yml"));
 
 for (const key of collectAllKeys(tree))
 {
     words.add(key);
+
+    for (const [ending, replacements] of cladeEndings)
+    {
+        if (ending.test(key))
+        {
+            for (const replacement of replacements)
+            {
+                const form = key.replace(ending, replacement).toLowerCase();
+
+                words.add(form);
+                words.add(`${form}s`);
+            }
+        }
+    }
 }
 
 const schema = loadSchema(root);
@@ -64,6 +119,8 @@ const institutions = parseYaml<Record<string, InstitutionEntry>>(path.join(root,
 for (const [abbreviation, entry] of Object.entries(institutions))
 {
     words.add(abbreviation);
+    addNameWords(entry.name);
+    addNameWords(entry.location?.city);
 
     if (Array.isArray(entry.aliases))
     {
@@ -75,6 +132,28 @@ for (const [abbreviation, entry] of Object.entries(institutions))
             }
         }
     }
+}
+
+// Every unit in the registry, not only those a genus cites: prose about a unit
+// names its neighbors, its former names and its beds.
+for (const unit of Object.values(loadStratigraphyRegistry(root).units))
+{
+    addNameWords(unit.name);
+
+    for (const variant of unit.variants ?? [])
+    {
+        addNameWords(variant);
+    }
+
+    for (const bed of unit.beds ?? [])
+    {
+        addNameWords(bed.name);
+    }
+}
+
+for (const regionName of Object.values(loadRegionRegistry(path.join(root, "regions.yaml"))))
+{
+    addNameWords(regionName);
 }
 
 const paleoVocabPath = path.join(root, "dictionaries", "paleo-vocab.txt");
