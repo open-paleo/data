@@ -232,7 +232,7 @@ let parseFailures = 0;
 
 for (const filePath of generaFiles)
 {
-    let data: GenusData | null = null;
+    let data: GenusData | null;
 
     try
     {
