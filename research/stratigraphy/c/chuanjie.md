@@ -1,5 +1,20 @@
 # Chuanjie
 
+## How is the epithet of *Chuanjiesaurus* written in the notes?
+
+*2026-10-28*
+
+**Conclusion.** *anaensis*, without the apostrophe. Fang and colleagues (2000) print *a'naensis*, but ICZN Article 32.5.2 requires an apostrophe in a name to be deleted, and the genus record and later papers write *anaensis*. The note keeps the apostrophe only inside a quotation. Governs the epithet in `references[fang2000a].notes` on [Chuanjie](../../../stratigraphy/c/chuanjie.yml).
+
+**Evidence.**
+- fang2000a, translation, Fig. 3: "Chuanjiesaurus a'naensis gen et sp. nov. during excavation".
+- [*Chuanjiesaurus anaensis*](../../../genera/C/Chuanjiesaurus.yml) is the species name on the genus record.
+
+**Ruled out.**
+- *a'naensis in our prose.* The describing paper's form, which the Code corrects; it is not a name the dataset may print outside a quotation.
+
+**Open.** Nothing.
+
 ## What does Huang (2021) show for the Chuanjie Formation's age?
 
 *2026-09-30*
@@ -18,4 +33,5 @@
 
 ## References
 
+- `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.
 - `huang2021a`: Huang, D. Y.; Fang, Y. N.; Li, J. G.; Li, X. (2021). Lithostratigraphic subdivision and correlation of the Jurassic in China. *Journal of Stratigraphy* 45(3): 364-374. doi:10.19839/j.cnki.dcxzz.2021.0029

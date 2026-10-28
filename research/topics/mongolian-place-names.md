@@ -1,5 +1,21 @@
 # Mongolian place names
 
+## How is the South Gobi aimag written in prose?
+
+*2026-10-28*
+
+**Conclusion.** Ömnögovi, the form the region registry holds for MN-053 and the form `location.region` already resolves to. Benton's (2000) gazetteer lists localities and only names the aimag as a kind of division, so it does not decide this. Quotations and paper titles keep the form their source prints (Ömnögov, Omnogov). Governs the aimag in the descriptions of [*Oksoko*](../../genera/O/Oksoko.yml) and [*Barsboldia*](../../genera/B/Barsboldia.yml).
+
+**Evidence.**
+- benton2000c, p. xxiii: "Aimag (aimak), major administrative division"; the aimags themselves are not in the list.
+- [regions.yaml](../../regions.yaml): "MN-053: Ömnögovi".
+- tsuihiji2014a, Type locality and age: "Dzamin Khond, Ömnögovi Aimag, Mongolia".
+
+**Ruled out.**
+- *Ömnögov, Omnogov, Ömnogöv.* Other romanizations, printed in quotations and titles (norell2006a, norell2018a) and in two descriptions.
+
+**Open.** Nothing.
+
 ## Which spellings do Mongolian locality names take, and on what authority?
 
 *2026-10-04*
@@ -40,8 +56,10 @@
 ## References
 
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `tsuihiji2014a`: Tsuihiji, T.; Barsbold, R.; Watabe, M.; Tsogtbaatar, K.; Chinzorig, T.; Fujiyama, Y.; Suzuki, S. (2014). An exquisitely preserved troodontid theropod with new information on the palatal structure from the Upper Cretaceous of Mongolia. *Naturwissenschaften* 101(2): 131-142. doi:10.1007/s00114-014-1143-9
+- `norell2006a`: Norell, M. A.; Clark, J. M.; Turner, A. H.; Makovicky, P. J.; Barsbold, R.; Rowe, T. (2006). A new dromaeosaurid theropod from Ukhaa Tolgod (Ömnögov, Mongolia). *American Museum Novitates* 3545(1): 1-51. doi:10.1206/0003-0082(2006)3545[1:andtfu]2.0.co;2
+- `norell2018a`: Norell, M. A.; Balanoff, A. M.; Barta, D. E.; Erickson, G. M. (2018). A second specimen of Citipati osmolskae associated with a nest of eggs from Ukhaa Tolgod, Omnogov Aimag, Mongolia. *American Museum Novitates*: 1-44. doi:10.1206/3899.1
 - `gradziński1969a`: Gradziński, R.; Kaźmierczak, J.; Lefeld, J. (1969). Geographical and geological data from the Polish-Mongolian Palaeontological Expeditions. *Palaeontologia Polonica* 19: 33-82.
 - `son2022a`: Son, M.; Lee, Y. N.; Zorigt, B.; Kobayashi, Y.; Park, J. Y.; Lee, S.; Kim, S. H.; Lee, K. Y. (2022). A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia. *PeerJ* 10: e13176. doi:10.7717/peerj.13176
 - `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530: 1-42. doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
 - `eberth2009a`: Eberth, D. A.; Kobayashi, Y.; Lee, Y. N.; Mateus, O.; Therrien, F.; Zelenitsky, D. K.; Norell, M. A. (2009). Assignment of Yamaceratops dorngobiensis and associated redbeds at Shine Us Khudag (eastern Gobi, Dorngobi Province, Mongolia) to the redescribed Javkhlant Formation (Upper Cretaceous). *Journal of Vertebrate Paleontology* 29(1): 295-302.
-- `tsuihiji2014a`: Tsuihiji, T.; Barsbold, R.; Watabe, M.; Tsogtbaatar, K.; Chinzorig, T.; Fujiyama, Y.; Suzuki, S. (2014). An exquisitely preserved troodontid theropod with new information on the palatal structure from the Upper Cretaceous of Mongolia. *Naturwissenschaften* 101(2): 131-142. doi:10.1007/s00114-014-1143-9
