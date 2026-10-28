@@ -1,5 +1,20 @@
 # Species authorities
 
+## Who named *Rinchenia mongoliensis*, and who erected *Rinchenia*?
+
+*2026-10-28*
+
+**Conclusion.** Barsbold (1986) named the species, as *Oviraptor mongoliensis*; the genus is credited to Barsbold (1997). The naming paper has not been read, but the chapter Barsbold co-wrote and Funston and colleagues' (2018) revision give the same attribution. Governs the species `erected_in: barsbold1986a`, `erected_as: Oviraptor mongoliensis` and the genus-level `erected_in: barsbold1997a` on [*Rinchenia mongoliensis*](../../genera/R/Rinchenia.yml).
+
+**Evidence.**
+- osmólska2004a, p. 166, Table 8.1: "Rinchenia Barsbold, 1997"; "R. mongoliensis (Barsbold, 1986) (= Oviraptor mongoliensis Barsbold, 1986)".
+- funston2018a, p. 114: "The genus Rinchenia, despite being rendered valid when equated by (Osmólska et al., 2004) to 'Oviraptor' mongoliensis, lacked proper description and diagnosis".
+
+**Ruled out.**
+- *Barsbold (1997) as the species authority.* The record gave it; the species is Barsbold's 1986 *Oviraptor mongoliensis*, moved to *Rinchenia* later.
+
+**Open.** Whether *Rinchenia* is available from Barsbold (1997). Barsbold (1997) gives no diagnosis, and Funston and colleagues (2018) say the name was "rendered valid" by Osmólska and colleagues (2004), which may make 2004 the genus's date under ICZN Art. 13. Barsbold (1997) would settle it.
+
 ## Does `erected_as` give an emended epithet as printed or as corrected?
 
 *2026-10-28*
@@ -100,6 +115,10 @@
 
 ## References
 
+- `barsbold1986a`: Barsbold, R. (1986). Raubdinosaurier Oviraptoren. In *Herpetologische Untersuchungen in der Mongolischen Volksrepublik (Vorobyeva, E. I., ed.)*, pp. 210-223. Akademia Nauk SSSR.
+- `barsbold1997a`: Barsbold, R. (1997). Oviraptorosauria. In *Encyclopedia of Dinosaurs (Currie, P. J.; Padian, K., eds.)*, pp. 505-509. Academic Press.
+- `osmólska2004a`: Osmólska, H.; Currie, P. J.; Barsbold, R. (2004). Oviraptorosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 165-183. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0010
+- `funston2018a`: Funston, G. F.; Mendonca, S. E.; Currie, P. J.; Barsbold, R. (2018). Oviraptorosaur anatomy, diversity and ecology in the Nemegt Basin. *Palaeogeography, Palaeoclimatology, Palaeoecology* 494: 101-120. doi:10.1016/j.palaeo.2017.10.023
 - `gillette1991a`: Gillette, D. D. (1991). Seismosaurus halli, gen. et sp. nov., a new sauropod dinosaur from the Morrison Formation (Upper Jurassic/Lower Cretaceous) of New Mexico, USA. *Journal of Vertebrate Paleontology* 11(4): 417-433. doi:10.1080/02724634.1991.10011413
 - `jensen1988a`: Jensen, J. A. (1988). A fourth new sauropod dinosaur from the Upper Jurassic of the Colorado Plateau and sauropod bipedalism. *Great Basin Naturalist* 48(2): 121-145.
 - `sternberg1940b`: Sternberg, C. M. (1940). Ceratopsidae from Alberta. *Journal of Paleontology* 14: 468-480.
