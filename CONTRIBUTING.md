@@ -144,9 +144,14 @@ taken from the literature rather than from a taxobox.
   Spinosaurinae, and Powell's Saltasaurinae for Saltasauridae and
   Saltasauroidea. An unranked clade has no coordination; its `erected_in` must
   use the name itself.
-- **A corrected misspelling credits the correction.** When a name was later
-  corrected to its current spelling, `erected_in` is the paper that published
-  that spelling, and the original spelling is listed under `synonyms`.
+- **A corrected misspelling keeps the original authority.** For a name the
+  ICZN governs (a family-group name, a genus or a species), correcting an
+  incorrect original spelling is a justified emendation, and the corrected
+  name "retains the authorship and date of the original spelling" (Art.
+  33.2.2): `erected_in` stays the paper that first published the name, and the
+  original spelling is listed under `synonyms`. A name the Code does not
+  govern, above the family group or unranked, credits the paper that
+  published its current spelling.
 - **`described_in` gives a definition or a diagnosis.** It points to a paper
   that defines the clade or diagnoses it. A paper that only recovers the clade,
   tests its membership or applies a definition published elsewhere does not
