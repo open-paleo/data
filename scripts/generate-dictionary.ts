@@ -156,30 +156,6 @@ for (const regionName of Object.values(loadRegionRegistry(path.join(root, "regio
     addNameWords(regionName);
 }
 
-// The curated lists: vocabulary, and taxon names the prose cites that no
-// record carries in a name field.
-for (const curatedName of ["paleo-vocab.txt", "taxon-names.txt"])
-{
-    const curatedPath = path.join(root, "dictionaries", curatedName);
-
-    if (!fs.existsSync(curatedPath))
-    {
-        continue;
-    }
-
-    const lines = fs.readFileSync(curatedPath, "utf8").split("\n");
-
-    for (const line of lines)
-    {
-        const trimmed = line.trim();
-
-        if (trimmed.length > 0 && !trimmed.startsWith("#"))
-        {
-            words.add(trimmed);
-        }
-    }
-}
-
 /**
  * Extracts author surnames from a semicolon-delimited author string and adds
  * them to the global words set.
@@ -296,6 +272,46 @@ const dictDir = path.join(root, "dictionaries");
 if (!fs.existsSync(dictDir))
 {
     fs.mkdirSync(dictDir, { recursive: true });
+}
+
+// The curated lists come last, so an entry the data already supplies can be
+// reported: a taxon a record now carries, or a unit the registry now holds,
+// no longer needs its curated line.
+const generated = new Set(words);
+
+for (const curatedName of ["paleo-vocab.txt", "taxon-names.txt", "unit-names.txt"])
+{
+    const curatedPath = path.join(dictDir, curatedName);
+
+    if (!fs.existsSync(curatedPath))
+    {
+        continue;
+    }
+
+    const redundant = new Array<string>();
+
+    for (const line of fs.readFileSync(curatedPath, "utf8").split("\n"))
+    {
+        const trimmed = line.trim();
+
+        if (trimmed.length === 0 || trimmed.startsWith("#"))
+        {
+            continue;
+        }
+        else if (generated.has(trimmed))
+        {
+            redundant.push(trimmed);
+        }
+
+        words.add(trimmed);
+    }
+
+    if (redundant.length > 0)
+    {
+        const entries = redundant.length === 1 ? "entry" : "entries";
+
+        console.log(`dictionaries/${curatedName}: ${redundant.length} ${entries} the data already supplies, which can be removed: ${redundant.join(", ")}`);
+    }
 }
 
 const sorted = [...words]
