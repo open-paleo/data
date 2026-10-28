@@ -584,7 +584,10 @@ export function checkIcznCaseCompliance(context: ValidationContext): void
  * The "Species authority" check.
  *
  * Species authority — every species needs erected_in; the denormalized
- * authors/described fields were removed in the #1886 migration
+ * authors/described fields were removed in the #1886 migration. A species
+ * named in another genus records that `erected_as`, and when it is
+ * the type species, the genus takes its own `erected_in`: the species'
+ * paper named the species, not the genus.
  *
  * @param context - The loaded data the checks read.
  */
@@ -599,6 +602,35 @@ export function checkSpeciesAuthority(context: ValidationContext): void
         if (!doc || !Array.isArray(doc.species))
         {
             continue;
+        }
+
+        const typeSpecies = doc.species.find((species) => species?.type_species) ?? doc.species[0];
+
+        for (const species of doc.species.filter((entry) => entry?.erected_as !== undefined))
+        {
+            const originalGenus = species.erected_as?.split(/\s+/)[0];
+
+            if (!/^\p{Lu}\p{Ll}+ \p{Ll}+$/u.test(species.erected_as ?? ""))
+            {
+                checkError(
+                    "Species authority",
+                    filePath,
+                    `species '${species.name ?? "?"}': erected_as '${species.erected_as}' is not a binomial`);
+            }
+            else if (originalGenus === doc.genus)
+            {
+                checkError(
+                    "Species authority",
+                    filePath,
+                    `species '${species.name ?? "?"}': erected_as '${species.erected_as}' is in this genus; record it only for a species named in another genus`);
+            }
+            else if (species === typeSpecies && (!doc.erected_in || doc.erected_in === species.erected_in))
+            {
+                checkError(
+                    "Species authority",
+                    filePath,
+                    `type species '${species.name ?? "?"}' was named as ${species.erected_as}, so the genus needs its own 'erected_in' for the paper that erected ${doc.genus}`);
+            }
         }
 
         for (const species of doc.species)

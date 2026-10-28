@@ -1,5 +1,21 @@
 # *Archaeornithomimus*
 
+## Who is the authority for the species, and who for the genus?
+
+*2026-10-28*
+
+**Conclusion.** Gilmore (1933) for the species, named as *Ornithomimus asiaticus*; Russell (1972) for the genus, which he erected for it and Gilmore's *O. affinis*. Governs the species `erected_in: gilmore1933a`, `erected_as: Ornithomimus asiaticus` and the genus-level `erected_in: russell1972a` on [*Archaeornithomimus*](../../../genera/A/Archaeornithomimus.yml).
+
+**Evidence.**
+- gilmore1933a, p. 27: "Ornithomimus asiaticus, new species".
+- russell1972a, p. 376: "Ornithomimus asiaticus Gilmore 1933, p. 27", listed against its new combination "Archaeornithomimus asiaticus".
+- russell1972a, p. 379: "the new genus Archaeornithomimus".
+
+**Ruled out.**
+- *Russell (1972) as the species authority.* The record gave it, following the earlier rule that a species' `erected_in` is the paper establishing its current combination. Russell made the combination; the species is Gilmore's, and its authority is cited as (Gilmore, 1933).
+
+**Open.** Nothing.
+
 ## Which quarry produced the lectotype, AMNH 6565?
 
 *2026-08-12*
@@ -19,5 +35,6 @@
 ## References
 
 - `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
+- `russell1972a`: Russell, D. A. (1972). Ostrich Dinosaurs from the Late Cretaceous of Western Canada. *Canadian Journal of Earth Sciences* 9(4): 375-402. doi:10.1139/e72-031
 - `smith1990a`: Smith, D.; Galton, P. (1990). Osteology of Archaeornithomimus asiaticus (Upper Cretaceous, Iren Dabasu Formation, People's Republic of China). *Journal of Vertebrate Paleontology* 10(2): 255-265. doi:10.1080/02724634.1990.10011811
 - `currie1993d`: Currie, P. J.; Eberth, D. A. (1993). Palaeontology, sedimentology and palaeoecology of the Iren Dabasu Formation (Upper Cretaceous), Inner Mongolia, People's Republic of China. *Cretaceous Research* 14(2): 127-144. doi:10.1006/cres.1993.1011

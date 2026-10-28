@@ -152,6 +152,20 @@ taken from the literature rather than from a taxobox.
   tests its membership or applies a definition published elsewhere does not
   qualify; without a qualifying paper, leave `described_in` out.
 
+Species authorities follow the ICZN: a species keeps the author and year of the
+paper that named it, whichever genus it now sits in.
+
+- **A species' `erected_in` is the paper that named the species.** When the
+  species was named in another genus, that binomial goes in
+  `erected_as`, and the authority is cited in parentheses:
+  *Dromiceiomimus brevitertius* (Parks, 1926), named as *Struthiomimus
+  brevetertius*.
+- **A genus erected for an existing species takes its own `erected_in`.** When
+  the type species was named in another genus, the genus-level `erected_in` is
+  the paper that erected the genus (Russell 1972 for *Dromiceiomimus*), since
+  the type species' paper did not. Otherwise the genus authority is the type
+  species' `erected_in`, and the genus-level field is left out.
+
 ## Neutrality and Good Faith
 
 - **No nomenclatural advocacy.** This project records the state of published taxonomy — it does not take sides in naming disputes. Do not use contributions to promote or suppress a particular name, author, or taxonomic opinion. If you have a personal stake in a naming dispute, disclose it.

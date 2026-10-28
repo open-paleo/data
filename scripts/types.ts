@@ -538,12 +538,20 @@ export type Species = {
     diagnostic_features?: Array<string>;
 
     /**
-     * Reference ID (resolved against the reference store) of the nomenclatural act that
-     * established the current genus+species combination — the taxonomic
-     * authority for the species. The species author and year are derived from
-     * this reference.
+     * Reference ID (resolved against the reference store) of the paper that
+     * named the species: the species authority under the ICZN, which stays
+     * with the species when it moves to another genus. The species author
+     * and year are derived from this reference.
      */
     erected_in?: string;
+
+    /**
+     * The binomial as first published, when the species was named in another
+     * genus (`Struthiomimus brevetertius` for `Dromiceiomimus brevitertius`).
+     * Its presence marks the species authority as one that is cited in
+     * parentheses.
+     */
+    erected_as?: string;
 
     /**
      * Reference ID (resolved against the reference store) of the authoritative paper the
@@ -907,8 +915,9 @@ export type GenusData = {
     /**
      * Reference ID (resolved against the reference store) of the paper that
      * erected this genus — the genus authority. Set ONLY when it differs from the type
-     * species's `erected_in` (e.g. when an ICZN ruling later replaced the
-     * original type species). When omitted, the genus authority is the type
+     * species's `erected_in`: when the type species was named in another
+     * genus and moved here later, or when an ICZN ruling replaced the
+     * original type species. When omitted, the genus authority is the type
      * species's `erected_in`.
      */
     erected_in?: string;

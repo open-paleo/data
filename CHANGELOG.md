@@ -130,6 +130,15 @@ Initial public release, establishing the v1 output schema.
   rationale remains in `dispute`.
 
 ### Changed
+- A species' `erected_in`, and with it its `authors` and `described`, is the
+  paper that named the species, as the ICZN has it, rather than the paper
+  that moved it into its current genus. A species named in another genus
+  carries a new `erected_as` field, the binomial as first
+  published, which marks its authority as one cited in parentheses: for
+  *Dromiceiomimus brevitertius*, `authors` and `described` give Parks, 1926
+  and `erected_as` gives *Struthiomimus brevetertius*. The genus
+  authority of a genus erected for an existing species comes from the
+  genus-level `erected_in`.
 - Genus-level `iczn_rulings` renamed `iczn_cases`, and its `type`
   vocabulary renamed from `iczn_ruling_types` to `iczn_case_types`. Each
   entry now carries a required `status` from a new `iczn_case_statuses`
