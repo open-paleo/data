@@ -1,5 +1,21 @@
 # Species authorities
 
+## Does `erected_as` give an emended epithet as printed or as corrected?
+
+*2026-10-28*
+
+**Conclusion.** As printed. `erected_as` records the binomial as first published, so a later justified emendation of the epithet does not change it; the emendation keeps the original author and date (ICZN Art. 33.2.2), so `erected_in` stays the naming paper. Governs `erected_as: Seismosaurus halli` on [*Diplodocus hallorum*](../../genera/D/Diplodocus.yml).
+
+**Evidence.**
+- gillette1991a, p. 418: "SEISMOSAURUS HALLI, sp. nov.", with an etymology honoring "the late Reverend James W. Hall ... and his wife Ruth", which shows the singular *-i* to be an inadvertent error correctable under Art. 32.5.1.
+- ICZN Art. 33.2.2: a justified emendation "retains the authorship and date of the original spelling".
+
+**Ruled out.**
+- *`erected_as: Seismosaurus hallorum`.* The corrected spelling was never printed in that combination by the naming paper; `erected_as` is a record of what the paper printed.
+- *The emending work as the species authority.* Art. 33.2.2 keeps the authority with Gillette (1991).
+
+**Open.** Nothing.
+
 ## Which records already credited the naming paper, and which binomial did it use?
 
 *2026-10-28*
@@ -84,6 +100,7 @@
 
 ## References
 
+- `gillette1991a`: Gillette, D. D. (1991). Seismosaurus halli, gen. et sp. nov., a new sauropod dinosaur from the Morrison Formation (Upper Jurassic/Lower Cretaceous) of New Mexico, USA. *Journal of Vertebrate Paleontology* 11(4): 417-433. doi:10.1080/02724634.1991.10011413
 - `jensen1988a`: Jensen, J. A. (1988). A fourth new sauropod dinosaur from the Upper Jurassic of the Colorado Plateau and sauropod bipedalism. *Great Basin Naturalist* 48(2): 121-145.
 - `sternberg1940b`: Sternberg, C. M. (1940). Ceratopsidae from Alberta. *Journal of Paleontology* 14: 468-480.
 - `holmes2026a`: Holmes, R. B.; Mallon, J. C.; Ryan, M. J.; Evans, D. C. (2026). New information on the holotype of "Chasmosaurus" russelli (Ornithischia, Ceratopsidae) necessitates the establishment of a new genus to receive the species. *Canadian Journal of Earth Sciences* 63: 0031. doi:10.1139/cjes-2025-0031
