@@ -1,5 +1,21 @@
 # Species authorities
 
+## Which paper is the authority for *Hanssuesia*, and for its type species?
+
+*2026-10-28*
+
+**Conclusion.** The species is Brown and Schlaikjer's (1943) *Troodon sternbergi*; the genus is Sullivan's JVP 23(1) revision, which erected it as "Hanssuessia", not the later note correcting the spelling. The correction of an incorrect original spelling is a justified emendation, and the corrected name "retains the authorship and date of the original spelling" (ICZN Art. 33.2.2). Governs the species `erected_in: brown1943a`, `erected_as: Troodon sternbergi` and the genus-level `erected_in: sullivan2003b` on [*Hanssuesia sternbergi*](../../genera/H/Hanssuesia.yml).
+
+**Evidence.**
+- brown1943a, p. 131: "Troodon sternbergi, new species".
+- sullivan2003b, p. 193: "HANSSUESSIA, gen. nov.".
+- sullivan2003a, title: "Hanssuesia, the correct generic name for 'Hanssuessia' Sullivan, 2003".
+
+**Ruled out.**
+- *sullivan2003a as the genus authority.* The record credited the correcting note, as CONTRIBUTING's "A corrected misspelling credits the correction" would; Art. 33.2.2 keeps the authority with the paper that published the original spelling. Both papers are Sullivan (2003), so the cited authority is the same either way.
+
+**Open.** Nothing.
+
 ## Who named *Rinchenia mongoliensis*, and who erected *Rinchenia*?
 
 *2026-10-28*
@@ -115,6 +131,9 @@
 
 ## References
 
+- `brown1943a`: Brown, B.; Schlaikjer, E. M. (1943). A study of the troödont dinosaurs with the description of a new genus and four new species. *Bulletin of the American Museum of Natural History* 82(5): 115-150.
+- `sullivan2003b`: Sullivan, R. M. (2003). Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae). *Journal of Vertebrate Paleontology* 23(1): 181-207. doi:10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
+- `sullivan2003a`: Sullivan, R. M. (2003). Hanssuesia, the correct generic name for 'Hanssuessia' Sullivan, 2003. *Journal of Vertebrate Paleontology* 23(3): 714-714. doi:10.1671/03010
 - `barsbold1986a`: Barsbold, R. (1986). Raubdinosaurier Oviraptoren. In *Herpetologische Untersuchungen in der Mongolischen Volksrepublik (Vorobyeva, E. I., ed.)*, pp. 210-223. Akademia Nauk SSSR.
 - `barsbold1997a`: Barsbold, R. (1997). Oviraptorosauria. In *Encyclopedia of Dinosaurs (Currie, P. J.; Padian, K., eds.)*, pp. 505-509. Academic Press.
 - `osmólska2004a`: Osmólska, H.; Currie, P. J.; Barsbold, R. (2004). Oviraptorosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 165-183. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0010
