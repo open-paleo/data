@@ -12,7 +12,8 @@
 // Each unknown word is either missing from the dictionaries or wrong in the
 // data (fix the record). A missing word goes to the list it belongs in: a
 // term to dictionaries/paleo-vocab.txt, a taxon name no record carries to
-// dictionaries/taxon-names.txt, a quoted etymological root to
+// dictionaries/taxon-names.txt, a unit name the registry lacks to
+// dictionaries/unit-names.txt, a quoted etymological root to
 // dictionaries/etymology-roots.txt. A word a data field already holds is
 // a source for scripts/generate-dictionary.ts to read instead.
 //
@@ -204,7 +205,7 @@ const reportLines = [
     "",
     `Generated ${new Date().toISOString()} by \`npm run spellcheck\`. ${summary}`,
     "",
-    "Each word is either missing from the dictionaries or wrong in the data (fix the record). A missing term goes to `dictionaries/paleo-vocab.txt`, a taxon name no record carries to `dictionaries/taxon-names.txt`, a quoted etymological root to `dictionaries/etymology-roots.txt`; a word a data field already holds is a source for `scripts/generate-dictionary.ts`. Words are listed most frequent first.",
+    "Each word is either missing from the dictionaries or wrong in the data (fix the record). A missing term goes to `dictionaries/paleo-vocab.txt`, a taxon name no record carries to `dictionaries/taxon-names.txt`, a unit name the registry lacks to `dictionaries/unit-names.txt`, a quoted etymological root to `dictionaries/etymology-roots.txt`; a word a data field already holds is a source for `scripts/generate-dictionary.ts`. Words are listed most frequent first.",
     "",
 ];
 
