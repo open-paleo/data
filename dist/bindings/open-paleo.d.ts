@@ -370,9 +370,13 @@ export interface Species {
   synonyms?: Synonym[];
   diagnostic_features?: string[];
   /**
-   * Reference id of the nomenclatural act establishing the combination.
+   * Reference id of the paper that named the species, its ICZN authority; the authors and year above derive from it.
    */
   erected_in: string;
+  /**
+   * The binomial as first published, present when the species was named in another genus; the species authority is then cited in parentheses.
+   */
+  erected_as?: string;
   /**
    * Reference id of the authoritative descriptive source; falls back to erected_in.
    */

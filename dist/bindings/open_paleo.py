@@ -544,7 +544,11 @@ class Species(BaseModel):
     diagnostic_features: Optional[List[str]] = None
     erected_in: str = Field(
         ...,
-        description='Reference id of the nomenclatural act establishing the combination.',
+        description='Reference id of the paper that named the species, its ICZN authority; the authors and year above derive from it.',
+    )
+    erected_as: Optional[str] = Field(
+        None,
+        description='The binomial as first published, present when the species was named in another genus; the species authority is then cited in parentheses.',
     )
     described_in: Optional[str] = Field(
         None,

@@ -97,7 +97,8 @@
         "description": { "type": "string" },
         "synonyms": { "type": "array", "items": { "$ref": "#/$defs/synonym" } },
         "diagnostic_features": { "type": "array", "items": { "type": "string" } },
-        "erected_in": { "type": "string", "description": "Reference id of the nomenclatural act establishing the combination." },
+        "erected_in": { "type": "string", "description": "Reference id of the paper that named the species, its ICZN authority; the authors and year above derive from it." },
+        "erected_as": { "type": "string", "description": "The binomial as first published, present when the species was named in another genus; the species authority is then cited in parentheses." },
         "described_in": { "type": "string", "description": "Reference id of the authoritative descriptive source; falls back to erected_in." }
       }
     },
