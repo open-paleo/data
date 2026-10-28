@@ -190,6 +190,12 @@ taken from the literature rather than from a taxobox.
   "cup-like", not "birdlike" or "cuplike". Established words that are not
   built that way (unlike, alike, lifelike) are unaffected, and a quotation
   or a title keeps its source's form.
+- **A spelling cited as a spelling is quoted.** A misprint, an original
+  spelling or a variant rendering that the prose mentions, rather than uses
+  as a name, goes in double quotes: misprinted as "Cerastosauria", corrects
+  the original spelling "Cinodon". It is the source's text, so the spelling
+  and American English checks pass over it, while the same word anywhere
+  else is still checked.
 
 ## Inline Reference Format
 
