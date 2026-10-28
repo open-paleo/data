@@ -1,5 +1,31 @@
 # Species authorities
 
+## Which records already credited the naming paper, and which binomial did it use?
+
+*2026-10-28*
+
+**Conclusion.** For each record below, the species `erected_in` was already the paper that named the species, in another genus; the record gains `erected_as` for the binomial that paper used, and *Cryptarcus*, *Eopinacosaurus*, *Haplocanthosaurus* and *Megapnosaurus* gain the genus-level `erected_in` they lacked. *Haplocanthosaurus* and *Megapnosaurus* replace preoccupied genus names, which Art. 51.3 treats as a change of genus (see the entry below). Governs `erected_as`, and the genus-level `erected_in` where added, on [*Camarasaurus lewisi*](../../genera/C/Camarasaurus.yml), [*Cryptarcus russelli*](../../genera/C/Cryptarcus.yml), [*Dinevenator robustus*](../../genera/D/Dinevenator.yml), [*Edmontosaurus annectens*](../../genera/E/Edmontosaurus.yml), [*Eopinacosaurus mephistocephalus*](../../genera/E/Eopinacosaurus.yml), [*Haplocanthosaurus priscus*](../../genera/H/Haplocanthosaurus.yml), [*Horshamosaurus rudgwickensis*](../../genera/H/Horshamosaurus.yml), [*Hypsibema missouriensis*](../../genera/H/Hypsibema.yml), [*Iuticosaurus valdensis*](../../genera/I/Iuticosaurus.yml), [*Megapnosaurus rhodesiensis*](../../genera/M/Megapnosaurus.yml), [*Pelorosaurus brevis*](../../genera/P/Pelorosaurus.yml), [*Tanystrosuchus posthumus*](../../genera/T/Tanystrosuchus.yml) and [*Uteodon aphanoecetes*](../../genera/U/Uteodon.yml).
+
+**Evidence.**
+- *Camarasaurus lewisi*: jensen1988a, p. 121: "Cathetosaurus lewisi n. gen., n. sp.".
+- *Cryptarcus russelli*: sternberg1940b, p. 478: "Chasmosaurus russelli / Sternberg, n. sp."; genus holmes2026a, p. 5: "Cryptarcus gen. nov.".
+- *Dinevenator robustus*: sullivan2006b, p. 253: "Saurornitholestes robustus, n. sp., is named"; genus jasinski2026a, p. 3: "Dinevenator—gen. nov.".
+- *Edmontosaurus annectens*: marsh1892a, p. 453: "Claosaurus annectens, sp. nov.".
+- *Eopinacosaurus mephistocephalus*: godefroit1999a, p. 20: "Pinacosaurus mephistocephalus n. sp."; genus penkalski2026a, p. 8: "Eopinacosaurus mephistocephalus gen. et comb. nov.".
+- *Haplocanthosaurus priscus*: hatcher1903a, p. 1: "Haplocanthus priscus, gen. et sp. nov."; genus hatcher1903b, p. 100: "the generic name Haplocanthus recently proposed by me ... is essentially preoccupied".
+- *Horshamosaurus rudgwickensis*: blows1996a, p. 672: "Polacanthus rudgwickensis sp. nov."; genus blows2015a (not read).
+- *Hypsibema missouriensis*: gilmore1945a, p. 25: "NEOSAURUS MISSOURIENSIS Gilmore, n. sp.".
+- *Iuticosaurus valdensis*: huene1929a, p. 92, naming it conditionally, "cf. Titanosaurus Valdensis n. sp." (translated); genus leloeuff1993a, p. 107: "I suggest to refer T. valdensis to the new genus Iuticosaurus".
+- *Megapnosaurus rhodesiensis*: raath1969a, p. 1: "Syntarsus rhodesiensis gen. et sp. nov."; genus ivie2001a, p. 63: "New replacement names are proposed: Megapnosaurus".
+- *Pelorosaurus brevis*: owen1842a, p. 94: "I propose to designate the species by the name of Cetiosaurus brevis"; genus mantell1850a, p. 381.
+- *Tanystrosuchus posthumus*: huene1908a, as *Tanystrophaeus posthumus*; the naming page is not in the held excerpt, which begins at p. 231. Genus kuhn1963a (not read).
+- *Uteodon aphanoecetes*: carpenter2008a, p. 232: "Camptosaurus aphanoecetes, new species"; genus mcdonald2011a, p. 56: "Uteodon gen. nov.".
+
+**Ruled out.**
+- *Huene's (1929) conditional proposal as unavailable.* A name proposed conditionally before 1961 is available, and later work treats *Titanosaurus valdensis* as Huene's.
+
+**Open.** The naming page of *Tanystrophaeus posthumus* in huene1908a, and the two genus papers not held, blows2015a and kuhn1963a.
+
 ## Which paper named each species that now sits in another genus?
 
 *2026-10-28*
@@ -58,6 +84,29 @@
 
 ## References
 
+- `jensen1988a`: Jensen, J. A. (1988). A fourth new sauropod dinosaur from the Upper Jurassic of the Colorado Plateau and sauropod bipedalism. *Great Basin Naturalist* 48(2): 121-145.
+- `sternberg1940b`: Sternberg, C. M. (1940). Ceratopsidae from Alberta. *Journal of Paleontology* 14: 468-480.
+- `holmes2026a`: Holmes, R. B.; Mallon, J. C.; Ryan, M. J.; Evans, D. C. (2026). New information on the holotype of "Chasmosaurus" russelli (Ornithischia, Ceratopsidae) necessitates the establishment of a new genus to receive the species. *Canadian Journal of Earth Sciences* 63: 0031. doi:10.1139/cjes-2025-0031
+- `sullivan2006b`: Sullivan, R. M. (2006). Saurornitholestes robustus n. sp. (Theropoda: Dromaeosauridae) from the Upper Cretaceous Kirtland Formation (De-na-zin Member), San Juan Basin, New Mexico. In *Late Cretaceous Vertebrates from the Western Interior*, pp. 253-256.
+- `jasinski2026a`: Jasinski, S. E.; Sullivan, R. M. (2026). Dinevenator, a New Genus of Troodontid Dinosaur from the Late Cretaceous of New Mexico. *Fossil Studies* 4(3). doi:10.3390/fossils4030021
+- `marsh1892a`: Marsh, O. C. (1892). Notice of new reptiles from the Laramie Formation. *American Journal of Science* s3-43(257): 449-453. doi:10.2475/ajs.s3-43.257.449
+- `godefroit1999a`: Godefroit, P.; Pereda-Suberbiola, X.; Li, H.; Dong, Z. M. (1999). A new species of the ankylosaurid dinosaur Pinacosaurus from the Late Cretaceous of Inner Mongolia (P.R. China). *Bulletin de l'Institut Royal des Sciences Naturelles de Belgique, Sciences de la Terre* 69(supp. B): 17-36.
+- `penkalski2026a`: Penkalski, P. (2026). The morphology and systematics of Pinacosaurus. *Historical Biology*: 1-42. doi:10.1080/08912963.2026.2633178
+- `hatcher1903a`: Hatcher, J. B. (1903). A new sauropod dinosaur from the Jurassic of Colorado. *Proceedings of the Biological Society of Washington* 16: 1-2.
+- `hatcher1903b`: Hatcher, J. B. (1903). A new name for the dinosaur Haplocanthus Hatcher. *Proceedings of the Biological Society of Washington* 16: 100.
+- `blows1996a`: Blows, W. T. (1996). A new species of Polacanthus (Ornithischia; Ankylosauria) from the Lower Cretaceous of Sussex, England. *Geological Magazine* 133(6): 671-682.
+- `blows2015a`: Blows, W. T. (2015). British Polacanthid Dinosaurs — Observations on the History and Palaeontology of the UK Polacanthid Armoured Dinosaurs and their Relatives. In *British Polacanthid Dinosaurs*, pp. 1-220. Siri Scientific Press.
+- `gilmore1945a`: Gilmore, C. W.; Stewart, D. R. (1945). A new sauropod dinosaur from the Upper Cretaceous of Missouri. *Journal of Paleontology* 19(1): 23-29.
+- `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
+- `leloeuff1993a`: Le Loeuff, J. (1993). European titanosaurids. *Revue de Paléobiologie, Volume Spéciale* 7: 105-117.
+- `raath1969a`: Raath, M. A. (1969). A new coelurosaurian dinosaur from the Forest Sandstone of Rhodesia. *Arnoldia Rhodesia* 4(28): 1-25.
+- `ivie2001a`: Ivie, M. A.; Slipinski, S. A.; Wegrzynowicz, P. (2001). Generic homonyms in the Colydiinae (Coleoptera: Zopheridae). *Insecta Mundi* 15(1): 184.
+- `owen1842a`: Owen, R. (1842). Report on British fossil reptiles, Part II. *Report of the British Association for the Advancement of Science* 11: 60-204.
+- `mantell1850a`: Mantell, G. A. (1850). On the Pelorosaurus: an undescribed gigantic terrestrial reptile, whose remains are associated with those of the Iguanodon and other Saurians, in the strata of Tilgate Forest, in Sussex. *Philosophical Transactions of the Royal Society of London* 140: 379-390. doi:10.1098/rstl.1850.0017
+- `huene1908a`: Huene, F. V. (1908). Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der Ausseuropäischen vorkommnisse [The dinosaurs of the European Triassic formations with consideration of occurrences outside Europe]. *Geologische und Palaeontologische Abhandlungen* Suppl. 1(1): 1-419.
+- `kuhn1963a`: Kuhn, O. (1963). Sauria (Supplementum I). *Fossilium Catalogus Animalia* 109: 1-87.
+- `carpenter2008a`: Carpenter, K.; Wilson, Y. (2008). A new species of Camptosaurus (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and a biomechanical analysis of its forelimb. *Annals of Carnegie Museum* 76(4): 227-263. doi:10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2
+- `mcdonald2011a`: McDonald, A. T. (2011). The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda). *Zootaxa* 2783(1). doi:10.11646/zootaxa.2783.1.4
 - `thulborn1974a`: Thulborn, R. A. (1974). A new heterodontosaurid dinosaur (Reptilia: Ornithischia) from the Upper Triassic Red Beds of Lesotho. *Zoological Journal of the Linnean Society* 55(2): 151-175. doi:10.1111/j.1096-3642.1974.tb01591.x
 - `hopson1975a`: Hopson, J. A. (1975). On the generic separation of the ornithischian dinosaurs Lycorhinus and Heterodontosaurus from the Stormberg Series (Upper Triassic) of South Africa. *South African Journal of Science* 71: 302-305.
 - `marsh1877b`: Marsh, O. C. (1877). Notice of a new and gigantic dinosaur, Titanosaurus. *American Journal of Science* s3-14(79): 87-88. doi:10.2475/ajs.s3-14.79.87
@@ -109,7 +158,6 @@
 - `gilmore1946a`: Gilmore, C. W. (1946). A new carnivorous dinosaur from the Lance Formation of Montana. *Smithsonian Miscellaneous Collections* 106(13): 1-19.
 - `bakker1988b`: Bakker, R. T.; Williams, M.; Currie, P. J. (1988). Nanotyrannus, a new genus of pygmy tyrannosaur, from the latest Cretaceous of Montana. *Hunteria* 1(5): 1-30.
 - `gilmore1909a`: Gilmore, C. W. (1909). Osteology of the Jurassic reptile Camptosaurus, with a revision of the species of the genus, and description of two new species. *Proceedings of the U.S. National Museum* 36: 197-332.
-- `mcdonald2011a`: McDonald, A. T. (2011). The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda). *Zootaxa* 2783(1). doi:10.11646/zootaxa.2783.1.4
 - `broom1912a`: Broom, R. (1912). Observations on some specimens of South African fossil reptiles preserved in the British Museum. *Transactions of the Royal Society of South Africa* 2: 19-25. doi:10.1080/00359191009519357
 - `nopcsa1929a`: Nopcsa, B. F. (1929). Dinosaurierreste aus Siebenbürgen V [Dinosaur remains from Transylvania V]. *Geologica Hungarica, Series Palaeontologica* 4(1): 1-76.
 - `parks1926b`: Parks, W. A. (1926). Thescelosaurus warreni, a new species of orthopodous dinosaur from the Edmonton Formation of Alberta. *University of Toronto Studies (Geological Series)* 21: 1-42.
