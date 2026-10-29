@@ -1,5 +1,21 @@
 # *Altispinax*
 
+## What is the type material of *Altispinax dunkeri*?
+
+*2026-10-28*
+
+**Conclusion.** The three dorsal vertebrae NHMUK R1828, as Maisch (2016) gives it, following the earlier entry on the name. The record's material, completeness and diagnostic features had described Dames's tooth; they now describe the vertebrae, with the diagnosis from Maisch. *Becklespinax* shares the type specimen and is a junior objective synonym. The species is still named for Wilhelm Dunker, but Dames credits Dunker with lending the tooth, not with finding it. Governs `type_specimen.material`, the `diagnostic_features`, the species etymology and the *Becklespinax* synonym type on [*Altispinax*](../../../genera/A/Altispinax.yml).
+
+**Evidence.**
+- maisch2016a, p. 216: "Type specimen: According to Stovall & Langston (1950): NHMUK 1828. Three articulated nearly complete posterior dorsal vertebrae (probably numbers 9-11 or 10-12)"; "Diagnosis: Large theropod; posterior dorsal vertebrae bearing high neural spines possibly forming a short sail in front of the hip region, longest neural spines have at least 5 times the height of centrum and are distinctly constricted just dorsal to the neural arches."
+- maisch2016a, p. 218: "The replacement names Acrocanthosaurus altispinax proposed by Paul (1988) and Becklespinax altispinax proposed by Olshevsky (1991) thus become junior objective synonyms."
+- dames1885a, pp. 187–188: the tooth was "kindly lent to the speaker by Privy Councillor Dunker of Marburg"; "It shall be called Megalosaurus Dunkeri, after the monographer of our Wealden, who also entrusted me with the specimen for study" (translated).
+
+**Ruled out.**
+- *A tooth as the type material.* That is Dames's species, which the earlier entry rules is not the name-bearer.
+
+**Open.** Maisch (2016, p. 216) gives the type locality as Hollington Quarry, Hastings; the record has Battle, near Hastings, on which the formation entry relies.
+
 ## Is *Altispinax dunkeri* Huene, 1923 the name for the Battle vertebrae?
 
 *2026-10-28*
@@ -56,8 +72,9 @@
 
 ## References
 
-- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `maisch2016a`: Maisch, M. W. (2016). The nomenclatural status of the carnivorous dinosaur genus Altispinax v. Huene, 1923 (Saurischia, Theropoda) from the Lower Cretaceous of England. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 280(2): 215-219. doi:10.1127/njgpa/2016/0576
+- `dames1885a`: Dames, W. B. (1885). Vorlegung eines Zahnes von Megalosaurus aus den Wealden des Deisters. *Sitzungsberichte der Gesellschaft naturforschender Freunde zu Berlin* 36: 186-188.
+- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `lockwood2025a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2025). The origins of neural spine elongation in iguanodontian dinosaurs and the osteology of a new sail-back styracosternan (Dinosauria, Ornithischia) from the Lower Cretaceous Wealden Group of England. *Papers in Palaeontology* 11(4). doi:10.1002/spp2.70034
 - `barker2023a`: Barker, C. T.; Naish, D.; Gostling, N. J. (2023). Isolated tooth reveals hidden spinosaurid dinosaur diversity in the British Wealden Supergroup (Lower Cretaceous). *PeerJ* 11: e15453. doi:10.7717/peerj.15453

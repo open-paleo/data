@@ -76,7 +76,7 @@
 - `zhang2001a`: Zhang, X. H.; Xu, X.; Zhao, X. J.; Sereno, P. C.; Kuang, X. W.; Tan, L. (2001). A long-necked therizinosauroid dinosaur from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol, People's Republic of China. *Vertebrata PalAsiatica* 39(4): 282-290.
 - `xu2002c`: Xu, X.; Zhang, Z. H.; Sereno, P. C.; Zhao, X. J.; Kuang, X. W.; Han, J.; Tan, L. (2002). A new therizinosauroid (Dinosauria, Theropoda) from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol. *Vertebrata PalAsiatica* 40(3): 228-240.
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
-- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
+- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 67(2): 23-78.
 - `xu2007b`: Xu, X.; Tan, Q.; Wang, J.; Zhao, X.; Tan, L. (2007). A gigantic bird-like dinosaur from the Late Cretaceous of China. *Nature* 447(7146): 844-847. doi:10.1038/nature05849
 - `xu2006c`: Xu, X.; Zhang, X.; Tan, Q.; Zhao, X.; Tan, L. (2006). A new titanosaurian sauropod from Late Cretaceous of Nei Mongol, China. *Acta Geologica Sinica (English Edition)* 80(1): 20-26. doi:10.1111/j.1755-6724.2006.tb00790.x
 - `smith1990a`: Smith, D.; Galton, P. (1990). Osteology of Archaeornithomimus asiaticus (Upper Cretaceous, Iren Dabasu Formation, People's Republic of China). *Journal of Vertebrate Paleontology* 10(2): 255-265. doi:10.1080/02724634.1990.10011811

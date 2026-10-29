@@ -18,6 +18,6 @@
 
 ## References
 
-- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
+- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 67(2): 23-78.
 - `mader1989a`: Mader, B. J.; Bradley, R. L. (1989). A redescription and revised diagnosis of the syntypes of the Mongolian tyrannosaur Alectrosaurus olseni. *Journal of Vertebrate Paleontology* 9(1): 41-55. doi:10.1080/02724634.1989.10011737
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

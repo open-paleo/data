@@ -1,5 +1,19 @@
 # *Teinurosaurus*
 
+## On which page does Nopcsa (1928) list *Teinurosaurus*?
+
+*2026-10-28*
+
+**Conclusion.** Supersedes the page in the 2026-10-11 entry: Nopcsa (1928) lists *Teinurosaurus* on p. 183, not p. 188. The text layer misreads that page's folio as 188; p. 188 is about pterosaurs. The 2026-10-11 entry's conclusion, that Nopcsa gives no age, stands.
+
+**Evidence.**
+- nopcsa1928c, p. 183: "† *Aublysodontinae*; jaws and neck abbreviated; skull rigid; manus reduced (… † *Teinurosaurus*, † *Tyrannosaurus*)", with the footnote "New name for the piece described and figured by Sauvage … as late caudal of *Iguanodon Prestwichi*" on the same page. Read from the page image.
+
+**Ruled out.**
+- *p. 188.* It covers the Tribelesodontidae, Rhamphorhynchoidea and Pterodactyloidea.
+
+**Open.** Nothing.
+
 ## Where does *Teinurosaurus* sit, and is its status in dispute?
 
 *2026-10-17*
@@ -50,8 +64,8 @@
 
 ## References
 
-- `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
 - `nopcsa1928c`: Nopcsa, B. F. (1928). The genera of reptiles. *Palaeobiologica* 1: 163-188.
+- `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870

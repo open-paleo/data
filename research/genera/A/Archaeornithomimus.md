@@ -34,7 +34,7 @@
 
 ## References
 
-- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
+- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 67(2): 23-78.
 - `russell1972a`: Russell, D. A. (1972). Ostrich Dinosaurs from the Late Cretaceous of Western Canada. *Canadian Journal of Earth Sciences* 9(4): 375-402. doi:10.1139/e72-031
 - `smith1990a`: Smith, D.; Galton, P. (1990). Osteology of Archaeornithomimus asiaticus (Upper Cretaceous, Iren Dabasu Formation, People's Republic of China). *Journal of Vertebrate Paleontology* 10(2): 255-265. doi:10.1080/02724634.1990.10011811
 - `currie1993d`: Currie, P. J.; Eberth, D. A. (1993). Palaeontology, sedimentology and palaeoecology of the Iren Dabasu Formation (Upper Cretaceous), Inner Mongolia, People's Republic of China. *Cretaceous Research* 14(2): 127-144. doi:10.1006/cres.1993.1011

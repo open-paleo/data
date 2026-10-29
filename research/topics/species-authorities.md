@@ -234,7 +234,7 @@
 - `gilmore1945a`: Gilmore, C. W.; Stewart, D. R. (1945). A new sauropod dinosaur from the Upper Cretaceous of Missouri. *Journal of Paleontology* 19(1): 23-29.
 - `leloeuff1993a`: Le Loeuff, J. (1993). European titanosaurids. *Revue de Paléobiologie, Volume Spéciale* 7: 105-117.
 - `raath1969a`: Raath, M. A. (1969). A new coelurosaurian dinosaur from the Forest Sandstone of Rhodesia. *Arnoldia Rhodesia* 4(28): 1-25.
-- `ivie2001a`: Ivie, M. A.; Slipinski, S. A.; Wegrzynowicz, P. (2001). Generic homonyms in the Colydiinae (Coleoptera: Zopheridae). *Insecta Mundi* 15(1): 184.
+- `ivie2001a`: Ivie, M. A.; Slipinski, S. A.; Wegrzynowicz, P. (2001). Generic homonyms in the Colydiinae (Coleoptera: Zopheridae). *Insecta Mundi* 15(1): 63-64.
 - `owen1842a`: Owen, R. (1842). Report on British fossil reptiles, Part II. *Report of the British Association for the Advancement of Science* 11: 60-204.
 - `mantell1850a`: Mantell, G. A. (1850). On the Pelorosaurus: an undescribed gigantic terrestrial reptile, whose remains are associated with those of the Iguanodon and other Saurians, in the strata of Tilgate Forest, in Sussex. *Philosophical Transactions of the Royal Society of London* 140: 379-390. doi:10.1098/rstl.1850.0017
 - `huene1908a`: Huene, F. V. (1908). Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der Ausseuropäischen vorkommnisse [The dinosaurs of the European Triassic formations with consideration of occurrences outside Europe]. *Geologische und Palaeontologische Abhandlungen* Suppl. 1(1): 1-419.
@@ -265,7 +265,7 @@
 - `wiman1929a`: Wiman, C. (1929). Die Kreide-Dinosaurier aus Shantung [The Cretaceous dinosaurs from Shantung]. *Palaeontologia Sinica, Series C* 6(1): 1-67.
 - `romer1956a`: Romer, A. S. (1956). Osteology of the Reptiles. University of Chicago Press, Chicago.
 - `lambe1910a`: Lambe, L. M. (1910). Note on the parietal crest of Centrosaurus apertus and a proposed new generic name for Stereocephalus tutus. *The Ottawa Naturalist* 24: 149-151.
-- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
+- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 67(2): 23-78.
 - `brett-surman1979a`: Brett-Surman, M. K. (1979). Phylogeny and palaeobiogeography of hadrosaurian dinosaurs. *Nature* 277(5697): 560-562. doi:10.1038/277560a0
 - `barsbold1981a`: Barsbold, R. (1981). Bezzubyye khishchnyye dinozavry Mongolii [Toothless carnivorous dinosaurs of Mongolia]. *Sovmestnaia Sovetsko-Mongol'skaia Paleontologicheskaia Ekspeditsiia Trudy* 15: 28-39.
 - `bonaparte1984b`: Bonaparte, J. F.; Franchi, M. R.; Powell, J. E.; Sepúlveda, E. G. (1984). La Formación Los Alamitos (Campaniano-Maastrichtiano) del sudeste de Río Negro, con descripción de Kritosaurus australis n. sp. (Hadrosauridae). Significado paleogeográfico de los vertebrados. *Revista de la Asociación Geológica Argentina* 39(3-4): 284-299.
@@ -277,7 +277,7 @@
 - `welles1984a`: Welles, S. P. (1984). Dilophosaurus wetherilli (Dinosauria, Theropoda): osteology and comparisons. *Palaeontographica Abteilung A* 185: 85-180.
 - `calvo1995a`: Calvo, J. O.; Salgado, L. (1995). Rebbachisaurus tessonei sp. nov. a new Sauropoda from the Albian-Cenomanian of Argentina; new evidence on the origin of the Diplodocidae. *Gaia* 11: 13-33.
 - `salgado2004a`: Salgado, L.; Garrido, A.; Cocca, S. E.; Cocca, J. R. (2004). Lower Cretaceous rebbachisaurid sauropods from Cerro Aguada del León (Lohan Cura Formation), Neuquén Province, northwestern Patagonia, Argentina. *Journal of Vertebrate Paleontology* 24(4): 903-912. doi:10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2
-- `nopcsa1911a`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(4): 145-153. doi:10.1017/S0016756800110854
+- `nopcsa1911a`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(3-4): 109-115, 145-153. doi:10.1017/S0016756800110854
 - `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
 - `nopcsa1915a`: Nopcsa, B. F. (1915). Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]. *Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt* 23: 1-26.
 - `depéret1896a`: Depéret, C. (1896). Note sur les dinosauriens sauropodes et théropodes du Crétacé supérieur de Madagascar [Note on the sauropod and theropod dinosaurs from the Upper Cretaceous of Madagascar]. *Bulletin de la Société Géologique de France* 24: 176-194.
@@ -298,7 +298,7 @@
 - `verdú2015a`: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L. (2015). Perinates of a new species of Iguanodon (Ornithischia: Ornithopoda) from the lower Barremian of Galve (Teruel, Spain). *Cretaceous Research* 56: 250-264. doi:10.1016/j.cretres.2015.05.010
 - `sancarlo2025a`: Sancarlo, F.; Mandorlo, D.; Ford, T. L. (2025). Reassessment of Iguanodon galvensis classification. *Mesozoic* 2(4): 302-312. doi:10.11646/mesozoic.2.4.3
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
-- `zhang1988a`: Zhang, Y. (1988). The Middle Jurassic Dinosaur Fauna from Dashanpu, Zigong, Sichuan. Vol. II. Sauropod Dinosaurs (I). Sichuan Publishing House of Science and Technology, Chengdu, China.
+- `zhang1988a`: Zhang, Y. (1988). The Middle Jurassic Dinosaur Fauna from Dashanpu, Zigong, Sichuan. Vol. III. Sauropod Dinosaurs (I). Sichuan Publishing House of Science and Technology, Chengdu, China.
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
 - `osborn1917a`: Osborn, H. F. (1917). Skeletal adaptations of Ornitholestes, Struthiomimus, Tyrannosaurus. *Bulletin of the American Museum of Natural History* 35(43): 733-771.
 - `maleev1955b`: Maleev, E. A. (1955). [Giant carnivorous dinosaurs of Mongolia]. *Doklady Akademii Nauk USSR* 104(4): 634-637.

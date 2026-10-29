@@ -1,5 +1,21 @@
 # *Diplodocus*
 
+## Who emended *halli* and who synonymized *Seismosaurus* with *Diplodocus*?
+
+*2026-10-28*
+
+**Conclusion.** Gillette (1994) emended his own *halli* to *hallorum*. Tschopp, Mateus and Benson (2015) did not make the synonymy; they credit it to earlier authors and keep *D. hallorum* as a distinct species. Governs the *Seismosaurus hallorum* synonym reason and the description on [*Diplodocus*](../../../genera/D/Diplodocus.yml).
+
+**Evidence.**
+- gillette1994a, p. 29: "the full and correct name for the new species is now 'Seismosaurus hallorum Gillette 1991.' My initial name proved to have an incorrect Latin ending of a genitive singular … So it was changed to the plural form."
+- tschopp2015a, p. 213: "later changed to species name to hallorum, in order to correct it for wrongly applied latin grammar (Gillette, 1994). Seismosaurus was later synonymized with Diplodocus (Lucas et al., 2006; Lovelace, Hartman & Wahl, 2007)".
+- tschopp2015a, p. 184: "Seismosaurus is therefore here considered a synonym of Diplodocus, but as its own species D. hallorum".
+
+**Ruled out.**
+- *Tschopp and colleagues (2015) as the authors of the synonymy.* The record said so.
+
+**Open.** The synonymizing papers have not been read; the record names no author for the synonymy.
+
 ## Which Sheep Creek quarry is the *Diplodocus carnegii* holotype from?
 
 *2026-08-19*
@@ -34,6 +50,7 @@
 
 ## References
 
-- `hatcher1901a`: Hatcher, J. B. (1901). Diplodocus (Marsh): its osteology, taxonomy, and probable habits, with a restoration of the skeleton. *Memoirs of the Carnegie Museum* 1: 1-63. doi:10.5962/p.234818
+- `gillette1994a`: Gillette, D. D. (1994). Seismosaurus: The Earth Shaker. Columbia University Press, New York.
 - `tschopp2015a`: Tschopp, E.; Mateus, O.; Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ* 3: e857. doi:10.7717/peerj.857
+- `hatcher1901a`: Hatcher, J. B. (1901). Diplodocus (Marsh): its osteology, taxonomy, and probable habits, with a restoration of the skeleton. *Memoirs of the Carnegie Museum* 1: 1-63. doi:10.5962/p.234818
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
