@@ -1,5 +1,20 @@
 # *Altispinax*
 
+## Does Owen's description of the vertebrae agree on Battle?
+
+*2026-10-29*
+
+**Conclusion.** Yes; this closes the Open question of the entry on what Owen and Lydekker give. In the part of his Wealden monograph that describes the vertebrae, Owen (1856) twice places them at Battle, found by Beckles in a nodule of ferruginous clay. The part's title page is dated 1856; its publisher's online edition labels it 1857. Governs `location.locality: Battle, near Hastings` on [*Altispinax dunkeri*](../../../genera/A/Altispinax.yml).
+
+**Evidence.**
+- owen1856a, p. 4: "In the Wealden deposits at Battle, Sussex, a large nodule of the ferruginous clay had been formed and consolidated around a portion of the skeleton of a Megalosaurus consisting of some anterior thoracic vertebræ. In the state in which this nodule was submitted to my examination, three almost entire and consecutive vertebræ, wanting the ribs, were preserved in natural juxtaposition."
+- owen1856a, p. 26: "The magnificent specimen of dorsal vertebræ, T. xix, loc. cit., was discovered by Mr. Beckles, F.G.S., in the Wealden formation near Battle."
+
+**Ruled out.**
+- *A formation from "ferruginous clay".* Owen describes the nodule's matrix, not a named unit.
+
+**Open.** Nothing.
+
 ## What do Owen and Lydekker give as the locality of the vertebrae?
 
 *2026-10-29*
@@ -107,6 +122,7 @@
 
 ## References
 
+- `owen1856a`: Owen, R. (1856). Monograph on the fossil Reptilia of the Wealden Formations. Part III. Megalosaurus bucklandi. *Monographs of the Palaeontographical Society* 9(34): 1-26. doi:10.1080/02693445.1857.12023335
 - `owen1855a`: Owen, R. (1855). Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Part II. Dinosauria (Iguanodon) (Wealden). *Monographs of the Palaeontographical Society* 8(27): 1-54. doi:10.1080/02693445.1854.12113208
 - `lydekker1888a`: Lydekker, R. (1888). Catalogue of the Fossil Reptilia and Amphibia in the British Museum (Natural History). Part I. *British Museum (Natural History), London*: 1-309.
 - `huene1926a`: Huene, F. V. (1926). On several known and unknown reptiles of the order Saurischia from England and France. *Annals and Magazine of Natural History, series 9* 17: 473-489. doi:10.1080/00222932608633437
