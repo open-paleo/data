@@ -1,5 +1,20 @@
 # *Altispinax*
 
+## What do Owen and Lydekker give as the locality of the vertebrae?
+
+*2026-10-29*
+
+**Conclusion.** Battle, which settles the Open question of the entry on Battle against Hollington Quarry. Owen (1855), who first figured the three vertebrae, gives them as "From the Wealden, near Battle", in Samuel Beckles's collection, and Lydekker's (1888) British Museum catalogue sets "the three vertebræ from Battle figured by Owen" apart from a vertebra from the Wadhurst Clay near Hastings. R1828 has no entry of its own in Lydekker's 1888 volume, whose register numbers run only into the 600s. Governs `location.locality: Battle, near Hastings` on [*Altispinax dunkeri*](../../../genera/A/Altispinax.yml).
+
+**Evidence.**
+- owen1855a, explanation of pl. XIX: "Megalosaurus Bucklandii; nat. size. Three anterior dorsal vertebræ … From the Wealden, near Battle. In the Museum of Samuel H. Beckles, Esq., F.G.S."
+- lydekker1888a, p. 166: "R. 604 a. An imperfect anterior dorsal vertebra; from the Wadhurst Clay (Lower Wealden), near Hastings, Sussex. This specimen is strongly opisthocœlous, which indicates that its position is earlier in the series than the three vertebræ from Battle figured by Owen in his 'Wealden and Purbeck Reptilia,' pt. ii. pl. xix."
+
+**Ruled out.**
+- *A formation from Lydekker's "Wadhurst Clay".* It belongs to R. 604 a, not to the Battle vertebrae.
+
+**Open.** Owen's text describing the vertebrae, which Olshevsky (1991, p. 111) places in the next part of the monograph, has not been read.
+
 ## Is NHMUK R1828 from Battle or from Hollington Quarry?
 
 *2026-10-29*
@@ -92,6 +107,8 @@
 
 ## References
 
+- `owen1855a`: Owen, R. (1855). Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Part II. Dinosauria (Iguanodon) (Wealden). *Monographs of the Palaeontographical Society* 8(27): 1-54. doi:10.1080/02693445.1854.12113208
+- `lydekker1888a`: Lydekker, R. (1888). Catalogue of the Fossil Reptilia and Amphibia in the British Museum (Natural History). Part I. *British Museum (Natural History), London*: 1-309.
 - `huene1926a`: Huene, F. V. (1926). On several known and unknown reptiles of the order Saurischia from England and France. *Annals and Magazine of Natural History, series 9* 17: 473-489. doi:10.1080/00222932608633437
 - `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `naish2007a`: Naish, D.; Martill, D. M. (2007). Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia. *Journal of the Geological Society* 164(3): 493-510. doi:10.1144/0016-76492006-032
