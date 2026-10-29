@@ -1,5 +1,22 @@
 # Species authorities
 
+## Who named *Teinurosaurus* and its species?
+
+*2026-10-28*
+
+**Conclusion.** Nopcsa (1928) named the genus, and Huene (1932) the species, as *Caudocoelus sauvagei*. Nopcsa's footnote naming *Teinurosaurus*, "New name for the piece described and figured by Sauvage", was printed against *Saurornithoides* by a printer's error that Nopcsa corrected in 1929; a misprint keeps the original credit, and the footnote's reference to Sauvage's published description is an indication that makes a genus name available before 1931 (ICZN Art. 12.2.1), with no species required. Huene, missing the correction, named the vertebra *Caudocoelus sauvagei*; Olshevsky (1978) made that species the type of *Teinurosaurus*, the first species referred to it (Art. 69.2.2). Governs the species `erected_in: huene1932a`, `erected_as: Caudocoelus sauvagei` and the genus-level `erected_in: nopcsa1928c` on [*Teinurosaurus sauvagei*](../../genera/T/Teinurosaurus.yml).
+
+**Evidence.**
+- nopcsa1928c, p. 183: *Teinurosaurus* listed under Aublysodontinae, with the footnote "New name for the piece described and figured by Sauvage" set against *Saurornithoides*.
+- huene1932a, p. 53: "Caudocoelus sauvagei n. g. n. sp.", for "a distal caudal vertebra of a coelurosaur" from Boulogne-sur-Mer (translated).
+- olshevsky1991a, p. 120: "Genus: Teinurosaurus Nopcsa, 1928 emend. 1929", with "T. sauvagei (von Huene, 1932) Olshevsky, 1978 (Type) = Caudocoelus sauvagei von Huene, 1932".
+
+**Ruled out.**
+- *Nopcsa (1928) as the species authority.* The record gave it; Nopcsa named no species.
+- *Teinurosaurus as unavailable for want of a species, or because of the misplaced footnote.* A genus name published before 1931 needs no included species, and the 1929 correction shows which taxon the name was for.
+
+**Open.** Nopcsa's 1929 correction has not been read; Olshevsky's "emend. 1929" relays it. Nor has Olshevsky (1978), whose held copy is a one-page excerpt from another section.
+
 ## When was *Megalosaurus nethercombensis* named: 1923 or 1926?
 
 *2026-10-28*
@@ -164,13 +181,14 @@
 
 ## References
 
-- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
+- `nopcsa1928c`: Nopcsa, B. F. (1928). The genera of reptiles. *Palaeobiologica* 1: 163-188.
+- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
+- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `huene1926b`: Huene, F. V. (1926). The carnivorous Saurischia in the Jura and Cretaceous formations, principally in Europe. *Revista del Museo de La Plata* 29: 35-167.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `kuhn1961a`: Kuhn, O. (1961). Die Familien der rezenten und fossilen Amphibien und Reptilien [The families of recent and fossil amphibians and reptiles]. In *Die Familien der rezenten und fossilen Amphibien und Reptilien*. Meisenbach, Bamberg.
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
-- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
 - `haubold1961a`: Haubold, H.; Kuhn, O. (1961). Lebensbilder und Evolution fossiler Saurier, Amphibien und Reptilien. A. Ziemsen Verlag, Wittenberg.
 - `brown1943a`: Brown, B.; Schlaikjer, E. M. (1943). A study of the troödont dinosaurs with the description of a new genus and four new species. *Bulletin of the American Museum of Natural History* 82(5): 115-150.
