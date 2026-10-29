@@ -1,5 +1,20 @@
 # Species authorities
 
+## Which instalment of Nopcsa (1911) names *Stegosaurus priscus*?
+
+*2026-10-28*
+
+**Conclusion.** Supersedes the *Loricatosaurus priscus* line of the 2026-10-28 entry on species named in another genus, which cited the April instalment and left the naming page unread. Nopcsa's paper appeared in two numbers of the *Geological Magazine*, March and April 1911, and the name is proposed in the March number, on its first page. The two numbers are separate store entries, the March one nopcsa1911b and the April one nopcsa1911a. The authority stays Nopcsa, 1911. Governs the species `erected_in: nopcsa1911b` on [*Loricatosaurus priscus*](../../genera/L/Loricatosaurus.yml).
+
+**Evidence.**
+- nopcsa1911b, p. 109: "On account of the small elevation of the neural arch of the dorsal vertebrae I propose to name this new Stegosaurian species Stegosaurus priscus. The type-specimen … bears the register number R. 3167".
+- nopcsa1911a, p. 145: "(Concluded from the March Number, p. 115.)".
+
+**Ruled out.**
+- *One entry for both numbers.* They were issued separately, a month apart, each with its own DOI.
+
+**Open.** Nothing.
+
 ## Which work made *Neuquensaurus* available?
 
 *2026-10-28*
@@ -197,6 +212,8 @@
 
 ## References
 
+- `nopcsa1911b`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(3): 109-115. doi:10.1017/S0016756800110714
+- `nopcsa1911a`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(4): 145-153. doi:10.1017/S0016756800110854
 - `lydekker1893a`: Lydekker, R. (1893). Contributions to a knowledge of the fossil vertebrates of Argentina. I. — The dinosaurs of Patagonia. *Anales del Museo de La Plata. Paleontología Argentina* 2: 1-16.
 - `powell1992a`: Powell, J. E. (1992). Osteologia de Saltasaurus loricatus (Sauropoda - Titanosauridae) del Cretácico Superior del noroeste Argentino [Osteology of Saltasaurus loricatus (Sauropoda - Titanosauridae) from the Upper Cretaceous of northwest Argentina]. In *Los Dinosaurios y su Entorno Biótico: Actas del Segundo Curso de Paleontología en Cuenca (Sanz, J. L.; Buscalioni, A. D., eds.)*, pp. 165-230. Instituto "Juan de Valdés", Cuenca.
 - `wilson2003b`: Wilson, J. A.; Upchurch, P. (2003). A revision of Titanosaurus Lydekker (Dinosauria - Sauropoda), the first dinosaur genus with a 'Gondwanan' distribution. *Journal of Systematic Palaeontology* 1(3): 125-160. doi:10.1017/S1477201903001044
@@ -277,7 +294,6 @@
 - `welles1984a`: Welles, S. P. (1984). Dilophosaurus wetherilli (Dinosauria, Theropoda): osteology and comparisons. *Palaeontographica Abteilung A* 185: 85-180.
 - `calvo1995a`: Calvo, J. O.; Salgado, L. (1995). Rebbachisaurus tessonei sp. nov. a new Sauropoda from the Albian-Cenomanian of Argentina; new evidence on the origin of the Diplodocidae. *Gaia* 11: 13-33.
 - `salgado2004a`: Salgado, L.; Garrido, A.; Cocca, S. E.; Cocca, J. R. (2004). Lower Cretaceous rebbachisaurid sauropods from Cerro Aguada del León (Lohan Cura Formation), Neuquén Province, northwestern Patagonia, Argentina. *Journal of Vertebrate Paleontology* 24(4): 903-912. doi:10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2
-- `nopcsa1911a`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(3-4): 109-115, 145-153. doi:10.1017/S0016756800110854
 - `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
 - `nopcsa1915a`: Nopcsa, B. F. (1915). Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]. *Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt* 23: 1-26.
 - `depéret1896a`: Depéret, C. (1896). Note sur les dinosauriens sauropodes et théropodes du Crétacé supérieur de Madagascar [Note on the sauropod and theropod dinosaurs from the Upper Cretaceous of Madagascar]. *Bulletin de la Société Géologique de France* 24: 176-194.
