@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-29T21:59:10.525Z",
+    "built_at": "2026-10-29T23:50:44.455Z",
     "clade_count": 188,
     "genus_count": 1426,
     "license": "CC-BY-4.0",
@@ -95765,6 +95765,13 @@
               "max": 754
             }
           },
+          "synonyms": [
+            {
+              "name": "Gargoyleosaurus parkpini",
+              "type": "emended spelling",
+              "reason": "The original spelling of Carpenter and colleagues (1998); Carpenter (2001) amended it to parkpinorum, as the name honors two people."
+            }
+          ],
           "erected_in": "carpenter1998a",
           "described_in": "kilbourne2005a",
           "type_specimen": {
@@ -95792,6 +95799,16 @@
           "issue": "6687",
           "pages": "782-783",
           "doi": "10.1038/31684"
+        },
+        {
+          "id": "carpenter2001d",
+          "authors": "Carpenter, K.",
+          "year": 2001,
+          "title": "Phylogenetic analysis of the Ankylosauria",
+          "book": "The Armored Dinosaurs",
+          "publisher": "Indiana University Press, Bloomington",
+          "pages": "455-483",
+          "notes": "Amends the epithet from parkpini to parkpinorum."
         },
         {
           "id": "jones2026a",
@@ -118979,6 +118996,13 @@
               "max": 1.2
             }
           },
+          "synonyms": [
+            {
+              "name": "Jaklapallisaurus asymmetrica",
+              "type": "emended spelling",
+              "reason": "The original spelling of Novas and colleagues (2010); changed to the masculine asymmetricus by Ezcurra and colleagues (2023) to agree with the genus."
+            }
+          ],
           "erected_in": "novas2010a",
           "described_in": "ezcurra2023a",
           "type_specimen": {
@@ -119140,6 +119164,7 @@
           "reason": "Informal name used for material now considered referable to Janenschia."
         }
       ],
+      "erected_in": "wild1991a",
       "species": [
         {
           "name": "Janenschia robusta",
@@ -119198,9 +119223,10 @@
               "reason": "Combination used after Sternfeld (1911) transferred the species to Tornieria; Wild (1991) found it generically distinct and erected Janenschia."
             }
           ],
-          "erected_in": "wild1991a",
-          "authors": "Wild, R.",
-          "described": 1991
+          "erected_as": "Gigantosaurus robustus",
+          "erected_in": "fraas1908a",
+          "authors": "Fraas, E.",
+          "described": 1908
         }
       ],
       "references": [
@@ -119212,7 +119238,17 @@
           "journal": "Jahreshefte des Vereins für Vaterländische Naturkunde in Württemberg",
           "volume": "64",
           "pages": "84-86",
-          "notes": "In German. Original description of the type material (Skeleton B, holotype SMNS 12144, a right hindlimb) as Gigantosaurus robustus; Gigantosaurus was preoccupied by Seeley, 1869."
+          "notes": "In German. Names the species as Gigantosaurus robustus in a report of Fraas's talk; Gigantosaurus was preoccupied by Seeley, 1869."
+        },
+        {
+          "id": "fraas1908b",
+          "authors": "Fraas, E.",
+          "year": 1908,
+          "title": "Ostafrikanische Dinosaurier [East African dinosaurs]",
+          "journal": "Palaeontographica",
+          "volume": "55",
+          "pages": "105-144",
+          "notes": "In German. Describes the type material (Skeleton B, holotype SMNS 12144, a right hindlimb) as Gigantosaurus robustus."
         },
         {
           "id": "sternfeld1911a",
@@ -119222,7 +119258,7 @@
           "journal": "Sitzungsberichte der Gesellschaft Naturforschender Freunde zu Berlin",
           "volume": "8",
           "pages": "398",
-          "notes": "In German. Replaced the preoccupied Gigantosaurus Fraas, 1908 with Tornieria, transferring Gigantosaurus robustus to Tornieria robusta, the epithet changing to agree with the feminine genus."
+          "notes": "In German. Coins the replacement genus Tornieria for the preoccupied Gigantosaurus Fraas, 1908."
         },
         {
           "id": "wild1991a",
@@ -145035,6 +145071,7 @@
           "id": "4531816"
         }
       ],
+      "erected_in": "riabinin1930a",
       "species": [
         {
           "name": "Mandschurosaurus amurensis",
@@ -145085,10 +145122,11 @@
               "reason": "Originally described as Trachodon amurense by Riabinin (1925); Riabinin (1930) erected Mandschurosaurus for the material."
             }
           ],
-          "erected_in": "riabinin1930a",
-          "described_in": "riabinin1925a",
+          "erected_as": "Trachodon amurense",
+          "erected_in": "riabinin1925a",
+          "described_in": "riabinin1930a",
           "authors": "Riabinin, A. N.",
-          "described": 1930
+          "described": 1925
         }
       ],
       "references": [
@@ -170194,6 +170232,7 @@
           "id": "Q2028410"
         }
       ],
+      "erected_in": "galton2009a",
       "species": [
         {
           "name": "Owenodon hoggii",
@@ -170233,13 +170272,26 @@
               "max": 5
             }
           },
-          "erected_in": "galton2009a",
+          "erected_as": "Iguanodon hoggii",
+          "erected_in": "owen1874b",
           "described_in": "norman2012a",
-          "authors": "Galton, P. M.",
-          "described": 2009
+          "authors": "Owen, R.",
+          "described": 1874
         }
       ],
       "references": [
+        {
+          "id": "owen1874b",
+          "authors": "Owen, R.",
+          "year": 1874,
+          "title": "Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Supplement No. V. Dinosauria (Iguanodon)",
+          "journal": "Monographs of the Palaeontographical Society",
+          "volume": "27",
+          "issue": "124",
+          "pages": "1-18",
+          "doi": "10.1080/02693445.1874.12113258",
+          "notes": "Names the species, conditionally, as Iguanodon Hoggii."
+        },
         {
           "id": "galton2009a",
           "authors": "Galton, P. M.",
@@ -173733,7 +173785,7 @@
         "phonetic": "PAR-a-RAB-do-don"
       },
       "etymology": "From Greek 'para' meaning 'near' or 'beside' combined with the genus name Rhabdodon (meaning 'fluted tooth'); translates as 'near fluted tooth', indicating its close relationship to Rhabdodon.",
-      "description": "Pararhabdodon is a genus of tsintaosaurin hadrosaurid dinosaur from the Maastrichtian-aged (Late Cretaceous) Tremp Group of Spain. The first remains were discovered from the Sant Romà d'Abella fossil locality and assigned to the genus Rhabdodon, and later named as the distinct species Pararhabdodon isonensis in 1993. Known material includes assorted postcranial remains, mostly vertebrae, as well as maxillae from the skull. Specimens from other sites, including remains from France, a maxilla previously considered the distinct taxon Koutalisaurus kohlerorum, an additional maxilla from another locality, the material assigned to the genera Blasisaurus and Arenysaurus, and the extensive Basturs Poble bonebed have been considered at different times to belong to the species, but all of these assignments have more recently been questioned. It was one of the last non-avian dinosaurs known from the fossil record that went extinct during the Cretaceous-Paleogene extinction event.",
+      "description": "Pararhabdodon is a genus of tsintaosaurin hadrosaurid dinosaur from the Maastrichtian-aged (Late Cretaceous) Tremp Group of Spain. The first remains were discovered from the Sant Romà d'Abella fossil locality and assigned to the genus Rhabdodon, and later named as the distinct species Pararhabdodon isonense in 1993, a spelling later corrected to isonensis. Known material includes assorted postcranial remains, mostly vertebrae, as well as maxillae from the skull. Specimens from other sites, including remains from France, a maxilla previously considered the distinct taxon Koutalisaurus kohlerorum, an additional maxilla from another locality, the material assigned to the genera Blasisaurus and Arenysaurus, and the extensive Basturs Poble bonebed have been considered at different times to belong to the species, but all of these assignments have more recently been questioned. It was one of the last non-avian dinosaurs known from the fossil record that went extinct during the Cretaceous-Paleogene extinction event.",
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -173815,6 +173867,13 @@
             "material": "Nearly complete middle-posterior cervical vertebra.",
             "completeness": "fragmentary"
           },
+          "synonyms": [
+            {
+              "name": "Pararhabdodon isonense",
+              "type": "emended spelling",
+              "reason": "The original spelling of Casanovas-Cladellas and colleagues (1993); corrected to isonensis in 1997, as Prieto-Márquez and colleagues (2006) record."
+            }
+          ],
           "erected_in": "casanovas-cladellas1993a",
           "described_in": "prieto-márquez2006b",
           "authors": "Casanovas-Cladellas, M. L.; Santafé-Llopis, J. V.; Isidro-Llorens, A.",
@@ -173826,7 +173885,7 @@
           "id": "casanovas-cladellas1993a",
           "authors": "Casanovas-Cladellas, M. L.; Santafé-Llopis, J. V.; Isidro-Llorens, A.",
           "year": 1993,
-          "title": "Pararhabdodon isonensis n. gen. n. sp. (Dinosauria). Estudio mofológico, radio-tomográfico y consideraciones biomecanicas [Pararhabdodon isonense n. gen. n. sp. (Dinosauria). Morphology, radio-tomographic study, and biomechanic considerations]",
+          "title": "Pararhabdodon isonense n. gen. n. sp. (Dinosauria). Estudio morfológico, radio-tomográfico y consideraciones biomecanicas [Pararhabdodon isonense n. gen. n. sp. (Dinosauria). Morphology, radio-tomographic study, and biomechanic considerations]",
           "journal": "Paleontologia i Evolució",
           "volume": "26-27",
           "pages": "121-131",
@@ -193360,6 +193419,7 @@
               "max": 6.6
             }
           },
+          "erected_as": "Orthomerus weberi",
           "erected_in": "riabinin1945a",
           "described_in": "averianov2019a",
           "synonyms": [
@@ -198344,6 +198404,13 @@
               "max": 2000
             }
           },
+          "synonyms": [
+            {
+              "name": "Sauropelta edwardsi",
+              "type": "emended spelling",
+              "reason": "Ostrom's (1970) original spelling; corrected to edwardsorum by Olshevsky (1991), as the name honors more than one person."
+            }
+          ],
           "erected_in": "ostrom1970a",
           "authors": "Ostrom, J. H.",
           "described": 1970
@@ -198403,6 +198470,16 @@
           "journal": "Bulletin of the Peabody Museum of Natural History",
           "volume": "35",
           "pages": "1-234"
+        },
+        {
+          "id": "olshevsky1991a",
+          "authors": "Olshevsky, G.",
+          "year": 1991,
+          "title": "A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia",
+          "journal": "Mesozoic Meanderings",
+          "volume": "2",
+          "pages": "1-196",
+          "notes": "Corrects the epithet to edwardsorum, keeping Ostrom's authority."
         },
         {
           "id": "jones2026a",
@@ -215005,9 +215082,10 @@
               "reason": "The original combination, published by Paul (1988) for the specimen Molnar had described in 1978, with the epithet spelled molnaris. Olshevsky, Ford and Yamamoto (1995) moved the species to a genus of its own."
             }
           ],
-          "erected_in": "olshevsky1995a",
-          "authors": "Olshevsky, G.; Ford, T. L.; Yamamoto, S.",
-          "described": 1995
+          "erected_as": "Aublysodon molnaris",
+          "erected_in": "paul1988a",
+          "authors": "Paul, G. S.",
+          "described": 1988
         }
       ],
       "erected_in": "olshevsky1995a",
@@ -228160,6 +228238,7 @@
               "reason": "Originally described as Gigantosaurus africanus; the genus name was preoccupied, and the species was reassigned to Tornieria."
             }
           ],
+          "erected_as": "Gigantosaurus africanus",
           "erected_in": "fraas1908a",
           "described_in": "remes2006a",
           "authors": "Fraas, E.",
@@ -228175,7 +228254,17 @@
           "journal": "Jahreshefte des Vereins für Vaterländische Naturkunde in Württemberg",
           "volume": "64",
           "pages": "84-86",
-          "notes": "In German. Original description of the material as Gigantosaurus africanus; the genus name was preoccupied and the species was reassigned to Tornieria by Sternfeld (1911)."
+          "notes": "In German. Names the species as Gigantosaurus africanus in a report of Fraas's talk; the genus name was preoccupied and later replaced by Tornieria."
+        },
+        {
+          "id": "fraas1908b",
+          "authors": "Fraas, E.",
+          "year": 1908,
+          "title": "Ostafrikanische Dinosaurier [East African dinosaurs]",
+          "journal": "Palaeontographica",
+          "volume": "55",
+          "pages": "105-144",
+          "notes": "In German. Describes the material as Gigantosaurus africanus."
         },
         {
           "id": "sternfeld1911a",
