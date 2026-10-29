@@ -1,5 +1,26 @@
 # *Altispinax*
 
+## Is *Altispinax dunkeri* Huene, 1923 the name for the Battle vertebrae?
+
+*2026-10-28*
+
+**Conclusion.** The record follows Maisch (2016): *Altispinax dunkeri* Huene, 1923 is the name for NHMUK R1828, credited to Huene (1923) rather than to Dames (1884), with *Becklespinax* a junior objective synonym. Maisch argues that Huene founded the species on the vertebrae, which Lydekker had referred to Dames's tooth species, by a deliberate use of a misidentification (ICZN Art. 11.10). No later paper tests that argument; since 2016 some authors use *Altispinax dunkeri*, others *Becklespinax altispinax*, in passing. That is divided usage rather than a dispute, so the record carries no `dispute` block. Governs `erected_in: huene1923a` on *Altispinax dunkeri* and the *Becklespinax* synonym on [*Altispinax*](../../../genera/A/Altispinax.yml).
+
+**Evidence.**
+- maisch2016a, p. 218: "according to Art. 11.10 of the ICZN (4th edition), the species Altispinax dunkeri v. Huene, 1923 non Dames, 1884 can be retained as a valid taxon, since the use of the name Megalosaurus dunkeri by v. Huene (1923) was evidently a deliberate use of misidentification."
+- maisch2016a, p. 216: of the two species Huene included, "None of them was explicitly designated as the type species, but Altispinax dunkeri (Dames) was considered as such and made the genotype by Kuhn (1939)."
+- huene1923a, p. 453: "The species described as M. dunkeri by Lydekker (Dames), from the English (and German) Lower Wealden, is distinguished from Megalosaurus by its enormously high neural spines in the dorsal region. I therefore propose to establish a new genus, Altispinax, for it."
+- Following Maisch: jones2026c, p. 159 ("the convoluted nomenclature was settled (hopefully) once and for all, leaving us with Altispinax dunkeri (Maisch, 2016)"); lockwood2025a, p. 2 ("Altispinax dunkeri Huene 1923"); barker2023a, p. 6.
+- Using *Becklespinax*, without discussion: molina-pérez2019a, p. 39; raven2020a, p. e1826956-23; tucker2022a, p. 17. morrison2026a, p. 2, leaves it open: "attributable to either Altispinax or Becklespinax (Maisch [20] regarding the taxonomy of this material)".
+
+**Ruled out.**
+- *Treating the name as disputed.* No paper since 2016 argues against Maisch; the *Becklespinax* uses are passing mentions.
+- *Adopting a reading of our own.* Both points under **Open** are this project's readings of the Code, not published arguments.
+
+**Open.**
+- Art. 11.10 requires a deliberate misidentification, which Arts. 67.13 and 70.4 tie to fixing a type species or to an expressly stated misidentification. Huene (1923) fixed no type species and states no misidentification, still crediting Dames. His earlier-written but later-printed account reads as an ordinary misidentification: "if it were certain that such dorsal vertebrae belong to Megalosaurus dunkeri, it would be necessary to put it into a distinct genus, for which the name Altispinax, gen. nov., might be reserved", calling the Dames tooth "The type-specimen" (huene1926a, p. 483). Olshevsky (1991, p. 22) likewise reads *Altispinax* as "a conditional name, without a type species".
+- If Maisch's route fails, Art. 70.3.2 lets an author fix as type species the species actually involved in a misidentified type species, citing both names and the article. That would make *Acrocanthosaurus altispinax* Paul, 1988 the type, giving *Altispinax altispinax* (Paul, 1988), with *Becklespinax* still a junior objective synonym. No paper has made this designation.
+
 ## Where does *Altispinax* sit within Tetanurae?
 
 *2026-10-15*
@@ -35,8 +56,15 @@
 
 ## References
 
+- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
+- `maisch2016a`: Maisch, M. W. (2016). The nomenclatural status of the carnivorous dinosaur genus Altispinax v. Huene, 1923 (Saurischia, Theropoda) from the Lower Cretaceous of England. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 280(2): 215-219. doi:10.1127/njgpa/2016/0576
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `lockwood2025a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2025). The origins of neural spine elongation in iguanodontian dinosaurs and the osteology of a new sail-back styracosternan (Dinosauria, Ornithischia) from the Lower Cretaceous Wealden Group of England. *Papers in Palaeontology* 11(4). doi:10.1002/spp2.70034
+- `barker2023a`: Barker, C. T.; Naish, D.; Gostling, N. J. (2023). Isolated tooth reveals hidden spinosaurid dinosaur diversity in the British Wealden Supergroup (Lower Cretaceous). *PeerJ* 11: e15453. doi:10.7717/peerj.15453
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
+- `raven2020a`: Raven, T. J.; Barrett, P. M.; Pond, S. B.; Maidment, S. C. R. (2020). Osteology and taxonomy of British Wealden Supergroup (Berriasian-Aptian) ankylosaurs (Ornithischia, Ankylosauria). *Journal of Vertebrate Paleontology*. doi:10.1080/02724634.2020.1826956
+- `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
+- `morrison2026a`: Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M. (2026). A new megaraptoran dinosaur from the Lower Cretaceous Wessex Formation, UK, and its implications for theropod evolution and biogeography. *Royal Society Open Science* 13(10): 260937. doi:10.1098/rsos.260937
+- `huene1926a`: Huene, F. V. (1926). On several known and unknown reptiles of the order Saurischia from England and France. *Annals and Magazine of Natural History, series 9* 17: 473-489. doi:10.1080/00222932608633437
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `naish2003a`: Naish, D. (2003). A definitive allosauroid (Dinosauria; Theropoda) from the Lower Cretaceous of East Sussex. *Proceedings of the Geologists' Association* 114(4): 319-326. doi:10.1016/S0016-7878(03)80032-9
-- `maisch2016a`: Maisch, M. W. (2016). The nomenclatural status of the carnivorous dinosaur genus Altispinax v. Huene, 1923 (Saurischia, Theropoda) from the Lower Cretaceous of England. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 280(2): 215-219. doi:10.1127/njgpa/2016/0576
-- `morrison2026a`: Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M. (2026). A new megaraptoran dinosaur from the Lower Cretaceous Wessex Formation, UK, and its implications for theropod evolution and biogeography. *Royal Society Open Science* 13(10): 260937. doi:10.1098/rsos.260937
-- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
