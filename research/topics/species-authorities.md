@@ -1,5 +1,22 @@
 # Species authorities
 
+## Who replaced Huene's preoccupied *Campylodon* with *Campylodoniscus*?
+
+*2026-10-28*
+
+**Conclusion.** Kuhn (1961), in *Die Familien der rezenten und fossilen Amphibien und Reptilien*. Huene's *Campylodon* (1929) was preoccupied by *Campylodon* Cuvier and Valenciennes, 1832, and the technical literature credits the replacement name to Kuhn alone, in 1961; the only Kuhn 1961 work in those bibliographies is *Die Familien*. The species keeps Huene (1929). Governs the species `erected_in: huene1929a`, `erected_as: Campylodon ameghinoi` and the genus-level `erected_in: kuhn1961a` on [*Campylodoniscus ameghinoi*](../../genera/C/Campylodoniscus.yml).
+
+**Evidence.**
+- huene1929a, p. 82: "Campylodon Ameghinoi n. gen. n. sp.".
+- upchurch2004a, p. 270, Table 13.1: "type of Campylodoniscus Kuhn, 1961".
+- olshevsky1991a, p. 144: "Genus: Campylodoniscus Kuhn, 1961".
+- powell2003a, p. 57: "Campylodon Huene 1929a, pp. 82-3, non; Cuvier and Valenciennes, 1832", the misplaced semicolon as printed; the replacement is credited to "Kuhn 1961 in Steel 1970", and the section heading gives "Kuhn 1970", the year of the work Powell read it in.
+
+**Ruled out.**
+- *Haubold and Kuhn (1961), Lebensbilder und Evolution fossiler Saurier (haubold1961a), as the source of the name.* The record credited it, as two popular books do without a page; no work giving a page cites it for *Campylodoniscus*, and the bibliographies citing "Kuhn, 1961" list only *Die Familien*.
+
+**Open.** *Die Familien* has not been read; it, or Steel (1970, p. 76), would confirm the page and the wording.
+
 ## Which paper is the authority for *Hanssuesia*, and for its type species?
 
 *2026-10-28*
@@ -131,6 +148,12 @@
 
 ## References
 
+- `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
+- `kuhn1961a`: Kuhn, O. (1961). Die Familien der rezenten und fossilen Amphibien und Reptilien [The families of recent and fossil amphibians and reptiles]. In *Die Familien der rezenten und fossilen Amphibien und Reptilien*. Meisenbach, Bamberg.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
+- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
+- `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
+- `haubold1961a`: Haubold, H.; Kuhn, O. (1961). Lebensbilder und Evolution fossiler Saurier, Amphibien und Reptilien. A. Ziemsen Verlag, Wittenberg.
 - `brown1943a`: Brown, B.; Schlaikjer, E. M. (1943). A study of the troödont dinosaurs with the description of a new genus and four new species. *Bulletin of the American Museum of Natural History* 82(5): 115-150.
 - `sullivan2003b`: Sullivan, R. M. (2003). Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae). *Journal of Vertebrate Paleontology* 23(1): 181-207. doi:10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
 - `sullivan2003a`: Sullivan, R. M. (2003). Hanssuesia, the correct generic name for 'Hanssuessia' Sullivan, 2003. *Journal of Vertebrate Paleontology* 23(3): 714-714. doi:10.1671/03010
@@ -152,7 +175,6 @@
 - `blows1996a`: Blows, W. T. (1996). A new species of Polacanthus (Ornithischia; Ankylosauria) from the Lower Cretaceous of Sussex, England. *Geological Magazine* 133(6): 671-682.
 - `blows2015a`: Blows, W. T. (2015). British Polacanthid Dinosaurs — Observations on the History and Palaeontology of the UK Polacanthid Armoured Dinosaurs and their Relatives. In *British Polacanthid Dinosaurs*, pp. 1-220. Siri Scientific Press.
 - `gilmore1945a`: Gilmore, C. W.; Stewart, D. R. (1945). A new sauropod dinosaur from the Upper Cretaceous of Missouri. *Journal of Paleontology* 19(1): 23-29.
-- `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `leloeuff1993a`: Le Loeuff, J. (1993). European titanosaurids. *Revue de Paléobiologie, Volume Spéciale* 7: 105-117.
 - `raath1969a`: Raath, M. A. (1969). A new coelurosaurian dinosaur from the Forest Sandstone of Rhodesia. *Arnoldia Rhodesia* 4(28): 1-25.
 - `ivie2001a`: Ivie, M. A.; Slipinski, S. A.; Wegrzynowicz, P. (2001). Generic homonyms in the Colydiinae (Coleoptera: Zopheridae). *Insecta Mundi* 15(1): 184.
@@ -222,7 +244,6 @@
 - `sancarlo2025a`: Sancarlo, F.; Mandorlo, D.; Ford, T. L. (2025). Reassessment of Iguanodon galvensis classification. *Mesozoic* 2(4): 302-312. doi:10.11646/mesozoic.2.4.3
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
 - `zhang1988a`: Zhang, Y. (1988). The Middle Jurassic Dinosaur Fauna from Dashanpu, Zigong, Sichuan. Vol. II. Sauropod Dinosaurs (I). Sichuan Publishing House of Science and Technology, Chengdu, China.
-- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
 - `osborn1917a`: Osborn, H. F. (1917). Skeletal adaptations of Ornitholestes, Struthiomimus, Tyrannosaurus. *Bulletin of the American Museum of Natural History* 35(43): 733-771.
 - `maleev1955b`: Maleev, E. A. (1955). [Giant carnivorous dinosaurs of Mongolia]. *Doklady Akademii Nauk USSR* 104(4): 634-637.
@@ -234,3 +255,7 @@
 - `holmes2001a`: Holmes, R. B.; Forster, C. A.; Ryan, M. J.; Shepherd, K. M. (2001). A new species of Chasmosaurus (Dinosauria: Ceratopsia) from the Dinosaur Park Formation of southern Alberta. *Canadian Journal of Earth Sciences* 38(10): 1423-1438. doi:10.1139/cjes-38-10-1423
 - `sampson2010a`: Sampson, S. D.; Loewen, M. A.; Farke, A. A.; Roberts, E. M.; Forster, C. A.; Smith, J. A.; Titus, A. L. (2010). New Horned Dinosaurs from Utah Provide Evidence for Intracontinental Dinosaur Endemism. *PLoS ONE* 5(9): e12292. doi:10.1371/journal.pone.0012292
 - `lydekker1889a`: Lydekker, R. (1889). Note on some points in the nomenclature of fossil reptiles and amphibians, with preliminary notices of two new species. *Geological Magazine* 6: 325-326.
+
+## Other references
+
+- `steel1970a`: Steel, R. (1970). Saurischia. In *Handbuch der Paläoherpetologie*, pp. 1-87.
