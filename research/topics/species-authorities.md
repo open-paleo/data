@@ -1,5 +1,31 @@
 # Species authorities
 
+## How is a species recorded whose epithet was changed after it was named?
+
+*2026-10-29*
+
+**Conclusion.** It keeps the author and date of the paper that named it (ICZN Art. 33.2.2, 34.2.1). When the species was named in another genus, `erected_as` gives the binomial exactly as that paper printed it, ending included. When the epithet was changed within its genus, the printed spelling is a species synonym typed `emended spelling`, and `erected_as` stays unset, since the authority takes no parentheses (Art. 51.3); CONTRIBUTING states the rule. Of the 50 records a keyword scan flagged, nine had a changed epithet; the rest mention an emended diagnosis or a spelling of something else. Three of the five named in another genus, and *Owenodon hoggii*, had credited the species to the paper that erected its current genus. Governs `erected_as`, the species and genus-level `erected_in` and the `emended spelling` synonyms on [*Janenschia robusta*](../../genera/J/Janenschia.yml), [*Tornieria africana*](../../genera/T/Tornieria.yml), [*Mandschurosaurus amurensis*](../../genera/M/Mandschurosaurus.yml), [*Riabininohadros weberae*](../../genera/R/Riabininohadros.yml), [*Stygivenator molnari*](../../genera/S/Stygivenator.yml), [*Owenodon hoggii*](../../genera/O/Owenodon.yml), [*Sauropelta edwardsorum*](../../genera/S/Sauropelta.yml), [*Gargoyleosaurus parkpinorum*](../../genera/G/Gargoyleosaurus.yml), [*Jaklapallisaurus asymmetricus*](../../genera/J/Jaklapallisaurus.yml) and [*Pararhabdodon isonensis*](../../genera/P/Pararhabdodon.yml).
+
+**Evidence.**
+- *Janenschia robusta* and *Tornieria africana*: fraas1908a, p. LXXXVI: "a long-legged *G. africanus* and a more robust *G. robustus*" (translated), in the report of a talk, which suffices as a description before 1931 (Art. 12.1); fraas1908b, p. 141: "*Gigantosaurus africanus* E. Fraas … *Gigantosaurus robustus* E. Fraas". Sternfeld (1911, sternfeld1911a, p. 398) coins *Tornieria* and prints neither new combination.
+- *Mandschurosaurus amurensis*: "Trachodon amurense nov. sp.", relayed from Riabinin's own citation of riabinin1925a, which is not held, in riabinin1930a, p. 3.
+- *Riabininohadros weberae*: riabinin1945a, p. 5: "Orthomerus weberi sp. nov." (translated).
+- *Stygivenator molnari*: paul1988a, p. 325: "AUBLYSODON MOLNARIS new species".
+- *Owenodon hoggii*: owen1874b, p. 4: "If any Palæontologist should see in this a specific character he may, perhaps, accept the name of *Iguanodon Hoggii*". A conditional proposal does not make a name unavailable before 1961 (Art. 11.5.1), and the capital is lowered under Art. 28, not emended.
+- *Sauropelta*: ostrom1970a, p. 103: "TYPE SPECIES: Sauropelta edwardsi, new species"; olshevsky1991a, p. 22, lists "Sauropelta edwardsorum Ostrom, 1970" among corrected patronyms.
+- *Gargoyleosaurus*: carpenter1998a, p. 782: "Gargoyleosaurus parkpini gen. et sp. nov."; carpenter2001d, p. 457, Table 21.1: "Gargoyleosaurus parkpinorum Carpenter et al., 1998 (amended from parkpini …)".
+- *Jaklapallisaurus*: novas2010a, p. 337: "Jaklapallisaurus asymmetrica nov. gen. et nov. sp."; ezcurra2023a, p. 1096: the name "was changed from the female 'asymmetrica' to the masculine 'asymmetricus'".
+- *Pararhabdodon*: prieto-márquez2006b, p. 930, records that two 1997 papers "corrected the specific epithet isonense to isonensis". The naming paper, casanovas-cladellas1993a, and both 1997 papers are not held.
+
+**Ruled out.**
+- *Widening `erected_as` to any spelling that differs from the current name.* Its presence would then no longer mark a parenthetical authority.
+- *Sternfeld (1911) as the author of Tornieria robusta and T. africana.* A Janenschia note said so; p. 398 coins only the genus.
+- *Galton (2009) as the authority of Owenodon hoggii, and Riabinin (1930), Wild (1991) and Olshevsky (1995) for their species.* Each erected the current genus.
+
+**Open.**
+- Which Fraas (1908) appeared first, the report of the talk (fraas1908a) or the *Palaeontographica* paper (fraas1908b); neither copy shows an issue date. The records cite fraas1908a.
+- The original spellings in four unheld naming papers, consistent in every later work read: barsbold1986a (*Conchoraptor gracilis*), rich1999a (*Tehuelchesaurus benitezii*; five papers misspell it *benitezi*), zhang1995a (*Jingshanosaurus xinwaensis*) and yadagiri1988a (*Kotasaurus yamanpalliensis*).
+
 ## Which instalment of Nopcsa (1911) names *Stegosaurus priscus*?
 
 *2026-10-28*
@@ -212,6 +238,26 @@
 
 ## References
 
+- `fraas1908a`: Fraas, E. (1908). Dinosaurierfunde in Ostafrika [Dinosaur finds in East Africa]. *Jahreshefte des Vereins für Vaterländische Naturkunde in Württemberg* 64: 84-86.
+- `fraas1908b`: Fraas, E. (1908). Ostafrikanische Dinosaurier [East African dinosaurs]. *Palaeontographica* 55: 105-144.
+- `sternfeld1911a`: Sternfeld, R. (1911). Zur Nomenklatur der Gattung Gigantosaurus Fraas [On the nomenclature of the genus Gigantosaurus Fraas]. *Sitzungsberichte der Gesellschaft Naturforschender Freunde zu Berlin* 8: 398.
+- `riabinin1925a`: Riabinin, A. N. (1925). A mounted skeleton of the gigantic reptile Trachodon amurense, nov. sp. *Izvestiya Geologicheskogo Komiteta* 44(1): 1-12.
+- `riabinin1930a`: Riabinin, A. N. (1930). Mandschurosaurus amurensis nov. gen. nov. sp., verkhnemelovoy dinozavr s. r. Amura [Mandschurosaurus amurensis nov. gen, nov. sp., a hadrosaurian dinosaur from the Upper Cretaceous of the Amur River]. *Monografii Russkogo Paleontologicheskogo Obshchestva* 2: 1-36.
+- `riabinin1945a`: Riabinin, A. N. (1945). Dinosaur remains in the Upper Cretaceous of Crimea. *Paleontologiya i Stratigrafiya*: 4-10.
+- `paul1988a`: Paul, G. S. (1988). Predatory Dinosaurs of the World. *Simon & Schuster, New York*: 1-464.
+- `owen1874b`: Owen, R. (1874). Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Supplement No. V. Dinosauria (Iguanodon). *Monographs of the Palaeontographical Society* 27(124): 1-18. doi:10.1080/02693445.1874.12113258
+- `ostrom1970a`: Ostrom, J. H. (1970). Stratigraphy and paleontology of the Cloverly Formation (Lower Cretaceous) of the Bighorn Basin area, Wyoming and Montana. *Bulletin of the Peabody Museum of Natural History* 35: 1-234.
+- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
+- `carpenter1998a`: Carpenter, K.; Miles, C.; Cloward, K. (1998). Skull of a Jurassic ankylosaur (Dinosauria). *Nature* 393(6687): 782-783. doi:10.1038/31684
+- `carpenter2001d`: Carpenter, K. (2001). Phylogenetic analysis of the Ankylosauria. In *The Armored Dinosaurs*, pp. 455-483. Indiana University Press, Bloomington.
+- `novas2010a`: Novas, F. E.; Ezcurra, M. D.; Chatterjee, S.; Kutty, T. S. (2010). New dinosaur species from the Upper Triassic Upper Maleri and Lower Dharmaram formations of Central India. *Earth and Environmental Science Transactions of the Royal Society of Edinburgh* 101(3-4): 333-349. doi:10.1017/S1755691011020093
+- `ezcurra2023a`: Ezcurra, M. D.; Müller, R. T.; Novas, F. E.; Chatterjee, S. (2023). Osteology of the sauropodomorph dinosaur Jaklapallisaurus asymmetricus from the Late Triassic of central India. *The Anatomical Record*. doi:10.1002/ar.25359
+- `prieto-márquez2006b`: Prieto-Márquez, A.; Gaete, R.; Rivas, G.; Galobart, À.; Boada, M. (2006). Hadrosauroid dinosaurs from the Late Cretaceous of Spain: Pararhabdodon isonensis revisited and Koutalisaurus kohlerorum, gen. et sp. nov. *Journal of Vertebrate Paleontology* 26(4): 929-943.
+- `casanovas-cladellas1993a`: Casanovas-Cladellas, M. L.; Santafé-Llopis, J. V.; Isidro-Llorens, A. (1993). Pararhabdodon isonense n. gen. n. sp. (Dinosauria). Estudio morfológico, radio-tomográfico y consideraciones biomecanicas [Pararhabdodon isonense n. gen. n. sp. (Dinosauria). Morphology, radio-tomographic study, and biomechanic considerations]. *Paleontologia i Evolució* 26-27: 121-131.
+- `barsbold1986a`: Barsbold, R. (1986). Raubdinosaurier Oviraptoren. In *Herpetologische Untersuchungen in der Mongolischen Volksrepublik (Vorobyeva, E. I., ed.)*, pp. 210-223. Akademia Nauk SSSR.
+- `rich1999a`: Rich, T. H.; Vickers-Rich, P.; Giménez, O.; Cúneo, R.; Puerta, P.; Vacca, R. (1999). A new sauropod dinosaur from Chubut province, Argentina. *Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs* 15: 61-84.
+- `zhang1995a`: Zhang, Y.; Yang, Z. (1995). A new complete osteology of Prosauropoda in Lufeng Basin, Yunnan, China. Yunnan Publishing House of Science and Technology, Kunming, China.
+- `yadagiri1988a`: Yadagiri, P. (1988). A new sauropod Kotasaurus yamanpalliensis from Lower Jurassic Kota Formation of India. *Records of the Geological Survey of India* 116(3-8): 102-127.
 - `nopcsa1911b`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(3): 109-115. doi:10.1017/S0016756800110714
 - `nopcsa1911a`: Nopcsa, F. (1911). Notes on British dinosaurs. Part IV: Stegosaurus priscus, sp. nov. *Geological Magazine* 8(4): 145-153. doi:10.1017/S0016756800110854
 - `lydekker1893a`: Lydekker, R. (1893). Contributions to a knowledge of the fossil vertebrates of Argentina. I. — The dinosaurs of Patagonia. *Anales del Museo de La Plata. Paleontología Argentina* 2: 1-16.
@@ -221,7 +267,6 @@
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
 - `nopcsa1928c`: Nopcsa, B. F. (1928). The genera of reptiles. *Palaeobiologica* 1: 163-188.
-- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `huene1926b`: Huene, F. V. (1926). The carnivorous Saurischia in the Jura and Cretaceous formations, principally in Europe. *Revista del Museo de La Plata* 29: 35-167.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
@@ -231,7 +276,6 @@
 - `brown1943a`: Brown, B.; Schlaikjer, E. M. (1943). A study of the troödont dinosaurs with the description of a new genus and four new species. *Bulletin of the American Museum of Natural History* 82(5): 115-150.
 - `sullivan2003b`: Sullivan, R. M. (2003). Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae). *Journal of Vertebrate Paleontology* 23(1): 181-207. doi:10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
 - `sullivan2003a`: Sullivan, R. M. (2003). Hanssuesia, the correct generic name for 'Hanssuessia' Sullivan, 2003. *Journal of Vertebrate Paleontology* 23(3): 714-714. doi:10.1671/03010
-- `barsbold1986a`: Barsbold, R. (1986). Raubdinosaurier Oviraptoren. In *Herpetologische Untersuchungen in der Mongolischen Volksrepublik (Vorobyeva, E. I., ed.)*, pp. 210-223. Akademia Nauk SSSR.
 - `barsbold1997a`: Barsbold, R. (1997). Oviraptorosauria. In *Encyclopedia of Dinosaurs (Currie, P. J.; Padian, K., eds.)*, pp. 505-509. Academic Press.
 - `osmólska2004a`: Osmólska, H.; Currie, P. J.; Barsbold, R. (2004). Oviraptorosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 165-183. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0010
 - `funston2018a`: Funston, G. F.; Mendonca, S. E.; Currie, P. J.; Barsbold, R. (2018). Oviraptorosaur anatomy, diversity and ecology in the Nemegt Basin. *Palaeogeography, Palaeoclimatology, Palaeoecology* 494: 101-120. doi:10.1016/j.palaeo.2017.10.023

@@ -165,6 +165,13 @@ paper that named it, whichever genus it now sits in.
   `erected_as`, and the authority is cited in parentheses:
   *Dromiceiomimus brevitertius* (Parks, 1926), named as *Struthiomimus
   brevetertius*.
+- **An epithet changed within its genus keeps the original authority.** A
+  corrected patronym ending or a change to agree with the genus's gender does
+  not change who named the species (ICZN Art. 33.2.2, 34.2.1). Record the
+  spelling the naming paper printed as a species synonym typed `emended
+  spelling`, with the emending work in its `reason`. `erected_as` is only for a
+  species named in another genus; when that species's epithet was also
+  changed, `erected_as` gives it as printed.
 - **A genus erected for an existing species takes its own `erected_in`.** When
   the type species was named in another genus, the genus-level `erected_in` is
   the paper that erected the genus (Russell 1972 for *Dromiceiomimus*), since
