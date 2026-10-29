@@ -1,5 +1,21 @@
 # Species authorities
 
+## When was *Megalosaurus nethercombensis* named: 1923 or 1926?
+
+*2026-10-28*
+
+**Conclusion.** 1923. Huene's summary in the *Bulletin of the Geological Society of America* (30 September 1923) publishes the binomen as a new species, with a short description, and the name is available from it. Before 1931 a description of any kind suffices (ICZN Art. 12.1), and the quotation marks around *Megalosaurus* make the generic placement tentative, which the Code allows: "the generic name need not be valid or even available", and the combination "can be tentative" (Art. 11.9.3.1, 11.9.3.4). Huene's 1926 papers describe the material in full, and Huene (1932) credits the name to 1926, but priority goes to the first publication that makes the name available. Governs the species `erected_in: huene1923a`, `erected_as: Megalosaurus nethercombensis` and the genus-level `erected_in: huene1932a` on [*Magnosaurus nethercombensis*](../../genera/M/Magnosaurus.yml).
+
+**Evidence.**
+- huene1923a, p. 450: "The species from the Parker collection (Oxford) from Nethercomb (Humphriesi horizon of the Lower Oolite) I have named "Megalosaurus" nethercombensis n. sp. Its pubis is rodlike in the distal (anterior) portion. The teeth are similar to those of the true Megalosaurus bucklandi, but, among other differences, are somewhat thicker than in that species."
+- huene1923a, p. 449: dated "September 30, 1923"; the fuller account was written for the "Williston Memorial Volume", which Huene calls "not yet published", so the 1923 paper is the first in print.
+
+**Ruled out.**
+- *Huene (1926) as the species authority.* The record credited the 1926 description, following Huene (1932); the 1923 paper had already made the name available.
+- *The quotation marks making the 1923 name unavailable.* Art. 11.9.3.4 allows a tentative generic combination.
+
+**Open.** Which of Huene's two 1926 papers appeared first no longer decides the authority. The held copy of huene1926b is a two-page excerpt without its imprint.
+
 ## Who replaced Huene's preoccupied *Campylodon* with *Campylodoniscus*?
 
 *2026-10-28*
@@ -148,6 +164,9 @@
 
 ## References
 
+- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
+- `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
+- `huene1926b`: Huene, F. V. (1926). The carnivorous Saurischia in the Jura and Cretaceous formations, principally in Europe. *Revista del Museo de La Plata* 29: 35-167.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `kuhn1961a`: Kuhn, O. (1961). Die Familien der rezenten und fossilen Amphibien und Reptilien [The families of recent and fossil amphibians and reptiles]. In *Die Familien der rezenten und fossilen Amphibien und Reptilien*. Meisenbach, Bamberg.
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
@@ -191,7 +210,6 @@
 - `lydekker1888b`: Lydekker, R. (1888). Note on a new Wealden iguanodont and other dinosaurs. *Quarterly Journal of the Geological Society of London* 44(173): 46-61. doi:10.1144/gsl.jgs.1888.044.01-04.08
 - `norman2010a`: Norman, D. B. (2010). A taxonomy of iguanodontians (Dinosauria: Ornithopoda) from the lower Wealden Group (Cretaceous: Valanginian) of southern England. *Zootaxa* 2489(1): 47-66. doi:10.11646/zootaxa.2489.1.3
 - `seeley1883a`: Seeley, H. G. (1883). On the Dinosaurs from the Maastricht Beds. *Quarterly Journal of the Geological Society of London* 39(1-4): 246-253. doi:10.1144/gsl.jgs.1883.039.01-04.19
-- `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
 - `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
 - `lambe1914b`: Lambe, L. M. (1914). On Gryposaurus notabilis, a new genus and species of trachodont dinosaur from the Belly River Formation of Alberta, with a description of the skull of Chasmosaurus belli. *The Ottawa Naturalist* 27(11): 145-155.
 - `lü2007b`: Lü, J.; Ji, Q.; Gao, Y.; Li, Z. (2007). A New Species of the Ankylosaurid Dinosaur Crichtonsaurus (Ankylosauridae: Ankylosauria) from the Cretaceous of Liaoning Province, China. *Acta Geologica Sinica (English Edition)* 81(6): 883-897. doi:10.1111/j.1755-6724.2007.tb01010.x
@@ -206,7 +224,6 @@
 - `galton1982a`: Galton, P. M.; Taquet, P. (1982). Valdosaurus, a hypsilophodontid dinosaur from the Lower Cretaceous of Europe and Africa. *Geobios* 15(2): 147-159.
 - `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.
 - `sauvage1882a`: Sauvage, H. E. (1882). Recherches sur les reptiles trouvés dans le Gault de l'est du bassin de Paris [Researches on the reptiles found in the Gault of the eastern Paris Basin]. *Mémoires de la Société Géologique de France* 2(4): 1-42.
-- `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `wiman1929a`: Wiman, C. (1929). Die Kreide-Dinosaurier aus Shantung [The Cretaceous dinosaurs from Shantung]. *Palaeontologia Sinica, Series C* 6(1): 1-67.
 - `romer1956a`: Romer, A. S. (1956). Osteology of the Reptiles. University of Chicago Press, Chicago.
 - `lambe1910a`: Lambe, L. M. (1910). Note on the parietal crest of Centrosaurus apertus and a proposed new generic name for Stereocephalus tutus. *The Ottawa Naturalist* 24: 149-151.
