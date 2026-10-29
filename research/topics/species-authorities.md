@@ -1,5 +1,21 @@
 # Species authorities
 
+## Which work made *Neuquensaurus* available?
+
+*2026-10-28*
+
+**Conclusion.** Powell (1992), the *Saltasaurus* osteology. Powell coined *Neuquensaurus* in his 1986 thesis, which is not published work under the Code, and printed it in 1987 without tying it to *Titanosaurus*; in 1992 he used it as a replacement name for *Titanosaurus*, with both species, which suffices for a nomen novum (ICZN Art. 13.1.3) without a "gen. nov.". The species keeps Lydekker (1893), who named it *Titanosaurus australis*. Governs the species `erected_in: lydekker1893a`, `erected_as: Titanosaurus australis` and the genus-level `erected_in: powell1992a` on [*Neuquensaurus australis*](../../genera/N/Neuquensaurus.yml).
+
+**Evidence.**
+- lydekker1893a, p. 4: "The first of the three Patagonian species, for which the name Titanosaurus australis is proposed".
+- wilson2003b, p. 140: "Neuquensaurus first appeared in published form a year later (Powell 1987), but without explicit reference to its former status as a Titanosaurus species. Five years later, Powell (1992:199) referred to Neuquensaurus as a replacement for Titanosaurus ... Powell (1992) suffices as valid publication for the referral of T. australis and T. robustus to the replacement genus Neuquensaurus".
+
+**Ruled out.**
+- *Powell (1986) as the genus authority.* A thesis is not published under ICZN Arts. 8 and 9, and gives no available name; gonzálezriga2013a and the history in Upchurch and colleagues (2004, upchurch2004a) date the genus to it.
+- *Powell (1992) as the species authority.* The record gave it; Powell transferred Lydekker's species.
+
+**Open.** The held powell1992a is an English translation without the original's pages, so p. 199 is Wilson and Upchurch's.
+
 ## Who named *Teinurosaurus* and its species?
 
 *2026-10-28*
@@ -181,6 +197,11 @@
 
 ## References
 
+- `lydekker1893a`: Lydekker, R. (1893). Contributions to a knowledge of the fossil vertebrates of Argentina. I. — The dinosaurs of Patagonia. *Anales del Museo de La Plata. Paleontología Argentina* 2: 1-16.
+- `powell1992a`: Powell, J. E. (1992). Osteologia de Saltasaurus loricatus (Sauropoda - Titanosauridae) del Cretácico Superior del noroeste Argentino [Osteology of Saltasaurus loricatus (Sauropoda - Titanosauridae) from the Upper Cretaceous of northwest Argentina]. In *Los Dinosaurios y su Entorno Biótico: Actas del Segundo Curso de Paleontología en Cuenca (Sanz, J. L.; Buscalioni, A. D., eds.)*, pp. 165-230. Instituto "Juan de Valdés", Cuenca.
+- `wilson2003b`: Wilson, J. A.; Upchurch, P. (2003). A revision of Titanosaurus Lydekker (Dinosauria - Sauropoda), the first dinosaur genus with a 'Gondwanan' distribution. *Journal of Systematic Palaeontology* 1(3): 125-160. doi:10.1017/S1477201903001044
+- `gonzálezriga2013a`: González Riga, B. J.; Ortiz David, L. (2013). A new titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous (Cerro Lisandro Formation) of Mendoza Province, Argentina. *Ameghiniana* 51(1): 3-25. doi:10.5710/AMGH.24.12.2013.1889
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
 - `nopcsa1928c`: Nopcsa, B. F. (1928). The genera of reptiles. *Palaeobiologica* 1: 163-188.
 - `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
@@ -188,7 +209,6 @@
 - `huene1926b`: Huene, F. V. (1926). The carnivorous Saurischia in the Jura and Cretaceous formations, principally in Europe. *Revista del Museo de La Plata* 29: 35-167.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `kuhn1961a`: Kuhn, O. (1961). Die Familien der rezenten und fossilen Amphibien und Reptilien [The families of recent and fossil amphibians and reptiles]. In *Die Familien der rezenten und fossilen Amphibien und Reptilien*. Meisenbach, Bamberg.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
 - `haubold1961a`: Haubold, H.; Kuhn, O. (1961). Lebensbilder und Evolution fossiler Saurier, Amphibien und Reptilien. A. Ziemsen Verlag, Wittenberg.
 - `brown1943a`: Brown, B.; Schlaikjer, E. M. (1943). A study of the troödont dinosaurs with the description of a new genus and four new species. *Bulletin of the American Museum of Natural History* 82(5): 115-150.
