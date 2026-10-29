@@ -1,5 +1,25 @@
 # *Altispinax*
 
+## Is NHMUK R1828 from Battle or from Hollington Quarry?
+
+*2026-10-29*
+
+**Conclusion.** Battle, near Hastings. Huene (1926) describes two separate British Museum specimens: the *Megalosaurus dunkeri* material from "the quarry of Hollington", teeth and incomplete bones, and "another specimen from the Wealden of Battle", the three tall-spined dorsal vertebrae that are R1828. Maisch (2016) gives Hollington Quarry as the type locality "according to Stovall & Langston (1950)", but Stovall and Langston give no locality for the vertebrae, and every other treatment read places them at Battle. Hollington is the locality of the other specimen. Also supersedes the 2026-08-06 entry, which says the record keeps the Wadhurst Clay: since 13 October 2026 the record has given only the Hastings Beds group, because no source read places R1828 in a formation. Governs `location.locality: Battle, near Hastings` and `location.group: Hastings Beds` on [*Altispinax dunkeri*](../../../genera/A/Altispinax.yml).
+
+**Evidence.**
+- huene1926a, p. 482: "This specimen, belonging to the British Museum, was found in the quarry of Hollington near Hastings, Sussex, in the Wadhurst Clay of the Lower Wealden. It consists of two teeth, one incomplete opisthocœlous anterior dorsal vertebra …"; then "There is another specimen from the Wealden of Battle, near Hastings, Sussex, consisting of three articulated middle dorsal vertebræ, with extremely high neural spines."
+- olshevsky1991a, p. 111: "BMNH R1828, a series of three caudal dorsal vertebrae with very tall neural spines from the Lower Wealden of Battle-near-Hastings, East Sussex."
+- naish2007a, p. 503: the vertebrae "with tall, robust neural spines (Fig. 7) from the Hastings Beds Group of Battle, East Sussex".
+- carrano2012a, p. 252: "Three dorsal vertebrae (NHMUK R1828; Fig. 10) from the Hastings Beds Group (late Berriasian–Valanginian) of Battle, England".
+- maisch2016a, p. 216: "Type specimen: According to Stovall & Langston (1950): NHMUK 1828 … Type locality: Hollington Quarry, Hastings, East Sussex".
+- stovall1950a, p. 722: "Von Huene is nowhere explicit as to just which material he considers the type of the genus Altispinax"; the discussion gives no locality for the vertebrae.
+
+**Ruled out.**
+- *Hollington Quarry.* Maisch (2016) alone gives it, with no source for it; Huene (1926) assigns it to the other *M. dunkeri* specimen.
+- *The Wadhurst Clay Formation.* The 2026-08-06 entry inferred it from Battle lying on its outcrop; no source read names a formation for R1828, and Huene's "Wadhurst Clay" belongs to the Hollington specimen.
+
+**Open.** Owen's (1855) original account of the vertebrae and Lydekker's (1888) catalogue entry for R1828 have not been read; either could give the collector's locality.
+
 ## What is the type material of *Altispinax dunkeri*?
 
 *2026-10-28*
@@ -72,7 +92,12 @@
 
 ## References
 
+- `huene1926a`: Huene, F. V. (1926). On several known and unknown reptiles of the order Saurischia from England and France. *Annals and Magazine of Natural History, series 9* 17: 473-489. doi:10.1080/00222932608633437
+- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
+- `naish2007a`: Naish, D.; Martill, D. M. (2007). Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia. *Journal of the Geological Society* 164(3): 493-510. doi:10.1144/0016-76492006-032
+- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `maisch2016a`: Maisch, M. W. (2016). The nomenclatural status of the carnivorous dinosaur genus Altispinax v. Huene, 1923 (Saurischia, Theropoda) from the Lower Cretaceous of England. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 280(2): 215-219. doi:10.1127/njgpa/2016/0576
+- `stovall1950a`: Stovall, J. W.; Langston, W. (1950). Acrocanthosaurus atokensis, a New Genus and Species of Lower Cretaceous Theropoda from Oklahoma. *American Midland Naturalist* 43(3): 696. doi:10.2307/2421859
 - `dames1885a`: Dames, W. B. (1885). Vorlegung eines Zahnes von Megalosaurus aus den Wealden des Deisters. *Sitzungsberichte der Gesellschaft naturforschender Freunde zu Berlin* 36: 186-188.
 - `huene1923a`: Huene, F. V. (1923). Carnivorous Saurischia in Europe since the Triassic. *Bulletin of the Geological Society of America* 34: 449-458. doi:10.1130/gsab-34-449
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
@@ -82,6 +107,4 @@
 - `raven2020a`: Raven, T. J.; Barrett, P. M.; Pond, S. B.; Maidment, S. C. R. (2020). Osteology and taxonomy of British Wealden Supergroup (Berriasian-Aptian) ankylosaurs (Ornithischia, Ankylosauria). *Journal of Vertebrate Paleontology*. doi:10.1080/02724634.2020.1826956
 - `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
 - `morrison2026a`: Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M. (2026). A new megaraptoran dinosaur from the Lower Cretaceous Wessex Formation, UK, and its implications for theropod evolution and biogeography. *Royal Society Open Science* 13(10): 260937. doi:10.1098/rsos.260937
-- `huene1926a`: Huene, F. V. (1926). On several known and unknown reptiles of the order Saurischia from England and France. *Annals and Magazine of Natural History, series 9* 17: 473-489. doi:10.1080/00222932608633437
-- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `naish2003a`: Naish, D. (2003). A definitive allosauroid (Dinosauria; Theropoda) from the Lower Cretaceous of East Sussex. *Proceedings of the Geologists' Association* 114(4): 319-326. doi:10.1016/S0016-7878(03)80032-9
