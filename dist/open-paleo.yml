@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-29T23:50:44.455Z
+  built_at: 2026-10-30T00:49:28.314Z
   clade_count: 188
-  genus_count: 1426
+  genus_count: 1427
   license: CC-BY-4.0
   schema_version: 2.0.0
   version: "2026.10"
@@ -152115,6 +152115,90 @@ genera:
       - Citipatiinae
     authors: Barsbold, R.
     described: 1997
+  Rinconraptor:
+    genus: Rinconraptor
+    parent: Megaraptoridae
+    etymology: From 'Rincón', for Rincón de los Sauces in Patagonia, and Latin 'raptor' (thief).
+    description: Rinconraptor is an extinct genus of megaraptorid theropod dinosaur known from the Late Cretaceous (Santonian age) Bajo de la Carpa Formation of Argentina. The genus contains a single species, Rinconraptor pipoae, known from a partial postcranial skeleton.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Ectepicondyle of the humerus set apart from the distal end of the humerus
+      - Lateral margin of the tibia straight in proximal view
+      - Cnemial crest and medial condyle of the tibia subquadrangular in proximal view
+    identifiers:
+      - source: pbdb
+        id: "526343"
+      - source: wikidata
+        id: Q141895779
+    species:
+      - name: Rinconraptor pipoae
+        etymology: Named for the late Laura Pipo, a doctoral student and friend of the authors who took part in the fieldwork that found the specimen and passed away in 2020.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+          from_ma: 85.7
+          to_ma: 83.6
+        location:
+          country: AR
+          region: Neuquén
+          locality: Cerro Overo, 50 km southwest of Rincón de los Sauces
+          formation: Bajo de la Carpa
+          coordinates:
+            - -37.61972
+            - -69.311943
+          region_code: AR-Q
+        size:
+          length_m:
+            min: 7
+            max: 7
+        type_specimen:
+          specimen_id:
+            - MAU-Pv-CO-659
+          specimen_type: holotype
+          institution: Museo Argentino Urquiza, Rincón de los Sauces
+          material: Ten isolated caudal vertebral centra, the proximal end of a haemal arch, the distal end of the left humerus and the proximal end of the right tibia.
+        erected_in: méndez2026a
+        authors: Méndez, A. H.; Paulina-Carabajal, A.; Filippi, L. S.; Gianechini, F. A.; González-Dionis, J.; Vettorazzi, L. F.; Seculi-Pereyra, E. E.; Ulloa-Guaiquin, K.; Barrios, F. T.; Cruzado-Caballero, P.; Bellardini, F.; Previtera, M. E.; Valdez, H.; Heredia, A. M.; Cárdenas, M.; Garrido, A. C.; Kim, D.-K.; Lee, Y.-N.
+        described: 2026
+    references:
+      - id: méndez2026a
+        authors: Méndez, A. H.; Paulina-Carabajal, A.; Filippi, L. S.; Gianechini, F. A.; González-Dionis, J.; Vettorazzi, L. F.; Seculi-Pereyra, E. E.; Ulloa-Guaiquin, K.; Barrios, F. T.; Cruzado-Caballero, P.; Bellardini, F.; Previtera, M. E.; Valdez, H.; Heredia, A. M.; Cárdenas, M.; Garrido, A. C.; Kim, D.-K.; Lee, Y.-N.
+        year: 2026
+        title: "Expanding the dinosaur diversity of the Cerro Overo–La Invernada area (Bajo de la Carpa Formation, Santonian), Northern Patagonia: Description of a new species and additional megaraptorid remains"
+        journal: Palaeontologia Electronica
+        volume: "29"
+        issue: "3"
+        article_number: a41
+        publisher: Coquina Press
+        doi: 10.26879/1738
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Megaraptora
+      - Megaraptoridae
+    authors: Méndez, A. H.; Paulina-Carabajal, A.; Filippi, L. S.; Gianechini, F. A.; González-Dionis, J.; Vettorazzi, L. F.; Seculi-Pereyra, E. E.; Ulloa-Guaiquin, K.; Barrios, F. T.; Cruzado-Caballero, P.; Bellardini, F.; Previtera, M. E.; Valdez, H.; Heredia, A. M.; Cárdenas, M.; Garrido, A. C.; Kim, D.-K.; Lee, Y.-N.
+    described: 2026
   Rinconsaurus:
     genus: Rinconsaurus
     parent: Rinconsauria
