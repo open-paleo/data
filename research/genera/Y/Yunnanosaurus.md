@@ -1,5 +1,21 @@
 # *Yunnanosaurus*
 
+## Is *Yunnanosaurus robustus* a settled junior synonym of *Y. huangi*?
+
+*2026-10-29*
+
+**Conclusion.** No; it stays unadded until the question settles. The synonymy was a table entry in Galton (1990), repeated by Galton and Upchurch (2004), with no reasons given. The specialist revision of the genus, Barrett and colleagues (2007), left the question open, and Sekiya and colleagues (2013) give *Y. robustus* a revised diagnosis and recover it as the sister of *Y. huangi*. No held paper answers Sekiya. Governs the absence of a *Y. robustus* species block and synonym on [*Yunnanosaurus*](../../../genera/Y/Yunnanosaurus.yml).
+
+**Evidence.**
+- barrett2005b, p. 807: "The reasons for these taxonomic amendments were not discussed, however."
+- barrett2007a, p. 320: "The validity of *Y. robustus* and its referral to *Yunnanosaurus* will be addressed elsewhere."
+- sekiya2013a, p. 2: *Y. robustus* is diagnosed by the "absence of anteroposterior expansion on the medial end of the astragalus and dorsoventrally compressed medium shaft of metatarsal IV", and recovered as "a sister taxon of *Y. huangi*".
+
+**Ruled out.**
+- *Y. robustus as a settled junior synonym.* The synonymy was never argued, and the only argued treatment since keeps it distinct.
+
+**Open.** Whether the revision Barrett and colleagues (2007) promised has appeared.
+
 ## Was the *Yunnanosaurus huangi* holotype rehoused or renumbered?
 
 *2026-10-09*
@@ -53,9 +69,10 @@
 
 ## References
 
-- `barrett2007a`: Barrett, P. M.; Upchurch, P.; Zhou, X. D.; Wang, X. L. (2007). The skull of Yunnanosaurus huangi Young, 1942 (Dinosauria: Prosauropoda) from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China. *Zoological Journal of the Linnean Society* 150(2): 319-341. doi:10.1111/j.1096-3642.2007.00290.x
-- `zhang2024a`: Zhang, Q. N.; Jia, L.; Wang, T.; Zhang, Y. G.; You, H. L. (2024). The largest sauropodomorph skull from the Lower Jurassic Lufeng Formation of China. *PeerJ* 12: e18629. doi:10.7717/peerj.18629
 - `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
+- `barrett2007a`: Barrett, P. M.; Upchurch, P.; Zhou, X. D.; Wang, X. L. (2007). The skull of Yunnanosaurus huangi Young, 1942 (Dinosauria: Prosauropoda) from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China. *Zoological Journal of the Linnean Society* 150(2): 319-341. doi:10.1111/j.1096-3642.2007.00290.x
+- `sekiya2013a`: Sekiya, T.; Jin, X.; Zheng, W.; Shibata, M.; Azuma, Y. (2013). A new juvenile specimen of Yunnanosaurus robustus (Dinosauria: Sauropodomorpha) from Early to Middle Jurassic of Chuxiong Autonomous Prefecture, Yunnan Province, China. *Historical Biology* 26(2): 252-277. doi:10.1080/08912963.2013.821702
+- `zhang2024a`: Zhang, Q. N.; Jia, L.; Wang, T.; Zhang, Y. G.; You, H. L. (2024). The largest sauropodomorph skull from the Lower Jurassic Lufeng Formation of China. *PeerJ* 12: e18629. doi:10.7717/peerj.18629
 - `young1940a`: Young, C. C. (1940). Preliminary notes on the Lufeng vertebrate fossils. *Bulletin of the Geological Society of China* 20(3-4): 235-239. doi:10.1111/j.1755-6724.1940.mp203-4003.x
 - `young1942b`: Young, C. C. (1942). Yunnanosaurus huangi Young (gen. et sp. nov.), a New Prosauropoda from the Red Beds at Lufeng, Yunnan. *Bulletin of the Geological Society of China* 22(1-2): 63-104. doi:10.1111/j.1755-6724.1942.mp221-2005.x
 - `simmons1965a`: Simmons, D. J.; Nash, E. G. (1965). The non-therapsid reptiles of the Lufeng Basin, Yunnan, China. Chicago Natural History Museum Press. doi:10.5962/bhl.title.5426

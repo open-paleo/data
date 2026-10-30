@@ -1,5 +1,22 @@
 # *Plateosaurus*
 
+## Is *Plateosaurus longiceps* a settled junior synonym?
+
+*2026-10-29*
+
+**Conclusion.** No; it stays unadded until the question settles. It has been sunk three ways, each into a different name: Galton (2001) kept *P. longiceps* as the valid name with *P. trossingensis* its junior synonym; Moser (2003) sank both into *P. engelhardti*; Prieto-Márquez and Norell (2011) sank both into *P. erlenbergiensis*. Galton (2012), setting out the case that led to *P. trossingensis* becoming the type species, describes a classification that keeps *P. longiceps* and *P. trossingensis* as separate valid species, and the most recent synopsis held, Sues and Schoch (2025), lists *P. longiceps* as valid. No held paper makes it a junior synonym of *P. trossingensis*. Governs the absence of a *P. longiceps* species block and synonym on [*Plateosaurus*](../../../genera/P/Plateosaurus.yml).
+
+**Evidence.**
+- moser2003a, p. 161: the "younger synonyms of Plateosaurus engelhardti" include "Plateosaurus longiceps" and "Plateosaurus trossingensis".
+- prieto-márquez2011a, p. 50: *P. erlenbergiensis* with "P. longiceps (Jaekel, 1913–1914)" in its synonymy; "we regard the latter as a junior synonym of P. erlenbergiensis".
+- galton2012b, p. 207: "Galton (2001a) referred the French, Swiss and German material (except UEN specimens) to P. longiceps as the next available species … with P. trossingensis as a junior synonym"; another classification "considered P. longiceps and P. trossingensis to be valid species".
+- sues2025a, p. 462: "*Plateosaurus longiceps* Jaekel, 1913", holotype MB.R.1937, with the caveat that "Schaeffer (pers. comm.) has questioned the diagnostic value of these features".
+
+**Ruled out.**
+- *P. longiceps as a junior synonym of P. trossingensis.* The issue tracking the species backfill described it so; no held paper does.
+
+**Open.** ICZN Opinion 2435 (2019), which made *P. trossingensis* the type species, has not been read.
+
 ## Is the P. trossingensis holotype from the Trossingen or the Löwenstein Formation?
 
 *2026-09-01*
@@ -94,10 +111,12 @@
 
 ## References
 
+- `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
+- `prieto-márquez2011a`: Prieto-Márquez, A.; Norell, M. A. (2011). Redescription of a nearly complete skull of Plateosaurus (Dinosauria: Sauropodomorpha) from the Late Triassic of Trossingen (Germany). *American Museum Novitates*: 1-58. doi:10.1206/3727.2
+- `galton2012b`: Galton, P. M. (2012). Case 3560. Plateosaurus engelhardti Meyer, 1837 (Dinosauria, Sauropodomorpha): proposed replacement of unidentifiable name-bearing type by a neotype. *Bulletin of Zoological Nomenclature* 69(3): 203-212. doi:10.21805/bzn.v69i3.a15
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
 - `fernández2022a`: Fernández, O. R. R.; Werneburg, I. (2022). A new massopodan sauropodomorph from Trossingen Formation (Germany) hidden as 'Plateosaurus' for 100 years in the historical Tübingen collection. *Vertebrate Zoology* 72: 771-822. doi:10.3897/vz.72.e86348
 - `yates2003b`: Yates, A. M. (2003). The species taxonomy of the sauropodomorph dinosaurs from the Löwenstein Formation (Norian, Late Triassic) of Germany. *Palaeontology* 46(2): 317-337. doi:10.1111/j.0031-0239.2003.00301.x
-- `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
