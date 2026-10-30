@@ -30,10 +30,35 @@ export function checkYamlSyntax(context: ValidationContext): void
 // Also verify schema.yml and tree.yml parse (already loaded, but record success)
 // They were loaded above with fatal exit, so if we're here they parsed fine.
 
+// The top-level keys a genus file may carry. `authors`, `described` and
+// `taxonomy` are left out: the build derives them, so a source file never
+// states them. Keep in step with `GenusData` in types.ts.
+const genusKeys = new Set([
+    "genus",
+    "parent",
+    "placement",
+    "etymology",
+    "pronunciation",
+    "description",
+    "dispute",
+    "diet",
+    "locomotion",
+    "paleoenvironment",
+    "appearance",
+    "diagnostic_features",
+    "identifiers",
+    "synonyms",
+    "species",
+    "notable_specimens",
+    "references",
+    "erected_in",
+    "iczn_cases",
+]);
+
 /**
  * The "Schema compliance" check.
  *
- * Schema compliance (status, diet)
+ * Schema compliance (top-level genus keys, status, diet, placement)
  *
  * @param context - The loaded data the checks read.
  */
@@ -51,6 +76,18 @@ export function checkSchemaCompliance(context: ValidationContext): void
         if (!doc)
         {
             continue;
+        }
+
+        for (const key of Object.keys(doc).filter((name) => !genusKeys.has(name)))
+        {
+            const hint = key === "status"
+                ? "; status is a species-level field"
+                : "";
+
+            checkError(
+                "Schema compliance",
+                filePath,
+                `unknown top-level key '${key}'${hint}`);
         }
 
         if (doc.diet && !allowedDiet.has(doc.diet))
