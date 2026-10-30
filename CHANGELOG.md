@@ -163,3 +163,11 @@ Initial public release, establishing the v1 output schema.
   `<surname><year><letter>`. Removed the unused `media`, `image_types` and
   institution `campus` fields, and migrated all clade authorities to
   `erected_in`.
+
+### Removed
+- `dispute.history`, the dated log on genus and clade `dispute` blocks. Its
+  entries recorded our own curation decisions rather than the course of a
+  dispute, so it is gone from the data and the output; a `dispute` now holds
+  only its `summary`. The reasoning behind a record's values is kept in its
+  research notes, and earlier entries remain in the git history. Output
+  schema 2.0.0 → 3.0.0.

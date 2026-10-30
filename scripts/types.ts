@@ -944,30 +944,15 @@ export type GenusData = {
 };
 
 /**
- * A placement/identity dispute and its dated decision history. The structured
- * form (vs. a bare string) lets a later pass find when a placement was last
- * reviewed and on what basis. Used on both genus YAMLs and clade files.
+ * A live placement or identity dispute. The reasoning behind the record's
+ * values lives in its research notes, not here. Used on both genus YAMLs and
+ * clade files.
  */
 export type Dispute = {
     /**
      * Current state of the disagreement, as a UI-renderable callout.
      */
     summary: string;
-
-    /**
-     * Dated record of placement/identity decisions, oldest first.
-     */
-    history?: Array<{
-        /**
-         * ISO date (YYYY-MM-DD) of the decision.
-         */
-        date: string;
-
-        /**
-         * What was decided and why (source + governing rule).
-         */
-        note: string;
-    }>;
 };
 
 /**

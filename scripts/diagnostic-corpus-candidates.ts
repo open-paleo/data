@@ -80,23 +80,9 @@ function isNomenDubium(genus: GenusData): boolean
         parts.push(genus.description);
     }
 
-    if (genus.dispute !== undefined)
+    if (typeof genus.dispute?.summary === "string")
     {
-        if (typeof genus.dispute.summary === "string")
-        {
-            parts.push(genus.dispute.summary);
-        }
-
-        if (Array.isArray(genus.dispute.history))
-        {
-            for (const entry of genus.dispute.history)
-            {
-                if (typeof entry?.note === "string")
-                {
-                    parts.push(entry.note);
-                }
-            }
-        }
+        parts.push(genus.dispute.summary);
     }
 
     return nomenDubiumPattern.test(parts.join(" "));

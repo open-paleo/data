@@ -991,8 +991,8 @@ export function checkReferenceNotesLength(context: ValidationContext): void
 /**
  * The "Dispute structure" check.
  *
- * Dispute structure — object with a non-empty string summary; history
- * entries need a YYYY-MM-DD date and a note. Applies to genera and clades.
+ * Dispute structure — object with a non-empty string summary and no other
+ * key. Applies to genera and clades.
  *
  * @param context - The loaded data the checks read.
  */
@@ -1017,25 +1017,12 @@ export function checkDisputeStructure(context: ValidationContext): void
                 "dispute must have a non-empty 'summary' string");
         }
 
-        const disputeHistory = Array.isArray(doc.dispute.history) ? doc.dispute.history : [];
-
-        for (const update of disputeHistory)
+        for (const key of Object.keys(doc.dispute).filter((name) => name !== "summary"))
         {
-            if (typeof update?.date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(update.date))
-            {
-                checkError(
-                    "Dispute structure",
-                    filePath,
-                    "dispute.history entry needs a 'date' in YYYY-MM-DD form");
-            }
-
-            if (typeof update?.note !== "string" || update.note.trim() === "")
-            {
-                checkError(
-                    "Dispute structure",
-                    filePath,
-                    "dispute.history entry needs a non-empty 'note' string");
-            }
+            checkError(
+                "Dispute structure",
+                filePath,
+                `dispute has an unknown key '${key}'; it holds only 'summary', and reasoning goes in the record's research notes`);
         }
     }
 }
