@@ -1,5 +1,19 @@
 # *Eosinopteryx*
 
+## What did Foth and colleagues (2025) do with *Eosinopteryx*?
+
+*2026-10-30*
+
+**Conclusion.** They removed it from their phylogenetic matrix, for two reasons: its scorings need revision, and its taxonomic status is questionable. They took no position on its synonymy with *Anchiornis*, and they left the question of its short tail to first-hand study of the specimen. Governs the `foth2025a` reference note and the Foth sentence in the dispute summary on [*Eosinopteryx*](../../../genera/E/Eosinopteryx.yml).
+
+**Evidence.**
+- foth2025a, p. 22: "The genera *Hagryphus* and *Eosinopteryx* were deleted from the current matrix because their scorings need a careful revision. Furthermore, the taxonomic status of *Eosinopteryx* is questionable"; whether its tail is complete "needs to be evaluated by first-hand examination of the specimen."
+
+**Ruled out.**
+- *Foth and colleagues excluding Eosinopteryx from synonymy with Anchiornis.* The reference note said so; the paper drops the genus from its analysis without ruling on any synonymy.
+
+**Open.** Nothing.
+
 ## Does Li and colleagues' (2026) synonymy settle *Eosinopteryx*, and where is its holotype?
 
 *2026-10-29*
@@ -33,5 +47,6 @@
 
 ## References
 
+- `foth2025a`: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E. (2025). A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic). *Fossil Record* 28(1): 17-43. doi:10.3897/fr.28.131671
 - `li2026a`: Li, F.-F.; Hu, D.-Y.; Zhao, C.-L.; Li, Z.-H.; Zhou, Z.-H. (2026). Redescription and taxonomic reassessment of the holotype of anchiornithine Eosinopteryx brevipenna. *Palaeoworld* 35(6): 201180. doi:10.1016/j.palwor.2026.201180
 - `godefroit2013a`: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P. (2013). Reduced plumage and flight ability of a new Jurassic paravian theropod from China. *Nature Communications* 4(1). doi:10.1038/ncomms2389
