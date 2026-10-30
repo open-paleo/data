@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-30T04:11:47.585Z
+  built_at: 2026-10-30T04:54:40.175Z
   clade_count: 188
   genus_count: 1427
   license: CC-BY-4.0
@@ -189237,6 +189237,43 @@ genera:
         erected_in: wang2017a
         authors: Wang, Y. M.; You, H. L.; Wang, T.
         described: 2017
+      - name: Xingxiulong yueorum
+        etymology: Named for the brothers and sisters of Yue, who collected, prepared and protected the dinosaur fossils of Lufeng, including the holotype.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          resolution: unit
+          from_ma: 201.4
+          to_ma: 192.9
+        location:
+          country: CN
+          region: Yunnan
+          locality: Erzuanshan, northwest of Lufeng City
+          formation: Lufeng
+          member: Zhangjiawa
+          region_code: CN-YN
+        size:
+          length_m:
+            min: 8
+            max: 10
+        type_specimen:
+          specimen_id:
+            - LF2015-NO01
+          specimen_type: holotype
+          institution: Bureau of Natural Resources of Lufeng County (formerly Bureau of Land and Resources of Lufeng County)
+          material: An articulated postcranial skeleton of 13 dorsal vertebrae with 11 pairs of dorsal ribs, four sacral vertebrae, 20 caudal vertebrae with 20 chevrons, a partial left scapula, and both pelvic girdles and hindlimbs.
+        diagnostic_features:
+          - Pendant-shaped fourth trochanter with a distal termination (more rounded in X. chengi)
+          - Almost straight dorsal margin on the posterior surface of the astragalus
+          - Two phalanges in pedal digit V (one in X. chengi)
+        erected_in: chen2025b
+        authors: Chen, X.-Y.; Wang, Y.-M.; Zhang, Q.-N.; Wang, T.; You, H.-L.
+        described: 2025
     references:
       - id: wang2017a
         authors: Wang, Y. M.; You, H. L.; Wang, T.
@@ -189264,6 +189301,16 @@ genera:
         issue: "1"
         doi: 10.1038/s41598-025-12185-2
         notes: Recovered Xingxiulong chengi among basal massopodans as a near-equally parsimonious position.
+      - id: chen2025b
+        authors: Chen, X.-Y.; Wang, Y.-M.; Zhang, Q.-N.; Wang, T.; You, H.-L.
+        year: 2025
+        title: A new species of Xingxiulong (Dinosauria, Sauropodomorpha) from the lower Jurassic Lufeng formation of Yunnan Province, China
+        journal: Historical Biology
+        volume: "37"
+        issue: "12"
+        pages: 2800-2809
+        doi: 10.1080/08912963.2025.2458130
+        notes: Names Xingxiulong yueorum on a partial articulated postcranial skeleton from Erzuanshan, Lufeng.
     taxonomy:
       - Life
       - Animalia
