@@ -13,7 +13,7 @@ import {
     parseYaml,
 } from "./utilities.ts";
 
-import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, StageInfo, Synonym, FormerId } from "./types.ts";
+import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, StageInfo, Synonym, FormerId } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -47,6 +47,11 @@ type ProcessedClade = {
      * Prose description of the clade.
      */
     description?: string;
+
+    /**
+     * A live dispute about the clade, such as whether it is a natural group.
+     */
+    dispute?: Dispute;
 
     /**
      * Ordered list of ancestor clades from root to this clade.
@@ -552,6 +557,7 @@ for (const file of findYamlFiles(path.join(root, "clades")))
 
         clades[data.clade] = {
             description: data.description,
+            dispute: data.dispute,
             taxonomy: findTreePath(tree, data.clade) ?? [ ],
             type_genus: data.type_genus,
             described,
@@ -578,7 +584,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "3.0.0",
+        schema_version: "3.1.0",
         version,
     },
     tree,

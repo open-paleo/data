@@ -128,6 +128,10 @@ Initial public release, establishing the v1 output schema.
 - Genus-level `placement` field (controlled value `incertae sedis`)
   qualifying how a genus attaches to its `parent` clade. The narrative
   rationale remains in `dispute`.
+- Clade `dispute` in the output. A clade's live dispute, such as whether it
+  is a natural group, was written in the source but left out of the built
+  clade; it now appears there as it does on a genus. Output schema 3.0.0 →
+  3.1.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the
