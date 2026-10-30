@@ -327,11 +327,6 @@ export interface Pronunciation {
 }
 export interface Dispute {
   summary: string;
-  history?: {
-    date: string;
-    note: string;
-    [k: string]: unknown;
-  }[];
   [k: string]: unknown;
 }
 export interface Appearance {

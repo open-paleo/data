@@ -85,14 +85,8 @@ class Reference(BaseModel):
     notes: Optional[str] = None
 
 
-class HistoryItem(BaseModel):
-    date: constr(pattern=r'^\d{4}-\d{2}-\d{2}$')
-    note: str
-
-
 class Dispute(BaseModel):
     summary: str
-    history: Optional[List[HistoryItem]] = None
 
 
 class Pronunciation(BaseModel):
