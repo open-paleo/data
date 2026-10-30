@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-30T06:20:19.877Z",
+    "built_at": "2026-10-30T06:35:33.877Z",
     "clade_count": 188,
     "genus_count": 1428,
     "license": "CC-BY-4.0",
@@ -85510,7 +85510,7 @@
       "genus": "Eosinopteryx",
       "parent": "Anchiornithidae",
       "dispute": {
-        "summary": "Eosinopteryx brevipenna is skeletally very similar to Anchiornis, and several workers have questioned its distinctness, treating it as a probable junior synonym of Anchiornis; Foth and colleagues (2025) excluded it from their analysis on validity grounds. Its position within the anchiornithid grade is otherwise stable.\n"
+        "summary": "Eosinopteryx brevipenna is skeletally very similar to Anchiornis, and several workers have questioned its distinctness, treating it as a probable junior synonym of Anchiornis; Foth and colleagues (2025) excluded it from their analysis on validity grounds. Li and colleagues (2026), redescribing the holotype, attribute most of its diagnostic features to taphonomic deformation and damage and formally regard it as a junior synonym of Anchiornis huxleyi, probably an immature individual. Its position within the anchiornithid grade is otherwise stable.\n"
       },
       "etymology": "From Greek eos, 'dawn/daybreak', + Latin Sinae, 'Chinese', + Greek pteryx, 'feather' or 'wing'; means 'dawn Chinese feather', referring to its early age and feathered Chinese specimen",
       "pronunciation": {
@@ -85593,14 +85593,25 @@
             }
           },
           "erected_in": "godefroit2013a",
+          "described_in": "li2026a",
           "type_specimen": {
             "specimen_id": [
-              "YFGP-T5197"
+              "PMOL-AD00134"
             ],
             "specimen_type": "holotype",
-            "institution": "Yizhou Fossil and Geology Park",
+            "institution": "Paleontological Museum of Liaoning",
             "material": "Nearly complete articulated skeleton",
-            "completeness": "complete"
+            "completeness": "complete",
+            "former_ids": [
+              {
+                "from_id": "YFGP-T5197",
+                "to_id": "PMOL-AD00134",
+                "from_institution": "Yizhou Fossil and Geology Park",
+                "to_institution": "Paleontological Museum of Liaoning",
+                "reason": "rehoused",
+                "notes": "Godefroit and colleagues (2013) give the holotype as YFGP-T5197; the Yizhou Fossil and Geology Park donated it to the Paleontological Museum of Liaoning in 2017, where it is accessioned as PMoL-AD00134 (Li and colleagues, 2026)."
+              }
+            ]
           },
           "authors": "Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P.",
           "described": 2013
@@ -85663,6 +85674,18 @@
           "pages": "17-43",
           "doi": "10.3897/fr.28.131671",
           "notes": "Excluded Eosinopteryx from synonymy with Anchiornis in its revised paravian phylogeny."
+        },
+        {
+          "id": "li2026a",
+          "authors": "Li, F.-F.; Hu, D.-Y.; Zhao, C.-L.; Li, Z.-H.; Zhou, Z.-H.",
+          "year": 2026,
+          "title": "Redescription and taxonomic reassessment of the holotype of anchiornithine Eosinopteryx brevipenna",
+          "journal": "Palaeoworld",
+          "volume": "35",
+          "issue": "6",
+          "article_number": "201180",
+          "doi": "10.1016/j.palwor.2026.201180",
+          "notes": "Redescribes the holotype and regards Eosinopteryx brevipenna as a junior synonym of Anchiornis huxleyi, most of its diagnostic features taphonomic."
         }
       ],
       "taxonomy": [
