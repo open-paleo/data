@@ -513,6 +513,14 @@ class Clade(BaseModel):
     authors: Optional[str] = Field(
         None, description='Author(s) who erected the clade (derived from erected_in).'
     )
+    erected_in: Optional[str] = Field(
+        None,
+        description='Reference id of the paper that erected the clade name; the authors and year above derive from it.',
+    )
+    described_in: Optional[str] = Field(
+        None,
+        description='Reference id of the authoritative descriptive source, such as a later definition or diagnosis; falls back to erected_in.',
+    )
     diagnostic_features: Optional[List[str]] = None
     synonyms: Optional[List[Synonym]] = None
     references: Optional[List[Reference]] = None
@@ -580,6 +588,10 @@ class Genus(BaseModel):
     authors: Optional[str] = Field(
         None,
         description='Author(s) who erected the genus (derived from its authority).',
+    )
+    erected_in: Optional[str] = Field(
+        None,
+        description="Reference id of the paper that erected the genus, present only when it differs from the type species's erected_in (the type species was named in another genus, or an ICZN ruling replaced it).",
     )
 
 

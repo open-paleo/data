@@ -244,6 +244,14 @@ export interface Clade {
    * Author(s) who erected the clade (derived from erected_in).
    */
   authors?: string;
+  /**
+   * Reference id of the paper that erected the clade name; the authors and year above derive from it.
+   */
+  erected_in?: string;
+  /**
+   * Reference id of the authoritative descriptive source, such as a later definition or diagnosis; falls back to erected_in.
+   */
+  described_in?: string;
   diagnostic_features?: string[];
   synonyms?: Synonym[];
   references?: Reference[];
@@ -323,6 +331,10 @@ export interface Genus {
    * Author(s) who erected the genus (derived from its authority).
    */
   authors?: string;
+  /**
+   * Reference id of the paper that erected the genus, present only when it differs from the type species's erected_in (the type species was named in another genus, or an ICZN ruling replaced it).
+   */
+  erected_in?: string;
   [k: string]: unknown;
 }
 export interface Pronunciation {
