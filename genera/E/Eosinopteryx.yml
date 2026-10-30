@@ -5,8 +5,11 @@ dispute:
     Eosinopteryx brevipenna is skeletally very similar to Anchiornis, and several
     workers have questioned its distinctness, treating it as a probable junior
     synonym of Anchiornis; Foth and colleagues (2025) excluded it from their analysis on
-    validity grounds. Its position within the anchiornithid grade is otherwise
-    stable.
+    validity grounds. Li and colleagues (2026), redescribing the holotype,
+    attribute most of its diagnostic features to taphonomic deformation and
+    damage and formally regard it as a junior synonym of Anchiornis huxleyi,
+    probably an immature individual. Its position within the anchiornithid grade
+    is otherwise stable.
 etymology: From Greek eos, 'dawn/daybreak', + Latin Sinae, 'Chinese', + Greek pteryx, 'feather' or 'wing'; means 'dawn Chinese feather', referring to its early age and feathered Chinese specimen
 pronunciation:
   phonetic: EE-oh-si-NOP-ter-ix
@@ -70,12 +73,24 @@ species:
         min: 0.1
         max: 0.1
     erected_in: godefroit2013a
+    described_in: li2026a
     type_specimen:
-      specimen_id: [YFGP-T5197]
+      specimen_id: [PMOL-AD00134]
       specimen_type: holotype
-      institution: YFGP
+      institution: PMOL
       material: Nearly complete articulated skeleton
       completeness: complete
+      former_ids:
+        - from_id: YFGP-T5197
+          to_id: PMOL-AD00134
+          from_institution: YFGP
+          to_institution: PMOL
+          reason: rehoused
+          notes: >-
+            Godefroit and colleagues (2013) give the holotype as YFGP-T5197; the
+            Yizhou Fossil and Geology Park donated it to the Paleontological Museum
+            of Liaoning in 2017, where it is accessioned as PMoL-AD00134 (Li and
+            colleagues, 2026).
 references:
   - id: godefroit2013a
   - id: jones2026c
@@ -87,3 +102,6 @@ references:
     notes: Recovered Eosinopteryx within Anchiornithidae, questioning its validity relative to Anchiornis.
   - id: foth2025a
     notes: Excluded Eosinopteryx from synonymy with Anchiornis in its revised paravian phylogeny.
+  - id: li2026a
+    notes: Redescribes the holotype and regards Eosinopteryx brevipenna as a junior
+      synonym of Anchiornis huxleyi, most of its diagnostic features taphonomic.

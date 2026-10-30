@@ -1,5 +1,22 @@
 # *Eosinopteryx*
 
+## Does Li and colleagues' (2026) synonymy settle *Eosinopteryx*, and where is its holotype?
+
+*2026-10-29*
+
+**Conclusion.** It does not settle it; the species stays `disputed` and the genus is kept. Li and colleagues (2026), redescribing the holotype in person, attribute most of its diagnostic features to taphonomy and regard *E. brevipenna* as a junior synonym of *Anchiornis huxleyi*, probably an immature individual. Theirs is the first held paper to make that synonymy formally, and a single reassessment is not the broad acceptance the dataset waits for; the diagnostic features stay, since only the sinking source rejects them. The holotype has moved: the Yizhou Fossil and Geology Park donated it in 2017 to the Paleontological Museum of Liaoning, where it is PMoL-AD00134, recorded as `PMOL-AD00134` with the published YFGP-T5197 as a `former_ids` entry. Governs `status: disputed`, `described_in: li2026a`, the holotype `specimen_id`, `institution` and `former_ids`, and the dispute summary on [*Eosinopteryx*](../../../genera/E/Eosinopteryx.yml).
+
+**Evidence.**
+- godefroit2013a: "Holotype. YFGP (Yizhou Fossil & Geology Park)-T5197, a complete articulated skeleton".
+- li2026a, p. 1: the holotype "is essentially consistent in osteological features with A. huxleyi", with "most diagnostic features of E. brevipenna" attributed "to taphonomic deformation and damage. Consequently, we regard E. brevipenna as a junior synonym of A. huxleyi".
+- li2026a, p. 2: "That specimen was previously housed at the Yizhou Fossil & Geology Park … under the number YFGP-T5197. Given its scientific significance, in 2017 the Yizhou Fossil & Geology Park donated this specimen along with seven others to the Paleontological Museum of Liaoning (PMoL) in Shenyang City where it is currently accessioned under the number PMoL-AD00134".
+
+**Ruled out.**
+- *Sinking Eosinopteryx into Anchiornis now.* One formal synonymy, in 2026, awaits uptake; Jones (2026) still treats the species as valid.
+- *Keeping YFGP-T5197 as the current number.* The specimen was donated and renumbered.
+
+**Open.** Whether later work adopts the synonymy.
+
 ## On what does the Tiaojishan Formation of the *Eosinopteryx* holotype rest?
 
 *2026-08-22*
@@ -16,4 +33,5 @@
 
 ## References
 
+- `li2026a`: Li, F.-F.; Hu, D.-Y.; Zhao, C.-L.; Li, Z.-H.; Zhou, Z.-H. (2026). Redescription and taxonomic reassessment of the holotype of anchiornithine Eosinopteryx brevipenna. *Palaeoworld* 35(6): 201180. doi:10.1016/j.palwor.2026.201180
 - `godefroit2013a`: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P. (2013). Reduced plumage and flight ability of a new Jurassic paravian theropod from China. *Nature Communications* 4(1). doi:10.1038/ncomms2389
