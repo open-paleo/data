@@ -291,28 +291,15 @@ code style guidelines.
 
 ## AI and LLM Use
 
-Open Paleo used AI/LLM tools (specifically Claude by Anthropic) to build
-the initial project scaffolding — the validation and build scripts,
-GitHub workflows and documentation structure. We
-believe in transparency about this.
+Open Paleo uses AI and LLM tools (currently Claude, by Anthropic) as research and editing tools. They help sift a large corpus of published papers: finding the passages that bear on a record, extracting candidate values such as type specimens and diagnoses, checking records against their sources, and drafting edits to the repository's files. They were also used to write the validation and build scripts and the GitHub workflows.
 
-**AI is not used to populate the dataset.** Every genus, species, clade
-definition, and reference in Open Paleo is entered and reviewed by
-humans, backed by published scientific literature. Automated tooling
-validates data quality, but no AI generates or suggests taxonomic
-content. The integrity of the dataset depends on human expertise, and
-that is not something we are willing to delegate.
+**The editor is responsible for every change, not the tool.** An LLM may draft an edit, but the person who commits it answers for it. "The model wrote that" is never an excuse for an error.
 
-**AI-generated art is not accepted.** Open Paleo values the skill,
-scientific knowledge, and interpretive judgment that paleo-artists bring
-to life reconstructions. We do not accept AI-generated, AI-assisted, or
-AI-upscaled images. See [Image Requirements](CONTRIBUTING.md#image-requirements)
-for details.
+**Nothing comes from a model's training data.** An LLM's recall of the literature is not a source. Every value and every claim in the dataset must trace to published scientific literature, and the editor must have checked it against the cited source; a citation the editor has not confirmed says what the record claims does not count. A specialist may of course write from their own knowledge of the field, but what they write carries a citation to the literature all the same. This applies equally to maintainers and to outside contributors using their own tools.
 
-**Environmental impact.** We recognize that AI and LLM usage carries an
-environmental cost. We are actively exploring options to offset the
-environmental impact of our AI tooling use, and we will update this
-section as we identify and adopt concrete measures.
+Commits made with LLM assistance say so in a `Co-Authored-By` trailer, so the history shows which changes were drafted with a tool.
+
+**AI-generated art is not accepted.** Extracted text can be checked against the paper it came from; a life reconstruction is interpretive work by an artist, and there is no source to check it against. Open Paleo values the skill, scientific knowledge, and judgment that paleo-artists bring to that work, and does not accept AI-generated, AI-assisted, or AI-upscaled images. See [Image Requirements](CONTRIBUTING.md#image-requirements) for details.
 
 ## License
 

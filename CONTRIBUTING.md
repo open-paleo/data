@@ -10,7 +10,7 @@ To contribute, open a pull request that edits the YAML data files directly. Auto
 
 This is a scientific dataset. All taxonomic data must meet the following standards:
 
-- **All data must be backed by published scientific literature.** Every addition or change to taxonomy, species status, or clade definitions must include at least one reference to a peer-reviewed paper, monograph, or established scientific database. Personal opinions, blog posts, and social media are not acceptable sources.
+- **All data must be backed by published scientific literature.** Every addition or change to taxonomy, species status, or clade definitions must include at least one reference to a peer-reviewed paper, monograph, or established scientific database. Personal opinions, blog posts, social media, and an LLM's recall of the literature are not acceptable sources; see [AI and LLM Use](README.md#ai-and-llm-use).
 - **Follow broad consensus, not the latest paper.** A placement or revision is adopted once the field has taken it up, not when a single new analysis proposes it. See [Taxonomic Disputes and Consensus](#taxonomic-disputes-and-consensus) and [How genera are placed in the tree](#how-genera-are-placed-in-the-tree).
 - **Record live debates honestly.** A disagreement that is still live in the literature, over a taxon's validity, placement or age, goes in the record's `dispute:` block with the sources on each side. Use `status: disputed` only when the taxon's own validity lacks consensus; a contested placement alone does not make a taxon disputed. Do not present one side of an active debate as settled fact.
 
