@@ -74,6 +74,12 @@ sessions that never run this skill still see it. `loadAdjudicated` aborts on a
 > silently discards the first: YAML keeps the last duplicate and says nothing.
 > That happened once, cancelling a holotype adjudication with an occurrence one.
 > `loadAdjudicated` now aborts on duplicate keys.
+>
+> When one binomial needs adjudications that rest on different papers (a
+> holotype closed against its erecting paper, a formation closed against the
+> stratigraphic literature), make the entry a **list of blocks** under the one
+> key, each with its own `categories`, `source`, `verdict` and `research`.
+> `loadAdjudicated` unions the categories across them.
 
 **`../../../stratigraphy/`** — the repo-level stratigraphic registry, one file per unit, read here
 through `_formations.py`. It records each unit's **rank** (group, formation,

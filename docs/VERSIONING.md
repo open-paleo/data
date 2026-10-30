@@ -13,7 +13,8 @@ this before building anything on top of the dataset.
 - `dist/references.bib` — every reference as BibTeX
 
 **The source YAML is not stable.** The files under `genera/`, `clades/`,
-`references/`, plus `schema.yml`, `tree.yml`, and `institutions.yaml`, are an
+`references/`, `stratigraphy/`, plus `schema.yml`, `tree.yml`,
+`institutions.yaml` and `regions.yaml`, are an
 editing and curation format. Their layout can change between releases —
 fields may be reshaped, denormalized, or moved. Do not build integrations
 directly against the source tree; build against `dist/`.
@@ -56,8 +57,8 @@ Given `MAJOR.MINOR.PATCH`:
 
 New geological periods/stages, new `appearance_features` tags, new
 `specimen_categories`, and similar vocabulary growth are **MINOR** — the schema
-is designed so that pinning to a v1 schema keeps validating as the dataset
-grows.
+is designed so that a consumer pinned to one major version keeps validating as
+the dataset grows.
 
 ## When you change the output shape
 
@@ -93,7 +94,8 @@ can validate `dist/open-paleo.yml` live against the same schema.
 
 Because the schema leaves objects open to additional properties, a document
 built under a later **minor** schema version still validates against an earlier
-v1 schema — new fields are simply ignored by the older validator.
+schema of the same major version — new fields are simply ignored by the older
+validator.
 
 ## Typed bindings
 

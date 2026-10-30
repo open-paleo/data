@@ -7,7 +7,8 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 
 ## [Unreleased]
 
-Initial public release, establishing the v1 output schema.
+Initial public release. The output schema reaches 3.2.0 through the changes
+below.
 
 ### Added
 - The stratigraphic registry ([`stratigraphy/`](./stratigraphy)),

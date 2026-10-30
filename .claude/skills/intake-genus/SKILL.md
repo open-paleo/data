@@ -45,7 +45,7 @@ apply gate. The set is:
   `nomen-nudum`.
 
 **A validly published dinosaur name that is merely undiagnosable stays
-in `genera/` with `status: nomen dubium`.** 105 genera already do. Do
+in `genera/` with `status: nomen dubium`.** Well over a hundred genera already do. Do
 not route one to `excluded.yml`: that file's category vocabulary has no
 term for it, and dropping the record loses the name from the dataset
 entirely. Ostafrikasaurus is the worked example — a nomen dubium at
@@ -441,7 +441,9 @@ Once the user approves:
 bash .claude/skills/intake-genus/promote.sh <Genus>
 ```
 
-This moves `final.yml` to `genera/<Letter>/<Genus>.yml`. It refuses
+This copies `final.yml` to `genera/<Letter>/<Genus>.yml`, along with
+any store entries the bootstrap staged under
+`staging/intake/<Genus>/references/`. It refuses
 to overwrite an existing file — if the user expected a re-intake
 (stub replacement) they must remove the existing YAML first.
 
@@ -468,9 +470,11 @@ Action regenerates these).
 ## Step 6 — Commit
 
 Stage the new genus file **and every reference-store file created for
-it** (any `references/<letter>/<key>.yml` you authored in step 4b) — the
-pointers must land in the same commit as the store entries they resolve
-to, or validation fails on push:
+it**: the entries `promote.sh` copied from
+`staging/intake/<Genus>/references/` and any
+`references/<letter>/<key>.yml` you authored in step 4b. The pointers
+must land in the same commit as the store entries they resolve to, or
+validation fails on push:
 
 ```
 git add genera/<Letter>/<Genus>.yml
@@ -478,7 +482,7 @@ git add references/<letter>/<key>.yml   # one per new store entry
 ```
 
 Run `git status` and confirm the staged set is exactly the genus file
-plus its new store entries (no `dist/`).
+plus its new store entries, from both sources (no `dist/`).
 
 Draft a commit message of the form:
 

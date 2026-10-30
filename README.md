@@ -80,9 +80,9 @@ Clone the repository:
 git clone https://github.com/open-paleo/data.git
 ```
 
-Or download the latest release from the [Releases](https://github.com/open-paleo/data/releases) page. Each release includes pre-built output files in multiple formats.
+The `dist/` directory holds the ready-to-use output files. A workflow rebuilds and commits them on every push to `main`, so `main` always carries outputs that match its data.
 
-The `dist/` directory contains ready-to-use output files after each build. For the latest data between releases, pull from `main` directly.
+Tagged releases will be published on the [Releases](https://github.com/open-paleo/data/releases) page, named by calendar version (`YYYY.MM`, the `_metadata.version` in the built output). Until the first release, pull from `main`.
 
 ## Repository Structure
 
@@ -93,18 +93,29 @@ open-paleo/
   CODE_OF_CONDUCT.md        # Community standards
   CONTRIBUTORS.md           # List of contributors
   CHANGELOG.md              # Release history
+  CITATION.cff              # Machine-readable citation metadata
+  CLAUDE.md                 # Instructions for Claude Code sessions working in this repository
   schema.yml                # Controlled vocabularies and allowed values
   tree.yml                  # Clade hierarchy — single source of truth for phylogenetic structure
   institutions.yaml         # Registry of museums and institutions housing type specimens
+  regions.yaml              # ISO 3166-2 subdivision codes and their English names
+  excluded.yml              # Genera ruled out of the dataset, with the reason for each
   flagged-sources.yml       # Publishers and journals requiring reviewer verification
+  flagged-signoffs.yml      # Maintainer sign-offs on individual references from flagged sources
+  cspell.json               # Spell-check configuration
   clades/                   # One YAML file per clade (e.g., Dinosauria.yml)
   genera/                   # One YAML file per genus, organized alphabetically (e.g., genera/T/Tyrannosaurus.yml)
   references/               # Canonical reference store (references/<letter>/<key>.yml)
+  stratigraphy/             # Registry of lithostratigraphic units (stratigraphy/<letter>/<unit>.yml)
+  research/                 # Research notes: the reasoning behind record values
   schemas/                  # JSON Schema source describing the built dataset
-  media/                    # Images (specimen photos, reconstructions, skeletal diagrams)
+  media/                    # Planned: images (specimen photos, reconstructions, skeletal diagrams)
   dist/                     # Built outputs (JSON, YAML, JSON Schema, Newick, NEXUS, BibTeX; typed bindings under dist/bindings/)
+  docs/                     # Versioning and stability policy
   scripts/                  # Validation, build, and automation scripts
   dictionaries/             # Spell-check dictionaries: taxonomy.txt is generated, the other lists are curated
+  scratch/                  # Generated reports and working files (gitignored, never committed)
+  .claude/                  # Claude Code skills for the maintainer intake and audit workflows
   .github/                  # Workflows and CODEOWNERS
 ```
 
@@ -124,15 +135,35 @@ The single source of truth for phylogenetic structure. Defines the parent-child 
 
 ### `schema.yml`
 
-Defines all controlled vocabularies used across the dataset: taxonomic status values, synonym types, diet categories, locomotion types, geological periods and stages, image types, completeness levels, and more. The validation script enforces these constraints.
+Defines all controlled vocabularies used across the dataset: taxonomic status values, synonym types, diet categories, locomotion types, specimen types, appearance features, paleoenvironments, geological periods and stages, countries, completeness levels, and more. The validation script enforces these constraints.
+
+### Reference store (`references/`)
+
+One YAML file per cited work, at `references/<letter>/<key>.yml`, holding its full bibliographic details. Records cite works by key with an `{id, notes?}` pointer, and the build inflates each pointer into a full reference block in the output. See [CONTRIBUTING.md](CONTRIBUTING.md#reference-keys-and-years) for how keys and years are assigned.
+
+### Stratigraphic registry (`stratigraphy/`)
+
+One file per lithostratigraphic unit (group, formation, member, or bed) that a record's `location` names, giving the unit's rank, its containing unit, alternate names, and its age as the union of what the cited sources publish. The validator resolves every unit a record names against the registry and checks the record's age against the unit's. See [CONTRIBUTING.md](CONTRIBUTING.md#stratigraphic-registry).
+
+### Research notes (`research/`)
+
+The reasoning behind record values: what the sources say, where they conflict, which reading was adopted, and which readings were considered and rejected. A record's note sits at its data path under `research/`, with `.md` in place of `.yml`, and `npm run research -- <record path>` prints every note that bears on a record. See [research/README.md](research/README.md).
 
 ### `institutions.yaml`
 
-A structured registry of museums, universities, and other institutions that hold type specimens. Each entry is keyed by a canonical abbreviation (e.g. `AMNH` for the American Museum of Natural History) and carries the institution's full name, location, and any alternate abbreviations seen in the literature. Genus files reference institutions by key in their `holotype.institution` field; the build resolves keys to display names, and the validator rejects references to unknown keys. This eliminates the ambiguity that arises when the same museum appears under half a dozen different spellings across papers.
+A structured registry of museums, universities, and other institutions that hold type specimens. Each entry is keyed by a canonical abbreviation (e.g. `AMNH` for the American Museum of Natural History) and carries the institution's full name, location, and any alternate abbreviations seen in the literature. Genus files reference institutions by key in their `type_specimen.institution` field; the build resolves keys to display names, and the validator rejects references to unknown keys. This eliminates the ambiguity that arises when the same museum appears under half a dozen different spellings across papers.
+
+### `regions.yaml`
+
+Every ISO 3166-2 subdivision code with its English name. A record's `location.region` stores the code, and the build publishes both the code (`region_code`) and the name (`region`).
+
+### `excluded.yml`
+
+Genera deliberately left out of the dataset — for example, names never validly published, or taxa whose material cannot be shown to be dinosaurian — each with the reason and the supporting references, so the same candidate is not re-proposed without new evidence.
 
 ### `flagged-sources.yml`
 
-A list of publishers and journals whose citations warrant additional reviewer scrutiny — predatory or borderline-predatory sources where individual papers may still be sound but a second look is warranted. The list mirrors [Beall's List](https://beallslist.net/) (filtered to paleontology-adjacent domains) with a small number of community-added sources. When a contribution cites a flagged publisher or journal, the validator emits a warning and the CI workflow posts a sticky pull-request comment asking the reviewer to sign off on the citation before merge. Citations are **never auto-rejected** — the goal is informed review, not blanket blocking. See [CONTRIBUTING.md](CONTRIBUTING.md#flagged-publication-sources) for the policy and the process for proposing additions or removals.
+A list of publishers and journals whose citations warrant additional reviewer scrutiny — predatory or borderline-predatory sources where individual papers may still be sound but a second look is warranted. The list mirrors [Beall's List](https://beallslist.net/) (filtered to paleontology-adjacent domains) with a small number of community-added sources. When a contribution cites a flagged publisher or journal, the validator emits a warning and the CI workflow posts a sticky pull-request comment asking the reviewer to sign off on the citation before merge. Citations are **never auto-rejected** — the goal is informed review, not blanket blocking. A maintainer who has verified a citation from independent evidence records it in `flagged-signoffs.yml`, which clears that reference's warning. See [CONTRIBUTING.md](CONTRIBUTING.md#flagged-publication-sources) for the policy and the process for proposing additions or removals.
 
 ### Data stability and versioning
 
@@ -188,11 +219,9 @@ and encourages continued contributions.
 
 ### Citing a specific version
 
-Each tagged release (e.g., `2026.04`) represents a snapshot of the
-dataset at a point in time. For reproducibility, cite the specific
-version you used:
+Each tagged release, named by calendar version (`YYYY.MM`), will be a snapshot of the dataset at a point in time. For reproducibility, cite the specific version you used. It is the `_metadata.version` in `dist/open-paleo.json`:
 
-> Open Paleo contributors. (2026). *Open Paleo* (Version 2026.04)
+> Open Paleo contributors. (2026). *Open Paleo* (Version 2026.10)
 > [Dataset]. https://github.com/open-paleo/data
 
 If a DOI is available for the release (via Zenodo), use that instead
@@ -209,7 +238,7 @@ repository moves.
   year         = {2026},
   publisher    = {GitHub},
   url          = {https://github.com/open-paleo/data},
-  note         = {Version 2026.04}
+  note         = {Version 2026.10}
 }
 ```
 
@@ -243,9 +272,17 @@ npm install
 # Validate all data files against the schema and tree
 npm run validate
 
+# Spell-check prose fields (report written to scratch/spellcheck.md)
+npm run spellcheck
+
 # Build output files (JSON, YAML, Newick, NEXUS, BibTeX)
 npm run build
+
+# Print the research notes for a record before working on it
+npm run research -- genera/T/Tyrannosaurus.yml
 ```
+
+Pull requests run `npm run typecheck`, `npm run lint`, `npm run validate` and `npm run spellcheck`; all four must pass. The last two are the ones a data change can fail.
 
 Requires **Node.js 24** or later. Scripts are written in TypeScript
 and run directly via Node's native type stripping — no build step

@@ -61,8 +61,8 @@ Critique ideas and evidence, not individuals.
 ### Scientific Integrity
 
 All taxonomic data must be backed by published scientific literature. Do not
-present personal opinions as established fact. Mark disputed taxa honestly
-using `status: disputed` and document competing views with references.
+present personal opinions as established fact. Record a live debate honestly,
+in the record's `dispute:` block with references for each side.
 Deliberate submission of fabricated data or references is grounds for an
 immediate ban.
 
@@ -89,8 +89,8 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at the
-Open Paleo GitHub organization.
+reported to the community leaders responsible for enforcement at
+codeofconduct@openpaleo.org.
 
 All complaints will be reviewed and investigated promptly and fairly.
 

@@ -25,13 +25,51 @@ npm install
 
 ## Scripts
 
-| Script                   | Command                       | Purpose                                        |
-| ------------------------ | ----------------------------- | ---------------------------------------------- |
-| `validate.ts`            | `npm run validate`            | Validate all YAML data against schema and tree |
-| `build.ts`               | `npm run build`               | Produce output files in `dist/`                |
-| `generate-dictionary.ts` | `npm run generate-dictionary` | Generate spell check dictionary                |
-| `spellcheck.ts`          | `npm run spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md`; exits 1 on any unknown word, and runs on pull requests |
-| `utilities.ts`           | —                             | Shared helper functions imported by scripts    |
+Run each script with `npm run <command>`; pass arguments after `--`. Scripts that read the local paper corpus are described under [Paper corpus and working directory](../CONTRIBUTING.md#paper-corpus-and-working-directory) in the main CONTRIBUTING.md.
+
+### Validation and build
+
+| Script                   | Command               | Purpose |
+| ------------------------ | --------------------- | ------- |
+| `validate.ts`            | `validate`            | Validate all YAML data against schema and tree; the checks live in one module per family under `validate/` |
+| `build.ts`               | `build`               | Produce output files in `dist/` |
+| —                        | `generate-bindings`   | Regenerate the TypeScript and Python bindings in `dist/bindings/` from the JSON Schema |
+| `generate-dictionary.ts` | `generate-dictionary` | Generate the spell-check dictionary `dictionaries/taxonomy.txt` |
+| `spellcheck.ts`          | `spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md`; exits 1 on any unknown word, and runs on pull requests |
+| `research.ts`            | `research`            | Print the research notes for a record; `--references <file>` regenerates a note's reference list |
+
+### Reports and audits
+
+| Script                           | Command                        | Purpose |
+| -------------------------------- | ------------------------------ | ------- |
+| `report-missing-fields.ts`       | `report-missing-fields`        | Report which genera are missing which fields |
+| `verify-data-integrity.ts`       | `verify-data-integrity`        | Self-consistency checks for values that likely belong to another species or specimen |
+| `audit-dois.ts`                  | `audit-dois`                   | Check reference DOIs against Crossref |
+| `audit-cited-papers.ts`          | `audit-cited-papers`           | Check that the corpus paper filed under each cited key is the paper the store describes |
+| `diagnostic-corpus-candidates.ts`| `diagnostic-corpus-candidates` | List the corpus papers that could carry a genus's erecting or describing paper |
+| `paper-watch.ts`                 | `paper-watch`                  | Find newly published papers on OpenAlex for the daily Paper Watch issue |
+
+### Intake and backfill
+
+| Script                                | Command                                        | Purpose |
+| ------------------------------------- | ---------------------------------------------- | ------- |
+| `intake-bootstrap.ts`, `intake-resume.ts`, `intake-apply.ts` | `intake-bootstrap`, `intake-resume`, `intake-apply` | Per-genus intake: seed a stub, build extraction prompts, merge the extractions |
+| `intake-species-bootstrap.ts`, `intake-species-resume.ts`, `intake-species-apply.ts` | `intake-species-bootstrap`, `intake-species-resume`, `intake-species-apply` | The same steps for a non-type species added to an existing genus |
+| `build-extraction-prompts.ts`         | `build-extraction-prompts`                     | Build the work queue and extraction prompts for the paper-field backfill |
+| `normalize-extractions.ts`            | `normalize-extractions`                        | Normalize characters in backfill extraction JSON |
+| `strip-specimen-ids-from-material.ts` | `strip-specimen-ids`                           | Strip catalog numbers from extracted material text; dry run unless `--apply` |
+| `spellcheck-extractions.ts`           | `spellcheck-extractions`                       | Spell-check extracted text before it is applied |
+| `apply-paper-field-extractions.ts`    | `apply-paper-fields`                           | Write extracted material and diagnoses into genus files; dry run unless `--apply` |
+| `normalize-genera-text.ts`            | `normalize-genera-text`                        | Replace cosmetic non-ASCII characters in genus files |
+
+### Shared modules
+
+| Module                                   | Purpose |
+| ---------------------------------------- | ------- |
+| `utilities.ts`                           | Shared helper functions imported by scripts |
+| `types.ts`                               | Shared type definitions for the YAML data |
+| `corpus-path.ts`                         | Resolve the paper corpus and working directory |
+| `intake-shared.ts`, `intake-types.ts`, `genus-enrichment.ts` | Steps, extraction types and PBDB/Wikipedia/Wikidata fetching shared by the intake scripts |
 
 ## Code Style
 
@@ -71,7 +109,7 @@ All code — TypeScript (`scripts/`) and CommonJS workflow scripts (`.github/scr
 
 ### General style
 
-These rules apply to all code — TypeScript, browser JavaScript, and CommonJS workflow scripts alike:
+These rules apply to all code — TypeScript and CommonJS workflow scripts alike:
 
 - **`??` over `||` for fallback values** — use nullish coalescing for default values (e.g., `schema.status ?? []`); reserve `||` for boolean logic
 - **`const` by default** — only use `let` when reassignment is necessary
@@ -135,7 +173,7 @@ npm run lint:fix
 npm run typecheck
 ```
 
-Both checks (`lint`, `typecheck`) run in CI on every pull request. Fix any failures before requesting review.
+Both checks (`lint`, `typecheck`) run in CI on every pull request, alongside `validate` and `spellcheck`. Fix any failures before requesting review.
 
 ## Adding a New Validation Check
 
@@ -164,16 +202,16 @@ Both checks (`lint`, `typecheck`) run in CI on every pull request. Fix any failu
    Data more than one check reads is loaded once in `validate/context.ts`.
 
 2. Add `["My new check", checkMyNewCheck]` to the `checks` list in `validate.ts`, where the summary should list it. A check that throws is reported as an error against itself and the others still run.
-3. Update the check count in the main `README.md` if referenced
-4. Run `npm run validate` locally to verify
+3. Run `npm run validate` locally to verify, and test the check by reintroducing each defect it targets: passing on clean data proves nothing
 
 ## Modifying Build Outputs
 
 If you change the structure of any output format in `build.ts`:
 
-1. Update `_metadata.schema_version` according to semver rules (see section 9.3 of the project plan)
-2. Update `CHANGELOG.md` with the schema change
-3. Run `npm run build` and verify all output files
+1. Update `schemas/open-paleo.schema.json` to match the new output
+2. Update `_metadata.schema_version` according to the semver rules in [docs/VERSIONING.md](../docs/VERSIONING.md)
+3. Update `CHANGELOG.md` with the schema change
+4. Run `npm run build` and verify all output files
 
 ## Types
 

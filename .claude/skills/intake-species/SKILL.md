@@ -136,8 +136,8 @@ bootstrap proposes a key:
 1. Cross-check the author + year against the Wikipedia article (the
    cached file at `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` has a
    sub-section per species in most cases).
-2. If the proposed key already exists in the bib, confirm the
-   bib entry's title matches the describing paper for THIS species —
+2. If the proposed key already exists in the reference store
+   (`references/<letter>/<key>.yml`), confirm the store entry's title matches the describing paper for THIS species —
    not a different paper by the same author in the same year.
 3. If the species was previously described in another genus (a
    recombination), the describing paper is usually the recombining

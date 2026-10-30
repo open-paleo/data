@@ -11,8 +11,8 @@ To contribute, open a pull request that edits the YAML data files directly. Auto
 This is a scientific dataset. All taxonomic data must meet the following standards:
 
 - **All data must be backed by published scientific literature.** Every addition or change to taxonomy, species status, or clade definitions must include at least one reference to a peer-reviewed paper, monograph, or established scientific database. Personal opinions, blog posts, and social media are not acceptable sources.
-- **Use the most recent consensus where one exists.** When multiple competing phylogenies have been published, prefer the most recent comprehensive analysis. Note the alternatives in the genus or clade file if the placement is actively debated.
-- **Mark disputed taxa honestly.** If a species or placement is controversial, use `status: disputed` and document the competing views in the description and references. Do not present one side of an active debate as settled fact.
+- **Follow broad consensus, not the latest paper.** A placement or revision is adopted once the field has taken it up, not when a single new analysis proposes it. See [Taxonomic Disputes and Consensus](#taxonomic-disputes-and-consensus) and [How genera are placed in the tree](#how-genera-are-placed-in-the-tree).
+- **Record live debates honestly.** A disagreement that is still live in the literature, over a taxon's validity, placement or age, goes in the record's `dispute:` block with the sources on each side. Use `status: disputed` only when the taxon's own validity lacks consensus; a contested placement alone does not make a taxon disputed. Do not present one side of an active debate as settled fact.
 
 ## Flagged Publication Sources
 
@@ -65,10 +65,10 @@ In practice this means:
   approvingly, or adopted by subsequent analyses before updating.
 - **Active debates are documented, not resolved.** When a revision is
   genuinely controversial — with credible researchers on both sides —
-  we retain the existing arrangement, use `status: disputed` where
-  appropriate, and document the competing views in the description and
-  references. The data should describe the state of the field, not
-  pick a winner.
+  we retain the existing arrangement and document the competing views in
+  the record's `dispute:` block, with `status: disputed` where the taxon's
+  own validity is in question. The data should describe the state of the
+  field, not pick a winner.
 - **Corrections to clear errors are fast-tracked.** If a taxon is
   demonstrably misplaced due to a data-entry mistake or an outdated
   classification the field has long since moved past, that can be
@@ -82,9 +82,8 @@ understanding lags the cutting edge by a few years — while still
 recording genuinely new animals as they are described.
 
 If you believe a **revision** has reached consensus and should be
-reflected in Open Paleo, submit a [Correct Taxonomy](../../issues/new?template=correct-taxonomy.yml)
-issue with references showing community adoption — not just the
-original proposal.
+reflected in Open Paleo, [open an issue](../../issues/new) with
+references showing community adoption — not just the original proposal.
 
 ## How genera are placed in the tree
 
@@ -190,7 +189,7 @@ paper that named it, whichever genus it now sits in.
 - **Fill in as much as you can.** The more complete a contribution (description, location, formation, references), the more useful it is. Partial contributions are accepted — someone else can fill in the gaps later — but do not submit empty shells.
 - **Write for a general audience.** Descriptions should be accessible to an interested non-specialist. Avoid unexplained jargon. Technical diagnostic features belong in the `diagnostic_features` field, not the description.
 - **American English.** All editorial prose — `description`, `etymology`,
-  `dispute`, `diagnostic_features`, `holotype.material`, `synonyms[].reason`,
+  `dispute`, `diagnostic_features`, `type_specimen.material`, `synonyms[].reason`,
   `references[].notes` — uses American spellings (color, center, behavior,
   meter, fiber, defense, catalog, analyze, paleontology, recognize, etc.).
   Proper-noun metadata — paper and book titles, journal names, publisher
@@ -226,7 +225,7 @@ paper that named it, whichever genus it now sits in.
 ## Inline Reference Format
 
 When citing papers inside editorial prose (`description`, `etymology`,
-`dispute`, `diagnostic_features`, `holotype.material`,
+`dispute`, `diagnostic_features`, `type_specimen.material`,
 `synonyms[].reason`, `references[].notes`), use the paleo-journal
 hybrid form:
 
@@ -419,7 +418,7 @@ glosses.
 
 ## Institution Registry
 
-Every `holotype.institution` value must be a key in
+Every `type_specimen.institution` value must be a key in
 [`institutions.yaml`](./institutions.yaml).
 
 The [Sabaj MASTER LIST](https://doi.org/10.1643/ASIHCODONS2020) (the
@@ -611,6 +610,8 @@ itself. A child whose parent is dated to a single stage takes that stage
 
 ## Image Requirements
 
+Images of genera (specimen photos, life reconstructions and skeletal diagrams) are in scope for Open Paleo, but the dataset does not carry them yet: there is no image field and no `media/` directory. The policy below applies once image support lands, and stands now so that contributors can prepare work that meets it.
+
 > **AI-generated art is not accepted.** Open Paleo values the skill and
 > scientific knowledge that paleo-artists bring to life reconstructions.
 > AI-generated, AI-assisted, or AI-upscaled images do not meet our
@@ -619,44 +620,23 @@ itself. A child whose parent is dated to a single stage takes that stage
 > proven. If you are unsure whether your workflow qualifies, ask before
 > submitting.
 
-- **You must hold the copyright, or the image must be public domain / CC0.** All images submitted to Open Paleo are licensed under CC BY 4.0. The submission form requires you to attest to this.
+- **You must hold the copyright, or the image must be public domain / CC0.** All images submitted to Open Paleo are licensed under CC BY 4.0, and submitting one attests that you have the right to license it.
 - **No watermarked or heavily manipulated images.** Specimen photos should be unmodified. Life reconstructions should be clearly labeled as such.
-- **Credit the creator.** Always fill in the `credit` field accurately with the photographer, artist, or institution.
+- **Credit the creator.** Every image names its photographer, artist, or institution accurately.
 
 ## Process
 
-- **Open a pull request** that edits the YAML data files directly, and make sure `npm run validate` passes.
+- **Open a pull request** that edits the YAML data files directly, and make sure `npm run validate` and `npm run spellcheck` pass.
 - **Do not modify `tree.yml` without discussion.** Changes to the clade hierarchy affect every genus in the affected subtree. Open an issue first to discuss the change and its justification.
 - **Respect the review process.** Every PR runs automated validation, and PRs are reviewed by maintainers before merge — changes that affect the tree structure especially so. Do not pressure maintainers to merge faster.
 
 ## Local Development Setup
 
-To run the validation and build scripts locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/open-paleo/data.git
-cd data
-
-# Install dependencies
-npm install
-
-# Validate all data files
-npm run validate
-
-# Build output files
-npm run build
-```
-
-Requires **Node.js 24** or later.
-
-Running validation locally before submitting helps catch formatting errors, missing references, and schema violations early.
+The [Development](README.md#development) section of the README gives the setup steps and the commands pull requests must pass. Running `npm run validate` and `npm run spellcheck` locally before submitting catches formatting errors, missing references, and schema violations early.
 
 ### Paper corpus and working directory
 
-A few maintainer-facing scripts (`intake-bootstrap`, `intake-resume`,
-`build-extraction-prompts`) and the `intake-genus` skill read from a
-local paper corpus that is **not** stored in this repo. By default
+The maintainer-facing intake, backfill and audit scripts (the `intake-*` and `intake-species-*` scripts, `build-extraction-prompts`, `audit-cited-papers` and `diagnostic-corpus-candidates`) and the Claude Code skills under `.claude/skills/` read from a local paper corpus that is **not** stored in this repo. By default
 they assume two sibling directories next to your `data/` checkout:
 
 ```
@@ -683,7 +663,7 @@ for the maintainer-driven intake and backfill flows.
 
 Contributors are recognized in the following ways:
 
-- **Git history** — Commit authorship on auto-generated PRs uses the issue author's GitHub identity.
+- **Git history** — Commits in your pull request keep your GitHub identity as their author.
 - **CONTRIBUTORS.md** — All contributors are listed in the [CONTRIBUTORS.md](CONTRIBUTORS.md) file as the project grows.
 - **Release notes** — When your additions are included in a tagged release, they are noted in the release changelog.
 
@@ -695,4 +675,4 @@ for TypeScript style guidelines, linting setup, and development workflow.
 
 ## Questions?
 
-If something is unclear or you are unsure whether a contribution fits, open a [Report Error](../../issues/new?template=report-error.yml) issue or start a discussion in the [Discussions](../../discussions) tab. We are happy to help.
+If something is unclear or you are unsure whether a contribution fits, [open an issue](../../issues/new). We are happy to help.

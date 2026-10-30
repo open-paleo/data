@@ -135,24 +135,28 @@ For each result:
     YAML).
   - Absent → genuine intake → `/intake-genus <new_genus>`.
 - **new-species** → if the genus exists in `genera/` → `/intake-species
-  <Genus>` (confirm the species isn't already listed). If the genus itself is
+  <Genus> <species>` (confirm the species isn't already listed). If the genus itself is
   absent → it is really a new-genus intake → `/intake-genus`.
 
 Then group, in this order, each line naming the affected genera, rationale,
 and any `secondary` actions:
 
 - **🆕 New taxon** (verified absent from `genera/`) — `/intake-genus <Genus>`
-- **🐣 New species** — `/intake-species <Genus>`
+- **🐣 New species** — `/intake-species <Genus> <species>`
 - **📝 Redescription — holotype restudy** (`material_basis: holotype`) —
   `/update-genus <Genus>` (material + diagnosis; the classic case).
 - **📝 Redescription — referred material** (`material_basis: referred`/`none`)
-  — `/update-genus <Genus>` **diagnosis only**. Do NOT add the new specimens
+  — `/update-genus <Genus>` **diagnosis only**. `apply-paper-fields` has no
+  diagnosis-only mode, so say in the worklist line that the extraction's
+  `holotype_material` must be cleared before apply. Do NOT add the new specimens
   to `type_specimen.material` (that field is the type specimen only); the new
   referred specimen is a **`notable_specimens` candidate** (flag it). Note if
   the emended diagnosis depends on a novel/contested referral.
-- **🎨 Appearance / soft tissue** — `/update-genus <Genus>` (appearance
-  fields). Also fold appearance features that ride along a redescription
-  (e.g. a newly described crest) into that genus's `/update-genus` note.
+- **🎨 Appearance / soft tissue** — hand edit of the genus's `appearance.*`
+  fields; no skill writes them (`/update-genus` covers only material and
+  diagnosis). Also note appearance features that ride along a redescription
+  (e.g. a newly described crest) on that genus's `/update-genus` line, as a
+  separate hand edit.
 - **ℹ️ Already represented** — describing paper for a genus already in
   `genera/`; no action unless our entry is incomplete.
 - **⚠️ Gated taxonomic change** — state the claim and affected taxa; **no

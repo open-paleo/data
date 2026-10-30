@@ -102,7 +102,8 @@ file together with the genus file when committing.
 5. **Strip specimen IDs, then apply** (strip edits JSONs, so it runs
    BEFORE apply):
    ```
-   npm run strip-specimen-ids -- --letter X
+   npm run strip-specimen-ids -- --letter X            # dry-run
+   npm run strip-specimen-ids -- --letter X --apply
    npm run apply-paper-fields -- --letter X            # dry-run
    npm run apply-paper-fields -- --letter X --apply
    ```

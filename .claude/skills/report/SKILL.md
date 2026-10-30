@@ -17,7 +17,7 @@ pure function of the data, like `dist/`). Never commit it.
    ```
    npm run report-missing-fields
    ```
-   This writes `scratch/missing-fields.md` (1391 genera) and prints a
+   This writes `scratch/missing-fields.md` (every genus in `genera/`) and prints a
    one-line confirmation.
 
 2. Show the per-field summary (the `**field**: N missing (P%)` block at
