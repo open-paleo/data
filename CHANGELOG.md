@@ -132,6 +132,11 @@ Initial public release, establishing the v1 output schema.
   is a natural group, was written in the source but left out of the built
   clade; it now appears there as it does on a genus. Output schema 3.0.0 →
   3.1.0.
+- Clade `erected_in` and `described_in` in the output: the reference ids of
+  the paper that erected a clade name and of its authoritative description,
+  as species already carry. Before, a clade gave its authority only as
+  `authors` and `described`. The schema also documents the genus-level
+  `erected_in` the output already carried. Output schema 3.1.0 → 3.2.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

@@ -74,6 +74,18 @@ type ProcessedClade = {
     authors?: string;
 
     /**
+     * Reference id of the paper that erected the clade name; `authors` and
+     * `described` derive from it.
+     */
+    erected_in?: string;
+
+    /**
+     * Reference id of the authoritative descriptive source, such as a later
+     * definition or diagnosis. Absent when it is the same as `erected_in`.
+     */
+    described_in?: string;
+
+    /**
      * Technical diagnostic features of the clade.
      */
     diagnostic_features?: Array<string>;
@@ -562,6 +574,8 @@ for (const file of findYamlFiles(path.join(root, "clades")))
             type_genus: data.type_genus,
             described,
             authors,
+            erected_in: data.erected_in,
+            described_in: data.described_in,
             diagnostic_features: data.diagnostic_features,
             synonyms: data.synonyms,
             references: inflateReferences(data.references),
@@ -584,7 +598,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "3.1.0",
+        schema_version: "3.2.0",
         version,
     },
     tree,

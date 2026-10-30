@@ -48,6 +48,8 @@
         "type_genus": { "type": "string", "description": "Type genus of a rank-based name; absent for unranked clades." },
         "described": { "type": "integer", "description": "Year the clade was erected (derived from erected_in)." },
         "authors": { "type": "string", "description": "Author(s) who erected the clade (derived from erected_in)." },
+        "erected_in": { "type": "string", "description": "Reference id of the paper that erected the clade name; the authors and year above derive from it." },
+        "described_in": { "type": "string", "description": "Reference id of the authoritative descriptive source, such as a later definition or diagnosis; falls back to erected_in." },
         "diagnostic_features": { "type": "array", "items": { "type": "string" } },
         "synonyms": { "type": "array", "items": { "$ref": "#/$defs/synonym" } },
         "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } }
@@ -77,7 +79,8 @@
         "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
         "iczn_cases": { "type": "array", "items": { "$ref": "#/$defs/icznCase" } },
         "described": { "type": "integer", "description": "Year the genus was erected (derived from its authority)." },
-        "authors": { "type": "string", "description": "Author(s) who erected the genus (derived from its authority)." }
+        "authors": { "type": "string", "description": "Author(s) who erected the genus (derived from its authority)." },
+        "erected_in": { "type": "string", "description": "Reference id of the paper that erected the genus, present only when it differs from the type species's erected_in (the type species was named in another genus, or an ICZN ruling replaced it)." }
       }
     },
     "species": {
