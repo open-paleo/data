@@ -30,7 +30,7 @@ npm install
 | `validate.ts`            | `npm run validate`            | Validate all YAML data against schema and tree |
 | `build.ts`               | `npm run build`               | Produce output files in `dist/`                |
 | `generate-dictionary.ts` | `npm run generate-dictionary` | Generate spell check dictionary                |
-| `spellcheck.ts`          | `npm run spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md` |
+| `spellcheck.ts`          | `npm run spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md`; exits 1 on any unknown word, and runs on pull requests |
 | `utilities.ts`           | —                             | Shared helper functions imported by scripts    |
 
 ## Code Style

@@ -41,6 +41,9 @@ jobs:
         shell: bash
         run: npm run validate | tee /tmp/validate-output.txt
 
+      - name: Spell check
+        run: npm run spellcheck
+
       - name: Post flagged-references PR comment
         if: always() && github.event_name == 'pull_request'
         uses: actions/github-script@v9

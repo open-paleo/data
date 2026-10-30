@@ -19,7 +19,8 @@
 //
 // Output: scratch/spellcheck.md, one checklist line per unknown word with its
 // suggestions and where it occurs, and scratch/spellcheck.json with every
-// occurrence.
+// occurrence. Each unknown word is also printed with its first occurrence, and
+// the script exits 1 when there is any, so a pull request with one fails.
 //
 // Usage:
 //   npm run spellcheck
@@ -233,4 +234,17 @@ fs.writeFileSync(path.join(scratchDirectory, "spellcheck.md"), reportLines.join(
 fs.writeFileSync(path.join(scratchDirectory, "spellcheck.json"), JSON.stringify(sorted, null, 2) + "\n");
 
 console.log(summary);
+
+for (const entry of sorted)
+{
+    const first = entry.occurrences[0];
+
+    console.log(`  ${entry.word} (${entry.occurrences.length}): ${first.file} ${first.fieldPath}`);
+}
+
 console.log("Report: scratch/spellcheck.md (all occurrences in scratch/spellcheck.json)");
+
+if (sorted.length > 0)
+{
+    process.exitCode = 1;
+}
