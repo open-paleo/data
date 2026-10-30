@@ -43,6 +43,7 @@
       "required": ["taxonomy"],
       "properties": {
         "description": { "type": "string" },
+        "dispute": { "$ref": "#/$defs/dispute" },
         "taxonomy": { "$ref": "#/$defs/taxonomy" },
         "type_genus": { "type": "string", "description": "Type genus of a rank-based name; absent for unranked clades." },
         "described": { "type": "integer", "description": "Year the clade was erected (derived from erected_in)." },

@@ -499,6 +499,7 @@ class Size(BaseModel):
 
 class Clade(BaseModel):
     description: Optional[str] = None
+    dispute: Optional[Dispute] = None
     taxonomy: List[str] = Field(
         ...,
         description="Ordered ancestor clade names from root to the record's placement.",

@@ -230,6 +230,7 @@ export interface TreeNode {
 }
 export interface Clade {
   description?: string;
+  dispute?: Dispute;
   taxonomy: Taxonomy;
   /**
    * Type genus of a rank-based name; absent for unranked clades.
@@ -246,6 +247,10 @@ export interface Clade {
   diagnostic_features?: string[];
   synonyms?: Synonym[];
   references?: Reference[];
+  [k: string]: unknown;
+}
+export interface Dispute {
+  summary: string;
   [k: string]: unknown;
 }
 export interface Synonym {
@@ -323,10 +328,6 @@ export interface Genus {
 export interface Pronunciation {
   ipa?: string;
   phonetic?: string;
-  [k: string]: unknown;
-}
-export interface Dispute {
-  summary: string;
   [k: string]: unknown;
 }
 export interface Appearance {
