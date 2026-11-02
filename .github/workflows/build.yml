@@ -72,18 +72,29 @@ jobs:
         if: steps.bindings.outputs.generate == 'true'
         run: npm run generate-bindings
 
+      # Records whether this commit changed dist/references.bib, and the SHA
+      # that landed on main, for the corpus dispatch below. The SHA is read
+      # after the push, so it is the commit on main even after a rebase retry.
       - name: Commit build outputs
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f dist/ dictionaries/
           if [ -n "$(git status --porcelain dist/ dictionaries/)" ]; then
+            if git diff --cached --quiet -- dist/references.bib; then
+              bib=false
+            else
+              bib=true
+            fi
             git commit -m "build: update output files"
             # A data commit can land on main while this build runs. On a
             # rejected push, deepen the shallow checkout enough to find the
             # merge base, rebase the build commit onto main and try again.
             for attempt in 1 2 3; do
               if git push; then
+                echo "bib_changed=$bib" >> "$GITHUB_OUTPUT"
+                echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
                 exit 0
               fi
               git fetch --deepen=50 origin main
@@ -92,3 +103,20 @@ jobs:
             echo "Push still rejected after three attempts" >&2
             exit 1
           fi
+
+      # open-paleo/corpus keeps a bundled copy of the bib, and its update-bib
+      # workflow takes the bib from the commit named in the payload rather than
+      # from main, which raw.githubusercontent.com can serve stale for minutes.
+      # The built-in GITHUB_TOKEN cannot dispatch to another repository, so this
+      # uses a fine-grained token scoped to open-paleo/corpus. A missed dispatch
+      # must not fail the build; the corpus workflow can be run by hand. -f, not
+      # -F, so an all-digit SHA is still sent as a string.
+      - name: Tell the corpus repository the bib changed
+        if: steps.commit.outputs.bib_changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.CORPUS_DISPATCH_TOKEN }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          gh api repos/open-paleo/corpus/dispatches \
+            -f event_type=bib-updated -f "client_payload[sha]=$SHA"
