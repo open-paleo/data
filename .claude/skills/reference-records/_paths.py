@@ -10,7 +10,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 
 from skill_paths import (  # noqa: E402,F401  re-exported for this skill's scripts
     audit_dir,
-    condensed_dir,
     corpus_dir,
     data_dir,
     fold_letters,

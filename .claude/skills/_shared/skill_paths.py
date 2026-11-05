@@ -32,11 +32,6 @@ def corpus_dir():
     return os.path.join(os.path.dirname(data_dir()), "corpus")
 
 
-def condensed_dir():
-    """Where paper condensations live (in the corpus repo, committed)."""
-    return os.path.join(corpus_dir(), "condensed")
-
-
 def audit_dir():
     """Where the skills write their caches, reports and intermediates. Under
     scratch/, which is wholly gitignored -- everything here is regenerable."""
