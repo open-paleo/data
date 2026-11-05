@@ -642,7 +642,7 @@ they assume two sibling directories next to your `data/` checkout:
 ```
 your-workspace/
 ├── data/                 (this repo)
-├── open-paleo-papers/    (paper markdown corpus)
+├── corpus/               (paper corpus)
 │   └── markdown/{citation_key}.md
 └── open-paleo-wd/        (Claude working directory, e.g. Wikipedia cache)
     └── wikipedia/{Genus}.json
@@ -652,9 +652,11 @@ If you keep those directories elsewhere, export the corresponding
 environment variables to override the defaults:
 
 ```bash
-export OPEN_PALEO_PAPERS_DIR=/path/to/your/paper-corpus
+export OPEN_PALEO_CORPUS=/path/to/your/paper-corpus
 export OPEN_PALEO_WD_DIR=/path/to/your/working-dir
 ```
+
+The corpus variable's older name, `OPEN_PALEO_PAPERS_DIR`, is still accepted.
 
 Most contributors will never need the corpus — it is only required
 for the maintainer-driven intake and backfill flows.

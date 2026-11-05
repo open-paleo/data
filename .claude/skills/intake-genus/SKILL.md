@@ -165,8 +165,8 @@ not produce a file here, so fetching papers for them is wasted work.
 **Hard stop.** Tell the user:
 
 > Bootstrap complete. Fetch the listed papers into
-> `$OPEN_PALEO_PAPERS_DIR/markdown/` (defaults to a sibling
-> `../open-paleo-papers/markdown/` next to this repo), then for each fetched
+> `$OPEN_PALEO_CORPUS/markdown/` (defaults to a sibling
+> `../corpus/markdown/` next to this repo), then for each fetched
 > paper, tick `[x]` in `staging/intake/<Genus>/papers-needed.md` and
 > paste a citation string on the same line after a `— ` separator.
 > Updating `dist/references.bib` is not required — the apply step
@@ -205,11 +205,11 @@ different paper — every paper is a fresh decision.
 ### First, verify each fetched paper is the paper
 
 Before running resume, for every key the user ticked, grep its markdown
-in `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md` for the taxon name and, when
+in `$OPEN_PALEO_CORPUS/markdown/<key>.md` for the taxon name and, when
 you have one, the holotype number:
 
 ```
-grep -ic "<Genus>" "$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md"
+grep -ic "<Genus>" "$OPEN_PALEO_CORPUS/markdown/<key>.md"
 ```
 
 **A paper whose markdown never names the target taxon is the signature
@@ -580,8 +580,8 @@ the JVP ornithomimid"):
    at it. Commit the new store file and genus YAML together.
 
 **Do NOT rename markdown files in the paper corpus**
-(`$OPEN_PALEO_PAPERS_DIR/markdown/`, defaults to
-`../open-paleo-papers/markdown/`). The papers repo has its
+(`$OPEN_PALEO_CORPUS/markdown/`, defaults to
+`../corpus/markdown/`). The papers repo has its
 own workflow that the user runs after this repo's `dist/references.bib`
 regenerates; that workflow detects the split and renames the
 markdown files. If you rename them yourself, you'll desync that
@@ -631,7 +631,7 @@ Follow the project's persistent rules at every gate:
   — but if you see misspelled tokens in the agent output, fix the
   JSON before running apply.)
 - Verify every paper-attributed claim against the corpus when the
-  paper exists in `$OPEN_PALEO_PAPERS_DIR/markdown/` — never cite
+  paper exists in `$OPEN_PALEO_CORPUS/markdown/` — never cite
   from general/Wikipedia recall — `feedback_verify_against_corpus`.
 - The PBDB-seeded species block, period, and location in
   `bootstrap.yml` are routinely wrong; replace them during step 4

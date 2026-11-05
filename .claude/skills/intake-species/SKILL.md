@@ -150,8 +150,8 @@ correct key and note the override above the checkbox.
 **Hard stop.** Tell the user:
 
 > Bootstrap complete. Fetch the describing paper into
-> `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md` (defaults to
-> `../open-paleo-papers/markdown/`), tick `[x]` in
+> `$OPEN_PALEO_CORPUS/markdown/<key>.md` (defaults to
+> `../corpus/markdown/`), tick `[x]` in
 > `staging/intake-species/<Genus>-<species>/papers-needed.md` and
 > paste a citation string on the same line after a `— ` separator.
 > When done, say "resume".
@@ -166,7 +166,7 @@ For every key the user ticked, grep its markdown for the binomial and,
 when you have one, the holotype number:
 
 ```
-grep -ic "<species>" "$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md"
+grep -ic "<species>" "$OPEN_PALEO_CORPUS/markdown/<key>.md"
 ```
 
 **A paper whose markdown never names the target species is the signature
@@ -444,7 +444,7 @@ Follow the project's persistent rules at every gate:
 - No markdown formatting in `notes:` reference fields —
   `project_reference_conventions`.
 - Verify every paper-attributed claim against the corpus when the
-  paper exists in `$OPEN_PALEO_PAPERS_DIR/markdown/` — never cite
+  paper exists in `$OPEN_PALEO_CORPUS/markdown/` — never cite
   from general/Wikipedia recall — `feedback_verify_against_corpus`.
 - PBDB-seeded fields are routinely wrong; correct against the
   paper during step 4b polish — `feedback_pbdb_species_seed`.

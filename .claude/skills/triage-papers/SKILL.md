@@ -13,7 +13,7 @@ command, but it NEVER edits `genera/` data — the actual changes happen when
 the user runs the suggested `/update-genus` or `/intake-genus`.
 
 The watcher already did the discovery and noise-filtering; this skill judges
-only papers that have actually landed in the corpus (`$OPEN_PALEO_PAPERS_DIR/markdown/`).
+only papers that have actually landed in the corpus (`$OPEN_PALEO_CORPUS/markdown/`).
 
 ## Step 1 — Find the issue
 
@@ -56,10 +56,10 @@ under, and whether the box is already `- [x]` (skip those — already triaged).
 For each DOI, find its corpus markdown by grepping for the DOI string:
 
 ```
-grep -rl "<doi>" "$OPEN_PALEO_PAPERS_DIR/markdown/" 2>/dev/null
+grep -rl "<doi>" "$OPEN_PALEO_CORPUS/markdown/" 2>/dev/null
 ```
 
-(`$OPEN_PALEO_PAPERS_DIR` defaults to `../open-paleo-papers`.) A hit gives
+(`$OPEN_PALEO_CORPUS` defaults to `../corpus`.) A hit gives
 the file; its basename (minus `.md`) is the citation key. Papers with no
 corpus hit go to an **Awaiting retrieval** list — do NOT classify them from
 the title/abstract; we only judge papers we can read in full.

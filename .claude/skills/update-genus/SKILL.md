@@ -9,7 +9,7 @@ allowed-tools: Bash Read Write Edit Glob Grep Agent
 # Update Genus
 
 Fill paper-derived fields on an **existing** genus from a paper already
-in the local corpus (`$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md`). Scope:
+in the local corpus (`$OPEN_PALEO_CORPUS/markdown/<key>.md`). Scope:
 `species.type_specimen.material` and top-level `diagnostic_features` (the same
 fields the per-letter backfill handles). Existing values are never
 overwritten.
@@ -58,7 +58,7 @@ file together with the genus file when committing.
 
 1. **Pick the source paper.** Read the genus YAML; choose the markdown
    key — the species's `described_in` if set, else its `erected_in`.
-   Confirm `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md`
+   Confirm `$OPEN_PALEO_CORPUS/markdown/<key>.md`
    exists and is substantive (not an abstract/fragment). If it is
    missing or wrong, log it in the corpus repo's
    `corpus-paper-report.md` and stop.

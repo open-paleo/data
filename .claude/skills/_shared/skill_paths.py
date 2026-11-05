@@ -22,12 +22,14 @@ def data_dir():
 
 
 def corpus_dir():
-    """Absolute path to the paper corpus root (honors OPEN_PALEO_PAPERS_DIR,
-    else the sibling `open-paleo-papers` directory next to the data repo)."""
-    override = os.environ.get("OPEN_PALEO_PAPERS_DIR")
-    if override:
-        return os.path.abspath(override)
-    return os.path.join(os.path.dirname(data_dir()), "open-paleo-papers")
+    """Absolute path to the paper corpus root (honors OPEN_PALEO_CORPUS, then
+    its older name OPEN_PALEO_PAPERS_DIR, else the sibling `corpus` directory
+    next to the data repo)."""
+    for name in ("OPEN_PALEO_CORPUS", "OPEN_PALEO_PAPERS_DIR"):
+        override = os.environ.get(name)
+        if override:
+            return os.path.abspath(override)
+    return os.path.join(os.path.dirname(data_dir()), "corpus")
 
 
 def condensed_dir():

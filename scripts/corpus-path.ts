@@ -5,11 +5,12 @@
 // per-machine path.
 //
 // Overrides:
-//   OPEN_PALEO_PAPERS_DIR — root of the paper corpus
+//   OPEN_PALEO_CORPUS     — root of the paper corpus
+//   OPEN_PALEO_PAPERS_DIR — the same, under its older name; still accepted
 //   OPEN_PALEO_WD_DIR     — root of the Claude working directory
 //
-// When either is unset, defaults to a sibling `open-paleo-papers/` or
-// `open-paleo-wd/` directory next to this repo.
+// When unset, the corpus defaults to a sibling `corpus/` directory and the
+// working directory to a sibling `open-paleo-wd/` directory next to this repo.
 
 import * as path from "node:path";
 import * as url from "node:url";
@@ -21,22 +22,24 @@ const repoRoot = path.join(scriptDir, "..");
 /**
  * Resolves the absolute path to the local paper corpus root.
  *
- * Honors the `OPEN_PALEO_PAPERS_DIR` environment variable when set
- * to a non-empty value, otherwise returns the sibling-directory
- * default (`../open-paleo-papers` relative to the repo root).
+ * Honors the `OPEN_PALEO_CORPUS` environment variable when set to a
+ * non-empty value, then `OPEN_PALEO_PAPERS_DIR`, its older name, and
+ * otherwise returns the sibling-directory default (`../corpus`
+ * relative to the repo root).
  *
  * @returns Absolute path to the paper corpus root.
  */
 export function getCorpusDir(): string
 {
-    const override = process.env.OPEN_PALEO_PAPERS_DIR;
-
-    if (override !== undefined && override !== "")
+    for (const override of [process.env.OPEN_PALEO_CORPUS, process.env.OPEN_PALEO_PAPERS_DIR])
     {
-        return path.resolve(override);
+        if (override !== undefined && override !== "")
+        {
+            return path.resolve(override);
+        }
     }
 
-    return path.resolve(repoRoot, "..", "open-paleo-papers");
+    return path.resolve(repoRoot, "..", "corpus");
 }
 
 /**

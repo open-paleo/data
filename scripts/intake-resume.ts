@@ -18,8 +18,9 @@
 //   npm run intake-resume -- Bagaraatan --corpus /custom/path
 //
 // The corpus root resolves through `getCorpusDir()` — honoring the
-// `OPEN_PALEO_PAPERS_DIR` env var, falling back to a sibling
-// `../open-paleo-papers/` directory. See scripts/corpus-path.ts.
+// `OPEN_PALEO_CORPUS` env var (or its older name
+// `OPEN_PALEO_PAPERS_DIR`), falling back to a sibling `../corpus/`
+// directory. See scripts/corpus-path.ts.
 
 import * as fs from "node:fs";
 import * as path from "node:path";
