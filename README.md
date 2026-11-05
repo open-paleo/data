@@ -8,7 +8,7 @@ A community-maintained, version-controlled phylogenetic dataset for paleontology
 
 Open Paleo is an open science project that builds a structured, machine-readable dataset of paleontological taxonomy. The tree is rooted at **Life**, broad enough to accommodate any fossil taxon — from dinosaurs to trilobites to ammonites. Initial data focuses on non-avian dinosaurs, with higher-level clades serving as scaffolding that will be populated over time as contributors from other specializations join.
 
-All taxonomic data is backed by published scientific literature. The dataset is curated through structured contribution workflows, validated by automated tooling, and published in multiple output formats for downstream use.
+All taxonomic data is backed by published scientific literature. The dataset is reviewed by maintainers, validated by automated tooling, and published in multiple output formats for downstream use.
 
 ### Why does this exist?
 
