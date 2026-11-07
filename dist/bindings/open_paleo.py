@@ -406,6 +406,28 @@ class AppearanceFeatures(Enum):
     feathered_tail = 'feathered tail'
 
 
+class StagesModel(BaseModel):
+    period: Periods = Field(
+        ...,
+        description='The epoch the stage belongs to, in the same form as species[].period.name.',
+    )
+    from_ma: float = Field(
+        ..., description="Age of the stage's base, in millions of years."
+    )
+    to_ma: float = Field(
+        ..., description="Age of the stage's top, in millions of years."
+    )
+
+
+class Timescale(BaseModel):
+    chart: str = Field(
+        ..., description='The published chart the stage boundaries follow.'
+    )
+    stages: Dict[str, StagesModel] = Field(
+        ..., description='Stages keyed by name, youngest first.'
+    )
+
+
 class TypeSpecimen(BaseModel):
     specimen_id: Optional[List[str]] = Field(
         None, description='Catalogue number(s), one per element.'
@@ -597,6 +619,7 @@ class Genus(BaseModel):
 
 class OpenPaleoDataset(BaseModel):
     field_metadata: Metadata = Field(..., alias='_metadata')
+    timescale: Optional[Timescale] = None
     tree: Dict[str, Dict]
     clades: Dict[str, Clade] = Field(
         ..., description='Processed clade records keyed by clade name.'

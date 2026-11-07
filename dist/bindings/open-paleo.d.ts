@@ -187,10 +187,11 @@ export type IcznCaseTypes =
 export type IcznCaseStatuses = "opinion" | "open" | "closed" | "withdrawn";
 
 /**
- * Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against a pinned v1 schema. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).
+ * Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against an earlier schema of the same major version. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).
  */
 export interface OpenPaleoDataset {
   _metadata: Metadata;
+  timescale?: Timescale;
   tree: TreeNode;
   /**
    * Processed clade records keyed by clade name.
@@ -220,6 +221,49 @@ export interface Metadata {
   attribution: string;
   genus_count: number;
   clade_count: number;
+  [k: string]: unknown;
+}
+/**
+ * The chronostratigraphic timescale the dataset's ages are read against: every stage in schema.yml with its boundary ages and the epoch it belongs to. Covers only the stages and epochs the dataset's records use, so an epoch's span derived from its stages here can be shorter than the epoch's full span.
+ */
+export interface Timescale {
+  /**
+   * The published chart the stage boundaries follow.
+   */
+  chart: string;
+  /**
+   * Stages keyed by name, youngest first.
+   */
+  stages: {
+    [k: string]: {
+      /**
+       * The epoch the stage belongs to, in the same form as species[].period.name.
+       */
+      period:
+        | "Late Triassic"
+        | "Middle Triassic"
+        | "Early Triassic"
+        | "Late Jurassic"
+        | "Middle Jurassic"
+        | "Early Jurassic"
+        | "Late Cretaceous"
+        | "Early Cretaceous"
+        | "Late Permian"
+        | "Middle Permian"
+        | "Early Permian"
+        | "Paleocene"
+        | "Eocene";
+      /**
+       * Age of the stage's base, in millions of years.
+       */
+      from_ma: number;
+      /**
+       * Age of the stage's top, in millions of years.
+       */
+      to_ma: number;
+      [k: string]: unknown;
+    };
+  };
   [k: string]: unknown;
 }
 /**
