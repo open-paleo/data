@@ -403,9 +403,18 @@ export function checkReferenceStoreIntegrity(context: ValidationContext): void
             }
         }
 
-        // A page range takes a plain hyphen, so that one range cannot be written
-        // two ways ("15–51" and "15-51").
-        if (entry.pages !== undefined && /[‐-―−]/.test(String(entry.pages)))
+        // Pages are text in the output schema, but YAML reads an unquoted single
+        // page or article number ("pages: 91") as a number. A page range takes a
+        // plain hyphen, so that one range cannot be written two ways ("15–51"
+        // and "15-51").
+        if (entry.pages !== undefined && typeof entry.pages !== "string")
+        {
+            checkError(
+                "Reference store integrity",
+                filePath,
+                `reference '${entry.id ?? baseName}': pages ${entry.pages} is not text; quote it as pages: "${entry.pages}"`);
+        }
+        else if (entry.pages !== undefined && /[‐-―−]/.test(entry.pages))
         {
             checkError(
                 "Reference store integrity",
