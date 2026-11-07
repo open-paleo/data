@@ -2,11 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/open-paleo/data/main/schemas/open-paleo.schema.json",
   "title": "Open Paleo dataset",
-  "description": "Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against a pinned v1 schema. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).",
+  "description": "Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against an earlier schema of the same major version. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).",
   "type": "object",
   "required": ["_metadata", "tree", "clades", "genera"],
   "properties": {
     "_metadata": { "$ref": "#/$defs/metadata" },
+    "timescale": { "$ref": "#/$defs/timescale" },
     "tree": { "$ref": "#/$defs/treeNode" },
     "clades": {
       "type": "object",
@@ -31,6 +32,28 @@
         "attribution": { "type": "string" },
         "genus_count": { "type": "integer", "minimum": 0 },
         "clade_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "timescale": {
+      "type": "object",
+      "description": "The chronostratigraphic timescale the dataset's ages are read against: every stage in schema.yml with its boundary ages and the epoch it belongs to. Covers only the stages and epochs the dataset's records use, so an epoch's span derived from its stages here can be shorter than the epoch's full span.",
+      "required": ["chart", "stages"],
+      "properties": {
+        "chart": { "type": "string", "description": "The published chart the stage boundaries follow." },
+        "stages": {
+          "type": "object",
+          "description": "Stages keyed by name, youngest first.",
+          "propertyNames": { "$ref": "#/$defs/stages" },
+          "additionalProperties": {
+            "type": "object",
+            "required": ["period", "from_ma", "to_ma"],
+            "properties": {
+              "period": { "$ref": "#/$defs/periods", "description": "The epoch the stage belongs to, in the same form as species[].period.name." },
+              "from_ma": { "type": "number", "description": "Age of the stage's base, in millions of years." },
+              "to_ma": { "type": "number", "description": "Age of the stage's top, in millions of years." }
+            }
+          }
+        }
       }
     },
     "treeNode": {

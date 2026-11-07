@@ -143,6 +143,21 @@ type DatasetMetadata = {
 };
 
 /**
+ * The chronostratigraphic timescale the dataset's ages are read against.
+ */
+type Timescale = {
+    /**
+     * The published chart the stage boundaries follow.
+     */
+    chart: string;
+
+    /**
+     * Every stage in schema.yml, youngest first, keyed by stage name.
+     */
+    stages: Record<string, StageInfo>;
+};
+
+/**
  * Complete dataset structure written to the JSON and YAML output files.
  */
 type Dataset = {
@@ -150,6 +165,11 @@ type Dataset = {
      * Build metadata (version, timestamp, counts).
      */
     _metadata: DatasetMetadata;
+
+    /**
+     * Stage boundary ages and the epoch each stage belongs to.
+     */
+    timescale: Timescale;
 
     /**
      * Full phylogenetic tree from tree.yml.
@@ -598,8 +618,14 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "3.2.0",
+        schema_version: "3.3.0",
         version,
+    },
+    // The chart named in the header of schema.yml's stage table; change both
+    // together.
+    timescale: {
+        chart: "ICS International Chronostratigraphic Chart v2024/12",
+        stages: stageTable,
     },
     tree,
     clades,

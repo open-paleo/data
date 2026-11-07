@@ -138,6 +138,13 @@ below.
   as species already carry. Before, a clade gave its authority only as
   `authors` and `described`. The schema also documents the genus-level
   `erected_in` the output already carried. Output schema 3.1.0 → 3.2.0.
+- Top-level `timescale` in the output: the chart the stage boundaries
+  follow (ICS International Chronostratigraphic Chart v2024/12) and every
+  stage in the `stages` vocabulary, youngest first, with its epoch in the
+  form `species[].period.name` uses and its `from_ma`/`to_ma` boundary ages.
+  The table holds only the stages the dataset's records use, so an epoch's
+  span derived from it can fall short of the epoch's full span: only the
+  Ypresian represents the Eocene. Output schema 3.2.0 → 3.3.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the
