@@ -72,9 +72,11 @@ jobs:
         if: steps.bindings.outputs.generate == 'true'
         run: npm run generate-bindings
 
-      # Records whether this commit changed dist/references.bib, and the SHA
-      # that landed on main, for the corpus dispatch below. The SHA is read
-      # after the push, so it is the commit on main even after a rebase retry.
+      # Records whether this commit changed dist/ and dist/references.bib, and
+      # the SHA that landed on main, for the dispatches below. A commit can
+      # change only dictionaries/, so dist_changed is not implied by a push.
+      # The SHA is read after the push, so it is the commit on main even after
+      # a rebase retry.
       - name: Commit build outputs
         id: commit
         run: |
@@ -82,6 +84,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f dist/ dictionaries/
           if [ -n "$(git status --porcelain dist/ dictionaries/)" ]; then
+            if git diff --cached --quiet -- dist/; then
+              dist=false
+            else
+              dist=true
+            fi
             if git diff --cached --quiet -- dist/references.bib; then
               bib=false
             else
@@ -93,6 +100,7 @@ jobs:
             # merge base, rebase the build commit onto main and try again.
             for attempt in 1 2 3; do
               if git push; then
+                echo "dist_changed=$dist" >> "$GITHUB_OUTPUT"
                 echo "bib_changed=$bib" >> "$GITHUB_OUTPUT"
                 echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
                 exit 0
@@ -120,3 +128,17 @@ jobs:
         run: |
           gh api repos/open-paleo/corpus/dispatches \
             -f event_type=bib-updated -f "client_payload[sha]=$SHA"
+
+      # open-paleo/web builds the site from dist/ at the commit named in the
+      # payload, so it rebuilds when the outputs change. Like the corpus step,
+      # it needs a fine-grained token scoped to that repository, and a missed
+      # dispatch must not fail the build: the site also rebuilds nightly.
+      - name: Tell the web repository the outputs changed
+        if: steps.commit.outputs.dist_changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.WEB_DISPATCH_TOKEN }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          gh api repos/open-paleo/web/dispatches \
+            -f event_type=data-updated -f "client_payload[sha]=$SHA"
