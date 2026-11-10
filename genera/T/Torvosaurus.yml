@@ -9,8 +9,18 @@ description: Torvosaurus is a genus of large megalosaurine theropod dinosaur
   that lived approximately 165 to 146.5 million years ago during the Callovian
   to Tithonian ages of the late Middle and Late Jurassic period in what is now
   Colorado, Portugal, Germany, and possibly England, Spain, Tanzania, and
-  Uruguay. It contains two currently recognized species, Torvosaurus tanneri and
+  Uruguay. It contains two named species, Torvosaurus tanneri and the disputed
   Torvosaurus gurneyi, plus a third unnamed species from Germany.
+dispute:
+  summary: Hendrickx and Mateus (2014) named Torvosaurus gurneyi for a maxilla
+    from the Lourinhã Formation of Portugal, distinguished from T. tanneri by its
+    tooth count, the shape of its interdental plates and two features of the
+    medial shelf. Warner-Cowgill and colleagues (2026) regard it as a junior
+    synonym of T. tanneri. On a more complete maxilla from Colorado they find ten
+    alveoli and the interdental plates attributed to T. gurneyi, attribute the
+    differences in tooth count and plate shape to damage in the maxilla they had
+    been measured against, and treat the other two as variation within the
+    species.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
@@ -20,19 +30,10 @@ appearance:
   integument: scaled
   evidence: inferred
 diagnostic_features:
-  - Humerus straight and massive, with a strongly indented head, a large
-    deltopectoral crest extending past midshaft, and a broad distal end
-  - Forearm short, with a humerus-to-radius length ratio of about 2.2 and a
-    massive ulna (length-to-proximal-width ratio about 2.1)
-  - First manual phalanx of digit I stout, short, and twisted so the distal
-    condyles are angled relative to the proximal end
-  - Subacetabular parts of the pubis and ischium unemarginated ventrally,
-    forming a nearly continuous ventromedian symphysis along most of their
-    length
-  - Obturator foramen fully enclosed in the pubis, terminating distally in a
-    small anteroposteriorly expanded pubic foot
-  - Ilium with a very low dorsal blade tapering to a rounded posterior point and
-    a wide brevis shelf; acetabulum wide but shallow
+  - An anteroposteriorly oriented ridge lateral to the maxillary fossa
+  - Maxillary fossa large, subtriangular and mediolaterally shallow, contacting
+    the floor of the antorbital fossa
+  - Maxillary interdental plates fused into a continuous interdental wall
 identifiers:
   - source: pbdb
     id: "38587"
@@ -86,11 +87,24 @@ species:
       weight_kg:
         min: 2000
         max: 5000
+    diagnostic_features:
+      - Three premaxillary alveoli.
+      - A diastema on the premaxilla separating the premaxillary and maxillary
+        alveoli, without a subnarial notch.
+      - Ten maxillary alveoli.
+      - Medial margin of the maxilla's subnarial contact with the nasal formed by
+        a prominent crest.
+      - A single large neurovascular opening on the dorsomedial surface of the
+        maxillary jugal ramus.
+      - Posterior process of the quadratojugal oriented subvertically, its ventral
+        and posterior margins meeting at a right angle.
+      - A flange on the anterodorsal margin of the surangular.
     erected_in: galton1979a
+    described_in: warner-cowgill2026a
   - name: Torvosaurus gurneyi
     etymology: Honors the paleoartist James Gurney, creator of the Dinotopia book
       series.
-    status: valid
+    status: disputed
     type_species: false
     period:
       name:
@@ -143,9 +157,24 @@ notable_specimens:
       by: Aart Walen
     references:
       - araújo2013a
+  - specimen_id:
+      - CMC VP 15575
+    institution: CMC-US
+    species: Torvosaurus tanneri
+    category: most-complete
+    significance: The most complete Torvosaurus specimen known, from Skull Creek
+      Quarry, Colorado, with a complete maxilla, a posterior mandible and an
+      unbroken vertebral series from neck to tail base. Its third maxillary
+      tooth, about 250 mm long, is the largest land-animal tooth known from the
+      Jurassic or earlier.
+    references:
+      - warner-cowgill2026a
 references:
   - id: araújo2013a
   - id: galton1979a
   - id: hendrickx2014a
     notes: Original description of Torvosaurus gurneyi on maxilla ML 1100 from the
       Lourinhã Formation of Portugal.
+  - id: warner-cowgill2026a
+    notes: Revised diagnoses of Torvosaurus and T. tanneri from the new specimen
+      CMC VP 15575; treats T. gurneyi as a junior synonym of T. tanneri.
