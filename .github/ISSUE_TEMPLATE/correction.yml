@@ -1,0 +1,50 @@
+# Linked from the "Suggest a correction" link on every genus, clade and
+# reference page of open-paleo.org, which pre-fills the title and the `record`
+# and `page` fields through URL parameters. Keep the file name and those two
+# field ids, or the site's links stop pre-filling.
+name: Report an error
+description: Report a value in a genus, species, clade or reference record that does not match the published literature.
+title: "Correction: "
+labels: ["Audit"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Every value in Open Paleo is backed by published literature. Tell us
+        which value is wrong, what it should be, and the published work that
+        says so.
+  - type: input
+    id: record
+    attributes:
+      label: Record
+      description: 'The genus, species, clade or reference, e.g. "Genus: Tyrannosaurus".'
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The page on open-paleo.org where you saw it, if any.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: The value as it appears now, and the field it is in if you know it.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What it should be
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: >-
+        The published work that supports the correction: authors, year, title,
+        and a DOI or link. Page or figure numbers help. Blog posts, social
+        media and an AI chatbot's answer are not sources.
+    validations:
+      required: true

@@ -677,4 +677,4 @@ for TypeScript style guidelines, linting setup, and development workflow.
 
 ## Questions?
 
-If something is unclear or you are unsure whether a contribution fits, [open an issue](../../issues/new). We are happy to help.
+To report a value that does not match the published literature, use the [Report an error](../../issues/new?template=correction.yml) form. If something is unclear or you are unsure whether a contribution fits, [open an issue](../../issues/new). We are happy to help.
