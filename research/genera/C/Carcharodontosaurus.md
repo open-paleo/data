@@ -1,5 +1,20 @@
 # *Carcharodontosaurus*
 
+## Which paper named *Carcharodontosaurus saharicus*?
+
+*2026-11-11*
+
+**Conclusion.** Depéret and Savornin's 1925 note in the *Comptes Rendus*, as *Megalosaurus saharicus*; Stromer (1931) erected *Carcharodontosaurus* for it. Governs `erected_in: depéret1925a` and `erected_as: Megalosaurus saharicus` on the species, and the genus-level `erected_in: stromer1931a`, on [*Carcharodontosaurus*](../../../genera/C/Carcharodontosaurus.yml).
+
+**Evidence.**
+- depéret1925a: "Certainly we have here the indication of a new species, to which we give the name *M. saharicus*" (translated), with *Megalosaurus* written out in the sentence before. The copy read is an English translation without the original's folios, so the page within pp. 1108–1111 is not given.
+
+**Ruled out.**
+- *The 1928 paper as the naming paper.* Brusatte and Sereno (2007) write that the species was "first described by Depéret and Savornin (1927: 265) as a new species of *Megalosaurus*, specifically as '*Megalosaurus* (*Dryptosaurus*) *saharicus*'" (brusatte2007a, p. 903). That paper, keyed `depéret1928a` by the year it appeared, follows the 1925 note, which had already named the species.
+- *Stromer (1931) as the species' authority.* Stromer erected the genus for a species already named.
+
+**Open.** The 1925 note's French wording, and its page, from the original.
+
 ## Is the *Carcharodontosaurus saharicus* neotype SGM-Din 1 or UCRC PV12?
 
 *2026-08-14*
@@ -32,6 +47,9 @@
 
 ## References
 
+- `depéret1925a`: Depéret, C.; Savornin, J. (1925). Sur la découverte d'une faune de vertébrés albiens à Timimoun (Sahara occidental) [On the discovery of a fauna of Albian vertebrates at Timimoun (western Sahara)]. *Comptes Rendus Hebdomadaires des Séances de l'Académie des Sciences* 181: 1108-1111.
+- `stromer1931a`: Stromer, E. (1931). Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wüsten Ägyptens. II. Wirbeltier-Reste der Baharîjestufe (unterstes Cenoman). 10. Ein Skelett-Rest von Carcharodontosaurus nov. gen [Results of Prof. E. Stromer's research expeditions in the deserts of Egypt. II. Vertebrate remains of the Baharîje Stage (lowermost Cenomanian). 10. A skeletal remain of Carcharodontosaurus nov. gen.]. *Abhandlungen der Bayerischen Akademie der Wissenschaften Mathematisch-naturwissenschaftliche Abteilung, Neue Folge* 9: 1-23.
 - `brusatte2007a`: Brusatte, S. L.; Sereno, P. C. (2007). A new species of Carcharodontosaurus (Dinosauria: Theropoda) from the Cenomanian of Niger and a revision of the genus. *Journal of Vertebrate Paleontology* 27(4): 902-916. doi:10.1671/0272-4634(2007)27[902:ANSOCD]2.0.CO;2
+- `depéret1928a`: Depéret, C.; Savornin, J. (1928). La faune de reptiles et de poissons albiens de Timimoun (Sahara algérien) [The Albian reptile and fish fauna of Timimoun (Algerian Sahara)]. *Bulletin de la Société Géologique de France* 27: 257-265.
 - `ibrahim2020a`: Ibrahim, N.; Sereno, P. C.; Varricchio, D. J.; Martill, D. M.; Dutheil, D. B.; Unwin, D. M.; Baidder, L.; Larsson, H. C. E.; Zouhri, S.; Kaoukaya, A. (2020). Geology and paleontology of the Upper Cretaceous Kem Kem Group of eastern Morocco. *ZooKeys* 928: 1-216. doi:10.3897/zookeys.928.47517
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
