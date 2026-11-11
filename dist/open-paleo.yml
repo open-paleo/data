@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-11-10T21:15:26.707Z
+  built_at: 2026-11-11T21:02:52.904Z
   clade_count: 188
-  genus_count: 1428
+  genus_count: 1429
   license: CC-BY-4.0
   schema_version: 3.3.0
   version: "2026.11"
@@ -71810,6 +71810,7 @@ genera:
         id: "517609"
       - source: wikidata
         id: Q137722535
+    erected_in: maidment2026a
     species:
       - name: Ferenceratops shqiperorum
         etymology: Honors the Albanian people (Albanian 'shqiptarët').
@@ -71835,9 +71836,10 @@ genera:
           institution: Natural History Museum
           material: Partial right dentary, partial dorsal vertebra, left scapula, partial left coracoid, ilium fragment, right ischium, left distal ischium, and left femur.
           completeness: partial
-        erected_in: maidment2026a
-        authors: Maidment, S. C. R.; Butler, R. J.; Brusatte, S. L.; Meade, L. E.; Augustin, F. J.; Csiki-Sava, Z.; Ősi, A.
-        described: 2026
+        erected_as: Zalmoxes shqiperorum
+        erected_in: weishampel2003a
+        authors: Weishampel, D. B.; Jianu, C.; Csiki, Z.; Norman, D. B.
+        described: 2003
     notable_specimens:
       - specimen_id:
           - UBB SPZ-2
@@ -128574,6 +128576,83 @@ genera:
       - Coelurosauria
     authors: Owen, R.
     described: 1854
+  Nyana:
+    genus: Nyana
+    parent: Massopoda
+    placement: incertae sedis
+    etymology: From Xhosa and Sesotho 'nyana', meaning 'son' or 'child' in Xhosa and 'small' or 'little' in Sesotho, for the holotype's early ontogenetic stage.
+    description: Nyana rooiwalensis is an extinct species of early massopodan sauropodomorph dinosaur known from the Late Triassic (Norian–Rhaetian ages) Elliot Formation of South Africa. It is the only species in the genus Nyana, and is known from a partial articulated skull and associated fragmentary skeleton of a juvenile individual.
+    dispute:
+      summary: |
+        Moopen and colleagues (2026) recover Nyana within Massopoda in each of their reduced consensus trees, but in three positions, with low support across the tree: inside Massospondylidae as the sister of Sarahsaurus or of Ngwevu, or as the sister of Sarahsaurus outside Massospondylidae.
+    locomotion: bipedal
+    diagnostic_features:
+      - Ascending ramus of the maxilla extending at about 40 degrees from the long axis of the maxilla
+      - Postorbital mediolaterally thickened, with straight rami
+      - A foramen on the posteromedial surface of the jugomaxillary ramus of the palatine
+    identifiers:
+      - source: wikidata
+        id: Q135042445
+    species:
+      - name: Nyana rooiwalensis
+        etymology: Named for Rooiwal, the tribal administrative area of the Eastern Cape in which the fossil site lies.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+            - Rhaetian
+          from_ma: 227.3
+          to_ma: 201.4
+        location:
+          country: ZA
+          locality: Qhemegha, Sterkspruit District
+          region: Eastern Cape
+          formation: Elliot
+          part: lower
+          notes: |
+            Moopen and colleagues (2026) place the holotype in the upper half of the lower Elliot, about 140 m above the contact with the Molteno Formation.
+          region_code: ZA-EC
+          part_of: formation
+        type_specimen:
+          specimen_id:
+            - BP/1/8468
+          specimen_type: holotype
+          institution: Evolutionary Studies Institute (formerly Bernard Price Institute for Palaeontological Research), University of the Witwatersrand
+          material: Partial articulated skull, posterior right mandible, both proatlases, six cervical and dorsal vertebrae, sacral and caudal centra, and partial ulna, femur, tibia and manual and pedal phalanges.
+        erected_in: moopen2026a
+        authors: Moopen, A.; Botha, J.; Benson, R.; Chapelle, K. E. J.; Barrett, P. M.; Dollman, K.; Choiniere, J. N.
+        described: 2026
+    references:
+      - id: moopen2026a
+        authors: Moopen, A.; Botha, J.; Benson, R.; Chapelle, K. E. J.; Barrett, P. M.; Dollman, K.; Choiniere, J. N.
+        year: 2026
+        title: "Nyana rooiwalensis: South Africa's earliest near-complete sauropodomorph dinosaur skull from the Late Triassic of the Eastern Cape Province"
+        journal: Royal Society Open Science
+        publisher: The Royal Society
+        volume: "13"
+        issue: "11"
+        pages: "261002"
+        doi: 10.1098/rsos.261002
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+    authors: Moopen, A.; Botha, J.; Benson, R.; Chapelle, K. E. J.; Barrett, P. M.; Dollman, K.; Choiniere, J. N.
+    described: 2026
   Obelignathus:
     genus: Obelignathus
     parent: Rhabdodontomorpha
