@@ -173,9 +173,13 @@ paper that named it, whichever genus it now sits in.
   changed, `erected_as` gives it as printed.
 - **A genus erected for an existing species takes its own `erected_in`.** When
   the type species was named in another genus, the genus-level `erected_in` is
-  the paper that erected the genus (Russell 1972 for *Dromiceiomimus*), since
-  the type species' paper did not. Otherwise the genus authority is the type
-  species' `erected_in`, and the genus-level field is left out.
+  the paper that erected the genus (Russell 1972 for *Dromiceiomimus*). That is
+  usually a later paper, but it is the type species' own paper when that paper
+  names the species in one genus and also proposes the current one, as Owen
+  (1874) does for *Bothriospondylus robustus* and *Marmarospondylus*; the
+  field is still set, so the record says the genus was erected there.
+  Otherwise the genus authority is the type species' `erected_in`, and the
+  genus-level field is left out.
 
 ## Neutrality and Good Faith
 

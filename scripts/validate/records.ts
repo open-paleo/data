@@ -623,8 +623,10 @@ export function checkIcznCaseCompliance(context: ValidationContext): void
  * Species authority — every species needs erected_in; the denormalized
  * authors/described fields were removed in the #1886 migration. A species
  * named in another genus records that `erected_as`, and when it is
- * the type species, the genus takes its own `erected_in`: the species'
- * paper named the species, not the genus.
+ * the type species, the genus takes its own `erected_in` for the paper that
+ * erected it. That is usually a later paper, but it may be the species' own
+ * paper, when the paper names the species in one genus and proposes the
+ * current genus for it as well.
  *
  * @param context - The loaded data the checks read.
  */
@@ -661,7 +663,7 @@ export function checkSpeciesAuthority(context: ValidationContext): void
                     filePath,
                     `species '${species.name ?? "?"}': erected_as '${species.erected_as}' is in this genus; record it only for a species named in another genus`);
             }
-            else if (species === typeSpecies && (!doc.erected_in || doc.erected_in === species.erected_in))
+            else if (species === typeSpecies && !doc.erected_in)
             {
                 checkError(
                     "Species authority",
