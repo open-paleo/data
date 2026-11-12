@@ -203,9 +203,12 @@ for (const file of findYamlFiles(path.join(root, "genera")))
         addNameWords(synonym.name);
     }
 
+    // A specimen's nickname is a name prose uses for it, on a notable specimen
+    // or a type specimen alike.
     for (const specimen of data.notable_specimens ?? [])
     {
         addNameWords(specimen.species);
+        addNameWords(specimen.nickname);
     }
 
     if (data.species)
@@ -224,6 +227,11 @@ for (const file of findYamlFiles(path.join(root, "genera")))
             {
                 addNameWords(synonym.name);
             }
+
+            // The binomial a species was named under, which prose cites when
+            // telling its history, and its type specimen's nickname.
+            addNameWords(species.erected_as);
+            addNameWords(species.type_specimen?.nickname);
 
             // Every rank, not just the formation: a member or bed name is
             // drawn from the same curated stratigraphic vocabulary, and the
