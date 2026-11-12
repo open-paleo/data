@@ -634,6 +634,7 @@ export function checkSpeciesAuthority(context: ValidationContext): void
 {
     const {
         genusParsed,
+        referenceStoreById,
     } = context;
 
     for (const [filePath, doc] of genusParsed)
@@ -669,6 +670,25 @@ export function checkSpeciesAuthority(context: ValidationContext): void
                     "Species authority",
                     filePath,
                     `type species '${species.name ?? "?"}' was named as ${species.erected_as}, so the genus needs its own 'erected_in' for the paper that erected ${doc.genus}`);
+            }
+        }
+
+        // A species named before its genus existed was named in another genus,
+        // so it needs `erected_as`; or the genus authority is wrong, as when a
+        // type species replaced by the Commission lends the genus its date.
+        const genusKey = doc.erected_in ?? typeSpecies?.erected_in;
+        const genusYear = genusKey ? referenceStoreById.get(genusKey)?.year : undefined;
+
+        for (const species of doc.species.filter((entry) => entry?.erected_in && entry.erected_as === undefined))
+        {
+            const speciesYear = referenceStoreById.get(species.erected_in ?? "")?.year;
+
+            if (typeof speciesYear === "number" && typeof genusYear === "number" && speciesYear < genusYear)
+            {
+                checkError(
+                    "Species authority",
+                    filePath,
+                    `species '${species.name ?? "?"}': erected_in ${species.erected_in} (${speciesYear}) is older than the genus's ${genusKey} (${genusYear}); a species named in another genus needs 'erected_as', or the genus needs its own 'erected_in'`);
             }
         }
 
