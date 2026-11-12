@@ -114,6 +114,14 @@ export type TypeSpecimen = {
     specimen_id?: Array<string>;
 
     /**
+     * Informal name the type specimen is known by (e.g. "Happy" for the
+     * Haplocanthosaurus delfsi holotype). The type specimen never doubles as a
+     * notable specimen, so its nickname lives here; the source is cited in the
+     * genus references with a note.
+     */
+    nickname?: string;
+
+    /**
      * Primary nomenclatural type category. Required whenever this block is
      * present. Allowed values come from `schema.yml` under `specimen_types`
      * ("holotype", "syntype", "lectotype", "neotype", "unknown").

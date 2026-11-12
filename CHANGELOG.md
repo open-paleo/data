@@ -145,6 +145,11 @@ below.
   The table holds only the stages the dataset's records use, so an epoch's
   span derived from it can fall short of the epoch's full span: only the
   Ypresian represents the Eocene. Output schema 3.2.0 → 3.3.0.
+- `nickname` on `species[].type_specimen`: the informal name a type
+  specimen is known by, which until now could be recorded only for a
+  notable specimen. A type specimen is never also listed among a genus's
+  `notable_specimens`, and validation now rejects one that is. Output
+  schema 3.3.0 → 3.4.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

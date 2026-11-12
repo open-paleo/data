@@ -420,6 +420,12 @@ Full translations of prose belong in downstream forks (`data-fr`, `data-es`,
 `data-de`), which is precisely why the core carries identifiers rather than
 glosses.
 
+## Type Specimens and Notable Specimens
+
+A species' type specimen lives in its `type_specimen` block. `notable_specimens` is a short, curated list of other material, such as a famous referred skeleton, the most complete individual known, or a specimen with gut contents, and it never repeats a type specimen: every type specimen is notable for being one, so that alone is no reason to list it. Validation rejects a notable specimen whose catalog numbers all belong to a type specimen in the same record. An entry may share a number with the type when it also lists other specimens, as when bones once catalogued with the type were later separated from it as referred material.
+
+A type specimen known by a nickname, such as "Happy" for the holotype of *Haplocanthosaurus delfsi*, takes it in `type_specimen.nickname`, as a notable specimen takes its `nickname`: the bare name, without quotation marks. Cite the source of the nickname in the genus `references`, with a note saying so.
+
 ## Institution Registry
 
 Every `type_specimen.institution` value must be a key in

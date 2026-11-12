@@ -1201,6 +1201,16 @@ export function checkTypeSpecimenConsistency(context: ValidationContext): void
             const holotype = species.type_specimen;
             const speciesLabel = species.name ?? "?";
 
+            // A nickname is the bare name, as a notable specimen's is.
+            if (holotype.nickname !== undefined
+                && (typeof holotype.nickname !== "string" || holotype.nickname.trim().length === 0 || /^["'“‘]|["'”’]$/u.test(holotype.nickname)))
+            {
+                checkError(
+                    "Type specimen consistency",
+                    filePath,
+                    `${speciesLabel}: type_specimen.nickname must be the bare name, a non-empty string without quotation marks`);
+            }
+
             // When holotype.status is set to a valid enum value, the block represents
             // a lost/destroyed/unknown-state specimen where specimen_id, institution,
             // and specimen_type may be unavailable. See #1850.
@@ -1482,6 +1492,9 @@ export function checkNotableSpecimens(context: ValidationContext): void
             (doc.references ?? [])
                 .map((reference) => reference.id)
                 .filter((id): id is string => typeof id === "string"));
+        const typeSpecimenIds = new Set(
+            (doc.species ?? [])
+                .flatMap((species) => species?.type_specimen?.specimen_id ?? []));
 
         if (doc.notable_specimens.length > notableSpecimenLimit)
         {
@@ -1522,6 +1535,18 @@ export function checkNotableSpecimens(context: ValidationContext): void
                             filePath,
                             `notable_specimens '${label}': specimen_id[${idIndex}] must be a non-empty string`);
                     }
+                }
+
+                // A type specimen is never also a notable specimen; its nickname
+                // and anything notable about it belong on the type_specimen block.
+                // An entry that also lists other specimens, such as referred
+                // material once catalogued with the type, is not the type itself.
+                if (specimen.specimen_id!.every((value) => typeSpecimenIds.has(value)))
+                {
+                    checkError(
+                        "Notable specimens",
+                        filePath,
+                        `notable_specimens '${label}': ${specimen.specimen_id!.join(", ")} is a type specimen in this record; give its nickname and notes on the type_specimen block instead`);
                 }
             }
 

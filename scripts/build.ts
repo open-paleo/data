@@ -618,7 +618,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "3.3.0",
+        schema_version: "3.4.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both
