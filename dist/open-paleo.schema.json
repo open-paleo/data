@@ -156,6 +156,7 @@
       "description": "Type-specimen block: the holotype, or a syntype/lectotype/neotype series (see specimen_type).",
       "properties": {
         "specimen_id": { "type": "array", "items": { "type": "string" }, "description": "Catalogue number(s), one per element." },
+        "nickname": { "type": "string", "description": "Informal name the type specimen is known by (e.g. \"Happy\"). A type specimen is never also listed in notable_specimens." },
         "specimen_type": { "$ref": "#/$defs/specimen_types" },
         "institution": { "type": "string", "description": "Resolved institution display name." },
         "material": { "type": "string" },

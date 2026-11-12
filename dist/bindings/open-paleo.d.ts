@@ -443,6 +443,10 @@ export interface TypeSpecimen {
    * Catalogue number(s), one per element.
    */
   specimen_id?: string[];
+  /**
+   * Informal name the type specimen is known by (e.g. "Happy"). A type specimen is never also listed in notable_specimens.
+   */
+  nickname?: string;
   specimen_type?: SpecimenTypes;
   /**
    * Resolved institution display name.

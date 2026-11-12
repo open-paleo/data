@@ -432,6 +432,10 @@ class TypeSpecimen(BaseModel):
     specimen_id: Optional[List[str]] = Field(
         None, description='Catalogue number(s), one per element.'
     )
+    nickname: Optional[str] = Field(
+        None,
+        description='Informal name the type specimen is known by (e.g. "Happy"). A type specimen is never also listed in notable_specimens.',
+    )
     specimen_type: Optional[SpecimenTypes] = None
     institution: Optional[str] = Field(
         None, description='Resolved institution display name.'
