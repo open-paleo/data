@@ -566,6 +566,39 @@ export function checkReferenceKeyInProse(context: ValidationContext): void
 }
 
 /**
+ * The "Space before punctuation" check.
+ *
+ * Space before punctuation — a space left before a comma, period, semicolon
+ * or colon. It is what remains when a pronunciation or a bracketed gloss is
+ * cut out of a copied sentence ("Archaeopteryx , sometimes referred to"), and
+ * spellcheck cannot see it. French titles, which put a space before a colon
+ * or semicolon, are metadata and not in the prose walk.
+ *
+ * @param context - The loaded data the checks read.
+ */
+export function checkSpaceBeforePunctuation(context: ValidationContext): void
+{
+    const {
+        proseFields,
+    } = context;
+
+    const spaceBeforePunctuationPattern = /[\p{L}\p{N})\]"'’”]( +)([,.;:])(?=\s|$)/gu;
+
+    for (const field of proseFields)
+    {
+        for (const match of field.text.matchAll(spaceBeforePunctuationPattern))
+        {
+            const start = Math.max(0, match.index - 30);
+
+            checkError(
+                "Space before punctuation",
+                field.filePath,
+                `${field.fieldPath}: a space before "${match[2]}" in "…${field.text.slice(start, match.index + match[0].length + 20)}…"`);
+        }
+    }
+}
+
+/**
  * The "Unbalanced quotation" check.
  *
  * Unbalanced quotation — a quotation cut short. A quote mark left open, a

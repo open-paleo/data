@@ -16,6 +16,7 @@ import {
     checkCurlyQuotes,
     checkIdentifierCompliance,
     checkReferenceKeyInProse,
+    checkSpaceBeforePunctuation,
     checkUnbalancedQuotation,
 } from "./validate/prose.ts";
 import {
@@ -138,6 +139,7 @@ const checks: Array<[string, (context: ValidationContext) => void]> = [
     ["American English", checkAmericanEnglish],
     ["Citation format", checkCitationFormat],
     ["Reference key in prose", checkReferenceKeyInProse],
+    ["Space before punctuation", checkSpaceBeforePunctuation],
     ["Output schema sync", checkOutputSchemaSync],
     ["Specimen number collisions", checkSpecimenNumberCollisions],
     ["Catalog number shape", checkCatalogNumberShape],
