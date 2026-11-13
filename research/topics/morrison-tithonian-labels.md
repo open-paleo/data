@@ -1,5 +1,23 @@
 # Morrison Tithonian labels
 
+## Are the Dry Mesa Quarry taxa Kimmeridgian?
+
+*2026-11-13*
+
+**Conclusion.** Yes. The one published age for the quarry horizon places it at about 152–151 Ma, Kimmeridgian on the current chart, and nothing that dates the horizon puts it in the Tithonian. Governs `stage: [Kimmeridgian]` on [*Torvosaurus tanneri*](../../genera/T/Torvosaurus.yml), [*Supersaurus vivianae*](../../genera/S/Supersaurus.yml) and [*Palaeopteryx thomsoni*](../../genera/P/Palaeopteryx.yml), which had taken the Brushy Basin's Kimmeridgian–Tithonian range (user ruling, 2026-11-13).
+
+**Evidence.**
+- sombathy2025a, p. 7: a specimen "collected from the Dry Mesa Quarry in Colorado (Brushy Basin/sequence B, systems tract 3, ca. 152–151 Ma; Maidment & Muxworthy, 2019)". The placement is the authors' own, on Maidment and Muxworthy's framework, and their locality figure gives it as an approximate position; the framework itself does not mention Dry Mesa.
+- galton1979a, p. 1, and jensen1989a, p. 1: the quarry lies "near the bottom" of, or "at the base of", the Brushy Basin Member.
+
+**Ruled out.**
+- *Tithonian from Galton and Jensen's label.* They give the horizon as "upper Kimmeridgian at base of Tithonian" (galton1979a, p. 1), a label from the chart of their day with no date behind it, which the 2026-10-03 entry below does not let add a stage.
+- *Tithonian from Jensen's "?Tithonian".* A queried label in a title (jensen1989a, p. 1), with no basis given.
+- *The fission-track ages above the bone horizon.* Jensen relays "about 135 Ma" from samples 2 and 4 m above the quarry level as a personal communication from Kowallis (jensen1989a), which is not a published determination and conflicts with later argon dates for the member.
+- *Kimmeridgian from Warner-Cowgill and colleagues (2026).* They extend the dating of the whole member to its localities "by extension" (warner-cowgill2026a, p. 4), a statement about the unit rather than the horizon; it agrees with the conclusion but does not support it.
+
+**Open.** No radiometric date from the quarry itself, nor a measured position for it against a dated bed.
+
 ## Are the Carnegie Quarry taxa Kimmeridgian?
 
 *2026-10-08*
@@ -34,12 +52,19 @@
 
 ## References
 
+- `sombathy2025a`: Sombathy, R.; O'Connor, P. M.; D'Emic, M. D. (2025). Osteohistology of the unusually fast-growing theropod dinosaur Ceratosaurus. *Journal of Anatomy* 247(3-4): 765-789. doi:10.1111/joa.14186
+- `galton1979a`: Galton, P. M.; Jensen, J. A. (1979). A new large theropod dinosaur from the Upper Jurassic of Colorado. *Brigham Young University Geology Studies* 26(1): 1-12.
+- `jensen1989a`: Jensen, J. A.; Padian, K. (1989). Small pterosaurs and dinosaurs from the Uncompahgre fauna (Brushy Basin Member, Morrison Formation: ?Tithonian), Late Jurassic, western Colorado. *Journal of Paleontology* 63(3): 364-373. doi:10.1017/S0022336000019533
+- `warner-cowgill2026a`: Warner-Cowgill, E.; Storrs, G. W.; Lamanna, M. C.; Loewen, M. A. (2026). New cranial material and interpretation of Torvosaurus (Theropoda, Megalosauridae) from the Upper Jurassic Morrison Formation of Colorado, USA. *Papers in Palaeontology* 12(6): e70132. doi:10.1002/spp2.70132
 - `whitlock2025a`: Whitlock, J. A.; Garderes, J. P.; Gallina, P.; Lamanna, M. C. (2025). Athenar bermani, a new species of dicraeosaurid sauropod from Dinosaur National Monument, Utah, U.S.A. *Palaeontologia Electronica*. doi:10.26879/1550
 - `carpenter2008a`: Carpenter, K.; Wilson, Y. (2008). A new species of Camptosaurus (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and a biomechanical analysis of its forelimb. *Annals of Carnegie Museum* 76(4): 227-263. doi:10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2
 - `mannion2021a`: Mannion, P. D.; Tschopp, E.; Whitlock, J. A. (2021). Anatomy and systematics of the diplodocoid Amphicoelias altus supports high sauropod dinosaur diversity in the Upper Jurassic Morrison Formation of the USA. *Royal Society Open Science* 8: 210377. doi:10.1098/rsos.210377
 - `barrett2025a`: Barrett, P. M.; Maidment, S. C. R. (2025). A review of Nanosaurus agilis Marsh and other small-bodied Morrison Formation ornithopods. *Bulletin of the Peabody Museum of Natural History* 66(1): 25-50. doi:10.3374/014.066.0102
-- `sombathy2025a`: Sombathy, R.; O'Connor, P. M.; D'Emic, M. D. (2025). Osteohistology of the unusually fast-growing theropod dinosaur Ceratosaurus. *Journal of Anatomy* 247(3-4): 765-789. doi:10.1111/joa.14186
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `butler2010a`: Butler, R. J.; Galton, P. M.; Porro, L. B.; Chiappe, L. M.; Henderson, D. M.; Erickson, G. M. (2010). Lower limits of ornithischian dinosaur body size inferred from a new Upper Jurassic heterodontosaurid from North America. *Proceedings of the Royal Society B: Biological Sciences* 277(1680): 375-381. doi:10.1098/rspb.2009.1494
 - `xu2023a`: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z. (2023). A new avialan theropod from an emerging Jurassic terrestrial fauna. *Nature* 621(7978): 336-343. doi:10.1038/s41586-023-06513-7
 - `cifelli2014a`: Cifelli, R. L.; Davis, B. M.; Sames, B. (2014). Earliest Cretaceous mammals from the western United States. *Acta Palaeontologica Polonica* 59: 31-52. doi:10.4202/app.2012.0089
+
+## Other references
+
+- `maidment2019a`: Maidment, S. C. R.; Muxworthy, A. (2019). A chronostratigraphic framework for the Upper Jurassic Morrison Formation, western U.S.A. *Journal of Sedimentary Research* 89(10): 1017-1038. doi:10.2110/jsr.2019.54
