@@ -35,7 +35,7 @@
 
 ## References
 
-- `gilmore1914b`: Gilmore, C. W. (1914). Osteology of the armored Dinosauria in the United States National Museum, with special reference to the genus Stegosaurus. *United States National Museum Bulletin* 89: 1-136.
+- `gilmore1914b`: Gilmore, C. W. (1914). Osteology of the armored Dinosauria in the United States National Museum, with special reference to the genus Stegosaurus. *United States National Museum Bulletin* 89: 1-143.
 - `galton2010a`: Galton, P. M. (2010). Species of plated dinosaur Stegosaurus (Morrison Formation, Late Jurassic) of western USA: new type species designation needed. *Swiss Journal of Geosciences* 103(2): 187-198. doi:10.1007/s00015-010-0022-4
 - `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
 - `dalman2014a`: Dalman, S. G. (2014). New data on small theropod dinosaurs from the Upper Jurassic Morrison Formation of Como Bluff, Wyoming, USA. *Volumina Jurassica* 12(2): 181-196.
