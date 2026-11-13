@@ -75,12 +75,31 @@ species:
         max: 0.9
     erected_in: brown1916a
 notable_specimens:
-  - specimen_id: [TMP 1998.050.0001, TMP 2016.037.0001]
+  - nickname: Tyke
+    specimen_id:
+      - TMP 1998.050.0001
     institution: TMP
     species: Prosaurolophus maximus
     category: exceptional-preservation
-    significance: "Two juvenile specimens preserve patches of skin from the dorsal ribs, scapular blade, and pelvic region, showing small basement scales plus larger elongate feature scales interspersed among them, a rare integument record for the genus."
-    references: [drysdale2019a]
+    significance: Juvenile partial skeleton with a largely articulated skull
+      from near Magrath, Alberta, preserving a large skin impression over the
+      ninth to 13th dorsal ribs, with large feature scales among the basement
+      scales, unreported on other hadrosaur flanks.
+    references:
+      - drysdale2019a
+      - rtmp2020a
+  - specimen_id:
+      - TMP 2016.037.0001
+    institution: TMP
+    species: Prosaurolophus maximus
+    category: exceptional-preservation
+    significance: Juvenile partial skeleton from a Korite International mine
+      near Lethbridge, Alberta, preserving small patches of skin from the pelvic
+      region with polygonal basement scales and no feature scales.
+    references:
+      - drysdale2019a
 references:
+  - id: rtmp2020a
+    notes: Source of the nickname of TMP 1998.050.0001, Tyke.
   - id: drysdale2019a
   - id: brown1916a
