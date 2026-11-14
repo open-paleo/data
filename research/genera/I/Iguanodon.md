@@ -1,5 +1,23 @@
 # *Iguanodon*
 
+## Which diagnosis does the record carry, and which paper is `described_in`?
+
+*2026-11-14*
+
+**Conclusion.** Norman's (2012) diagnosis of *I. bernissartensis*, its potential autapomorphies carried as the genus's `diagnostic_features`, since the genus is monotypic (user ruling, 2026-11-14), with `described_in: norman2012a` on the species. It replaces six genus characters that matched no published diagnosis. Norman (1980), the first full osteology, is cited as a reference. Governs `diagnostic_features`, `described_in` and `type_specimen.material` in [*Iguanodon*](../../../genera/I/Iguanodon.yml).
+
+**Evidence.**
+- norman2012a, p. 196: "*Holotype I. bernissartensis.* RBINS R51 [1534], an almost complete articulated skeleton (Norman, 1980)."
+- norman2012a, pp. 197–198: the diagnosis, "Iguanodontian with the following unique character combination (\*indicates potential autapomorphies…)", printed under the species heading; the paper gives no genus diagnosis.
+- norman2012a, p. 199 (discussion): "full details of the anatomy of this taxon were only described for the first time by Norman (1980)".
+- norman1980a, p. 13: an "Emended Diagnosis" of the species; under the genus heading, "A full systematic review of the genus *Iguanodon* … is not included within this present account."
+
+**Ruled out.**
+- *The 1980 diagnosis.* Norman (2012) supersedes it: it drops the 11 m maximum length, the absent metatarsal V and the fused first metacarpal, makes the tooth counts size- and age-dependent, softens the unexpanded scapula to a slightly expanded one, and separates the unguals of manual digits II and III.
+- *`described_in: norman1980a`.* It is the fuller osteology, but the record's diagnosis comes from Norman (2012), which also states the holotype and its horizon.
+
+**Open.** Nothing.
+
 ## Which work and pages carry the naming of *Iguanodon bernissartensis*?
 
 *2026-11-13*
@@ -51,7 +69,8 @@
 
 ## References
 
-- `vanbeneden1881a`: Van Beneden, P. J. (1881). Sur l'arc pelvien chez les dinosauriens de Bernissart [On the pelvic arch in the dinosaurs of Bernissart]. *Bulletins de l'Académie royale des Sciences, des Lettres et des Beaux-Arts de Belgique* 1: 600-608.
 - `norman2012a`: Norman, D. B. (2012). Iguanodontian taxa (Dinosauria: Ornithischia) from the Lower Cretaceous of England and Belgium. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*, pp. 175-212. Indiana University Press, Bloomington.
+- `norman1980a`: Norman, D. B. (1980). On the ornithischian dinosaur Iguanodon bernissartensis from the Lower Cretaceous of Bernissart (Belgium). *Mémoires de l'Institut Royal des Sciences Naturelles de Belgique* 178.
+- `vanbeneden1881a`: Van Beneden, P. J. (1881). Sur l'arc pelvien chez les dinosauriens de Bernissart [On the pelvic arch in the dinosaurs of Bernissart]. *Bulletins de l'Académie royale des Sciences, des Lettres et des Beaux-Arts de Belgique* 1: 600-608.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.
