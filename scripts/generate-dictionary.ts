@@ -172,7 +172,16 @@ function extractAuthorSurnames(authors: string): void
 
         if (trimmed.includes(","))
         {
-            words.add(trimmed.split(",")[0].trim());
+            const surname = trimmed.split(",")[0].trim();
+
+            // A compound surname such as "Regalado Fernández" is also cited
+            // word by word in prose.
+            words.add(surname);
+
+            for (const part of surname.split(/\s+/))
+            {
+                words.add(part);
+            }
         }
         else
         {

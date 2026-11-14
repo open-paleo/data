@@ -1,5 +1,21 @@
 # *Plateosaurus*
 
+## Does Regalado Fernández and colleagues (2023) settle the status of *Plateosaurus longiceps*?
+
+*2026-11-14*
+
+**Conclusion.** No. The paper lists *P. longiceps* as valid in its abstract and systematic section but recognizes only *P. trossingensis* and *P. gracilis* in its discussion, where it says the name needs further work; it examines no *P. longiceps* material and gives it no diagnosis. *P. longiceps* stays unadded, as the 2026-10-29 entry below concludes.
+
+**Evidence.**
+- regaladofernández2023a, p. 1: "This revised taxonomy of *Plateosaurus* narrows the genus to three species: *Pl. trossingensis*, *Pl. longiceps*, and *Pl. gracilis* (as a metataxon)".
+- regaladofernández2023a, p. 62: under the genus, "Other species. *Plateosaurus gracilis* (von Huene, 1905). *Plateosaurus longiceps* Jaekel, 1913.", with no account of *P. longiceps* following.
+- regaladofernández2023a, p. 68: "we propose the recognition of only two valid species: *Plateosaurus trossingensis* and *Plateosaurus gracilis*"; the names "*Plateosaurus* '*poligniensis*' in France and *Plateosaurus* '*longiceps*' in Germany should not be considered as representatives of *Plateosaurus trossingensis* either, as these designations require further work."
+
+**Ruled out.**
+- *A three-species consensus that includes P. longiceps.* Later work describes one, citing this paper with Sues and Schoch (2025); it rests on the abstract, and the paper's discussion keeps two species.
+
+**Open.** No paper held examines the *P. longiceps* holotype to settle whether it is diagnosable.
+
 ## Is *Plateosaurus longiceps* a settled junior synonym?
 
 *2026-10-29*
@@ -25,7 +41,7 @@
 
 **Evidence.**
 - sues2025a, p. 462, *Plateosaurus trossingensis*: "Type locality. Slope ("Rutschete") east of Obere Mühle at Deibhalde, east of Trossingen … Type horizon. "Untere Saurierschicht," Trossingen Formation, Middle Keuper Subgroup."
-- fernández2022a, p. 773, Table 1: material "collected from the upper bone bed from the Obere Mühle, an outcrop of the Trossingen Formation".
+- regaladofernández2022a, p. 773, Table 1: material "collected from the upper bone bed from the Obere Mühle, an outcrop of the Trossingen Formation".
 
 **Ruled out.**
 - *Upper Löwenstein Formation.* Yates (2003) writes that "the famous Plateosaurus specimens from Trossingen actually derive from a muddy facies of the Löwenstein Formation … (Brenner and Villinger 1981)" (yates2003b, p. 317) and that "SMNS 13200 is from the Plateosaurus Quarry, Trossingen … upper Löwenstein Formation" (p. 332). The later sources above place the quarry in the Trossingen Formation; that Yates's assignment follows the older scheme rather than a different reading of the rock is our inference, not checked against Brenner and Villinger.
@@ -57,7 +73,7 @@
 **Evidence.**
 - galton1985c, p. 12: "Holotype: SMNS 5715, a partial postcranial skeleton from the Middle Stubensandstein of Heslach in Stuttgart".
 - yates2003b, p. 321, Text-fig. 3 caption: "P. gracilis (Huene, 1908), SMNS 5715, in dorsal view"; the same number in the captions of Text-figs 5–7 and in Table 1.
-- fernández2022a, p. 781, reporting McPhee and colleagues (2015): "the OTU P. gracilis as containing GPIT 18392 and SMNS 5715".
+- regaladofernández2022a, p. 781, reporting McPhee and colleagues (2015): "the OTU P. gracilis as containing GPIT 18392 and SMNS 5715".
 
 **Ruled out.**
 - *SMNS 5175.* Yates prints it in the holotype line, "Holotype. SMNS 5175, incomplete postcranium" (yates2003b, p. 331), three more times in his text and once in the caption of Text-fig. 11, against SMNS 5715 in the captions of Text-figs 3 and 5–7 and in Table 1. Which form is the slip is our judgment from the other sources.
@@ -111,11 +127,12 @@
 
 ## References
 
+- `regaladofernández2023a`: Regalado Fernández, O. R.; Stöhr, H.; Kästle, B.; Werneburg, I. (2023). Diversity and taxonomy of the Late Triassic sauropodomorphs (Saurischia, Sauropodomorpha) stored in the Palaeontological Collection of Tübingen, Germany, historically referred to Plateosaurus. *European Journal of Taxonomy* 913: 1-88. doi:10.5852/ejt.2023.913.2375
 - `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
 - `prieto-márquez2011a`: Prieto-Márquez, A.; Norell, M. A. (2011). Redescription of a nearly complete skull of Plateosaurus (Dinosauria: Sauropodomorpha) from the Late Triassic of Trossingen (Germany). *American Museum Novitates*: 1-58. doi:10.1206/3727.2
 - `galton2012b`: Galton, P. M. (2012). Case 3560. Plateosaurus engelhardti Meyer, 1837 (Dinosauria, Sauropodomorpha): proposed replacement of unidentifiable name-bearing type by a neotype. *Bulletin of Zoological Nomenclature* 69(3): 203-212. doi:10.21805/bzn.v69i3.a15
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
-- `fernández2022a`: Fernández, O. R. R.; Werneburg, I. (2022). A new massopodan sauropodomorph from Trossingen Formation (Germany) hidden as 'Plateosaurus' for 100 years in the historical Tübingen collection. *Vertebrate Zoology* 72: 771-822. doi:10.3897/vz.72.e86348
+- `regaladofernández2022a`: Regalado Fernández, O. R.; Werneburg, I. (2022). A new massopodan sauropodomorph from Trossingen Formation (Germany) hidden as 'Plateosaurus' for 100 years in the historical Tübingen collection. *Vertebrate Zoology* 72: 771-822. doi:10.3897/vz.72.e86348
 - `yates2003b`: Yates, A. M. (2003). The species taxonomy of the sauropodomorph dinosaurs from the Löwenstein Formation (Norian, Late Triassic) of Germany. *Palaeontology* 46(2): 317-337. doi:10.1111/j.0031-0239.2003.00301.x
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
