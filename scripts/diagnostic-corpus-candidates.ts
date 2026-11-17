@@ -26,7 +26,7 @@ const corpusMarkdownDir = path.join(getCorpusDir(), "markdown");
  * @param species - The representative species.
  * @returns Deduplicated candidate reference keys.
  */
-function erectingDescribingKeys(genus: GenusData, species: Species): Array<string>
+function collectErectingDescribingKeys(genus: GenusData, species: Species): Array<string>
 {
     const keys = [
         genus.erected_in,
@@ -135,7 +135,7 @@ for (const filePath of generaFiles)
         continue;
     }
 
-    const presentKeys = erectingDescribingKeys(genus, species)
+    const presentKeys = collectErectingDescribingKeys(genus, species)
         .filter((key) => fs.existsSync(path.join(corpusMarkdownDir, `${key}.md`)));
 
     if (presentKeys.length === 0)

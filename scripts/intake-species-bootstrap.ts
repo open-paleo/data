@@ -49,7 +49,7 @@ import {
 } from "./genus-enrichment.ts";
 import type { GenusData } from "./types.ts";
 import {
-    citationKeyFor,
+    buildCitationKey,
     findStoreKeyByDoi,
     httpUserAgent,
     readStoreCitationKeys,
@@ -291,7 +291,7 @@ function buildPapersNeededBody(
     lines.push("   (defaults to a sibling `../corpus/markdown/` next to this repo).");
     lines.push("2. Tick the checkbox `- [x]` and paste a citation string");
     lines.push("   on the same line, after a `— ` separator. The parser is");
-    lines.push("   permissive but does best with a parenthesised year, a");
+    lines.push("   permissive but does best with a parenthesized year, a");
     lines.push("   quoted title, and a DOI when available.");
     lines.push("3. Run `npm run intake-species-resume -- " + genus + " " + species + "`.");
     lines.push("");
@@ -536,7 +536,7 @@ async function main(): Promise<void>
 
     const warnings = new Array<string>();
 
-    // Synthesise the citation key from PBDB's reported authority.
+    // Synthesize the citation key from PBDB's reported authority.
     // Authority text comes from `taxon_attr` ("Surname year") when
     // PBDB has it. Species-level PBDB records are usually sparse, so
     // this can be null for freshly described post-2020 taxa.
@@ -550,7 +550,7 @@ async function main(): Promise<void>
 
         if (authority.authors && authority.year)
         {
-            describingKey = citationKeyFor(authority.authors, authority.year);
+            describingKey = buildCitationKey(authority.authors, authority.year);
         }
     }
 
@@ -566,7 +566,7 @@ async function main(): Promise<void>
 
         if (reference?.authors && reference?.year)
         {
-            describingKey = citationKeyFor(reference.authors, reference.year);
+            describingKey = buildCitationKey(reference.authors, reference.year);
             process.stdout.write(`    ${reference.title ?? describingDoi}\n`);
         }
     }

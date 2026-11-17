@@ -16,7 +16,7 @@ import * as url from "node:url";
 
 import { getCorpusDir } from "./corpus-path.ts";
 import type { Reference } from "./types.ts";
-import { findYamlFiles, normalizeDoi, parseYaml, storeReferencePath } from "./utilities.ts";
+import { findYamlFiles, normalizeDoi, parseYaml, resolveStoreReferencePath } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -91,7 +91,7 @@ type Mismatch = {
  * @param text - The text to reduce.
  * @returns The words, in order.
  */
-function wordsOf(text: string): Array<string>
+function extractWords(text: string): Array<string>
 {
     return text
         .normalize("NFD")
@@ -109,9 +109,9 @@ function wordsOf(text: string): Array<string>
  * @param headWords - The words of the paper's opening lines.
  * @returns The share of the title's distinct words found, 0-1.
  */
-function shareOf(title: string, headWords: Set<string>): number
+function measureWordShare(title: string, headWords: Set<string>): number
 {
-    const titleWords = new Set(wordsOf(title));
+    const titleWords = new Set(extractWords(title));
 
     if (titleWords.size === 0)
     {
@@ -141,9 +141,9 @@ function shareOf(title: string, headWords: Set<string>): number
  * @param head - The paper's opening lines.
  * @returns The best share of title words found, 0-1.
  */
-function titleShareIn(storeTitle: string, head: string): number
+function measureTitleShare(storeTitle: string, head: string): number
 {
-    const headWords = new Set(wordsOf(head));
+    const headWords = new Set(extractWords(head));
     const bracketMatch = /^(.*?)\[(.+)\]\s*$/.exec(storeTitle);
     const candidates = [storeTitle];
 
@@ -152,7 +152,7 @@ function titleShareIn(storeTitle: string, head: string): number
         candidates.push(bracketMatch[1], bracketMatch[2]);
     }
 
-    return Math.max(...candidates.map((candidate) => shareOf(candidate, headWords)));
+    return Math.max(...candidates.map((candidate) => measureWordShare(candidate, headWords)));
 }
 
 /**
@@ -206,7 +206,7 @@ function main(): void
     for (const [id, citedBy] of [...cited.entries()].sort(([left], [right]) => left.localeCompare(right)))
     {
         const markdownPath = path.join(corpusDir, "markdown", `${id}.md`);
-        const storePath = storeReferencePath(root, id);
+        const storePath = resolveStoreReferencePath(root, id);
 
         if (!fs.existsSync(markdownPath))
         {
@@ -222,7 +222,7 @@ function main(): void
         const head = fs.readFileSync(markdownPath, "utf8").split("\n").slice(0, headLines).join("\n");
         const storeDoi = normalizeDoi(entry.doi ?? "");
         const doiFound = storeDoi !== "" && head.toLowerCase().includes(storeDoi);
-        const titleShare = titleShareIn(entry.title ?? "", head);
+        const titleShare = measureTitleShare(entry.title ?? "", head);
 
         if (doiFound || titleShare >= titleThreshold)
         {

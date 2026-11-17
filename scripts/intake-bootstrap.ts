@@ -24,15 +24,15 @@ import * as url from "node:url";
 import { stringify as stringifyYaml } from "yaml";
 
 import {
-    describingStoreEntry,
+    buildDescribingStoreEntry,
     enrichGenus,
     fetchPbdbTaxon,
     takeFetchFailures,
-    toGenusYaml,
+    convertToGenusYaml,
     walkParentChain,
 } from "./genus-enrichment.ts";
 import {
-    citationKeyFor,
+    buildCitationKey,
     findStoreKeyByDoi,
     readStoreCitationKeys,
     readStoreSiblings,
@@ -146,7 +146,7 @@ function buildPapersNeededBody(
     lines.push("2. Tick the checkbox `- [x]` and paste a citation string");
     lines.push("   on the same line, after a `— ` separator. Common formats");
     lines.push("   work — the parser is permissive but does best with a");
-    lines.push("   parenthesised year, a quoted title, and a DOI when available.");
+    lines.push("   parenthesized year, a quoted title, and a DOI when available.");
     lines.push("   Example:");
     lines.push("   `- [x] **smith2024** — Smith, J. (2024). \"Title here\". Journal Name 12 (3): 100-110. doi:10.xxxx/yyyy`");
     lines.push("3. Run `npm run intake-resume -- " + genus + "`.");
@@ -368,14 +368,14 @@ async function main(): Promise<void>
 
     if (reference?.authors && reference?.year)
     {
-        describing.key = citationKeyFor(reference.authors, reference.year);
+        describing.key = buildCitationKey(reference.authors, reference.year);
         describing.doi = reference.doi ?? null;
         describing.title = reference.title ?? null;
         describing.journal = reference.journal ?? null;
     }
     else if (enriched.authors && enriched.year)
     {
-        describing.key = citationKeyFor(enriched.authors, enriched.year);
+        describing.key = buildCitationKey(enriched.authors, enriched.year);
         describing.needsMetadata = true;
         describing.yearUnverified = true;
     }
@@ -416,7 +416,7 @@ async function main(): Promise<void>
 
     // Built only once the key is settled: `erected_in` and the checklist must
     // name the same paper (#2070 §1.1).
-    const genusYaml = toGenusYaml(enriched, reference, describing.key);
+    const genusYaml = convertToGenusYaml(enriched, reference, describing.key);
 
     fs.mkdirSync(targetDir, { recursive: true });
 
@@ -431,7 +431,7 @@ async function main(): Promise<void>
     // staging/intake/<Genus>/references/<bucket>/<key>.yml. promote.sh copies
     // it into references/ with the genus, so a bootstrap that is abandoned or
     // re-keyed leaves no uncited entry in the store.
-    const storeEntry = describingStoreEntry(reference, describing.key);
+    const storeEntry = buildDescribingStoreEntry(reference, describing.key);
 
     if (storeEntry !== null && !describing.alreadyInStore)
     {

@@ -134,7 +134,7 @@ function prepareText(text: string): string
  * @param words - The words to look up.
  * @returns Suggestions keyed by word.
  */
-function suggestionsFor(root: string, words: Array<string>): Map<string, Array<string>>
+function readSuggestions(root: string, words: Array<string>): Map<string, Array<string>>
 {
     const suggestions = new Map<string, Array<string>>();
     const output = runCspell(
@@ -189,7 +189,7 @@ for (const line of runCspell(root, ["stdin", "--no-progress", "--no-summary", "-
     }
 }
 
-const suggestions = suggestionsFor(root, [...unknownWords.keys()]);
+const suggestions = readSuggestions(root, [...unknownWords.keys()]);
 
 for (const entry of unknownWords.values())
 {

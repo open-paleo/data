@@ -632,7 +632,7 @@ export function checkUnbalancedQuotation(context: ValidationContext): void
      * @returns The number of opening parentheses minus the number of closing ones,
      *     after forgiving enumerators.
      */
-    function parenthesisBalance(text: string): number
+    function countUnpairedParentheses(text: string): number
     {
         const balance = (text.match(/\(/g) ?? []).length - (text.match(/\)/g) ?? []).length;
 
@@ -701,7 +701,7 @@ export function checkUnbalancedQuotation(context: ValidationContext): void
             {
                 for (const quotation of text.match(/"[^"]*"/g) ?? [])
                 {
-                    if (parenthesisBalance(quotation) !== 0)
+                    if (countUnpairedParentheses(quotation) !== 0)
                     {
                         checkError(
                             "Unbalanced quotation",
@@ -711,7 +711,7 @@ export function checkUnbalancedQuotation(context: ValidationContext): void
                 }
             }
 
-            if (parenthesisBalance(text) !== 0)
+            if (countUnpairedParentheses(text) !== 0)
             {
                 checkError("Unbalanced quotation", filePath, `${trail}: parentheses do not pair`);
             }

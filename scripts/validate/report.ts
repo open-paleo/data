@@ -17,7 +17,7 @@ const root = path.join(scriptDir, "..", "..");
  * @param absPath - The absolute file path.
  * @returns The relative path, or the original if it doesn't start with root.
  */
-export function relPath(absPath: string): string
+export function makeRelativePath(absPath: string): string
 {
     return absPath.startsWith(root) ? absPath.slice(root.length + 1) : absPath;
 }
@@ -35,7 +35,7 @@ export const warnings = new Array<ValidationMessage>();
  */
 export function addError(check: string, file: string | null, message: string): void
 {
-    errors.push({ check, file: file ? relPath(file) : "(global)", message });
+    errors.push({ check, file: file ? makeRelativePath(file) : "(global)", message });
 }
 
 /**
@@ -47,7 +47,7 @@ export function addError(check: string, file: string | null, message: string): v
  */
 export function addWarning(check: string, file: string | null, message: string): void
 {
-    warnings.push({ check, file: file ? relPath(file) : "(global)", message });
+    warnings.push({ check, file: file ? makeRelativePath(file) : "(global)", message });
 }
 
 // Track per-check results

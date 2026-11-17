@@ -93,7 +93,7 @@ function locateTypeSpecimen(content: string): YAMLMap | null
  * @param offset - Any offset on the line.
  * @returns The offset of the line's first character.
  */
-function lineStart(content: string, offset: number): number
+function findLineStart(content: string, offset: number): number
 {
     return content.lastIndexOf("\n", offset - 1) + 1;
 }
@@ -144,7 +144,7 @@ function insertDiagnosticFeatures(content: string, bullets: Array<string>): stri
 
         if (keyStart !== undefined)
         {
-            const position = lineStart(content, keyStart);
+            const position = findLineStart(content, keyStart);
 
             return content.slice(0, position) + renderField("diagnostic_features", bullets, 0) + content.slice(position);
         }
@@ -176,7 +176,7 @@ function insertHolotypeMaterial(content: string, value: string): { content: stri
     }
 
     const firstKeyStart = (typeSpecimen.items[0].key as Node).range![0];
-    const indent = firstKeyStart - lineStart(content, firstKeyStart);
+    const indent = firstKeyStart - findLineStart(content, firstKeyStart);
     const lastPair = typeSpecimen.items[typeSpecimen.items.length - 1];
     const lastNode = (lastPair.value ?? lastPair.key) as Node;
     const valueEnd = lastNode.range![1];

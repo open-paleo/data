@@ -35,7 +35,7 @@ export type InstitutionEntry = {
 
     /**
      * Codes of collections curated separately WITHIN this institution, as they
-     * appear at the head of a catalogue number — "ISIR" for the Indian
+     * appear at the head of a catalog number — "ISIR" for the Indian
      * Statistical Institute's fossil reptile collection, "MCF-PVPH" for
      * Plaza Huincul's vertebrate palaeontology collection. Distinct from
      * `aliases`, which name the institution itself; a collection code names a
@@ -59,12 +59,12 @@ export type InstitutionEntry = {
  */
 export type FormerId = {
     /**
-     * The catalogue number before the change.
+     * The catalog number before the change.
      */
     from_id: string;
 
     /**
-     * The catalogue number after the change. On the last hop this must be one
+     * The catalog number after the change. On the last hop this must be one
      * of the block's own `specimen_id` values.
      */
     to_id: string;
@@ -104,10 +104,10 @@ export type FormerId = {
 
 export type TypeSpecimen = {
     /**
-     * Catalogue numbers comprising the type material (e.g. ["FMNH PR 2081"]).
+     * Catalog numbers comprising the type material (e.g. ["FMNH PR 2081"]).
      * Always an array with at least one element; consumers never branch on
      * string-vs-array. For holotype/lectotype/neotype this is usually a
-     * single entry but may hold multiple when one individual was catalogued
+     * single entry but may hold multiple when one individual was cataloged
      * across a numbered range (each element accessioned separately). For
      * syntype series it holds all members.
      */
@@ -155,7 +155,7 @@ export type TypeSpecimen = {
     completeness?: string;
 
     /**
-     * Numbers this specimen was catalogued under before its current one, most
+     * Numbers this specimen was cataloged under before its current one, most
      * recent change last. See `FormerId`.
      */
     former_ids?: Array<FormerId>;
@@ -183,7 +183,7 @@ export type NotableSpecimen = {
     nickname?: string;
 
     /**
-     * Catalogue number(s) of the specimen, one per array element (never a
+     * Catalog number(s) of the specimen, one per array element (never a
      * compressed "X to Y" range). Optional — a specimen may be known only by
      * nickname.
      */
@@ -248,7 +248,7 @@ export type NotableSpecimen = {
     references?: Array<string>;
 
     /**
-     * Numbers this specimen was catalogued under before its current one, most
+     * Numbers this specimen was cataloged under before its current one, most
      * recent change last. See `FormerId`.
      */
     former_ids?: Array<FormerId>;
@@ -1224,7 +1224,7 @@ export type Schema = {
     specimen_types?: Array<string>;
 
     /**
-     * Allowed reasons a specimen's catalogue number changed (e.g.
+     * Allowed reasons a specimen's catalog number changed (e.g.
      * "renumbered", "rehoused"). Applied to
      * `species.type_specimen.former_ids[].reason` and the same field on
      * `notable_specimens[]`.

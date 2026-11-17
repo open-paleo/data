@@ -5,12 +5,12 @@
 // `institutions.yaml`), so its presence in the free-text `material`
 // description is redundant.
 //
-// Three patterns are recognised:
+// Three patterns are recognized:
 //
 //   - Parenthetical:    "Almost complete skull (TMP 2001.26.1), lower..."
 //                       — strip "(TMP 2001.26.1)"
 //   - Leading prefix:   "YPM 2195: associated partial skeleton..."
-//                       — strip "YPM 2195: " and re-capitalise
+//                       — strip "YPM 2195: " and re-capitalize
 //   - Mid-segment:      "...hind limbs; PIN #3907/1; Udan-Sayr..."
 //                       — strip the segment and collapse delimiters
 //
@@ -31,7 +31,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { InstitutionEntry } from "./types.ts";
-import { escapeRegExp, institutionLabels, parseYaml } from "./utilities.ts";
+import { escapeRegExp, listInstitutionLabels, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -41,7 +41,7 @@ const reportsDir = path.join(root, "scratch");
 /**
  * Loads `institutions.yaml` and returns the union of canonical
  * abbreviations and their aliases. Filters out abbreviations shorter
- * than 3 characters to avoid matching incidental capitalised tokens
+ * than 3 characters to avoid matching incidental capitalized tokens
  * in prose.
  *
  * @returns Set of institution abbreviation strings.
@@ -51,7 +51,7 @@ function loadInstitutionAbbreviations(): Set<string>
     const institutions = parseYaml<Record<string, InstitutionEntry>>(path.join(root, "institutions.yaml"));
     const abbreviations = new Set<string>();
 
-    for (const { label, kind } of institutionLabels(institutions))
+    for (const { label, kind } of listInstitutionLabels(institutions))
     {
         if ((kind === "code" || kind === "alias") && label.length >= 3)
         {
@@ -64,7 +64,7 @@ function loadInstitutionAbbreviations(): Set<string>
 
 /**
  * Cleans up whitespace and dangling punctuation introduced by
- * stripping a token mid-string. Capitalises the leading ASCII letter
+ * stripping a token mid-string. Capitalizes the leading ASCII letter
  * when the strip removed the original sentence start.
  *
  * @param input - Material text after a strip pass.
@@ -106,7 +106,7 @@ function tidyAfterStrip(input: string): string
  * supplied institution abbreviation set.
  *
  * @param material - Original material string.
- * @param abbreviations - Recognised institution abbreviations.
+ * @param abbreviations - Recognized institution abbreviations.
  * @returns Updated string and a boolean indicating whether any change was made.
  */
 function stripCatalogTokens(material: string, abbreviations: Set<string>): { material: string; changed: boolean }

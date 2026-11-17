@@ -12,7 +12,7 @@
 //
 //   2. Sentence-case fix-up on holotype_material and each
 //      diagnostic_features bullet: if the first ASCII alphabetic
-//      character is lowercase, capitalise it. Skips entries that
+//      character is lowercase, capitalize it. Skips entries that
 //      already start with an uppercase letter, a digit, a Unicode
 //      letter, or a non-letter glyph that should not be touched.
 //
@@ -54,15 +54,15 @@ function normalizeText(input: string): string
 }
 
 /**
- * Capitalises the first ASCII alphabetic character in the string when
+ * Capitalizes the first ASCII alphabetic character in the string when
  * it is lowercase. Leading non-letter glyphs (digits, punctuation,
  * whitespace) are skipped and the first letter after them is the
  * target. Non-ASCII letters are left alone.
  *
  * @param input - Source string.
- * @returns String with the leading letter capitalised when applicable.
+ * @returns String with the leading letter capitalized when applicable.
  */
-function capitaliseFirstAlpha(input: string): string
+function capitalizeFirstAlpha(input: string): string
 {
     return input.replace(
         /^([^A-Za-z]*)([a-z])/,
@@ -92,7 +92,7 @@ function normalizeRecord(record: Record<string, unknown>): { record: Record<stri
 
     if (typeof record.holotype_material === "string")
     {
-        const normalized = capitaliseFirstAlpha(normalizeText(record.holotype_material));
+        const normalized = capitalizeFirstAlpha(normalizeText(record.holotype_material));
 
         if (normalized !== record.holotype_material)
         {
@@ -111,7 +111,7 @@ function normalizeRecord(record: Record<string, unknown>): { record: Record<stri
                 return bullet;
             }
 
-            return capitaliseFirstAlpha(normalizeText(bullet));
+            return capitalizeFirstAlpha(normalizeText(bullet));
         });
 
         if (after.some((bullet, index) => bullet !== before[index]))

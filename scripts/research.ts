@@ -18,18 +18,18 @@ import * as url from "node:url";
 import {
     buildResearchTail,
     findMarkdownFiles,
-    markdownLinkTargets,
-    referenceBucket,
-    researchFileFor,
+    extractMarkdownLinkTargets,
+    findReferenceBucket,
+    findResearchFile,
     researchMethodsFile,
     splitResearchNote,
-    storeFileLookup,
+    createStoreFileLookup,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
-const storeLookup = storeFileLookup(root);
+const storeLookup = createStoreFileLookup(root);
 const researchDirectory = path.join(root, "research");
 
 /**
@@ -51,7 +51,7 @@ function findLinkingNotes(targets: Set<string>, exclude: string): Array<string>
         }
 
         const note = fs.readFileSync(notePath, "utf8");
-        const links = markdownLinkTargets(note).map((target) => path.resolve(path.dirname(notePath), target));
+        const links = extractMarkdownLinkTargets(note).map((target) => path.resolve(path.dirname(notePath), target));
 
         if (links.some((link) => targets.has(link)))
         {
@@ -69,13 +69,13 @@ function findLinkingNotes(targets: Set<string>, exclude: string): Array<string>
  * @param recordPath - Absolute path of a genus, clade or stratigraphy record.
  * @returns The absolute paths of the existing reference notes, in citation order.
  */
-function citedReferenceNotes(recordPath: string): Array<string>
+function findCitedReferenceNotes(recordPath: string): Array<string>
 {
     const ids = [...fs.readFileSync(recordPath, "utf8").matchAll(/^\s*-?\s*id:\s*["']?([^"'\s]+)["']?\s*$/gm)]
         .map((match) => match[1]);
 
     return [...new Set(ids)]
-        .map((id) => path.join(researchDirectory, "references", referenceBucket(id), `${id}.md`))
+        .map((id) => path.join(researchDirectory, "references", findReferenceBucket(id), `${id}.md`))
         .filter((notePath) => fs.existsSync(notePath));
 }
 
@@ -97,11 +97,11 @@ function printNotes(recordArgument: string): number
         return 1;
     }
 
-    const ownNote = researchFileFor(root, recordPath);
+    const ownNote = findResearchFile(root, recordPath);
     const notes = [...new Set([
         ...(fs.existsSync(ownNote) ? [ownNote] : []),
         ...findLinkingNotes(new Set([recordPath, ownNote]), ownNote),
-        ...citedReferenceNotes(recordPath),
+        ...findCitedReferenceNotes(recordPath),
     ])];
 
     if (notes.length === 0)

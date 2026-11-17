@@ -11,7 +11,7 @@
 //   1. const taxon = await fetchPbdbTaxon(name);
 //   2. const chain = taxon?.parent_no ? await walkParentChain(taxon.parent_no) : [];
 //   3. const enriched = await enrichGenus(name, chain, taxon);
-//   4. const yaml = toGenusYaml(enriched, enriched.reference ?? null, describingKey);
+//   4. const yaml = convertToGenusYaml(enriched, enriched.reference ?? null, describingKey);
 
 import * as path from "node:path";
 import * as url from "node:url";
@@ -22,7 +22,7 @@ import {
     escapeRegExp,
     foldLetters,
     httpUserAgent,
-    institutionLabels,
+    listInstitutionLabels,
     loadInstitutionRegistry,
     loadRegionRegistry,
     loadSchema,
@@ -53,7 +53,7 @@ function foldLabel(label: string): string
 
 /**
  * The registries the enrichment resolves external values against. Built on
- * first use by `enrichmentContext`, so importing this module reads no files.
+ * first use by `loadEnrichmentContext`, so importing this module reads no files.
  */
 type EnrichmentContext = {
     /** schema.yml: the diet, period, stage and country vocabularies. */
@@ -94,7 +94,7 @@ export function createEnrichmentContext(dataRoot: string): EnrichmentContext
 {
     const institutionCodes = new Map<string, string>();
 
-    for (const { label, code, kind } of institutionLabels(loadInstitutionRegistry(path.join(dataRoot, "institutions.yaml"))))
+    for (const { label, code, kind } of listInstitutionLabels(loadInstitutionRegistry(path.join(dataRoot, "institutions.yaml"))))
     {
         if (kind === "code" || kind === "name" || kind === "alias")
         {
@@ -125,7 +125,7 @@ let loadedContext: EnrichmentContext | null = null;
  *
  * @returns The context for the repository this script belongs to.
  */
-function enrichmentContext(): EnrichmentContext
+function loadEnrichmentContext(): EnrichmentContext
 {
     loadedContext ??= createEnrichmentContext(root);
 
@@ -144,7 +144,7 @@ export function resolveRegionCode(
     countryCode: string | undefined,
 ): string | null
 {
-    const candidates = enrichmentContext().regionCodesByName.get(foldLabel(name)) ?? [];
+    const candidates = loadEnrichmentContext().regionCodesByName.get(foldLabel(name)) ?? [];
 
     if (countryCode)
     {
@@ -164,7 +164,7 @@ export function resolveRegionCode(
  */
 export function resolveInstitutionCode(label: string): string | null
 {
-    return enrichmentContext().institutionCodes.get(foldLabel(label)) ?? null;
+    return loadEnrichmentContext().institutionCodes.get(foldLabel(label)) ?? null;
 }
 
 /**
@@ -1553,7 +1553,7 @@ function extractWikitextIpa(wikitext: string): string
  * @param genus - The target genus name.
  * @returns True when the window names a different taxon as the type's owner.
  */
-function attributesHolotypeElsewhere(region: string, genus: string): boolean
+function isHolotypeAttributedElsewhere(region: string, genus: string): boolean
 {
     for (const match of region.matchAll(/holotype\s+of\s+'{0,5}\[{0,2}([A-Z][A-Za-z]+)/g))
     {
@@ -1569,7 +1569,7 @@ function attributesHolotypeElsewhere(region: string, genus: string): boolean
 /**
  * Extracts holotype specimen ID and institution from the full wikitext
  * body. Searches for the word "holotype" and extracts a nearby specimen
- * code matching common museum catalogue patterns.
+ * code matching common museum catalog patterns.
  *
  * @param wikitext - The full raw wikitext string.
  * @param genus - The target genus name, used to reject a specimen the article
@@ -1596,14 +1596,14 @@ function extractHolotype(
         .replace(/\{\{[^}]*\}\}/g, "")
         .replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1");
 
-    // The optional tail keeps year–register–number catalogues whole: Munich
+    // The optional tail keeps year–register–number catalogs whole: Munich
     // numbers such as "SNSB-BSPG 2017 I 133" were cut at the first space,
     // seeding "SNSB-BSPG 2017" (#2163).
     const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})*[-\s]?[A-Z]?\d[\w./–-]*(?:\s[IVXL]+\s\d[\w./–-]*)?)/g;
 
     // A window either side of each mention, rather than up to the next period:
     // abbreviated binomials ("of ''S. brevicollis'', CMN 41857") put a period
-    // between the word and the catalogue number.
+    // between the word and the catalog number.
     const windows = [...cleaned.matchAll(/holotype/gi)].map(
         (match) => cleaned.slice(
             Math.max(0, match.index - 200),
@@ -1613,7 +1613,7 @@ function extractHolotype(
 
     for (const region of windows)
     {
-        if (attributesHolotypeElsewhere(region, genus))
+        if (isHolotypeAttributedElsewhere(region, genus))
         {
             continue;
         }
@@ -1648,7 +1648,7 @@ function extractHolotype(
  * Attempts to resolve a registry institution code from a specimen ID
  * prefix (e.g., "AMNH 5027" resolves to "AMNH").
  *
- * @param specimenId - The specimen catalogue number.
+ * @param specimenId - The specimen catalog number.
  * @returns The registry code, or null if the registry does not carry it.
  */
 function resolveMuseumAbbreviation(specimenId: string): string | null
@@ -1983,7 +1983,7 @@ export function parseAuthority(authority: string): { authors: string; year: stri
 function matchDiet(diet: string): string | null
 {
     const lowerDiet = diet.toLowerCase();
-    const dietValues = enrichmentContext().schema.diet ?? [];
+    const dietValues = loadEnrichmentContext().schema.diet ?? [];
 
     for (const value of dietValues)
     {
@@ -2012,7 +2012,7 @@ function matchDiet(diet: string): string | null
  */
 function matchPeriod(range: string): string | null
 {
-    const periods = enrichmentContext().schema.periods ?? [];
+    const periods = loadEnrichmentContext().schema.periods ?? [];
     const lowerRange = range.toLowerCase();
 
     for (const period of periods)
@@ -2034,7 +2034,7 @@ function matchPeriod(range: string): string | null
  */
 export function matchStage(range: string): string | null
 {
-    const stages = enrichmentContext().schema.stages ?? {};
+    const stages = loadEnrichmentContext().schema.stages ?? {};
     const lowerRange = range.toLowerCase();
 
     for (const stage of Object.keys(stages))
@@ -2056,7 +2056,7 @@ export function matchStage(range: string): string | null
  */
 function getPeriodForStage(stageName: string): string | null
 {
-    const stages = enrichmentContext().schema.stages ?? {};
+    const stages = loadEnrichmentContext().schema.stages ?? {};
     const stageInfo = stages[stageName] as StageInfo | undefined;
 
     return stageInfo?.period ?? null;
@@ -2178,7 +2178,7 @@ export async function enrichGenus(
     // `parent` must name a tree.yml node, and PBDB's chain runs through ranks
     // the tree does not carry (Troodontini, and every Linnaean family the tree
     // skips), so fall to the nearest ancestor that IS a node (#2070 §1.5).
-    enriched.parentClade = parentChain.find((clade) => enrichmentContext().treeCladeNames.has(clade));
+    enriched.parentClade = parentChain.find((clade) => loadEnrichmentContext().treeCladeNames.has(clade));
 
     if (parentChain.length > 0 && enriched.parentClade !== parentChain[0])
     {
@@ -2259,7 +2259,7 @@ export async function enrichGenus(
         if (occurrenceRecord.cc)
         {
             enriched.countryCode = occurrenceRecord.cc;
-            const countries = enrichmentContext().schema.countries ?? {};
+            const countries = loadEnrichmentContext().schema.countries ?? {};
             enriched.country = countries[occurrenceRecord.cc] ?? undefined;
         }
 
@@ -2362,7 +2362,7 @@ export async function enrichGenus(
 
         if (!enriched.country && wikitext.country)
         {
-            const countries = enrichmentContext().schema.countries ?? {};
+            const countries = loadEnrichmentContext().schema.countries ?? {};
             const lowerCountry = wikitext.country.toLowerCase();
 
             for (const [code, countryName] of Object.entries(countries))
@@ -2448,10 +2448,10 @@ export async function enrichGenus(
 
 /**
  * Widest plausible ratio of body mass in kilograms to the cube of body length
- * in metres across dinosaurs, from the lightest paravians to the heaviest
+ * in meters across dinosaurs, from the lightest paravians to the heaviest
  * titanosaurs. Real values sit inside roughly 0.8-12; the bounds here are
  * deliberately far outside that, because the error being caught is a
- * thousandfold unit slip, not a modelling disagreement (#2070 §1.6).
+ * thousandfold unit slip, not a modeling disagreement (#2070 §1.6).
  */
 const massPerLengthCubedBounds = { min: 0.2, max: 50 };
 
@@ -2467,7 +2467,7 @@ const massPerLengthCubedBounds = { min: 0.2, max: 50 };
  * @returns The store entry, or null when the key or the reference's authors,
  *     year or title are missing.
  */
-export function describingStoreEntry(
+export function buildDescribingStoreEntry(
     reference: Record<string, string> | null,
     describingKey: string | null,
 ): Reference | null
@@ -2506,7 +2506,7 @@ export function describingStoreEntry(
  *     silently disagreed with the checklist (#2070 §1.1).
  * @returns A GenusData object ready for YAML serialization.
  */
-export function toGenusYaml(
+export function convertToGenusYaml(
     enriched: EnrichedGenus,
     reference: Record<string, string> | null,
     describingKey: string | null,
@@ -2706,7 +2706,7 @@ export function toGenusYaml(
 
     genus.species = [species] as GenusData["species"];
 
-    if (describingStoreEntry(reference, describingKey) !== null)
+    if (buildDescribingStoreEntry(reference, describingKey) !== null)
     {
         genus.references = [{ id: describingKey }] as GenusData["references"];
         (species as Record<string, unknown>).erected_in = describingKey;

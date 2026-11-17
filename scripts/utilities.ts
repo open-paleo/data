@@ -87,7 +87,7 @@ export function foldLetters(text: string): string
  * @param key - The reference key (e.g. "royo-torres2006a", "ősi2010a").
  * @returns The single-character bucket name.
  */
-export function referenceBucket(key: string): string
+export function findReferenceBucket(key: string): string
 {
     const first = foldLetters(key)[0] ?? "";
 
@@ -103,9 +103,9 @@ export function referenceBucket(key: string): string
  * @param key - The reference key.
  * @returns The file's path, whether or not it exists.
  */
-export function storeReferencePath(dataRoot: string, key: string): string
+export function resolveStoreReferencePath(dataRoot: string, key: string): string
 {
-    return path.join(dataRoot, "references", referenceBucket(key), `${key}.yml`);
+    return path.join(dataRoot, "references", findReferenceBucket(key), `${key}.yml`);
 }
 
 /**
@@ -136,7 +136,7 @@ export function writeStoreReference(dataRoot: string, entry: Reference): boolean
         throw new Error("writeStoreReference: entry is missing an id");
     }
 
-    const filePath = storeReferencePath(dataRoot, entry.id);
+    const filePath = resolveStoreReferencePath(dataRoot, entry.id);
 
     if (fs.existsSync(filePath))
     {
@@ -438,7 +438,7 @@ export function findStoreKeyByDoi(
     doi: string,
 ): string | null
 {
-    const bucketDir = path.join(dataRoot, "references", referenceBucket(baseKey));
+    const bucketDir = path.join(dataRoot, "references", findReferenceBucket(baseKey));
 
     if (!fs.existsSync(bucketDir))
     {
@@ -540,7 +540,7 @@ export const referenceNotesLimit = 200;
 
 /**
  * Lists the `<base><letter>` entries the store already holds, with enough
- * bibliographic detail to recognise one. A DOI match settles a key outright,
+ * bibliographic detail to recognize one. A DOI match settles a key outright,
  * but pre-DOI papers have no DOI to match on — for those the operator has to
  * eyeball the siblings, so the checklist prints them (#2070 §1.2).
  *
@@ -553,7 +553,7 @@ export function readStoreSiblings(
     baseKey: string,
 ): Array<{ id: string; title: string; doi: string | null }>
 {
-    const bucketDir = path.join(dataRoot, "references", referenceBucket(baseKey));
+    const bucketDir = path.join(dataRoot, "references", findReferenceBucket(baseKey));
 
     if (!fs.existsSync(bucketDir))
     {
@@ -588,7 +588,7 @@ const surnameNoiseTokens = new Set([
 ]);
 
 /**
- * Synthesises a citation key from an author field and a year, following the
+ * Synthesizes a citation key from an author field and a year, following the
  * store convention: the complete surname concatenated without spaces and
  * lower-cased, keeping diacritics and hyphens (#1894). "van der Reest, A. J."
  * 2017 yields `vanderreest2017`; "Torcida Fernández-Baldor, F." 2017 yields
@@ -600,7 +600,7 @@ const surnameNoiseTokens = new Set([
  * @param year - The publication year as a number or string.
  * @returns The lower-case bare citation key.
  */
-export function citationKeyFor(authors: string, year: string | number): string
+export function buildCitationKey(authors: string, year: string | number): string
 {
     // PBDB authorities name two authors as "Galton and Jensen" or "Smith & Jones",
     // with no comma or semicolon, so the first author also ends at "and" or "&".
@@ -755,7 +755,7 @@ export function findMarkdownFiles(dir: string): Array<string>
  * @param recordPath - Absolute path of a record under genera/, clades/ or stratigraphy/.
  * @returns The absolute path of the record's research file.
  */
-export function researchFileFor(dataRoot: string, recordPath: string): string
+export function findResearchFile(dataRoot: string, recordPath: string): string
 {
     const relative = path.relative(dataRoot, recordPath).replace(/\.ya?ml$/, ".md");
 
@@ -863,7 +863,7 @@ function stripCodeFences(text: string): string
  * @param text - Markdown text.
  * @returns Each local link target as written.
  */
-export function markdownLinkTargets(text: string): Array<string>
+export function extractMarkdownLinkTargets(text: string): Array<string>
 {
     const targets = new Array<string>();
 
@@ -888,7 +888,7 @@ export function markdownLinkTargets(text: string): Array<string>
  * @param body - The note's body, without its References section.
  * @returns The distinct ids in order of first citation.
  */
-export function researchCitedIds(body: string): Array<string>
+export function extractResearchCitedIds(body: string): Array<string>
 {
     const prose = stripCodeFences(body).replace(/\]\([^)]*\)/g, "]");
     const keyPattern = /(?<![\p{L}\p{N}'’-])\p{Ll}[\p{Ll}'’-]*\d{4}[a-z](?![\p{L}\p{N}])/gu;
@@ -973,7 +973,7 @@ function cleanCitationName(name: string): string
  * @param text - The prose.
  * @returns The citations found, without duplicates.
  */
-export function narrativeCitations(text: string): Array<NarrativeCitation>
+export function findNarrativeCitations(text: string): Array<NarrativeCitation>
 {
     const prose = text
         .replace(/(?<=\p{L})\[(\p{Ll}+)\]/gu, "$1")
@@ -1051,7 +1051,7 @@ function foldSurname(text: string): string
  * @param entry - The store entry, when the store holds the id.
  * @returns True when the id can be the cited work.
  */
-export function citationMatchesId(citation: NarrativeCitation, id: string, entry: Reference | undefined): boolean
+export function isCitationOfId(citation: NarrativeCitation, id: string, entry: Reference | undefined): boolean
 {
     const keyMatch = /^(.*?)(\d{4})([a-z])$/u.exec(id);
 
@@ -1068,7 +1068,7 @@ export function citationMatchesId(citation: NarrativeCitation, id: string, entry
      * @param stem - The folded surname to look for.
      * @returns True when one of the citation's words is that surname.
      */
-    const namesStem = (stem: string): boolean => words.some((word) => word.length > 1 && (stem === word || (word.length >= 4 && stem.endsWith(word))));
+    const isStemNamed = (stem: string): boolean => words.some((word) => word.length > 1 && (stem === word || (word.length >= 4 && stem.endsWith(word))));
 
     const keyStem = foldSurname(keyMatch[1]);
     const storeYear = entry?.year === undefined ? null : String(entry.year);
@@ -1077,7 +1077,7 @@ export function citationMatchesId(citation: NarrativeCitation, id: string, entry
     {
         const letterFits = citation.letter === null || citation.year !== keyMatch[2] || citation.letter === keyMatch[3];
 
-        if (letterFits && namesStem(keyStem))
+        if (letterFits && isStemNamed(keyStem))
         {
             return true;
         }
@@ -1088,7 +1088,7 @@ export function citationMatchesId(citation: NarrativeCitation, id: string, entry
         const formYear = form.year === undefined ? null : String(form.year);
         const yearFits = formYear === null ? citation.year === keyMatch[2] || citation.year === storeYear : citation.year === formYear;
 
-        return yearFits && namesStem(form.author === undefined ? keyStem : foldSurname(form.author));
+        return yearFits && isStemNamed(form.author === undefined ? keyStem : foldSurname(form.author));
     });
 }
 
@@ -1116,7 +1116,7 @@ function foldForComparison(text: string): string
  * @returns The identity key, or null when the title is too short to identify
  *     a work.
  */
-export function referenceIdentity(entry: Reference): string | null
+export function buildReferenceIdentity(entry: Reference): string | null
 {
     const title = foldForComparison((entry.title ?? "").replace(/\[.*?\]/g, "")).slice(0, 60);
 
@@ -1186,11 +1186,11 @@ export function formatResearchReference(entry: Reference): string
  * @returns A function from a reference id to its store entry, or undefined
  *     when the store has no file for that id.
  */
-export function storeFileLookup(dataRoot: string): (id: string) => Reference | undefined
+export function createStoreFileLookup(dataRoot: string): (id: string) => Reference | undefined
 {
     return (id) =>
     {
-        const filePath = storeReferencePath(dataRoot, id);
+        const filePath = resolveStoreReferencePath(dataRoot, id);
 
         return fs.existsSync(filePath) ? parseYaml<Reference>(filePath) : undefined;
     };
@@ -1249,7 +1249,7 @@ export function buildResearchTail(
     body: string,
     otherIds: Array<string>): { tail: string | null; missing: Array<string>; duplicates: Array<string> }
 {
-    const citedIds = researchCitedIds(body);
+    const citedIds = extractResearchCitedIds(body);
     const duplicates = otherIds.filter((id) => citedIds.includes(id));
     const uncitedIds = [...new Set(otherIds.filter((id) => !citedIds.includes(id)))];
     const references = buildResearchReferences(lookup, citedIds);
@@ -1306,13 +1306,13 @@ export type StratigraphyRegistry = {
  * Letters keep their diacritics, as the reference store's keys do, and every
  * run of other characters becomes a single hyphen: `Argiles et Grès à
  * Reptiles` files as `argiles-et-grès-à-reptiles` and `Öösh` as `öösh`. The
- * directory letter folds separately, through `referenceBucket`, so `Öösh`
+ * directory letter folds separately, through `findReferenceBucket`, so `Öösh`
  * still lives under `o/`.
  *
  * @param unitName - The unit's name as the entry spells it.
  * @returns The expected filename stem, without the extension.
  */
-export function stratigraphySlug(unitName: string): string
+export function buildStratigraphySlug(unitName: string): string
 {
     return unitName
         .normalize("NFC")
@@ -1346,7 +1346,7 @@ export function loadStratigraphyRegistry(
      * @param unitName - The unit's name.
      * @returns Its file path, falling back to the registry directory.
      */
-    const fileOf = (unitName: string): string => stratigraphyFiles.get(unitName) ?? stratigraphyDirectory;
+    const findUnitFile = (unitName: string): string => stratigraphyFiles.get(unitName) ?? stratigraphyDirectory;
 
     for (const filePath of findYamlFiles(stratigraphyDirectory))
     {
@@ -1364,7 +1364,7 @@ export function loadStratigraphyRegistry(
             continue;
         }
 
-        const expected = path.join(stratigraphyDirectory, referenceBucket(unitName), `${stratigraphySlug(unitName)}.yml`);
+        const expected = path.join(stratigraphyDirectory, findReferenceBucket(unitName), `${buildStratigraphySlug(unitName)}.yml`);
 
         if (filePath !== expected)
         {
@@ -1404,7 +1404,7 @@ export function loadStratigraphyRegistry(
 
     for (const [unitName, unit] of Object.entries(stratigraphy))
     {
-        registryEntries.push({ label: unitName, entry: unit, filePath: fileOf(unitName) });
+        registryEntries.push({ label: unitName, entry: unit, filePath: findUnitFile(unitName) });
 
         const beds = new Map<string, StratigraphicBed>();
 
@@ -1414,12 +1414,12 @@ export function loadStratigraphyRegistry(
 
             if (!bedName)
             {
-                stratigraphyLayout.push([fileOf(unitName), `unit '${unitName}': a bed has no 'name'`]);
+                stratigraphyLayout.push([findUnitFile(unitName), `unit '${unitName}': a bed has no 'name'`]);
                 continue;
             }
             else if (beds.has(bedName))
             {
-                stratigraphyLayout.push([fileOf(unitName), `unit '${unitName}': bed '${bedName}' is listed twice, or shares its name with another bed's variant`]);
+                stratigraphyLayout.push([findUnitFile(unitName), `unit '${unitName}': bed '${bedName}' is listed twice, or shares its name with another bed's variant`]);
                 continue;
             }
 
@@ -1427,7 +1427,7 @@ export function loadStratigraphyRegistry(
             {
                 if (field in (bed as Record<string, unknown>))
                 {
-                    stratigraphyLayout.push([fileOf(unitName), `unit '${unitName}': bed '${bedName}' carries '${field}', which the containing entry already implies`]);
+                    stratigraphyLayout.push([findUnitFile(unitName), `unit '${unitName}': bed '${bedName}' carries '${field}', which the containing entry already implies`]);
                 }
             }
 
@@ -1441,7 +1441,7 @@ export function loadStratigraphyRegistry(
                 }
             }
 
-            registryEntries.push({ label: `${unitName} › ${bedName}`, entry: bed, filePath: fileOf(unitName) });
+            registryEntries.push({ label: `${unitName} › ${bedName}`, entry: bed, filePath: findUnitFile(unitName) });
         }
 
         if (beds.size > 0)
@@ -1453,7 +1453,7 @@ export function loadStratigraphyRegistry(
         // file is a bed no source places in anything larger.
         if (unit?.rank === "bed" && typeof unit.parent === "string")
         {
-            stratigraphyLayout.push([fileOf(unitName), `bed '${unitName}' has a parent; move it into the 'beds' of '${unit.parent}' and delete this file`]);
+            stratigraphyLayout.push([findUnitFile(unitName), `bed '${unitName}' has a parent; move it into the 'beds' of '${unit.parent}' and delete this file`]);
         }
     }
 
@@ -1567,7 +1567,7 @@ export function computeMidpointAge(period: Period | undefined, stages: Record<st
  * @param stages - The schema's stage table.
  * @returns The stage names oldest first, and each name's position.
  */
-export function stageOrdering(stages: Record<string, StageInfo>): { order: Array<string>; position: Map<string, number> }
+export function orderStages(stages: Record<string, StageInfo>): { order: Array<string>; position: Map<string, number> }
 {
     const order = Object.entries(stages)
         .sort(([, first], [, second]) => second.from_ma - first.from_ma)
@@ -1606,7 +1606,7 @@ export type InstitutionLabel = {
  * @param registry - The parsed institutions.yaml.
  * @returns The labels, in registry order.
  */
-export function institutionLabels(registry: Record<string, InstitutionEntry>): Array<InstitutionLabel>
+export function listInstitutionLabels(registry: Record<string, InstitutionEntry>): Array<InstitutionLabel>
 {
     const labels = new Array<InstitutionLabel>();
 

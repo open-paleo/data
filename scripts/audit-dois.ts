@@ -149,7 +149,7 @@ function normalizeTitle(title: string): string
  * @param text - The normalized string (spaces removed internally).
  * @returns A map from bigram to its occurrence count.
  */
-function bigramCounts(text: string): Map<string, number>
+function countBigrams(text: string): Map<string, number>
 {
     const compact = text.replace(/ /g, "");
     const counts = new Map<string, number>();
@@ -172,7 +172,7 @@ function bigramCounts(text: string): Map<string, number>
  * @param second - Second normalized title.
  * @returns Similarity in the range 0-1.
  */
-function titleSimilarity(first: string, second: string): number
+function computeTitleSimilarity(first: string, second: string): number
 {
     if (first.length === 0 || second.length === 0)
     {
@@ -184,8 +184,8 @@ function titleSimilarity(first: string, second: string): number
         return 1;
     }
 
-    const firstBigrams = bigramCounts(first);
-    const secondBigrams = bigramCounts(second);
+    const firstBigrams = countBigrams(first);
+    const secondBigrams = countBigrams(second);
     let firstTotal = 0;
 
     for (const count of firstBigrams.values())
@@ -227,7 +227,7 @@ function titleSimilarity(first: string, second: string): number
  * @param authors - The stored authors string, or undefined.
  * @returns The first surname, or an empty string when unavailable.
  */
-function firstAuthorSurname(authors: string | undefined): string
+function extractFirstAuthorSurname(authors: string | undefined): string
 {
     if (authors === undefined || authors.trim().length === 0)
     {
@@ -286,7 +286,7 @@ async function resolveDoiTitle(doi: string): Promise<string | null>
  * @param doi - The DOI string.
  * @returns True when doi.org resolves the DOI, false on 404 or network error.
  */
-async function doiResolves(doi: string): Promise<boolean>
+async function checkDoiResolves(doi: string): Promise<boolean>
 {
     try
     {
@@ -356,7 +356,7 @@ async function findCandidateDois(storedTitle: string, authorSurname: string): Pr
             suggestions.push({
                 doi: item.DOI,
                 title: candidateTitle,
-                score: titleSimilarity(normalizedStored, normalizeTitle(candidateTitle)),
+                score: computeTitleSimilarity(normalizedStored, normalizeTitle(candidateTitle)),
             });
         }
 
@@ -629,7 +629,7 @@ async function main(): Promise<void>
 
         const score = resolvedTitle === null
             ? 0
-            : titleSimilarity(normalizeTitle(reference.title), normalizeTitle(resolvedTitle));
+            : computeTitleSimilarity(normalizeTitle(reference.title), normalizeTitle(resolvedTitle));
         let status: AuditStatus;
 
         if (resolvedTitle !== null)
@@ -647,7 +647,7 @@ async function main(): Promise<void>
             }
             else
             {
-                resolves = await doiResolves(reference.doi);
+                resolves = await checkDoiResolves(reference.doi);
                 cache[reference.doi] = { resolvedTitle: null, resolves };
                 await sleep(requestDelayMs);
             }
@@ -659,7 +659,7 @@ async function main(): Promise<void>
 
         if (status === "mismatch" || status === "dead")
         {
-            suggestions = await findCandidateDois(reference.title, firstAuthorSurname(reference.authors));
+            suggestions = await findCandidateDois(reference.title, extractFirstAuthorSurname(reference.authors));
             await sleep(requestDelayMs);
         }
 

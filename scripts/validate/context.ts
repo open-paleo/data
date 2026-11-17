@@ -25,7 +25,7 @@ import {
     loadFlaggedSignoffs,
     loadFlaggedSources,
     loadStratigraphyRegistry,
-    stageOrdering,
+    orderStages,
 } from "../utilities.ts";
 import { walkStrings } from "./walk.ts";
 
@@ -153,7 +153,7 @@ export function loadValidationContext()
 
     // Every stage oldest first, by its base age, and each stage's place in that
     // order, so a list of stages can be checked for order and gaps.
-    const { order: stageOrder, position: stagePosition } = stageOrdering(stages);
+    const { order: stageOrder, position: stagePosition } = orderStages(stages);
 
     const institutionRegistry = parseYamlContent(
         fs.readFileSync(path.join(root, "institutions.yaml"), "utf8"),
@@ -234,7 +234,7 @@ export function loadValidationContext()
      * @param unitName - The unit's name.
      * @returns Its file path, falling back to the registry directory.
      */
-    function stratigraphyFile(unitName: string): string
+    function findStratigraphyFile(unitName: string): string
     {
         return stratigraphyFiles.get(unitName) ?? stratigraphyDirectory;
     }
@@ -356,7 +356,7 @@ export function loadValidationContext()
      * @returns The label naming the dated ancestor, and its stages, or undefined
      *     when no unit above is dated.
      */
-    function datedAncestor(label: string, unitName: string | undefined): { label: string; stages: Array<string> } | undefined
+    function findDatedAncestor(label: string, unitName: string | undefined): { label: string; stages: Array<string> } | undefined
     {
         const seen = new Set<string>();
         let current = unitName;
@@ -394,14 +394,14 @@ export function loadValidationContext()
      */
     function recordUnit(location: Species["location"]): { label: string; periods: Array<string>; stages: Array<string> } | undefined
     {
-        const found = finestRecordUnit(location);
+        const found = findFinestRecordUnit(location);
 
         if (found === undefined || found.unit.stages.length > 0)
         {
             return found?.unit;
         }
 
-        const ancestor = datedAncestor(found.unit.label, found.climbFrom);
+        const ancestor = findDatedAncestor(found.unit.label, found.climbFrom);
 
         return ancestor === undefined ? found.unit : { ...found.unit, label: ancestor.label, stages: ancestor.stages };
     }
@@ -415,7 +415,7 @@ export function loadValidationContext()
      * @returns The unit and the climb's starting name, or undefined when the
      *     record names no registry unit.
      */
-    function finestRecordUnit(location: Species["location"]): { unit: { label: string; periods: Array<string>; stages: Array<string> }; climbFrom: string | undefined } | undefined
+    function findFinestRecordUnit(location: Species["location"]): { unit: { label: string; periods: Array<string>; stages: Array<string> }; climbFrom: string | undefined } | undefined
     {
         const containers = (["member", "formation", "group"] as const)
             .map((field) => location?.[field])
@@ -464,7 +464,7 @@ export function loadValidationContext()
     // path: `notes` is prose wherever it appears, `specimen_id` never is. Array
     // elements inherit the key of the array they sit in
     // (`diagnostic_features[3]`). Keys absent from this set hold identifiers,
-    // catalogue numbers, enum values, taxon names and place names — none of them
+    // catalog numbers, enum values, taxon names and place names — none of them
     // ours to restyle.
     const proseKeys = new Set([
         "description",
@@ -540,7 +540,7 @@ export function loadValidationContext()
     // findings point at that file rather than at one path shared by 532 entries.
     for (const [unitName, unit] of Object.entries(stratigraphy))
     {
-        collectProseFields(unit, stratigraphyFile(unitName), unitName, null, proseFields);
+        collectProseFields(unit, findStratigraphyFile(unitName), unitName, null, proseFields);
     }
 
     for (const [filePath, registry] of registrySources)
@@ -616,7 +616,7 @@ export function loadValidationContext()
         bedsByParent,
         registryEntries,
         stratigraphyLayout,
-        stratigraphyFile,
+        findStratigraphyFile,
         flaggedSources,
         flaggedPublishers,
         flaggedJournals,

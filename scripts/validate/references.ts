@@ -5,13 +5,13 @@ import * as path from "node:path";
 
 import type { Reference } from "../types.ts";
 import {
-    citationMatchesId,
+    isCitationOfId,
     findMarkdownFiles,
     findYamlFiles,
-    narrativeCitations,
+    findNarrativeCitations,
     normalizeDoi,
-    referenceBucket,
-    referenceIdentity,
+    findReferenceBucket,
+    buildReferenceIdentity,
     referenceNotesLimit,
 } from "../utilities.ts";
 import { checkError, checkWarning } from "./report.ts";
@@ -382,7 +382,7 @@ export function checkReferenceStoreIntegrity(context: ValidationContext): void
         }
 
         const bucket = path.basename(path.dirname(filePath));
-        const expectedBucket = referenceBucket(baseName);
+        const expectedBucket = findReferenceBucket(baseName);
 
         if (bucket !== expectedBucket)
         {
@@ -876,7 +876,7 @@ export function checkDuplicateReferences(context: ValidationContext): void
         }
 
         const doi = entry.doi ? normalizeDoi(String(entry.doi)) : null;
-        const identity = referenceIdentity(entry);
+        const identity = buildReferenceIdentity(entry);
 
         if (doi !== null && referencesByDoi.has(doi))
         {
@@ -1101,9 +1101,9 @@ export function checkUncitedNarrativeCitations(context: ValidationContext): void
         const ids = pointers.map((pointer) => (typeof pointer === "string" ? pointer : pointer?.id ?? "")).filter((id) => id.length > 0);
         const uncited = new Array<string>();
 
-        for (const citation of narrativeCitations(prose.join(" ")))
+        for (const citation of findNarrativeCitations(prose.join(" ")))
         {
-            const cited = ids.some((id) => citationMatchesId(citation, id, referenceStoreById.get(id)));
+            const cited = ids.some((id) => isCitationOfId(citation, id, referenceStoreById.get(id)));
 
             if (!cited)
             {

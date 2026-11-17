@@ -7,13 +7,13 @@ import type { Reference } from "../types.ts";
 import {
     buildResearchTail,
     findMarkdownFiles,
-    markdownLinkTargets,
+    extractMarkdownLinkTargets,
     recordFileFor,
     researchMethodsFile,
     researchTopicDirectory,
     splitResearchNote,
 } from "../utilities.ts";
-import { relPath, checkError } from "./report.ts";
+import { makeRelativePath, checkError } from "./report.ts";
 import type { ValidationContext } from "./context.ts";
 
 /**
@@ -40,7 +40,7 @@ export function checkResearchNotes(context: ValidationContext): void
      * @param id - The reference key.
      * @returns The entry, or undefined when the store has no file for the key.
      */
-    function storeEntryByFileName(id: string): Reference | undefined
+    function findStoreEntry(id: string): Reference | undefined
     {
         return storeEntriesByFileName.get(id) ?? undefined;
     }
@@ -68,7 +68,7 @@ export function checkResearchNotes(context: ValidationContext): void
             checkError(
                 "Research notes",
                 notePath,
-                `mirrors ${relPath(recordPath)}, which does not exist; move the note with its record`);
+                `mirrors ${makeRelativePath(recordPath)}, which does not exist; move the note with its record`);
         }
 
         const note = fs.readFileSync(notePath, "utf8");
@@ -79,7 +79,7 @@ export function checkResearchNotes(context: ValidationContext): void
             checkError("Research notes", notePath, "must open with a single '# ' title; entries and References are '##'");
         }
 
-        for (const target of markdownLinkTargets(note))
+        for (const target of extractMarkdownLinkTargets(note))
         {
             if (!fs.existsSync(path.resolve(path.dirname(notePath), target)))
             {
@@ -88,7 +88,7 @@ export function checkResearchNotes(context: ValidationContext): void
         }
 
         const { body, tail, otherIds } = splitResearchNote(note);
-        const expected = buildResearchTail(storeEntryByFileName, body, otherIds);
+        const expected = buildResearchTail(findStoreEntry, body, otherIds);
 
         for (const id of expected.missing)
         {
@@ -111,7 +111,7 @@ export function checkResearchNotes(context: ValidationContext): void
                 "Research notes",
                 notePath,
                 "References sections do not match the ids cited, the ids listed under Other references, and the store; "
-                + `run npm run research -- --references ${relPath(notePath)}`);
+                + `run npm run research -- --references ${makeRelativePath(notePath)}`);
         }
     }
 }

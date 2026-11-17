@@ -18,7 +18,7 @@ import { parse as parseYamlContent } from "yaml";
 import {
     findYamlFiles,
     foldLetters,
-    institutionLabels,
+    listInstitutionLabels,
     loadInstitutionRegistry,
     loadSchema,
 } from "./utilities.ts";
@@ -164,14 +164,14 @@ function report(check: string, genus: string, species: string, detail: string): 
 }
 
 /**
- * Extracts the leading institution-code prefix from a specimen catalogue
+ * Extracts the leading institution-code prefix from a specimen catalog
  * number — the maximal run of letters at the start (e.g. "IVPP V 4024-1"
  * yields "IVPP", "V235" yields "V").
  *
- * @param specimenId - A catalogue number string.
+ * @param specimenId - A catalog number string.
  * @returns The leading alphabetic prefix, or null if none is present.
  */
-function specimenPrefix(specimenId: string): string | null
+function extractSpecimenPrefix(specimenId: string): string | null
 {
     const match = specimenId.trim().match(/^[A-Za-z]+/);
 
@@ -253,7 +253,7 @@ const stageOutlierGapMa = 20;
  * @param record - The species record.
  * @returns The [younger, older] Ma interval, or null if unresolvable.
  */
-function maInterval(record: SpeciesRecord): [number, number] | null
+function resolveAgeInterval(record: SpeciesRecord): [number, number] | null
 {
     if (typeof record.fromMa === "number" && typeof record.toMa === "number")
     {
@@ -279,7 +279,7 @@ function maInterval(record: SpeciesRecord): [number, number] | null
  * @param second - The second [younger, older] interval.
  * @returns The non-negative gap between the intervals.
  */
-function intervalGap(first: [number, number], second: [number, number]): number
+function measureIntervalGap(first: [number, number], second: [number, number]): number
 {
     return Math.max(first[0] - second[1], second[0] - first[1], 0);
 }
@@ -300,7 +300,7 @@ function buildCodeResolver(institutions: Record<string, InstitutionEntry>): Map<
     // code names a part of this institution rather than the institution
     // itself, but for resolution it points here too: "ISIR 335/1" is held by
     // ISI.
-    for (const { label, code, kind } of institutionLabels(institutions))
+    for (const { label, code, kind } of listInstitutionLabels(institutions))
     {
         if (kind !== "name")
         {
@@ -492,7 +492,7 @@ for (const record of speciesRecords)
 
     const firstId = record.specimenIds[0];
 
-    // Institution codes conventionally lead the catalogue number. When the
+    // Institution codes conventionally lead the catalog number. When the
     // number instead opens with a digit it is a bare field/collection number
     // with no embedded code (e.g. HGM "41HIII-0100", "1912VIII61") — there is
     // nothing to verify against, so skip rather than flag a false positive.
@@ -504,7 +504,7 @@ for (const record of speciesRecords)
     const institutionKey = record.institution.trim();
     const institutionCanonicals = codeResolver.get(institutionKey);
 
-    // The catalogue code may sit anywhere in the number, not just at the
+    // The catalog code may sit anywhere in the number, not just at the
     // front: "PM TGU 16/4-20" (TGU), "Pv-6127-MOZ" (MOZ), "SNSB-BSPG AS I
     // 563" (BSPG). Treat it as a match when any token of the number resolves
     // to the institution's canonical, or when a space-bearing institution
@@ -519,7 +519,7 @@ for (const record of speciesRecords)
     {
         candidates.add(token);
 
-        const leadingAlpha = specimenPrefix(token);
+        const leadingAlpha = extractSpecimenPrefix(token);
 
         if (leadingAlpha)
         {
@@ -550,7 +550,7 @@ for (const record of speciesRecords)
 
     if (!resolves)
     {
-        const prefix = specimenPrefix(firstId) ?? firstId;
+        const prefix = extractSpecimenPrefix(firstId) ?? firstId;
 
         report("specimen-prefix-institution-mismatch", record.genus, record.species,
             `specimen '${firstId}' (prefix '${prefix}') does not resolve to institution '${record.institution}'`);
@@ -630,7 +630,7 @@ for (const group of formationGroups.values())
     }
 
     // Age intervals, precomputed for the stage-distance test.
-    const intervals = group.map((record) => maInterval(record));
+    const intervals = group.map((record) => resolveAgeInterval(record));
 
     for (let index = 0; index < group.length; index++)
     {
@@ -657,7 +657,7 @@ for (const group of formationGroups.values())
 
                 if (otherIndex !== index && group[otherIndex].genus !== record.genus && other)
                 {
-                    minGap = Math.min(minGap, intervalGap(interval, other));
+                    minGap = Math.min(minGap, measureIntervalGap(interval, other));
                 }
             }
 

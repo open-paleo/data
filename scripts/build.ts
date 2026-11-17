@@ -215,7 +215,7 @@ type Dataset = {
  * @param tree - The tree node to convert.
  * @returns A Newick-formatted string (without trailing semicolon).
  */
-function toNewick(tree: TreeNode): string
+function convertToNewick(tree: TreeNode): string
 {
     const parts = new Array<string>();
 
@@ -223,7 +223,7 @@ function toNewick(tree: TreeNode): string
     {
         if (children && typeof children === "object" && Object.keys(children).length > 0)
         {
-            parts.push(`(${toNewick(children as TreeNode)})${name}`);
+            parts.push(`(${convertToNewick(children as TreeNode)})${name}`);
         }
         else
         {
@@ -804,7 +804,7 @@ fs.writeFileSync(
     stringifyYaml(dataset, { lineWidth: 0 }));
 
 const topKey = Object.keys(tree)[0];
-const newick = `(${toNewick(tree[topKey] as TreeNode)})${topKey};`;
+const newick = `(${convertToNewick(tree[topKey] as TreeNode)})${topKey};`;
 
 fs.writeFileSync(
     path.join(dist, "tree.newick"),
@@ -843,7 +843,7 @@ let bib = `% Open Paleo — CC BY 4.0
  * @param value - The raw field value.
  * @returns The value with each special character backslash-escaped.
  */
-function bibText(value: string | number): string
+function escapeBibText(value: string | number): string
 {
     return String(value).replace(
         /[\\{}%&#_$]/g,
@@ -859,7 +859,7 @@ function bibText(value: string | number): string
  * @param reference - The store reference to classify.
  * @returns The BibTeX entry type, without the leading "@".
  */
-function bibEntryType(reference: Reference): string
+function chooseBibEntryType(reference: Reference): string
 {
     if (reference.thesis === "doctoral" || reference.thesis === "habilitation")
     {
@@ -891,37 +891,37 @@ function bibEntryType(reference: Reference): string
 
 for (const reference of [...referenceStore.values()].sort((first, second) => (first.id ?? "").localeCompare(second.id ?? "")))
 {
-    const entryType = bibEntryType(reference);
+    const entryType = chooseBibEntryType(reference);
     const fields = new Array<string>();
 
     if (reference.authors)
     {
-        fields.push(`  author = {${bibText(reference.authors)}}`);
+        fields.push(`  author = {${escapeBibText(reference.authors)}}`);
     }
 
     if (reference.year)
     {
-        fields.push(`  year = {${bibText(reference.year)}}`);
+        fields.push(`  year = {${escapeBibText(reference.year)}}`);
     }
 
     if (reference.title)
     {
-        fields.push(`  title = {${bibText(reference.title)}}`);
+        fields.push(`  title = {${escapeBibText(reference.title)}}`);
     }
 
     if (reference.journal)
     {
-        fields.push(`  journal = {${bibText(reference.journal)}}`);
+        fields.push(`  journal = {${escapeBibText(reference.journal)}}`);
     }
 
     if (reference.book)
     {
-        fields.push(`  booktitle = {${bibText(reference.book)}}`);
+        fields.push(`  booktitle = {${escapeBibText(reference.book)}}`);
     }
 
     if (reference.school && (entryType === "phdthesis" || entryType === "mastersthesis"))
     {
-        fields.push(`  school = {${bibText(reference.school)}}`);
+        fields.push(`  school = {${escapeBibText(reference.school)}}`);
     }
 
     if (reference.thesis === "habilitation")
@@ -932,44 +932,44 @@ for (const reference of [...referenceStore.values()].sort((first, second) => (fi
     {
         // @misc has no school field, so the awarding institution travels in
         // howpublished alongside the kind of work.
-        const institution = reference.school ? `, ${bibText(reference.school)}` : "";
+        const institution = reference.school ? `, ${escapeBibText(reference.school)}` : "";
 
         fields.push(`  howpublished = {Dissertation abstract${institution}}`);
     }
 
     if (reference.publisher && (entryType === "book" || entryType === "incollection"))
     {
-        fields.push(`  publisher = {${bibText(reference.publisher)}}`);
+        fields.push(`  publisher = {${escapeBibText(reference.publisher)}}`);
     }
 
     if (reference.volume)
     {
-        fields.push(`  volume = {${bibText(reference.volume)}}`);
+        fields.push(`  volume = {${escapeBibText(reference.volume)}}`);
     }
 
     if (reference.issue)
     {
-        fields.push(`  number = {${bibText(reference.issue)}}`);
+        fields.push(`  number = {${escapeBibText(reference.issue)}}`);
     }
 
     if (reference.series)
     {
-        fields.push(`  series = {${bibText(reference.series)}}`);
+        fields.push(`  series = {${escapeBibText(reference.series)}}`);
     }
 
     if (reference.article_number)
     {
-        fields.push(`  eid = {${bibText(reference.article_number)}}`);
+        fields.push(`  eid = {${escapeBibText(reference.article_number)}}`);
     }
 
     if (reference.pages)
     {
-        fields.push(`  pages = {${bibText(reference.pages)}}`);
+        fields.push(`  pages = {${escapeBibText(reference.pages)}}`);
     }
 
     if (reference.isbn)
     {
-        fields.push(`  isbn = {${bibText(reference.isbn)}}`);
+        fields.push(`  isbn = {${escapeBibText(reference.isbn)}}`);
     }
 
     // doi and url are read verbatim by BibTeX styles, so they are not escaped.

@@ -22,7 +22,7 @@ export function checkRegistryContainment(context: ValidationContext): void
 {
     const {
         stratigraphy,
-        stratigraphyFile,
+        findStratigraphyFile,
         unitByName,
     } = context;
 
@@ -34,7 +34,7 @@ export function checkRegistryContainment(context: ValidationContext): void
         {
             checkError(
                 "Registry containment",
-                stratigraphyFile(unitName),
+                findStratigraphyFile(unitName),
                 `${unitName}: parent '${parent}' has no entry of its own`);
         }
     }
@@ -430,7 +430,7 @@ export function checkStratigraphicUnitAges(context: ValidationContext): void
         stagePosition,
         stages,
         stratigraphy,
-        stratigraphyFile,
+        findStratigraphyFile,
     } = context;
 
     for (const { label, entry, filePath } of registryEntries)
@@ -517,7 +517,7 @@ export function checkStratigraphicUnitAges(context: ValidationContext): void
             {
                 checkError(
                     "Stratigraphic unit ages",
-                    stratigraphyFile(unitName),
+                    findStratigraphyFile(unitName),
                     `bed '${unitName} › ${bed.name}': stage${outside.length > 1 ? "s" : ""} ${outside.join(", ")} fall${outside.length > 1 ? "" : "s"} outside its parent's stages`);
             }
         }

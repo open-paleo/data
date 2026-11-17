@@ -16,7 +16,7 @@
 // formatting (indentation, key order, scalar style) verbatim.
 //
 // Defaults to dry-run mode: emits scratch/genera-text-normalization.md
-// summarising every file that would change, with sample contexts.
+// summarizing every file that would change, with sample contexts.
 // Pass --apply to write changes back to disk.
 //
 // Usage:

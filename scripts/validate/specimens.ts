@@ -1,6 +1,6 @@
 // Checks on specimen numbers across records.
 
-import { relPath, checkError } from "./report.ts";
+import { makeRelativePath, checkError } from "./report.ts";
 import type { ValidationContext } from "./context.ts";
 
 /**
@@ -117,7 +117,7 @@ export function checkSpecimenNumberCollisions(context: ValidationContext): void
         if (occurrences.length > 1 && !occurrences.every(occurrence => occurrence.qualified))
         {
             const rendered = occurrences
-                .map(occurrence => `${relPath(occurrence.filePath)} (${occurrence.label}, "${occurrence.raw}")`)
+                .map(occurrence => `${makeRelativePath(occurrence.filePath)} (${occurrence.label}, "${occurrence.raw}")`)
                 .join("; ");
             checkError(
                 "Specimen number collisions",

@@ -12,7 +12,7 @@ import {
     readStoreCitationKeys,
     referenceNotesLimit,
     resolveCitationKey,
-    storeReferencePath,
+    resolveStoreReferencePath,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -460,11 +460,11 @@ export function appendReferencePointer(
         return warnings;
     }
 
-    const storePath = storeReferencePath(root, key);
+    const storePath = resolveStoreReferencePath(root, key);
 
     // The genus bootstrap stages a new describing paper's entry beside the
     // stub; promote.sh moves it into the store, so it counts as present here.
-    const inStore = fs.existsSync(storePath) || fs.existsSync(storeReferencePath(stagingDir, key));
+    const inStore = fs.existsSync(storePath) || fs.existsSync(resolveStoreReferencePath(stagingDir, key));
 
     // Supplementary papers record their role as per-citation `notes` on the
     // pointer; describing-paper notes are about the taxon, so they are left

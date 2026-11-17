@@ -1227,7 +1227,7 @@ export function checkTypeSpecimenConsistency(context: ValidationContext): void
                     checkError(
                         "Type specimen consistency",
                         filePath,
-                        `species '${speciesLabel}': type specimen present but missing 'specimen_id' (must be a non-empty array of catalogue numbers, or set 'status' to lost/destroyed/unknown)`);
+                        `species '${speciesLabel}': type specimen present but missing 'specimen_id' (must be a non-empty array of catalog numbers, or set 'status' to lost/destroyed/unknown)`);
                 }
             }
             else
@@ -1281,14 +1281,14 @@ export function checkTypeSpecimenConsistency(context: ValidationContext): void
                 const idCount = holotype.specimen_id!.length;
 
                 // ICZN-strict definitions place a holotype, lectotype, or
-                // neotype on a single specimen, but modern museum cataloguing
+                // neotype on a single specimen, but modern museum cataloging
                 // routinely assigns separate accession numbers to each
                 // disarticulated element of one individual (e.g. the Nagatitan
-                // partial skeleton catalogued as SM2025-1-546 through -556).
+                // partial skeleton cataloged as SM2025-1-546 through -556).
                 // Trust the contributor: allow multiple specimen_ids for these
                 // singular types, since the validator cannot distinguish "one
                 // individual across multiple numbers" from "multiple specimens
-                // mis-labelled as a single type" and the latter is a review
+                // mislabeled as a single type" and the latter is a review
                 // concern, not a schema one. Syntype, by definition, requires
                 // ≥ 2 distinct specimens, so that constraint stays.
                 // A syntype series normally IS several numbers, but a museum may
@@ -1350,7 +1350,7 @@ export function checkTypeSpecimenConsistency(context: ValidationContext): void
      * and forget to update its number.
      *
      * @param formerIds - The former_ids array, already known to be an array.
-     * @param specimenIds - The block's own catalogue numbers.
+     * @param specimenIds - The block's own catalog numbers.
      * @param institution - The block's own institution key, if any.
      * @param filePath - Genus file being validated, for the error message.
      * @param label - Human label for the record, for the error message.
@@ -1540,7 +1540,7 @@ export function checkNotableSpecimens(context: ValidationContext): void
                 // A type specimen is never also a notable specimen; its nickname
                 // and anything notable about it belong on the type_specimen block.
                 // An entry that also lists other specimens, such as referred
-                // material once catalogued with the type, is not the type itself.
+                // material once cataloged with the type, is not the type itself.
                 if (specimen.specimen_id!.every((value) => typeSpecimenIds.has(value)))
                 {
                     checkError(
@@ -1561,7 +1561,7 @@ export function checkNotableSpecimens(context: ValidationContext): void
                     `notable_specimens '${label}': invalid status '${specimen.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
             }
 
-            // A catalogued specimen needs a home unless it is lost/destroyed/uncatalogued.
+            // A cataloged specimen needs a home unless it is lost/destroyed/uncatalogued.
             if (hasSpecimenId && !specimen.institution && !hasValidStatus)
             {
                 checkError(

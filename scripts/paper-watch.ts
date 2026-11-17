@@ -458,7 +458,7 @@ function isRepositoryDoi(doi: string): boolean
  * @param hit - The hit to score.
  * @returns The preference score.
  */
-function hitScore(hit: WatchHit): number
+function scoreHit(hit: WatchHit): number
 {
     if (!hit.doi)
     {
@@ -519,7 +519,7 @@ function dedupHits(candidates: Array<WatchHit>): Array<WatchHit>
         {
             byTitle.set(titleKey, candidate);
         }
-        else if (hitScore(candidate) > hitScore(existing))
+        else if (scoreHit(candidate) > scoreHit(existing))
         {
             mergeHit(candidate, existing);
             byTitle.set(titleKey, candidate);
