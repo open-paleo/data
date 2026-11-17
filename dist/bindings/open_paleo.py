@@ -6,7 +6,23 @@ from __future__ import annotations
 from enum import Enum
 from typing import Dict, List, Optional
 
-from pydantic import AwareDatetime, BaseModel, Field, PositiveFloat, conint, constr
+from pydantic import (
+    AwareDatetime,
+    BaseModel,
+    Field,
+    PositiveFloat,
+    confloat,
+    conint,
+    constr,
+)
+
+
+class Paleogeography(BaseModel):
+    model: str = Field(
+        ..., description="The model's name, as recorded in each paleocoordinates.model."
+    )
+    citation: str
+    license: str = Field(..., description="License of the model's data.")
 
 
 class Metadata(BaseModel):
@@ -22,6 +38,10 @@ class Metadata(BaseModel):
     attribution: str
     genus_count: conint(ge=0)
     clade_count: conint(ge=0)
+    paleogeography: Optional[Paleogeography] = Field(
+        None,
+        description='The plate model behind location.paleocoordinates, with the citation and license to credit it by. Absent when the build attached no paleocoordinates.',
+    )
 
 
 class FormerIdReasons(Enum):
@@ -107,49 +127,34 @@ class PartOf(Enum):
     bed = 'bed'
 
 
-class Location(BaseModel):
-    country: Optional[constr(pattern=r'^[A-Z]{2}$')] = Field(
-        None, description='ISO 3166-1 alpha-2 code (see schema.yml countries).'
+class Paleocoordinates(BaseModel):
+    latitude: confloat(ge=-90.0, le=90.0) = Field(
+        ..., description='Reconstructed latitude in decimal degrees.'
     )
-    region: Optional[str] = Field(
-        None,
-        description='English name of the ISO 3166-2 subdivision, resolved from region_code.',
+    longitude: confloat(ge=-180.0, le=180.0) = Field(
+        ..., description='Reconstructed longitude in decimal degrees.'
     )
-    region_code: Optional[constr(pattern=r'^[A-Z]{2}-[A-Z0-9]{1,3}$')] = Field(
-        None,
-        description='ISO 3166-2 subdivision code (see regions.yaml). Absent where a country has no subdivisions.',
+    latitude_present: confloat(ge=-90.0, le=90.0) = Field(
+        ...,
+        description='Present-day latitude that was reconstructed: location.coordinates, or the center of the region or country when approximate.',
     )
-    locality: Optional[str] = None
-    group: Optional[str] = Field(
-        None,
-        description='Lithostratigraphic group containing the occurrence; populated when the group is the finest published unit, in which case formation is absent. No rank word in the value.',
+    longitude_present: confloat(ge=-180.0, le=180.0) = Field(
+        ..., description='Present-day longitude that was reconstructed.'
     )
-    formation: Optional[str] = None
-    member: Optional[str] = Field(
-        None,
-        description='Member NAME only; an informal upper/lower division goes in part.',
+    age_ma: float = Field(
+        ...,
+        description="Age reconstructed at, in millions of years: the midpoint of the species' age range (period.from_ma/to_ma, else its stages, else its epochs).",
     )
-    bed: Optional[str] = Field(
-        None,
-        description='Named bed, the finest lithostratigraphic rank. Published names only.',
+    model: str = Field(
+        ..., description='The plate model, as named in _metadata.paleogeography.model.'
     )
-    part: Optional[str] = Field(
-        None,
-        description='Informal position within the unit named by part_of. Lowercase, because informal divisions are not formally erected names: upper, middle, lower, or an ordinal.',
+    model_plate_id: int = Field(
+        ...,
+        description='The plate the model assigns the present-day point to. Meaningful only within model.',
     )
-    part_of: Optional[PartOf] = Field(
-        None,
-        description='Which unit `part` qualifies. Build-derived; always the finest of bed, member, formation and group that is populated.',
-    )
-    coordinates: Optional[List[float]] = Field(
-        None,
-        description='[latitude, longitude] in decimal degrees.',
-        max_length=2,
-        min_length=2,
-    )
-    notes: Optional[str] = Field(
-        None,
-        description='Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field.',
+    approximate: bool = Field(
+        ...,
+        description="True when the present-day point is the center of the record's region or country rather than coordinates a source prints for the site.",
     )
 
 
@@ -513,6 +518,53 @@ class Period(BaseModel):
     resolution: Optional[Resolution] = Field(
         None,
         description='How `stage` relates to the record\'s stratigraphic unit. "unit": no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit\'s range rather than a determination for this taxon. "reworked": the type specimen was reworked from older beds, so `stage` is the age of those beds and falls outside the unit it was found in. "horizon": which bed yielded the type specimen is uncertain, so `stage` covers every candidate bed and reaches outside the named unit. Absent means the age is finer than the unit, or has not been checked.',
+    )
+
+
+class Location(BaseModel):
+    country: Optional[constr(pattern=r'^[A-Z]{2}$')] = Field(
+        None, description='ISO 3166-1 alpha-2 code (see schema.yml countries).'
+    )
+    region: Optional[str] = Field(
+        None,
+        description='English name of the ISO 3166-2 subdivision, resolved from region_code.',
+    )
+    region_code: Optional[constr(pattern=r'^[A-Z]{2}-[A-Z0-9]{1,3}$')] = Field(
+        None,
+        description='ISO 3166-2 subdivision code (see regions.yaml). Absent where a country has no subdivisions.',
+    )
+    locality: Optional[str] = None
+    group: Optional[str] = Field(
+        None,
+        description='Lithostratigraphic group containing the occurrence; populated when the group is the finest published unit, in which case formation is absent. No rank word in the value.',
+    )
+    formation: Optional[str] = None
+    member: Optional[str] = Field(
+        None,
+        description='Member NAME only; an informal upper/lower division goes in part.',
+    )
+    bed: Optional[str] = Field(
+        None,
+        description='Named bed, the finest lithostratigraphic rank. Published names only.',
+    )
+    part: Optional[str] = Field(
+        None,
+        description='Informal position within the unit named by part_of. Lowercase, because informal divisions are not formally erected names: upper, middle, lower, or an ordinal.',
+    )
+    part_of: Optional[PartOf] = Field(
+        None,
+        description='Which unit `part` qualifies. Build-derived; always the finest of bed, member, formation and group that is populated.',
+    )
+    coordinates: Optional[List[float]] = Field(
+        None,
+        description='[latitude, longitude] in decimal degrees.',
+        max_length=2,
+        min_length=2,
+    )
+    paleocoordinates: Optional[Paleocoordinates] = None
+    notes: Optional[str] = Field(
+        None,
+        description='Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field.',
     )
 
 

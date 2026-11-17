@@ -221,6 +221,21 @@ export interface Metadata {
   attribution: string;
   genus_count: number;
   clade_count: number;
+  /**
+   * The plate model behind location.paleocoordinates, with the citation and license to credit it by. Absent when the build attached no paleocoordinates.
+   */
+  paleogeography?: {
+    /**
+     * The model's name, as recorded in each paleocoordinates.model.
+     */
+    model: string;
+    citation: string;
+    /**
+     * License of the model's data.
+     */
+    license: string;
+    [k: string]: unknown;
+  };
   [k: string]: unknown;
 }
 /**
@@ -546,10 +561,49 @@ export interface Location {
    * @maxItems 2
    */
   coordinates?: [number, number];
+  paleocoordinates?: Paleocoordinates;
   /**
    * Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field.
    */
   notes?: string;
+  [k: string]: unknown;
+}
+/**
+ * Where the locality lay at the species' age, reconstructed from its present-day position with the plate model in _metadata.paleogeography. Build-derived. Absent when the record has no age or location, or the model places no plate there. To reconstruct at another age, rotate latitude_present/longitude_present with model_plate_id in the same model.
+ */
+export interface Paleocoordinates {
+  /**
+   * Reconstructed latitude in decimal degrees.
+   */
+  latitude: number;
+  /**
+   * Reconstructed longitude in decimal degrees.
+   */
+  longitude: number;
+  /**
+   * Present-day latitude that was reconstructed: location.coordinates, or the center of the region or country when approximate.
+   */
+  latitude_present: number;
+  /**
+   * Present-day longitude that was reconstructed.
+   */
+  longitude_present: number;
+  /**
+   * Age reconstructed at, in millions of years: the midpoint of the species' age range (period.from_ma/to_ma, else its stages, else its epochs).
+   */
+  age_ma: number;
+  /**
+   * The plate model, as named in _metadata.paleogeography.model.
+   */
+  model: string;
+  /**
+   * The plate the model assigns the present-day point to. Meaningful only within model.
+   */
+  model_plate_id: number;
+  /**
+   * True when the present-day point is the center of the record's region or country rather than coordinates a source prints for the site.
+   */
+  approximate: boolean;
   [k: string]: unknown;
 }
 export interface Size {
