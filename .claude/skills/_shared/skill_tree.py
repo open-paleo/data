@@ -24,7 +24,7 @@ def find_node(node, target):
     return _ABSENT
 
 
-def node_names(node):
+def collect_node_names(node):
     """Collect every clade name at or below a tree node.
 
     @param node - the tree mapping to walk
@@ -34,11 +34,11 @@ def node_names(node):
     if isinstance(node, dict):
         for key, value in node.items():
             names.add(key)
-            names |= node_names(value)
+            names |= collect_node_names(value)
     return names
 
 
-def subtree_names(tree, root):
+def collect_subtree_names(tree, root):
     """Return the root plus every clade below it.
 
     @param tree - the whole parsed tree.yml mapping
@@ -48,4 +48,4 @@ def subtree_names(tree, root):
     subtree = find_node(tree, root)
     if subtree is _ABSENT:
         return None
-    return node_names(subtree) | {root}
+    return collect_node_names(subtree) | {root}

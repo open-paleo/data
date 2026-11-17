@@ -13,7 +13,7 @@ import os
 
 import yaml
 
-from _paths import data_dir
+from _paths import find_data_dir
 
 
 def loadRegistry():
@@ -21,7 +21,7 @@ def loadRegistry():
 
     @returns: Dict of canonical unit name to its entry.
     """
-    root = os.path.join(data_dir(), "stratigraphy")
+    root = os.path.join(find_data_dir(), "stratigraphy")
     registry = {}
 
     for bucket in sorted(os.listdir(root)):

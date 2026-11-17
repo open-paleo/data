@@ -12,7 +12,7 @@ import re
 import unicodedata
 
 
-def data_dir():
+def find_data_dir():
     """Absolute path to the data repo root (this module lives under
     <data>/.claude/skills/_shared/)."""
     override = os.environ.get("OPEN_PALEO_DATA_DIR")
@@ -21,7 +21,7 @@ def data_dir():
     return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
 
-def corpus_dir():
+def find_corpus_dir():
     """Absolute path to the paper corpus root (honors OPEN_PALEO_CORPUS, then
     its older name OPEN_PALEO_PAPERS_DIR, else the sibling `corpus` directory
     next to the data repo)."""
@@ -29,13 +29,13 @@ def corpus_dir():
         override = os.environ.get(name)
         if override:
             return os.path.abspath(override)
-    return os.path.join(os.path.dirname(data_dir()), "corpus")
+    return os.path.join(os.path.dirname(find_data_dir()), "corpus")
 
 
-def audit_dir():
+def find_audit_dir():
     """Where the skills write their caches, reports and intermediates. Under
     scratch/, which is wholly gitignored -- everything here is regenerable."""
-    return os.path.join(data_dir(), "scratch", "audit")
+    return os.path.join(find_data_dir(), "scratch", "audit")
 
 
 # Latin letters with no canonical decomposition to base ASCII letters, with the
@@ -61,8 +61,8 @@ def fold_letters(text):
     return "".join(_NON_DECOMPOSING_FOLDS.get(character, character) for character in stripped)
 
 
-def reference_bucket(reference_id):
-    """Store directory bucket for a reference key, as referenceBucket in
+def find_reference_bucket(reference_id):
+    """Store directory bucket for a reference key, as findReferenceBucket in
     scripts/utilities.ts computes it: the first letter of the folded key, or
     "_" when it does not fold to a-z. So "ősi2010a" is under "o" and
     "čech1980a" under "c".
@@ -74,13 +74,13 @@ def reference_bucket(reference_id):
     return first if len(first) == 1 and "a" <= first <= "z" else "_"
 
 
-def store_path(reference_id):
+def find_store_path(reference_id):
     """Absolute path of a reference's store file, references/<bucket>/<id>.yml.
 
     @param reference_id - the reference key
     @returns the path, whether or not the file exists
     """
-    return os.path.join(data_dir(), "references", reference_bucket(reference_id), f"{reference_id}.yml")
+    return os.path.join(find_data_dir(), "references", find_reference_bucket(reference_id), f"{reference_id}.yml")
 
 
 def normalize_doi(doi):

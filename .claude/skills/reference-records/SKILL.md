@@ -108,7 +108,7 @@ tiers warrant different effort:
   ours. The strongest signal available, and where our data is most likely wrong.
 - **`-ours-outlier`** — every source disagrees with us *and* with each other.
   Weak: sources that cannot agree among themselves corroborate nothing. In
-  practice these are usually recatalogued specimens or historical numbers.
+  practice these are usually recataloged specimens or historical numbers.
 - **`-sources-disagree`** — the works contradict each other, and a
   `[CONFIRMED BY …]` prefix names the ones that already agree with us.
 - **`-single-source`** — only one work speaks. Weakest, and **it has no

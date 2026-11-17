@@ -9,11 +9,11 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_shared"))
 
 from skill_paths import (  # noqa: E402,F401  re-exported for this skill's scripts
-    audit_dir,
-    corpus_dir,
-    data_dir,
+    find_audit_dir,
+    find_corpus_dir,
+    find_data_dir,
     fold_letters,
     normalize_doi,
-    reference_bucket,
-    store_path,
+    find_reference_bucket,
+    find_store_path,
 )

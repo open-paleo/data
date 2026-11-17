@@ -32,8 +32,8 @@ import re
 import yaml
 
 from _formations import loadVariants
-from _paths import audit_dir, corpus_dir, data_dir
-from skill_schema import stage_table  # on the path _paths adds
+from _paths import find_audit_dir, find_corpus_dir, find_data_dir
+from skill_schema import load_stage_table  # on the path _paths adds
 
 findingPattern = re.compile(
     r"^- (?:\[CONFIRMED BY [^\]]+\] )?(?P<binomial>[A-Z][^\[]+) "
@@ -47,7 +47,7 @@ def loadStages():
 
     @returns: Dict of lowercased stage name to its schema entry.
     """
-    return {name.lower(): entry for name, entry in stage_table().items()}
+    return {name.lower(): entry for name, entry in load_stage_table().items()}
 
 
 def loadFormations():
@@ -57,7 +57,7 @@ def loadFormations():
     """
     formations = {}
 
-    for path in glob.glob(os.path.join(data_dir(), "genera", "*", "*.yml")):
+    for path in glob.glob(os.path.join(find_data_dir(), "genera", "*", "*.yml")):
         document = yaml.safe_load(open(path, encoding="utf-8"))
 
         if not isinstance(document, dict):
@@ -106,7 +106,7 @@ def buildSupportIndex(formations, stages, window):
 
     index = collections.defaultdict(collections.Counter)
     sole = collections.defaultdict(collections.Counter)
-    papers = [path for path in glob.glob(os.path.join(corpus_dir(), "markdown", "*.md"))
+    papers = [path for path in glob.glob(os.path.join(find_corpus_dir(), "markdown", "*.md"))
               if not path.endswith(".original.md")]
 
     for path in papers:
@@ -192,7 +192,7 @@ def main():
 
     stages = loadStages()
     formations = loadFormations()
-    report = open(os.path.join(audit_dir(), "reference-reconciliation.md"), encoding="utf-8").read()
+    report = open(os.path.join(find_audit_dir(), "reference-reconciliation.md"), encoding="utf-8").read()
 
     findings = []
 
@@ -265,7 +265,7 @@ def main():
 
         lines.append("")
 
-    path = os.path.join(audit_dir(), "stage-support.md")
+    path = os.path.join(find_audit_dir(), "stage-support.md")
     open(path, "w", encoding="utf-8").write("\n".join(lines) + "\n")
 
     print(f"scanned {scanned} papers, {len(needed)} formations, {len(findings)} findings")

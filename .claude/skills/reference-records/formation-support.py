@@ -33,7 +33,7 @@ import os
 import re
 
 from _formations import loadVariants
-from _paths import audit_dir, corpus_dir
+from _paths import find_audit_dir, find_corpus_dir
 
 findingPattern = re.compile(
     r"^- (?:\[CONFIRMED BY (?P<confirmed>[^\]]+)\] )?(?P<binomial>[A-Z][a-z]+ [a-zë\-]+) "
@@ -201,7 +201,7 @@ def buildSupportIndex(findings, variants, window):
     generaPatterns = {genus: re.compile(rf"\b{re.escape(genus)}\b") for genus in genera}
     index = collections.defaultdict(collections.Counter)
     sole = collections.defaultdict(collections.Counter)
-    papers = [path for path in glob.glob(os.path.join(corpus_dir(), "markdown", "*.md"))
+    papers = [path for path in glob.glob(os.path.join(find_corpus_dir(), "markdown", "*.md"))
               if not path.endswith(".original.md")]
 
     for path in papers:
@@ -269,7 +269,7 @@ def main():
                         help="Characters either side of a genus mention to scan for a unit name.")
     arguments = parser.parse_args()
 
-    report = open(os.path.join(audit_dir(), "reference-reconciliation.md"), encoding="utf-8").read()
+    report = open(os.path.join(find_audit_dir(), "reference-reconciliation.md"), encoding="utf-8").read()
     findings, unnamed, sameUnit = parseFindings(report, arguments.bucket)
     index, sole, scanned = buildSupportIndex(findings, loadVariants(), arguments.window)
 
@@ -357,7 +357,7 @@ def main():
 
         lines.append("")
 
-    path = os.path.join(audit_dir(), "formation-support.md")
+    path = os.path.join(find_audit_dir(), "formation-support.md")
     open(path, "w", encoding="utf-8").write("\n".join(lines) + "\n")
 
     print(f"scanned {scanned} papers, {len(findings)} findings")

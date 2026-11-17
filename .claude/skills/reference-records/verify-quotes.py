@@ -29,10 +29,10 @@ import sys
 
 import yaml
 
-from _paths import audit_dir, corpus_dir, data_dir, fold_letters
+from _paths import find_audit_dir, find_corpus_dir, find_data_dir, fold_letters
 
-DATA = data_dir()
-MARKDOWN = os.path.join(corpus_dir(), "markdown")
+DATA = find_data_dir()
+MARKDOWN = os.path.join(find_corpus_dir(), "markdown")
 
 # Quotations shorter than this are usually a single term ("Lower Member"),
 # which matches anywhere and proves nothing.
@@ -46,7 +46,7 @@ maximumGap = 14
 evidenceLine = re.compile(r"^- ([a-zÀ-ɏ'’-]+\d{4}[a-z]),[^\n]*$", re.M)
 
 
-def words(text):
+def extractWords(text):
     """Reduce a string to comparable words.
 
     @param text: The string to reduce.
@@ -63,7 +63,7 @@ def words(text):
 sourceCache = {}
 
 
-def sourceWords(key):
+def loadSourceWords(key):
     """Load every corpus file for one reference key as a word list.
 
     Supplements and the original-language text count as the same paper, so a
@@ -79,7 +79,7 @@ def sourceWords(key):
              + glob.glob(os.path.join(MARKDOWN, "supplementary", f"{key}*.md"))
              if os.path.basename(candidate)[:-3].split(".")[0].split("_")[0] == key]
     text = " ".join(open(candidate, encoding="utf-8", errors="ignore").read() for candidate in paths)
-    sourceCache[key] = words(text) if paths else None
+    sourceCache[key] = extractWords(text) if paths else None
     return sourceCache[key]
 
 
@@ -115,7 +115,7 @@ def locate(quote, source):
     return best
 
 
-def quotations(text):
+def findQuotations(text):
     """Return the quoted spans in a string that are long enough to test.
 
     A quotation marked "(translated)" just after it is our English rendering of
@@ -139,7 +139,7 @@ def quotations(text):
     return found
 
 
-def referencePairs(record, label):
+def collectReferencePairs(record, label):
     """Yield (label, id, quotation) for every quotation in a record's reference
     notes, descending into nested beds.
 
@@ -149,14 +149,14 @@ def referencePairs(record, label):
     """
     for pointer in record.get("references") or []:
         if isinstance(pointer, dict) and pointer.get("id") and pointer.get("notes"):
-            for quote in quotations(pointer["notes"]):
+            for quote in findQuotations(pointer["notes"]):
                 yield (label, pointer["id"], quote)
 
     for bed in record.get("beds") or []:
-        yield from referencePairs(bed, f"{label} › {bed.get('name')}")
+        yield from collectReferencePairs(bed, f"{label} › {bed.get('name')}")
 
 
-def researchPairs(path):
+def collectResearchPairs(path):
     """Yield (label, id, quotation) for every quotation on a research note's
     Evidence lines.
 
@@ -167,22 +167,22 @@ def researchPairs(path):
     text = open(path, encoding="utf-8").read().split("\n## References")[0]
 
     for match in evidenceLine.finditer(text):
-        for quote in quotations(match.group(0)):
+        for quote in findQuotations(match.group(0)):
             yield (label, match.group(1), quote)
 
 
-def pairsFor(path):
+def collectPairs(path):
     """Yield every (label, id, quotation) in one file.
 
     @param path: A research note, or a genus, clade or registry YAML file.
     @returns: A generator of (label, id, quotation).
     """
     if path.endswith(".md"):
-        yield from researchPairs(path)
+        yield from collectResearchPairs(path)
         return
 
     record = yaml.safe_load(open(path, encoding="utf-8")) or {}
-    yield from referencePairs(record, os.path.relpath(path, DATA))
+    yield from collectReferencePairs(record, os.path.relpath(path, DATA))
 
 
 def main():
@@ -201,8 +201,8 @@ def main():
     suspect = []
 
     for path in paths:
-        for label, key, quote in pairsFor(path):
-            source = sourceWords(key)
+        for label, key, quote in collectPairs(path):
+            source = loadSourceWords(key)
 
             if source is None:
                 absent.add(key)
@@ -210,7 +210,7 @@ def main():
 
             # An ellipsis marks words left out, however many, so each part of
             # an elided quotation is matched on its own.
-            parts = [words(part) for part in re.split(r"…|\.\.\.|\[\.\.\.\]", quote)]
+            parts = [extractWords(part) for part in re.split(r"…|\.\.\.|\[\.\.\.\]", quote)]
             parts = [part for part in parts if part]
 
             if not parts:
@@ -251,8 +251,8 @@ def main():
     if absent:
         lines += ["", f"Not in the corpus, so not checked: {', '.join(sorted(absent))}"]
 
-    os.makedirs(audit_dir(), exist_ok=True)
-    report = os.path.join(audit_dir(), "quote-check.md")
+    os.makedirs(find_audit_dir(), exist_ok=True)
+    report = os.path.join(find_audit_dir(), "quote-check.md")
     open(report, "w", encoding="utf-8").write("\n".join(lines) + "\n")
 
     print(f"checked {checked} quotations; {len(suspect)} not matched; {len(absent)} cited works not in the corpus")

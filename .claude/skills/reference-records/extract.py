@@ -34,11 +34,11 @@ import os
 import re
 import sys
 
-from _paths import audit_dir, corpus_dir, data_dir
+from _paths import find_audit_dir, find_corpus_dir, find_data_dir
 
-CORPUS = corpus_dir()
+CORPUS = find_corpus_dir()
 MARKDOWN = os.path.join(CORPUS, "markdown")
-CACHE = os.path.join(audit_dir(), "reference-records")
+CACHE = os.path.join(find_audit_dir(), "reference-records")
 
 SCHEMA_VERSION = 1
 
@@ -47,7 +47,7 @@ WEISHAMPEL_SOURCES = ("weishampel2004a",)
 MOLINA_PEREZ_SOURCES = ("molina-pérez2019a", "molina-pérez2020a")
 
 
-def sha256(path):
+def computeSha256(path):
     """Return the hex SHA-256 of a file, used to invalidate a stale cache.
 
     @param path: Absolute path to the file to digest.
@@ -69,7 +69,7 @@ def stripMarkup(text):
     return " ".join(cleaned.split())
 
 
-def tableRows(path, columnCount):
+def readTableRows(path, columnCount):
     """Yield the cells of every pipe-table row with exactly `columnCount` cells.
 
     Separator rows (all dashes) are skipped. Cells keep their markdown, because
@@ -101,7 +101,7 @@ def parseTaxonCell(cell):
     """Split a Jones taxon cell into binomial and authority.
 
     The cell reads "*Genus species* Authority, Year"; the binomial is the
-    italicised run. Returns nulls rather than guessing when the shape does not
+    italicized run. Returns nulls rather than guessing when the shape does not
     match, so that parse failures stay visible instead of becoming bad data.
 
     @param cell: Raw taxon cell.
@@ -119,7 +119,7 @@ def parseTaxonCell(cell):
     genus = parts[0] if parts else None
     species = parts[1] if len(parts) > 1 else None
 
-    # Only a capitalised, alphabetic first word is a usable genus; the tables
+    # Only a capitalized, alphabetic first word is a usable genus; the tables
     # also carry heading rows ("Nomina dubia") and quoted provisional names.
     if not genus or not re.fullmatch(r"[A-Z][a-zÀ-ɏ-]+", genus):
         genus = None
@@ -128,7 +128,7 @@ def parseTaxonCell(cell):
 
 
 def parseSizeCell(cell):
-    """Extract length in metres and mass in kilograms from a Jones size cell.
+    """Extract length in meters and mass in kilograms from a Jones size cell.
 
     Handles the "**Length:** 2.3 m **Mass:** 42 kg" form, including tonne masses
     and comma-grouped digits.
@@ -171,7 +171,7 @@ def parseSpecimenCell(cell):
     type first. Across all three volumes the bolded number is the first-listed
     one in 400 of 431 bolded rows, and every exception is a number that merely
     contains a dash ("BMNH R1989-1992"). So bold is preferred where present and
-    the first listed catalogue number is the fallback.
+    the first listed catalog number is the fallback.
 
     @param cell: Raw specimen cell.
     @returns: Dict with holotype, holotypeMaterial, holotypeSource and referred.
@@ -180,7 +180,7 @@ def parseSpecimenCell(cell):
     holotype = " ".join(boldMatch.group(1).split()) if boldMatch else None
     holotypeSource = "bold" if holotype else None
 
-    # An em/en dash separates a catalogue number from its material description.
+    # An em/en dash separates a catalog number from its material description.
     material = None
 
     if boldMatch:
@@ -216,7 +216,7 @@ def parseOccurrenceCell(cell):
     """Split a Jones occurrence cell into occurrences plus period and stage.
 
     The cell reads "Upper Elliot Fm., South Africa *Early Jurassic, Sinemurian*".
-    The italicised tail carries the age; what precedes it is one or more
+    The italicized tail carries the age; what precedes it is one or more
     "formation, country" pairs separated by semicolons -- a taxon known from two
     countries gets "Udurchurkan Fm., Russia; Yuliangze Fm., China". Taking only
     the last pair silently mislabels such taxa, so every pair is kept and the
@@ -268,7 +268,7 @@ def extractJones(refId):
     records = []
     skipped = 0
 
-    for lineNumber, cells in tableRows(path, 4):
+    for lineNumber, cells in readTableRows(path, 4):
         taxon = parseTaxonCell(cells[0])
 
         if not taxon["genus"]:
@@ -287,7 +287,7 @@ def extractJones(refId):
     return {
         "ref_id": refId,
         "source_file": os.path.relpath(path, CORPUS),
-        "source_sha256": sha256(path),
+        "source_sha256": computeSha256(path),
         "schema_version": SCHEMA_VERSION,
         "extractor": "extract.py (deterministic table parse)",
         "layout": "jones-4col",
@@ -341,7 +341,7 @@ def extractWeishampel(refId="weishampel2004a"):
             pending["material"] = " ".join(pending["material"].split()) or None
             records.append(pending)
 
-    for lineNumber, cells in tableRows(path, 4):
+    for lineNumber, cells in readTableRows(path, 4):
         taxonCell = stripMarkup(cells[0].replace("<br>", " "))
         occurrence = stripMarkup(cells[1].replace("<br>", " "))
         age = stripMarkup(cells[2].replace("<br>", " "))
@@ -399,7 +399,7 @@ def extractWeishampel(refId="weishampel2004a"):
     return {
         "ref_id": refId,
         "source_file": os.path.relpath(path, CORPUS),
-        "source_sha256": sha256(path),
+        "source_sha256": computeSha256(path),
         "schema_version": SCHEMA_VERSION,
         "extractor": "extract.py (deterministic table parse)",
         "layout": "weishampel-4col",
@@ -414,7 +414,7 @@ def splitOccurrenceText(text):
 
     The column reads "Dinosaur Park Formation (Alberta), Canada; Judith River
     Formation (Montana), United States" -- semicolon-separated, each entry a
-    formation with a parenthesised region and a trailing country.
+    formation with a parenthesized region and a trailing country.
 
     @param text: Raw joined occurrence text, or None.
     @returns: Dict with occurrences, formation and country keys.
@@ -442,7 +442,7 @@ def trimSpecimenQualifiers(value):
 
     The Molina-Perez tables append the specimen's growth stage or age to the same
     cell -- "MLP 77-V-29-1 Indeterminate age", "QG 1 Adult" -- which is not part
-    of the catalogue number and makes the value spuriously extend our own.
+    of the catalog number and makes the value spuriously extend our own.
 
     @param value: Candidate specimen string, or None.
     @returns: The value up to the first qualifier word, stripped.
@@ -456,8 +456,8 @@ def trimSpecimenQualifiers(value):
     return value[:match.start()].strip() if match else value
 
 
-def looksLikeCatalogueNumber(value):
-    """Reject anything that is not plausibly a specimen catalogue number.
+def looksLikeCatalogNumber(value):
+    """Reject anything that is not plausibly a specimen catalog number.
 
     The Molina-Perez tables reuse the column beside a binomial for several
     purposes, so the same position may hold "BMNH R1527", a period-and-region
@@ -466,7 +466,7 @@ def looksLikeCatalogueNumber(value):
     these cleanly.
 
     @param value: Candidate specimen string, or None.
-    @returns: True when the value is plausibly a catalogue number.
+    @returns: True when the value is plausibly a catalog number.
     """
     if not value or "," in value or len(value) > 40:
         return False
@@ -485,7 +485,7 @@ def extractMolinaPerez(refId):
     ...", "Genus and species | Specimen | Leg length ...", "Year | Species and
     specimen | ...", and several with no specimen column at all. Parsing by
     position rather than by header therefore reads locality codes and Spanish
-    labels as catalogue numbers, so each table block's own header row decides
+    labels as catalog numbers, so each table block's own header row decides
     which columns to read, and every candidate is shape-checked before it is
     kept.
 
@@ -551,7 +551,7 @@ def extractMolinaPerez(refId):
                 candidate = None
 
             candidate = trimSpecimenQualifiers(candidate)
-            specimen = candidate if looksLikeCatalogueNumber(candidate) else None
+            specimen = candidate if looksLikeCatalogNumber(candidate) else None
 
             records.append({
                 "line": lineNumber,
@@ -570,7 +570,7 @@ def extractMolinaPerez(refId):
     return {
         "ref_id": refId,
         "source_file": os.path.relpath(path, CORPUS),
-        "source_sha256": sha256(path),
+        "source_sha256": computeSha256(path),
         "schema_version": SCHEMA_VERSION,
         "extractor": "extract.py (deterministic table parse)",
         "layout": "molina-perez-header-driven",
@@ -580,7 +580,7 @@ def extractMolinaPerez(refId):
     }
 
 
-def summarise(cache):
+def summarize(cache):
     """Print a per-source field-coverage summary so gaps are visible up front.
 
     @param cache: A cache record produced by an extractor.
@@ -624,14 +624,14 @@ def main():
             print(f"  {refId}: NOT in corpus, skipped")
             continue
 
-        summarise(cache)
+        summarize(cache)
 
         out = os.path.join(CACHE, f"{refId}.json")
 
         with open(out, "w", encoding="utf-8") as handle:
             json.dump(cache, handle, indent=2, ensure_ascii=False)
 
-    print(f"\ncache -> {os.path.relpath(CACHE, data_dir())}")
+    print(f"\ncache -> {os.path.relpath(CACHE, find_data_dir())}")
 
 
 if __name__ == "__main__":

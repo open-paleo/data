@@ -94,7 +94,7 @@ This writes:
 - `staging/intake/<Genus>/notes.md` — verbatim `--notes` context (when
   you passed `--notes`)
 
-After the script returns, **read both files yourself** and summarise
+After the script returns, **read both files yourself** and summarize
 to the user:
 
 - How many fields the bootstrap populated

@@ -112,7 +112,7 @@ caches it at `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` so the
 resume step's Sonnet prompts can read it alongside the corpus paper.
 
 After the script returns, **read both `bootstrap.species.yml` and
-`papers-needed.md` yourself** and summarise to the user:
+`papers-needed.md` yourself** and summarize to the user:
 
 - Which PBDB-seeded fields the bootstrap captured (type_specimen,
   locality, age, authority) and which it didn't

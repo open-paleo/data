@@ -36,11 +36,11 @@ import re
 import yaml
 
 from _formations import loadVariants
-from _paths import audit_dir, data_dir, fold_letters
-from skill_schema import stage_order, stage_table  # on the path _paths adds
+from _paths import find_audit_dir, find_data_dir, fold_letters
+from skill_schema import order_stages, load_stage_table  # on the path _paths adds
 
-DATA = data_dir()
-CACHE = os.path.join(audit_dir(), "reference-records")
+DATA = find_data_dir()
+CACHE = os.path.join(find_audit_dir(), "reference-records")
 
 
 def normalizeFormation(name):
@@ -72,7 +72,7 @@ def normalizeFormation(name):
     return " ".join(cleaned.split())
 
 
-def formationsAgree(ourName, referenceName):
+def checkFormationAgreement(ourName, referenceName):
     """Decide whether two formation names are compatible rather than identical.
 
     Stratigraphic names nest: "Elliot" vs "Upper Elliot", or "West Melbury Marly
@@ -99,7 +99,7 @@ def formationsAgree(ourName, referenceName):
 
 
 def normalizeSpecimen(value):
-    """Fold a catalogue number: uppercase, strip punctuation, unpad numbers.
+    """Fold a catalog number: uppercase, strip punctuation, unpad numbers.
 
     "MCF-PVPH-236", "MCF PVPH 236" and "mcf/pvph/236" all fold together, so that
     only genuinely different numbers are reported. Leading zeros are dropped
@@ -127,7 +127,7 @@ def loadStageOrder():
 
     @returns: Dict of lowercased stage name to its index, oldest first.
     """
-    return stage_order()
+    return order_stages()
 
 
 def loadStageVocabulary():
@@ -140,11 +140,11 @@ def loadStageVocabulary():
 
     @returns: Set of lowercased stage names.
     """
-    return {str(name).lower() for name in stage_table()}
+    return {str(name).lower() for name in load_stage_table()}
 
 
 def splitStages(value, vocabulary, order=None):
-    """Extract the recognised stage names from a reference-work age cell.
+    """Extract the recognized stage names from a reference-work age cell.
 
     The works write ages many ways -- "Hettangian/Sinemurian", "Maastrichtian
     Age", "?late Campanian or Maastrichtian", "(?)" -- so the string is split on
@@ -159,7 +159,7 @@ def splitStages(value, vocabulary, order=None):
     @param value: Raw stage string, or None.
     @param vocabulary: Set of valid lowercased stage names.
     @param order: Optional stage-name to index map used to expand ranges.
-    @returns: Set of recognised lowercased stage names.
+    @returns: Set of recognized lowercased stage names.
     """
     if not value:
         return set()
@@ -219,7 +219,7 @@ def loadAdjudicated():
 
     # YAML keeps the last of two entries under one key and says nothing, so a
     # second block for a binomial silently discards the first -- which is how an
-    # occurrence adjudication once cancelled that taxon's holotype one. Findings
+    # occurrence adjudication once canceled that taxon's holotype one. Findings
     # for a binomial belong in ONE entry with several categories.
     written = re.findall(r"^([^\s#][^\n:]*):$", raw, re.M)
     duplicates = {name for name in written if written.count(name) > 1}
@@ -285,9 +285,9 @@ def loadInstitutionAliases():
 
 
 def foldSpecimen(value, aliases):
-    """Normalize a catalogue number, resolving its institution prefix to canonical.
+    """Normalize a catalog number, resolving its institution prefix to canonical.
 
-    @param value: Raw catalogue number, or None.
+    @param value: Raw catalog number, or None.
     @param aliases: Mapping from loadInstitutionAliases().
     @returns: Normalized comparison key, empty when nothing usable remains.
     """
@@ -336,12 +336,12 @@ def denotesSeries(value):
     """Detect a reference value that names a RANGE or SERIES of specimens.
 
     "IPFUB Gui Th 1 through 3", "ISI R335/1-65" and "Various MNCN and MCD
-    specimens" all say the type comprises several catalogue numbers. Recording a
+    specimens" all say the type comprises several catalog numbers. Recording a
     single element against one of those is a substantive gap -- the same defect
     class as Chebsaurus, where 1 element of 78 was recorded -- not a formatting
     variant to be suppressed.
 
-    Hyphens inside a catalogue code must NOT count: "FPDM-V8468" and
+    Hyphens inside a catalog code must NOT count: "FPDM-V8468" and
     "MCF-PVPH-108" are single specimens. A dash therefore only marks a range when
     it joins two numeric endpoints in ascending order, or a number to a single
     trailing letter ("058267A-C").
@@ -390,7 +390,7 @@ def loadReferenceRecords():
     return byBinomial
 
 
-def epithetDistance(first, second, ceiling):
+def measureEpithetDistance(first, second, ceiling):
     """Levenshtein distance between two species epithets, bounded for speed.
 
     @param first: One epithet, lowercased.
@@ -419,7 +419,7 @@ def epithetDistance(first, second, ceiling):
     return previous[-1]
 
 
-def allowedDistance(epithet):
+def computeAllowedDistance(epithet):
     """How far an epithet may differ before the match stops being a typo.
 
     Two edits on a short epithet rewrites half of it, so the allowance scales
@@ -475,18 +475,18 @@ def findFuzzyMatches(binomial, fuzzyIndex, ourEpithetsByGenus):
         return []
 
     genus, epithet = parts
-    ceiling = allowedDistance(epithet)
+    ceiling = computeAllowedDistance(epithet)
     hits = []
 
     for candidate, key in fuzzyIndex.get(genus, []):
-        if epithetDistance(epithet, candidate, ceiling) > ceiling:
+        if measureEpithetDistance(epithet, candidate, ceiling) > ceiling:
             continue
 
         # The candidate must be nearer to us than to any sibling we also hold,
         # or it is as likely to be that sibling's row as it is to be ours.
         rivals = [other for other in ourEpithetsByGenus.get(genus, [])
                   if other != epithet
-                  and epithetDistance(other, candidate, ceiling) <= ceiling]
+                  and measureEpithetDistance(other, candidate, ceiling) <= ceiling]
 
         if not rivals:
             hits.append(key)
@@ -653,7 +653,7 @@ def main():
         return f"{field}-differs-single-source"
 
 
-    def agreementNote(agreeing):
+    def buildAgreementNote(agreeing):
         """Prefix a finding with the sources that back OUR value, if any.
 
         Without this a reader sees two source ids on the line and assumes both
@@ -715,7 +715,7 @@ def main():
         if disagreeing:
             if "holotype" not in settled:
                 findings[classify("holotype", disagreeing, agreeing, disagreeingKeys)].append(
-                agreementNote(agreeing) +
+                buildAgreementNote(agreeing) +
                 f"{label}: ours {ours['specimenIds'][:4]} vs {' | '.join(referenceValues)}")
 
         # A country that contradicts ours means the occurrence cell belongs to
@@ -787,7 +787,7 @@ def main():
             if not ours.get("formation") or not names or merged:
                 continue
 
-            if any(formationsAgree(ours["formation"], name) for name in names):
+            if any(checkFormationAgreement(ours["formation"], name) for name in names):
                 agreeing.append(reference["ref_id"])
             else:
                 disagreeing.append(reference["ref_id"])
@@ -803,7 +803,7 @@ def main():
 
             if "formation" not in settled:
                 findings[category].append(
-                agreementNote(agreeing) +
+                buildAgreementNote(agreeing) +
                 f"{label}: ours '{ours['formation']}' vs {' | '.join(referenceValues)}")
 
         ourStages = {stage.strip().lower() for stage in ours["stages"] if stage} & stageVocabulary
@@ -825,7 +825,7 @@ def main():
         if disagreeing:
             if "stage" not in settled:
                 findings[classify("stage", disagreeing, agreeing, disagreeingKeys)].append(
-                agreementNote(agreeing) +
+                buildAgreementNote(agreeing) +
                 f"{label}: ours {sorted(ourStages)} vs {' | '.join(referenceValues)}")
 
     print(f"genus species records:      {len(speciesRecords)}")
@@ -885,7 +885,7 @@ def main():
         lines.extend(f"- {row}" for row in sorted(rows))
         lines.append("")
 
-    out = os.path.join(audit_dir(), "reference-reconciliation.md")
+    out = os.path.join(find_audit_dir(), "reference-reconciliation.md")
 
     with open(out, "w", encoding="utf-8") as handle:
         handle.write("\n".join(lines))

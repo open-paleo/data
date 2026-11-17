@@ -23,7 +23,7 @@ import re
 
 import yaml
 
-from _paths import audit_dir, corpus_dir, data_dir
+from _paths import find_audit_dir, find_corpus_dir, find_data_dir
 
 findingPattern = re.compile(
     r"^- (?:\[CONFIRMED BY (?P<confirmed>[^\]]+)\] )?(?P<binomial>[A-Z][^\[]+) "
@@ -36,7 +36,7 @@ def loadReport():
     @returns: Dict of section name -> list of raw finding lines.
     @raises SystemExit: When the report has not been generated yet.
     """
-    path = os.path.join(audit_dir(), "reference-reconciliation.md")
+    path = os.path.join(find_audit_dir(), "reference-reconciliation.md")
 
     if not os.path.exists(path):
         raise SystemExit(f"no report at {path}; run extract.py && reconcile.py first")
@@ -98,7 +98,7 @@ def loadGenus(genusName):
     @param genusName: Capitalized genus, e.g. "Abelisaurus".
     @returns: Parsed YAML, or None when no file exists.
     """
-    path = os.path.join(data_dir(), "genera", genusName[0].upper(), f"{genusName}.yml")
+    path = os.path.join(find_data_dir(), "genera", genusName[0].upper(), f"{genusName}.yml")
 
     if not os.path.exists(path):
         return None
@@ -136,7 +136,7 @@ def resolvePaper(genus, binomial):
                 keys.append(key)
 
     for key in keys:
-        path = os.path.join(corpus_dir(), "markdown", f"{key}.md")
+        path = os.path.join(find_corpus_dir(), "markdown", f"{key}.md")
 
         if os.path.exists(path):
             return key, io.open(path, encoding="utf-8", errors="replace").read()
@@ -144,8 +144,8 @@ def resolvePaper(genus, binomial):
     return (keys[0] if keys else None), None
 
 
-def digitPattern(value):
-    """Build a punctuation-blind pattern for a catalogue number's digit core.
+def buildDigitPattern(value):
+    """Build a punctuation-blind pattern for a catalog number's digit core.
 
     Institution prefixes vary between sources, so matching on the digits finds
     the specimen whichever code the paper used. Cores under three digits are
@@ -165,7 +165,7 @@ def digitPattern(value):
     return re.compile(rf"(?<![0-9])0*{joined}(?![0-9])")
 
 
-def snippet(value, text, width):
+def quoteAround(value, text, width):
     """Quote the paper around the first occurrence of a value.
 
     @param value: The value to locate.
@@ -173,7 +173,7 @@ def snippet(value, text, width):
     @param width: Characters of context to keep on each side.
     @returns: A collapsed one-line excerpt, or None when not found.
     """
-    pattern = digitPattern(value)
+    pattern = buildDigitPattern(value)
 
     if pattern is None or not text:
         return None
@@ -210,14 +210,14 @@ def render(finding, key, text, width):
 
     lines.append(f"  - paper: `{key or '-'}`" + ("" if text else " · **not held**"))
 
-    ourQuote = next((snippet(value, text, width) for value in finding["ours"]
-                     if snippet(value, text, width)), None)
+    ourQuote = next((quoteAround(value, text, width) for value in finding["ours"]
+                     if quoteAround(value, text, width)), None)
 
     lines.append(f"  - ours in paper: > {ourQuote}" if ourQuote
                  else "  - ours in paper: *not found*")
 
     for value, _ in finding["alternatives"]:
-        quote = snippet(value, text, width)
+        quote = quoteAround(value, text, width)
 
         if quote and quote != ourQuote:
             lines.append(f"  - `{value}` in paper: > {quote}")
@@ -273,10 +273,10 @@ def main():
             output.append("")
             total += 1
 
-    path = os.path.join(audit_dir(), f"checklist-{matched[0]}.md")
+    path = os.path.join(find_audit_dir(), f"checklist-{matched[0]}.md")
     io.open(path, "w", encoding="utf-8").write("\n".join(output))
 
-    print(f"wrote {os.path.relpath(path, data_dir())}")
+    print(f"wrote {os.path.relpath(path, find_data_dir())}")
     print(f"{total} items across {len(matched)} section(s)")
 
 
