@@ -101,7 +101,7 @@ export type IdentifierSources = "zoobank" | "wikidata" | "gbif" | "pbdb" | "eol"
 export type Status = "valid" | "nomen dubium" | "nomen nudum" | "disputed";
 export type Completeness = "complete" | "partial" | "fragmentary";
 export type SpecimenTypes = "holotype" | "syntype" | "lectotype" | "neotype" | "unknown";
-export type HolotypeStatus = "destroyed" | "lost" | "uncatalogued" | "unknown";
+export type HolotypeStatus = "destroyed" | "lost" | "uncataloged" | "unknown";
 export type FormerIdReasons = "renumbered" | "rehoused";
 export type Periods =
   | "Late Triassic"

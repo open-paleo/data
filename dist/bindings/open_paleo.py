@@ -213,7 +213,7 @@ class Completeness(Enum):
 class HolotypeStatus(Enum):
     destroyed = 'destroyed'
     lost = 'lost'
-    uncatalogued = 'uncatalogued'
+    uncataloged = 'uncataloged'
     unknown = 'unknown'
 
 
