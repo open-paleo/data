@@ -34,12 +34,39 @@ jobs:
       - name: Generate dictionary
         run: npm run generate-dictionary
 
+      # Paleocoordinates are reconstructed with pyGPlates before the build
+      # merges them. The model and Natural Earth files are pinned by checksum
+      # in scripts/plate-reconstruction/model.json and cached under that file's hash, so a
+      # build downloads them only when the pins change.
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache plate model files
+        uses: actions/cache@v5
+        with:
+          path: scratch/plate-reconstruction/cache
+          key: plate-reconstruction-${{ hashFiles('scripts/plate-reconstruction/model.json') }}
+
+      - name: Install reconstruction dependencies
+        run: pip install -r scripts/plate-reconstruction/requirements.txt
+
+      - name: Reconstruct paleocoordinates
+        run: |
+          npm run collect-reconstruction-points
+          npm run reconstruct-points
+
+      # Required here, so a missing or out-of-date reconstruction fails the
+      # build instead of publishing a dataset without paleocoordinates.
       - name: Build outputs
+        env:
+          OPEN_PALEO_REQUIRE_PALEOCOORDINATES: "1"
         run: npm run build
 
       # Regenerate the typed bindings only when the JSON Schema they derive
-      # from actually changed, so ordinary data pushes don't pay the Python
-      # setup + generation cost or churn the bindings. Compares the schema at
+      # from actually changed, so ordinary data pushes don't pay the
+      # generation cost or churn the bindings. Compares the schema at
       # the pre-push commit (github.event.before) with the current file;
       # regenerates on any difference, when that commit is unavailable
       # (force-push, first push), or when the bindings are missing.
@@ -57,12 +84,6 @@ jobs:
             [ "$old" = "$new" ] && generate=false
           fi
           echo "generate=$generate" >> "$GITHUB_OUTPUT"
-
-      - name: Setup Python
-        if: steps.bindings.outputs.generate == 'true'
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
 
       - name: Install binding generator
         if: steps.bindings.outputs.generate == 'true'

@@ -11,6 +11,8 @@
     "lint": "eslint scripts/ .github/scripts/",
     "lint:fix": "eslint scripts/ .github/scripts/ --fix",
     "typecheck": "node node_modules/typescript7/bin/tsc --noEmit",
+    "collect-reconstruction-points": "node --experimental-strip-types scripts/collect-reconstruction-points.ts",
+    "reconstruct-points": "python3 scripts/plate-reconstruction/reconstruct-points.py",
     "research": "node --experimental-strip-types scripts/research.ts",
     "report-missing-fields": "node --experimental-strip-types scripts/report-missing-fields.ts",
     "audit-dois": "node --env-file-if-exists=.env --experimental-strip-types scripts/audit-dois.ts",

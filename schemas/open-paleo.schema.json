@@ -31,7 +31,17 @@
         "license": { "type": "string" },
         "attribution": { "type": "string" },
         "genus_count": { "type": "integer", "minimum": 0 },
-        "clade_count": { "type": "integer", "minimum": 0 }
+        "clade_count": { "type": "integer", "minimum": 0 },
+        "paleogeography": {
+          "type": "object",
+          "description": "The plate model behind location.paleocoordinates, with the citation and license to credit it by. Absent when the build attached no paleocoordinates.",
+          "required": ["model", "citation", "license"],
+          "properties": {
+            "model": { "type": "string", "description": "The model's name, as recorded in each paleocoordinates.model." },
+            "citation": { "type": "string" },
+            "license": { "type": "string", "description": "License of the model's data." }
+          }
+        }
       }
     },
     "timescale": {
@@ -294,7 +304,23 @@
           "maxItems": 2,
           "items": { "type": "number" }
         },
+        "paleocoordinates": { "$ref": "#/$defs/paleocoordinates" },
         "notes": { "type": "string", "description": "Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field." }
+      }
+    },
+    "paleocoordinates": {
+      "type": "object",
+      "description": "Where the locality lay at the species' age, reconstructed from its present-day position with the plate model in _metadata.paleogeography. Build-derived. Absent when the record has no age or location, or the model places no plate there. To reconstruct at another age, rotate latitude_present/longitude_present with model_plate_id in the same model.",
+      "required": ["latitude", "longitude", "latitude_present", "longitude_present", "age_ma", "model", "model_plate_id", "approximate"],
+      "properties": {
+        "latitude": { "type": "number", "minimum": -90, "maximum": 90, "description": "Reconstructed latitude in decimal degrees." },
+        "longitude": { "type": "number", "minimum": -180, "maximum": 180, "description": "Reconstructed longitude in decimal degrees." },
+        "latitude_present": { "type": "number", "minimum": -90, "maximum": 90, "description": "Present-day latitude that was reconstructed: location.coordinates, or the center of the region or country when approximate." },
+        "longitude_present": { "type": "number", "minimum": -180, "maximum": 180, "description": "Present-day longitude that was reconstructed." },
+        "age_ma": { "type": "number", "description": "Age reconstructed at, in millions of years: the midpoint of the species' age range (period.from_ma/to_ma, else its stages, else its epochs)." },
+        "model": { "type": "string", "description": "The plate model, as named in _metadata.paleogeography.model." },
+        "model_plate_id": { "type": "integer", "description": "The plate the model assigns the present-day point to. Meaningful only within model." },
+        "approximate": { "type": "boolean", "description": "True when the present-day point is the center of the record's region or country rather than coordinates a source prints for the site." }
       }
     },
     "size": {

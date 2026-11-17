@@ -239,6 +239,16 @@
 
 **Exceptions.** Where a correction would mean choosing which of several printed digits is wrong, the value is not repaired.
 
+## A paleocoordinate is model output, and a region center never becomes a coordinate
+
+*2026-11-17*
+
+**Rule.** `location.paleocoordinates` is computed by the build with one plate model, GOLONKA (Wright and colleagues, 2013), at the midpoint of the species' age range. A record with `location.coordinates` is reconstructed from them; one without is reconstructed from the center of its region or country and marked `approximate`. The center exists only in the output and is never written back as `location.coordinates`. Decides `location.paleocoordinates`.
+
+**Why.** The reconstruction is a published model's result, cited in `_metadata.paleogeography`, not a reading of the specimen's paper, so it carries no claim of its own about the site. A region center is a placeholder good enough to put a dot on a continent at its age, and writing it into the record would make it look like the sourced position the coordinate rule above requires. Mixing models by age would shift continents between epochs, because each model fixes longitude differently.
+
+**Exceptions.** None. A record the model cannot place, because its point falls outside every plate the model defines, gets no paleocoordinates rather than a value from another model.
+
 ## A survey description or an area range is not converted into a point
 
 *2026-08-14*

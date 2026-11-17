@@ -11,9 +11,10 @@ import {
     loadRegionRegistry,
     loadSchema,
     parseYaml,
+    computeMidpointAge,
 } from "./utilities.ts";
 
-import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, StageInfo, Synonym, FormerId } from "./types.ts";
+import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, Paleocoordinates, StageInfo, Synonym, FormerId } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -140,6 +141,27 @@ type DatasetMetadata = {
      * Total number of clades in the build.
      */
     clade_count: number;
+
+    /**
+     * The plate model behind `location.paleocoordinates`, with the citation
+     * and license to credit it by. Absent when the build attached none.
+     */
+    paleogeography?: {
+        /**
+         * The model's name, as recorded on each point.
+         */
+        model: string;
+
+        /**
+         * The citation the model's authors ask for.
+         */
+        citation: string;
+
+        /**
+         * License of the model's data.
+         */
+        license: string;
+    };
 };
 
 /**
@@ -525,6 +547,144 @@ function deriveStageAges(
 deriveStageAges(genera, stageTable);
 
 /**
+ * The plate model description shared with scripts/plate-reconstruction/reconstruct-points.py.
+ */
+type PlateModel = {
+    /**
+     * The model's name, as recorded on each point.
+     */
+    model: string;
+
+    /**
+     * The citation the model's authors ask for.
+     */
+    citation: string;
+
+    /**
+     * SPDX-style license identifier of the model's data.
+     */
+    license: string;
+};
+
+/**
+ * One reconstructed locality in scratch/plate-reconstruction/paleocoordinates.json, with the
+ * inputs it was computed from.
+ */
+type ReconstructedPoint = Paleocoordinates & {
+    /**
+     * The ISO 3166-2 code whose center was reconstructed, if any.
+     */
+    region?: string;
+
+    /**
+     * The country code whose center was reconstructed, if any.
+     */
+    country?: string;
+};
+
+/**
+ * Attaches the reconstructed positions in scratch/plate-reconstruction/paleocoordinates.json
+ * (written by `npm run collect-reconstruction-points` and scripts/plate-reconstruction/reconstruct-points.py) as
+ * `location.paleocoordinates`.
+ *
+ * A result is used only while the inputs it was computed from still match the
+ * record -- the age, and the coordinates or the region or country whose center
+ * stood in for them -- so an edit made since the reconstruction ran leaves the
+ * field off rather than publishing a position for the old values. With
+ * OPEN_PALEO_REQUIRE_PALEOCOORDINATES set, as in CI, a missing file or a stale
+ * result fails the build instead.
+ *
+ * @param generaMap - The processed genera map.
+ * @param stages - The stage table keyed by stage name.
+ * @returns The model description when results were attached, else undefined.
+ */
+function attachPaleocoordinates(
+    generaMap: Record<string, ProcessedGenus>,
+    stages: Record<string, StageInfo>,
+): PlateModel | undefined
+{
+    const required = process.env.OPEN_PALEO_REQUIRE_PALEOCOORDINATES !== undefined;
+    const resultsPath = path.join(root, "scratch", "plate-reconstruction", "paleocoordinates.json");
+
+    if (!fs.existsSync(resultsPath))
+    {
+        const notice = "No scratch/plate-reconstruction/paleocoordinates.json: paleocoordinates left out. Run npm run collect-reconstruction-points and npm run reconstruct-points to add them.";
+
+        if (required)
+        {
+            throw new Error(notice);
+        }
+
+        console.log(notice);
+        return undefined;
+    }
+
+    const model = JSON.parse(fs.readFileSync(path.join(root, "scripts", "plate-reconstruction", "model.json"), "utf8")) as PlateModel;
+    const results = (JSON.parse(fs.readFileSync(resultsPath, "utf8")) as { results: Record<string, ReconstructedPoint> }).results;
+    const stale = new Array<string>();
+    let attached = 0;
+
+    for (const genus of Object.values(generaMap))
+    {
+        for (const species of genus.species ?? [ ])
+        {
+            const id = `${genus.genus}|${species.name}`;
+            const result = results[id];
+            const location = species.location;
+
+            if (!result || !location)
+            {
+                continue;
+            }
+
+            const coordinates = location.coordinates;
+            const inputsMatch = result.model === model.model
+                && result.age_ma === computeMidpointAge(species.period, stages)
+                && (coordinates
+                    ? !result.approximate && result.latitude_present === coordinates[0] && result.longitude_present === coordinates[1]
+                    : result.approximate && (result.region ?? undefined) === (location.region_code ?? location.region)
+                        && (result.region || result.country === location.country));
+
+            if (!inputsMatch)
+            {
+                stale.push(id);
+                continue;
+            }
+
+            location.paleocoordinates = {
+                latitude: result.latitude,
+                longitude: result.longitude,
+                latitude_present: result.latitude_present,
+                longitude_present: result.longitude_present,
+                age_ma: result.age_ma,
+                model: result.model,
+                model_plate_id: result.model_plate_id,
+                approximate: result.approximate,
+            };
+            attached++;
+        }
+    }
+
+    console.log(`Paleocoordinates: ${attached} attached (${model.model}).`);
+
+    if (stale.length > 0)
+    {
+        const notice = `Paleocoordinates out of date for ${stale.length}, left out: ${stale.join(", ")}`;
+
+        if (required)
+        {
+            throw new Error(notice);
+        }
+
+        console.log(notice);
+    }
+
+    return model;
+}
+
+const plateModel = attachPaleocoordinates(genera, stageTable);
+
+/**
  * Derives the denormalized author/year onto each species (and the genus) from
  * the `erected_in` reference, for consumers of the built dataset. Source YAML
  * carries only the reference pointer (issue #1886); the human-readable
@@ -618,7 +778,10 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "3.4.0",
+        ...(plateModel
+            ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
+            : { }),
+        schema_version: "3.5.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

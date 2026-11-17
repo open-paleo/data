@@ -150,6 +150,14 @@ below.
   notable specimen. A type specimen is never also listed among a genus's
   `notable_specimens`, and validation now rejects one that is. Output
   schema 3.3.0 → 3.4.0.
+- `paleocoordinates` on `species[].location`: where the locality lay at the
+  species' age, reconstructed with the GOLONKA plate model (Wright and
+  colleagues, 2013), with the present-day point reconstructed, the age, the
+  model and the model's plate ID, so a consumer can reconstruct the same
+  point at another age. Records without coordinates are placed at the
+  center of their region or country and flagged `approximate`. The model's
+  citation and license are in `_metadata.paleogeography`. Build-derived;
+  the source YAML is unchanged. Output schema 3.4.0 → 3.5.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

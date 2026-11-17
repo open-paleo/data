@@ -6,6 +6,7 @@ import type {
     FlaggedSources,
     GenusData,
     InstitutionEntry,
+    Period,
     Reference,
     Schema,
     Species,
@@ -1521,6 +1522,41 @@ export function pickRepresentativeSpecies(genus: GenusData): Species | null
 export function loadSchema(dataRoot: string): Schema
 {
     return parseYaml<Schema>(path.join(dataRoot, "schema.yml"));
+}
+
+/**
+ * The age a species' locality is reconstructed at: the midpoint of its age
+ * range. The range is the record's own `from_ma`/`to_ma` where it states
+ * them, else the span of its stages, else the span of its epochs, read
+ * against the stage table.
+ *
+ * @param period - The species' period block.
+ * @param stages - The schema's stage table.
+ * @returns The midpoint in millions of years, rounded to 0.01, or undefined
+ * when nothing in the record resolves to an age.
+ */
+export function computeMidpointAge(period: Period | undefined, stages: Record<string, StageInfo>): number | undefined
+{
+    const stageNames = period?.stage ?? [ ];
+    const epochNames = new Set(period?.name ?? [ ]);
+    let spanned = stageNames
+        .map((stageName) => stages[stageName])
+        .filter((info): info is StageInfo => info !== undefined);
+
+    if (spanned.length === 0)
+    {
+        spanned = Object.values(stages).filter((info) => epochNames.has(info.period));
+    }
+
+    const fromMa = period?.from_ma ?? (spanned.length > 0 ? Math.max(...spanned.map((info) => info.from_ma)) : undefined);
+    const toMa = period?.to_ma ?? (spanned.length > 0 ? Math.min(...spanned.map((info) => info.to_ma)) : undefined);
+
+    if (fromMa === undefined || toMa === undefined)
+    {
+        return undefined;
+    }
+
+    return Math.round(((fromMa + toMa) / 2) * 100) / 100;
 }
 
 /**

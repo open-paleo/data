@@ -386,6 +386,13 @@ export type Location = {
     coordinates?: [number, number];
 
     /**
+     * Where the locality lay at the species' age, reconstructed with a plate
+     * model. Build-derived: present in the output only, never written in the
+     * source YAML.
+     */
+    paleocoordinates?: Paleocoordinates;
+
+    /**
      * Why the fields above are what they are, where a reader would otherwise
      * take them for a recorded observation. Reserved for provenance caveats:
      * material that was not collected in situ, a locality reconstructed after
@@ -394,6 +401,56 @@ export type Location = {
      * `description` and `dispute`.
      */
     notes?: string;
+};
+
+/**
+ * A locality's position at the species' age, reconstructed from its
+ * present-day position with a plate model.
+ */
+export type Paleocoordinates = {
+    /**
+     * Reconstructed latitude in decimal degrees.
+     */
+    latitude: number;
+
+    /**
+     * Reconstructed longitude in decimal degrees.
+     */
+    longitude: number;
+
+    /**
+     * Present-day latitude that was reconstructed: the record's coordinates,
+     * or the center of its region or country when `approximate`.
+     */
+    latitude_present: number;
+
+    /**
+     * Present-day longitude that was reconstructed.
+     */
+    longitude_present: number;
+
+    /**
+     * The age reconstructed at, in millions of years: the midpoint of the
+     * species' age range.
+     */
+    age_ma: number;
+
+    /**
+     * The plate model used, as named in `_metadata.paleogeography`.
+     */
+    model: string;
+
+    /**
+     * The plate the model assigns the present-day point to. Meaningful only
+     * within `model`.
+     */
+    model_plate_id: number;
+
+    /**
+     * True when the present-day point is the center of the record's region or
+     * country rather than coordinates a source prints for the site.
+     */
+    approximate: boolean;
 };
 
 /**

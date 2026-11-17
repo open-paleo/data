@@ -32,7 +32,9 @@ Run each script with `npm run <command>`; pass arguments after `--`. Scripts tha
 | Script                   | Command               | Purpose |
 | ------------------------ | --------------------- | ------- |
 | `validate.ts`            | `validate`            | Validate all YAML data against schema and tree; the checks live in one module per family under `validate/` |
-| `build.ts`               | `build`               | Produce output files in `dist/` |
+| `build.ts`               | `build`               | Produce output files in `dist/`; attaches paleocoordinates when `scratch/plate-reconstruction/paleocoordinates.json` is current |
+| `collect-reconstruction-points.ts` | `collect-reconstruction-points` | Write each species' present-day point (or region or country) and age to `scratch/plate-reconstruction/points.json` |
+| `plate-reconstruction/reconstruct-points.py` | `reconstruct-points` | Reconstruct those points with pyGPlates and the model in `plate-reconstruction/model.json` into `scratch/plate-reconstruction/paleocoordinates.json`; needs `pip install -r scripts/plate-reconstruction/requirements.txt` |
 | —                        | `generate-bindings`   | Regenerate the TypeScript and Python bindings in `dist/bindings/` from the JSON Schema |
 | `generate-dictionary.ts` | `generate-dictionary` | Generate the spell-check dictionary `dictionaries/taxonomy.txt` |
 | `spellcheck.ts`          | `spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md`; exits 1 on any unknown word, and runs on pull requests |
