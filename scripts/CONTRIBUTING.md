@@ -99,6 +99,8 @@ All code — TypeScript (`scripts/`) and CommonJS workflow scripts (`.github/scr
 
 - **camelCase** for all identifiers (variables, functions, parameters) — no `SCREAMING_SNAKE_CASE` constants
 - **PascalCase** for types
+- **Function names start with a verb** — `findResearchFile`, `escapeBibText`, `countBigrams`, not `researchFileFor`, `bibText`, `bigramCounts`. A function returning a boolean reads as a question: `isCitationOfId`, `looksLikeCatalogNumber`. Python helpers follow the same rule in their own case style (`find_data_dir`)
+- **American spelling** in identifiers and comments, as in the data — `summarize`, `capitalize`, `catalog`, `meters`, not `summarise`, `capitalise`, `catalogue`, `metres`
 - **No leading or trailing underscores** — use descriptive names instead (e.g., `scriptDir` not `__dirname`)
 - Single `_` is allowed only for unused callback parameters
 - **No abbreviated variable names** — write out full words. Use `button` not `btn`, `element` not `el`, `option` not `opt`, `value` not `val`, `error` not `err`, `reference` not `ref`, `index` not `idx`, `message` not `msg`, `event` not `evt`, `response` not `res`, `checkbox` not `cb`, `condition` not `cond`, `initialize` not `init`. This applies to all variables, parameters, and loop iterators — including short callbacks (e.g., `.map((option) => ...)` not `.map((o) => ...)`)

@@ -13,6 +13,12 @@ Key rules that are easy to miss:
   including single-statement `if` bodies (no braceless one-liners)
 - **Multi-line JSDoc** on all functions with `@param` and `@returns` tags
 - **camelCase only** — no `SCREAMING_SNAKE_CASE` constants
+- **Function names start with a verb** — `findResearchFile` not
+  `researchFileFor`, `escapeBibText` not `bibText`; a boolean function
+  reads as a question (`isCitationOfId`)
+- **American spelling in code** — identifiers and comments too:
+  `summarize`, `capitalize`, `catalog`, not `summarise`, `capitalise`,
+  `catalogue`
 - **`??` over `||`** for fallback values (nullish coalescing)
 - **No abbreviated variable names** — `button` not `btn`, `element` not
   `el`, `option` not `opt`, `value` not `val`, `initialize` not `init`,
