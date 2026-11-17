@@ -192,7 +192,7 @@ export type NotableSpecimen = {
     /**
      * Institution or collection housing the specimen, as a key in
      * institutions.yaml. Required when `specimen_id` is present unless `status`
-     * records the specimen as lost/destroyed/uncatalogued; when set on a
+     * records the specimen as lost/destroyed/uncataloged; when set on a
      * no-longer-intact specimen it records the last-known repository.
      */
     institution?: string;
@@ -200,7 +200,7 @@ export type NotableSpecimen = {
     /**
      * Physical state when the specimen is no longer intact at the recorded
      * institution. Allowed values come from `schema.yml` under `holotype_status`
-     * ("destroyed", "lost", "uncatalogued", "unknown").
+     * ("destroyed", "lost", "uncataloged", "unknown").
      */
     status?: string;
 

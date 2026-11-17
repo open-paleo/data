@@ -781,7 +781,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "3.5.0",
+        schema_version: "4.0.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

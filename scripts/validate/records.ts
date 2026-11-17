@@ -1227,7 +1227,7 @@ export function checkTypeSpecimenConsistency(context: ValidationContext): void
                     checkError(
                         "Type specimen consistency",
                         filePath,
-                        `species '${speciesLabel}': type specimen present but missing 'specimen_id' (must be a non-empty array of catalog numbers, or set 'status' to lost/destroyed/unknown)`);
+                        `species '${speciesLabel}': type specimen present but missing 'specimen_id' (must be a non-empty array of catalog numbers, or set 'status' to lost/destroyed/uncataloged/unknown)`);
                 }
             }
             else
@@ -1561,13 +1561,13 @@ export function checkNotableSpecimens(context: ValidationContext): void
                     `notable_specimens '${label}': invalid status '${specimen.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
             }
 
-            // A cataloged specimen needs a home unless it is lost/destroyed/uncatalogued.
+            // A cataloged specimen needs a home unless it is lost/destroyed/uncataloged.
             if (hasSpecimenId && !specimen.institution && !hasValidStatus)
             {
                 checkError(
                     "Notable specimens",
                     filePath,
-                    `notable_specimens '${label}': has specimen_id but no 'institution' (set institution, or 'status' for lost/destroyed/uncatalogued)`);
+                    `notable_specimens '${label}': has specimen_id but no 'institution' (set institution, or 'status' for lost/destroyed/uncataloged)`);
             }
 
             if (specimen.institution && !allowedInstitutionKeys.has(specimen.institution))

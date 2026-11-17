@@ -193,6 +193,11 @@ below.
   `<surname><year><letter>`. Removed the unused `media`, `image_types` and
   institution `campus` fields, and migrated all clade authorities to
   `erected_in`.
+- **Breaking:** the `holotype_status` value `uncatalogued` is renamed
+  `uncataloged`, matching the American spelling used throughout the
+  dataset. A consumer that tests for the old value must test for the new
+  one; the old value is no longer emitted or accepted. Output schema
+  3.5.0 → 4.0.0.
 
 ### Removed
 - `dispute.history`, the dated log on genus and clade `dispute` blocks. Its
