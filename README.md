@@ -109,7 +109,6 @@ open-paleo/
   stratigraphy/             # Registry of lithostratigraphic units (stratigraphy/<letter>/<unit>.yml)
   research/                 # Research notes: the reasoning behind record values
   schemas/                  # JSON Schema source describing the built dataset
-  media/                    # Planned: images (specimen photos, reconstructions, skeletal diagrams)
   dist/                     # Built outputs (JSON, YAML, JSON Schema, Newick, NEXUS, BibTeX; typed bindings under dist/bindings/)
   docs/                     # Versioning and stability policy
   scripts/                  # Validation, build, and automation scripts
@@ -299,7 +298,7 @@ Open Paleo uses AI and LLM tools (currently Claude, by Anthropic) as research an
 
 Commits made with LLM assistance say so in a `Co-Authored-By` trailer, so the history shows which changes were drafted with a tool.
 
-**AI-generated art is not accepted.** Extracted text can be checked against the paper it came from; a life reconstruction is interpretive work by an artist, and there is no source to check it against. Open Paleo values the skill, scientific knowledge, and judgment that paleo-artists bring to that work, and does not accept AI-generated, AI-assisted, or AI-upscaled images. See [Image Requirements](CONTRIBUTING.md#image-requirements) for details.
+**AI-generated art is not accepted.** Images live in [open-paleo/media](https://github.com/open-paleo/media), whose [image requirements](https://github.com/open-paleo/media/blob/main/CONTRIBUTING.md#image-requirements) exclude AI-generated, AI-assisted and AI-upscaled images.
 
 ## License
 

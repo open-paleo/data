@@ -189,7 +189,7 @@ paper that named it, whichever genus it now sits in.
 
 ## Contribution Quality Standards
 
-- **One change per issue/PR.** Add one genus, correct one taxonomy, upload one image. This keeps review manageable and git history clean. Batch contributions (e.g., "add 50 genera") should be discussed in an issue first.
+- **One change per issue/PR.** Add one genus, correct one taxonomy. This keeps review manageable and git history clean. Batch contributions (e.g., "add 50 genera") should be discussed in an issue first.
 - **Fill in as much as you can.** The more complete a contribution (description, location, formation, references), the more useful it is. Partial contributions are accepted — someone else can fill in the gaps later — but do not submit empty shells.
 - **Write for a general audience.** Descriptions should be accessible to an interested non-specialist. Avoid unexplained jargon. Technical diagnostic features belong in the `diagnostic_features` field, not the description.
 - **American English.** All editorial prose — `description`, `etymology`,
@@ -617,22 +617,6 @@ epochs or stages fall outside its unit's. Where the record's unit has no
 bed or member lies inside its parent even when no source dates the child
 itself. A child whose parent is dated to a single stage takes that stage
 (`research/methods.md`, "A child of a single-stage parent takes that stage").
-
-## Image Requirements
-
-Images of genera (specimen photos, life reconstructions and skeletal diagrams) are in scope for Open Paleo, but the dataset does not carry them yet: there is no image field and no `media/` directory. The policy below applies once image support lands, and stands now so that contributors can prepare work that meets it.
-
-> **AI-generated art is not accepted.** Open Paleo values the skill and
-> scientific knowledge that paleo-artists bring to life reconstructions.
-> AI-generated, AI-assisted, or AI-upscaled images do not meet our
-> standards. Submissions suspected of using AI-generated imagery may be
-> declined at the maintainers' discretion, even if not conclusively
-> proven. If you are unsure whether your workflow qualifies, ask before
-> submitting.
-
-- **You must hold the copyright, or the image must be public domain / CC0.** All images submitted to Open Paleo are licensed under CC BY 4.0, and submitting one attests that you have the right to license it.
-- **No watermarked or heavily manipulated images.** Specimen photos should be unmodified. Life reconstructions should be clearly labeled as such.
-- **Credit the creator.** Every image names its photographer, artist, or institution accurately.
 
 ## Process
 
