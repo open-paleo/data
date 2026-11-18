@@ -1532,8 +1532,8 @@ export function loadSchema(dataRoot: string): Schema
  *
  * @param period - The species' period block.
  * @param stages - The schema's stage table.
- * @returns The midpoint in millions of years, rounded to 0.01, or undefined
- * when nothing in the record resolves to an age.
+ * @returns The midpoint in millions of years, rounded to 0.000001 (one
+ * year), or undefined when nothing in the record resolves to an age.
  */
 export function computeMidpointAge(period: Period | undefined, stages: Record<string, StageInfo>): number | undefined
 {
@@ -1556,7 +1556,10 @@ export function computeMidpointAge(period: Period | undefined, stages: Record<st
         return undefined;
     }
 
-    return Math.round(((fromMa + toMa) / 2) * 100) / 100;
+    // To the year: enough to clear the noise averaging leaves (148.95000000000002)
+    // without coarsening a recent age, and never small enough for JSON to
+    // write it in exponent form.
+    return Math.round(((fromMa + toMa) / 2) * 1e6) / 1e6;
 }
 
 /**
