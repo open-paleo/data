@@ -158,6 +158,13 @@ below.
   center of their region or country and flagged `approximate`. The model's
   citation and license are in `_metadata.paleogeography`. Build-derived;
   the source YAML is unchanged. Output schema 3.4.0 → 3.5.0.
+- `stratigraphy` at the top level of the output: the stratigraphic
+  registry, keyed by unit name, with each unit's rank, containing unit,
+  alternate names, informal flag, live dispute and references, and its age
+  in the same shape as a species' `period`. Beds are entries of their own
+  with their containing unit as `parent`, so every `group`, `formation`,
+  `member` and `bed` a species' location names is a key. Output schema
+  4.0.0 → 4.1.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

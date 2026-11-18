@@ -10,11 +10,12 @@ import {
     loadInstitutionRegistry,
     loadRegionRegistry,
     loadSchema,
+    loadStratigraphyRegistry,
     parseYaml,
     computeMidpointAge,
 } from "./utilities.ts";
 
-import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, Paleocoordinates, StageInfo, Synonym, FormerId } from "./types.ts";
+import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, Paleocoordinates, Period, StageInfo, StratigraphicBed, StratigraphicUnit, Synonym, FormerId } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -207,6 +208,11 @@ type Dataset = {
      * Processed genus records keyed by genus name.
      */
     genera: Record<string, ProcessedGenus>;
+
+    /**
+     * Stratigraphic units keyed by name, beds included.
+     */
+    stratigraphy: Record<string, PublishedUnit>;
 };
 
 /**
@@ -763,6 +769,120 @@ for (const file of findYamlFiles(path.join(root, "clades")))
     }
 }
 
+/**
+ * A stratigraphic unit as published: the registry entry with its age in the
+ * same shape as a species' `period` and its references inflated.
+ */
+type PublishedUnit = {
+    /**
+     * The unit's rank; absent for an informal label that has none.
+     */
+    rank?: string;
+
+    /**
+     * True for a unit that was never formally erected.
+     */
+    informal?: boolean;
+
+    /**
+     * The unit this one lies within: a member's formation, a bed's unit.
+     */
+    parent?: string;
+
+    /**
+     * Other names the literature gives the unit.
+     */
+    variants?: Array<string>;
+
+    /**
+     * The unit's age: its epochs, its stages, and the boundary ages those
+     * stages span.
+     */
+    period: Period;
+
+    /**
+     * A live dispute about the unit.
+     */
+    dispute?: Dispute;
+
+    /**
+     * The works the unit's values come from.
+     */
+    references: Array<Reference>;
+};
+
+/**
+ * Builds the published form of one registry entry.
+ *
+ * @param entry - The registry unit or bed.
+ * @param rank - The unit's rank, if it has one.
+ * @param parent - The unit containing it, if any.
+ * @param stages - The stage table keyed by stage name.
+ * @returns The unit as it appears in the output.
+ */
+function publishUnit(
+    entry: StratigraphicUnit | StratigraphicBed,
+    rank: string | undefined,
+    parent: string | undefined,
+    stages: Record<string, StageInfo>,
+): PublishedUnit
+{
+    const stageNames = entry.stages ?? [ ];
+    const spanned = stageNames
+        .map((stageName) => stages[stageName])
+        .filter((info): info is StageInfo => info !== undefined);
+    const period: Period = { name: entry.period };
+
+    if (stageNames.length > 0)
+    {
+        period.stage = stageNames;
+    }
+
+    if (spanned.length > 0)
+    {
+        period.from_ma = Math.max(...spanned.map((info) => info.from_ma));
+        period.to_ma = Math.min(...spanned.map((info) => info.to_ma));
+    }
+
+    return {
+        ...(rank ? { rank } : { }),
+        ...(entry.informal ? { informal: true } : { }),
+        ...(parent ? { parent } : { }),
+        ...(entry.variants?.length ? { variants: entry.variants } : { }),
+        period,
+        ...(entry.dispute ? { dispute: entry.dispute } : { }),
+        references: inflateReferences(entry.references),
+    };
+}
+
+/**
+ * Publishes the stratigraphic registry keyed by unit name, each bed as an
+ * entry of its own with its containing unit as `parent`, so that any of a
+ * location's `group`, `formation`, `member` and `bed` values looks up the
+ * same way.
+ *
+ * @param stages - The stage table keyed by stage name.
+ * @returns The units in name order.
+ */
+function publishStratigraphy(stages: Record<string, StageInfo>): Record<string, PublishedUnit>
+{
+    const published: Array<[string, PublishedUnit]> = [ ];
+
+    for (const unit of Object.values(loadStratigraphyRegistry(root).units))
+    {
+        published.push([unit.name, publishUnit(unit, unit.rank, unit.parent, stages)]);
+
+        for (const bed of unit.beds ?? [ ])
+        {
+            published.push([bed.name, publishUnit(bed, "bed", unit.name, stages)]);
+        }
+    }
+
+    return Object.fromEntries(published.sort(([first], [second]) => first.localeCompare(second)));
+}
+
+const stratigraphy = publishStratigraphy(stageTable);
+
 if (!fs.existsSync(dist))
 {
     fs.mkdirSync(dist, { recursive: true });
@@ -781,7 +901,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "4.0.0",
+        schema_version: "4.1.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both
@@ -793,6 +913,7 @@ const dataset: Dataset = {
     tree,
     clades,
     genera,
+    stratigraphy,
 };
 
 fs.writeFileSync(
