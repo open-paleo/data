@@ -127,6 +127,15 @@ class PartOf(Enum):
     bed = 'bed'
 
 
+class Rank(Enum):
+    supergroup = 'supergroup'
+    group = 'group'
+    subgroup = 'subgroup'
+    formation = 'formation'
+    member = 'member'
+    bed = 'bed'
+
+
 class Paleocoordinates(BaseModel):
     latitude: confloat(ge=-90.0, le=90.0) = Field(
         ..., description='Reconstructed latitude in decimal degrees.'
@@ -568,6 +577,26 @@ class Location(BaseModel):
     )
 
 
+class StratigraphicUnit(BaseModel):
+    rank: Optional[Rank] = Field(
+        None, description="The unit's rank. Absent for an informal label that has none."
+    )
+    informal: Optional[bool] = Field(
+        None,
+        description='True for a unit that was never formally erected but is widely used.',
+    )
+    parent: Optional[str] = Field(
+        None,
+        description="Name of the unit this one lies within (a member's formation, a bed's unit); a key of stratigraphy.",
+    )
+    variants: Optional[List[str]] = Field(
+        None, description='Other names the literature gives the unit.'
+    )
+    period: Period
+    dispute: Optional[Dispute] = None
+    references: List[Reference]
+
+
 class Size(BaseModel):
     length_m: Optional[SizeRange] = None
     weight_kg: Optional[SizeRange] = None
@@ -682,4 +711,8 @@ class OpenPaleoDataset(BaseModel):
     )
     genera: Dict[str, Genus] = Field(
         ..., description='Processed genus records keyed by genus name.'
+    )
+    stratigraphy: Optional[Dict[str, StratigraphicUnit]] = Field(
+        None,
+        description="Stratigraphic units keyed by name, beds included as entries of their own. Every group, formation, member and bed named in a species' location is a key here.",
     )

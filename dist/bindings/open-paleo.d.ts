@@ -205,6 +205,12 @@ export interface OpenPaleoDataset {
   genera: {
     [k: string]: Genus;
   };
+  /**
+   * Stratigraphic units keyed by name, beds included as entries of their own. Every group, formation, member and bed named in a species' location is a key here.
+   */
+  stratigraphy?: {
+    [k: string]: StratigraphicUnit;
+  };
   [k: string]: unknown;
 }
 export interface Metadata {
@@ -664,5 +670,30 @@ export interface IcznCase {
    */
   notices?: string[];
   notes?: string;
+  [k: string]: unknown;
+}
+/**
+ * A stratigraphic unit or bed. Its period has the same shape as a species' period: its epochs, its stages, and from_ma/to_ma spanning those stages.
+ */
+export interface StratigraphicUnit {
+  /**
+   * The unit's rank. Absent for an informal label that has none.
+   */
+  rank?: "supergroup" | "group" | "subgroup" | "formation" | "member" | "bed";
+  /**
+   * True for a unit that was never formally erected but is widely used.
+   */
+  informal?: boolean;
+  /**
+   * Name of the unit this one lies within (a member's formation, a bed's unit); a key of stratigraphy.
+   */
+  parent?: string;
+  /**
+   * Other names the literature gives the unit.
+   */
+  variants?: string[];
+  period: Period;
+  dispute?: Dispute;
+  references: Reference[];
   [k: string]: unknown;
 }
