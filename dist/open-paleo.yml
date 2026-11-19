@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-11-18T23:18:06.123Z
+  built_at: 2026-11-19T23:32:54.316Z
   clade_count: 188
   genus_count: 1429
   license: CC-BY-4.0
@@ -8,7 +8,7 @@ _metadata:
     model: GOLONKA
     citation: "Wright, N.; Zahirovic, S.; Müller, R. D.; Seton, M. (2013). Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10(3): 1529-1541. doi:10.5194/bg-10-1529-2013"
     license: CC-BY-3.0-AU
-  schema_version: 4.1.0
+  schema_version: 4.2.0
   version: "2026.11"
 timescale:
   chart: ICS International Chronostratigraphic Chart v2024/12
@@ -212833,6 +212833,10 @@ stratigraphy:
           Places it in section and gives the later reading: "Allison Member, Menefee Formation, approximately 120 meters below the overlying Cliff House Sandstone; middle Campanian".
   Altmühltal:
     rank: formation
+    variants:
+      - Solnhofen Lithographic Limestone
+      - Solnhofen Limestone
+      - Solnhofen Formation
     period:
       name:
         - Late Jurassic
@@ -212852,7 +212856,7 @@ stratigraphy:
         pages: 17-43
         doi: 10.3897/fr.28.131671
         notes: |
-          Gives the age and the position in the Bavarian succession: Archaeopteryx "is only known from the lower Tithonian of Bavaria, Germany, with nine out of eleven specimens ... unearthed from the Altmühltal Formation", the Mörnsheim Formation overlies it, and the Painten Formation below it reaches the Kimmeridgian-Tithonian boundary.
+          Gives the age and the position in the Bavarian succession: Archaeopteryx "is only known from the lower Tithonian of Bavaria, Germany, with nine out of eleven specimens ... unearthed from the Altmühltal Formation", the Mörnsheim Formation overlies it, and the Painten Formation below it reaches the Kimmeridgian-Tithonian boundary. The "Solnhofen limestone" sensu stricto "is part of the Altmühltal Formation and restricted to the area northwest of Ingolstadt, whereas the contemporaneous plattenkalks more to the east belong to the Painten Formation".
       - id: ding2020a
         authors: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X.
         year: 2020
@@ -212863,7 +212867,7 @@ stratigraphy:
         publisher: American Museum of Natural History, New York
         pages: 117-157
         notes: |
-          Equates the formation with the traditional name, tabulating Archaeopteryx horizons as "Solnhofen Limestone (Altmühltal Formation)" and dating them 152.1 to 148 Ma. Entered under both names, since both are in use.
+          Equates the formation with the traditional name, tabulating Archaeopteryx horizons as "Solnhofen Limestone (Altmühltal Formation)" and dating them 152.1 to 148 Ma.
       - id: pittman2020c
         authors: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X.
         year: 2020
@@ -212884,7 +212888,7 @@ stratigraphy:
         pages: 5-72
         doi: 10.1127/sdgg/83/2014/5
         notes: |
-          Gives the formation as "Upper Kimmeridgian, Lower Tithonian", by ammonites "the uppermost Upper Kimmeridgian (uppermost beckeri zone) to lower Lower Tithonian (middle hybonotum zone)", and after Schweigert (2007) holds that "the plate limestones of Solnhofen, Eichstätt, and Pfalzpaint ... are not contemporaneous". "40-90 m at Solnhofen".
+          Erects the formation for "the typical lithographic plattenkalks of the western Southern Franconian Alb, which formerly has been termed 'Solnhofener Schichten'". Gives it as "Upper Kimmeridgian, Lower Tithonian", by ammonites "the uppermost Upper Kimmeridgian (uppermost beckeri zone) to lower Lower Tithonian (middle hybonotum zone)", and after Schweigert (2007) holds that "the plate limestones of Solnhofen, Eichstätt, and Pfalzpaint ... are not contemporaneous". "40-90 m at Solnhofen".
       - id: schweigert2007a
         authors: Schweigert, G.
         year: 2007
@@ -239848,84 +239852,6 @@ stratigraphy:
         doi: 10.1144/gsjgs.146.3.0539
         notes: |
           Cited by Schneider and colleagues (2009) for the Praia Azul member at Santa Cruz, which includes the Sobral.
-  Solnhofen Lithographic Limestone:
-    rank: formation
-    variants:
-      - Altmühltal
-      - Solnhofen Limestone
-      - Solnhofen Formation
-    period:
-      name:
-        - Late Jurassic
-      stage:
-        - Kimmeridgian
-        - Tithonian
-      from_ma: 154.8
-      to_ma: 143.1
-    references:
-      - id: chen1998a
-        authors: Chen, P.; Dong, Z.; Zhen, S.
-        year: 1998
-        title: An exceptionally well-preserved theropod dinosaur from the Yixian Formation of China
-        journal: Nature
-        volume: "391"
-        pages: 147-152
-        doi: 10.1038/34356
-        notes: |
-          Dates it "(Early Tithonian)" while comparing the Chinese bird-bearing beds against it.
-      - id: chiappe2010a
-        authors: Chiappe, L. M.; Göhlich, U. B.
-        year: 2010
-        title: "Anatomy of Juravenator starki (Theropoda: Coelurosauria) from the Late Jurassic of Germany"
-        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
-        volume: "258"
-        issue: "3"
-        pages: 257-296
-        doi: 10.1127/0077-7749/2010/0125
-        notes: |
-          Gives the German name alongside, "the Solnhofen Lithographic Limestones (Solnhofener Plattenkalk)", and places the Stark Quarry top limestones, uppermost Kimmeridgian, slightly older than them.
-      - id: holtz2004a
-        authors: Holtz, T. R.; Molnar, R. E.; Currie, P. J.
-        year: 2004
-        title: Basal Tetanurae
-        book: The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)
-        publisher: University of California Press, Berkeley
-        pages: 71-110
-        notes: |
-          A reference work, hedging between two stages for the Compsognathus type horizon, "the Kimmeridgian or basal Tithonian Solnhofen Lithographic Limestone of Jachenhausen".
-      - id: pittman2020c
-        authors: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X.
-        year: 2020
-        title: The fossil record of Mesozoic and Paleocene pennaraptorans
-        book: "Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)"
-        series: Bulletin of the American Museum of Natural History
-        volume: "440"
-        publisher: American Museum of Natural History, New York
-        pages: 37-95
-        notes: |
-          Tabulates the unit as "Late Jurassic", "Tithonian".
-      - id: ding2020a
-        authors: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X.
-        year: 2020
-        title: The biogeography of coelurosaurian theropods and its impact on their evolutionary history
-        book: "Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)"
-        series: Bulletin of the American Museum of Natural History
-        volume: "440"
-        publisher: American Museum of Natural History, New York
-        pages: 117-157
-        notes: |
-          Equates the traditional name with the Altmühltal Formation, which is entered separately under that name, as "Solnhofen Limestone (Altmühltal Formation)".
-      - id: foth2025a
-        authors: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E.
-        year: 2025
-        title: A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic)
-        journal: Fossil Record
-        volume: "28"
-        issue: "1"
-        pages: 17-43
-        doi: 10.3897/fr.28.131671
-        notes: |
-          Dates the southern Franconian "partially laminated, partially silty limestones of late Kimmeridgian to early Tithonian age, commonly referred to as the 'Solnhofen limestone'", and states that the base of the Altmühltal Formation, which holds the Solnhofen limestone sensu stricto, "begins with the latest Kimmeridgian".
   St. Mary River:
     rank: formation
     period:

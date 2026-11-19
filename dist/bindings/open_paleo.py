@@ -639,6 +639,7 @@ class Species(BaseModel):
     type_species: Optional[bool] = None
     completeness: Optional[Completeness] = None
     etymology: Optional[str] = None
+    pronunciation: Optional[Pronunciation] = None
     type_specimen: Optional[TypeSpecimen] = None
     period: Period
     location: Optional[Location] = None

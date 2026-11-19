@@ -402,6 +402,9 @@ export interface Genus {
   erected_in?: string;
   [k: string]: unknown;
 }
+/**
+ * How a name is pronounced. On a genus it covers the genus name; on a species, the specific epithet alone.
+ */
 export interface Pronunciation {
   ipa?: string;
   phonetic?: string;
@@ -427,6 +430,7 @@ export interface Species {
   type_species?: boolean;
   completeness?: Completeness;
   etymology?: string;
+  pronunciation?: Pronunciation;
   type_specimen?: TypeSpecimen;
   period: Period;
   location?: Location;
