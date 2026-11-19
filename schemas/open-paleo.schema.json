@@ -130,6 +130,7 @@
         "type_species": { "type": "boolean" },
         "completeness": { "$ref": "#/$defs/completeness" },
         "etymology": { "type": "string" },
+        "pronunciation": { "$ref": "#/$defs/pronunciation" },
         "type_specimen": { "$ref": "#/$defs/typeSpecimen" },
         "period": { "$ref": "#/$defs/period" },
         "location": { "$ref": "#/$defs/location" },
@@ -266,6 +267,7 @@
     },
     "pronunciation": {
       "type": "object",
+      "description": "How a name is pronounced. On a genus it covers the genus name; on a species, the specific epithet alone.",
       "properties": {
         "ipa": { "type": "string" },
         "phonetic": { "type": "string" }

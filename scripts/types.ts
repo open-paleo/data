@@ -548,6 +548,12 @@ export type Species = {
     etymology?: string;
 
     /**
+     * Pronunciation guide for the specific epithet alone ("rex", not
+     * "Tyrannosaurus rex"); the genus carries its own.
+     */
+    pronunciation?: Pronunciation;
+
+    /**
      * Type-specimen (holotype/syntype/lectotype/neotype) information.
      */
     type_specimen?: TypeSpecimen;
@@ -861,8 +867,8 @@ export type ReferencePointer = {
 };
 
 /**
- * Pronunciation guide for a genus name, providing both IPA
- * (International Phonetic Alphabet) and informal phonetic notation.
+ * Pronunciation guide for a genus name or a specific epithet, providing both
+ * IPA (International Phonetic Alphabet) and informal phonetic notation.
  */
 export type Pronunciation = {
     /**
