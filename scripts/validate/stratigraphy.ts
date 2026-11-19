@@ -41,6 +41,57 @@ export function checkRegistryContainment(context: ValidationContext): void
 }
 
 /**
+ * The "Registry variants" check.
+ *
+ * 10a-quinquies. Registry variants — a variant is not another entry's name
+ *
+ * A variant is another name for the same unit, so one that is also the name
+ * of a separate entry makes two units out of one, and leaves a reader who
+ * meets the name with two places to resolve it. The Solnhofen Lithographic
+ * Limestone listed Altmühltal as its variant while Altmühltal had its own
+ * entry (#2339).
+ *
+ * @param context - The loaded data the checks read.
+ */
+export function checkRegistryVariants(context: ValidationContext): void
+{
+    const {
+        stratigraphy,
+        findStratigraphyFile,
+    } = context;
+
+    // Names only: the context's bed index also keys each bed by its variants.
+    const entryNames = new Set(Object.keys(stratigraphy ?? {}));
+
+    for (const unit of Object.values(stratigraphy ?? {}))
+    {
+        for (const bed of unit?.beds ?? [ ])
+        {
+            entryNames.add(bed.name);
+        }
+    }
+
+    for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+    {
+        const holders = [unit, ...(unit?.beds ?? [ ])];
+
+        for (const holder of holders)
+        {
+            for (const variant of holder?.variants ?? [ ])
+            {
+                if (variant !== holder.name && entryNames.has(variant))
+                {
+                    checkError(
+                        "Registry variants",
+                        findStratigraphyFile(unitName),
+                        `${holder.name}: variant '${variant}' is the name of another entry; fold the two into one`);
+                }
+            }
+        }
+    }
+}
+
+/**
  * The "Registry file layout" check.
  *
  * 10a-quater. Registry file layout — one unit per file, named after the unit
