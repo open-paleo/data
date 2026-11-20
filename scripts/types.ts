@@ -1085,6 +1085,12 @@ export type StratigraphicUnit = {
     stages?: Array<string>;
 
     /**
+     * A few-sentence summary of the unit for a general reader: where it
+     * crops out, its rock and setting, and what it is known for.
+     */
+    description?: string;
+
+    /**
      * Live disagreement in the literature over the unit's rank, naming,
      * containment or age.
      */

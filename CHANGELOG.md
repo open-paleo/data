@@ -168,6 +168,9 @@ below.
 - `pronunciation` on `species[]`, in the same shape as the genus's (`ipa`,
   `phonetic`), covering the specific epithet alone; the genus carries its
   own. Output schema 4.1.0 → 4.2.0.
+- `description` on stratigraphic units and beds, in the source registry and on
+  each `stratigraphy` entry: a few-sentence summary of the unit for a general
+  reader. Output schema 4.2.0 → 4.3.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

@@ -795,6 +795,11 @@ type PublishedUnit = {
     variants?: Array<string>;
 
     /**
+     * A few-sentence summary of the unit for a general reader.
+     */
+    description?: string;
+
+    /**
      * The unit's age: its epochs, its stages, and the boundary ages those
      * stages span.
      */
@@ -849,6 +854,7 @@ function publishUnit(
         ...(entry.informal ? { informal: true } : { }),
         ...(parent ? { parent } : { }),
         ...(entry.variants?.length ? { variants: entry.variants } : { }),
+        ...(entry.description ? { description: entry.description } : { }),
         period,
         ...(entry.dispute ? { dispute: entry.dispute } : { }),
         references: inflateReferences(entry.references),
@@ -901,7 +907,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "4.2.0",
+        schema_version: "4.3.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both
