@@ -15,6 +15,7 @@ import {
     computeMidpointAge,
 } from "./utilities.ts";
 
+import { composeGenusSummary } from "./genus-summary.ts";
 import { composeUnitDescription, type UnitFacts } from "./unit-description.ts";
 
 import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, Paleocoordinates, Period, StageInfo, StratigraphicBed, StratigraphicUnit, Synonym, FormerId } from "./types.ts";
@@ -32,6 +33,12 @@ const dist = path.join(root, "dist");
  * unlike the source `GenusData` which carries bare pointers.
  */
 type ProcessedGenus = Omit<GenusData, "references"> & {
+    /**
+     * The published description: the summary the build writes from the
+     * record, then the source `narrative`, if any, after a blank line.
+     */
+    description?: string;
+
     /**
      * Ordered list of ancestor clades from root to the genus's parent.
      */
@@ -693,6 +700,67 @@ function attachPaleocoordinates(
 const plateModel = attachPaleocoordinates(genera, stageTable);
 
 /**
+ * Writes each genus's published `description`: the summary composed from
+ * its record, then its `narrative`, if it has one, after a blank line. The
+ * narrative itself is not published separately.
+ *
+ * @param generaMap - The processed genera map (mutated in place).
+ * @param stages - The stage table keyed by stage name.
+ */
+function composeGenusDescriptions(
+    generaMap: Record<string, ProcessedGenus>,
+    stages: Record<string, StageInfo>,
+): void
+{
+    const countryNames = loadSchema(root).countries ?? { };
+    const registry = loadStratigraphyRegistry(root).units;
+    const stageOrder = Object.entries(stages)
+        .sort(([, first], [, second]) => second.from_ma - first.from_ma)
+        .map(([stageName]) => stageName);
+    const periodOrder = [ ...new Set(stageOrder.map((stageName) => stages[stageName].period)) ];
+
+    for (const [genusName, genus] of Object.entries(generaMap))
+    {
+        const summary = composeGenusSummary({
+            name: genusName,
+            parent: genus.parent ?? genus.taxonomy[genus.taxonomy.length - 1] ?? "",
+            placement: genus.placement,
+            taxonomy: genus.taxonomy,
+            etymology: genus.etymology,
+            authors: genus.authors,
+            described: genus.described,
+            diet: genus.diet,
+            locomotion: genus.locomotion,
+            species: (genus.species ?? [ ]).map((species) =>
+            {
+                const unitName = species.location?.formation ?? species.location?.group;
+                const country = species.location?.country;
+
+                return {
+                    name: species.name ?? "",
+                    status: species.status,
+                    typeSpecies: species.type_species,
+                    stages: species.period?.stage ?? [ ],
+                    periods: species.period?.name ?? [ ],
+                    country: country ? countryNames[country] ?? country : undefined,
+                    unit: unitName ? { name: unitName, rank: registry[unitName]?.rank } : undefined,
+                    length: species.size?.length_m,
+                };
+            }),
+            nicknames: (genus.notable_specimens ?? [ ])
+                .map((specimen) => specimen.nickname)
+                .filter((nickname): nickname is string => Boolean(nickname)),
+            disputed: Boolean(genus.dispute),
+            stageOrder,
+            periodOrder,
+        });
+
+        genus.description = [ summary, genus.narrative ].filter(Boolean).join("\n\n");
+        delete genus.narrative;
+    }
+}
+
+/**
  * Derives the denormalized author/year onto each species (and the genus) from
  * the `erected_in` reference, for consumers of the built dataset. Source YAML
  * carries only the reference pointer (issue #1886); the human-readable
@@ -730,6 +798,8 @@ function deriveAuthorities(generaMap: Record<string, ProcessedGenus>): void
 }
 
 deriveAuthorities(genera);
+
+composeGenusDescriptions(genera, stageTable);
 
 const clades: Record<string, ProcessedClade> = {};
 
@@ -858,7 +928,7 @@ function publishUnit(
         ...(entry.informal ? { informal: true } : { }),
         ...(parent ? { parent } : { }),
         ...(entry.variants?.length ? { variants: entry.variants } : { }),
-        description: entry.description ?? composeUnitDescription(facts),
+        description: [ composeUnitDescription(facts), entry.narrative ].filter(Boolean).join("\n\n"),
         period,
         ...(entry.dispute ? { dispute: entry.dispute } : { }),
         references: inflateReferences(entry.references),
@@ -1033,7 +1103,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "4.3.0",
+        schema_version: "4.4.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

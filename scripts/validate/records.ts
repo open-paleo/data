@@ -39,7 +39,7 @@ const genusKeys = new Set([
     "placement",
     "etymology",
     "pronunciation",
-    "description",
+    "narrative",
     "dispute",
     "diet",
     "locomotion",
@@ -312,7 +312,7 @@ export function checkRequiredFields(context: ValidationContext): void
         genusParsed,
     } = context;
 
-    const requiredGenusFields: Array<keyof GenusData> = ["genus", "parent", "description"];
+    const requiredGenusFields: Array<keyof GenusData> = ["genus", "parent"];
 
     const requiredSpeciesFields: Array<keyof Species> = ["name", "status", "period"];
 

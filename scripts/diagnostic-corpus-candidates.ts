@@ -75,9 +75,9 @@ function isNomenDubium(genus: GenusData): boolean
 {
     const parts = new Array<string>();
 
-    if (typeof genus.description === "string")
+    if (typeof genus.narrative === "string")
     {
-        parts.push(genus.description);
+        parts.push(genus.narrative);
     }
 
     if (typeof genus.dispute?.summary === "string")

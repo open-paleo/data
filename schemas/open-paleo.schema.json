@@ -103,7 +103,7 @@
         "taxonomy": { "$ref": "#/$defs/taxonomy" },
         "etymology": { "type": "string" },
         "pronunciation": { "$ref": "#/$defs/pronunciation" },
-        "description": { "type": "string" },
+        "description": { "type": "string", "description": "A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one." },
         "dispute": { "$ref": "#/$defs/dispute" },
         "diet": { "$ref": "#/$defs/diet" },
         "locomotion": { "$ref": "#/$defs/locomotion" },
@@ -324,7 +324,7 @@
         "informal": { "type": "boolean", "description": "True for a unit that was never formally erected but is widely used." },
         "parent": { "type": "string", "description": "Name of the unit this one lies within (a member's formation, a bed's unit); a key of stratigraphy." },
         "variants": { "type": "array", "items": { "type": "string" }, "description": "Other names the literature gives the unit." },
-        "description": { "type": "string", "description": "A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it) unless the source registry gives one." },
+        "description": { "type": "string", "description": "A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it), followed after a blank line by a narrative in our own words where the record has one." },
         "period": { "$ref": "#/$defs/period" },
         "dispute": { "$ref": "#/$defs/dispute" },
         "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } }

@@ -1,3 +1,5 @@
+import { countryProse, describeTimeSpan, formatPlace, joinWords } from "./description-text.ts";
+
 /**
  * The facts a stratigraphic unit's generated description is written from,
  * all drawn from the dataset itself.
@@ -81,23 +83,6 @@ function referToUnit(unitName: string): string
 }
 
 /**
- * Joins items as English prose: "A", "A and B", "A, B and C".
- *
- * @param items - The items to join.
- * @param conjunction - The word before the last item.
- * @returns The joined text.
- */
-function joinWords(items: Array<string>, conjunction = "and"): string
-{
-    if (items.length <= 1)
-    {
-        return items[0] ?? "";
-    }
-
-    return `${items.slice(0, -1).join(", ")} ${conjunction} ${items[items.length - 1]}`;
-}
-
-/**
  * Writes a unit's name as prose refers to it: the registry name with its
  * rank word, unless the name already ends in one or in a rock name. A bed
  * named only by a code ("83", "L11") is written "Bed 83".
@@ -120,30 +105,6 @@ export function formatUnitName(name: string, rank?: string): string
     }
 
     return `${name} ${rank.charAt(0).toUpperCase()}${rank.slice(1)}`;
-}
-
-/**
- * Country names as prose uses them after "in": the short form where the
- * registry name is formal, and "the" where English requires it.
- */
-const countryProse: Record<string, string> = {
-    "People's Republic of China": "China",
-    "Republic of Korea": "South Korea",
-    "Russian Federation": "Russia",
-};
-
-/**
- * Writes a place name as it reads after "in", adding "the" where English
- * requires it ("the United States", "the Isle of Wight").
- *
- * @param place - A country or region name.
- * @returns The name as prose writes it.
- */
-function formatPlace(place: string): string
-{
-    const name = countryProse[place] ?? place;
-
-    return /^(United |Czech Republic|Netherlands|Philippines|Isle of |Democratic |Central African|Dominican|Gambia)/.test(name) ? `the ${name}` : name;
 }
 
 /**
@@ -178,35 +139,6 @@ function describePlace(places: UnitFacts["places"]): string
 }
 
 /**
- * Describes a unit's age from its stages, or from its epochs when it has
- * none.
- *
- * @param stages - The stages, oldest first.
- * @param periods - The epochs, oldest first.
- * @returns A phrase such as "dated to the Aptian to Albian stages of the
- * Early Cretaceous", or an empty string when the unit has no age.
- */
-function describeAge(stages: Array<string>, periods: Array<string>): string
-{
-    const epochs = joinWords(periods.map((period) => `the ${period}`));
-
-    if (stages.length === 1)
-    {
-        return `, dated to the ${stages[0]} stage of ${epochs}`;
-    }
-    else if (stages.length > 1)
-    {
-        return `, dated to the ${stages[0]} to ${stages[stages.length - 1]} stages of ${epochs}`;
-    }
-    else if (periods.length > 0)
-    {
-        return `, dated to ${epochs}`;
-    }
-
-    return "";
-}
-
-/**
  * Writes a stratigraphic unit's description from its facts: what and where
  * it is and its age, then any other names, the units within it, and the
  * dinosaurs recorded from it. Every clause restates a fact the record
@@ -223,7 +155,7 @@ export function composeUnitDescription(facts: UnitFacts): string
     const parent = facts.parent ? ` of the ${formatUnitName(facts.parent.name, facts.parent.rank)}` : "";
     const lead = referToUnit(unitName).replace(/^the /, "The ");
     const verb = /(Beds|Sands|Marls|Clays|Grits|Shales|Sandstones)$/.test(unitName) ? "are" : "is";
-    const sentences = [ `${lead} ${verb} ${article} ${kind}${parent}${describePlace(facts.places)}${describeAge(facts.stages, facts.periods)}.` ];
+    const sentences = [ `${lead} ${verb} ${article} ${kind}${parent}${describePlace(facts.places)}${(facts.stages.length + facts.periods.length > 0 ? `, dated to ${describeTimeSpan(facts.stages, facts.periods)}` : "")}.` ];
 
     if (facts.variants.length > 0)
     {

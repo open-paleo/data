@@ -1482,23 +1482,6 @@ function extractRespelling(summary: string, name: string): string
 }
 
 /**
- * Strips any parenthetical that immediately follows the genus name at
- * the start of a description string.
- *
- * @param description - The raw description text.
- * @param name - The genus name.
- * @returns The description with the leading parenthetical removed.
- */
-function stripLeadingParenthetical(description: string, name: string): string
-{
-    const pattern = new RegExp(
-        "^(" + escapeRegExp(name) + ")\\s*\\([^)]*\\)\\s*",
-    );
-
-    return description.replace(pattern, "$1 ").replace(/\s{2,}/g, " ").trim();
-}
-
-/**
  * Extracts an IPA transcription from a {{IPAc-en|...}} template in
  * wikitext. Used as a fallback when HTML-based extraction fails.
  *
@@ -2539,11 +2522,6 @@ export function convertToGenusYaml(
         {
             genus.pronunciation.phonetic = respelling;
         }
-    }
-
-    if (enriched.description)
-    {
-        genus.description = stripLeadingParenthetical(enriched.description, enriched.name);
     }
 
     if (enriched.diet)

@@ -187,10 +187,10 @@ decides per paper, every time:
 > The describing paper `<key>` is not in the corpus and looks
 > hard to obtain (`<reason>`). Options:
 > 1. Try to fetch it
-> 2. Build a Wikipedia-fallback stub (description = Wikipedia
->    paragraph 1 verbatim; type_specimen block omitted; reference cited
->    with metadata from secondary literature; gap logged in
->    the corpus repo's `corpus-paper-report.md` §1)
+> 2. Build a fallback stub without the paper (no narrative;
+>    type_specimen block omitted; reference cited with metadata from
+>    secondary literature; gap logged in the corpus repo's
+>    `corpus-paper-report.md` §1)
 > 3. Defer this genus
 
 If the user picks the Wikipedia-fallback path, follow the recipe in
@@ -365,22 +365,15 @@ Editorial polish at this stage:
   user `final.yml`. A lone recent reassessment that nobody has adopted
   is not `disputed` — `feedback_disputed_status_criterion`.
 
-- **Description = Wikipedia paragraph 1, minus a fixed strip-list.**
-  The bootstrap already pulls this; just confirm. Strip **only**:
-  numeric reference markers like `[1]`, hyperlink markup, pronunciation
-  IPA blocks, the etymological gloss in parentheses immediately after
-  the genus name (those go into the structured `etymology:` and
-  `pronunciation:` fields), and **British spellings**, which become
-  American — "palaeontologist" → "paleontologist". The American English
-  policy wins over verbatim reproduction here; the exemption for
-  verbatim quotation applies to quoted spans, and a description is not
-  a quotation (`feedback_american_english`). Beyond that strip-list, do
-  NOT paraphrase, summarize, or stitch in claims from the agent's notes
-  — `feedback_verify_against_corpus`. Read the cached article first at
-  `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` (defaults to a sibling
-  `../open-paleo-wd/wikipedia/`; parse `text`, paragraph 1 = up to the
-  first `\n\n`); WebFetch is the fallback
-  when the genus isn't cached.
+- **No copied description.** The build writes every genus's published
+  description from its fields, so the record needs none. An optional
+  `narrative` adds context no field holds (naming history, how the genus
+  relates to others, notable preservation), written in our own words from
+  the papers read for this intake. Never copy or closely paraphrase
+  Wikipedia or another source: Wikipedia's text is CC BY-SA 4.0 and cannot
+  be published under the dataset's CC BY 4.0. The cached article at
+  `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` is still useful for leads
+  (which papers to fetch, the pronunciation), never as text to keep.
 
 - **Which diagnosis the record carries.** When more than one published
   diagnosis exists, use the most recent **emended** one, then:
@@ -416,8 +409,8 @@ Editorial polish at this stage:
 - **Verify every paper-attributed claim.** If the description prose,
   reference notes, or synonym `reason:` attributes a specific claim
   to a specific author-year (e.g. "synonymised by Smith 1999"),
-  that claim must trace back to (a) corpus content actually read,
-  (b) Wikipedia paragraph 1 (verbatim), or (c) your notes.
+  that claim must trace back to (a) corpus content actually read, or
+  (b) your notes.
   Never invent citations from general/Wikipedia recall when the
   paper exists in the corpus — `feedback_verify_against_corpus`.
 - Etymology values from the agent are sometimes terse. Polish them to
@@ -641,9 +634,8 @@ Follow the project's persistent rules at every gate:
   see **Outcomes**.
 - `status` is set by hand at the apply gate from the verbatim quotes in
   `status-evidence.md`; apply never writes it.
-- Description follows the American English policy even though it is
-  otherwise Wikipedia paragraph 1 as written —
-  `feedback_american_english`.
+- A narrative, if written, is our own prose and follows the American
+  English policy — `feedback_american_english`.
 - The bootstrap reuses a key whose store DOI matches, and lists the
   existing sibling entries with their titles when it mints a fresh
   suffix. Read that list: for a pre-DOI paper there is no DOI to match

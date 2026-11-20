@@ -298,10 +298,10 @@ genus pipeline:
   for the rationale behind the species-level field.)
 - **Etymology.** Polish to project house style (e.g. `From Greek
   'word' meaning 'gloss' and Latin 'word' meaning 'gloss';`).
-- **Genus description update.** If the existing genus description
-  claims monotypy ("the genus is monotypic", "the single species
-  is...", "the type species is the only known species"), update it
-  to reflect the new species addition.
+- **Genus narrative update.** The build's summary counts species from
+  the record, so it updates itself. If the genus's `narrative` claims
+  monotypy ("the genus is monotypic", "the single species is..."),
+  update it to reflect the new species addition.
 - **American English** in prose fields; proper-noun institution
   names stay as-is.
 - **Verify every paper-attributed claim** against the corpus —

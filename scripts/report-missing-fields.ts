@@ -59,9 +59,9 @@ const genusChecks: Array<FieldCheck> = [
         isPresent: (target) => isPopulated((target as GenusData).pronunciation?.phonetic),
     },
     {
-        label: "description",
+        label: "narrative",
         scope: "genus",
-        isPresent: (target) => isPopulated((target as GenusData).description),
+        isPresent: (target) => isPopulated((target as GenusData).narrative),
     },
     {
         label: "diet",

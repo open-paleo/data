@@ -471,6 +471,7 @@ export function loadValidationContext()
         "diagnostic_features",
         "etymology",
         "material",
+        "narrative",
         "note",
         "notes",
         "reason",

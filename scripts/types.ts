@@ -916,9 +916,12 @@ export type GenusData = {
     pronunciation?: Pronunciation;
 
     /**
-     * Prose description of the genus for a general audience.
+     * Context about the genus that no field holds (its naming history, how
+     * it relates to other genera, notable preservation), written in our own
+     * words. The build publishes it as `description`, after the summary it
+     * writes from the record.
      */
-    description?: string;
+    narrative?: string;
 
     /**
      * Brief account of any active scientific disagreement over the genus
@@ -1085,10 +1088,11 @@ export type StratigraphicUnit = {
     stages?: Array<string>;
 
     /**
-     * A few-sentence summary of the unit for a general reader: where it
-     * crops out, its rock and setting, and what it is known for.
+     * Context about the unit that no field holds, written in our own words.
+     * The build publishes it as `description`, after the summary it writes
+     * from the record.
      */
-    description?: string;
+    narrative?: string;
 
     /**
      * Live disagreement in the literature over the unit's rank, naming,

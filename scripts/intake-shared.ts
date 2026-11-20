@@ -520,7 +520,7 @@ const genusKeyOrder = [
     "dispute",
     "etymology",
     "pronunciation",
-    "description",
+    "narrative",
     "diet",
     "locomotion",
     "paleoenvironment",

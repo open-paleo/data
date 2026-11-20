@@ -173,6 +173,12 @@ below.
   rank, parent, age, places, members, variants and the dinosaurs recorded
   from it). A `description` in the source registry, optional, replaces the
   generated text. Output schema 4.2.0 → 4.3.0.
+- A genus's `description` is now a summary the build writes from the record
+  (what the genus is and who named it, when and where it lived, its species,
+  size and way of life, well-known specimens), followed after a blank line by
+  a narrative in our own words where the record has one. A stratigraphic
+  unit's `description` works the same way. The source field for the narrative
+  is `narrative`. Output schema 4.3.0 → 4.4.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

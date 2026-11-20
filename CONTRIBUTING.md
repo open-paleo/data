@@ -190,9 +190,10 @@ paper that named it, whichever genus it now sits in.
 ## Contribution Quality Standards
 
 - **One change per issue/PR.** Add one genus, correct one taxonomy. This keeps review manageable and git history clean. Batch contributions (e.g., "add 50 genera") should be discussed in an issue first.
-- **Fill in as much as you can.** The more complete a contribution (description, location, formation, references), the more useful it is. Partial contributions are accepted — someone else can fill in the gaps later — but do not submit empty shells.
-- **Write for a general audience.** Descriptions should be accessible to an interested non-specialist. Avoid unexplained jargon. Technical diagnostic features belong in the `diagnostic_features` field, not the description.
-- **American English.** All editorial prose — `description`, `etymology`,
+- **Fill in as much as you can.** The more complete a contribution (location, formation, references, a narrative), the more useful it is. Partial contributions are accepted — someone else can fill in the gaps later — but do not submit empty shells.
+- **Write narratives in your own words.** The build writes each genus's and unit's published description from its fields; a `narrative` adds context no field holds. Never copy or closely paraphrase another source: Wikipedia's text, for instance, is CC BY-SA 4.0 and cannot be published under this dataset's CC BY 4.0.
+- **Write for a general audience.** Narratives should be accessible to an interested non-specialist. Avoid unexplained jargon. Technical diagnostic features belong in the `diagnostic_features` field, not the description.
+- **American English.** All editorial prose — `narrative`, clade `description`, `etymology`,
   `dispute`, `diagnostic_features`, `type_specimen.material`, `synonyms[].reason`,
   `references[].notes` — uses American spellings (color, center, behavior,
   meter, fiber, defense, catalog, analyze, paleontology, recognize, etc.).
@@ -228,7 +229,7 @@ paper that named it, whichever genus it now sits in.
 
 ## Inline Reference Format
 
-When citing papers inside editorial prose (`description`, `etymology`,
+When citing papers inside editorial prose (`narrative`, clade `description`, `etymology`,
 `dispute`, `diagnostic_features`, `type_specimen.material`,
 `synonyms[].reason`, `references[].notes`), use the paleo-journal
 hybrid form:
@@ -490,12 +491,12 @@ words, in English translation where the paper is not written in English:
 - `variants`: other names papers print for the unit. Not spellings, rank
   words or rank claims.
 - `period` and `stages`: the unit's age, described below.
-- `description`: optional. The build writes every unit's description from
-  its record (name, rank, parent, age, where species records place it, the
-  units within it, its variants and the dinosaurs recorded from it), so it
-  stays current as the record changes. A `description` written here replaces
-  the generated one; write one only where the template cannot say something
-  the unit needs, in your own words, never copied from another source.
+- `narrative`: optional. The build writes every unit's description from its
+  record (name, rank, parent, age, where species records place it, the units
+  within it, its variants and the dinosaurs recorded from it), so it stays
+  current as the record changes. A `narrative` is published after it, for
+  context the record cannot hold, in your own words, never copied from
+  another source.
 - `dispute`: disagreement that is still live in the literature. A superseded
   name or dating is not a dispute; the older paper belongs in the reference
   notes.
