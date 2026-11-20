@@ -15,6 +15,8 @@ import {
     computeMidpointAge,
 } from "./utilities.ts";
 
+import { composeUnitDescription, type UnitFacts } from "./unit-description.ts";
+
 import type { GenusData, CladeData, Dispute, TreeNode, Reference, ReferencePointer, InstitutionEntry, Paleocoordinates, Period, StageInfo, StratigraphicBed, StratigraphicUnit, Synonym, FormerId } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -823,6 +825,7 @@ type PublishedUnit = {
  * @param rank - The unit's rank, if it has one.
  * @param parent - The unit containing it, if any.
  * @param stages - The stage table keyed by stage name.
+ * @param facts - The facts its generated description is written from.
  * @returns The unit as it appears in the output.
  */
 function publishUnit(
@@ -830,6 +833,7 @@ function publishUnit(
     rank: string | undefined,
     parent: string | undefined,
     stages: Record<string, StageInfo>,
+    facts: UnitFacts,
 ): PublishedUnit
 {
     const stageNames = entry.stages ?? [ ];
@@ -854,11 +858,131 @@ function publishUnit(
         ...(entry.informal ? { informal: true } : { }),
         ...(parent ? { parent } : { }),
         ...(entry.variants?.length ? { variants: entry.variants } : { }),
-        ...(entry.description ? { description: entry.description } : { }),
+        description: entry.description ?? composeUnitDescription(facts),
         period,
         ...(entry.dispute ? { dispute: entry.dispute } : { }),
         references: inflateReferences(entry.references),
     };
+}
+
+/**
+ * Gathers the facts each unit's generated description is written from: its
+ * own record, the units the registry places inside it, and the genera and
+ * places species records give for it or for any unit inside it, so that a
+ * formation also lists what its members and beds have yielded.
+ *
+ * @param units - The registry units keyed by name.
+ * @returns The facts for every unit and bed, keyed by name.
+ */
+function collectUnitFacts(units: Record<string, StratigraphicUnit>): Map<string, UnitFacts>
+{
+    const countryNames = loadSchema(root).countries ?? { };
+    const facts = new Map<string, UnitFacts>();
+    const parentOf = new Map<string, string>();
+    const generaOf = new Map<string, Map<string, number>>();
+    const placesOf = new Map<string, Map<string, Map<string, number>>>();
+
+    /**
+     * Registers one unit or bed.
+     *
+     * @param entry - The registry entry.
+     * @param rank - Its rank, if any.
+     * @param parent - The unit containing it, if any.
+     */
+    const register = (entry: StratigraphicUnit | StratigraphicBed, rank: string | undefined, parent: string | undefined): void =>
+    {
+        facts.set(entry.name, {
+            name: entry.name,
+            rank,
+            informal: entry.informal,
+            stages: entry.stages ?? [ ],
+            periods: entry.period ?? [ ],
+            places: [ ],
+            members: [ ],
+            genera: [ ],
+            variants: entry.variants ?? [ ],
+        });
+
+        if (parent)
+        {
+            parentOf.set(entry.name, parent);
+        }
+    };
+
+    for (const unit of Object.values(units))
+    {
+        register(unit, unit.rank, unit.parent);
+
+        for (const bed of unit.beds ?? [ ])
+        {
+            register(bed, "bed", unit.name);
+        }
+    }
+
+    for (const [name, parent] of parentOf)
+    {
+        const container = facts.get(parent);
+
+        if (container)
+        {
+            container.members.push({ name, rank: facts.get(name)?.rank });
+            facts.get(name)!.parent = { name: parent, rank: container.rank };
+        }
+    }
+
+    for (const [genusName, genus] of Object.entries(genera))
+    {
+        for (const species of genus.species ?? [ ])
+        {
+            const location = species.location;
+            const finest = location?.bed ?? location?.member ?? location?.formation ?? location?.group;
+            const country = location?.country ? countryNames[location.country] ?? location.country : undefined;
+            const seen = new Set<string>();
+            let current = finest && facts.has(finest) ? finest : undefined;
+
+            while (current && !seen.has(current))
+            {
+                seen.add(current);
+
+                const counts = generaOf.get(current) ?? new Map<string, number>();
+                counts.set(genusName, (counts.get(genusName) ?? 0) + 1);
+                generaOf.set(current, counts);
+
+                if (country)
+                {
+                    const byCountry = placesOf.get(current) ?? new Map<string, Map<string, number>>();
+                    const regions = byCountry.get(country) ?? new Map<string, number>();
+
+                    if (location?.region)
+                    {
+                        regions.set(location.region, (regions.get(location.region) ?? 0) + 1);
+                    }
+
+                    byCountry.set(country, regions);
+                    placesOf.set(current, byCountry);
+                }
+
+                current = parentOf.get(current);
+            }
+        }
+    }
+
+    for (const [name, unitFacts] of facts)
+    {
+        unitFacts.genera = [ ...(generaOf.get(name) ?? new Map<string, number>()) ]
+            .map(([genusName, species]) => ({ name: genusName, species, notable: genera[genusName]?.notable_specimens?.length ?? 0 }));
+
+        const total = (regions: Map<string, number>): number => [ ...regions.values() ].reduce((sum, count) => sum + count, 0) || 1;
+
+        unitFacts.places = [ ...(placesOf.get(name) ?? new Map<string, Map<string, number>>()) ]
+            .sort(([firstCountry, first], [secondCountry, second]) => total(second) - total(first) || firstCountry.localeCompare(secondCountry))
+            .map(([country, regions]) => ({
+                country,
+                regions: [ ...regions ].sort(([firstRegion, first], [secondRegion, second]) => second - first || firstRegion.localeCompare(secondRegion)).map(([region]) => region),
+            }));
+    }
+
+    return facts;
 }
 
 /**
@@ -872,15 +996,17 @@ function publishUnit(
  */
 function publishStratigraphy(stages: Record<string, StageInfo>): Record<string, PublishedUnit>
 {
+    const units = loadStratigraphyRegistry(root).units;
+    const facts = collectUnitFacts(units);
     const published: Array<[string, PublishedUnit]> = [ ];
 
-    for (const unit of Object.values(loadStratigraphyRegistry(root).units))
+    for (const unit of Object.values(units))
     {
-        published.push([unit.name, publishUnit(unit, unit.rank, unit.parent, stages)]);
+        published.push([unit.name, publishUnit(unit, unit.rank, unit.parent, stages, facts.get(unit.name)!)]);
 
         for (const bed of unit.beds ?? [ ])
         {
-            published.push([bed.name, publishUnit(bed, "bed", unit.name, stages)]);
+            published.push([bed.name, publishUnit(bed, "bed", unit.name, stages, facts.get(bed.name)!)]);
         }
     }
 

@@ -490,10 +490,12 @@ words, in English translation where the paper is not written in English:
 - `variants`: other names papers print for the unit. Not spellings, rank
   words or rank claims.
 - `period` and `stages`: the unit's age, described below.
-- `description`: a few-sentence summary for a general reader: where the unit
-  crops out, its rock and setting, and what it is known for, such as its
-  fossils. It may restate a fielded fact where that helps it read, but never
-  contradicts the entry.
+- `description`: optional. The build writes every unit's description from
+  its record (name, rank, parent, age, where species records place it, the
+  units within it, its variants and the dinosaurs recorded from it), so it
+  stays current as the record changes. A `description` written here replaces
+  the generated one; write one only where the template cannot say something
+  the unit needs, in your own words, never copied from another source.
 - `dispute`: disagreement that is still live in the literature. A superseded
   name or dating is not a dispute; the older paper belongs in the reference
   notes.
