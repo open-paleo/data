@@ -696,6 +696,10 @@ export interface StratigraphicUnit {
    * Other names the literature gives the unit.
    */
   variants?: string[];
+  /**
+   * A few-sentence summary of the unit for a general reader: where it crops out, its rock and setting, and what it is known for.
+   */
+  description?: string;
   period: Period;
   dispute?: Dispute;
   references: Reference[];

@@ -592,6 +592,10 @@ class StratigraphicUnit(BaseModel):
     variants: Optional[List[str]] = Field(
         None, description='Other names the literature gives the unit.'
     )
+    description: Optional[str] = Field(
+        None,
+        description='A few-sentence summary of the unit for a general reader: where it crops out, its rock and setting, and what it is known for.',
+    )
     period: Period
     dispute: Optional[Dispute] = None
     references: List[Reference]

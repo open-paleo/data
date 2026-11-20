@@ -324,6 +324,7 @@
         "informal": { "type": "boolean", "description": "True for a unit that was never formally erected but is widely used." },
         "parent": { "type": "string", "description": "Name of the unit this one lies within (a member's formation, a bed's unit); a key of stratigraphy." },
         "variants": { "type": "array", "items": { "type": "string" }, "description": "Other names the literature gives the unit." },
+        "description": { "type": "string", "description": "A few-sentence summary of the unit for a general reader: where it crops out, its rock and setting, and what it is known for." },
         "period": { "$ref": "#/$defs/period" },
         "dispute": { "$ref": "#/$defs/dispute" },
         "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } }
