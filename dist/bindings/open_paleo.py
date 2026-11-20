@@ -594,7 +594,7 @@ class StratigraphicUnit(BaseModel):
     )
     description: str = Field(
         ...,
-        description='A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it) unless the source registry gives one.',
+        description='A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it), followed after a blank line by a narrative in our own words where the record has one.',
     )
     period: Period
     dispute: Optional[Dispute] = None
@@ -681,7 +681,10 @@ class Genus(BaseModel):
     )
     etymology: Optional[str] = None
     pronunciation: Optional[Pronunciation] = None
-    description: str
+    description: str = Field(
+        ...,
+        description='A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one.',
+    )
     dispute: Optional[Dispute] = None
     diet: Optional[Diet] = None
     locomotion: Optional[Locomotion] = None

@@ -372,6 +372,9 @@ export interface Genus {
   taxonomy: Taxonomy;
   etymology?: string;
   pronunciation?: Pronunciation;
+  /**
+   * A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one.
+   */
   description: string;
   dispute?: Dispute;
   diet?: Diet;
@@ -697,7 +700,7 @@ export interface StratigraphicUnit {
    */
   variants?: string[];
   /**
-   * A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it) unless the source registry gives one.
+   * A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it), followed after a blank line by a narrative in our own words where the record has one.
    */
   description: string;
   period: Period;
