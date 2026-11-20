@@ -697,9 +697,9 @@ export interface StratigraphicUnit {
    */
   variants?: string[];
   /**
-   * A few-sentence summary of the unit for a general reader: where it crops out, its rock and setting, and what it is known for.
+   * A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it) unless the source registry gives one.
    */
-  description?: string;
+  description: string;
   period: Period;
   dispute?: Dispute;
   references: Reference[];
