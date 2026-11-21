@@ -261,6 +261,14 @@ class IcznCaseTypes(Enum):
     spelling_emendation = 'spelling-emendation'
 
 
+class CladeRanks(Enum):
+    superfamily = 'superfamily'
+    family = 'family'
+    subfamily = 'subfamily'
+    tribe = 'tribe'
+    unranked = 'unranked'
+
+
 class IcznCaseStatuses(Enum):
     opinion = 'opinion'
     open = 'open'
@@ -609,7 +617,11 @@ class Size(BaseModel):
 
 
 class Clade(BaseModel):
-    description: Optional[str] = None
+    rank: CladeRanks
+    description: str = Field(
+        ...,
+        description='A summary the build writes from the record (what the clade is and who named it, when and where its members lived, its subgroups and best-known genera, their way of life, and who revised it), followed after a blank line by a narrative in our own words where the record has one.',
+    )
     dispute: Optional[Dispute] = None
     taxonomy: List[str] = Field(
         ...,

@@ -6,6 +6,10 @@
  */
 
 /**
+ * A clade's rank. A family-group name's rank is fixed by its ending (ICZN Article 29.2); a phylogenetic name in the tree has none and is 'unranked'.
+ */
+export type CladeRanks = "superfamily" | "family" | "subfamily" | "tribe" | "unranked";
+/**
  * Ordered ancestor clade names from root to the record's placement.
  */
 export type Taxonomy = string[];
@@ -294,7 +298,11 @@ export interface TreeNode {
   [k: string]: TreeNode;
 }
 export interface Clade {
-  description?: string;
+  rank: CladeRanks;
+  /**
+   * A summary the build writes from the record (what the clade is and who named it, when and where its members lived, its subgroups and best-known genera, their way of life, and who revised it), followed after a blank line by a narrative in our own words where the record has one.
+   */
+  description: string;
   dispute?: Dispute;
   taxonomy: Taxonomy;
   /**
