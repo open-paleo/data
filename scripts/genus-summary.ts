@@ -229,7 +229,7 @@ function describeIcznAction(caseType: string, genus: string, typeSpecies: string
     switch (caseType)
     {
         case "type-species":
-            return `fixed ${typeSpecies} as its type species`;
+            return `ruled that ${typeSpecies} is its type species`;
         case "type-specimen":
             return "designated a new type specimen for it";
         case "name-conservation":

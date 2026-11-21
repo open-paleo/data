@@ -1,5 +1,19 @@
 # *Diplodocus*
 
+## Which case number did Opinion 2425 decide?
+
+*2026-11-20*
+
+**Conclusion.** Case 3700. The Opinion's own history section gives a different number, but its title, its reference list and the application all give 3700. Governs `iczn_cases[0].case` on [*Diplodocus*](../../../genera/D/Diplodocus.yml).
+
+**Evidence.**
+- iczn2018a, title: "Opinion 2425 (Case 3700) – *Diplodocus* Marsh, 1878 (Dinosauria, Sauropoda): *Diplodocus longus* Marsh, 1878 maintained as the type species".
+- iczn2018a, references: "Tschopp E, Mateus O (2016) Case 3700 *Diplodocus* Marsh, 1878 … Bulletin of Zoological Nomenclature 73 (1): 17–24."
+- tschopp2016a, title: "Case 3700 *Diplodocus* Marsh, 1878 (Dinosauria, Sauropoda): proposed designation of *D. carnegii* Hatcher, 1901 as the type species".
+
+**Ruled out.**
+- *Case 3665.* The Opinion's section heading reads "History of Case 3665" and says the Case "was published in BZN 71 (3): 17–23", which disagrees with the volume, issue and pages in its own reference list and in the published application.
+
 ## Who emended *halli* and who synonymized *Seismosaurus* with *Diplodocus*?
 
 *2026-10-28*
@@ -50,6 +64,8 @@
 
 ## References
 
+- `iczn2018a`: International Commission on Zoological Nomenclature (2018). Opinion 2425. Diplodocus Marsh, 1878 (Dinosauria, Sauropoda): Diplodocus longus Marsh, 1878 maintained as the type species. *Bulletin of Zoological Nomenclature* 75: a062. doi:10.21805/bzn.v75.a062
+- `tschopp2016a`: Tschopp, E.; Mateus, O. (2016). Case 3700 Diplodocus Marsh, 1878 (Dinosauria, Sauropoda): proposed designation of D. carnegii Hatcher, 1901 as the type species. *Bulletin of Zoological Nomenclature* 73(1): 17-24. doi:10.21805/bzn.v73i1.a22
 - `gillette1994a`: Gillette, D. D. (1994). Seismosaurus: The Earth Shaker. Columbia University Press, New York.
 - `tschopp2015a`: Tschopp, E.; Mateus, O.; Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ* 3: e857. doi:10.7717/peerj.857
 - `hatcher1901a`: Hatcher, J. B. (1901). Diplodocus (Marsh): its osteology, taxonomy, and probable habits, with a restoration of the skeleton. *Memoirs of the Carnegie Museum* 1: 1-63. doi:10.5962/p.234818
