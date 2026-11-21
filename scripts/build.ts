@@ -719,8 +719,31 @@ function composeGenusDescriptions(
         .map(([stageName]) => stageName);
     const periodOrder = [ ...new Set(stageOrder.map((stageName) => stages[stageName].period)) ];
 
+    const movedSpecies = new Map<string, Array<{ original: string; current: string }>>();
+
     for (const [genusName, genus] of Object.entries(generaMap))
     {
+        for (const species of genus.species ?? [ ])
+        {
+            const originalGenus = species.erected_as?.split(/\s+/)[0];
+
+            if (species.erected_as && species.name && originalGenus && originalGenus !== genusName)
+            {
+                const moved = movedSpecies.get(originalGenus) ?? [ ];
+
+                moved.push({ original: species.erected_as, current: species.name });
+                movedSpecies.set(originalGenus, moved);
+            }
+        }
+    }
+
+    for (const [genusName, genus] of Object.entries(generaMap))
+    {
+        const typeSpeciesRecord = (genus.species ?? [ ]).find((species) => species.type_species) ?? genus.species?.[0];
+        const typeSpecimen = typeSpeciesRecord?.type_specimen;
+        const redescription = typeSpeciesRecord?.described_in && typeSpeciesRecord.described_in !== typeSpeciesRecord.erected_in
+            ? referenceStore.get(typeSpeciesRecord.described_in)
+            : undefined;
         const summary = composeGenusSummary({
             name: genusName,
             parent: genus.parent ?? genus.taxonomy[genus.taxonomy.length - 1] ?? "",
@@ -745,6 +768,35 @@ function composeGenusDescriptions(
                     country: country ? countryNames[country] ?? country : undefined,
                     unit: unitName ? { name: unitName, rank: registry[unitName]?.rank } : undefined,
                     length: species.size?.length_m,
+                };
+            }),
+            typeSpecimen: typeSpecimen
+                ? {
+                    material: typeSpecimen.material,
+                    formerIds: (typeSpecimen.former_ids ?? [ ]).map((former) => ({
+                        fromId: former.from_id,
+                        fromInstitution: former.from_institution,
+                        reason: former.reason,
+                    })),
+                }
+                : undefined,
+            erectedAs: typeSpeciesRecord?.erected_as,
+            redescribed: redescription?.authors && redescription.year
+                ? { authors: redescription.authors, year: Number(redescription.year) }
+                : undefined,
+            movedSpecies: (movedSpecies.get(genusName) ?? [ ]).sort((first, second) => first.current.localeCompare(second.current)),
+            objectiveSynonyms: (genus.synonyms ?? [ ])
+                .filter((synonym) => synonym.type === "junior objective")
+                .map((synonym) => synonym.name),
+            icznCases: (genus.iczn_cases ?? [ ]).map((icznCase) =>
+            {
+                const ruling = icznCase.ruling ? referenceStore.get(icznCase.ruling) : undefined;
+
+                return {
+                    type: icznCase.type ?? "",
+                    status: icznCase.status ?? "",
+                    year: ruling ? Number(ruling.year) : undefined,
+                    opinion: ruling?.title?.match(/^Opinion (\d+)/)?.[1],
                 };
             }),
             nicknames: (genus.notable_specimens ?? [ ])
