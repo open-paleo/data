@@ -13,6 +13,7 @@ export type CladeRanks = "superfamily" | "family" | "subfamily" | "tribe" | "unr
  * Ordered ancestor clade names from root to the record's placement.
  */
 export type Taxonomy = string[];
+export type IdentifierSources = "zoobank" | "wikidata" | "gbif" | "pbdb" | "eol";
 export type SynonymTypes =
   | "junior subjective"
   | "junior objective"
@@ -101,7 +102,6 @@ export type AppearanceFeatures =
   | "whiplash tail"
   | "tail bristles"
   | "feathered tail";
-export type IdentifierSources = "zoobank" | "wikidata" | "gbif" | "pbdb" | "eol";
 export type Status = "valid" | "nomen dubium" | "nomen nudum" | "disputed";
 export type Completeness = "complete" | "partial" | "fragmentary";
 export type SpecimenTypes = "holotype" | "syntype" | "lectotype" | "neotype" | "unknown";
@@ -310,6 +310,10 @@ export interface Clade {
    */
   type_genus?: string;
   /**
+   * The clade's identifiers in other databases, in the same form as a genus's.
+   */
+  identifiers?: Identifier[];
+  /**
    * Year the clade was erected (derived from erected_in).
    */
   described?: number;
@@ -332,6 +336,11 @@ export interface Clade {
 }
 export interface Dispute {
   summary: string;
+  [k: string]: unknown;
+}
+export interface Identifier {
+  source?: IdentifierSources;
+  id?: string;
   [k: string]: unknown;
 }
 export interface Synonym {
@@ -425,11 +434,6 @@ export interface Appearance {
   integument?: Integument;
   evidence?: IntegumentEvidence;
   features?: AppearanceFeatures[];
-  [k: string]: unknown;
-}
-export interface Identifier {
-  source?: IdentifierSources;
-  id?: string;
   [k: string]: unknown;
 }
 export interface Species {

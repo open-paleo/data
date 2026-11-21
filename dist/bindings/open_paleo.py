@@ -630,6 +630,10 @@ class Clade(BaseModel):
     type_genus: Optional[str] = Field(
         None, description='Type genus of a rank-based name; absent for unranked clades.'
     )
+    identifiers: Optional[List[Identifier]] = Field(
+        None,
+        description="The clade's identifiers in other databases, in the same form as a genus's.",
+    )
     described: Optional[int] = Field(
         None, description='Year the clade was erected (derived from erected_in).'
     )

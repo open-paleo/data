@@ -85,6 +85,7 @@
         "dispute": { "$ref": "#/$defs/dispute" },
         "taxonomy": { "$ref": "#/$defs/taxonomy" },
         "type_genus": { "type": "string", "description": "Type genus of a rank-based name; absent for unranked clades." },
+        "identifiers": { "type": "array", "items": { "$ref": "#/$defs/identifier" }, "description": "The clade's identifiers in other databases, in the same form as a genus's." },
         "described": { "type": "integer", "description": "Year the clade was erected (derived from erected_in)." },
         "authors": { "type": "string", "description": "Author(s) who erected the clade (derived from erected_in)." },
         "erected_in": { "type": "string", "description": "Reference id of the paper that erected the clade name; the authors and year above derive from it." },
