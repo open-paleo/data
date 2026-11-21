@@ -1,5 +1,18 @@
 # *Dilophosaurus*
 
+## Who named *Dilophosaurus wetherilli*?
+
+*2026-11-21*
+
+**Conclusion.** Welles (1954), as *Megalosaurus wetherilli*. Welles (1970) erected *Dilophosaurus* for the same species and type, so the species is credited to 1954 and the genus to 1970. Governs `erected_as: Megalosaurus wetherilli` and `erected_in: welles1954a` on [*Dilophosaurus wetherilli*](../../../genera/D/Dilophosaurus.yml), and the genus-level `erected_in: welles1970a`.
+
+**Evidence.**
+- welles1954a, p. 595: "*Megalosaurus wetherilli*, n. sp. *Type.*—A nearly complete skeleton, U.C.M.P. no. 37302."
+- welles1970a, p. 989: "In 1954 I briefly described a carnivorous dinosaur from the Kayenta Formation near Tuba City, Arizona, under the name Megalosaurus wetherilli Welles"; "our reptile does not belong in the genus Megalosaurus and must be given a new name."
+
+**Ruled out.**
+- *Welles (1970) as the species' authority.* The record gave it, but that paper erects the genus and moves the species; it does not name the species.
+
 ## Where does the *Dilophosaurus* holotype coordinate come from?
 
 *2026-08-19*
@@ -33,6 +46,7 @@
 
 ## References
 
+- `welles1954a`: Welles, S. P. (1954). New Jurassic dinosaur from the Kayenta formation of Arizona. *Geological Society of America Bulletin* 65(6): 591-598. doi:10.1130/0016-7606(1954)65[591:NJDFTK]2.0.CO;2
 - `welles1970a`: Welles, S. P. (1970). Dilophosaurus (Reptilia: Saurischia), a new name for a dinosaur. *Journal of Paleontology* 44(5): 989.
 - `marsh2020a`: Marsh, A. D.; Rowe, T. B. (2020). A comprehensive anatomical and phylogenetic evaluation of Dilophosaurus wetherilli (Dinosauria, Theropoda) with descriptions of new specimens from the Kayenta Formation of northern Arizona. *Journal of Paleontology* 94(S78): 1-103. doi:10.1017/jpa.2020.14
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
