@@ -270,7 +270,8 @@ genus pipeline:
   `Reference <key>: no reference-store entry yet; citation skipped`, create
   `references/<letter>/<key>.yml` from the papers-needed.md citation
   (`id`, authors, year, title, journal, volume, issue, pages, publisher,
-  doi — **no** DOI-pointer `url`, and **no** `notes` in the store file),
+  doi — **no** DOI-pointer `url`; store `notes` only for facts about the
+  work itself, never its role in this genus or our copy of it),
   then re-run the apply step. The re-run adds the pointer, carrying the
   supplementary paper's role as `notes:` from the extraction. The prompt
   caps that at 200 characters, the validator's warning threshold, and

@@ -341,8 +341,11 @@ function inflateReferences(pointers?: Array<ReferencePointer>): Array<Reference>
         const entry = pointer.id ? referenceStore.get(pointer.id) : undefined;
         const inflated: Reference = { ...(entry ?? { id: pointer.id }) };
 
-        // The other forms a work is cited in serve the citation check only.
+        // The other forms a work is cited in serve the citation check only, and
+        // a store entry's own notes are bibliographic notes for maintainers: a
+        // published reference carries only the citing record's notes.
         delete inflated.also_cited_as;
+        delete inflated.notes;
 
         if (pointer.notes !== undefined)
         {

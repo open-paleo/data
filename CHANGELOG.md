@@ -194,6 +194,10 @@ below.
   4.6.0.
 
 ### Changed
+- A published reference's `notes` are now only the citing record's notes on
+  that citation. A reference-store entry's own notes, facts about the work
+  itself kept for maintainers, had filled in wherever a citation had no
+  notes of its own; they are no longer published.
 - A species' `erected_in`, and with it its `authors` and `described`, is the
   paper that named the species, as the ICZN has it, rather than the paper
   that moved it into its current genus. A species named in another genus

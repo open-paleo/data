@@ -600,6 +600,61 @@ export function checkSpaceBeforePunctuation(context: ValidationContext): void
 }
 
 /**
+ * Phrases a published note must not use outside a quotation, each with what
+ * to write instead. A note is read beside the value it annotates, so it
+ * speaks of that value and the literature, not of our record or our reading.
+ */
+const noteProcessPhrases: Array<[RegExp, string]> = [
+    [/\b(?:this|our) record\b|\bthe record (?:places|takes|follows|gives|uses|keeps|carries|treats|records)\b|\bwhich the record follows\b/i, "speaks of \"the record\"; name the value instead"],
+    [/\bno source read\b|\bsources? (?:we )?read\b/i, "describes our reading; scope it to the works cited"],
+    [/\b(?:corpus|fetch(?:ed|ing)?|TODO|TBD|FIXME|condensation)\b|(?<![\w/&])#\d{3,5}\b/, "is workflow state"],
+];
+
+/**
+ * The "Notes style" check.
+ *
+ * Notes style — every `notes` field is published prose that consumers may
+ * show beside the value it annotates. Each note ends with sentence
+ * punctuation, and outside quoted text it does not speak of our record, our
+ * reading, or our workflow.
+ *
+ * @param context - The loaded data the checks read.
+ */
+export function checkNotesStyle(context: ValidationContext): void
+{
+    const {
+        proseFields,
+        stripQuotedSpans,
+    } = context;
+
+    for (const field of proseFields)
+    {
+        if (!/(?:^|\.)notes?$/.test(field.fieldPath))
+        {
+            continue;
+        }
+
+        const text = field.text.trim();
+        const unquoted = stripQuotedSpans(text);
+
+        if (!/[.!?]["'’”)]*$/.test(text))
+        {
+            checkError("Notes style", field.filePath, `${field.fieldPath}: does not end with a period ("…${text.slice(-40)}")`);
+        }
+
+        for (const [pattern, problem] of noteProcessPhrases)
+        {
+            const match = unquoted.match(pattern);
+
+            if (match)
+            {
+                checkError("Notes style", field.filePath, `${field.fieldPath}: "${match[0]}" ${problem}`);
+            }
+        }
+    }
+}
+
+/**
  * The "Unbalanced quotation" check.
  *
  * Unbalanced quotation — a quotation cut short. A quote mark left open, a

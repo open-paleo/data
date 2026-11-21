@@ -333,9 +333,11 @@ publisher: ...
 doi: ...
 ```
 
-Do **not** add a `url:` that just points at the DOI, and do **not** put
-`notes:` in the store file — notes are per-citation and live on the
-pointer in the genus file. Then **re-run** `npm run intake-apply --
+Do **not** add a `url:` that just points at the DOI. What the paper
+contributes to this genus goes in `notes:` on the pointer in the genus
+file, which is published. A store entry's own `notes:` is only for facts
+about the work itself (its language, editions, the forms it is cited in);
+it is not published, and it never mentions our copy of the paper. Then **re-run** `npm run intake-apply --
 <Genus>`; the re-run finds the new store entry and adds the pointer
 (carrying the agent's notes for supplementary papers).
 
