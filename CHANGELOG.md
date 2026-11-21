@@ -179,6 +179,16 @@ below.
   a narrative in our own words where the record has one. A stratigraphic
   unit's `description` works the same way. The source field for the narrative
   is `narrative`. Output schema 4.3.0 → 4.4.0.
+- A clade's `description` is now a summary the build writes from the record
+  (what the clade is and who named it, when and where its members lived, its
+  subgroups and best-known genera, their way of life, and who revised it),
+  followed after a blank line by a narrative in our own words where the
+  record has one. The source field for the narrative is `narrative`. Output
+  schema 4.4.0 → 4.5.0.
+- `rank` on every clade: `superfamily`, `family`, `subfamily`, `tribe` or
+  `unranked`, from the new `clade_ranks` vocabulary. A family-group name's
+  rank follows its ending (ICZN Article 29.2); phylogenetic names are
+  `unranked`. Output schema 4.4.0 → 4.5.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the

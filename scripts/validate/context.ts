@@ -132,6 +132,7 @@ export function loadValidationContext()
     const allowedIcznCaseTypes = new Set(schema.iczn_case_types ?? []);
 
     const allowedIcznCaseStatuses = new Set(schema.iczn_case_statuses ?? []);
+    const allowedCladeRanks = new Set(schema.clade_ranks ?? []);
 
     const allowedIntegument = new Set(schema.integument ?? []);
 
@@ -591,6 +592,7 @@ export function loadValidationContext()
         allowedSpecimenCategories,
         allowedIcznCaseTypes,
         allowedIcznCaseStatuses,
+        allowedCladeRanks,
         allowedIntegument,
         allowedIntegumentEvidence,
         allowedFeatures,

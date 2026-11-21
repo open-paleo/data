@@ -66,3 +66,70 @@ export function describeTimeSpan(stages: Array<string>, periods: Array<string>):
 
     return epochs;
 }
+
+/**
+ * Well-known dinosaur groups, most specific first; a summary names the first
+ * one in the genus's ancestry.
+ */
+export const majorGroups: Array<[string, string]> = [
+    ["Sauropoda", "sauropod"], ["Ornithopoda", "ornithopod"], ["Ceratopsia", "ceratopsian"],
+    ["Ankylosauria", "ankylosaur"], ["Stegosauria", "stegosaur"], ["Pachycephalosauria", "pachycephalosaur"],
+    ["Avialae", "avialan"], ["Theropoda", "theropod"], ["Sauropodomorpha", "sauropodomorph"],
+    ["Thyreophora", "thyreophoran"], ["Ornithischia", "ornithischian"], ["Saurischia", "saurischian"],
+];
+
+/**
+ * Endings of clade names and the adjective each forms
+ * ("Tyrannosaurinae" -> "tyrannosaurine").
+ */
+const adjectiveEndings: Array<[RegExp, string]> = [
+    [/ves$/, "vian"], [/idae$/, "id"], [/inae$/, "ine"], [/ini$/, "in"], [/oidea$/, "oid"], [/iformes$/, "iform"],
+    [/morpha$/, "morph"], [/poda$/, "pod"], [/ia$/, "ian"], [/ae$/, "an"], [/a$/, "an"], [/i$/, "an"],
+];
+
+/**
+ * Forms the adjective prose uses for a clade: "Plateosauridae" ->
+ * "plateosaurid".
+ *
+ * @param clade - The clade name.
+ * @returns The adjective, or the lowercased name when no ending applies.
+ */
+export function formCladeAdjective(clade: string): string
+{
+    const ending = adjectiveEndings.find(([pattern]) => pattern.test(clade));
+
+    return (ending ? clade.replace(ending[0], ending[1]) : clade).toLowerCase();
+}
+
+/**
+ * Names a work's authors as prose cites them: "Osborn", "Galton and
+ * Jensen", "Xu and colleagues".
+ *
+ * @param authors - The authors as the reference store gives them.
+ * @returns The surnames as prose writes them.
+ */
+export function formatAuthors(authors: string): string
+{
+    const surnames = authors.split(";").map((author) => author.split(",")[0].trim()).filter(Boolean);
+
+    return surnames.length > 2 ? `${surnames[0]} and colleagues` : joinWords(surnames);
+}
+
+/**
+ * Writes a length range in meters: "about 9 meters", "4.8 to 10 meters".
+ *
+ * @param length - The minimum and maximum, in meters.
+ * @returns The phrase, or undefined when there is no length.
+ */
+export function formatLength(length?: { min?: number; max?: number }): string | undefined
+{
+    const low = length?.min ?? length?.max;
+    const high = length?.max ?? length?.min;
+
+    if (low === undefined || high === undefined)
+    {
+        return undefined;
+    }
+
+    return low === high ? `about ${low} meter${low === 1 ? "" : "s"}` : `${low} to ${high} meters`;
+}

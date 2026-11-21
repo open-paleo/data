@@ -1,4 +1,4 @@
-import { countryProse, describeTimeSpan, formatPlace, joinWords } from "./description-text.ts";
+import { countryProse, describeTimeSpan, formatAuthors, formCladeAdjective, formatLength, formatPlace, joinWords, majorGroups } from "./description-text.ts";
 import { formatUnitName } from "./unit-description.ts";
 
 /**
@@ -128,54 +128,6 @@ export type GenusFacts = {
 };
 
 /**
- * Well-known dinosaur groups, most specific first; a summary names the first
- * one in the genus's ancestry.
- */
-const majorGroups: Array<[string, string]> = [
-    ["Sauropoda", "sauropod"], ["Ornithopoda", "ornithopod"], ["Ceratopsia", "ceratopsian"],
-    ["Ankylosauria", "ankylosaur"], ["Stegosauria", "stegosaur"], ["Pachycephalosauria", "pachycephalosaur"],
-    ["Avialae", "avialan"], ["Theropoda", "theropod"], ["Sauropodomorpha", "sauropodomorph"],
-    ["Thyreophora", "thyreophoran"], ["Ornithischia", "ornithischian"], ["Saurischia", "saurischian"],
-];
-
-/**
- * Endings of clade names and the adjective each forms
- * ("Tyrannosaurinae" -> "tyrannosaurine").
- */
-const adjectiveEndings: Array<[RegExp, string]> = [
-    [/idae$/, "id"], [/inae$/, "ine"], [/ini$/, "in"], [/oidea$/, "oid"], [/iformes$/, "iform"],
-    [/morpha$/, "morph"], [/poda$/, "pod"], [/ia$/, "ian"], [/ae$/, "an"], [/a$/, "an"],
-];
-
-/**
- * Forms the adjective prose uses for a clade: "Plateosauridae" ->
- * "plateosaurid".
- *
- * @param clade - The clade name.
- * @returns The adjective, or the lowercased name when no ending applies.
- */
-function formCladeAdjective(clade: string): string
-{
-    const ending = adjectiveEndings.find(([pattern]) => pattern.test(clade));
-
-    return (ending ? clade.replace(ending[0], ending[1]) : clade).toLowerCase();
-}
-
-/**
- * Names the genus's authors as prose cites them: "Osborn", "Galton and
- * Jensen", "Xu and colleagues".
- *
- * @param authors - The authors as the reference store gives them.
- * @returns The surnames as prose writes them.
- */
-function formatAuthors(authors: string): string
-{
-    const surnames = authors.split(";").map((author) => author.split(",")[0].trim()).filter(Boolean);
-
-    return surnames.length > 2 ? `${surnames[0]} and colleagues` : joinWords(surnames);
-}
-
-/**
  * Takes the whole name's meaning out of an etymology: the last quoted phrase
  * introduced by "meaning", "hence" or "translates as". Etymologies gloss each
  * root the same way ("'odous' meaning 'tooth'"), so a single-word phrase is
@@ -190,25 +142,6 @@ function extractMeaning(etymology?: string): string | undefined
     const last = phrases[phrases.length - 1]?.[1];
 
     return last && /\s/.test(last.trim()) ? last.trim() : undefined;
-}
-
-/**
- * Writes a length range in meters: "about 9 meters", "4.8 to 10 meters".
- *
- * @param length - The minimum and maximum, in meters.
- * @returns The phrase, or undefined when there is no length.
- */
-function formatLength(length?: { min?: number; max?: number }): string | undefined
-{
-    const low = length?.min ?? length?.max;
-    const high = length?.max ?? length?.min;
-
-    if (low === undefined || high === undefined)
-    {
-        return undefined;
-    }
-
-    return low === high ? `about ${low} meter${low === 1 ? "" : "s"}` : `${low} to ${high} meters`;
 }
 
 /**

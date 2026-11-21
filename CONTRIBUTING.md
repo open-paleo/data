@@ -128,6 +128,11 @@ and any future placement change.
   and empty clades are collapsed into the level above. A clade whose own higher
   position is contested carries that dispute once, in its `clades/` file, not
   smeared across its members.
+- **Every clade gives its `rank`.** A family-group name's ending fixes its rank
+  (ICZN Article 29.2): -oidea superfamily, -idae family, -inae subfamily, -ini
+  tribe. Every other clade is `unranked`, including names once used at a
+  Linnaean rank such as Stegosauria or Ceratopsia. The validator checks the
+  rank against the name.
 - **Nomina dubia and untested taxa are placed conservatively and flagged.** They
   are parented at the broadest node their material supports, marked in a
   `dispute:` block, and logged as a `Literature Review` issue for future
@@ -193,7 +198,7 @@ paper that named it, whichever genus it now sits in.
 - **Fill in as much as you can.** The more complete a contribution (location, formation, references, a narrative), the more useful it is. Partial contributions are accepted — someone else can fill in the gaps later — but do not submit empty shells.
 - **Write narratives in your own words.** The build writes each genus's and unit's published description from its fields; a `narrative` adds context no field holds. Never copy or closely paraphrase another source: Wikipedia's text, for instance, is CC BY-SA 4.0 and cannot be published under this dataset's CC BY 4.0.
 - **Write for a general audience.** Narratives should be accessible to an interested non-specialist. Avoid unexplained jargon. Technical diagnostic features belong in the `diagnostic_features` field, not the description.
-- **American English.** All editorial prose — `narrative`, clade `description`, `etymology`,
+- **American English.** All editorial prose — `narrative`, `etymology`,
   `dispute`, `diagnostic_features`, `type_specimen.material`, `synonyms[].reason`,
   `references[].notes` — uses American spellings (color, center, behavior,
   meter, fiber, defense, catalog, analyze, paleontology, recognize, etc.).
@@ -229,7 +234,7 @@ paper that named it, whichever genus it now sits in.
 
 ## Inline Reference Format
 
-When citing papers inside editorial prose (`narrative`, clade `description`, `etymology`,
+When citing papers inside editorial prose (`narrative`, `etymology`,
 `dispute`, `diagnostic_features`, `type_specimen.material`,
 `synonyms[].reason`, `references[].notes`), use the paleo-journal
 hybrid form:

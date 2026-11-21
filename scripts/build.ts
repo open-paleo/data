@@ -15,6 +15,7 @@ import {
     computeMidpointAge,
 } from "./utilities.ts";
 
+import { composeCladeSummary } from "./clade-summary.ts";
 import { composeGenusSummary } from "./genus-summary.ts";
 import { composeUnitDescription, type UnitFacts } from "./unit-description.ts";
 
@@ -55,9 +56,20 @@ type ProcessedGenus = Omit<GenusData, "references"> & {
  */
 type ProcessedClade = {
     /**
-     * Prose description of the clade.
+     * The clade's rank.
+     */
+    rank?: string;
+
+    /**
+     * The published description: the summary the build writes from the
+     * record, then the source `narrative`, if any, after a blank line.
      */
     description?: string;
+
+    /**
+     * The source narrative, removed once the description is composed.
+     */
+    narrative?: string;
 
     /**
      * A live dispute about the clade, such as whether it is a natural group.
@@ -878,7 +890,8 @@ for (const file of findYamlFiles(path.join(root, "clades")))
         }
 
         clades[data.clade] = {
-            description: data.description,
+            rank: data.rank,
+            narrative: data.narrative,
             dispute: data.dispute,
             taxonomy: findTreePath(tree, data.clade) ?? [ ],
             type_genus: data.type_genus,
@@ -892,6 +905,87 @@ for (const file of findYamlFiles(path.join(root, "clades")))
         };
     }
 }
+
+/**
+ * Writes each clade's published `description`: the summary composed from
+ * the clade's record and the genera within it, then its `narrative`, if it
+ * has one, after a blank line.
+ *
+ * @param cladeMap - The processed clades (mutated in place).
+ * @param generaMap - The processed genera.
+ * @param stages - The stage table keyed by stage name.
+ */
+function composeCladeDescriptions(
+    cladeMap: Record<string, ProcessedClade>,
+    generaMap: Record<string, ProcessedGenus>,
+    stages: Record<string, StageInfo>,
+): void
+{
+    const countryNames = loadSchema(root).countries ?? { };
+    const stageOrder = Object.entries(stages)
+        .sort(([, first], [, second]) => second.from_ma - first.from_ma)
+        .map(([stageName]) => stageName);
+    const periodOrder = [ ...new Set(stageOrder.map((stageName) => stages[stageName].period)) ];
+    const stageEpochs = Object.fromEntries(Object.entries(stages).map(([stageName, info]) => [stageName, info.period]));
+    const birdAncestry = cladeMap.Avialae?.taxonomy ?? [ ];
+    const genusFacts = Object.entries(generaMap).map(([genusName, genus]) =>
+    {
+        const typeSpecies = (genus.species ?? [ ]).find((species) => species.type_species) ?? genus.species?.[0];
+
+        return {
+            taxonomy: genus.taxonomy,
+            facts: {
+                name: genusName,
+                notable: genus.notable_specimens?.length ?? 0,
+                species: genus.species?.length ?? 0,
+                stages: (genus.species ?? [ ]).flatMap((species) => species.period?.stage ?? [ ]),
+                periods: (genus.species ?? [ ]).flatMap((species) => species.period?.name ?? [ ]),
+                countries: [ ...new Set((genus.species ?? [ ])
+                    .map((species) => species.location?.country)
+                    .filter((country): country is string => Boolean(country))
+                    .map((country) => countryNames[country] ?? country)) ],
+                diet: genus.diet,
+                locomotion: genus.locomotion,
+                length: typeSpecies?.size?.length_m,
+            },
+        };
+    });
+
+    for (const [cladeName, clade] of Object.entries(cladeMap))
+    {
+        let node: TreeNode | undefined = tree;
+
+        for (const step of clade.taxonomy)
+        {
+            node = node?.[step] as TreeNode | undefined;
+        }
+
+        const revision = clade.described_in && clade.described_in !== clade.erected_in
+            ? referenceStore.get(clade.described_in)
+            : undefined;
+        const summary = composeCladeSummary({
+            name: cladeName,
+            rank: clade.rank ?? "unranked",
+            taxonomy: clade.taxonomy.slice(0, -1),
+            authors: clade.authors,
+            described: clade.described,
+            typeGenus: clade.type_genus,
+            revised: revision?.authors && revision.year ? { authors: revision.authors, year: Number(revision.year) } : undefined,
+            subgroups: Object.keys(node ?? { }).map((subgroup) => ({ name: subgroup, rank: cladeMap[subgroup]?.rank ?? "unranked" })),
+            genera: genusFacts.filter((genus) => genus.taxonomy.includes(cladeName)).map((genus) => genus.facts),
+            includesBirds: cladeName === "Avialae" || clade.taxonomy.includes("Avialae") || birdAncestry.includes(cladeName),
+            stageEpochs,
+            disputed: Boolean(clade.dispute),
+            stageOrder,
+            periodOrder,
+        });
+
+        clade.description = [ summary, clade.narrative ].filter(Boolean).join("\n\n");
+        delete clade.narrative;
+    }
+}
+
+composeCladeDescriptions(clades, genera, stageTable);
 
 /**
  * A stratigraphic unit as published: the registry entry with its age in the
@@ -1155,7 +1249,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "4.4.0",
+        schema_version: "4.5.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

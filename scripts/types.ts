@@ -1123,9 +1123,17 @@ export type CladeData = {
     clade?: string;
 
     /**
-     * Prose description of the clade.
+     * The clade's rank: a family-group rank, matching the name's ending, or
+     * `unranked` for a phylogenetic name. Values from `clade_ranks`.
      */
-    description?: string;
+    rank?: string;
+
+    /**
+     * Context about the clade that no field holds, written in our own words.
+     * The build publishes it as `description`, after the summary it writes
+     * from the record.
+     */
+    narrative?: string;
 
     /**
      * Type genus of a rank-based (family-group or superfamily) name, e.g.
@@ -1267,6 +1275,11 @@ export type Schema = {
      * Allowed ICZN case statuses (applied to `iczn_cases[].status`).
      */
     iczn_case_statuses?: Array<string>;
+
+    /**
+     * Allowed clade ranks (applied to clades/*.yml `rank`).
+     */
+    clade_ranks?: Array<string>;
 
     /**
      * Allowed integument types.

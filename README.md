@@ -126,7 +126,7 @@ Each genus has its own YAML file containing taxonomy, species, physical characte
 
 ### Clade files (`clades/`)
 
-Each clade has a YAML file with its name, description, defining characteristics, and references. Clades represent the internal nodes of the phylogenetic tree.
+Each clade has a YAML file with its name, rank, defining characteristics, and references; the build writes its description from the record. Clades represent the internal nodes of the phylogenetic tree.
 
 ### `tree.yml`
 

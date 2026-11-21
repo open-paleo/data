@@ -158,6 +158,17 @@ iczn_case_statuses:
   # The applicant withdrew the case.
   - withdrawn
 
+# A clade's rank (clades/*.yml `rank`). A family-group name's rank is fixed
+# by its ending (ICZN Article 29.2; -oidea for superfamilies by Recommendation
+# 29A), so the validator checks the two agree. Every other clade in the tree
+# is a phylogenetic name without a rank.
+clade_ranks:
+  - superfamily
+  - family
+  - subfamily
+  - tribe
+  - unranked
+
 integument:
   - feathered
   - scaled

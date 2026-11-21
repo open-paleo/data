@@ -209,6 +209,54 @@ export function checkNoOrphanClades(context: ValidationContext): void
 }
 
 /**
+ * Family-group name endings and the rank each fixes (ICZN Article 29.2, and
+ * Recommendation 29A for superfamilies).
+ */
+const familyGroupEndings: Array<[string, string]> = [
+    ["oidea", "superfamily"], ["idae", "family"], ["inae", "subfamily"], ["ini", "tribe"],
+];
+
+/**
+ * The "Clade rank" check.
+ *
+ * Clade rank — every clade record gives a rank from `clade_ranks`, and the
+ * rank agrees with the name: a family-group ending fixes the rank, and a
+ * name without one is `unranked`.
+ *
+ * @param context - The loaded data the checks read.
+ */
+export function checkCladeRank(context: ValidationContext): void
+{
+    const {
+        allowedCladeRanks,
+        cladeParsed,
+    } = context;
+
+    for (const [filePath, doc] of cladeParsed)
+    {
+        const name = doc?.clade ?? "";
+        const expected = familyGroupEndings.find(([ending]) => name.endsWith(ending))?.[1] ?? "unranked";
+
+        if (!doc)
+        {
+            continue;
+        }
+        else if (!doc.rank)
+        {
+            checkError("Clade rank", filePath, `missing rank (expected '${expected}')`);
+        }
+        else if (!allowedCladeRanks.has(doc.rank))
+        {
+            checkError("Clade rank", filePath, `invalid rank '${doc.rank}' (must be one of: ${[...allowedCladeRanks].join(", ")})`);
+        }
+        else if (doc.rank !== expected)
+        {
+            checkError("Clade rank", filePath, `rank '${doc.rank}' does not match the name '${name}', whose ending makes it '${expected}'`);
+        }
+    }
+}
+
+/**
  * The "Clade population" check.
  *
  * Clade population — every non-scaffolding clade must have a member genus
@@ -1844,7 +1892,7 @@ export function checkOutputSchemaSync(context: ValidationContext): void
             "status", "placement", "synonym_types", "diet", "locomotion", "completeness",
             "holotype_status", "specimen_types", "former_id_reasons", "thesis_types",
             "specimen_categories",
-            "iczn_case_types", "iczn_case_statuses", "integument", "integument_evidence",
+            "iczn_case_types", "iczn_case_statuses", "clade_ranks", "integument", "integument_evidence",
             "paleoenvironments", "identifier_sources", "periods",
         ];
 
