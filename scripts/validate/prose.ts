@@ -20,10 +20,11 @@ export function checkIdentifierCompliance(context: ValidationContext): void
 {
     const {
         allowedIdentifierSources,
+        cladeParsed,
         genusParsed,
     } = context;
 
-    for (const [filePath, doc] of genusParsed)
+    for (const [filePath, doc] of [ ...genusParsed, ...cladeParsed ])
     {
         if (!doc || !Array.isArray(doc.identifiers))
         {

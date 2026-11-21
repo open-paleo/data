@@ -1143,6 +1143,12 @@ export type CladeData = {
     type_genus?: string;
 
     /**
+     * The clade's identifiers in other databases (PBDB, Wikidata, GBIF, EOL,
+     * ZooBank), in the same form as a genus's.
+     */
+    identifiers?: Array<Identifier>;
+
+    /**
      * Citation key of the reference that established (erected) the clade name —
      * the nomenclatural authority. `authors`/`described` are DERIVED from this
      * reference during build; prefer it over the legacy fields.

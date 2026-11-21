@@ -87,6 +87,11 @@ type ProcessedClade = {
     type_genus?: string;
 
     /**
+     * The clade's identifiers in other databases.
+     */
+    identifiers?: Array<{ source?: string; id?: string }>;
+
+    /**
      * Year the clade was formally described (derived from `erected_in` when set).
      */
     described?: number;
@@ -895,6 +900,7 @@ for (const file of findYamlFiles(path.join(root, "clades")))
             dispute: data.dispute,
             taxonomy: findTreePath(tree, data.clade) ?? [ ],
             type_genus: data.type_genus,
+            identifiers: data.identifiers,
             described,
             authors,
             erected_in: data.erected_in,
@@ -1249,7 +1255,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "4.5.0",
+        schema_version: "4.6.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

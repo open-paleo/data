@@ -189,6 +189,9 @@ below.
   `unranked`, from the new `clade_ranks` vocabulary. A family-group name's
   rank follows its ending (ICZN Article 29.2); phylogenetic names are
   `unranked`. Output schema 4.4.0 → 4.5.0.
+- `identifiers` on clades, in the same form as a genus's: PBDB, Wikidata,
+  GBIF, EOL and ZooBank numbers for the same taxon. Output schema 4.5.0 →
+  4.6.0.
 
 ### Changed
 - A species' `erected_in`, and with it its `authors` and `described`, is the
