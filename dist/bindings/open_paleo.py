@@ -683,7 +683,7 @@ class Genus(BaseModel):
     pronunciation: Optional[Pronunciation] = None
     description: str = Field(
         ...,
-        description='A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one.',
+        description='A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, type material and naming history, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one.',
     )
     dispute: Optional[Dispute] = None
     diet: Optional[Diet] = None

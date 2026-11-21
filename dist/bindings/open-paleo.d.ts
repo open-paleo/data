@@ -373,7 +373,7 @@ export interface Genus {
   etymology?: string;
   pronunciation?: Pronunciation;
   /**
-   * A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one.
+   * A summary the build writes from the record (what the genus is and who named it, when and where it lived, its species, type material and naming history, size and way of life, well-known specimens), followed after a blank line by a narrative in our own words where the record has one.
    */
   description: string;
   dispute?: Dispute;
