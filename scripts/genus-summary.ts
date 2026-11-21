@@ -259,7 +259,7 @@ export function composeGenusSummary(facts: GenusFacts): string
     const group = majorGroups.find(([clade]) => facts.taxonomy.includes(clade) || facts.parent === clade);
     const parentAdjective = formCladeAdjective(facts.parent);
     const kind = group && group[0] !== facts.parent && parentAdjective !== group[1]
-        ? `${parentAdjective} ${group[1]}`
+        ? (parentAdjective.endsWith(group[1]) ? parentAdjective : `${parentAdjective} ${group[1]}`)
         : group?.[1] ?? parentAdjective;
     const typeSpecies = facts.species.find((species) => species.typeSpecies) ?? facts.species[0];
     const meaning = extractMeaning(facts.etymology);
