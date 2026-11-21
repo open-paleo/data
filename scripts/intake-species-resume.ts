@@ -103,7 +103,7 @@ function buildSpeciesPromptString(
     if (entry.wikipedia_cache_path !== null)
     {
         sources.push(
-            `Secondary source (cached Wikipedia article for ${entry.genus}, useful for cross-checking section structure / etymology gloss): ${entry.wikipedia_cache_path}`,
+            `Secondary source (cached Wikipedia article for ${entry.genus}, useful for cross-checking facts such as which roots a name is built from; never reuse its wording, which is CC BY-SA): ${entry.wikipedia_cache_path}`,
         );
     }
 

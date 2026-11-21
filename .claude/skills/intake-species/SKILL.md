@@ -191,7 +191,8 @@ npm run intake-species-resume -- <Genus> <species>
 On success the script writes `prompts.jsonl` — one JSON object per
 line, each with a fully-formed `prompt` field that instructs the
 agent to read both the corpus paper and the cached Wikipedia article
-and to focus only on `<Genus> <species>`.
+and to focus only on `<Genus> <species>`. The article is for checking
+facts only; the prompt tells the agent never to reuse its wording.
 
 For each line in the JSONL, dispatch a Sonnet sub-agent via the
 Agent tool with `subagent_type: "general-purpose"` and explicit
@@ -298,7 +299,10 @@ genus pipeline:
   not in this schema. Reject clade-shared traits. (See issue #1862
   for the rationale behind the species-level field.)
 - **Etymology.** Polish to project house style (e.g. `From Greek
-  'word' meaning 'gloss' and Latin 'word' meaning 'gloss';`).
+  'word' meaning 'gloss' and Latin 'word' meaning 'gloss';`). Write
+  it from the paper; where the paper does not state it, write it from
+  the roots in your own words. The cached Wikipedia article can say which
+  roots a name is built from, but never copy its wording (CC BY-SA).
 - **Genus narrative update.** The build's summary counts species from
   the record, so it updates itself. If the genus's `narrative` claims
   monotypy ("the genus is monotypic", "the single species is..."),

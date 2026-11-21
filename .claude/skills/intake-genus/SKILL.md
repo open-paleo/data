@@ -420,6 +420,12 @@ Editorial polish at this stage:
   quotes, gloss in parens, full sentence ending with a period (e.g.
   "From Greek 'mikros' (small) and 'keras' (horn); meaning
   'small-horned'.").
+- If the papers do not state the etymology, as is common before the
+  twentieth century, write it in house style from the roots. The
+  bootstrap's "Fields left unseeded" list quotes Wikipedia's etymology
+  section as a lead to which roots the name is built from and what they
+  mean; write the sentence yourself and never copy its wording, which is
+  CC BY-SA.
 - Species etymology should match the same pattern when applicable.
 - Authority abbreviations such as "Dr." can be dropped.
 

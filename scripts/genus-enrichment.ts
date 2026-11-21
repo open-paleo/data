@@ -2284,9 +2284,16 @@ export async function enrichGenus(
 
     if (wikitext)
     {
+        // Wikipedia's wording is CC BY-SA and cannot go into the record, so its
+        // etymology is passed on only as a lead to the roots and their
+        // meanings, for a paper that does not state them.
         if (wikitext.etymology && !enriched.etymology)
         {
-            enriched.etymology = wikitext.etymology;
+            enriched.warnings.push(
+                "etymology: left for the describing paper. If the paper does not state it, "
+                + "write it in house style from the roots; Wikipedia's etymology section, "
+                + `as a lead to the roots only and never to be copied, reads: "${wikitext.etymology}"`,
+            );
         }
 
         if (wikitext.summary && !enriched.description)
