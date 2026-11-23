@@ -56,6 +56,11 @@ export type UnitFacts = {
      * Other names the literature gives the unit.
      */
     variants: Array<string>;
+
+    /**
+     * What the unit is made of, if the record says.
+     */
+    lithology?: string;
 };
 
 /**
@@ -156,6 +161,11 @@ export function composeUnitDescription(facts: UnitFacts): string
     const lead = referToUnit(unitName).replace(/^the /, "The ");
     const verb = /(Beds|Sands|Marls|Clays|Grits|Shales|Sandstones)$/.test(unitName) ? "are" : "is";
     const sentences = [ `${lead} ${verb} ${article} ${kind}${parent}${describePlace(facts.places)}${(facts.stages.length + facts.periods.length > 0 ? `, dated to ${describeTimeSpan(facts.stages, facts.periods)}` : "")}.` ];
+
+    if (facts.lithology)
+    {
+        sentences.push(`${verb === "are" ? "They consist" : "It consists"} mainly of ${facts.lithology.replace(/\.$/, "")}.`);
+    }
 
     if (facts.variants.length > 0)
     {

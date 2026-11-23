@@ -1083,6 +1083,7 @@ function publishUnit(
         ...(entry.informal ? { informal: true } : { }),
         ...(parent ? { parent } : { }),
         ...(entry.variants?.length ? { variants: entry.variants } : { }),
+        ...(entry.lithology ? { lithology: entry.lithology } : { }),
         description: [ composeUnitDescription(facts), entry.narrative ].filter(Boolean).join("\n\n"),
         period,
         ...(entry.dispute ? { dispute: entry.dispute } : { }),
@@ -1126,6 +1127,7 @@ function collectUnitFacts(units: Record<string, StratigraphicUnit>): Map<string,
             members: [ ],
             genera: [ ],
             variants: entry.variants ?? [ ],
+            lithology: entry.lithology,
         });
 
         if (parent)
@@ -1258,7 +1260,7 @@ const dataset: Dataset = {
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "4.6.0",
+        schema_version: "4.7.0",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

@@ -1095,6 +1095,13 @@ export type StratigraphicUnit = {
     narrative?: string;
 
     /**
+     * What the unit is made of, as a short phrase that completes "It consists
+     * mainly of ..." ("red mudstone and fine-grained sandstone"). Sourced
+     * from a cited paper, whose reference note quotes it.
+     */
+    lithology?: string;
+
+    /**
      * Live disagreement in the literature over the unit's rank, naming,
      * containment or age.
      */

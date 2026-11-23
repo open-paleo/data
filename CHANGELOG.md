@@ -192,6 +192,9 @@ below.
 - `identifiers` on clades, in the same form as a genus's: PBDB, Wikidata,
   GBIF, EOL and ZooBank numbers for the same taxon. Output schema 4.5.0 →
   4.6.0.
+- `lithology` on stratigraphic units: what the unit is made of, as a short
+  phrase taken from a cited paper. The generated description says it. Output
+  schema 4.6.0 → 4.7.0.
 
 ### Changed
 - A published reference's `notes` are now only the citing record's notes on
