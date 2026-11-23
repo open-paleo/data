@@ -50,7 +50,7 @@
 
 ## References
 
-- `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin*. doi:10.1130/B36795.1
+- `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin* 136: 765-773. doi:10.1130/B36795.1
 - `rauhut2005c`: Rauhut, O. W. M.; Xu, X. (2005). The small theropod dinosaurs Tugulusaurus and Phaedrolosaurus from the early Cretaceous of Xinjiang, China. *Journal of Vertebrate Paleontology* 25(1): 107-118. doi:10.1671/0272-4634(2005)025[0107:tstdta]2.0.co;2
 - `brusatte2012c`: Brusatte, S. L.; Benson, R. B. J.; Xu, X. (2012). A reassessment of Kelmayisaurus petrolicus, a large theropod dinosaur from the Early Cretaceous of China. *Acta Palaeontologica Polonica* 57(1): 65-72. doi:10.4202/app.2010.0125
 - `xu2018c`: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L. (2018). Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution. *Current Biology* 28(17): 2853-2860.e3. doi:10.1016/j.cub.2018.07.057

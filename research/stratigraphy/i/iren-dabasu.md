@@ -1,5 +1,24 @@
 # Iren Dabasu
 
+## What do the earlier datings that Van Itterbeeck and colleagues (2005) review for the Iren Dabasu rest on?
+
+*2026-11-23*
+
+**Conclusion.** Van Itterbeeck and colleagues (2005) list three datings before their own Campanian–Maastrichtian: a Lower Cretaceous age they attribute to Berkey and Morris (1927), a Cenomanian–Turonian age from the primitive hadrosaurs, and a Coniacian–Santonian–?Early Campanian age from derived theropods, citing Jerzykiewicz and Russell (1991) and Currie and Eberth (1993). The Lower Cretaceous is a relayed personal communication and adds no stage or period; the Coniacian–Santonian–?Early Campanian relays Currie and Eberth, already counted from their own words; the Cenomanian–Turonian stays ruled out as in the 2026-10-06 entry. Governs `period` and `stages` on [Iren Dabasu](../../../stratigraphy/i/iren-dabasu.yml).
+
+**Evidence.**
+- vanitterbeeck2005b, p. 702: "Berkey and Morris (1927) proposed a Lower Cretaceous age for the Iren Dabasu Formation based on the occurrence of the ornithopod dinosaur Iguanodon".
+- berkey1927a, p. 355: "The fauna includes iguanodonts of several sizes"; "W. D. Matthew considers the fauna to be rather primitive, and holds that it is best to place the Iren Dabasu tentatively in the Lower Cretaceous (personal communication)".
+- vanitterbeeck2005b, p. 704: "an early Late Cretaceous age (Cenomanian–Turonian) based on the primitive nature of the hadrosaurs"; "based on the occurrence of derived theropods (Jerzykiewicz and Russell, 1991; Currie and Eberth, 1993), the age is considered to be mid to late Late Cretaceous (Coniacian–Santonian–?Early Campanian)".
+- jerzykiewicz1991a, p. 355: the vertebrates of the Bayn Shire recall "the vertebrate assemblage of the Iren Dabasu Formation in China".
+- vanitterbeeck2005b, p. 714: "The stratigraphical ranges of the charophyte and ostracod taxa limit the age to the Campanian–Maastrichtian interval"; "the age of the Iren Dabasu Formation can be estimated as Campanian–Maastrichtian".
+
+**Ruled out.**
+- *A Lower Cretaceous age, after Berkey and Morris (1927).* Berkey and Morris do not determine it themselves: they report W. D. Matthew's tentative placement, by personal communication, of a fauna he thought "rather primitive", and say the correlation "must await a detailed study of the fauna". The basis they give is "iguanodonts of several sizes", not the genus *Iguanodon* that Van Itterbeeck and colleagues name. A personal communication adds no stage or period, and every other work cited on the unit places the formation in the Late Cretaceous.
+- *Coniacian–Santonian–?Early Campanian as a reading of its own.* It is Van Itterbeeck and colleagues' summary of the vertebrate-based dating. Currie and Eberth (1993) are counted from their own words ("early Senonian", possibly "as young as Campanian"); the passage of Jerzykiewicz and Russell (1991) that names the Iren Dabasu, read for this entry, compares its vertebrates with the Bayn Shire's and gives it no stage.
+
+**Open.** Nothing.
+
 ## Is "Erlian" another name for the Iren Dabasu?
 
 *2026-10-14*
@@ -71,6 +90,9 @@
 
 ## References
 
+- `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
+- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
+- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `bonnetti2014a`: Bonnetti, C.; Malartre, F.; Huault, V.; Cuney, M.; Bourlange, S.; Liu, X.; Peng, Y. (2014). Sedimentology, stratigraphy and palynological occurrences of the late Cretaceous Erlian Formation, Erlian Basin, Inner Mongolia, People's Republic of China. *Cretaceous Research* 48: 177-192. doi:10.1016/j.cretres.2013.09.013
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
 - `zhang2001a`: Zhang, X. H.; Xu, X.; Zhao, X. J.; Sereno, P. C.; Kuang, X. W.; Tan, L. (2001). A long-necked therizinosauroid dinosaur from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol, People's Republic of China. *Vertebrata PalAsiatica* 39(4): 282-290.
@@ -83,7 +105,6 @@
 - `prieto-márquez2010b`: Prieto-Márquez, A.; Norell, M. A. (2010). Anatomy and relationships of Gilmoreosaurus mongoliensis (Dinosauria, Hadrosauroidea) from the late Cretaceous of Central Asia. *American Museum Novitates*: 1-49. doi:10.1206/3694.2
 - `guo2017a`: Guo, Z. X.; Shi, Y. P.; Yang, Y. T.; Jiang, S. Q.; Li, L. B.; Zhao, Z. G. (2017). Inversion of the Erlian Basin (NE China) in the early Late Cretaceous: Implications for the collision of the Okhotomorsk Block with East Asia. *Journal of Asian Earth Sciences*. doi:10.1016/j.jseaes.2017.12.007
 - `currie1993d`: Currie, P. J.; Eberth, D. A. (1993). Palaeontology, sedimentology and palaeoecology of the Iren Dabasu Formation (Upper Cretaceous), Inner Mongolia, People's Republic of China. *Cretaceous Research* 14(2): 127-144. doi:10.1006/cres.1993.1011
-- `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
 - `zanno2010a`: Zanno, L. E. (2010). A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora). *Journal of Systematic Palaeontology* 8(4): 503-543. doi:10.1080/14772019.2010.488045
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `brochu2003a`: Brochu, C. R. (2003). Osteology of Tyrannosaurus rex: insights from a nearly complete skeleton and high-resolution computed tomographic analysis of the skull. *Society of Vertebrate Paleontology Memoirs* 7: 1-138. doi:10.2307/3889334
