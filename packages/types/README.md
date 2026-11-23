@@ -16,10 +16,11 @@ Only pre-1.0 versions are published so far, under the `next` tag. Until 1.0.0 th
 import type { OpenPaleoDataset, Genus } from "@open-paleo/types";
 
 const dataset: OpenPaleoDataset = JSON.parse(text);
-const genera: Array<Genus> = dataset.genera;
+const genera: Array<Genus> = Object.values(dataset.genera);
+const tyrannosaurus: Genus | undefined = dataset.genera["Tyrannosaurus"];
 ```
 
-`OpenPaleoDataset` is the whole file; every object in it has an exported type of its own (`Genus`, `Species`, `Clade`, `Reference`, `StratigraphicUnit`, …). The declarations are generated from the JSON Schema with [json-schema-to-typescript](https://github.com/bcherny/json-schema-to-typescript). The recursive `tree` is typed as a nested dictionary; its full recursive structure is in the schema.
+`OpenPaleoDataset` is the whole file. `genera`, `clades` and `stratigraphy` are objects keyed by name. Every object in the file has an exported type of its own (`Genus`, `Species`, `Clade`, `Reference`, `StratigraphicUnit`, …). The declarations are generated from the JSON Schema with [json-schema-to-typescript](https://github.com/bcherny/json-schema-to-typescript). The recursive `tree` is typed as a nested dictionary; its full recursive structure is in the schema.
 
 ## JSON Schema
 

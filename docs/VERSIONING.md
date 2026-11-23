@@ -133,17 +133,26 @@ unchanged schema produces no diff.
 The recursive `tree` is typed as a nested dictionary in both bindings; its full
 recursive shape lives in the JSON Schema, which validation enforces.
 
-### npm package
+### Packages
 
-The TypeScript declarations and the JSON Schema are published on npm as
-[`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types), whose
-version is the `schema_version` of the output it describes. A data release that
-leaves the schema unchanged publishes no new package version. Versions below
-1.0.0 are published under the `next` dist-tag, so they install only with
-`npm install @open-paleo/types@next` or an explicit version.
+Both bindings are published as packages whose version is the `schema_version`
+of the output they describe. A data release that leaves the schema unchanged
+publishes no new package version.
 
-The package's `package.json` and README live in `packages/types/`;
-`npm run stage-types-package` assembles the publishable package from them and
-`dist/` in `scratch/packages/types/`. The *Publish types* workflow
+- **npm:** [`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types),
+  the TypeScript declarations and the JSON Schema. Versions below 1.0.0 are
+  published under the `next` dist-tag, so they install only with
+  `npm install @open-paleo/types@next` or an explicit version.
+- **PyPI:** [`open-paleo`](https://pypi.org/project/open-paleo/), the Pydantic
+  models as the `open_paleo` module, with the JSON Schema as package data. PyPI
+  has no dist-tags, so `pip install open-paleo` takes the newest version; the
+  package is marked alpha until 1.0.0, and `open-paleo~=0.4.7` pins one 0.x
+  minor line as `^0.4.7` does on npm.
+
+Each package's template lives in `packages/` (`types/` and `python/`), and
+`npm run stage-packages` assembles both from their templates and `dist/` in
+`scratch/packages/`. The *Publish bindings* workflow
 (`.github/workflows/publish-types.yml`), run by hand from the Actions tab,
-stages and publishes the version on `main`, with npm provenance.
+stages and publishes the version on `main` to both registries through trusted
+publishing, with provenance. Its dry run checks the npm setup without
+publishing and uploads a `.devN` version to TestPyPI.

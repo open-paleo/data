@@ -184,7 +184,8 @@ Typed bindings generated from the schema ship in
 and Python Pydantic v2 models (`open_paleo.py`). They are regenerated whenever
 the schema changes, so they always match the current contract.
 The TypeScript declarations and the schema are also published on npm as
-[`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types).
+[`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types), and the
+Pydantic models on PyPI as [`open-paleo`](https://pypi.org/project/open-paleo/).
 
 ## Output Formats
 

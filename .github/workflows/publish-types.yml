@@ -1,20 +1,23 @@
-name: Publish types
+name: Publish bindings
 
-# Publishes @open-paleo/types from the dist/ outputs committed on main, at the
-# version in _metadata.schema_version. Run by hand from the Actions tab once
-# the Build workflow has finished for a schema change. A version already on the
-# registry is skipped rather than failing.
+# Publishes the bindings from the dist/ outputs committed on main, at the
+# version in _metadata.schema_version: the TypeScript declarations to npm as
+# @open-paleo/types and the Pydantic models to PyPI as open-paleo. Run by hand
+# from the Actions tab once the Build workflow has finished for a schema
+# change. The two registries are separate jobs, so one failing does not stop
+# the other, and a version already on a registry is skipped rather than
+# failing.
 #
-# npm authenticates this workflow through trusted publishing (GitHub OIDC), so
-# no npm token is stored in the repository. The package's trusted publisher on
-# npmjs.com names this file; renaming it breaks publishing until the setting is
-# updated. The dist-tag (next before 1.0.0) comes from publishConfig in
-# packages/types/package.json.
+# Both registries authenticate this workflow through trusted publishing
+# (GitHub OIDC), so no token is stored in the repository. The trusted
+# publishers on npmjs.com, pypi.org and test.pypi.org name this file;
+# renaming it breaks publishing until all three are updated. The npm dist-tag
+# (next before 1.0.0) comes from publishConfig in packages/types/package.json.
 on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: Pack and report what would be published, without publishing
+        description: Check npm's trusted publishing without publishing, and upload a .devN version to TestPyPI instead of PyPI
         type: boolean
         default: false
 
@@ -27,7 +30,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish:
+  npm:
     # Only main carries the built dist/ outputs.
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -45,8 +48,8 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       # The staging script uses only Node built-ins, so no npm ci.
-      - name: Stage package
-        run: npm run stage-types-package
+      - name: Stage packages
+        run: npm run stage-packages
 
       - name: Check whether this version is published
         id: check
@@ -55,7 +58,7 @@ jobs:
           version="$(node -p "require('./scratch/packages/types/package.json').version")"
           published="$(npm view "$name@$version" version 2>/dev/null || true)"
           if [ -n "$published" ]; then
-            echo "::notice::$name@$version is already published; nothing to do"
+            echo "::notice::$name@$version is already on npm; nothing to do"
             echo "publish=false" >> "$GITHUB_OUTPUT"
           else
             echo "publish=true" >> "$GITHUB_OUTPUT"
@@ -89,3 +92,69 @@ jobs:
           else
             npm publish --tag "$tag" --provenance
           fi
+
+  pypi:
+    # Only main carries the built dist/ outputs.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # Node runs the staging script, which stages the Python package too.
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Stage packages
+        run: npm run stage-packages
+
+      # PyPI has no dry run, so a dry run uploads to TestPyPI instead, as a
+      # development release (0.4.7.dev<run number>) that cannot collide with a
+      # version uploaded there before.
+      - name: Choose version and index
+        id: target
+        run: |
+          project=scratch/packages/python/pyproject.toml
+          version="$(sed -n 's/^version = "\(.*\)"$/\1/p' "$project")"
+          if [ "${{ inputs.dry-run }}" = "true" ]; then
+            version="$version.dev$GITHUB_RUN_NUMBER"
+            sed -i "s/^version = \".*\"$/version = \"$version\"/" "$project"
+            echo "index=https://test.pypi.org" >> "$GITHUB_OUTPUT"
+          else
+            echo "index=https://pypi.org" >> "$GITHUB_OUTPUT"
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Check whether this version is published
+        id: check
+        run: |
+          status="$(curl -s -o /dev/null -w '%{http_code}' "${{ steps.target.outputs.index }}/pypi/open-paleo/${{ steps.target.outputs.version }}/json")"
+          if [ "$status" = "200" ]; then
+            echo "::notice::open-paleo ${{ steps.target.outputs.version }} is already on ${{ steps.target.outputs.index }}; nothing to do"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build
+        if: steps.check.outputs.publish == 'true'
+        run: |
+          pip install build==1.6.1 twine==7.0.0
+          python -m build scratch/packages/python
+          twine check --strict scratch/packages/python/dist/*
+
+      # Uploads with the trusted publisher's token and attaches attestations
+      # (PEP 740).
+      - name: Publish
+        if: steps.check.outputs.publish == 'true'
+        uses: pypa/gh-action-pypi-publish@v1.14.3
+        with:
+          packages-dir: scratch/packages/python/dist/
+          repository-url: ${{ steps.target.outputs.index == 'https://test.pypi.org' && 'https://test.pypi.org/legacy/' || 'https://upload.pypi.org/legacy/' }}

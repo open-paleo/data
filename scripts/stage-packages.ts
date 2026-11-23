@@ -3,7 +3,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 /**
- * The part of a package manifest this script reads and changes.
+ * The part of an npm package manifest this script reads and changes.
  */
 type PackageManifest = {
     /**
@@ -42,12 +42,13 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
-const templateDir = path.join(root, "packages", "types");
-const stageDir = path.join(root, "scratch", "packages", "types");
+const templateRoot = path.join(root, "packages");
+const stageRoot = path.join(root, "scratch", "packages");
+const pythonVersionPlaceholder = "version = \"0.0.0\"";
 
 /**
  * Reads the output schema version from the built dataset, which is the
- * version the types package is published under.
+ * version both packages are published under.
  *
  * @param datasetPath - Path to the built `open-paleo.json`.
  * @returns The `_metadata.schema_version` of the dataset.
@@ -66,23 +67,6 @@ function readSchemaVersion(datasetPath: string): string
 }
 
 /**
- * Copies a file into the staged package, failing with the source path when
- * the file is missing.
- *
- * @param source - Path of the file to copy.
- * @param target - File name inside the staged package.
- */
-function stageFile(source: string, target: string): void
-{
-    if (!fs.existsSync(source))
-    {
-        throw new Error(`${source} is missing; run npm run build and npm run generate-bindings first`);
-    }
-
-    fs.copyFileSync(source, path.join(stageDir, target));
-}
-
-/**
  * Fails when the schema in `dist/` differs from the one in `schemas/`: the
  * build has not run since the schema changed, so the bindings and the version
  * in `dist/` describe an older output.
@@ -98,21 +82,96 @@ function assertDistIsCurrent(): void
     }
 }
 
+/**
+ * Empties a package's staging directory, creating it if needed.
+ *
+ * @param stageDir - The staging directory.
+ */
+function resetStageDir(stageDir: string): void
+{
+    fs.rmSync(stageDir, { recursive: true, force: true });
+    fs.mkdirSync(stageDir, { recursive: true });
+}
+
+/**
+ * Copies a file into a staged package, creating its directory and failing
+ * with the source path when the file is missing.
+ *
+ * @param source - Path of the file to copy.
+ * @param target - Path of the copy.
+ */
+function stageFile(source: string, target: string): void
+{
+    if (!fs.existsSync(source))
+    {
+        throw new Error(`${source} is missing; run npm run build and npm run generate-bindings first`);
+    }
+
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.copyFileSync(source, target);
+}
+
+/**
+ * Stages the npm package `@open-paleo/types`: the TypeScript declarations
+ * and the JSON Schema, with the template's manifest set to the version and
+ * no longer private.
+ *
+ * @param version - The version to stage.
+ * @returns The staged package's name.
+ */
+function stageNpmPackage(version: string): string
+{
+    const templateDir = path.join(templateRoot, "types");
+    const stageDir = path.join(stageRoot, "types");
+    const manifest = JSON.parse(fs.readFileSync(path.join(templateDir, "package.json"), "utf8")) as PackageManifest;
+
+    manifest.version = version;
+    delete manifest.private;
+
+    resetStageDir(stageDir);
+    fs.writeFileSync(path.join(stageDir, "package.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+    stageFile(path.join(templateDir, "README.md"), path.join(stageDir, "README.md"));
+    stageFile(path.join(root, "LICENSE"), path.join(stageDir, "LICENSE"));
+    stageFile(path.join(root, "dist", "bindings", "open-paleo.d.ts"), path.join(stageDir, "index.d.ts"));
+    stageFile(path.join(root, "dist", "open-paleo.schema.json"), path.join(stageDir, "schema.json"));
+
+    return manifest.name;
+}
+
+/**
+ * Stages the Python package `open-paleo`: the Pydantic models as the
+ * `open_paleo` module, the JSON Schema as package data and a `py.typed`
+ * marker, with the template's `pyproject.toml` set to the version.
+ *
+ * @param version - The version to stage.
+ * @returns The staged package's name.
+ */
+function stagePythonPackage(version: string): string
+{
+    const templateDir = path.join(templateRoot, "python");
+    const stageDir = path.join(stageRoot, "python");
+    const moduleDir = path.join(stageDir, "src", "open_paleo");
+    const project = fs.readFileSync(path.join(templateDir, "pyproject.toml"), "utf8");
+
+    if (project.split(pythonVersionPlaceholder).length !== 2)
+    {
+        throw new Error(`packages/python/pyproject.toml must contain exactly one line ${pythonVersionPlaceholder}`);
+    }
+
+    resetStageDir(stageDir);
+    fs.writeFileSync(path.join(stageDir, "pyproject.toml"), project.replace(pythonVersionPlaceholder, `version = "${version}"`));
+    stageFile(path.join(templateDir, "README.md"), path.join(stageDir, "README.md"));
+    stageFile(path.join(root, "LICENSE"), path.join(stageDir, "LICENSE"));
+    stageFile(path.join(root, "dist", "bindings", "open_paleo.py"), path.join(moduleDir, "__init__.py"));
+    stageFile(path.join(root, "dist", "open-paleo.schema.json"), path.join(moduleDir, "schema.json"));
+    fs.writeFileSync(path.join(moduleDir, "py.typed"), "");
+
+    return "open-paleo";
+}
+
 assertDistIsCurrent();
 
 const version = readSchemaVersion(path.join(root, "dist", "open-paleo.json"));
-const manifest = JSON.parse(fs.readFileSync(path.join(templateDir, "package.json"), "utf8")) as PackageManifest;
 
-manifest.version = version;
-delete manifest.private;
-
-fs.rmSync(stageDir, { recursive: true, force: true });
-fs.mkdirSync(stageDir, { recursive: true });
-fs.writeFileSync(path.join(stageDir, "package.json"), `${JSON.stringify(manifest, null, 2)}\n`);
-
-stageFile(path.join(templateDir, "README.md"), "README.md");
-stageFile(path.join(root, "LICENSE"), "LICENSE");
-stageFile(path.join(root, "dist", "bindings", "open-paleo.d.ts"), "index.d.ts");
-stageFile(path.join(root, "dist", "open-paleo.schema.json"), "schema.json");
-
-console.log(`Staged ${manifest.name}@${version} in ${path.relative(root, stageDir)}`);
+console.log(`Staged ${stageNpmPackage(version)}@${version} in scratch/packages/types`);
+console.log(`Staged ${stagePythonPackage(version)} ${version} in scratch/packages/python`);

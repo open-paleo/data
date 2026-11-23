@@ -21,6 +21,7 @@ npm install
 ## Dependencies
 
 - **Pin every dependency to an exact version** — `"yaml": "2.8.3"`, never `"^2.8.3"` or `"~2.8.3"`. Upgrades are deliberate edits to `package.json`, not something `npm install` does on its own. The repository's `.npmrc` sets `save-exact=true`, so `npm install <package>` writes an exact version
+- **Except the published Python package's runtime dependency.** `packages/python/pyproject.toml` requires pydantic as a range (`>=2.10,<3`): a library pinning an exact version would conflict with every project that installs it. Its build backend is still pinned exactly
 - **TypeScript 7 sits beside TypeScript 6.** TypeScript 7 is the native compiler and ships no JavaScript API, which typescript-eslint needs. The `typescript` entry is therefore an alias for `@typescript/typescript6`, which is what ESLint loads, and TypeScript 7 is installed as `typescript7`. `npm run typecheck` calls `node_modules/typescript7/bin/tsc` by path, because the TypeScript 6 package also installs a `tsc` binary. Drop the alias once typescript-eslint supports TypeScript 7
 
 ## Scripts
@@ -36,7 +37,7 @@ Run each script with `npm run <command>`; pass arguments after `--`. Scripts tha
 | `collect-reconstruction-points.ts` | `collect-reconstruction-points` | Write each species' present-day point (or region or country) and age to `scratch/plate-reconstruction/points.json` |
 | `plate-reconstruction/reconstruct-points.py` | `reconstruct-points` | Reconstruct those points with pyGPlates and the model in `plate-reconstruction/model.json` into `scratch/plate-reconstruction/paleocoordinates.json`; needs `pip install -r scripts/plate-reconstruction/requirements.txt` |
 | —                        | `generate-bindings`   | Regenerate the TypeScript and Python bindings in `dist/bindings/` from the JSON Schema |
-| `stage-types-package.ts` | `stage-types-package` | Assemble the `@open-paleo/types` npm package in `scratch/packages/types/` from the template in `packages/types/`, the bindings and the schema, versioned by `_metadata.schema_version` |
+| `stage-packages.ts`      | `stage-packages`      | Assemble the `@open-paleo/types` npm package and the `open-paleo` Python package in `scratch/packages/` from the templates in `packages/`, the bindings and the schema, versioned by `_metadata.schema_version` |
 | `generate-dictionary.ts` | `generate-dictionary` | Generate the spell-check dictionary `dictionaries/taxonomy.txt` |
 | `spellcheck.ts`          | `spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md`; exits 1 on any unknown word, and runs on pull requests |
 | `research.ts`            | `research`            | Print the research notes for a record; `--references <file>` regenerates a note's reference list |
