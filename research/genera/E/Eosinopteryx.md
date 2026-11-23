@@ -49,4 +49,4 @@
 
 - `foth2025a`: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E. (2025). A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic). *Fossil Record* 28(1): 17-43. doi:10.3897/fr.28.131671
 - `li2026a`: Li, F.-F.; Hu, D.-Y.; Zhao, C.-L.; Li, Z.-H.; Zhou, Z.-H. (2026). Redescription and taxonomic reassessment of the holotype of anchiornithine Eosinopteryx brevipenna. *Palaeoworld* 35(6): 201180. doi:10.1016/j.palwor.2026.201180
-- `godefroit2013a`: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P. (2013). Reduced plumage and flight ability of a new Jurassic paravian theropod from China. *Nature Communications* 4(1). doi:10.1038/ncomms2389
+- `godefroit2013a`: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P. (2013). Reduced plumage and flight ability of a new Jurassic paravian theropod from China. *Nature Communications* 4(1): 1394. doi:10.1038/ncomms2389

@@ -1,0 +1,39 @@
+# Bajo Barreal
+
+## What do the cited works say about the age of the Bajo Barreal?
+
+*2026-11-23*
+
+**Conclusion.** Cenomanian and Turonian. Martínez and colleagues (2016) rest the age on Ar–Ar dates of 95.8 to 91.0 Ma from tuffs in the formation, which they place in the middle Cenomanian to middle Turonian (both ends fall in those stages on the ICS chart v2024/12), and on zircon ages that support a Cenomanian Lower Member. Navarrete and colleagues (2011) prefer the Cenomanian–Turonian readings among the four published ages, and Casal and colleagues (2015) give middle Cenomanian to late Turonian. Governs `stages: [Cenomanian, Turonian]` on [Bajo Barreal](../../../stratigraphy/b/bajo-barreal.yml).
+
+**Evidence.**
+- martínez2016a, p. 3, Introduction: "Ar—Ar radiometric dates from tuffs of the Bajo Barreal Formation that range in age from 95.8 to 91.0 Ma, corresponding to the middle Cenomanian—middle Turonian of the current Geologic Time Scale"; "radiometric ages from zircons that further support a Cenomanian age for the Lower Member".
+- martínez2016a, Table 5: "Fossil vertebrate fauna of the Upper Cretaceous (Cenomanian—Turonian) Bajo Barreal Formation of central Patagonia, Argentina"; taxa "previously assigned to this formation (e.g., the titanosaurian sauropods Aeolosaurus colhuehuapensis, Argyrosaurus superbus, and Elaltitan lilloi; the hadrosaurid ornithopod Secernosaurus koerneri) are now known to come from" the Lago Colhué Huapi Formation.
+- navarrete2011a, p. 4: the age "has varied according to different authors: Senonian ..., Albian-Cenomanian ..., middle Cenomanian-late Turonian ... and late Cenomanian-early Turonian"; studies of the dinosaur fauna "and its correlations with equivalent units of the Neuquén basin" suggest that the last two "would be the one that best fits these faunistic connections" (translated).
+- navarrete2011a, p. 1, Abstract: "The material comes from the Upper Member of the Bajo Barreal Formation (Cenomanian-Turonian)".
+- navarrete2011a, p. 12: *Drusilasaura* comes from "stratigraphically high levels of the Upper Member", overlain conformably by the Laguna Palacios Formation "assigned to the Santonian-Maastrichtian", so that its age range "could extend to the upper Turonian and even to the Coniacian" (translated).
+- casal2015a, p. 88: "the Bajo Barreal Formation (middle Cenomanian-late Turonian" (translated), repeated on p. 89.
+- casal2015a, p. 77, Abstract: the Lago Colhué Huapi Formation "overlies the Bajo Barreal Formation (Upper Member) and it is covered by the Laguna Palacios or Salamanca Formation".
+- casal2015a, p. 78: in the area of Lake Colhué Huapi and the headwaters of the Chico river, "stratigraphic and chronological aspects of these levels have historically been confused, which in many cases resulted in the conflicting and questionable stratigraphic placement of their fossils" (translated).
+- casal2015a, p. 86: in the headwaters of the Chico river, "Casal et al. (2007) documented the presence of the titanosaur Aeolosaurus colhuehuapensis" (translated).
+- casal2007a, p. 53, Abstract: the presence of Aeolosaurus in the Upper Member, "along with other paleontological records from the same locality, and geologic observations allow us to assign preliminarily a Campanian-Maastrichtian? age for the upper levels of this stratigraphic unit outcropping in the southeast of Lago Colhué Huapi".
+
+**Ruled out.**
+- *Senonian.* The first of the four published ages that Navarrete and colleagues (2011) list. They set it aside for the Cenomanian–Turonian readings on the faunal ties with the Neuquén basin, and the tuff and zircon dates fall in the Cenomanian and Turonian.
+- *Late Albian to Cenomanian.* Martínez and colleagues (2016) trace it to palynology of "a subsurface equivalent of the Bajo Barreal Formation, the Caleta Olivia Member of the Cañadón Seco Formation" (martínez2016a, p. 3, Introduction), which "initially suggested" that age. It dates a different unit, and the later radiometric dates replace it.
+- *Campanian, from Clyde and colleagues (2014).* Martínez and colleagues (2016, p. 3) report that Clyde and colleagues "argued for a much younger (Campanian) age for the Bajo Barreal Formation" on magnetostratigraphic and biostratigraphic evidence, but that the strata they studied, around Lago Colhué Huapi and the Río Chico, "have recently been reassigned" to the Lago Colhué Huapi Formation.
+- *Campanian to Maastrichtian for the upper levels southeast of Lago Colhué Huapi, from Casal and colleagues (2007).* The age is preliminary, from *Aeolosaurus colhuehuapensis*, other finds at the same locality and geologic observations. Casal and colleagues (2015), led by the same author eight years later, place those beds in the new Lago Colhué Huapi Formation, and Martínez and colleagues (2016) list *Aeolosaurus colhuehuapensis* as coming from that unit. The new formation overlies the Upper Member of the Bajo Barreal rather than replacing any part of it, so the Bajo Barreal lost no rock in the split: what moved were the occurrences at the eastern localities. The 2007 age is history of those beds, not a competing age for the rock now called Bajo Barreal.
+- *Late Turonian to Coniacian for the top of the Upper Member, from* Drusilasaura. Navarrete and colleagues (2011) say the taxon's age range "could extend" that far because it lies high in the Upper Member below the Santonian–Maastrichtian Laguna Palacios. It is a possibility for the taxon, not a dating of the formation, and the same paper dates the member that yielded it Cenomanian–Turonian.
+
+**Open.** No work cited dates the upper part of the Upper Member directly; a date from those levels would settle whether the formation reaches the Coniacian. Clyde and colleagues (2014) has not been read here; its strata are identified only through Martínez and colleagues (2016).
+
+## References
+
+- `martínez2016a`: Martínez, R. D. F.; Lamanna, M. C.; Novas, F. E.; Ridgely, R. C.; Casal, G. A.; Martínez, J. E.; Vita, J. R.; Witmer, L. M. (2016). A Basal Lithostrotian Titanosaur (Dinosauria: Sauropoda) with a Complete Skull: Implications for the Evolution and Paleobiology of Titanosauria. *PLOS ONE* 11(4): e0151661. doi:10.1371/journal.pone.0151661
+- `navarrete2011a`: Navarrete, C.; Casal, G.; Martínez, R. (2011). Drusilasaura deseadensis gen. et sp. nov., un nuevo titanosaurio (Dinosauria-Sauropoda), de la Formación Bajo Barreal, Cretácico Superior del norte de Santa Cruz, Argentina [Drusilasaura deseadensis gen. et sp. nov., a New Titanosaur (Dinosauria-Sauropoda) of the Bajo Barreal Formation, Upper Cretaceous of North of Santa Cruz, Argentina]. *REVISTA BRASILEIRA DE PALEONTOLOGIA* 14(1): 1-14. doi:10.4072/rbp.2011.1.01
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
+- `casal2007a`: Casal, G.; Martínez, R. D.; Luna, M.; Sciutto, J. C.; Lamanna, M. C. (2007). Aeolosaurus colhuehuapensis sp. nov. (Sauropoda, Titanosauria) de la Formación Bajo Barreal, Cretácico superior de Argentina. *Revista Brasileira de Paleontologia* 10(1): 53-62. doi:10.4072/rbp.2007.1.05
+
+## Other references
+
+- `clyde2014a`: Clyde, W. C.; Wilf, P.; Iglesias, A.; Slingerland, R. L.; Barnum, T.; Bijl, P. K.; Bralower, T. J.; Brinkhuis, H.; Comer, E. E.; Huber, B. T.; Ibañez-Mejia, M.; Jicha, B. R.; Krause, J. M.; Schueth, J. D.; Singer, B. S.; Raigemborn, M. S.; Schmitz, M. D.; Sluijs, A.; Zamaloa, M. C. (2014). New age constraints for the Salamanca Formation and lower Río Chico Group in the western San Jorge Basin, Patagonia, Argentina: implications for Cretaceous-Paleogene extinction recovery and land mammal age correlations. *Geological Society of America Bulletin* 126(3-4): 289-306. doi:10.1130/B30915.1

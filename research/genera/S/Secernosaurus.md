@@ -17,5 +17,5 @@
 
 ## References
 
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 81-99.
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `ibiricu2019a`: Ibiricu, L. M.; Casal, G. A.; Martínez, R. D.; Luna, M.; Canale, J. I.; Álvarez, B. N.; González Riga, B. (2019). A new ornithopod dinosaur (Dinosauria: Ornithischia) from the Late Cretaceous of central Patagonia. *Cretaceous Research* 98: 276-291. doi:10.1016/j.cretres.2019.02.001

@@ -35,7 +35,7 @@
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `mannion2012a`: Mannion, P. D.; Otero, A. (2012). A reappraisal of the Late Cretaceous Argentinean sauropod dinosaur Argyrosaurus superbus, with a description of a new titanosaur genus. *Journal of Vertebrate Paleontology* 32(3): 614-638. doi:10.1080/02724634.2012.660898
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 81-99.
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `ameghino1898a`: Ameghino, F. (1898). Sinopsis geológico-paleontológica [Geological-paleontological synopsis]. In *Segundo Censo de la República Argentina*, pp. 111-255.
 - `lydekker1893a`: Lydekker, R. (1893). Contributions to a knowledge of the fossil vertebrates of Argentina. I. — The dinosaurs of Patagonia. *Anales del Museo de La Plata. Paleontología Argentina* 2: 1-16.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

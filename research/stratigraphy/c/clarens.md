@@ -1,5 +1,29 @@
 # Clarens
 
+## Do the upper Elliot dates and the Lesotho lavas narrow the Clarens's Sinemurian–Toarcian range?
+
+*2026-11-23*
+
+**Conclusion.** No; both ends of the 2026-09-30 range stand. Bordy and colleagues (2020) date the Clarens younger than Sereno (2012) does, mainly Pliensbachian, and close the upper Stormberg record in the early Toarcian; since the Clarens is the youngest unit of that record and lies beneath the Toarcian basalts, the early Toarcian end can only be its top. The Sinemurian is the weaker end. Their sample Q6, from the uppermost upper Elliot, has a maximum depositional age of 191.9 ± 1.5 Ma, which is Sinemurian on the GTS2012 boundary of 190.8 Ma but Pliensbachian on the GTS2020 boundary of 192.9 Ma, the one the current ICS chart (v2024/12) carries; their Fig. 2 is drawn on the ICS chart v2018/08. So the Sinemurian in the earlier inference that the Clarens is "Sinemurian–Pliensbachian" was framed on stage labels from before 2020. It is kept because Q6 is a single sample, which the paper itself finds too few to test the upper Elliot's correlation; its uncertainty reaches 193.4 Ma, inside the Sinemurian (this arithmetic is ours); and the paper expects lithostratigraphic boundaries to be diachronous across the basin, so the base of the Clarens need not be younger everywhere than the top of the upper Elliot at the Q6 site. The Lesotho lava pile above the formation, which Jourdan and colleagues (2008) give as 181.6 ± 0.7 Ma, falls inside the Toarcian (184.2 to 174.7 Ma on GTS2020), so it bounds the Clarens from above without excluding a Toarcian top. Olsen and Galton's (1984) "Early Jurassic (Hettangian-Pliensbachian)" is the age of the upper Elliot and Clarens assemblage taken together, which they correlate with the upper Newark Supergroup, the Glen Canyon and the lower Lufeng Series, so it does not put the Clarens in the Hettangian. Of the three Karoo papers by Jourdan and colleagues cited (2005, 2007, 2008), only the 2008 paper names the Clarens. Governs `stages: [Sinemurian, Pliensbachian, Toarcian]` on [Clarens](../../../stratigraphy/c/clarens.yml).
+
+**Evidence.**
+- bordy2020a, p. 1, Abstract: "a Hettangian–Sinemurian age for the upper Elliot Formation".
+- bordy2020a, p. 4, Introduction: the Clarens "is inferred to be Sinemurian–Pliensbachian. The age of the upper boundary of the Stormberg Group succession is provided by the conformably overlying, Toarcian-aged continental flood basalts".
+- bordy2020a, p. 4, Fig. 2: "Geological time scale based on the International Chronostratigraphic Chart (v2018/08; ICS, 2018)"; "most lithostratigraphic boundaries are likely to be diachronous, i.e., they are timetransgressive laterally across the basin".
+- bordy2020a, p. 10, Table 1: sample Q6, "tsa um uEF", 191.9 ± 1.5 Ma.
+- bordy2020a, p. 17, 5.3: the new maximum depositional ages do not test the upper Elliot correlation "because of the limited number of productive detrital zircon-bearing samples in the uEF (e.g., Q6: <191.9 Ma".
+- hesselbo2020a, p. 1004, Table 26.4: base of the Pliensbachian 190.8 Ma in GTS2012 and 192.9 Ma in GTS2020; base of the Toarcian 184.2 Ma and of the Aalenian 174.7 Ma in GTS2020.
+- olsen1984a, p. 87, Abstract: "the upper Stormberg assemblage is Early Jurassic (Hettangian-Pliensbachian) in age"; "the upper Stormberg (upper Elliot and Clarens formations) assemblage broadly correlates with the upper Newark Supergroup of eastern North America, the Glen Canyon of the southwestern United States, and the lower Lufeng Series of China".
+- jourdan2008a, p. 2, Introduction: "the 1.9 km-thick Lesotho lava pile (181.6 ± 0.7 Ma)"; p. 5, 2.1: "dated at 181.6 ± 0.7 Ma".
+- jourdan2008a, p. 16, 5.2.3: some intrusive events "occurred early, before the Lesotho lava-pile emplacement", "as attested by pipe-related deposits in the Clarens formation".
+
+**Ruled out.**
+- *No Sinemurian, because the upper Elliot below already reaches the Pliensbachian.* It rests on one sample whose uncertainty reaches into the Sinemurian, and on a boundary that Bordy and colleagues expect to be diachronous.
+- *Hettangian.* Olsen and Galton's Hettangian–Pliensbachian covers the upper Elliot and the Clarens together, and the upper Elliot lies below the Clarens.
+- *No Toarcian, the lavas closing the formation earlier.* The 181.6 Ma lava pile is Toarcian on the current chart.
+
+**Open.** A second dated sample from the top of the upper Elliot, or one from the base of the Clarens, would settle whether the Clarens reaches the Sinemurian.
+
 ## Is the Bushveld Sandstone the Clarens Formation?
 
 *2026-10-14*
@@ -56,16 +80,21 @@
 
 ## References
 
+- `bordy2020a`: Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N. (2020). A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa. *Earth-Science Reviews* 203: 103120. doi:10.1016/j.earscirev.2020.103120
+- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
+- `olsen1984a`: Olsen, P. E.; Galton, P. M. (1984). A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg. *Palaeontologia Africana* 25: 87-110.
+- `jourdan2008a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Watkeys, M. K.; Renne, P. R. (2008). The 40Ar/39Ar ages of the sill complex of the Karoo large igneous province: implications for the Pliensbachian-Toarcian climate change. *Geochemistry, Geophysics, Geosystems* 9(6): 1-20. doi:10.1029/2008GC001994
 - `bordy2018a`: Bordy, E. M.; Head, H. V. (2018). Lithostratigraphy of the Clarens Formation (Stormberg Group, Karoo Supergroup), South Africa. *South African Journal of Geology* 121(1): 119-130. doi:10.25131/sajg.121.0009
 - `smith1993a`: Smith, R. M. H.; Eriksson, P. G.; Botha, W. J. (1993). A review of the stratigraphy and sedimentary environments of the Karoo-aged basins of Southern Africa. *Journal of African Earth Sciences* 16: 143-169.
 - `vanheerden1979a`: Van Heerden, J. (1979). The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa. *Navorsinge van die Nasionale Museum* 4: 21-84.
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
 - `bordy2015a`: Bordy, E. M.; Eriksson, P. (2015). Lithostratigraphy of the Elliot Formation (Karoo Supergroup), South Africa. *South African Journal of Geology* 118(3): 311-316. doi:10.2113/gssajg.118.3.311
 - `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 232-258. University of California Press, Berkeley.
-- `bordy2020a`: Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N. (2020). A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa. *Earth-Science Reviews* 203: 103120. doi:10.1016/j.earscirev.2020.103120
 - `sciscio2017a`: Sciscio, L.; de Kock, M.; Bordy, E. M.; Knoll, F. (2017). Magnetostratigraphy across the Triassic-Jurassic boundary in the main Karoo Basin. *Gondwana Research* 51: 177-192. doi:10.1016/j.gr.2017.07.009
-- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840
 - `crompton1962a`: Crompton, A. W.; Charig, A. J. (1962). A new Ornithischian from the Upper Triassic of South Africa. *Nature* 196(4859): 1074-1077. doi:10.1038/1961074a0
-- `jourdan2008a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Watkeys, M. K.; Renne, P. R. (2008). The 40Ar/39Ar ages of the sill complex of the Karoo large igneous province: implications for the Pliensbachian-Toarcian climate change. *Geochemistry, Geophysics, Geosystems* 9(6): 1-20. doi:10.1029/2008GC001994
-- `olsen1984a`: Olsen, P. E.; Galton, P. M. (1984). A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg. *Palaeontologia Africana* 25: 87-110.
+
+## Other references
+
+- `jourdan2005a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Kampunzu, A. B.; Tshoso, G.; Watkeys, M. K. (2005). Karoo large igneous province: brevity, origin, and relation to mass extinction questioned by new 40Ar/39Ar age data. *Geology* 33: 745-748.
+- `jourdan2007a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Watkeys, M. K. (2007). From flood basalts to the inception of oceanization: example from the 40Ar/39Ar high-resolution picture of the Karoo large igneous province. *Geochemistry, Geophysics, Geosystems* 8(2): Q02002. doi:10.1029/2006GC001392

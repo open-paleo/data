@@ -34,5 +34,5 @@
 
 ## References
 
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 81-99.
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `mannion2012a`: Mannion, P. D.; Otero, A. (2012). A reappraisal of the Late Cretaceous Argentinean sauropod dinosaur Argyrosaurus superbus, with a description of a new titanosaur genus. *Journal of Vertebrate Paleontology* 32(3): 614-638. doi:10.1080/02724634.2012.660898

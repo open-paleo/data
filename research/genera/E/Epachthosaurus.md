@@ -33,6 +33,6 @@
 ## References
 
 - `martínez2004a`: Martínez, R. D.; Giménez, O.; Rodríguez, J.; Luna, M.; Lamanna, M. C. (2004). An articulated specimen of the basal titanosaurian (Dinosauria: Sauropoda) Epachthosaurus sciuttoi from the early Late Cretaceous Bajo Barreal Formation of Chubut Province, Argentina. *Journal of Vertebrate Paleontology* 24(1): 107-120. doi:10.1671/9.1
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 81-99.
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `powell1990a`: Powell, J. E. (1990). Epachthosaurus sciuttoi (gen. et sp. nov.), un dinosaurio sauropodo del Cretácico de Patagonia (Provincia de Chubut, Argentina) [Epachthosaurus sciuttoi (gen. et sp. nov.), a sauropod dinosaur from the Cretaceous of Patagonia (Chubut province, Argentina)]. *Actas del V Congreso Argentino de Paleontologia y Bioestratigrafia, Tucumán, Argentina* 1: 123-128.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
