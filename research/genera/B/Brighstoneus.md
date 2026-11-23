@@ -19,5 +19,5 @@
 ## References
 
 - `lockwood2021a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2021). A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England. *Journal of Systematic Palaeontology* 19(12): 847-888. doi:10.1080/14772019.2021.1978005
-- `lockwood2024a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2024). Comptonatus chasei, a new iguanodontian dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, southern England. *Journal of Systematic Palaeontology* 22(1). doi:10.1080/14772019.2024.2346573
+- `lockwood2024a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2024). Comptonatus chasei, a new iguanodontian dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, southern England. *Journal of Systematic Palaeontology* 22(1): 2346573. doi:10.1080/14772019.2024.2346573
 - `rotatori2026a`: Rotatori, F. M.; Chiarenza, A. A.; Fanti, F.; Moreno-Azanza, M. (2026). The early origin of Iguanodontia: new insights into the macroevolution, diversity and biogeography of the clade. *Palaeontology* 69(2): e70057. doi:10.1111/pala.70057

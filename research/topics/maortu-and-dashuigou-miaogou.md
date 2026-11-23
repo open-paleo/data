@@ -20,7 +20,7 @@
 
 ## References
 
-- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167(78): 106023. doi:10.1016/j.cretres.2024.106023
+- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167: 106023. doi:10.1016/j.cretres.2024.106023
 - `dong2002a`: Dong, Z. (2002). A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China. *Vertebrata PalAsiatica* 40(4): 276-285.
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

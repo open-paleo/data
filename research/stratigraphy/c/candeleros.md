@@ -1,5 +1,27 @@
 # Candeleros
 
+## On what grounds do Calvo (1999), Hugo and Leanza (2001) and Garrido (2010) date the Candeleros?
+
+*2026-11-23*
+
+**Conclusion.** Cenomanian, unchanged, as the 2026-09-20 and 2026-10-14 entries conclude; this entry adds the grounds each of the three works gives. Hugo and Leanza (2001) and Garrido (2010) both place the formation's base after the Main Miránica (Patagonídica) unconformity, which they put in the Cenomanian, and both assign the formation to the lower Cenomanian; Garrido adds zircon dating that puts the start of deposition north of the Huincul Ridge in the basal Cenomanian. Hugo and Leanza's Cenomanian–lower Turonian is the Río Limay Subgroup's, which also holds the Huincul and Cerro Lisandro. Every age in Calvo (1999) is a faunal correlation: an Albian–Cenomanian from dinosaur tracks, narrowed to the Albian on the vertebrate fauna and on an *Araripesuchus* related to a species from the Middle Albian Romualdo Member. Governs `stages: [Cenomanian]` on [Candeleros](../../../stratigraphy/c/candeleros.yml).
+
+**Evidence.**
+- hugo2001a, p. 12, Edad y correlaciones: the age of the formation "must be later than the unconformity determined by the Main Miránica phase", which can be equated with a global discontinuity placed "in the lower Cenomanian (97 ± 3 Ma)"; "Consequently, this unit is assigned to the lower Cenomanian" (translated).
+- hugo2001a, p. 5, Cuadro 1: the Candeleros Formation is drawn at the base of the Río Limay Subgroup in the Cenomanian row, with "Miránica principal" in the column of diastrophic phases beside it.
+- hugo2001a, p. 2, Abstract: the Neuquén Group "is subdivided into three units: the Cenomanian-lower Turonian Limay Subgroup comprising the Candeleros, Huincul and Cerro Lisandro Formations".
+- garrido2010a, p. 134: the start of deposition of the Candeleros "occurs after the Main Miránica or Patagonídica Unconformity", which "has been placed in the Cenomanian" with "an estimated age between 97 ± 3 Ma … and 94 Ma"; pp. 134–135: "Recent zircon datings indicate, for the deposits above the δ1 unconformity (north of the ridge), a depositional start situated in the basal Cenomanian" (translated).
+- garrido2010a, p. 132: immediately south of the Huincul Ridge "the Candeleros Fm. rests concordantly on deposits of the Lohan Cura Fm., the latter with an estimated age in the Albian" (translated).
+- calvo1999a, p. 17: "The age of the Candeleros Member based on dinosaur tracks has been determined as Albian-Cenomanian (Calvo, 1991)"; p. 18: a "more primitive vertebrate fauna" and new African discoveries "allow us to confirm that this member is Albian in age (Calvo and Salgado, 1996)".
+- calvo1999a, p. 18: "The age of the Romualdo Member has been determined as Middle Albian"; *Araripesuchus gomesii* is "closely related to the new material of *Araripesuchus* sp. from Lake Ezequiel Ramos Mexia. This implies an Albian age for the Candeleros Member".
+
+**Ruled out.**
+- *Albian, from Calvo (1999).* Adds to the 2026-09-20 entry's grounds: each step in Calvo's argument correlates faunas, the narrowing from the Albian–Cenomanian of the tracks rests on Calvo and Salgado (1996), and the *Araripesuchus* comparison dates the Romualdo Member, not the Candeleros. None of it dates the rock, and the formation's base lies above an unconformity both Hugo and Leanza (2001) and Garrido (2010) place in the Cenomanian.
+- *Albian–Cenomanian, from the tracks of Calvo (1991).* Calvo (1999) narrows it himself, and Garrido (2010) reports Calvo (1991) as placing the deposits in the Albian before setting that aside.
+- *Lower Turonian, from Hugo and Leanza (2001).* The Cenomanian–lower Turonian is the Río Limay Subgroup's range across three formations, a case of the three-formation spans the 2026-09-20 entry rules out; for the Candeleros itself they give the lower Cenomanian.
+
+**Open.** Garrido (2010) gives no source and no numbers for the zircon dates. The publication that reports them would let the basal Cenomanian start be checked directly.
+
 ## Does Gallina and Apesteguía's "Cenomanian-Turonian" date the Candeleros?
 
 *2026-10-14*
@@ -37,14 +59,20 @@
 
 ## References
 
+- `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
+- `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
+- `calvo1999a`: Calvo, J. O. (1999). Dinosaurs and other vertebrates of the Lake Ezequiel Ramos Mexía area, Neuquén-Patagonia, Argentina. *National Science Museum Monographs* 15: 13-45.
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
 - `corbella2004a`: Corbella, H.; Novas, F. E.; Apesteguía, S.; Leanza, H. A. (2004). First fission-track age for the dinosaur-bearing Neuquén Group (Upper Cretaceous), Neuquén Basin, Argentina. *Revista del Museo Argentino de Ciencias Naturales, nueva serie* 6(2): 227-232.
 - `makovicky2012a`: Makovicky, P. J.; Apesteguía, S.; Gianechini, F. A. (2012). A New Coelurosaurian Theropod from the La Buitrera Fossil Locality of Río Negro, Argentina. *Fieldiana Life and Earth Sciences* 5: 90-98. doi:10.3158/2158-5520-5.1.90
 - `gallina2005a`: Gallina, P.; Apesteguía, S. (2005). Cathartesaura anaerobica gen. et sp. nov., a new rebbachisaurid (Dinosauria, Sauropoda) from the Huincul Formation (Upper Cretaceous), Río Negro, Argentina. *Revista del Museo Argentino de Ciencias Naturales* 7: 153-166. doi:10.22179/revmacn.7.332
-- `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
-- `calvo1999a`: Calvo, J. O. (1999). Dinosaurs and other vertebrates of the Lake Ezequiel Ramos Mexía area, Neuquén-Patagonia, Argentina. *National Science Museum Monographs* 15: 13-45.
 - `calvo2010a`: Calvo, J. O.; Porfiri, J. D. (2010). Panamericansaurus schroederi gen. nov. sp. nov. Un nuevo Sauropoda (Titanosauridae-Aeolosaurini) de la Provincia del Neuquén, Cretácico Superior de Patagonia, Argentina [Panamericansaurus schroederi gen. nov. sp. nov. A new Sauropoda (Titanosauridae-Aeolosaurini) from Neuquén Province, Upper Cretaceous of Patagonia, Argentina]. *Brazilian Geographical Journal: Geosciences and Humanities Research Medium* 1: 100-115.
 - `bellardini2023a`: Bellardini, F.; Filippi, L. S.; Carballido, J. L.; Garrido, A. C.; Baiano, M. A. (2023). Exploring rebbachisaurid hind-limb anatomy on the basis of a new articulated specimen from the Huincul Formation (upper Cenomanian) of Neuquén Basin, Patagonia, Argentina. *Historical Biology* 36(12): 2587-2603. doi:10.1080/08912963.2023.2268638
 - `bellardini2025a`: Bellardini, F.; Filippi, L. S.; Carballido, J. L.; Garrido, A. C.; Baiano, M. A. (2025). Side by side with titans: A new rebbachisaurid dinosaur from the Huincul Formation (upper Cenomanian) of Patagonia, Argentina. *Cretaceous Research* 176. doi:10.1016/j.cretres.2025.106188
 - `apesteguía2007a`: Apesteguía, S. (2007). The sauropod diversity of the La Amarga Formation (Barremian), Neuquén (Argentina). *Gondwana Research* 12(4): 533-546. doi:10.1016/j.gr.2007.04.007
 - `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
+
+## Other references
+
+- `calvo1991b`: Calvo, J. O. (1991). Huellas de dinosaurios en la Formación Río Limay (Albiano-Cenomaniano?), Picún Leufú, Provincia de Neuquén, República Argentina (Ornithischia-Saurischia: Sauropoda-Theropoda) [Dinosaur tracks in the Río Limay Formation (Albian-Cenomanian?), Picún Leufú, Neuquén Province, Argentine Republic]. *Ameghiniana* 28(3-4): 241-258.
+- `calvo1996a`: Calvo, J. O.; Salgado, L. (1996). A land bridge connection between South America and Africa during Albian-Cenomanian times based on sauropod dinosaur evidence. In *1st Annual Conference of South Atlantic Mesozoic Correlations, IGCP Project 381, XXXIX Congresso Brasileiro de Geologia*. Salvador, Brazil.

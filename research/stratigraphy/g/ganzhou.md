@@ -1,5 +1,22 @@
 # Ganzhou
 
+## What do the zircon ages from the Maodian Formation give the base of the Ganzhou Group?
+
+*2026-11-23*
+
+**Conclusion.** Floors only. Li and colleagues (2018) take the youngest detrital zircons of the lower and middle Maodian, the group's lower formation, to mean that its deposition began later than 101.0 Ma, and in their conclusions that the group began later than the early Albian (110 Ma); Xing and colleagues (2024) repeat the 110 Ma figure, crediting it to Li and colleagues. A floor from detrital zircons is a limit, not an age, so neither figure adds the Albian or any other stage to the group, whose Cenomanian and Turonian rest on the Zhoutian Formation above (the 2026-10-03 entry). Xing and colleagues also count the group among the Upper Cretaceous groups of the Jiangxi red beds. Governs `stages: [Cenomanian, Turonian]` and `period: [Late Cretaceous]` on [Ganzhou](../../../stratigraphy/g/ganzhou.yml), unchanged.
+
+**Evidence.**
+- li2018a, p. 1121: "the two youngest zircons of the lower Maodian Formation gave ages of 101.0±2.0 Ma and 103.0±1.0 Ma, and the youngest zircon of the middle Maodian Formation gave an age of 98.0±1.0 Ma"; "the earliest deposition of the Maodian Formation may have been later than 101.0 Ma, that is, it may have been deposited in the early part of the Late Cretaceous" (translated).
+- li2018a, p. 1123: the youngest detrital zircon ages "(105~98 Ma) from the middle-upper part of the Maodian Formation" indicate "that the initial deposition of the Ganzhou Group may be later than the early Albian (110 Ma)" (translated).
+- xing2024a, p. 115: "The Ganzhou Group is further subdivided into the Maodian and Zhoutian formations"; "Zircon dating placed the lower Maodian Formation to after the early Albian stage (110 Ma), and the Zhoutian Formation to the Turonian to early Coniacian stages (96–90 Ma) (Li et al. 2018; Wu et al. 2020)"; the red beds "are now classified as the Lower Cretaceous Wuyi and Huobashan groups and the Upper Cretaceous Ganzhou and Guifeng groups".
+
+**Ruled out.**
+- *Albian at the base of the group, from the 110 Ma or 101.0 Ma figures.* Both are floors ("after", "later than") from the youngest detrital zircons, and a floor licenses no stage. Xing and colleagues' 110 Ma is Li and colleagues' conclusion repeated, not a second determination.
+- *Coniacian at the top of the group, from the young end of Xing and colleagues' 96–90 Ma.* Adds a figure to the 2026-10-03 entry's ruling: the Coniacian begins at 89.8 Ma on the ICS chart v2024/12, so 90 Ma is Turonian, and the paper gives no other basis for the Coniacian than that range.
+
+**Open.** Nothing new; the 2026-10-22 entry names what would settle the base of the group.
+
 ## Does Ling's 85.9 Ma K-Ar date on the Maodian Formation put the Ganzhou Group in the Coniacian?
 
 *2026-10-22*
@@ -35,9 +52,9 @@
 
 ## References
 
-- `ling1996a`: Ling, L. (1996). 江西省白垩纪茅店组、河口组及塘边组的建立 [Establishment of the Cretaceous Maodian, Hekou and Tangbian formations of Jiangxi Province]. *Geological Science and Technology of Jiangxi* 23(2): 55-59.
 - `li2018a`: Li, X. H.; Zhang, C. K.; Wang, Y.; Liu, L. (2018). 华南晚中生代陆相地层年代及关系研究 [Age and relationships of Late Mesozoic continental strata in South China]. *Acta Geologica Sinica* 92(6): 1107-1130.
-- `han2024a`: Han, F.; Yang, L.; Lou, F.; Sullivan, C.; Xu, X.; Qiu, W.; Liu, H.; Yu, J.; Wu, R.; Ke, Y.; Xu, M.; Hu, J.; Lu, P. (2024). A new titanosaurian sauropod, Gandititan cavocaudatus gen. et sp. nov., from the Late Cretaceous of southern China. *Journal of Systematic Palaeontology* 22(1): 2293038. doi:10.1080/14772019.2023.2293038
 - `xing2024a`: Xing, L.; Niu, K.; Mallon, J.; Miyashita, T. (2024). A new armored dinosaur with double cheek horns from the early Late Cretaceous of southeastern China. *Vertebrate Anatomy Morphology Palaeontology* 11. doi:10.18435/vamp29396
+- `ling1996a`: Ling, L. (1996). 江西省白垩纪茅店组、河口组及塘边组的建立 [Establishment of the Cretaceous Maodian, Hekou and Tangbian formations of Jiangxi Province]. *Geological Science and Technology of Jiangxi* 23(2): 55-59.
+- `han2024a`: Han, F.; Yang, L.; Lou, F.; Sullivan, C.; Xu, X.; Qiu, W.; Liu, H.; Yu, J.; Wu, R.; Ke, Y.; Xu, M.; Hu, J.; Lu, P. (2024). A new titanosaurian sauropod, Gandititan cavocaudatus gen. et sp. nov., from the Late Cretaceous of southern China. *Journal of Systematic Palaeontology* 22(1): 2293038. doi:10.1080/14772019.2023.2293038
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 - `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y

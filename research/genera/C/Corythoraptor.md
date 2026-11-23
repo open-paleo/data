@@ -20,7 +20,7 @@
 
 - `lü2017a`: Lü, J.; Li, G.; Kundrát, M.; Lee, Y. N.; Sun, Z.; Kobayashi, Y.; Shen, C.; Teng, F.; Liu, H. (2017). High diversity of the Ganzhou Oviraptorid Fauna increased by a new "cassowary-like" crested species. *Scientific Reports* 7(1). doi:10.1038/s41598-017-05016-6
 - `cau2024a`: Cau, A. (2024). A Unified Framework for Predatory Dinosaur Macroevolution. *Bollettino della Società Paleontologica Italiana* 63(1): 1-19. doi:10.4435/BSPI.2024.08
-- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167(78): 106023. doi:10.1016/j.cretres.2024.106023
+- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167: 106023. doi:10.1016/j.cretres.2024.106023
 
 ## Other references
 

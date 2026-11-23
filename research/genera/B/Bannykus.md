@@ -18,4 +18,4 @@
 ## References
 
 - `xu2018c`: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L. (2018). Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution. *Current Biology* 28(17): 2853-2860.e3. doi:10.1016/j.cub.2018.07.057
-- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167(78): 106023. doi:10.1016/j.cretres.2024.106023
+- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167: 106023. doi:10.1016/j.cretres.2024.106023

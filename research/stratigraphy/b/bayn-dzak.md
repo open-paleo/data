@@ -1,5 +1,24 @@
 # Bayn Dzak
 
+## On what grounds is the Bayn Dzak Member dated, and extended to Ukhaa Tolgod?
+
+*2026-11-23*
+
+**Conclusion.** Campanian, and Ukhaa Tolgod is in the member, as the 2026-09-30 entries here and in [Djadokhta](../d/djadokhta.md) conclude; this entry sets out the passages behind them. Dashzeveg and colleagues (2005) erect the member with a lithological definition, list the earlier biochronological ages of its fauna, from Berkey and Morris's (1927) early Late Cretaceous through the Coniacian–Santonian of Polish authors to the Campanian of most later workers, and then give their own magnetostratigraphy, which suggests without clearly establishing deposition in the late Campanian, about 75 to 71 Ma. Dingus and colleagues (2008) refer Ukhaa Tolgod, in the Nemegt Basin, to the member because its facies match those of the member at Bayn Dzak, after asking whether so large an extension south of the Ulan Nur Basin is justified. Governs `stages: [Campanian]` on [Bayn Dzak](../../../stratigraphy/b/bayn-dzak.yml), and `location.member: Bayn Dzak` on Ukhaa Tolgod species such as [*Citipati osmolskae*](../../../genera/C/Citipati.yml).
+
+**Evidence.**
+- dashzeveg2005a, p. 1: "The considerably enlarged formation comprises a lower Bayn Dzak Member, dominated by moderate reddish orange sands with subordinate mudstone units, and an upper Tugrugyin Member, composed of pale orange to light gray sands".
+- dashzeveg2005a, p. 17: "According to different authors, its age has been reported to range from Cenomanian to Early Maastrichtian. Berkey and Morris (1927) placed it in the early Late Cretaceous. Polish authors variously assigned it to a range between the Coniacian and the Santonian"; "most recent workers have assigned a Campanian age to the fauna from the Djadokhta".
+- dashzeveg2005a, p. 18: the reversed magnetozones mean "that most of these units must be younger than Chron 34n—the upper boundary of which represents the boundary between the Santonian and the Campanian at about 83.5 Ma".
+- dashzeveg2005a, p. 26: the succession of magnetozones in the Flaming Cliffs section "suggests, but does not clearly establish, that the sediments were deposited during the rapid sequence of polarity changes in the late part of the Campanian incorporating the end of Chron 33 and Chron 32 between about 75 and 71 Ma".
+- dingus2008a, p. 2: "As seen in the Bayn Dzak Member at Bayn Dzak, facies E-1, E-2, S, and M dominate the lower part of the section at Ukhaa Tolgod, with prominent beds of Facies C exposed near the top. Accordingly, the exposures at Ukhaa Tolgod are referred to the Bayn Dzak Member of the Djadokhta Formation."
+- dingus2008a, p. 30: "one might question whether such a large geographic extension southward from the Ulan Nur Basin can be justified"; correlative Djadokhta strata are already recognized "even further to the south at Bayan Mandahu"; "we refer the strata at Ukhaa Tolgod to the Bayn Dzak Member of the Djadokhta Formation".
+
+**Ruled out.**
+- *Early Late Cretaceous, after Berkey and Morris (1927), and Coniacian–Santonian, after the Polish authors.* Both are among the earlier biochronological ages Dashzeveg and colleagues list before their magnetostratigraphy, which places most of the member above Chron 34n and so in the Campanian or later. The Coniacian–Santonian is ruled out for the formation on the same grounds in the 2026-11-23 entry in [Djadokhta](../d/djadokhta.md). The Cenomanian to Early Maastrichtian span, the Turonian, and an earliest Maastrichtian from recalibrating the 75 to 71 Ma window on the current chart are ruled out in the Djadokhta entries.
+
+**Open.** Nothing beyond what the Djadokhta entries leave open.
+
 ## Is the Bayn Dzak Member a named unit, and is all Flaming Cliffs material in it?
 
 *2026-09-30*
@@ -26,3 +45,7 @@
 - `turner2021a`: Turner, A. H.; Montanari, S.; Norell, M. A. (2021). A New Dromaeosaurid from the Late Cretaceous Khulsan Locality of Mongolia. *American Museum Novitates* 2020(3965): 1-46. doi:10.1206/3965.1
 - `arbour2015a`: Arbour, V. M.; Currie, P. J. (2015). Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs. *Journal of Systematic Palaeontology* 14(5): 385-444. doi:10.1080/14772019.2015.1059985
 - `barsbold1999a`: Barsbold, R.; Osmólska, H. (1999). The skull of Velociraptor (Theropoda) from the Late Cretaceous of Mongolia. *Acta Palaeontologica Polonica* 44(2): 189-219.
+
+## Other references
+
+- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
