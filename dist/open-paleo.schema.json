@@ -326,6 +326,7 @@
         "informal": { "type": "boolean", "description": "True for a unit that was never formally erected but is widely used." },
         "parent": { "type": "string", "description": "Name of the unit this one lies within (a member's formation, a bed's unit); a key of stratigraphy." },
         "variants": { "type": "array", "items": { "type": "string" }, "description": "Other names the literature gives the unit." },
+        "lithology": { "type": "string", "description": "What the unit is made of, as a short phrase (\"red mudstone and fine-grained sandstone\"), taken from a cited paper." },
         "description": { "type": "string", "description": "A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it), followed after a blank line by a narrative in our own words where the record has one." },
         "period": { "$ref": "#/$defs/period" },
         "dispute": { "$ref": "#/$defs/dispute" },

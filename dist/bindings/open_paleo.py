@@ -600,6 +600,10 @@ class StratigraphicUnit(BaseModel):
     variants: Optional[List[str]] = Field(
         None, description='Other names the literature gives the unit.'
     )
+    lithology: Optional[str] = Field(
+        None,
+        description='What the unit is made of, as a short phrase ("red mudstone and fine-grained sandstone"), taken from a cited paper.',
+    )
     description: str = Field(
         ...,
         description='A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it), followed after a blank line by a narrative in our own words where the record has one.',

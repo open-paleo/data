@@ -712,6 +712,10 @@ export interface StratigraphicUnit {
    */
   variants?: string[];
   /**
+   * What the unit is made of, as a short phrase ("red mudstone and fine-grained sandstone"), taken from a cited paper.
+   */
+  lithology?: string;
+  /**
    * A few-sentence summary of the unit for a general reader, written by the build from the record (rank, parent, age, places, members, variants, dinosaurs recorded from it), followed after a blank line by a narrative in our own words where the record has one.
    */
   description: string;
