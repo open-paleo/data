@@ -41,4 +41,4 @@
 - `weska2006a`: Weska, R. K. (2006). Uma síntese do Cretáceo Superior mato-grossense [A synthesis of the Upper Cretaceous of Mato Grosso]. *Geociências* 25: 71-81.
 - `bittencourt2011a`: Bittencourt, J. S.; Langer, M. C. (2011). Mesozoic dinosaurs from Brazil and their biogeographic implications. *Anais da Academia Brasileira de Ciências* 83(1): 23-60. doi:10.1590/s0001-37652011000100003
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
-- `iori2021a`: Iori, F. V.; de Araújo-Júnior, H. I. de; Tavares, S. A. S.; Marinho, T. da S.; Martinelli, A. G. (2021). New theropod dinosaur from the Late Cretaceous of Brazil improves abelisaurid diversity. *Journal of South American Earth Sciences* 112. doi:10.1016/j.jsames.2021.103551
+- `iori2021a`: Iori, F. V.; de Araújo-Júnior, H. I.; Tavares, S. A. S.; Marinho, T. S.; Martinelli, A. G. (2021). New theropod dinosaur from the Late Cretaceous of Brazil improves abelisaurid diversity. *Journal of South American Earth Sciences* 112. doi:10.1016/j.jsames.2021.103551

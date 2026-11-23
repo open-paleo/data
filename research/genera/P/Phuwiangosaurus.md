@@ -17,6 +17,6 @@
 
 ## References
 
-- `martin1994a`: Martin, V.; Buffetaut, E.; Suteethorn, V. (1994). A new genus of sauropod dinosaur from the Sao Khua Formation (Late Jurassic or Early Cretaceous) of northeastern Thailand. *Compte Rendus de l'Academie des Sciences, Paris, série IIa* 319: 1085-1092.
+- `martin1994a`: Martin, V.; Buffetaut, E.; Suteethorn, V. (1994). A new genus of sauropod dinosaur from the Sao Khua Formation (Late Jurassic or Early Cretaceous) of northeastern Thailand. *Comptes Rendus de l'Académie des Sciences, Paris, série IIa* 319: 1085-1092.
 - `suteethorn2009a`: Suteethorn, S.; Le Loeuff, J.; Buffetaut, E.; Suteethorn, V.; Talubmook, C.; Chonglakmani, C. (2009). A new skeleton of Phuwiangosaurus sirindhornae (Dinosauria, Sauropoda) from NE Thailand. *Geological Society, London, Special Publications* 315(1): 189-215. doi:10.1144/SP315.14
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

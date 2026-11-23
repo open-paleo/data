@@ -26,7 +26,7 @@
 - `rauhut2003b`: Rauhut, O. W. M. (2003). The interrelationships and evolution of basal theropod dinosaurs. *Special Papers in Palaeontology* 69: 1-213.
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `rauhut2024a`: Rauhut, O. W. M.; Bakirov, A. A.; Wings, O.; Fernandes, A. E.; Hübner, T. R. (2024). A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan. *Zoological Journal of the Linnean Society* 201(4). doi:10.1093/zoolinnean/zlae090
-- `samathi2019a`: Samathi, A.; Chanthasit, P.; Sander, P. (2019). Two new basal coelurosaurian theropod dinosaurs from the Early Cretaceous Sao Khua Formation of Thailand. *Acta Palaeontologica Polonica* 64. doi:10.4202/app.00540.2018
+- `samathi2019a`: Samathi, A.; Chanthasit, P.; Sander, P. M. (2019). Two new basal coelurosaurian theropod dinosaurs from the Lower Cretaceous Sao Khua Formation of Thailand. *Acta Palaeontologica Polonica* 64(2): 239-260. doi:10.4202/app.00540.2018
 
 ## Other references
 

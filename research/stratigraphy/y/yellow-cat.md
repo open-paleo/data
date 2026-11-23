@@ -1,5 +1,29 @@
 # Yellow Cat
 
+## What do the cited works say about the age and extent of the Yellow Cat?
+
+*2026-11-23*
+
+**Conclusion.** Berriasian to Barremian, unchanged, with the member diachronous as the 2026-09-30 entry concludes. Joeckel and colleagues (2019) date the sections they sampled to the Berriasian–Hauterivian from youngest zircon grains and a palynoflora, and state that Barremian–Aptian strata exist elsewhere in the member. Sprinkel and colleagues (2012) relay the tentative Barremian first given from dinosaur biostratigraphy, a downward extension of the member below its calcretes, and a partial correlation with the Buckhorn Conglomerate. Kirkland and Madsen (2007) relay a fauna-based 125–120 Ma, a 126 ± 2.5 Ma maximum depositional age from Greenhalgh and colleagues (2006), and a lowered base that takes in a fauna that may be older than the one higher in the member. Mori (2009) treats the Yellow Cat and Poison Strip Members as one package of about 124–122 Ma, and puts the Crystal Geyser quarry's maximum depositional age at about 122 Ma, against Kirkland and Madsen's view that the site is substantially older than other Yellow Cat quarries. Governs `stages: [Berriasian, Valanginian, Hauterivian, Barremian]` on [Yellow Cat](../../../stratigraphy/y/yellow-cat.yml), unchanged.
+
+**Evidence.**
+- joeckel2019a, p. ?, Abstract: zircons "from ten stratigraphic horizons in the Yellow Cat Member yield youngest single grain ages ranging from 142.5±2.7 Ma to 133.7 ± 2.7 Ma (Berriasian–late Valanginian)".
+- joeckel2019a, p. ?, Summary and conclusions: "A new palynoflora from the Yellow Cat Member is provisionally assigned to the middle Berriasian–early Hauterivian stages".
+- joeckel2019a, p. ?, Discussion: "Although earlier studies documented the presence of Barremian–Aptian strata in other parts of the Yellow Cat Member, the stratigraphic sections examined for this zircon U-Pb geochronologic study range through the Berriasian, Valanginian, and Hauterivian stages. This result suggests that the stratigraphic architecture of the Yellow Cat Member is probably more complex than earlier conceptions based on lithostratigraphic perspectives"; Mori (2009) "reported seven detrital zircon U-Pb MDAs ranging between 130±2.4 Ma to 119.2±1.3 Ma from strata of the Yellow Cat Member, suggesting that parts of the unit are no older than Barremian to Aptian in age".
+- sprinkel2012a, p. 2: the lower three members "were initially assigned tentative ages based on dinosaur biostratigraphy: Barremian for the Yellow Cat Member in the northern Paradox Basin"; "the Yellow Cat Member extends below the interval of extensive calcretes development" to include "a strongly mottled iron-stained interval that also contains common floating chert pebbles and preserves an Early Cretaceous dinosaur fauna"; the member "is shown to be correlative, at least in part, with the Buckhorn Conglomerate".
+- kirkland2007a, p. 7: the member "was originally defined as being underlain by a massive carbonate paleosol", but "Early Cretaceous fossils have now been found below the base of this carbonate interval, thus requiring a redefinition of the lower boundary at the first occurrence of abundant chert pebbles above typical Morrison swelling clays".
+- kirkland2007a, p. 9: the 125–120 Ma estimate is credited to Kirkland and colleagues (1997, 1999), Kirkland, Lucas and Estep (1998) and Eberth and colleagues (2006); "A detrital zircon U-Pb maximum depositional age of 126 ± 2.5 Ma is consistent with the biostratigraphic data (Greenhalgh and others, 2006)".
+- kirkland2007a, p. 10: the dinosaurs "from in and below the carbonate interval" may "represent a dinosaur fauna distinctly older than that identified from higher in the Yellow Cat Member".
+- mori2009a, p. 27: "Kirkland and Madsen (2007) speculated that the site is substantially older than other Yellow Cat quarries. However, from the samples of Crystal Geyser, it can be concluded that the maximum depositional age of the quarry is around 122 Ma".
+- mori2009a, p. 30: "the Yellow Cat/Poison Strip Members range from 125 to 121 Ma (Early Aptian)"; p. 70: a quarry "is either in the Yellow Cat/Poison Strip complex or that the Ruby Ranch is contemporaneous with that complex".
+
+**Ruled out.**
+- *Berriasian–Hauterivian as the age of the whole member.* Joeckel and colleagues limit it to the sections they sampled and accept Barremian–Aptian strata elsewhere in the member.
+- *A stage from Kirkland and Madsen's 126 ± 2.5 Ma.* It is a maximum depositional age, a limit rather than an age, and the paper offers it only as consistent with the faunal estimate.
+- *Crystal Geyser as substantially older than other Yellow Cat sites.* Kirkland and Madsen's speculation rests on the quarry's position at the base of the formation; Mori's maximum depositional age of about 122 Ma for the quarry is no older than the other dated sites.
+
+**Open.** Joeckel and colleagues relay Mori's maximum depositional ages for the member as reaching 119.2 ± 1.3 Ma, which on the current chart (Aptian base 121.4 Ma) would make a bed no older than Aptian. Mori's text gives the member 124 to 122 Ma and 121.8 ± 2.2 Ma at Crystal Geyser; which sample, if any, gives 119.2 ± 1.3 Ma, and from which member, would settle whether the 2026-10-07 entry's conclusion holds. The printed pages of Joeckel and colleagues (2019) have not been read; the copy held is the accepted manuscript.
+
 ## Do Kirkland and Madsen's 125–120 Ma and Mori's "Early Aptian" put the member in the Aptian?
 
 *2026-10-21*
@@ -51,12 +75,20 @@
 
 ## References
 
+- `joeckel2019a`: Joeckel, R. M.; Ludvigson, G. A.; Möller, A.; Hotton, C. L.; Suarez, M. B.; Suarez, C. A.; Sames, B.; Kirkland, J. I.; Hendrix, B. (2019). Chronostratigraphy and terrestrial palaeoclimatology of Berriasian–Hauterivian strata of the Cedar Mountain Formation, Utah, USA. *Geological Society, London, Special Publications* 498(1): 75-100. doi:10.1144/SP498-2018-133
+- `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
 - `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
 - `mori2009a`: Mori, H. (2009). Dinosaurian faunas of the Cedar Mountain Formation and LA-ICP-MS detrital zircon ages for three stratigraphic sections. Masters thesis, Brigham Young University.
-- `joeckel2019a`: Joeckel, R. M.; Ludvigson, G. A.; Möller, A.; Hotton, C. L.; Suarez, M. B.; Suarez, C. A.; Sames, B.; Kirkland, J. I.; Hendrix, B. (2019). Chronostratigraphy and terrestrial palaeoclimatology of Berriasian–Hauterivian strata of the Cedar Mountain Formation, Utah, USA. *Geological Society, London, Special Publications* 498(1): 75-100. doi:10.1144/SP498-2018-133
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `joeckel2023a`: Joeckel, R. M.; Suarez, C. A.; McLean, N. M.; Möller, A.; Ludvigson, G. A.; Suarez, M. B.; Kirkland, J. I.; Andrew, J.; Kiessling, S.; Hatzell, G. A. (2023). Berriasian–Valanginian geochronology and carbon-isotope stratigraphy of the Yellow Cat Member, Cedar Mountain Formation, eastern Utah, USA. *Geosciences* 13(2): 32. doi:10.3390/geosciences13020032
 - `senter2012b`: Senter, P.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S.; Toth, N. (2012). New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail. *PLoS ONE* 7(5): e36790. doi:10.1371/journal.pone.0036790
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `britt2017a`: Britt, B. B.; Scheetz, R. D.; Whiting, M. F.; Wilhite, D. R. (2017). Moabosaurus utahensis, n. gen., n. sp., a new sauropod from the Early Cretaceous (Aptian) of North America. *Contributions from the Museum of Paleontology, University of Michigan* 32(11): 189-243.
 - `eberth2006a`: Eberth, D. A.; Britt, B. B.; Scheetz, R.; Stadtman, K. L.; Brinkman, D. B. (2006). Dalton Wells: geology and significance of debris-flow-hosted dinosaur bonebeds in the Cedar Mountain Formation (Lower Cretaceous) of eastern Utah, USA. *Palaeogeography, Palaeoclimatology, Palaeoecology* 236(3): 217-245. doi:10.1016/j.palaeo.2005.11.020
+
+## Other references
+
+- `greenhalgh2006a`: Greenhalgh, B. W.; Britt, B. B.; Kowallis, B. J. (2006). New U-Pb age control for the lower Cedar Mountain Formation and an evaluation of the Morrison Formation/Cedar Mountain Formation boundary, Utah. *Geological Society of America Abstracts with Programs* 38(6): 7.
+- `kirkland1997a`: Kirkland, J. I.; Britt, B. B.; Burge, D. L.; Carpenter, K.; Cifelli, R. L.; DeCourten, F. L.; Eaton, J. G.; Hasiotis, S.; Lawton, T. F. (1997). Lower to Middle Cretaceous dinosaur faunas of the Central Colorado Plateau. *Brigham Young University Geological Studies* 42(II): 69-103.
+- `kirkland1998e`: Kirkland, J. I.; Lucas, S. G.; Estep, J. W. (1998). Cretaceous dinosaurs of the Colorado Plateau. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 67-89.
+- `kirkland1999a`: Kirkland, J. I.; Cifelli, R. L.; Britt, B. B.; Burge, D. L.; DeCourten, F.; Eaton, J. G.; Parrish, J. M. (1999). Distribution of vertebrate faunas in the Cedar Mountain Formation, east-central Utah. In *Vertebrate Paleontology in Utah (Gillette, D. D., ed.)*, pp. 201-218.

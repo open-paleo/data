@@ -17,5 +17,5 @@
 ## References
 
 - `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
-- `samathi2019a`: Samathi, A.; Chanthasit, P.; Sander, P. (2019). Two new basal coelurosaurian theropod dinosaurs from the Early Cretaceous Sao Khua Formation of Thailand. *Acta Palaeontologica Polonica* 64. doi:10.4202/app.00540.2018
+- `samathi2019a`: Samathi, A.; Chanthasit, P.; Sander, P. M. (2019). Two new basal coelurosaurian theropod dinosaurs from the Lower Cretaceous Sao Khua Formation of Thailand. *Acta Palaeontologica Polonica* 64(2): 239-260. doi:10.4202/app.00540.2018
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
