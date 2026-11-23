@@ -1,5 +1,24 @@
 # Farta Pão
 
+## What do the cited works say about the meaning of the Farta Pão Formation and the age of its top member?
+
+*2026-11-23*
+
+**Conclusion.** The formation in its current sense is Schneider and colleagues' (2009): they propose its four members, Sobral, Arranhó I, Arranhó II and Freixial, and Mateus and colleagues (2017) explain that the name was chosen as the oldest available one uniting them. Schneider and colleagues date the top member, the Freixial, directly, and it comes out Late Tithonian, in agreement with foraminiferal and dasycladacean data; they call it "obviously the youngest Jurassic lithostratigraphic unit of the area". The paper's mentions of the Berriasian concern other things, so it gives the formation no Berriasian. The Berriasian top belongs to the older sense of the name: Wilson's (1988) Fig. 4, and Mateus and colleagues' correlation of the Berriasian Porto da Calada Formation with "the top of the Farta Pão Formation (*sensu* Wilson, 1988)". Governs `stages: [Kimmeridgian, Tithonian]` and the dispute on [Farta Pão](../../../stratigraphy/f/farta-pão.yml), unchanged. It adds to the 2026-10-02 entry and supersedes none.
+
+**Evidence.**
+- schneider2009a, p. 1949, Abstract: "The largely synchronous Sobral, Arranhó I, and Arranhó II members are overlain by the late Early to Late Tithonian Freixial Member"; p. 1952: "Herein, we propose four members for the Farta Pao formation".
+- schneider2009a, p. 1966, Freixial Member: the member "is obviously the youngest Jurassic lithostratigraphic unit of the area", and its Late Tithonian Sr ages correspond "to foraminiferal and dasycladacean data from the Freixial Member".
+- schneider2009a, p. 1951: the Upper Jurassic infill "formed during megasequence J3 (?late Early Oxfordian to Berriasian)"; p. 1965: an earlier division of the Alcobaça formation has an upper part "ranging from the uppermost Kimmeridgian far into the Berriasian", but "the authors did not provide an explanation for this interpretation".
+- mateus2017a, p. 79: "The main change was the creation of a new meaning for the Farta Pão Formation, chosen (after Schneider *et al.*, 2009) because it was the oldest available name uniting the (also proposed) Sobral, Arranhó I, Arranhó II, and Freixial Members."
+- mateus2017a, p. 87, Porto da Calada Formation: "It corresponds to the top of the Farta Pão Formation (*sensu* Wilson, 1988) and to the uppermost part of the Feixial unit"; it "was dated as Berriasian based on dinocysts".
+- wilson1988a, p. 400: a Sintra-area "carbonate slope system characterised by debris flow deposits, and capped by low energy carbonates ... comprises the Ramalhaõ, Mem Martins and Farta Paõ formations", with no stage in the text; p. 401, Fig. 4: the Sintra column labels the unit "FARTA PÃO (100m)", with a dashed, queried base inside the Tithonian and its top beneath the Cascais.
+
+**Ruled out.**
+- *That Schneider and colleagues (2009) carry the formation into the Berriasian.* The paper's Berriasian mentions are the envelope of megasequence J3, an earlier reading of the upper Alcobaça formation that it reports and discounts, and the title of a cited work. Its youngest Farta Pão samples are Late Tithonian.
+
+**Open.** Nothing beyond the Berriasian question the 2026-10-02 entry leaves open.
+
 ## Does the Farta Pão Formation reach the Berriasian?
 
 *2026-10-02*

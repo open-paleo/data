@@ -31,7 +31,7 @@
 
 ## Other references
 
-- `lesta1972a`: Lesta, P. J.; Ferello, R. (1972). Región extraandina de Chubut y norte de Santa Cruz [The extra-Andean region of Chubut and northern Santa Cruz]. *Geología Regional Argentina (Leanza, A. F., ed.)*: 601-654.
+- `lesta1972a`: Lesta, P. J.; Ferello, R. (1972). Región extraandina de Chubut y norte de Santa Cruz [The extra-Andean region of Chubut and northern Santa Cruz]. In *Geología Regional Argentina (Leanza, A. F., ed.)*, pp. 601-654. Academia Nacional de Ciencias, Córdoba.
 - `chebli1976a`: Chebli, G. A.; Nakayama, C.; Sciutto, J. C.; Serraiotto, A. A. (1976). Estratigrafía del Grupo Chubut en la región central de la provincia homónima [Stratigraphy of the Chubut Group in the central region of the province of the same name]. In *6º Congreso Geológico Argentino, Actas 1*, pp. 375-392.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `musacchio1975a`: Musacchio, E. A.; Chebli, G. (1975). Ostrácodos no marinos y carófitas del Cretácico inferior en las provincias de Chubut y Neuquén, Argentina [Non-marine ostracods and charophytes from the Lower Cretaceous of Chubut and Neuquén provinces, Argentina]. *Ameghiniana* 12(1): 70-96.

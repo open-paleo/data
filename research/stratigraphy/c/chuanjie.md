@@ -1,5 +1,24 @@
 # Chuanjie
 
+## What do the cited works say about the base and age of the Chuanjie Formation?
+
+*2026-11-23*
+
+**Conclusion.** Aalenian to Bathonian, as the 2026-09-30 entry gives it. Fang and colleagues (2000) erect the formation for units 21–35 of their Lufeng section, as Middle Jurassic, lying disconformably on the Zhangjia'ao member of the Lufeng Formation and conformably below the Laoluocun Formation. Huang and colleagues (2005) correlate it by magnetic polarity with the upper Aalenian through the lower Bathonian, put the overlying Laoluocun in the upper Bathonian through lower Callovian and the upper Lufeng Formation in the Toarcian, and find the base a hiatus missing roughly the lower Aalenian, an interval preserved in the green sandstone member of the Zhanghe Formation at Yubacun. Zhang and colleagues (2026) relay "the top of Toarcian to Bathonian" from Huang and colleagues (2021), whose text never discusses the formation; it places the Jurassic–Cretaceous boundary in central Yunnan in the upper Madishan Formation. Governs `stages: [Aalenian, Bajocian, Bathonian]` and `period: [Middle Jurassic]` on [Chuanjie](../../../stratigraphy/c/chuanjie.yml).
+
+**Evidence.**
+- fang2000a, translation, Chuanjie Fm. (J2 ch): "Represented by units 21-35, the new nomenclature is taken from the town of Chuanjie"; "The unit disconformably overlies the Zhangjia'ao member of the Lufeng Fm. and is conformable with the overlying Laoluocun Fm."
+- fang2000a, translation, Description of a new genus and species of sauropod: "Locality and stratigraphic position: Lower Middle Jurassic Chuanjie Fm. at Laochangqing, Chuanjie Township, Lufeng Co. Yunnan Province."
+- huang2005a, p. 325: "the Laoluocun Formation corresponds roughly to the upper Bathonian through the lower Callovian, and the Chuanjie Formation roughly to the upper Aalenian through the lower Bathonian"; "The upper part of the Lufeng Formation, above site 103, can roughly be correlated with the alternating-polarity zone of the upper Toarcian"; "The green sandstone member of the Zhanghe Formation in the Yubacun section is the interval missing at the pseudoconformity between the Chuanjie Formation and the Lufeng Formation in the Chuanjie section" (translated).
+- huang2005a, p. 328: "the base of the Chuanjie Formation in the Lufeng area is indeed a hiatal surface, with roughly the lower part of the Aalenian, the basal stage of the Middle Jurassic, missing" (translated).
+- zhang2026a, p. 2, Geological setting: "Huang et al. (2021) also suggested that the Chuanjie Formation in the Central Yunnan region belongs to the Middle Jurassic, including the top of Toarcian to Bathonian", in a paragraph on the Zhanghe Formation, which it calls comparable to the Chuanjie.
+- huang2021a, p. 372: "the Jurassic–Cretaceous boundary should lie in the upper Suining Formation in the Sichuan Basin and in the upper Madishan Formation in central Yunnan" (translated).
+
+**Ruled out.**
+- *Toarcian.* Zhang and colleagues' "top of Toarcian" is a subordinate clause in a sentence whose main claim is Middle Jurassic, relayed from the chart of Huang and colleagues (2021), whose 175 Ma base is a drafting line rather than a determination (see the 2026-09-30 entry). Huang and colleagues (2005) put the Toarcian in the underlying Lufeng Formation and find the lowest Aalenian missing at the Chuanjie's base.
+
+**Open.** Nothing.
+
 ## How is the epithet of *Chuanjiesaurus* written in the notes?
 
 *2026-10-28*
@@ -34,4 +53,6 @@
 ## References
 
 - `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.
+- `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
+- `zhang2026a`: Zhang, X. Q.; Wang, Y. M.; Wang, Z. J.; Wang, Y. C.; Wang, T.; Wang, G. F.; Zou, Y.; Dong, Q. X.; Su, X.; Jiang, H.; Wang, Y. J.; You, H. L. (2026). The first turiasaurian sauropod (Dinosauria: Eusauropoda) from East Asia. *Zoological Journal of the Linnean Society* 206(2): zlaf201. doi:10.1093/zoolinnean/zlaf201
 - `huang2021a`: Huang, D. Y.; Fang, Y. N.; Li, J. G.; Li, X. (2021). Lithostratigraphic subdivision and correlation of the Jurassic in China. *Journal of Stratigraphy* 45(3): 364-374. doi:10.19839/j.cnki.dcxzz.2021.0029
