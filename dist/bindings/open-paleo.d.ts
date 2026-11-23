@@ -191,7 +191,7 @@ export type IcznCaseTypes =
 export type IcznCaseStatuses = "opinion" | "open" | "closed" | "withdrawn";
 
 /**
- * Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against an earlier schema of the same major version. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).
+ * Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against an earlier schema of the same major version (before 1.0.0, additive changes are patch versions and the same holds within one 0.MINOR line). Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).
  */
 export interface OpenPaleoDataset {
   _metadata: Metadata;
