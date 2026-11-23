@@ -65,10 +65,12 @@ jobs:
       # --tag setting, so the tag is passed explicitly to keep the log true.
       #
       # A dry run goes ahead even for a version already published, since its
-      # purpose is to test the trusted-publishing setup. npm treats the OIDC
-      # exchange as optional and a dry run only warns when it has no
-      # credentials, so the step reads npm's verbose log and fails unless the
-      # exchange produced a token.
+      # purpose is to test the trusted-publishing setup. npm refuses a
+      # published version even in a dry run, so a dry run stages a throwaway
+      # prerelease version (0.4.7-dry-run.<run number>) that nothing ever
+      # publishes. npm treats the OIDC exchange as optional and a dry run only
+      # warns when it has no credentials, so the step reads npm's verbose log
+      # and fails unless the exchange produced a token.
       - name: Publish
         if: steps.check.outputs.publish == 'true' || inputs.dry-run
         working-directory: scratch/packages/types
@@ -76,11 +78,14 @@ jobs:
           set -o pipefail
           tag="$(node -p "require('./package.json').publishConfig.tag")"
           if [ "${{ inputs.dry-run }}" = "true" ]; then
-            npm publish --tag "$tag" --provenance --dry-run --loglevel verbose 2>&1 | tee "$RUNNER_TEMP/publish.log"
+            npm version --no-git-tag-version "$(node -p "require('./package.json').version")-dry-run.$GITHUB_RUN_NUMBER"
+            status=0
+            npm publish --tag "$tag" --provenance --dry-run --loglevel verbose 2>&1 | tee "$RUNNER_TEMP/publish.log" || status=$?
             if ! grep -q "oidc Successfully retrieved and set token" "$RUNNER_TEMP/publish.log"; then
               echo "::error::npm trusted publishing did not authenticate this workflow; check the package's trusted publisher settings"
               exit 1
             fi
+            exit "$status"
           else
             npm publish --tag "$tag" --provenance
           fi
