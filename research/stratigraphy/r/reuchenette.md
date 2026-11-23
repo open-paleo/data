@@ -1,5 +1,24 @@
 # Reuchenette
 
+## Does the top of the Reuchenette Formation stay in the Kimmeridgian?
+
+*2026-11-23*
+
+**Conclusion.** Yes. Jank and colleagues' (2006) frame runs from the queried Planula Zone to the middle of the Eudoxus Zone. In the Sub-Mediterranean scheme the Hybonoticeras beckeri Zone lies above the Eudoxus Zone and is still Kimmeridgian, so the top of the frame falls inside the international Kimmeridgian; the base is settled in the 2026-09-21 entry. Comment and colleagues (2015) find that the formation covers almost the whole Kimmeridgian of the Ajoie. Governs `stages: [Kimmeridgian]` on [Reuchenette](../../../stratigraphy/r/reuchenette.yml), with the 2026-09-21 entry.
+
+**Evidence.**
+- jank2006a, p. 175, abstract: a frame built "by correlating seventeen closely spaced sections"; "The biostratigraphical frame is based on seven species of ammonites and corroborated by ostracodes."
+- jank2006a, p. 188: "The sections provide a composite overview of the sedimentary record during the (? Planula) Platynota- to the Eudoxus-Zones".
+- hesselbo2020a, p. 973: the base of the Tithonian, as first defined, was "placed at the top of the Kimmeridgian Aulacostephanus eudoxus ammonite zone", and a later author "established the Hybonoticeras beckeri Zone above the A. eudoxus in the Sub-Mediterranean province and assigned it to the Kimmeridgian Stage".
+- comment2015a, p. 161, abstract: "The Reuchenette Formation covers almost the whole of the Kimmeridgian (Upper Jurassic) of Ajoie" (translated).
+- comment2015a, p. 162: the Banné Member is "known for its richness in invertebrates" (translated).
+- comment2015a, p. 165: "At the type locality, the thickness of the formation is about 150 m" (translated).
+
+**Ruled out.**
+- *Tithonian at the top.* Jank and colleagues' frame ends in the "middle Eudoxus-Zone" (jank2006a, p. 175). On either placement of the boundary that Hesselbo and colleagues (2020) describe, at the top of the Eudoxus Zone or above the Beckeri Zone, the middle of the Eudoxus Zone is Kimmeridgian.
+
+**Open.** Nothing.
+
 ## Does the Reuchenette Formation have formal members?
 
 *2026-09-30*
@@ -34,9 +53,9 @@
 
 ## References
 
+- `jank2006a`: Jank, M.; Wetzel, A.; Meyer, C. A. (2006). A calibrated composite section for the Late Jurassic Reuchenette Formation in northwestern Switzerland (?Oxfordian, Kimmeridgian sensu gallico, Ajoie-Region). *Eclogae Geologicae Helvetiae* 99: 175-191. doi:10.1007/s00015-006-1187-8
+- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `comment2015a`: Comment, G.; Lefort, A.; Koppka, J.; Hantzpergue, P. (2015). Le Kimméridgien d'Ajoie (Jura, Suisse): lithostratigraphie et biostratigraphie de la Formation de Reuchenette [The Kimmeridgian of Ajoie (Jura, Switzerland): lithostratigraphy and biostratigraphy of the Reuchenette Formation]. *Revue de Paléobiologie* 34(2): 161-194.
 - `schwarz2020a`: Schwarz, D.; Mannion, P. D.; Wings, O.; Meyer, C. A. (2020). Re-description of the sauropod dinosaur Amanzia ("Ornithopsis/Cetiosauriscus") greppini n. gen. and other vertebrate remains from the Kimmeridgian (Late Jurassic) Reuchenette Formation of Moutier, Switzerland. *Swiss Journal of Geosciences* 113(1). doi:10.1186/s00015-020-00355-5
-- `jank2006a`: Jank, M.; Wetzel, A.; Meyer, C. A. (2006). A calibrated composite section for the Late Jurassic Reuchenette Formation in northwestern Switzerland (?Oxfordian, Kimmeridgian sensu gallico, Ajoie-Region). *Eclogae Geologicae Helvetiae* 99: 175-191. doi:10.1007/s00015-006-1187-8
 - `chure2000a`: Chure, D. J. (2000). A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae. Doctoral thesis, Columbia University.
 - `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.
-- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7

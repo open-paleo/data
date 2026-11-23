@@ -1,5 +1,20 @@
 # Lianmuqin
 
+## Where does the Lianmuqin's Valanginian to Albian range come from in Zheng and colleagues (2023)?
+
+*2026-11-23*
+
+**Conclusion.** Corrects "ostracods and pollen" in the 2026-09-30 entry's Evidence: the fossil Zheng and colleagues cite is the clam shrimp *Cratostracus*, not an ostracod, and that entry's conclusion is unchanged. The range comes from the paper's own age model, which joins a dated tuff at the formation's base to fossils relayed from earlier works. The tuff is the marker "that separates the Shengjinkou and Lianmuqin Formations" near Urho, so its 135.2 ± 0.9 Ma date limits the age of the formation's base, which "could have been deposited as early as the Valanginian". The clam shrimp *Cratostracus*, which also occurs in the Aptian Guantou Formation, and a *Cicatricosisporites-Interulobites-Classopollis-Tricolpites* pollen assemblage with angiosperm pollen give "an Aptian–Albian age for the Lianmuqin Formation of the southern Junggar Basin". The model puts "the Lianmuqin Formation as Valanginian to Albian", the top formation of the Tugulu Group. Governs `stages: [Valanginian, Hauterivian, Barremian, Aptian, Albian]` and `parent: Tugulu` on [Lianmuqin](../../../stratigraphy/l/lianmuqin.yml).
+
+**Evidence.**
+- zheng2023a, p. 2: "the Tugulu Group consists (in ascending order) of the Qingshuihe, Hutubihe, Shengjinkou, and Lianmuqin Formations"; "A distinct, white tuffaceous siltstone ..., lying ∼30 m below the vertebrate-bearing layers, serves as a marker horizon that separates the Shengjinkou and Lianmuqin Formations in the NW Junggar Basin".
+- zheng2023a, p. 5: "The Lianmuqin Formation contains the clam shrimp fossil *Cratostracus* sp., which also occurs in the Guantou Formation (Aptian)"; the pollen "includes the *Cicatricosisporites-Interulobites-Classopollis-Tricolpites* assemblage along with occasional angiosperm pollens"; "our isotopic age from the top of the Shengjinkou Formation indicates that the Lianmuqin Formation could have been deposited as early as the Valanginian"; the age model gives "the Lianmuqin Formation as Valanginian to Albian".
+
+**Ruled out.**
+- *Aptian–Albian only, on the fossils.* The clam shrimp and pollen are the paper's only evidence that dates the formation positively, but Zheng and colleagues do not confine it to the Aptian and Albian: their tuff below the formation lets it begin in the Valanginian, and their age model runs from Valanginian to Albian.
+
+**Open.** Nothing beyond the 2026-09-30 entry's Open line.
+
 ## What stages do the Wuerho Lianmuqin taxa take?
 
 *2026-10-10*
@@ -35,10 +50,10 @@
 
 ## References
 
+- `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin*. doi:10.1130/B36795.1
 - `rauhut2005c`: Rauhut, O. W. M.; Xu, X. (2005). The small theropod dinosaurs Tugulusaurus and Phaedrolosaurus from the early Cretaceous of Xinjiang, China. *Journal of Vertebrate Paleontology* 25(1): 107-118. doi:10.1671/0272-4634(2005)025[0107:tstdta]2.0.co;2
 - `brusatte2012c`: Brusatte, S. L.; Benson, R. B. J.; Xu, X. (2012). A reassessment of Kelmayisaurus petrolicus, a large theropod dinosaur from the Early Cretaceous of China. *Acta Palaeontologica Polonica* 57(1): 65-72. doi:10.4202/app.2010.0125
 - `xu2018c`: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L. (2018). Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution. *Current Biology* 28(17): 2853-2860.e3. doi:10.1016/j.cub.2018.07.057
-- `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin*. doi:10.1130/B36795.1
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
 - `paul2024b`: Paul, G. S. (2024). The Princeton Field Guide to Predatory Dinosaurs. Princeton University Press.
 - `jia2024a`: Jia, L.; Li, N.; Dong, L.; Shi, J.; Kang, Z.; Wang, S.; Xu, S.; You, H. (2024). A new stegosaur from the late Early Cretaceous of Zuoyun, Shanxi Province, China. *Historical Biology* 37(2): 420-429. doi:10.1080/08912963.2024.2308214

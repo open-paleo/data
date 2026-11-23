@@ -18,5 +18,5 @@
 
 ## References
 
-- `canudo2018a`: Canudo, J.; Carballido, J.; Salgado, L.; Garrido, A. (2018). A new rebbachisaurid sauropod from the Aptian-Albian, Lower Cretaceous Rayoso Formation, Neuquén, Argentina. *Acta Palaeontologica Polonica* 63. doi:10.4202/app.00524.2018
+- `canudo2018a`: Canudo, J. I.; Carballido, J. L.; Garrido, A.; Salgado, L. (2018). A new rebbachisaurid sauropod from the Aptian-Albian, Lower Cretaceous Rayoso Formation, Neuquén, Argentina. *Acta Palaeontologica Polonica* 63(4): 679-691. doi:10.4202/app.00524.2018
 - `carballido2010a`: Carballido, J. L.; Garrido, A. C.; Canudo, J. I.; Salgado, L. (2010). Redescription of Rayososaurus agrioensis Bonaparte (Sauropoda, Diplodocoidea), a rebbachisaurid from the early Late Cretaceous of Neuquén. *Geobios* 43(5): 493-502. doi:10.1016/j.geobios.2010.01.004
