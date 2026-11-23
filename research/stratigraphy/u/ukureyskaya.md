@@ -1,5 +1,22 @@
 # Ukureyskaya
 
+## What does Cincotta and colleagues' Bathonian date?
+
+*2026-11-23*
+
+**Conclusion.** The deposits of the lower part of the formation at Kulinda, not the whole formation and not the animal as such. Both constraints are stated of the deposits: the zircon maximum and the palynological minimum. Only the abstract's summary sentence makes *Kulindadromeus* the subject of the Bathonian age. Cincotta and colleagues (2019) widen the formation's range into the Middle Jurassic rather than redating it, so the Bathonian applies to its lower part and the rest of the formation keeps the ages discussed in the 2026-09-30 entry. The paper writes the name Ukurey Formation throughout. Governs the Middle Jurassic in `period` on [Ukureyskaya](../../../stratigraphy/u/ukureyskaya.yml).
+
+**Evidence.**
+- cincotta2019a, p. 1, Abstract: "The palynological assemblage includes taxa that are correlated to Bathonian palynozones from western Siberia, and therefore constrains the minimum age of the deposits"; "provide evidence of a Bathonian age—between 168.3 ± 1.3 Ma and 166.1 ± 1.2 Ma—for *Kulindadromeus*".
+- cincotta2019a, p. 3, Geological Setting: "The excavated sections at Kulinda belong to the lower part of the Ukurey Formation".
+- cincotta2019a, p. 13, Conclusions: "Palynological data support a Bathonian age for the deposits, corresponding to an age ranging between 168.3 and 166.1 Ma"; "The stratigraphic range of the Ukurey Formation is therefore wider than previously assumed, its lower part extending to the Middle Jurassic."
+
+**Ruled out.**
+- *A Bathonian age for the whole formation.* The dated beds are the Kulinda section in the lower part, and the paper extends the formation's range downward instead of replacing its earlier ages.
+- *A Bathonian age measured on the animal.* The abstract's sentence on *Kulindadromeus* summarizes constraints that the same abstract and the conclusions state of the deposits.
+
+**Open.** Nothing.
+
 ## How old is the Ukureyskaya Formation at Kulinda?
 
 *2026-09-30*

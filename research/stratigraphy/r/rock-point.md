@@ -1,5 +1,28 @@
 # Rock Point
 
+## Is the Rock Point ever Hettangian, and where does the Apachean's Rhaetian come from?
+
+*2026-11-23*
+
+**Conclusion.** Adds to the 2026-09-30 entry and supersedes nothing in it. The Hettangian is ruled out. It comes from Zeigler and Geissman (2009), whose "Rhaetian to possibly earliest Hettangian" dates the uppermost Chinle strata of the Chama Basin, beds they say are not time-equivalent to the true Rock Point; Rinehart and colleagues (2009) relay it as a date for the Rock Point in the Chama Basin, only to reject it. The Rhaetian that Hunt and colleagues (1998) give through the Apachean originates in Lucas and Hunt (1993), who name the Apachean, find it in the Rock Point Formation, and consider it Rhaetian while allowing that it may be late Norian. Hunt and colleagues assign the Rock Point by name only to the Apachean, but they call the fauna of the Ghost Ranch quarry, which they place in the Rock Point, Rhaetian outright; that rests on the same equivalence and on the Ghost Ranch correlation that the 2026-09-30 entry leaves unassigned. Cather and colleagues (2013) keep the name "siltstone member" for the north-central New Mexico beds until that correlation is settled. Governs `stages: [Norian, Rhaetian]` and `dispute` on [Rock Point](../../../stratigraphy/r/rock-point.yml).
+
+**Evidence.**
+- rinehart2009a, p. 24, Stratigraphy and Age: "Zeigler and Geissman (2009) recently assigned a late Rhaetian-Hettangian age to the Rock Point Formation in the Chama basin based on the similarity of its paleopoles to those of the Moenave-Wingate interval to the west. Clearly, the Whitaker quarry is Late Triassic in age (not Hettangian), and either late Norian or Rhaetian."
+- rinehart2009a, p. 1, Abstract: "The Whitaker quarry lies near the center of the Upper Triassic Rock Point Formation of the Chinle Group in the Chama Basin of northern New Mexico".
+- zeigler2009a, p. ?, abstract: "uppermost strata in northern New Mexico are not time equivalent to true Rock Point strata in Utah and Arizona nor to the Redonda Formation in eastern New Mexico. Uppermost Chinle Group strata in the Chama Basin are Rhaetian to possibly earliest Hettangian in age."
+- lucas1993a, p. 327, Abstract: "Apachean is of Rhaetian age"; p. 328, Apachean: "Apachean tetrapods and/or footprints … are found … in the Rock Point Formation at Ghost Ranch in north-central New Mexico", and "Apachean footprints are also known from the Rock Point Formation of Utah and Colorado".
+- lucas1993a, p. 329: "assignment of a Rhaetian age to the Apachean is not certain, and it might be of late Norian age".
+- hunt1998a, p. 513, Biochronology: "Chinle Group strata range from late Carnian (early Tuvalian) to Rhaetian in age (Lucas 1993; Lucas & Hunt 1993b). Vertebrate fossil assemblages represent four land-vertebrate faunachrons: the Otischalkian (late Carnian: early Tuvalian), Adamanian (late Carnian: late Tuvalian), Revueltian (early-late Norian: Lacian-Sevatian) and Apachean (Rhaetian) (Lucas & Hunt 1993b)." The paper's Lucas & Hunt 1993b is lucas1993a.
+- hunt1998a, p. 512, Fig. 1 caption; p. 521; p. 522, Apachean dinosaurs: the Rock Point is dated five times, each as "Apachean", among them "the Ghost Ranch quarry (Rock Point Formation)" (p. 522).
+- hunt1998a, p. 519, Table 1: "Apachean (Rhaetian)" heads the row for "*Coelophysis bauri* - lectotype and numerous other skeletons (NM)"; p. 524, Discussion: "Rhaetian tetrapod faunas are depauperate in dinosaurs in east-central and northeastern New Mexico, but at the Ghost Ranch quarry over 95% of the specimens pertain to theropods".
+- cather2013a, p. 110: after Lucas and Hunt's rename and the magnetostratigraphy that "called into question this correlation", "Until this controversy is resolved, we favor a return to the use of the term siltstone member for these beds."
+
+**Ruled out.**
+- *Late Rhaetian to Hettangian.* Zeigler and Geissman (2009) date Chama Basin beds that they themselves separate from the true Rock Point, and hedge the Hettangian as "possibly earliest". Rinehart and colleagues (2009), who report it as a date for the Rock Point, reject it for the Whitaker quarry ("not Hettangian").
+- *That Hunt and colleagues (1998) never set the Rock Point beside a stage.* They call the Ghost Ranch quarry's fauna Rhaetian (p. 524), though only through the Apachean equivalence of Lucas and Hunt (1993) and a correlation that is itself contested.
+
+**Open.** Whether the Chama Basin beds at Ghost Ranch are Rock Point at all; the 2026-09-30 entry and Cather and colleagues (2013) leave it to the magnetostratigraphic work Cather and colleagues cite, which has not been read. Zeigler and Geissman (2009) give that work's conclusion only in an abstract.
+
 ## Is the Rock Point Rhaetian?
 
 *2026-09-30*
@@ -18,8 +41,10 @@
 
 ## References
 
-- `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
 - `rinehart2009a`: Rinehart, L. F.; Lucas, S. G.; Heckert, A. B.; Spielmann, J. A.; Celeskey, M. D. (2009). The paleobiology of Coelophysis bauri (Cope) from the Upper Triassic (Apachean) Whitaker quarry, New Mexico, with detailed analysis of a single quarry block. *New Mexico Museum of Natural History and Science Bulletin* 45: 1-260.
-- `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341
+- `zeigler2009a`: Zeigler, K. E.; Geissman, J. W. (2009). Examining new possibilities for the age of Upper Triassic strata in northern New Mexico using magnetostratigraphy. *New Mexico Geology* 31: 42.
+- `lucas1993a`: Lucas, S. G.; Hunt, A. P. (1993). Tetrapod biochronology of the Chinle Group (Upper Triassic), western United States. *New Mexico Museum of Natural History and Science Bulletin* 3: 327-329.
+- `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
 - `cather2013a`: Cather, S. M.; Zeigler, K. E.; Mack, G. H.; Kelley, S. A. (2013). Toward standardization of Phanerozoic stratigraphic nomenclature in New Mexico. *Rocky Mountain Geology* 48(2): 101-124. doi:10.2113/gsrocky.48.2.101
+- `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341
 - `nesbitt2020a`: Nesbitt, S. J.; Sues, H. D. (2020). The osteology of the early-diverging dinosaur Daemonosaurus chauliodus (Archosauria: Dinosauria) from the Coelophysis Quarry (Triassic: Rhaetian) of New Mexico and its relationships to other early dinosaurs. *Zoological Journal of the Linnean Society* 191: 150-179. doi:10.1093/zoolinnean/zlaa080

@@ -1,5 +1,21 @@
 # Ulaanoosh
 
+## Where does Khand and colleagues' 126 ± 3 Ma basalt date fall on the current chart?
+
+*2026-11-23*
+
+**Conclusion.** Before the Aptian on either chart. On ICS chart v2024/12, whose Barremian begins at 125.77 Ma, 126 ± 3 Ma runs from the Hauterivian into the Barremian, with its central value in the latest Hauterivian; in GTS2020, whose Barremian begins at 126.5 Ma, the central value is earliest Barremian. Khand and colleagues (2000) give the date for basalts covering the red beds at Uush mountain, which they assign to the Baruunbayan Formation. Yu and colleagues (2020) date the formation Albian–Cenomanian from vertebrate and invertebrate fossils. The date adds no stage, since the 2026-09-30 entry rules it out as an age for the beds. Governs the absence of any stage older than the Aptian in `stages` on [Ulaanoosh](../../../stratigraphy/u/ulaanoosh.yml).
+
+**Evidence.**
+- khand2000a, p. 60: "At the Uush mountain the red beds of the Baruunbayan Formation is covered by basalts. The K-Ar isotopic dating of this basalt yields an age of 126 ± 3 Ma".
+- gale2020a, p. 1067: "The Barremian Stage lasted 5.1 Myr from 126.5 ± 0.7 to 121.4 ± 0.6 Ma".
+- yu2020a, p. 2, Locality and horizon: the age is "based on vertebrate and invertebrate fossils such as dinosaurs, dinosaur eggs, molluscs, ostracods, and turtles".
+
+**Ruled out.**
+- *A Hauterivian or Barremian stage for the formation.* The date was measured on the basalt above the beds, not on the beds, and the 2026-09-30 entry sets it aside against their fossils.
+
+**Open.** Nothing.
+
 ## Is Khand's "Ulaanuush Formation" this unit, and does its K-Ar date make it Neocomian?
 
 *2026-09-30*
@@ -21,5 +37,6 @@
 ## References
 
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
+- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `yu2020a`: Yu, C.; Prieto-Márquez, A.; Chinzorig, T.; Badamkhatan, Z.; Norell, M. (2020). A neoceratopsian dinosaur from the Early Cretaceous of Mongolia and the early evolution of Ceratopsia. *Communications Biology* 3: 499:1-8. doi:10.1038/s42003-020-01222-7
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.

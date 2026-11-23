@@ -1,5 +1,22 @@
 # Terra Cotta Clay
 
+## Where does Hamilton (1994) divide the Terra Cotta Clay Member, and what maximum ages does it give the parts?
+
+*2026-11-23*
+
+**Conclusion.** Adds to the 2026-10-07 entry without changing it. Hamilton (1994) takes the Dakota Formation of Kansas as the lower Terra Cotta Clay and upper Janssen Clay members, after Plummer and Romary (1942). The sequence-bounding unconformity that he places within the middle of the Dakota, at an abrupt shift from meandering to braided streams, falls inside the Terra Cotta. The lower part of the member goes with the lower Dakota in the J Sequence; the upper part goes with the whole Janssen in the D Sequence, which is Upper Cretaceous with a maximum age of 95 Ma (Cenomanian). The Terra Cotta–Janssen contact is a flooding surface, not a sequence boundary. For the formation as a whole he gives a maximum of 97 Ma from Weimer's (1984) Colorado unconformities, which he takes Bergen and colleagues (1990) to confirm as 97 to 99 Ma; the 2026-10-07 entry treats that number as an estimate fitted to an Albian break. Governs `parent: Dakota` and `stages: [Albian, Cenomanian]` on [Terra Cotta Clay](../../../stratigraphy/t/terra-cotta-clay.yml).
+
+**Evidence.**
+- hamilton1994a, p. 82: in Kansas the Dakota Formation "consists of the Terra Cotta Clay and Janssen Clay Members (Plummer and Romary, 1942)".
+- hamilton1994a, p. 79, Abstract: the second sequence runs "to the unconformity within the middle of the Dakota Formation of Kansas"; p. 80, Abstract: "the upper one-half of the Dakota Formation in Kansas, including all of the Janssen Clay Member and the upper part of the Terra Cotta Clay Member, is Upper Cretaceous".
+- hamilton1994a, p. 90: "This contact is not a sequence boundary but is a flooding surface separating two progradational events. The D Sequence therefore contains the upper part of the Terra Cotta Clay Member and all of the Janssen Clay Member"; "The correlation of unconformities from Colorado where they are dated gives a maximum age for the Dakota Formation of 97 Ma (Weimer, 1984). This date is confirmed by Bergen et al. (1990) as 97 Ma to 99 Ma. By the same reasoning, the part of the Dakota Formation in the D Sequence has a maximum age of 95 Ma (Cenomanian)".
+
+**Ruled out.**
+- *The Terra Cotta–Janssen contact as the Albian–Cenomanian break.* Hamilton (1994, p. 90) reads that contact as a flooding surface and puts the sequence boundary inside the Terra Cotta, so the member's upper part, not only the Janssen, lies in the Upper Cretaceous D Sequence.
+- *The 97 Ma maximum as a measured date.* Ruled out in the 2026-10-07 entry; nothing here changes it.
+
+**Open.** Nothing beyond the 2026-10-07 entry.
+
 ## Does the Terra Cotta Clay Member span the Albian–Cenomanian boundary?
 
 *2026-10-07*
@@ -37,10 +54,16 @@
 
 ## References
 
+- `hamilton1994a`: Hamilton, V. (1994). Sequence stratigraphy of Cretaceous Albian and Cenomanian strata in Kansas. In *Perspectives on the Eastern Margin of the Cretaceous Western Interior Basin (Shurr, G. W.; Ludvigson, G. A.; Hammond, R. H., eds.)*, pp. 79-96. doi:10.1130/SPE287-p79
 - `ludvigson2010a`: Ludvigson, G. A.; Witzke, B. J.; Joeckel, R. M.; Ravn, R. L.; Phillips, P. L.; González, L. A.; Brenner, R. L. (2010). New insights on the sequence stratigraphic architecture of the Dakota Formation in Kansas–Nebraska–Iowa from a decade of sponsored research activity. *Current Research in Earth Sciences, Kansas Geological Survey Bulletin* 258(2): 1-35.
 - `brenner2000a`: Brenner, R. L.; Ludvigson, G. A.; Witzke, B. J.; Zawistoski, A. N.; Kvale, E. P.; Ravn, R. L.; Joeckel, R. M. (2000). Late Albian Kiowa–Skull Creek marine transgression, lower Dakota Formation, eastern margin of Western Interior Seaway, U.S.A. *Journal of Sedimentary Research* 70(4): 868-878.
 - `weimer1986a`: Weimer, R. J. (1986). Relationship of unconformities, tectonics, and sea level changes in the Cretaceous of the Western Interior, United States. In *Paleotectonics and Sedimentation in the Rocky Mountain Region, United States*, pp. 397-422. doi:10.1306/M41456C19
 - `eaton1960a`: Eaton, T. H., Jr. (1960). A new armored dinosaur from the Cretaceous of Kansas. *The University of Kansas Paleontological Contributions: Vertebrata* 8: 1-24.
-- `hamilton1994a`: Hamilton, V. (1994). Sequence stratigraphy of Cretaceous Albian and Cenomanian strata in Kansas. In *Perspectives on the Eastern Margin of the Cretaceous Western Interior Basin (Shurr, G. W.; Ludvigson, G. A.; Hammond, R. H., eds.)*, pp. 79-96. doi:10.1130/SPE287-p79
 - `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 249-270.
 - `carpenter1999a`: Carpenter, K.; Kirkland, J. I.; Burge, D.; Bird, J. (1999). Ankylosaurs (Dinosauria: Ornithischia) of the Cedar Mountain Formation, Utah, and their stratigraphic distribution. In *Vertebrate Paleontology in Utah (Gillette, D. D., ed.)*, pp. 243-251.
+
+## Other references
+
+- `plummer1942a`: Plummer, N. V.; Romary, J. F. (1942). Stratigraphy of the pre-Greenhorn Cretaceous beds of Kansas. *Kansas Geological Survey Bulletin* 41: 315-348. doi:10.17161/kgsbulletin.no.41.21927
+- `weimer1984a`: Weimer, R. J. (1984). Relation of unconformities, tectonics, and sea-level changes, Cretaceous of Western Interior, U.S.A. In *Interregional Unconformities and Hydrocarbon Accumulation (Schlee, J. S., ed.)*, pp. 7-35. doi:10.1306/M36440C2
+- `bergen1990a`: Bergen, J. A.; Evetts, M. J.; Franks, P. C.; Lewan, M. D.; Scott, R. W.; Stein, J. A. (1990). Mid-Cretaceous sequences and cyclostratigraphy, western Kansas. In *Society of Economic Paleontologists and Mineralogists Research Conference on Cretaceous Resources, Events, and Rhythms, Denver, Program and Abstracts*.
