@@ -7,8 +7,8 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 
 ## [Unreleased]
 
-Initial public release. The output schema reaches 3.2.0 through the changes
-below.
+Initial public release. The output schema reaches 0.4.7 through the changes
+below, and becomes 1.0.0 when this release is cut.
 
 ### Added
 - The stratigraphic registry ([`stratigraphy/`](./stratigraphy)),
@@ -30,20 +30,20 @@ below.
   that the unit is undated. Validation requires `period` on each unit and
   rejects a stage outside it.
 - `semiarid` and `estuarine` in the `paleoenvironment` vocabulary. Output
-  schema 1.6.0 → 1.7.0.
+  schema 0.1.6 → 0.1.7.
 - `midline spike row` and `hooves` in the `appearance_features` vocabulary,
   for keratinous structures preserved as soft tissue that `tail spikes` (bony
-  tail weapons) and `dorsal spines` could not express. Output schema 1.7.0 →
-  1.8.0.
+  tail weapons) and `dorsal spines` could not express. Output schema 0.1.7 →
+  0.1.8.
 - `tall neural spines` in the `appearance_features` vocabulary, and
   `dorsal spines` narrowed to bony dermal spines along the back. Four
   sauropod and theropod records whose tall vertebral spines had been tagged
-  `dorsal spines` now use the new tag. Output schema 1.8.0 → 1.9.0.
+  `dorsal spines` now use the new tag. Output schema 0.1.8 → 0.1.9.
 - `thesis` and `school` on reference records, with a `thesis_types`
   vocabulary (`doctoral`, `masters`, `habilitation`,
   `dissertation-abstract`). Theses had no field of their own and were
   recorded as a university `publisher` with a note, or with the degree
-  written into `book`; 13 now carry the fields. Output schema 1.9.0 → 1.10.0.
+  written into `book`; 13 now carry the fields. Output schema 0.1.9 → 0.1.10.
 - Paleogene ages: `Paleocene` and `Eocene` in the `periods` vocabulary, and
   the Danian, Selandian, Thanetian and Ypresian stages, with boundaries from
   the ICS chart v2024/12 the stage table already follows. Four registry units
@@ -51,7 +51,7 @@ below.
   Shanyang and the Phosphates of the Oulad Abdoun Basin), and their younger
   part could only be recorded in a note. The tree is not rooted at
   Dinosauria, so further periods are added as records need them. Output
-  schema 1.10.0 → 1.11.0.
+  schema 0.1.10 → 0.1.11.
 - `references.bib` exports each reference with its proper BibTeX type:
   `@phdthesis` and `@mastersthesis` with `school`, `@book` for a standalone
   work with a publisher, and `@misc` for one without. Standalone books had
@@ -61,7 +61,7 @@ below.
   that is simply its unit's. `resolution: unit` states that `stage` carries
   the containing lithostratigraphic unit's range rather than a
   determination; absent means the age is finer, or has not been checked.
-  Output schema 1.5.0 → 1.6.0.
+  Output schema 0.1.5 → 0.1.6.
 - `reworked` and `horizon` values for `period.resolution`, and validation
   that holds a record's stages within those of the finest unit it names (bed,
   member, formation or group). A record is dated by its type specimen's
@@ -70,38 +70,38 @@ below.
   reworked from older beds takes their age (`reworked`), and a type whose bed
   is uncertain takes the stages of every candidate bed (`horizon`). A record
   marked `resolution: unit` must carry exactly its unit's stages. Output
-  schema 1.11.0 → 1.12.0.
+  schema 0.1.11 → 0.1.12.
 - `location.notes`, holding provenance caveats on the other location fields
   — material not collected in situ, a locality reconstructed after the fact,
   an unrecorded horizon, or a member deliberately omitted. Not a general
-  comment field. Output schema 1.4.0 → 1.5.0.
+  comment field. Output schema 0.1.4 → 0.1.5.
 - `location.group`, holding the lithostratigraphic group containing an
   occurrence. Populated when the group is the finest unit published, in
   which case `formation` is absent. Rank words are not part of the value
   (`group: Yezo`). Ranks resolve through the new
   [`stratigraphy/`](./stratigraphy) registry, which also records
   variant spellings and the source of each claim. Validation rejects a group
-  in `formation`. `part` can now qualify a group. Output schema 1.3.0 → 1.4.0.
+  in `formation`. `part` can now qualify a group. Output schema 0.1.3 → 0.1.4.
 - `location.part` and `location.bed`, completing the lithostratigraphic
   hierarchy (group, formation, member, bed). `member` holds a member's name
   only; an informal upper or lower division goes in `part`, which qualifies
   the member where one is present and the formation otherwise. `bed` takes
-  published bed names only. Output schema 1.2.0 → 1.3.0.
+  published bed names only. Output schema 0.1.2 → 0.1.3.
 - `location.region_code`, an ISO 3166-2 subdivision code alongside
   `location.region`. The source YAML stores only the code and the build
   resolves `region` to a readable English name. Codes resolve through the
   new [`regions.yaml`](./regions.yaml) registry; validation rejects a code
   that is unknown or whose country prefix disagrees with `location.country`.
   Countries without subdivisions carry neither field. Output schema
-  1.1.0 → 1.2.0.
+  0.1.1 → 0.1.2.
 - `former_ids` on `species.type_specimen` and on `notable_specimens[]`,
-  recording the catalogue numbers a specimen was held under before its
+  recording the catalog numbers a specimen was held under before its
   current one. Each entry pairs `from_id` with `to_id` and gives a `reason`
   of `renumbered` or `rehoused`; `rehoused` also records `from_institution`
   and `to_institution`. An optional `source` names the work documenting the
   change. Prefix changes caused by an institution being recoded resolve
   through the aliases in `institutions.yaml` instead. Output schema
-  1.0.0 → 1.1.0.
+  0.1.0 → 0.1.1.
 - Structured dataset of 1,300+ genera and 180+ clades, each backed by
   published scientific literature, in a single phylogenetic tree
   (`tree.yml`) rooted at Life.
@@ -131,25 +131,25 @@ below.
   rationale remains in `dispute`.
 - Clade `dispute` in the output. A clade's live dispute, such as whether it
   is a natural group, was written in the source but left out of the built
-  clade; it now appears there as it does on a genus. Output schema 3.0.0 →
-  3.1.0.
+  clade; it now appears there as it does on a genus. Output schema 0.3.0 →
+  0.3.1.
 - Clade `erected_in` and `described_in` in the output: the reference ids of
   the paper that erected a clade name and of its authoritative description,
   as species already carry. Before, a clade gave its authority only as
   `authors` and `described`. The schema also documents the genus-level
-  `erected_in` the output already carried. Output schema 3.1.0 → 3.2.0.
+  `erected_in` the output already carried. Output schema 0.3.1 → 0.3.2.
 - Top-level `timescale` in the output: the chart the stage boundaries
   follow (ICS International Chronostratigraphic Chart v2024/12) and every
   stage in the `stages` vocabulary, youngest first, with its epoch in the
   form `species[].period.name` uses and its `from_ma`/`to_ma` boundary ages.
   The table holds only the stages the dataset's records use, so an epoch's
   span derived from it can fall short of the epoch's full span: only the
-  Ypresian represents the Eocene. Output schema 3.2.0 → 3.3.0.
+  Ypresian represents the Eocene. Output schema 0.3.2 → 0.3.3.
 - `nickname` on `species[].type_specimen`: the informal name a type
   specimen is known by, which until now could be recorded only for a
   notable specimen. A type specimen is never also listed among a genus's
   `notable_specimens`, and validation now rejects one that is. Output
-  schema 3.3.0 → 3.4.0.
+  schema 0.3.3 → 0.3.4.
 - `paleocoordinates` on `species[].location`: where the locality lay at the
   species' age, reconstructed with the GOLONKA plate model (Wright and
   colleagues, 2013), with the present-day point reconstructed, the age, the
@@ -157,46 +157,52 @@ below.
   point at another age. Records without coordinates are placed at the
   center of their region or country and flagged `approximate`. The model's
   citation and license are in `_metadata.paleogeography`. Build-derived;
-  the source YAML is unchanged. Output schema 3.4.0 → 3.5.0.
+  the source YAML is unchanged. Output schema 0.3.4 → 0.3.5.
 - `stratigraphy` at the top level of the output: the stratigraphic
   registry, keyed by unit name, with each unit's rank, containing unit,
   alternate names, informal flag, live dispute and references, and its age
   in the same shape as a species' `period`. Beds are entries of their own
   with their containing unit as `parent`, so every `group`, `formation`,
   `member` and `bed` a species' location names is a key. Output schema
-  4.0.0 → 4.1.0.
+  0.4.0 → 0.4.1.
 - `pronunciation` on `species[]`, in the same shape as the genus's (`ipa`,
   `phonetic`), covering the specific epithet alone; the genus carries its
-  own. Output schema 4.1.0 → 4.2.0.
+  own. Output schema 0.4.1 → 0.4.2.
 - `description` on every `stratigraphy` entry: a few-sentence summary of the
   unit for a general reader, written by the build from the unit's record (its
   rank, parent, age, places, members, variants and the dinosaurs recorded
   from it). A `description` in the source registry, optional, replaces the
-  generated text. Output schema 4.2.0 → 4.3.0.
+  generated text. Output schema 0.4.2 → 0.4.3.
 - A genus's `description` is now a summary the build writes from the record
   (what the genus is and who named it, when and where it lived, its species,
   size and way of life, well-known specimens), followed after a blank line by
   a narrative in our own words where the record has one. A stratigraphic
   unit's `description` works the same way. The source field for the narrative
-  is `narrative`. Output schema 4.3.0 → 4.4.0.
+  is `narrative`. Output schema 0.4.3 → 0.4.4.
 - A clade's `description` is now a summary the build writes from the record
   (what the clade is and who named it, when and where its members lived, its
   subgroups and best-known genera, their way of life, and who revised it),
   followed after a blank line by a narrative in our own words where the
   record has one. The source field for the narrative is `narrative`. Output
-  schema 4.4.0 → 4.5.0.
+  schema 0.4.4 → 0.4.5.
 - `rank` on every clade: `superfamily`, `family`, `subfamily`, `tribe` or
   `unranked`, from the new `clade_ranks` vocabulary. A family-group name's
   rank follows its ending (ICZN Article 29.2); phylogenetic names are
-  `unranked`. Output schema 4.4.0 → 4.5.0.
+  `unranked`. Output schema 0.4.4 → 0.4.5, the same bump as the clade
+  `description` above.
 - `identifiers` on clades, in the same form as a genus's: PBDB, Wikidata,
-  GBIF, EOL and ZooBank numbers for the same taxon. Output schema 4.5.0 →
-  4.6.0.
+  GBIF, EOL and ZooBank numbers for the same taxon. Output schema 0.4.5 →
+  0.4.6.
 - `lithology` on stratigraphic units: what the unit is made of, as a short
   phrase taken from a cited paper. The generated description says it. Output
-  schema 4.6.0 → 4.7.0.
+  schema 0.4.6 → 0.4.7.
 
 ### Changed
+- Output schema versions renumbered for the period before the first
+  release: each version X.Y.0 became 0.X.Y, so the schema stands at 0.4.7
+  rather than 4.7.0 and the version notes in this file use the new numbers.
+  Before 1.0.0 a MINOR bump marks a breaking change and a PATCH bump any
+  other change (see [`docs/VERSIONING.md`](./docs/VERSIONING.md)).
 - A published reference's `notes` are now only the citing record's notes on
   that citation. A reference-store entry's own notes, facts about the work
   itself kept for maintainers, had filled in wherever a citation had no
@@ -209,7 +215,8 @@ below.
   *Dromiceiomimus brevitertius*, `authors` and `described` give Parks, 1926
   and `erected_as` gives *Struthiomimus brevetertius*. The genus
   authority of a genus erected for an existing species comes from the
-  genus-level `erected_in`.
+  genus-level `erected_in`. The new field shipped without its own
+  output schema bump, within 0.2.0.
 - Genus-level `iczn_rulings` renamed `iczn_cases`, and its `type`
   vocabulary renamed from `iczn_ruling_types` to `iczn_case_types`. Each
   entry now carries a required `status` from a new `iczn_case_statuses`
@@ -220,14 +227,14 @@ below.
   and closure. `ruling` is required for, and only allowed on,
   `status: opinion`; any other status needs a `case`, a `petition` or a
   notice. The ten existing entries are all `opinion`, and *Kryptops* gains
-  the closed Case 3795 with its two notices. Output schema 1.12.0 → 2.0.0.
+  the closed Case 3795 with its two notices. Output schema 0.1.12 → 0.2.0.
 - Repo-wide naming convention: prose is American English, while names take
   the form used by the English-language literature. Institution names stay
   in their native form, non-English reference titles keep the native title
   with a bracketed English gloss, and formation names follow their own
   stratigraphic literature. Documented in
   [`CONTRIBUTING.md`](./CONTRIBUTING.md).
-- Locked the v1 output schema: the species type-specimen block is
+- Settled the output's core field names and types: the species type-specimen block is
   `type_specimen`, holding holotype/syntype/lectotype/neotype with its
   `specimen_type` naming the category; reference `volume`/`issue` and
   identifier `id` are always strings; reference keys are uniformly
@@ -238,7 +245,7 @@ below.
   `uncataloged`, matching the American spelling used throughout the
   dataset. A consumer that tests for the old value must test for the new
   one; the old value is no longer emitted or accepted. Output schema
-  3.5.0 → 4.0.0.
+  0.3.5 → 0.4.0.
 
 ### Removed
 - `dispute.history`, the dated log on genus and clade `dispute` blocks. Its
@@ -246,4 +253,4 @@ below.
   dispute, so it is gone from the data and the output; a `dispute` now holds
   only its `summary`. The reasoning behind a record's values is kept in its
   research notes, and earlier entries remain in the git history. Output
-  schema 2.0.0 → 3.0.0.
+  schema 0.2.0 → 0.3.0.

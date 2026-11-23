@@ -36,6 +36,7 @@ Run each script with `npm run <command>`; pass arguments after `--`. Scripts tha
 | `collect-reconstruction-points.ts` | `collect-reconstruction-points` | Write each species' present-day point (or region or country) and age to `scratch/plate-reconstruction/points.json` |
 | `plate-reconstruction/reconstruct-points.py` | `reconstruct-points` | Reconstruct those points with pyGPlates and the model in `plate-reconstruction/model.json` into `scratch/plate-reconstruction/paleocoordinates.json`; needs `pip install -r scripts/plate-reconstruction/requirements.txt` |
 | —                        | `generate-bindings`   | Regenerate the TypeScript and Python bindings in `dist/bindings/` from the JSON Schema |
+| `stage-types-package.ts` | `stage-types-package` | Assemble the `@open-paleo/types` npm package in `scratch/packages/types/` from the template in `packages/types/`, the bindings and the schema, versioned by `_metadata.schema_version` |
 | `generate-dictionary.ts` | `generate-dictionary` | Generate the spell-check dictionary `dictionaries/taxonomy.txt` |
 | `spellcheck.ts`          | `spellcheck`          | Spell-check prose fields into `scratch/spellcheck.md`; exits 1 on any unknown word, and runs on pull requests |
 | `research.ts`            | `research`            | Print the research notes for a record; `--references <file>` regenerates a note's reference list |

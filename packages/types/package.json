@@ -1,0 +1,39 @@
+{
+  "name": "@open-paleo/types",
+  "version": "0.0.0",
+  "private": true,
+  "description": "TypeScript types and JSON Schema for the Open Paleo dataset",
+  "keywords": [
+    "paleontology",
+    "dinosaurs",
+    "phylogeny",
+    "dataset",
+    "json-schema",
+    "typescript"
+  ],
+  "homepage": "https://github.com/open-paleo/data#readme",
+  "bugs": "https://github.com/open-paleo/data/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-paleo/data.git",
+    "directory": "packages/types"
+  },
+  "license": "CC-BY-4.0",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    },
+    "./schema.json": "./schema.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.d.ts",
+    "schema.json"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  }
+}

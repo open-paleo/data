@@ -60,6 +60,20 @@ New geological periods/stages, new `appearance_features` tags, new
 is designed so that a consumer pinned to one major version keeps validating as
 the dataset grows.
 
+## Before 1.0.0
+
+Until the first public release the schema is versioned `0.MINOR.PATCH`, and
+the rules above shift down one place, as [semver](https://semver.org/#spec-item-4)
+and npm's `^` ranges both treat 0.x versions:
+
+- **MINOR** — a backwards-incompatible change (what MAJOR means from 1.0.0 on).
+- **PATCH** — any other change: a backwards-compatible addition or a fix.
+
+A consumer pinned to one `0.MINOR` line keeps validating as the dataset grows,
+as one pinned to a major version will after 1.0.0. Anything below 1.0.0 is
+unstable: the output can still change in incompatible ways between minor
+versions. The schema becomes 1.0.0 with the first public release.
+
 ## When you change the output shape
 
 Anyone modifying `scripts/build.ts` output or the schema must, in the same
@@ -68,7 +82,8 @@ change:
 1. Update `schemas/open-paleo.schema.json` to match the new shape. (Its
    controlled-vocabulary enums mirror `schema.yml`; the `Output schema sync`
    validator check fails the build if they drift.)
-2. Bump `_metadata.schema_version` in `scripts/build.ts` per the rules above.
+2. Bump `_metadata.schema_version` in `scripts/build.ts` per the rules above
+   (shifted down one place while the version is below 1.0.0).
    Note that a change confined to the *source* YAML is not by itself a schema
    change: `location.region` moved to storing an ISO 3166-2 code, but the build
    resolves it, so `dist/` still publishes the English name and the release was
@@ -117,3 +132,18 @@ unchanged schema produces no diff.
 
 The recursive `tree` is typed as a nested dictionary in both bindings; its full
 recursive shape lives in the JSON Schema, which validation enforces.
+
+### npm package
+
+The TypeScript declarations and the JSON Schema are published on npm as
+[`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types), whose
+version is the `schema_version` of the output it describes. A data release that
+leaves the schema unchanged publishes no new package version. Versions below
+1.0.0 are published under the `next` dist-tag, so they install only with
+`npm install @open-paleo/types@next` or an explicit version.
+
+The package's `package.json` and README live in `packages/types/`;
+`npm run stage-types-package` assembles the publishable package from them and
+`dist/` in `scratch/packages/types/`. The *Publish types* workflow
+(`.github/workflows/publish-types.yml`), run by hand from the Actions tab,
+stages and publishes the version on `main`, with npm provenance.

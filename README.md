@@ -175,13 +175,16 @@ against `dist/open-paleo.json` or `dist/open-paleo.yml`, and validate against
 `_metadata.schema_version` using semantic versioning: a **major** bump signals
 a breaking change to the output, a **minor** bump adds a field or vocabulary
 value (existing consumers keep working), and a **patch** is a documentation or
-derivation fix. See [docs/VERSIONING.md](docs/VERSIONING.md) for the full
-policy.
+derivation fix. Until the first release the version is below 1.0.0 and these
+shift down one place: a **minor** bump is breaking and a **patch** is anything
+else. See [docs/VERSIONING.md](docs/VERSIONING.md) for the full policy.
 
 Typed bindings generated from the schema ship in
 [`dist/bindings/`](dist/bindings/): TypeScript declarations (`open-paleo.d.ts`)
 and Python Pydantic v2 models (`open_paleo.py`). They are regenerated whenever
 the schema changes, so they always match the current contract.
+The TypeScript declarations and the schema are also published on npm as
+[`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types).
 
 ## Output Formats
 

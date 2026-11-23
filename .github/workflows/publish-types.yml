@@ -1,0 +1,71 @@
+name: Publish types
+
+# Publishes @open-paleo/types from the dist/ outputs committed on main, at the
+# version in _metadata.schema_version. Run by hand from the Actions tab once
+# the Build workflow has finished for a schema change. A version already on the
+# registry is skipped rather than failing.
+#
+# npm authenticates this workflow through trusted publishing (GitHub OIDC), so
+# no npm token is stored in the repository. The package's trusted publisher on
+# npmjs.com names this file; renaming it breaks publishing until the setting is
+# updated. The dist-tag (next before 1.0.0) comes from publishConfig in
+# packages/types/package.json.
+on:
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Pack and report what would be published, without publishing
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: publish-types
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Only main carries the built dist/ outputs.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # registry-url writes the .npmrc that trusted publishing authenticates
+      # against. Trusted publishing needs npm 11.5.1 or later, which Node 24
+      # ships.
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      # The staging script uses only Node built-ins, so no npm ci.
+      - name: Stage package
+        run: npm run stage-types-package
+
+      - name: Check whether this version is published
+        id: check
+        run: |
+          name="$(node -p "require('./scratch/packages/types/package.json').name")"
+          version="$(node -p "require('./scratch/packages/types/package.json').version")"
+          published="$(npm view "$name@$version" version 2>/dev/null || true)"
+          if [ -n "$published" ]; then
+            echo "::notice::$name@$version is already published; nothing to do"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # npm applies publishConfig.tag on its own, but its log line reports the
+      # --tag setting, so the tag is passed explicitly to keep the log true.
+      - name: Publish
+        if: steps.check.outputs.publish == 'true'
+        working-directory: scratch/packages/types
+        run: |
+          tag="$(node -p "require('./package.json').publishConfig.tag")"
+          npm publish --tag "$tag" --provenance ${{ inputs.dry-run && '--dry-run' || '' }}

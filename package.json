@@ -1,12 +1,14 @@
 {
   "name": "open-paleo-data",
   "version": "1.0.0",
+  "private": true,
   "description": "Community-maintained phylogenetic dataset for paleontology",
   "type": "module",
   "scripts": {
     "validate": "node --experimental-strip-types scripts/validate.ts",
     "build": "node --experimental-strip-types scripts/build.ts",
     "generate-bindings": "mkdir -p dist/bindings && json2ts schemas/open-paleo.schema.json -o dist/bindings/open-paleo.d.ts && python3 -m datamodel_code_generator --input schemas/open-paleo.schema.json --input-file-type jsonschema --output-model-type pydantic_v2.BaseModel --disable-timestamp --collapse-root-models --output dist/bindings/open_paleo.py",
+    "stage-types-package": "node --experimental-strip-types scripts/stage-types-package.ts",
     "generate-dictionary": "node --experimental-strip-types scripts/generate-dictionary.ts",
     "lint": "eslint scripts/ .github/scripts/",
     "lint:fix": "eslint scripts/ .github/scripts/ --fix",
