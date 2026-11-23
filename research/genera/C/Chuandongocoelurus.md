@@ -17,4 +17,4 @@
 ## References
 
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
-- `li2011a`: Li, K.; Liu, J.; Yang, C.; Hu, F. (2011). Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China.
+- `li2011a`: Li, K.; Liu, J.; Yang, C.; Hu, F. (2011). Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China. *Volumina Jurassica* 9: 21-42.

@@ -1,5 +1,24 @@
 # Khuren Dukh
 
+## What strata did Ito and colleagues (2006) erect the Khuren Dukh Formation for?
+
+*2026-11-23*
+
+**Conclusion.** The infill of the Choyr Basin that Matsukawa and colleagues (1997) had mapped as the Shinekhudag Formation, and which earlier workers had assigned to the Zuunbayan Formation. Ito and colleagues (2006) define the Khalzan Uul and Khuren Dukh formations from their own mapping, and replace the older names because those came from type localities about 170 km away and carried ages they reject for the Choyr Basin. The Khuren Dukh is therefore a new unit for these strata, not a new name for the Shinekhudag, and the strata are no longer assigned to the Zuunbayan. For its age, Ito and colleagues relay earlier conclusions of Aptian–Albian or middle–late Albian, and a refinement to late Albian by Nichols and colleagues (2006), whose own wording is "middle to late Albian"; either way the age adds no stage beyond the Aptian and Albian. Governs the naming reference on [Khuren Dukh](../../../stratigraphy/k/khuren-dukh.yml), and its separation from the [Zuunbayan](../../../stratigraphy/z/zuunbayan.yml).
+
+**Evidence.**
+- ito2006a, p. 226, abstract: "The sedimentary infill of the Choyr Basin is newly defined as the Khalzan Uul and Khuren Dukh formations based on detailed mapping of lateral and vertical variations in component lithofacies assemblages."
+- ito2006a, p. 227: the Shinekhudag and the other names "were adapted from units defined as 'svitas'", whose "type localities are about 170 km southeast of the Choyr Basin".
+- ito2006a, p. 228: "we believe similar age assignments to strata in the Choyr Basin to be incorrect"; "the unit mapped as the Shinekhudag Formation is designated the Khuren Dukh Formation".
+- ito2006a, pp. 228–229: "These studies concluded that the age of the Khuren Dukh Formation is either Aptian–Albian or middle-late Albian. Nichols et al. (2006) have further refined the age of the Khuren Dukh Formation as late Albian, based on new palynological data."
+- nichols2006a, p. 241, abstract: "strata previously identified as either the Shinekhudag Formation or the Zuunbayan Formation but recently renamed the Khuren Dukh Formation".
+- nichols2006a, p. 242: "none of these formation names is appropriate for the rocks in this isolated basin, because they are derived from distant localities and carry erroneous implications of geologic age".
+
+**Ruled out.**
+- *Khuren Dukh as a renaming of the Shinekhudag Formation.* Nichols and colleagues (2006) write "renamed", but Ito and colleagues apply the new name only to the Choyr Basin strata, and leave the Shinekhudag and the other older names to the units of their type areas about 170 km away.
+
+**Open.** Nothing.
+
 ## Does the Khuren Dukh Formation reach the Barremian?
 
 *2026-10-07*
@@ -48,6 +67,8 @@
 
 ## References
 
+- `ito2006a`: Ito, M.; Matsukawa, M.; Saito, T.; Nichols, D. J. (2006). Facies architecture and paleohydrology of a synrift succession in the Early Cretaceous Choyr Basin, southeastern Mongolia. *Cretaceous Research* 27(2): 226-240. doi:10.1016/j.cretres.2005.11.005
+- `nichols2006a`: Nichols, D. J.; Matsukawa, M.; Ito, M. (2006). Palynology and age of some Cretaceous nonmarine deposits in Mongolia and China. *Cretaceous Research* 27(2): 241-251. doi:10.1016/j.cretres.2005.11.004
 - `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530: 1-42. doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
 - `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 256-278. Cambridge University Press, Cambridge.
 - `hicks1999a`: Hicks, J. F.; Brinkman, D. L.; Nichols, D. J.; Watabe, M. (1999). Paleomagnetic and palynologic analyses of Albian to Santonian strata at Bayn Shireh, Burkhant, and Khuren Dukh, eastern Gobi Desert, Mongolia. *Cretaceous Research* 20(6): 829-850. doi:10.1006/cres.1999.0188

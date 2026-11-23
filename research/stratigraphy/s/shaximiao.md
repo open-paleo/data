@@ -1,5 +1,21 @@
 # Shaximiao
 
+## What age do Li and colleagues (2011) give the Shaximiao Formation?
+
+*2026-11-23*
+
+**Conclusion.** Bajocian–Callovian for the whole formation. Li and colleagues (2011) place the upper member in the Middle Jurassic and set aside the earlier view, from its vertebrates, that the upper member is Late Jurassic. They give the upper member two different ranges: Bathonian–Callovian in the abstract, and Bajocian–Bathonian in the discussion, read from electron spin resonance ages of 165–172 Ma. Both lie inside their range for the whole formation, so under the union rule the paper adds Bajocian through Callovian and nothing more. Governs the Middle Jurassic stages in `stages` on [Shaximiao](../../../stratigraphy/s/shaximiao.yml); the Oxfordian–Tithonian stages rest on other sources, and the paper's case against a Late Jurassic upper member does not remove them.
+
+**Evidence.**
+- li2011a, p. 21, Abstract: "the upper member of the Shaximiao Formation is of Middle Jurassic age (Bathonian–Callovian)"; "the entire Shaximiao Formation is of Bajocian–Callovian age (middle-late part of Middle Jurassic)".
+- li2011a, p. 25: "Based on its invertebrate fossil record, this member, along with the entire Shaximiao Formation, was assigned to the Middle Jurassic, although vertebrate fossils tended to indicate a Late Jurassic age for the upper member of the Shaximiao Formation."
+- li2011a, p. 25: "point to a 165–172 Ma age range for the Shaximiao Formation"; "the upper member of the Shaximiao Formation should belong to a mid to late part of the Middle Jurassic, namely the Bajocian–Bathonian".
+
+**Ruled out.**
+- *One of the two upper-member ranges as a slip.* The abstract's Bathonian–Callovian and the discussion's Bajocian–Bathonian are each stated as a conclusion, not a misprint the paper corrects elsewhere. Neither changes `stages`, since both lie inside the paper's Bajocian–Callovian for the whole formation.
+
+**Open.** The abstract supports the age with "radiometric dating (165–178 Ma)" (p. 21) and the discussion with electron spin resonance ages of 165–172 Ma (p. 25); the paper does not reconcile the two older bounds. The dating studies it relays have not been read.
+
 ## Are the Xiashaximiao and Shangshaximiao two formations, or the lower and upper parts of one?
 
 *2026-08-03*
@@ -22,6 +38,7 @@
 
 ## References
 
+- `li2011a`: Li, K.; Liu, J.; Yang, C.; Hu, F. (2011). Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China. *Volumina Jurassica* 9: 21-42.
 - `dai2022b`: Dai, H.; Li, N.; Maidment, S. C. R.; Wei, G.; Zhou, Y.; Hu, X.; Ma, Q.; Wang, X.; Hu, H.; Peng, G. (2022). New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China. *Journal of Vertebrate Paleontology* 41(5). doi:10.1080/02724634.2021.1995737
 - `moore2020a`: Moore, A. J.; Upchurch, P.; Barrett, P. M.; Clark, J. M.; Xu, X. (2020). Osteology of Klamelisaurus gobiensis (Dinosauria, Eusauropoda) and the evolutionary history of Middle-Late Jurassic Chinese sauropods. *Journal of Systematic Palaeontology* 18(16): 1299-1393. doi:10.1080/14772019.2020.1759706
 - `xing2015a`: Xing, L.; Miyashita, T.; Zhang, J.; Li, D.; Ye, Y.; Sekiya, T.; Wang, F.; Currie, P. J. (2015). A new sauropod dinosaur from the Late Jurassic of China and the diversity, distribution, and relationships of mamenchisaurids. *Journal of Vertebrate Paleontology* 35(1): e889701. doi:10.1080/02724634.2014.889701

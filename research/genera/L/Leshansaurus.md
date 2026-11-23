@@ -18,4 +18,4 @@
 ## References
 
 - `li2009b`: Li, F.; Peng, G.; Yong, Y.; Jiang, S.; Huang, D. (2009). A new carnosaur from the Late Jurassic of Qianwei, Sichuan, China. *Acta Geologica Sinica* 83(9): 1203-1210.
-- `li2011a`: Li, K.; Liu, J.; Yang, C.; Hu, F. (2011). Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China.
+- `li2011a`: Li, K.; Liu, J.; Yang, C.; Hu, F. (2011). Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China. *Volumina Jurassica* 9: 21-42.

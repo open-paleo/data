@@ -1,5 +1,21 @@
 # Wallangulla Sandstone
 
+## Where in the Wallangulla Sandstone does the dated claystone lie, and how does the member meet the Coocoran Claystone?
+
+*2026-11-23*
+
+**Conclusion.** The bed that Bell and colleagues (2019) dated, a 5–25 cm volcanogenic claystone known locally as the "waxy band", is part of the uppermost Finch Clay layer and is known only at the Molyneux and Hard Hill localities of the Coocoran opal field. It lies above the uppermost fossil- and opal-bearing claystone and below the "steel band" marker bed. Above the steel band, the upper 6–8 m of the member are coarser and yielded no claystone lenses in their study, and the member's contact with the overlying Coocoran Claystone member is sharp and unconformable. Bell and colleagues take the band's zircons to constrain the maximum age of the fossil biota at Lightning Ridge. Governs the Cenomanian in `stages` on [Wallangulla Sandstone](../../../stratigraphy/w/wallangulla-sandstone.yml), which rests on this date (see the 2026-09-30 entry on the age of the Lightning Ridge fauna).
+
+**Evidence.**
+- bell2019b, pp. 657–658: "the uppermost Finch Clay layer includes a 5–25 cm thick layer of dark grey, bentonitic clay locally referred to as the 'waxy band'".
+- bell2019b, p. 658: "The upper 6–8 m of the Wallangulla Sandstone member mark a shift to coarser lithologies"; claystone lenses there "were not observed during the course of this study".
+- bell2019b, p. 659: "the contact with the overlying Coocoran Claystone member is sharp and unconformable".
+- bell2019b, p. 660: the band "lies between the 'steel band' marker bed (above) and the uppermost fossil- and opal-bearing claystone (below)"; "zircons obtained from this layer are taken to constrain the maximum age of the fossil biota in and around Lightning Ridge".
+
+**Ruled out.** Nothing.
+
+**Open.** The dated band overlies the fossil-bearing claystone, so its maximum depositional age bounds the band and the beds above it; it bounds the fossils below only if the band was deposited close to the age of its youngest zircons. Bell and colleagues (2019) read the zircons as reworked airfall tuff. A date from within or below the fossil-bearing Finch Clay lenses would settle the age of the fauna itself.
+
 ## Does Agnolín and colleagues' "Sandstone Member" give *Rapator* the Wallangulla Sandstone?
 
 *2026-10-11*
@@ -49,7 +65,7 @@
 
 ## References
 
+- `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
 - `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
 - `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
-- `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
 - `boyd2015a`: Boyd, C. A. (2015). The systematic relationships and biogeographic history of ornithischian dinosaurs. *PeerJ* 3: e1523. doi:10.7717/peerj.1523

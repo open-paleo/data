@@ -1,5 +1,19 @@
 # Hekou
 
+## Does Xi and colleagues' (2018) Hekou Group match this unit?
+
+*2026-11-23*
+
+**Conclusion.** Yes. Xi and colleagues (2018) place their Hekou Group in the Xining-Lanzhou Basin, divide it into four formations, and put it below the Upper Cretaceous Minhe Formation, which matches the Lower Cretaceous Hekou Group of the Lanzhou-Minhe Basin; their magnetostratigraphic range of 138–106 Ma therefore applies to this unit. Governs whether that range bears on `stages` on [Hekou](../../../stratigraphy/h/hekou.yml); the conversion of that range to the current chart is in the 2026-10-09 entry.
+
+**Evidence.**
+- xi2018a, p. 275: "The early Cretaceous Hekou Group and the late Cretaceous Minhe Formation occur in the Xining-Lanzhou Basin."
+- xi2018a, p. 277: "the Lower Cretaceous Hekou Group (Zhujiatai, Yanguoxia, Honggucheng and Huazhuang Formations from oldest to youngest) and the Upper Cretaceous Minhe Formation".
+
+**Ruled out.** Nothing among the works cited here.
+
+**Open.** Nothing.
+
 ## Does the Hekou Group begin in the Berriasian?
 
 *2026-10-09*
