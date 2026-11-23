@@ -1,5 +1,19 @@
 # Minmi
 
+## On what fossils does Exon (1976) date the Minmi Member?
+
+*2026-11-23*
+
+**Conclusion.** Exon (1976) dates the member early Aptian on its marine shelly fauna, with arenaceous foraminifera of Early Cretaceous, probably Aptian, age, and gives the Nullawurt Sandstone Member below it as probably Neocomian. This adds the fossil basis for the early Aptian of the 2026-09-30 entry and leaves that entry unchanged. Governs `stages: [Aptian]` on [Minmi](../../../stratigraphy/m/minmi.yml).
+
+**Evidence.**
+- exon1976a, p. 115: "The Nullawurt Sandstone Member contains at least four species of marine macrofossils and is probably of Neocomian age".
+- exon1976a, p. 115: "The Minmi Member contains 20 species of pelecypods (both burrowers and surface dwellers), several gastropods, and one belemnite"; "The member also contains about 10 species of arenaceous foraminifera … of Early Cretaceous (probably Aptian) age."
+
+**Ruled out.** Nothing beyond the readings the 2026-09-30 entry rules out.
+
+**Open.** Nothing beyond the base of the member, which the 2026-09-30 entry leaves open.
+
 ## What is the age of the Minmi Member of the Bungil Formation?
 
 *2026-09-30*
