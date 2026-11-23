@@ -496,8 +496,9 @@ words, in English translation where the paper is not written in English:
 - `parent`: the containing unit. Containment is stored only on the child.
 - `lithology`: optional. What the unit is made of, as a short phrase that
   completes "It consists mainly of …" ("red mudstone and fine-grained
-  sandstone"), in your own words. Take it from a cited paper and quote that
-  paper's description in the reference's `notes`.
+  sandstone"), in your own words. Take it from a paper that describes the
+  whole unit, cite that paper, and end its reference note with "Source of the
+  lithology." Do not quote the description; the paper is the source.
 - `variants`: other names papers print for the unit. Not spellings, rank
   words or rank claims.
 - `period` and `stages`: the unit's age, described below.

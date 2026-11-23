@@ -1097,7 +1097,7 @@ export type StratigraphicUnit = {
     /**
      * What the unit is made of, as a short phrase that completes "It consists
      * mainly of ..." ("red mudstone and fine-grained sandstone"). Sourced
-     * from a cited paper, whose reference note quotes it.
+     * from a cited paper, whose reference note says "Source of the lithology."
      */
     lithology?: string;
 
