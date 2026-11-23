@@ -91,6 +91,13 @@ change:
    what `dist/` looks like, never by what the source files look like.
 3. Record the change in [`CHANGELOG.md`](../CHANGELOG.md).
 4. Run `npm run validate` and `npm run build`.
+5. If the bump is a breaking one (MAJOR, or MINOR before 1.0.0), tell the
+   maintainers of [open-paleo/web](https://github.com/open-paleo/web) before
+   pushing: its build checks the dataset's `schema_version` against its own
+   bindings and stops on a breaking difference.
+6. After pushing, wait for the Build workflow to commit the regenerated
+   `dist/`, then run the *Publish bindings* workflow from the Actions tab to
+   publish the new version to npm and PyPI (see [Packages](#packages)).
 
 ## Validating against the schema
 

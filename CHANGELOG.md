@@ -115,6 +115,12 @@ below, and becomes 1.0.0 when this release is cut.
 - JSON Schema for the built dataset (`schemas/open-paleo.schema.json`,
   shipped as `dist/open-paleo.schema.json`) for consumer validation and
   typed-binding generation.
+- The typed bindings published as packages, versioned by `schema_version`:
+  the TypeScript declarations as
+  [`@open-paleo/types`](https://www.npmjs.com/package/@open-paleo/types) on
+  npm and the Pydantic models as
+  [`open-paleo`](https://pypi.org/project/open-paleo/) on PyPI, each with the
+  JSON Schema.
 - Versioning and stability policy (`docs/VERSIONING.md`): the source YAML is
   an editing format; the `dist/` outputs are the stable,
   `schema_version`-versioned contract.

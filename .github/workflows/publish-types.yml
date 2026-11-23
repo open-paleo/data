@@ -46,8 +46,8 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
+          cache: npm
 
-      # The staging script uses only Node built-ins, so no npm ci.
       - name: Stage packages
         run: npm run stage-packages
 
@@ -63,6 +63,24 @@ jobs:
           else
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # TypeScript, for the test below; the staging script needs nothing but
+      # Node built-ins.
+      - name: Install dependencies
+        if: steps.check.outputs.publish == 'true' || inputs.dry-run
+        run: npm ci
+
+      # Compiles packages/types/smoke/smoke.ts against the staged package, so a
+      # package that does not resolve, lacks a type the README names, or whose
+      # README examples no longer compile is never published.
+      - name: Test the staged package
+        if: steps.check.outputs.publish == 'true' || inputs.dry-run
+        run: |
+          consumer="$RUNNER_TEMP/types-smoke"
+          cp -r packages/types/smoke "$consumer"
+          mkdir -p "$consumer/node_modules/@open-paleo"
+          cp -r scratch/packages/types "$consumer/node_modules/@open-paleo/types"
+          node node_modules/typescript7/bin/tsc -p "$consumer"
 
       # npm applies publishConfig.tag on its own, but its log line reports the
       # --tag setting, so the tag is passed explicitly to keep the log true.
@@ -149,6 +167,26 @@ jobs:
           pip install build==1.6.1 twine==7.0.0
           python -m build scratch/packages/python
           twine check --strict scratch/packages/python/dist/*
+
+      # Installs the built wheel into clean environments with the oldest
+      # pydantic the package allows (read from pyproject.toml) and the newest,
+      # then runs packages/python/smoke_test.py with warnings as errors, so a
+      # package that fails or warns on the real dataset is never uploaded.
+      - name: Test the built package
+        if: steps.check.outputs.publish == 'true'
+        run: |
+          minimum="$(sed -n 's/.*"pydantic>=\([0-9.]*\),.*/\1/p' packages/python/pyproject.toml)"
+          if [ -z "$minimum" ]; then
+            echo "::error::no pydantic lower bound found in packages/python/pyproject.toml"
+            exit 1
+          fi
+          for requirement in "pydantic==$minimum" "pydantic<3"; do
+            echo "Testing with $requirement"
+            python -m venv "$RUNNER_TEMP/smoke"
+            "$RUNNER_TEMP/smoke/bin/pip" install --quiet "$requirement" scratch/packages/python/dist/*.whl
+            "$RUNNER_TEMP/smoke/bin/python" -W error packages/python/smoke_test.py dist/open-paleo.json
+            rm -rf "$RUNNER_TEMP/smoke"
+          done
 
       # Uploads with the trusted publisher's token and attaches attestations
       # (PEP 740).

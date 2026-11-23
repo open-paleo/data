@@ -218,6 +218,8 @@ If you change the structure of any output format in `build.ts`:
 2. Update `_metadata.schema_version` according to the semver rules in [docs/VERSIONING.md](../docs/VERSIONING.md)
 3. Update `CHANGELOG.md` with the schema change
 4. Run `npm run build` and verify all output files
+5. Before pushing a breaking bump (MAJOR, or MINOR before 1.0.0), tell the maintainers of open-paleo/web, whose build stops on one
+6. After pushing, wait for the Build workflow to commit the regenerated `dist/`, then run the *Publish bindings* workflow to publish the new version to npm and PyPI (see [docs/VERSIONING.md](../docs/VERSIONING.md#packages))
 
 ## Types
 
