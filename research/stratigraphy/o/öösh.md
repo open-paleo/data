@@ -1,5 +1,21 @@
 # Öösh
 
+## What do Andres and Norell (2005) and Cuenca-Bescós and Canudo (2003) say about the age of the Öösh Formation?
+
+*2026-11-23*
+
+**Conclusion.** Neither narrows the Berriasian–Albian range. Andres and Norell (2005) leave the age of the pterosaur from the "cannonball" beds, the lowest part of the formation, open between the two svita assignments they report, Berriasian–Valanginian or Aptian–Albian. Cuenca-Bescós and Canudo (2003) correlate Oshih with the Tsagantsavian, which they say includes a 130 Ma basaltic layer, make *Gobiconodon hopsoni* from it probably Hauterivian and list Oshih as Hauterivian in their Hauterivian paleogeography; because the Lower Cretaceous chronostratigraphy is unsettled, they allow Valanginian or Barremian as well. Both readings fall inside the range of the 2026-09-30 entry, which this one adds to and does not supersede. Governs `stages: [Berriasian, Valanginian, Hauterivian, Barremian, Aptian, Albian]` on [Öösh](../../../stratigraphy/o/öösh.yml), unchanged.
+
+**Evidence.**
+- andres2005a, p. 3: the pterosaur vertebra "comes from the ''cannonball'' beds (as defined in Berkey and Morris, 1927), a concretionary zone which forms the lowest part of the Öösh Formation"; "AGE: Early Cretaceous (Berriasian–Valanginian or Aptian–Albian)."
+- cuenca-bescós2003a, p. 580, Distribution and palaeogeography: "The age of Oshih is correlated to the Tsagantsavian (Jerzykiewicz and Russell 1991; Rougier et al. 2001), that comprises a basaltic layer of 130 Ma"; "therefore *G. hopsoni* is probably Hauterivian (*sensu* Gradstein et al. 1999)"; "Note that the chronostratigraphy of the Lower Cretaceous is still a matter of discussion. Therefore, Oshih can also be Valanginian or Barremian in age (*sensu* Gradstein et al. 1999)."
+- cuenca-bescós2003a, p. 580, Fig. 6: in the "Palaeogeography of the Hauterivian", "4, Oshih (Hauterivian, Gobi, China)"; the text on the same page puts the Oshih Depression "in the Gobi desert, Mongolia".
+
+**Ruled out.**
+- *Öösh in China.* The caption of Cuenca-Bescós and Canudo's Fig. 6 gives "Gobi, China"; their text on the same page gives Mongolia, so the caption is a slip that its own paper contradicts (see [methods](../../methods.md)).
+
+**Open.** The 130 Ma basalt that Cuenca-Bescós and Canudo invoke belongs to the Tsagantsavian horizon as a whole, not to a dated level at Öösh; which svita the formation belongs to remains open as in the 2026-09-30 entry.
+
 ## Are Öösh, Oshih and Ashile one formation, and which svita is it?
 
 *2026-09-30*
@@ -50,9 +66,10 @@
 
 ## References
 
+- `andres2005a`: Andres, B.; Norell, M. A. (2005). The first record of a pterosaur from the Early Cretaceous strata of Öösh (Övörkhangai; Mongolia). *American Museum Novitates* 3472: 1-6.
+- `cuenca-bescós2003a`: Cuenca-Bescós, G.; Canudo, J. I. (2003). A new gobiconodontid mammal from the Early Cretaceous of Spain and its palaeogeographic implications. *Acta Palaeontologica Polonica* 48(4): 575-582.
 - `osborn1923b`: Osborn, H. F. (1923). Two Lower Cretaceous dinosaurs of Mongolia. *American Museum Novitates* 95: 1-10.
 - `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
-- `andres2005a`: Andres, B.; Norell, M. A. (2005). The first record of a pterosaur from the Early Cretaceous strata of Öösh (Övörkhangai; Mongolia). *American Museum Novitates* 3472: 1-6.
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `napoli2019a`: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A. (2019). Psittacosaurus amitabha, a new species of ceratopsian dinosaur from the Ondai Sayr Locality, Central Mongolia. *American Museum Novitates* 3932: 1-36. doi:10.1206/3932.1
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
@@ -63,3 +80,7 @@
 - `young1937a`: Young, C. C. (1937). A new dinosaurian from Sinkiang. *Palaeontologia Sinica, New Series C, Whole Series No. 132* 213: 1-29.
 - `osborn1924a`: Osborn, H. F. (1924). Sauropoda and Theropoda of the Lower Cretaceous of Mongolia. *American Museum Novitates* 128: 1-16.
 - `turner2012a`: Turner, A. H.; Makovicky, P. J.; Norell, M. A. (2012). A Review of Dromaeosaurid Systematics and Paravian Phylogeny. *Bulletin of the American Museum of Natural History* 371: 1-206. doi:10.1206/748.1
+
+## Other references
+
+- `gradstein1999a`: Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Hardenbol, J.; Backstrom, S. (1999). On the Cretaceous time scale. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 212(1-3): 3-14. doi:10.1127/njgpa/212/1999/3

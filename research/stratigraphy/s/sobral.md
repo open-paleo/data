@@ -1,5 +1,22 @@
 # Sobral
 
+## What age do Schneider and colleagues (2009) give the Sobral Member?
+
+*2026-11-23*
+
+**Conclusion.** Latest Kimmeridgian to Early Tithonian. Schneider and colleagues (2009) date the Farta Pão Formation from the latest Kimmeridgian to the latest Tithonian and divide it into three largely contemporaneous lower members, the Sobral, Arranhó I and Arranhó II, overlain by the Freixial Member of late Early to Late Tithonian age; the carbonate incursion of the Arranhó I marks the Kimmeridgian–Tithonian boundary. Their strontium-isotope ages on oysters from the Sobral itself span 1.8 Ma, from the latest Late Kimmeridgian to the middle Early Tithonian. The member's type area is the western Arruda Subbasin; its extent along the coast is the subject of the 2026-10-07 entry, and the earlier placements of the Sobral in the Farta Pão or the Lourinhã are set out in [Lourinhã](../l/lourinhã.md). Governs `stages: [Kimmeridgian, Tithonian]` on [Sobral](../../../stratigraphy/s/sobral.yml).
+
+**Evidence.**
+- schneider2009a, p. 1949, Abstract: "The Farta Pao formation ranges from the latest Kimmeridgian to the latest Tithonian. The largely synchronous Sobral, Arranhó I, and Arranhó II members are overlain by the late Early to Late Tithonian Freixial Member. The brief, local carbonate incursion of the Arranhó I member marks the Kimmeridgian–Tithonian boundary."
+- schneider2009a, p. 1952: "The Sobral member, a unit largely composed of brackish-water deltaic sandstones, is by far the most widespread lithologic unit of the Farta Pao formation. From its type area in the western part of the Arruda Subbasin it can be traced into the Turcifal Subbasin".
+- schneider2009a, p. 1966: "For six of the remaining seven samples the derived ages span 1.8 Ma and indicate a latest Late Kimmeridgian to middle Early Tithonian age (uppermost beckeri to semiforme zones)"; "Sr isotope data for the northernmost parts of the Sobral member are missing"; a single sample "yielded an aberrant earliest Early Kimmeridgian age, which does not fit in the lithostratigraphic framework and should be disregarded".
+- schneider2009a, pp. 1966–1967: the Farta Pao formation "can be divided into three, largely contemporaneous lower members and a single upper member. The sandy Sobral member starts in the latest Kimmeridgian and extends into the Early Tithonian".
+
+**Ruled out.**
+- *An earliest Early Kimmeridgian age for part of the member.* One oyster sample from Santa Cruz (050927/5A) gave it; Schneider and colleagues set it aside as aberrant, since it does not fit the lithostratigraphic framework.
+
+**Open.** The age of the member's northern part. The oysters from Porto das Barcas were too altered to date, so Schneider and colleagues have no strontium-isotope ages for the northernmost Sobral.
+
 ## Are the coastal and inland Sobral the same unit?
 
 *2026-10-07*

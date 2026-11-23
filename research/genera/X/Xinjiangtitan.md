@@ -50,7 +50,7 @@
 
 ## References
 
-- `maisch2019a`: Maisch, M. W.; Matzke, A. T. (2019). First record of a eusauropod (Dinosauria; Sauropoda) from the Upper Jurassic Qigu-Formation (southern Junggar Basin, China), and a reconsideration of Late Jurassic sauropod diversity in Xinjiang.
+- `maisch2019a`: Maisch, M. W.; Matzke, A. T. (2019). First record of a eusauropod (Dinosauria: Sauropoda) from the Upper Jurassic Qigu-Formation (southern Junggar Basin, China), and a reconsideration of Late Jurassic sauropod diversity in Xinjiang. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 291(1): 109-117. doi:10.1127/njgpa/2019/0792
 - `upchurch2021a`: Upchurch, P.; Mannion, P. D.; Xu, X.; Barrett, P. M. (2021). Re-assessment of the Late Jurassic eusauropod dinosaur Hudiesaurus sinojapanorum Dong, 1997, from the Turpan Basin, China, and the evolution of hyper-robust antebrachia in sauropods. *Journal of Vertebrate Paleontology* 41(4). doi:10.1080/02724634.2021.1994414
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `wu2013a`: Wu, W. H.; Zhou, C. F.; Wings, O.; Sekiya, T.; Dong, Z. M. (2013). A new gigantic sauropod dinosaur from the Middle Jurassic of Shanshan, Xinjiang. *Global Geology* 32(3): 437-446. doi:10.3969/j.issn.1004-5589.2013.03.002
