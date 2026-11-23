@@ -1,0 +1,34 @@
+# Reynolds Point
+
+## What do the cited works say about the age of the Reynolds Point?
+
+*2026-11-23*
+
+**Conclusion.** Campanian. Beveridge and colleagues (2022) re-date the Star Seep bentonite near the member's base by CA-ID-TIMS at about 81.47 Ma, and their Bayesian age-stratigraphic model places the member's lower boundary at 81.55 Ma and its upper boundary at 80.61 Ma, against 82.17 Ma for the base of the Wahweap Formation. These boundary figures are model output, interpolated between dated horizons, not dates on the boundaries themselves. Every age the cited works give for the member, older or newer, falls inside the Campanian (83.6 to 72.1 Ma on the ICS chart v2024/12). Governs `stages: [Campanian]` on [Reynolds Point](../../../stratigraphy/r/reynolds-point.yml).
+
+**Evidence.**
+- beveridge2022a, p. 1, Abstract: the informal subdivisions "are herein formalized and named the Last Chance Creek Member, Reynolds Point Member, Coyote Point Member, and Pardner Canyon Member (formerly the lower, middle, upper, and capping sandstone members respectively)".
+- beveridge2022a, p. 13, Table 2: "Model ages for member boundaries generated using the Bayesian age-stratigraphic model"; base of Wahweap Fm 82.17 Ma, Last Chance Creek–Reynolds Point Mbr boundary 81.55 Ma, Reynolds Point–Coyote Point Mbr boundary 80.61 Ma.
+- beveridge2022a, p. 16, 7.1. Spatio-temporal distribution of vertebrates: "Vertebrates from the Reynolds Point Member (model age: 81.55 +0.62/-0.09 to 80.61 +0.39/-0.51 Ma)".
+- beveridge2022a, p. 9, 5.1. Results: High-precision CA-ID-TIMS bentonite ages: sample B2-07B "was collected from the same horizon as the previously dated 40Ar/39Ar sample SS07-B (Jinnah, 2013) at Star Seep, 54 m above the base of the formation"; it "is also presumably correlative with (or within ±5 m of) bentonite CF05-B from Jinnah et al. (2009)" and "is located near the base of the Reynolds Point Member".
+- beveridge2022a, p. 14, 6.2. Upper and basal formation boundaries: the "~81.47 Ma" age for the Star Seep bentonite "is significantly older (~0.9 to 1.6 Myr) than previous ages for what is interpreted to be the same horizon (SS07-B = 79.9 Ma, CF05-B = 80.6 Ma – Jinnah et al., 2009; Jinnah, 2013)".
+- beveridge2022a, p. 18, 7.2. Age revision for key taxa: the *Diabloceratops eatoni* holotype, "105 m above the base of the Wahweap Formation", has "a revised age of 81.27 +0.15/0.26 Ma for D. eatoni, which is 1.4 million years older than previously thought".
+- jinnah2007a, p. 96A: dating "of sanidine phenocrysts from a bentonite located 54 m above the base of the ~400 m-thick formation" gives "an age of 80.1 ± 0.3 Ma".
+- jinnah2008a, p. 290: the bentonite "crops out in the middle member (Fig. 3), approximately 40 m above the base of the Wahweap Formation".
+- jinnah2013a, p. 62: "Recalculation of the age of the tuff in the middle member of the Wahweap Formation yields an age of 80.6 Ma"; a second ash "approximately 10 m above the 80.6 Ma ash bed (~60-m level)" gives "a concordant age of 79.9 ± 0.3 Ma".
+- kirkland2010a, p. ? (preprint p. 24, Age): "Jinnah et al. (2007) published an 40AR/39AR date of 80.1 ± 0.3 from an ash near the base of the middle mudstone member of the Wahweap Formation, 54 m above the base of the formation", which "indicates an early Middle Campanian age"; "Given Jinnah's calculation of a general sedimentation rate of 8.2 cm/KA, the type locality of *Diabloceratops* (Last Chance skull) would date at ~79.57 Ma, well into the Middle Campanian".
+- kirkland2010a, p. ? (preprint p. 5, Introduction): the *Diabloceratops* skull came from "near the middle of the middle mudstone member of the Wahweap Formation (Eaton, 1991)".
+
+**Ruled out.**
+- *The pre-2022 ages for the bentonite near the member's base: 80.1 Ma, 80.6 Ma, and 79.9 Ma for the ash about 10 m higher.* Jinnah and colleagues (2008) obtained 80.1 Ma by 40Ar/39Ar, and Jinnah (2013) recalculated it to 80.6 Ma against a revised Fish Canyon Tuff standard. Beveridge and colleagues (2022) date what they interpret as the same horizon by CA-ID-TIMS at about 81.47 Ma, 0.9 to 1.6 Myr older. The older figures are superseded as numbers; all of them, like the new one, lie in the Campanian, so the choice does not change the stage.
+- *About 79.57 Ma for the* Diabloceratops *level, from Kirkland and DeBlieux (2010).* It extrapolates from the 80.1 Ma ash with a single sedimentation rate of 8.2 cm/ka. Beveridge and colleagues (2022) place the same level in their model at 81.27 Ma. Both are Campanian, and Kirkland and DeBlieux's "early Middle Campanian" and "Middle Campanian" are substage labels inside the stage.
+
+**Open.** The works cited place the dated ash at different heights above the base of the Wahweap Formation: 54 m in Jinnah and colleagues (2007) and Kirkland and DeBlieux (2010), about 40 m in Jinnah and colleagues (2008), and about 50 m by implication in Jinnah (2013), whose higher ash lies "~10 m above" it at the "~60-m level"; Beveridge and colleagues (2022) put SS07-B, the higher ash, at 54 m. No stage depends on the heights.
+
+## References
+
+- `beveridge2022a`: Beveridge, T. L.; Roberts, E. M.; Ramezani, J.; Titus, A. L.; Eaton, J. G.; Irmis, R. B.; Sertich, J. J. W. (2022). Refined geochronology and revised stratigraphic nomenclature of the Upper Cretaceous Wahweap Formation, Utah, U.S.A. and the age of early Campanian vertebrates from southern Laramidia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 591: 110876. doi:10.1016/j.palaeo.2022.110876
+- `jinnah2007a`: Jinnah, Z.; Deino, A.; Gates, T.; Roberts, E. (2007). The first 40Ar/39Ar age date from the Wahweap Formation (Late Cretaceous of Utah): implications for faunal correlation. *Journal of Vertebrate Paleontology* 27(3, Supplement): 96A.
+- `jinnah2008a`: Jinnah, Z. A.; Roberts, E. M.; Deino, A. L.; Larsen, J. S.; Link, P. K.; Fanning, C. M. (2008). New 40Ar-39Ar and detrital zircon U-Pb ages for the Upper Cretaceous Wahweap and Kaiparowits formations on the Kaiparowits Plateau, Utah: implications for regional correlation, provenance, and biostratigraphy. *Cretaceous Research* 30: 287-299. doi:10.1016/j.cretres.2008.07.012
+- `jinnah2013a`: Jinnah, Z. A. (2013). Tectonic and sedimentary controls, age, and correlation of the Upper Cretaceous Wahweap Formation, southern Utah. In *At the Top of the Grand Staircase: The Late Cretaceous of Southern Utah*, pp. 57-73. Indiana University Press, Bloomington.
+- `kirkland2010a`: Kirkland, J. I.; DeBlieux, D. D. (2010). New basal centrosaurine ceratopsian skulls from the Wahweap Formation (middle Campanian), Grand Staircase-Escalante National Monument, southern Utah. In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 117-140. Indiana University Press, Bloomington.

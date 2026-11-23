@@ -1,5 +1,26 @@
 # Hongtuya
 
+## How does the provincial lithostratigraphy define the Hongtuya, and what dates do the cited works relay for it?
+
+*2026-11-23*
+
+**Conclusion.** The Hongtuya is the formation that Liu Mingwei and colleagues named in 1994 and the provincial lithostratigraphy of Zhang and Liu (1996) adopts: brick-red and purplish-red fine sandstone and siltstone with sandy conglomerate, conformable between the Xingezhuang and Jingangkou formations, with a holostratotype of 448.56 m in the Wujiazhuang–Hongtuya section at Guliu, Laiyang, and a basalt member in the Zhucheng–Jiaozhou area. The volume treats the 1962 Yangjialing Conglomerate Formation and the 1992 Taocun Formation as synonyms of it, and lists the Laiyang hadrosaurs from Tianqiaotun and *Shantungosaurus* from Longgujian, Zhucheng, in its fauna. (The scheme itself, and the place of the Jiangjunding beds in it, are settled in the 2026-10-23 entry on [Wangshi](../w/wangshi.md).) The two radiometric figures relayed for the formation, 73 Ma from Yan and Chen (2005) through Zhang and colleagues (2019) and 72.9–73.5 Ma from Yan and colleagues (2005) through Borinder and colleagues (2021), are both Campanian on the ICS chart v2024/12, whose Maastrichtian begins at 72.1 Ma. The 73 Ma figure comes from a basalt at Daxizhuang in Jiaozhou; that it lies in the provincial basalt member, which the volume places in the upper part of the formation north of Jiaozhou City, is an inference from the two descriptions, not a statement in either. Governs `parent: Wangshi` and `lithology` on [Hongtuya](../../../stratigraphy/h/hongtuya.yml), and is consistent with its `stages: [Campanian, Maastrichtian]`.
+
+**Evidence.**
+- zhang1996a, p. 238: "Named in 1994 by Liu Mingwei et al., with the locality at Hongtuya, Zhaowangzhuang Township, Laiyang City"; present definition: "A sequence of brick-red and purplish-red fine sandstone and siltstone interbedded with sandy conglomerate, lying conformably above the Xingezhuang Formation and below the Jingangkou Formation ... In the Zhucheng and Jiaozhou area it contains a basalt member"; "The holostratotype is the Wujiazhuang–Hongtuya section, Guliu Town, Laiyang City"; "Hongtuya Formation Total thickness 448.56 m" (translated).
+- zhang1996a, p. 238, History: "In 1962 the First Petroleum Exploration Brigade of the Ministry of Geology called the equivalent strata in the Zhucheng area the Yangjialing Conglomerate Formation and the Fengtailing Sandstone Formation" (translated).
+- zhang1996a, p. 239: in the Zhucheng–Jiaozhou subdivision, "In the area north of Jiaozhou City and at Zhangying, the upper part of this formation contains a basalt member" (translated).
+- zhang1996a, p. 247: "Longgujian at Lübiao, Zhucheng, yields *Shantungosaurus giganteus* and *Tyrannosaurus* cf. *res*" (translated), in the hadrosaur fauna "found in the Hongtuya Formation".
+- zhang1996a, p. 327, Appendix III, row 132: "Taocun Fm ... Synonym of Hongtuya Formation"; p. 328, row 166: "Yangjialing conglomerate Fm. ... Synonym of Hongtuya Formation" (translated).
+- zhang2019a, p. 2, Introduction: "Yan & Chen (2005) obtained an isotope age of 73 Ma for the Jingangkou Formation (which they called the Hongtuya Formation) based on a basalt sample from the town of Daxizhuang in Jiaozhou City".
+- borinder2021a, p. e1914642-3, Locality and Horizon: the Jiangjunding Formation outcrops near the *Tanius sinensis* site "stratigraphically range from the upper Campanian to lower Maastrichtian (Xing et al., 2014b). A radiometric date of 72.9–73.5 Ma was obtained from the uppermost section of the underlying Hongtuya Formation (Yan et al., 2005), providing a maximum lower age limit for the succession".
+
+**Ruled out.**
+- *72.9–73.5 Ma as a floor for the Jiangjunding dinosaur beds.* Borinder and colleagues (2021) read it so because, in the scheme of Hu and colleagues (2001), the Hongtuya lies below their Jiangjunding Formation. In the provincial scheme the Jiangjunding beds are part of the Hongtuya, and the dated basalt is from the Jiaozhou area, so no work cited fixes where the dated level lies relative to the Laiyang beds. An and colleagues (2015) instead treat a 73.5 Ma figure as a ceiling for the lower Hongtuya bone beds at Zhucheng (see the 2026-08-03 entry).
+- *The Yangjialing Conglomerate and Taocun formations as units separate from the Hongtuya.* The provincial volume lists both as synonyms of it.
+
+**Open.** Neither Yan and Chen (2005) nor Yan and colleagues (2005) has been read, so the method, the dated level, and whether the two relays describe one date are known only through Zhang and colleagues (2019) and Borinder and colleagues (2021). Reading them would show whether the basalt lies in the provincial basalt member.
+
 ## Are the Zhucheng bone beds in the Hongtuya or the Xingezhuang Formation?
 
 *2026-08-03*
@@ -19,8 +40,18 @@
 
 ## References
 
+- `zhang1996a`: Zhang, Z. Q.; Liu, M. W. (eds.) (1996). 山东省岩石地层 [Stratigraphy (Lithostratigraphic) of Shandong Province]. China University of Geosciences Press, Wuhan.
+- `zhang2019a`: Zhang, J.; Wang, X.; Wang, Q.; Jiang, S.; Cheng, X.; Li, N.; Qiu, R. (2019). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of Shandong, China. *Anais da Academia Brasileira de Ciências* 91(suppl 2). doi:10.1590/0001-3765201720160920
+- `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642
 - `an2015a`: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X. (2015). Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China. *Journal of Palaeogeography* 5(1): 72-99. doi:10.1016/j.jop.2015.11.002
 - `xu2010c`: Xu, X.; Wang, K.; Zhao, X.; Sullivan, C.; Chen, S. (2010). A New Leptoceratopsid (Ornithischia: Ceratopsia) from the Upper Cretaceous of Shandong, China and Its Implications for Neoceratopsian Evolution. *PLoS ONE* 5(11): e13835. doi:10.1371/journal.pone.0013835
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `hone2011a`: Hone, D. W. E.; Wang, K.; Sullivan, C.; Zhao, X.; Chen, S.; Li, D.; Ji, S.; Ji, Q.; Xu, X. (2011). A new, large tyrannosaurine theropod from the Upper Cretaceous of China. *Cretaceous Research* 32(4): 495-503. doi:10.1016/j.cretres.2011.03.005
+
+## Other references
+
+- `yan2005a`: Yan, J.; Chen, J. F. (2005). Clinopyroxene megacrysts in the Late Mesozoic basalts from Daxizhuang, Jiaozhou. *Journal of Anhui University of Science and Technology (Natural Science)* 25(3): 9-13.
+- `yan2005b`: Yan, J.; Chen, J. F.; Xie, Z.; Gao, T. S.; Foland, K. A.; Zhang, X. D.; Liu, M. W. (2005). [Studies on petrology and geochemistry of the Late Cretaceous basalts and mantle-derived xenoliths from eastern Shandong]. *Acta Petrologica Sinica* 21: 99-112.
+- `hu2001a`: Hu, C. Z.; Cheng, Z. W.; Pang, Q. Q.; Fang, X. S. (2001). Shantungosaurus giganteus. Geological Publishing House, Beijing.
+- `liu1994a`: Liu, M. W.; Luan, H. Y.; Chi, P. X.; Xu, L. J. (1994). 山东省侏罗—白垩纪岩石地层清理意见 [Proposals for the revision of the Jurassic–Cretaceous lithostratigraphy of Shandong Province]. *山东地质 [Shandong Geology]* 10(supplement).

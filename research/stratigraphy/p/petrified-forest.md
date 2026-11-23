@@ -1,5 +1,25 @@
 # Petrified Forest
 
+## Does the lower Petrified Forest near San Ysidro carry the member into the Carnian?
+
+*2026-11-23*
+
+**Conclusion.** No; the member stays Norian. Lucas and Hunt (1992) date their Petrified Forest Formation in the Chama basin to the early–middle Norian on three reptiles and to the Norian on palynomorphs. Their late Carnian applies only to the lower part near San Ysidro, and they say themselves that south of the pinchout of the Poleo their Petrified Forest "includes strata equivalent to the Salitral Formation", lumped in because no mappable contact separates them. Those beds lie below the Poleo, which they correlate with the Sonsela, while the member as Martz and Parker (2017) use it lies above the Sonsela and in the Revueltian. Adds to the 2026-10-21 entry, which rules out the Rhaetian, and supersedes nothing in it; the formation rank Lucas and Hunt use is ruled out in [Chinle and Dockum ranks](../../topics/chinle-and-dockum-ranks.md). Governs `stages: [Norian]` on [Petrified Forest](../../../stratigraphy/p/petrified-forest.yml), unchanged.
+
+**Evidence.**
+- lucas1992a, p. 157: south of San Miguel Canyon the Poleo is absent and the Petrified Forest rests on the Salitral; "Fossil vertebrates from these lower beds also are age equivalent to the Salitral Formation to the north"; "since a mappable contact between lower, Salitral-equivalent mudstones and overlying Petrified Forest Formation mudstones cannot be identified south of San Miguel Canyon", the whole mudstone section above the Agua Zarca is referred to the Petrified Forest Formation.
+- lucas1992a, p. 158: the unit "here is termed the Petrified Forest Formation of the Chinle Group"; "South of the pinchout of the Poleo Formation, the Petrified Forest Formation, which here includes strata equivalent to the Salitral Formation, is as much as 326 m thick"; the Poleo "is correlative to medial Chinle Group sandstone/conglomerate complexes termed Sonsela Member of the Petrified Forest Formation in west-central New Mexico".
+- lucas1992a, p. 160: "These palynomorphs indicate a Norian age for the Petrified Forest and Rock Point Formations, an age assignment consistent with vertebrate biochronology".
+- lucas1992a, p. 162, Fig. 11: "Slope developed in Upper Triassic Petrified Forest Formation".
+- lucas1992a, p. 166: the Salitral fauna "includes the aetosaur Longosuchus, which is restricted to late Carnian strata", and a large metoposaurid of genera "common in late Carnian strata and ... rare in Norian strata"; "The presence of a large metoposaurid in the lower Petrified Forest Formation near San Ysidro suggests that it is correlative with the Salitral"; the Petrified Forest Formation of the Chama basin "includes three age-diagnostic taxa, the aetosaur Typothorax coccinarum and the phytosaurs Pseudopalatus pristinus and P. buceros. These taxa are restricted to strata of early-middle Norian age".
+- martz2017a, p. 112: the Revueltian estimated holochronozone encompasses "the upper Sonsela Member, the Petrified Forest (Painted Desert) Member, and possibly the lower parts of the Owl Rock Member"; the Otischalkian holochron lies "during the earliest Lacian (earliest early Norian)" and the Adamanian "during the early Lacian and earliest Alaunian (early Norian to earliest middle Norian)".
+- ogg2020a, p. 933: "the base-Norian, based on this working definition and Kent et al. (2017) chron ages, has a projected age of 227.3 Ma".
+
+**Ruled out.**
+- *Late Carnian for the lower part of the member, after Lucas and Hunt (1992).* The beds are Salitral-equivalent strata below the level of the Poleo and Sonsela, included in the Petrified Forest Formation only for want of a mappable contact; the member as adopted lies above the Sonsela. The age is also a correlation the paper only "suggests", on a large metoposaurid that it calls common in the late Carnian, not restricted to it. The "late Carnian" of the faunal scale Lucas and Hunt used is the age that scale gave the oldest Chinle faunas, which Martz and Parker (2017) recalibrate into the early Norian, the base of the Norian lying at 227.3 Ma on Ogg and colleagues' (2020) chart. That the Salitral's Longosuchus fauna belongs to those older faunachrons is inferred here, not read in a source.
+
+**Open.** Nothing.
+
 ## Does Martz and Parker's "to the Rhaetian" put the Petrified Forest Member in the Rhaetian?
 
 *2026-10-21*
@@ -18,7 +38,9 @@
 
 ## References
 
+- `lucas1992a`: Lucas, S. G.; Hunt, A. P. (1992). Triassic stratigraphy and paleontology, Chama Basin and adjacent areas, north-central New Mexico. In *San Juan Basin IV (Lucas, S. G.; Kues, B. S.; Williamson, T. E.; Hunt, A. P., eds.)*, pp. 151-172.
 - `martz2017a`: Martz, J. W.; Parker, W. G. (2017). Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology. In *Terrestrial Depositional Systems*, pp. 39-125. doi:10.1016/B978-0-12-803243-5.00002-9
+- `ogg2020a`: Ogg, J. G.; Chen, Z. Q.; Orchard, M. J.; Jiang, H. S. (2020). The Triassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 903-953. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00025-5
 
 ## Other references
 
