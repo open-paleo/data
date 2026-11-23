@@ -1,5 +1,24 @@
 # Xiagou
 
+## Do the early Aptian dates from Changma fix the age of the whole Xiagou Formation?
+
+*2026-11-23*
+
+**Conclusion.** No. Suarez and colleagues (2013) date the lacustrine section at the Changma bird quarries, not the formation: their correlation places "the Xiagou lacustrine strata in this locality" in the early Aptian, and their discussion speaks of "the age of the bird quarries" (see the 2026-09-30 entry on the bird quarries). Zhou and colleagues (2026) give the formation itself as "Lower Cretaceous (lower Aptian)" and follow Suarez and colleagues for the quarries. They also report arguments that the formation is "late early Aptian to early Albian", from Zheng and colleagues (2021) and personal communications, but judge that the early Aptian dates cast doubt on the hypothesis that the Changma fauna is younger than the other Jehol bird localities. Neither paper narrows the formation's range to the quarry level. Governs `stages` on [Xiagou](../../../stratigraphy/x/xiagou.yml).
+
+**Evidence.**
+- suarez2013a, p. 143, abstract: "This correlation places the Xiagou lacustrine strata in this locality within the early Aptian Stage, specifically, the Selli Equivalent, which is associated with Ocean Anoxic Event 1a."
+- suarez2013a, p. 145: "The similarity of taxa found in the Xiagou Formation and the underlying Chijinpu Formation with those found in the Jehol Biota of Liaoning Province suggests a Barremian to Aptian age".
+- zhou2026a, p. 89, abstract: "Lacustrine sediments of the Lower Cretaceous (lower Aptian) Xiagou Formation exposed near the village of Changma".
+- zhou2026a, p. 105: "chemostratigraphic evidence now suggests that the bird-bearing quarries in the Xiagou Formation of the Changma Basin were deposited during the early Aptian, approximately 124–120 Ma (Suarez et al. 2013)".
+- zhou2026a, p. 105: "recent arguments that the Xiagou Formation is actually late early Aptian to early Albian in age (Zheng et al. 2021; M. Suarez, C. Suarez, pers. comms. to M.C.L.), this remains a possibility. Nevertheless, the aforementioned early Aptian chemostratigraphic dates for this latter formation (Suarez et al. 2013) cast doubt on this hypothesis".
+
+**Ruled out.**
+- *Early Aptian as the age of the whole formation.* The chemostratigraphy dates a section at one locality, as Suarez and colleagues (2013) word it themselves. Zhou and colleagues' (2026) "lower Aptian" for the formation carries that date to the unit, and Suarez and colleagues (2018) place the uppermost Xiagou of the Yujingzi Basin in the upper Aptian (see the 2026-09-30 entry on the Yujingzi gray beds).
+- *Barremian–Aptian, from similarity to the Jehol Biota.* Suarez and colleagues (2013) report this third earlier reading, a faunal comparison drawn from earlier work, alongside the Hauterivian from pollen and the Barremian from ostracodes and charophytes. Their chemostratigraphy supersedes it for the quarry level, as it does the other two (our characterization, as in the 2026-09-30 entry on the bird quarries).
+
+**Open.** Zhou and colleagues (2026) relay the late early Aptian to early Albian reading without giving its basis. Zheng and colleagues (2021), not read, are the published source for it and would show whether it is a determination for the formation.
+
 ## How old are the Xiagou bird quarries at Changma?
 
 *2026-09-30*
@@ -32,7 +51,12 @@
 ## References
 
 - `suarez2013a`: Suarez, M. B.; Ludvigson, G. A.; González, L. A.; Al-Suwaidi, A. H.; You, H. L. (2013). Stable isotope chemostratigraphy in lacustrine strata of the Xiagou Formation, Gansu Province, NW China. In *Isotopic Studies in Cretaceous Research (Bojar, A. V.; Melinte-Dobrinescu, M. C.; Smit, J., eds)*, pp. 143-155. doi:10.1144/SP382.1
+- `zhou2026a`: Zhou, L. Q.; Lamanna, M. C.; Poust, A. W.; Li, D. Q.; You, H. L.; O'Connor, J. K. (2026). First non-avian theropod (Dromaeosauridae, Microraptorinae) from the bird-bearing Lower Cretaceous Xiagou Formation of the Changma Basin, Gansu Province, northwestern China. *Annals of Carnegie Museum* 92(2): 89-110.
 - `suarez2018a`: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P. (2018). Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China. *Journal of Vertebrate Paleontology* 38(sup1): 12-21. doi:10.1080/02724634.2018.1510412
 - `you2018a`: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P. (2018). Introducing the Mazongshan Dinosaur Fauna. *Journal of Vertebrate Paleontology* 38(sup1): 1-11. doi:10.1080/02724634.2017.1396995
 - `you2014a`: You, H. L.; Li, D. Q.; Dodson, P. (2014). Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China. *Hadrosaurs*: 73-76.
 - `you2011a`: You, H.; Li, D.; Liu, W. (2011). A new hadrosauriform dinosaur from the Early Cretaceous of Gansu Province, China. *Acta Geologica Sinica (English Edition)* 85(1): 51-57. doi:10.1111/j.1755-6724.2011.00377.x
+
+## Other references
+
+- `zheng2021c`: Zheng, D.; Wang, H.; Li, S.; Wang, B.; Jarzembowski, E. A.; Dong, C.; Fang, Y.; Teng, X.; Yu, T.; Yang, L.; Li, Y.; Zhao, X.; Xue, N.; Chang, S. C.; Zhang, H. (2021). Synthesis of a chrono- and biostratigraphical framework for the Lower Cretaceous of Jiuquan, NW China: implications for major evolutionary events. *Earth-Science Reviews* 213: 103474. doi:10.1016/j.earscirev.2020.103474

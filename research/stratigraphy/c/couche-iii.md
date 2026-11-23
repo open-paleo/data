@@ -1,5 +1,21 @@
 # Couche III
 
+## What do the cited works say about the age of Couche III?
+
+*2026-11-23*
+
+**Conclusion.** Maastrichtian throughout. Kocsis and colleagues (2013), who write the bed "Bed III", correlate its isotope values with the latest Maastrichtian. Of the works cited, only Longrich and colleagues (2026) date the lower part separately: its shark fauna resembles that of the upper part, so they read it as late but not latest Maastrichtian, with its exact age unknown. Governs `stages: [Maastrichtian]` on [Couche III](../../../stratigraphy/c/couche-iii.yml).
+
+**Evidence.**
+- longrich2026a, p. 3, Geological Setting: "Couche III is late Maastrichtian, Couche II is Paleocene, and Couches 0 and I are Early Eocene in age"; for the lower part, "Its precise age is unknown, but the shark fauna resembles that of Upper Couche III".
+- kocsis2013a, p. 2 (accepted manuscript), Abstract: "The isotope data from the older Paleocene (Bed IIb) and Cretaceous (Bed III) beds in the Ouled Abdoun Basin can be correlated with the latest Danian - early Selandian and the latest Maastrichtian global isotope record, respectively."
+- kocsis2013a, p. 7 (accepted manuscript): in the Ganntour Basin "the top phosphate level (L2) most possibly correlates with the Maastrichtian level (Bed III) of the Ouled Abdoun Basin"; "Because the Cretaceous beds are very condensed in the Ouled Abdoun area, samples from the Ganntour Basins at Ben Guerir were acquired to widen our stratigraphic range."
+- kocsis2013a, p. 22 (accepted manuscript): in Bed III "while the δ18OPO4 values show a small positive shift, the carbon isotope values decrease. This variation can correspond to the latest Maastrichtian, when it is compared to the high-resolution deep-sea record from the Shatsky Rise".
+
+**Ruled out.** Nothing.
+
+**Open.** The age of the lower part within the late Maastrichtian, which Longrich and colleagues (2026) call unknown. It does not change the stage.
+
 ## Should Upper and Lower Couche III be separate entries?
 
 *2026-10-02*
@@ -17,5 +33,6 @@
 
 ## References
 
-- `longrich2017a`: Longrich, N. R.; Pereda-Suberbiola, X.; Jalil, N. E.; Khaldoune, F.; Jourani, E. (2017). An abelisaurid from the latest Cretaceous (late Maastrichtian) of Morocco, North Africa. *Cretaceous Research* 76: 40-52. doi:10.1016/j.cretres.2017.03.021
 - `longrich2026a`: Longrich, N. R.; Pérez-Moreno, A.; Díez Díaz, V.; Pereda-Suberbiola, X.; Bardet, N.; Jalil, N. E. (2026). A Titanosaurian Sauropod with South American Affinities (Lognkosauria: Argentinosauridae) from the Late Maastrichtian of Morocco and Evidence for Dinosaur Endemism in Africa. *Diversity* 18(5). doi:10.3390/d18050241
+- `kocsis2013a`: Kocsis, L.; Gheerbrant, E.; Mouflih, M.; Cappetta, H.; Yans, J.; Amaghzaz, M. (2013). Comprehensive stable isotope investigation of marine biogenic apatite from the late Cretaceous-early Eocene phosphate series of Morocco. *Palaeogeography, Palaeoclimatology, Palaeoecology* 394: 74-88. doi:10.1016/j.palaeo.2013.11.002
+- `longrich2017a`: Longrich, N. R.; Pereda-Suberbiola, X.; Jalil, N. E.; Khaldoune, F.; Jourani, E. (2017). An abelisaurid from the latest Cretaceous (late Maastrichtian) of Morocco, North Africa. *Cretaceous Research* 76: 40-52. doi:10.1016/j.cretres.2017.03.021

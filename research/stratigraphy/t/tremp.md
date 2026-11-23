@@ -1,5 +1,25 @@
 # Tremp
 
+## What do Cuevas (1992) and Pereda-Suberbiola and colleagues (2009) say about the Tremp Group's limits and its western sites?
+
+*2026-11-23*
+
+**Conclusion.** Cuevas (1992) defines the Tremp Group in the Conca de Tremp by grouping six formations, from the La Posa to the Claret, between the marine Arén Sandstone below, which he gives as Maastrichtian and into which the lower part of the group passes laterally, and the marine Ilerdian beds above. The only stages the paper prints belong to those bounding units and to earlier authors' units that it reviews; it gives none for its own formations, so the group's stages rest on the dating papers weighed in the 2026-10-07 entry. Pereda-Suberbiola and colleagues (2009) use the older Tremp Formation: at Arén, Blasi 1 lies on top of the Arén Sandstone and the other Blasi sites in "the lower part of the overlying Tremp Formation", which is the *Arenysaurus* type horizon. That is the coarser 1968 unit, not a rival to the group, as the 2026-09-30 entry concludes. This entry adds the passages behind those two points. Governs `rank: group` and `stages` on [Tremp](../../../stratigraphy/t/tremp.yml), and `group: Tremp` with no formation on [*Arenysaurus ardevoli*](../../../genera/A/Arenysaurus.yml).
+
+**Evidence.**
+- cuevas1992a, p. 95: the materials studied lie between "los materiales infrayacentes marinos de edad Maastrichtiense de la formación Areniscas de Arén (Mey et al., 1968), a la que pasan lateralmente en la parte inferior" ("the underlying marine materials of Maastrichtian age of the Arén Sandstone formation, into which they pass laterally in the lower part", translated) and "los materiales suprayacentes marinos de edad Ilerdiense" ("the overlying marine materials of Ilerdian age", translated).
+- cuevas1992a, p. 97: "las seis formaciones se agrupan en una unidad de rango superior denominada «Grupo de Tremp»" ("the six formations are grouped into a unit of higher rank called the «Grupo de Tremp»", translated).
+- cuevas1992a, p. 95, abstract: "The Tremp Group has been defined as a new unit which comprises five formations and is equivalent to the Tremp Formation."
+- pereda-suberbiola2009a, p. 560, 1. Introduction: *Pararhabdodon isonensis* "from the Maastrichtian of the Tremp Formation, in Lleida".
+- pereda-suberbiola2009a, p. 560, 3. Geological and chronological frame: "Blasi 1 is located on the top of the Aren Sandstone (Fig. 2) whereas the other sites are located in the lower part of the overlying Tremp Formation."
+- pereda-suberbiola2009a, pp. 562, 564, 4.6. Type locality and horizon: "Blasi 3 site in Aren (Huesca, Spain); lower part of the Tremp Formation; Late Cretaceous, Late Maastrichtian (upper part of chron 30n)".
+
+**Ruled out.**
+- *A Tremp Formation at Arén as a competing unit or rank.* Pereda-Suberbiola and colleagues (2009) write the 1968 Tremp Formation that Cuevas (1992) made a group, so their attribution is the same rock at a coarser resolution, not a conflicting claim (the 2026-09-30 entry). Reading it as a formation of the group would misplace the Blasi sites in the Talarn or another formation the paper does not name; the 2026-09-30 entry records that no formation can be named in the western syncline as an inference.
+- *Five formations.* Cuevas's English abstract says the group "comprises five formations", but the paper lists six and groups "las seis formaciones" (p. 97). The abstract's count is a slip that the paper's own text corrects, under the rule on slips in [methods](../../methods.md).
+
+**Open.** Nothing.
+
 ## Does Pujalte and Schmitz's "upper Maastrichtian–Danian" put the Talarn in the Danian?
 
 *2026-10-21*
@@ -51,8 +71,9 @@
 
 ## References
 
-- `pujalte2005a`: Pujalte, V.; Schmitz, B. (2005). Revisión de la estratigrafía del Grupo Tremp ("Garumniense", Cuenca de Tremp-Graus, Pirineos meridionales) [Revision of the stratigraphy of the Tremp Group ("Garumnian", Tremp-Graus Basin, southern Pyrenees)]. *Geogaceta* 38: 79-82.
 - `cuevas1992a`: Cuevas, J. L. (1992). Estratigrafía del "Garumniense" de la Conca de Tremp, Prepirineo de Lérida [Stratigraphy of the "Garumnian" of the Conca de Tremp, Lleida Pre-Pyrenees]. *Acta Geologica Hispanica* 27: 95-108.
+- `pereda-suberbiola2009a`: Pereda-Suberbiola, X.; Canudo, J. I.; Cruzado-Caballero, P.; Barco, J. L.; López-Martínez, N.; Oms, O.; Ruiz-Omeñaca, J. I. (2009). The last hadrosaurid dinosaurs of Europe: a new lambeosaurine from the uppermost Cretaceous of Aren (Huesca, Spain). *Comptes Rendus Palevol* 8: 559-572. doi:10.1016/j.crpv.2009.05.002
+- `pujalte2005a`: Pujalte, V.; Schmitz, B. (2005). Revisión de la estratigrafía del Grupo Tremp ("Garumniense", Cuenca de Tremp-Graus, Pirineos meridionales) [Revision of the stratigraphy of the Tremp Group ("Garumnian", Tremp-Graus Basin, southern Pyrenees)]. *Geogaceta* 38: 79-82.
 - `díez-canseco2014a`: Díez-Canseco, D.; Arz, J. A.; Benito, M. I.; Díaz-Molina, M.; Arenillas, I. (2014). Tidal influence in redbeds: a palaeoenvironmental and biochronostratigraphic reconstruction of the Lower Tremp Formation (South-Central Pyrenees, Spain) around the Cretaceous/Paleogene boundary. *Sedimentary Geology* 312: 31-49. doi:10.1016/j.sedgeo.2014.06.008
 - `rosell2001a`: Rosell, J.; Linares, R.; Llompart, C. (2001). El "Garumniense" Prepirenaico [The Pre-Pyrenean "Garumnian"]. *Revista de la Sociedad Geológica de España* 14(1-2): 47-56.
 - `fondevilla2019a`: Fondevilla, V.; Riera, V.; Vila, B.; Sellés, A. G.; Dinarès-Turell, J.; Vicens, E.; Gaete, R.; Oms, O.; Galobart, À. (2019). Chronostratigraphic synthesis of the latest Cretaceous dinosaur turnover in south-western Europe. *Earth-Science Reviews* 191: 168-189. doi:10.1016/j.earscirev.2019.01.007
