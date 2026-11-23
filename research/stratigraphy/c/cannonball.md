@@ -1,5 +1,21 @@
 # Cannonball Member
 
+## How did Berkey and Morris (1927) define the Cannonball unit?
+
+*2026-11-23*
+
+**Conclusion.** As the lowest of the groups that Berkey and Morris (1927) recognized in the Oshih formation at Oshih hollow: greenish-gray sandstones alternating with red siliceous clays and red concretionary sandstones, named for their spherical sandstone concretions, more than two hundred feet thick, and exposed only in the upthrown blocks along the larger faults. The same work calls the group the "*Psittacosaurus* beds" in its formation summary and the "Cannonball member" in a plate caption. Governs `variants` and the position under `parent` on the [Cannonball Member](../../../stratigraphy/c/cannonball.yml).
+
+**Evidence.**
+- berkey1927a, p. 270: "A group of greenish-gray sandstones alternates with red, hard, siliceous clays and red, concretionary sandstones. This is the 'cannonball' group, in which spherical sandstone concretions are found."
+- berkey1927a, pp. 270–271: "It is surely more than two hundred feet thick, lies nearer than any other unit to the base of the Oshih formation, and is brought to the surface only in the upthrow blocks along the larger faults."
+- berkey1927a, p. 354: "The 'cannonball' group of sandstones and sandy clays, the '*Psittacosaurus* beds.'"
+- berkey1927a, Plate XXXVI, B: "the Cannonball member of the Oshih formation (*Psittacosaurus* beds)".
+
+**Ruled out.** Nothing among the works cited here.
+
+**Open.** Nothing.
+
 ## What stages do the Cannonball Member and *Psittacosaurus mongoliensis* take?
 
 *2026-10-13*
@@ -19,6 +35,7 @@
 
 ## References
 
+- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
 - `andres2005a`: Andres, B.; Norell, M. A. (2005). The first record of a pterosaur from the Early Cretaceous strata of Öösh (Övörkhangai; Mongolia). *American Museum Novitates* 3472: 1-6.
 - `rougier2001a`: Rougier, G. W.; Novacek, M. J.; McKenna, M. C.; Wible, J. R. (2001). Gobiconodonts from the Early Cretaceous of Oshih (Ashile), Mongolia. *American Museum Novitates* 3348: 1-30.
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.

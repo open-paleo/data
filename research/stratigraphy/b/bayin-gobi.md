@@ -1,5 +1,22 @@
 # Bayin-Gobi
 
+## What does Russell and Dong's (1993) Albian for the Bayin-Gobi rest on?
+
+*2026-11-23*
+
+**Conclusion.** On the vertebrate fauna found near the *Alxasaurus* sites, which Russell and Dong (1993) compare with Jerzykiewicz and Russell (1991). Among the works cited for the formation, theirs is the earliest to date it from its own beds. They also report palynomorphs, including forms "of angiospermous affinity", from samples taken by earlier geological parties, but attribute the identification to a personal communication and draw no age from it. The type area lies in "steeply inclined exposures" west of Elesitai, in the eastern Alxa ("Alashan") Desert. Governs the Albian in `stages: [Aptian, Albian]` on [Bayin-Gobi](../../../stratigraphy/b/bayin-gobi.yml).
+
+**Evidence.**
+- russell1993b, p. 2107, Abstract: "lacustrine strata of Albian age in the Alxa ('Alashan') Desert of Inner Mongolia".
+- russell1993b, p. 2108, Locality: "situated in steeply inclined exposures of the Bayin Gobi Formation centred 1 km west of the abandoned village of Elesitai, which is in turn 23 km west of Tukemu Village in the Wulanbuhe Desert (eastern sector of the Alxa Desert)".
+- russell1993b, p. 2108, Paleoecology and age: "champsosaurs, trionychid and larger turtles, *Psittacosaurus*, and mammals, all found in proximity to the *Alxasaurus* sites and suggestive of an Albian age (cf. Jerzykiewicz and Russell 1991)".
+- russell1993b, p. 2108, Paleoecology and age: "Palynomorphs of *Classopollis*, *Podocarpites*, and of angiospermous affinity have been identified from sediment samples collected by previous geological parties (Z.-J. Zhao, personal communication, 1988)".
+
+**Ruled out.**
+- *The palynomorphs as a dating of the formation.* The identification is credited to a personal communication, and the passage gives no age for the assemblage; a personal communication is not a published determination ([methods](../../methods.md#a-personal-communication-is-not-a-published-determination)).
+
+**Open.** Whether Jerzykiewicz and Russell (1991) give the comparison fauna an Albian age of their own, or only a broader Early Cretaceous one, has not been checked.
+
 ## Which stage do *Alxasaurus* and *Penelopognathus* take?
 
 *2026-10-06*
@@ -63,3 +80,7 @@
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 - `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History, New York.
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
+
+## Other references
+
+- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5

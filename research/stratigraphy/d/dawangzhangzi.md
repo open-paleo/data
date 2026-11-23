@@ -1,5 +1,19 @@
 # Dawangzhangzi
 
+## What age do Wang and Xu (2001) give the Dakangpu horizon?
+
+*2026-11-23*
+
+**Conclusion.** Two readings, set by the Jurassic–Cretaceous boundary each assumes: Hauterivian on a 135 Ma boundary, Barremian on a 144 Ma boundary. The ICS chart v2024/12 does not use a 135 Ma boundary, so only the Barremian reading stands, in agreement with the U-Pb dating that governs the Yixian's members (see [Yixian](../y/yixian.md)). The paper has two authors; the 2026-10-10 entries below call it "Wang and colleagues (2001)", and every statement they make about it is Wang and Xu's. Governs `stages: [Barremian]` on [Dawangzhangzi](../../../stratigraphy/d/dawangzhangzi.yml), as far as this paper bears on it.
+
+**Evidence.**
+- wang2001a, p. 1669, Locality and horizon: "Dakangpu member, the middle part of the Yixian Formation (comparable to Dawangzhangzi Bed); Huaterivian, Early Cretaceous (based on a 135 Ma J/K boundary) or Barremian, Early Cretaceous (a 144 Ma J/K boundary)". The paper prints "Huaterivian".
+
+**Ruled out.**
+- *Hauterivian, from Wang and Xu's first reading.* It depends on a Jurassic–Cretaceous boundary at 135 Ma, which the ICS chart v2024/12 does not use. The paper gives it as an alternative tied to the boundary, not as a dating of the rock independent of the chart.
+
+**Open.** Nothing.
+
 ## Which records does the Dakangpu equivalence govern?
 
 *2026-10-10*
@@ -66,8 +80,8 @@
 
 ## References
 
-- `qiu2019a`: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y. (2019). A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria. *Scientific Reports* 9(1). doi:10.1038/s41598-019-42547-6
 - `wang2001a`: Wang, X.; Xu, X. (2001). A new iguanodontid (Jinzhousaurus yangi gen. et sp. nov.) from the Yixian Formation of western Liaoning, China. *Chinese Science Bulletin* 46(19): 1669-1672. doi:10.1007/bf02900633
+- `qiu2019a`: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y. (2019). A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria. *Scientific Reports* 9(1). doi:10.1038/s41598-019-42547-6
 - `wu2012a`: Wu, W. H.; Godefroit, P. (2012). Anatomy and relationships of Bolong yixianensis, an Early Cretaceous iguanodontoid dinosaur from western Liaoning, China. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*. Indiana University Press, Bloomington.
 - `lefèvre2014a`: Lefèvre, U.; Hu, D.; Escuillié, F.; Dyke, G.; Godefroit, P. (2014). A new long-tailed basal bird from the Lower Cretaceous of north-eastern China. *Biological Journal of the Linnean Society* 113(3): 790-804. doi:10.1111/bij.12343
 - `mcdonald2010b`: McDonald, A. T.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S. K.; Cavin, J.; Milner, A. R. C.; Panzarin, L. (2010). New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs. *PLoS ONE* 5(11): e14075. doi:10.1371/journal.pone.0014075
