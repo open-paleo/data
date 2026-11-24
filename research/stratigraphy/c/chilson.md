@@ -7,8 +7,8 @@
 **Conclusion.** Berriasian to Valanginian, as a dating of the lower part of unit 2 only. Cifelli and colleagues (2014) date that part late Berriasian–Valanginian from ostracods and charophytes, which come mostly from the lower part of unit 2; unit 1 has yielded none, as the 2026-11-23 entry on the [Lakota](../l/lakota.md) records with the dating itself. The member's upper limit is therefore not fixed by these data. Governs `stages: [Berriasian, Valanginian]` on [Chilson](../../../stratigraphy/c/chilson.yml).
 
 **Evidence.**
-- cifelli2014a, accepted manuscript, p. 9: "The lower Lakota Formation (specifically the lower part of Chilson Member unit 2) in the southern Black Hills has been comparatively well sampled micropaleontologically".
-- cifelli2014a, accepted manuscript, p. 40, Discussion: "given that most of the biostratigraphically informative ostracods and charophytes in Chilson unit 2 derive from the lower part of the section …, upper age constraints for the member remain to be firmly established".
+- cifelli2014a, p. 35: "The lower Lakota Formation (specifically the lower part of Chilson Member unit 2) in the southern Black Hills has been comparatively well sampled micropaleontologically".
+- cifelli2014a, p. 46, Discussion: "given that most of the biostratigraphically informative ostracods and charophytes in Chilson unit 2 derive from the lower part of the section …, upper age constraints for the member remain to be firmly established".
 
 **Ruled out.** Nothing among the works cited here.
 

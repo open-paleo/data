@@ -17,4 +17,4 @@
 
 ## References
 
-- `jin2022a`: Jin, X.; Mao, F.; Du, T.; Yang, Y.; Meng, J. (2022). A new multituberculate from the latest Cretaceous of central China and its implications for multituberculate tooth homologies and occlusion. *Journal of Mammalian Evolution*. doi:10.1007/s10914-022-09636-2
+- `jin2022a`: Jin, X.; Mao, F.; Du, T.; Yang, Y.; Meng, J. (2022). A new multituberculate from the latest Cretaceous of central China and its implications for multituberculate tooth homologies and occlusion. *Journal of Mammalian Evolution* 30(1): 1-20. doi:10.1007/s10914-022-09636-2

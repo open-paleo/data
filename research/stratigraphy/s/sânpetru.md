@@ -9,8 +9,8 @@
 **Evidence.**
 - panaiotu2010a, p. 346: samples were collected "from ten localities distributed along the Sibişel valley".
 - panaiotu2010a, p. 349: "Since the boundary between Campanian and Maastrichtian is at 70.6 ± 0.5 Ma ... inside Chron C31r, the proposed correlation implies the starting of the sedimentation in this part of the Sânpetru Formation during the Late Campanian, earlier than it was usually assumed"; "If it is placed at 72.5 ± 0.5 Ma ... the Sânpetru Formation developed only inside the Maastrichtian"; "the Sânpetru formation is Late Campanian–Maastrichtian in age"; "The age of the upper member of the Sânpetru Formation is still under debate".
-- csiki-sava2016a, in-press version, p. 9: the magnetostratigraphic sampling of Panaiotu and Panaiotu (2010) "definitively established a dominantly early to early late Maastrichtian age for the entire Sibişel Valley succession, well constrained to the time interval between C32N1 and the basalmost part of C30R"; the stratotype "represents roughly the time interval between 71.6 and 68.2 Ma, and currently can be considered the most precisely dated continuous succession of the continental uppermost Cretaceous from Transylvania"; the eastern-bank succession "remains unconstrained" and is provisionally correlated with "the lower-middle part of the left side succession, and thus early to earliest late Maastrichtian in age".
-- csiki-sava2016a, in-press version, p. 28: in the "upper middle to terminal part of the Sibişel Valley stratotype of the Sînpetru Formation", "(palynologically calibrated) magnetostratigraphy supports an early late Maastrichtian age".
+- csiki-sava2016a, p. 670: the magnetostratigraphic sampling of Panaiotu and Panaiotu (2010) "definitively established a dominantly early to early late Maastrichtian age for the entire Sibişel Valley succession, well constrained to the time interval between C32N1 and the basalmost part of C30R"; the stratotype "represents roughly the time interval between 71.6 and 68.2 Ma, and currently can be considered the most precisely dated continuous succession of the continental uppermost Cretaceous from Transylvania"; the eastern-bank succession "remains unconstrained" and is provisionally correlated with "the lower-middle part of the left side succession, and thus early to earliest late Maastrichtian in age".
+- csiki-sava2016a, p. 689: in the "upper middle to terminal part of the Sibişel Valley stratotype of the Sînpetru Formation", "(palynologically calibrated) magnetostratigraphy supports an early late Maastrichtian age".
 - díezdíaz2025a, p. 5, Geological setting: "the Sînpetru Formation (Maastrichtian) in the central part of the basin; the partly volcanoclastic Densus-Ciula Formation (Maastrichtian) in its northwestern marginal areas".
 - weishampel2003a, p. 68: "in this post-Ceausescu era, some spellings in the Romanian language have changed, among them Sînpetru to Sanpetru".
 
@@ -31,7 +31,7 @@
 
 **Ruled out.**
 - *Late Campanian start.* Panaiotu and Panaiotu's own conclusion, "Late Campanian–Maastrichtian", used the 2004 timescale, which placed the Campanian–Maastrichtian boundary at 70.6 Ma, inside C31r. On the current placement the preferred correlation falls entirely in the Maastrichtian.
-- *Csiki-Sava and colleagues' 71.6–68.2 Ma as independent support.* They follow Panaiotu and Panaiotu (csiki-sava2016a, in-press version, p. 9).
+- *Csiki-Sava and colleagues' 71.6–68.2 Ma as independent support.* They follow Panaiotu and Panaiotu (csiki-sava2016a, p. 670).
 
 **Open.** The Maastrichtian depends on the preferred correlation. Panaiotu and Panaiotu's alternative, a start in C32n.2n, could begin before 72.2 Ma, in the latest Campanian.
 

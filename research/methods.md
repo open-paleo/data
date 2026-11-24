@@ -155,7 +155,7 @@
 
 **Rule.** A source stating that a stage boundary falls inside a unit licenses both stages it names. When it names only one side ("the base of the Aptian passes through the unit"), the unit takes the older stage as a minimum extent, not as its full extent: the unit reaches below the boundary, and the source doesn't say how far. Neither close the list at that stage, nor truncate a range that another source carries deeper. Decides `stages` on registry units. This refines CONTRIBUTING's rule for a span that crosses an epoch boundary ([Age](../CONTRIBUTING.md#age-period-and-stages)).
 
-**Why.** Bonsor and colleagues (2023) write that "the base of the Aptian passes through the unit" for the [Vectis](../stratigraphy/v/vectis.yml)'s youngest member (bonsor2023a, Stratigraphy), naming only the Aptian. Treating the boundary as fixing the unit's base would have cut it at the Barremian–Aptian boundary. The Vectis's Barremian rests instead on Barker and colleagues (2020), who give "Vectis Formation (Barremian to lower Aptian)" directly (barker2020a, introduction).
+**Why.** Bonsor and colleagues (2023) write that "the base of the Aptian passes through the unit" for the [Vectis](../stratigraphy/v/vectis.yml)'s youngest member (bonsor2023a, Stratigraphy), naming only the Aptian. Treating the boundary as fixing the unit's base would have cut it at the Barremian–Aptian boundary. The Vectis's Barremian rests instead on Barker and colleagues (2020), who give "Vectis Formation (Barremian to lower Aptian)" directly (barker2020a, p. 661, introduction).
 
 **Exceptions.** None.
 

@@ -24,7 +24,7 @@
 **Evidence.**
 - sanz1999a, p. 237: "Upper part of unit B of Baceta et al. (1999); S3U1 unit of Astibia et al. (1987, 1990)", "lower Maastrichtian or, more probably, upper Campanian".
 - díezdíaz2013a, p. 4: a "unit equivalent to the Sedano Formation of the North-Castilian Platform (Floquet, 1991; Berreteaga, 2008)".
-- fondevilla2019a, accepted manuscript, p. 19: "Laño (late Campanian, chron C32n.2n)"; díezdíaz2015a, p. 294: "three fossiliferous beds dated as late Campanian (Corral et al., 2016)".
+- fondevilla2019a, p. 179: "Laño (late Campanian, chron C32n.2n)"; díezdíaz2015a, p. 294: "three fossiliferous beds dated as late Campanian (Corral et al., 2016)".
 
 **Ruled out.**
 - *Vitoria Formation.* Carrano and Sampson (2008) give "S2U1 and S1U3 beds, Vitoria Formation; late Campanian" in a table (carrano2008a, p. 207); no other source read for this note uses the name. Their bed codes differ from the S3U1 printed by Sanz and colleagues (1999), Díez Díaz and colleagues (2013, p. 4) and others.

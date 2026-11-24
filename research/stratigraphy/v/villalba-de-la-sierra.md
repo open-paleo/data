@@ -7,9 +7,9 @@
 **Conclusion.** A bed, and also an excavation area. Díez Díaz and colleagues (2016) identify "the bed in which the described specimen was collected" as G1, a grey mudstone level of the Lo Hueco section that their Fig. 1b labels among the site's lithosomes, with the specimen marked against it. Their Fig. 1 caption also calls G1 "one of the excavation areas" at Lo Hueco, the area mapped in Fig. 1e. That the excavation area takes its name from the level dug in it is an inference; the paper does not say so. The registry entry is the bed. Governs the G1 entry, with `informal: true`, in `beds` on [Villalba de la Sierra](../../../stratigraphy/v/villalba-de-la-sierra.yml).
 
 **Evidence.**
-- díezdíaz2016a, p. ? (accepted manuscript, p. 6, 1. Introduction): "The bed in which the described specimen was collected was identified as G1 (Fig. 1c), corresponding to the proximal part of a flooded muddy plain, close to distributary channels".
-- díezdíaz2016a, p. ? (accepted manuscript, p. 6, 1. Introduction): "The Lo Hueco fossil site is placed in sedimentary deposits belonging to the upper part of the Margas, Arcillas y Yesos de Villalba de la Sierra Formation".
-- díezdíaz2016a, p. ? (accepted manuscript, p. 37, Fig. 1 caption): "lateral view of the eastern talus of the outcrop during the excavation phase, with the identified litosomes (c)"; "general cartography of one of the excavation areas (G1) at Lo Hueco (e)".
+- díezdíaz2016a, p. 50, 1. Introduction: "The bed in which the described specimen was collected was identified as G1 (Fig. 1C), corresponding to the proximal part of a flooded muddy plain, close to distributary channels".
+- díezdíaz2016a, p. 50, 1. Introduction: "The Lo Hueco fossil site is placed in sedimentary deposits belonging to the upper part of the Margas, Arcillas y Yesos de Villalba de la Sierra Formation".
+- díezdíaz2016a, p. 51, Fig. 1 caption: "lateral view of the eastern talus of the outcrop during the excavation phase, with the identified litosomes (C)"; "general cartography of one of the excavation areas (G1) at Lo Hueco (E)".
 - díezdíaz2016a, Fig. 1b: the "Lo Hueco" column labels its levels S1, V, G1, C, R1, G2, S2, R2 and M, with G1 a grey mudstone about 2–4.5 m above the base and the specimen marked beside it.
 
 **Ruled out.**
@@ -43,8 +43,8 @@ Supersedes the Campanian–Maastrichtian bed G1 carried until 2026-10-06.
 **Conclusion.** No. Díez Díaz and colleagues (2016) date the Lo Hueco site's sediments, after Ortega and colleagues (2015), and name G1 only as the bed the specimen came from, so G1 takes the formation's epoch and no stages. *Lohuecotitan pandafilandi* keeps the Campanian–Maastrichtian, which the paper gives for its type locality. Governs `period: [Late Cretaceous]` and the absence of `stages` on G1 of [Villalba de la Sierra](../../../stratigraphy/v/villalba-de-la-sierra.yml).
 
 **Evidence.**
-- díezdíaz2016a, 1. Introduction: "Its stratigraphic position and palaeontological content indicate that its sediments were deposited in the late Campanian-early Maastrichtian interval"; later in the paragraph, "The bed in which the described specimen was collected was identified as G1".
-- díezdíaz2016a, 3. Systematic palaeontology: "Type locality and horizon. The Lo Hueco fossil site …, Margas, Arcillas y Yesos de Villalba de la Sierra Formation, upper Campanian-lower Maastrichtian."
+- díezdíaz2016a, p. 50, 1. Introduction: "Its stratigraphic position and paleontological content indicate that its sediments were deposited in the late Campanian-early Maastrichtian interval"; later in the paragraph, "The bed in which the described specimen was collected was identified as G1".
+- díezdíaz2016a, p. 52, 3. Systematic palaeontology: "Type locality and horizon. The Lo Hueco fossil site …, Margas, Arcillas y Yesos de Villalba de la Sierra Formation, upper Campanian-lower Maastrichtian."
 
 **Ruled out.**
 - *G1, Campanian–Maastrichtian.* The interval is given for the site's sediments as a whole, not for the bed.

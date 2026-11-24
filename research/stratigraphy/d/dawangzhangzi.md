@@ -70,7 +70,7 @@
 - wang2016a, p. 110, abstract: "we propose a modified lithostratigraphic nomenclature in the Sihetun Sub-basin in which the Yixian Formation is divided into three members: the Lujiatun Member … the Xiatulaigou Member … and the Jianshangou Member". Neither Dawangzhangzi nor Dakangpu appears in the paper.
 - wu2012a, p. 296: "Dakangpu Member (equivalent to the Dawangzhangzi Beds)".
 - jin2008a, p. 2821: "the Dawangzhangzi Bed of the Yixian Formation in Lingyuan"; qiu2025a, p. 2: "The Dawangzhangzi bed of Yixian Formation".
-- chang2017a, accepted manuscript, p. 1: the formation divided "from bottom to top into the Lujiatun Unit, Lower Lava Unit, Jianshangou Unit, Upper Lava Unit, Dawangzhangzi Unit and Jingangshan Unit".
+- chang2017a, p. 399: the formation "generally divided (from bottom to top) into the Lujiatun Unit, Lower Lava Unit, Jianshangou Unit, Upper Lava Unit, Dawangzhangzi Unit and Jingangshan Unit".
 
 **Ruled out.**
 - *Wang and colleagues (2016) as the source of this unit's rank.* Their three members are those of the Sihetun Sub-basin. The Dawangzhangzi localities cited here, in Lingyuan and at Toutai in Yixian County, lie outside it; that is our inference from the place names, not a statement in the paper.
@@ -91,5 +91,5 @@
 - `wang2016a`: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X. (2016). Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores. *Palaeogeography, Palaeoclimatology, Palaeoecology*.
 - `jin2008a`: Jin, F.; Zhang, F.; Li, Z.; Zhang, J.; Li, C.; Zhou, Z. (2008). On the horizon of Protopteryx and the early vertebrate fossil assemblages of the Jehol Biota. *Chinese Science Bulletin* 53(18): 2820-2827. doi:10.1007/s11434-008-0209-5
 - `qiu2025a`: Qiu, R.; Wang, X.; Jiang, S.; Meng, J.; Zhou, Z. (2025). Two new compsognathid-like theropods show diversified predation strategies in theropod dinosaurs. *National Science Review* 12(5). doi:10.1093/nsr/nwaf068
-- `chang2017a`: Chang, S. C.; Gao, K. Q.; Zhou, C. F.; Jourdan, F. (2017). New chronostratigraphic constraints on the Yixian Formation with implications for the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology*. doi:10.1016/j.palaeo.2017.09.026
+- `chang2017a`: Chang, S. C.; Gao, K. Q.; Zhou, C. F.; Jourdan, F. (2017). New chronostratigraphic constraints on the Yixian Formation with implications for the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology* 487: 399-406. doi:10.1016/j.palaeo.2017.09.026
 - `wu2010a`: Wu, W. H.; Godefroit, P.; Hu, D. Y. (2010). [Bolong yixianensis gen. et sp. nov.: a new iguanodontoid dinosaur from the Yixian Formation of western Liaoning, China]. *Geology and Resources* 19(2): 127-133.

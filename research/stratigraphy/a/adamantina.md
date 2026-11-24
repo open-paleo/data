@@ -26,7 +26,7 @@
 - dias2020a, accepted manuscript, p. 4, 2. Geologic context of the Bauru Basin in Triângulo Mineiro: the Uberaba Formation "is considered to have been deposited in the Campanian, based on lithostratigraphic relationships with the Adamantina and Marília formations"; the Adamantina is the "Vale do Rio do Peixe Formation in Paula e Silva et al., 2009".
 - dias2020a, accepted manuscript, p. 5, 2. Geologic context of the Bauru Basin in Triângulo Mineiro: the Marília "is the youngest among the Cretaceous formations of the region, with a Maastrichtian age".
 - dias2020a, accepted manuscript, p. 12, 5. Discussion: "Castro et al. (2018) dated the youngest detrital zircon grain of the basal section of the Adamantina Formation at 87.78±0.06 Ma (CA-ID-TIMS), giving the maximum depositional age for Adamantina Formation in the Triângulo Mineiro region".
-- aureliano2021a, accepted manuscript, p. 4: a titanosaur fibula from "Ibirá municipality, Adamantina Formation (ca. 85.2 ± 2.7 Ma, Santonian; Castro et al., 2018)".
+- aureliano2021a, p. 3: a titanosaur fibula from "Ibirá municipality, Adamantina Formation (ca. 85.2 ± 2.7 Ma, Santonian; Castro et al., 2018)".
 
 **Ruled out.**
 - *A Campanian or Maastrichtian for the Adamantina from Dias and colleagues (2020).* The paper gives the formation no stage of its own. Its one Campanian belongs to the Uberaba, reached through that unit's relationships with the Adamantina and Marília, and its one Maastrichtian to the Marília.

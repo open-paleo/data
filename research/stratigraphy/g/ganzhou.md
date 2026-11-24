@@ -46,7 +46,7 @@
 
 **Ruled out.**
 - *Turonian–early Coniacian.* Xing and colleagues' stage label does not match their own numbers: 90 Ma is Turonian on every chart from GTS 2004 to ICS 2024/12, and 96 Ma is Cenomanian. Reading the range as an age, rather than Li and colleagues' conditional floor, is itself a step beyond the source (our inference).
-- *Late Albian–early Cenomanian.* Xi and colleagues give "late Albian–early Cenomanian" (xi2021a, p. 387), and xi2018a (online-first, p. 20) relays Li and colleagues as "late early Cretaceous", which misreads Li's floor.
+- *Late Albian–early Cenomanian.* Xi and colleagues give "late Albian–early Cenomanian" (xi2021a, p. 387), and xi2018a (p. 275) relays Li and colleagues as "late early Cretaceous", which misreads Li's floor.
 
 **Open.** The palynology rests on Li (2017), which has not been read. No Maodian unit is in the registry, so the Zhoutian's position above it is unrecorded.
 

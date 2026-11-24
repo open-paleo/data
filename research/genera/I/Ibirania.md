@@ -8,7 +8,7 @@
 
 **Evidence.**
 - navarro2022a, Systematic Paleontology, Type species: "from the late Santonian to early Campanian (Upper Cretaceous) of São José do Rio Preto Formation, Bauru Basin at Ibirá Municipality, São Paulo State, Brazil".
-- aureliano2021a, Locality and horizon, for the fibula LPP-PV-0043: "Ibirá municipality, Adamantina Formation (ca. 85.2 ± 2.7 Ma, Santonian; Castro et al., 2018), Bauru Group".
+- aureliano2021a, p. 3, Locality and horizon, for the fibula LPP-PV-0043: "Ibirá municipality, Adamantina Formation (ca. 85.2 ± 2.7 Ma, Santonian; Castro et al., 2018), Bauru Group".
 - navarro2022a, Thin Section Sampling: LPP-PV-0043 is "a referred specimen" of *Ibirania parva*. Aureliano is a coauthor of navarro2022a.
 
 **Ruled out.**

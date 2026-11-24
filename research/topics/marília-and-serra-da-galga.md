@@ -22,7 +22,7 @@
 **Conclusion.** Yes. *Ypupiara* comes from Peirópolis, Uberaba, one of the northeastern localities the 2026-10-01 entry assigns to the Serra da Galga Formation, so its describing paper's "Marília Formation" is the Serra da Galga. Governs `location.formation: Serra da Galga` on [*Ypupiara lopai*](../../genera/Y/Ypupiara.yml), which the 2026-10-01 entry did not list.
 
 **Evidence.**
-- brum2021a, Locality and horizon: "The specimen was found at the Caiera site, also known as Ponto 1 do Price, in Serra do Veadinho, close to Peiropolis, a rural district of Uberaba … In this locality, the Marılia Formation crops out (Maastrichtian".
+- brum2021a, p. 2081, Locality and horizon: "The specimen was found at the Caiera site, also known as Ponto 1 do Price, in Serra do Veadinho, close to Peiropolis, a rural district of Uberaba … In this locality, the Marılia Formation crops out (Maastrichtian".
 
 **Ruled out.**
 - *The Marília Formation in its restricted sense.* That name now covers only the southeastern and northwestern outcrops.

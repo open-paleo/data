@@ -23,7 +23,7 @@
 **Evidence.**
 - deklerk2000a, p. 325: "unnamed uppermost member (coarse red-brown mudstone paleosol facies) of the Lower Cretaceous Kirkwood Formation (Berriasian–Valanginian), Uitenhage Group".
 - mcphee2016b, accepted manuscript, section 1.1: in the Swartkops and Colchester members "No vertebrate fossils have been discovered", and "The remaining, stratigraphically higher sediments of the Kirkwood Formation have not been formally named, but they contain all of the vertebrate fossil material so far discovered."
-- forster2023a, p. 3 (online-first version): "The Kirkwood Fm is divided into the Bethelsdorp, Colchester, and Swartkops Members"; p. 12, for *Iyuku*: "Kirkwood Formation, uppermost member, paleosol facies".
+- forster2023a, p. 1764: "The Kirkwood Fm is divided into the Bethelsdorp, Colchester, and Swartkops Members"; p. 1773, for *Iyuku*: "Kirkwood Formation, uppermost member, paleosol facies".
 
 **Ruled out.**
 - *Swartkops or Colchester Member.* McPhee and colleagues (2016) report no vertebrates from either, and both lie below the beds that hold them.

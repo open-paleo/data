@@ -36,7 +36,7 @@
 
 **Evidence.**
 - raven2020a, p. 23: "In the Wessex Sub-basin, the Wealden is given the stratigraphic status of 'Group' rather than 'Supergroup'", with the "Ashdown, Wadhurst Clay, Lower Tunbridge Wells Sandstone and Upper Tunbridge Wells Sandstone formations" in the Weald; p. 3: "Grinstead Clay Formation (Lower Cretaceous, Valanginian; Austen and Batten, 2018)", and "Tilgate Forest, near Cuckfield, West Sussex … Grinstead Clay Formation".
-- austen2018a, in-press version: "Ardingly Sandstone Member of the Lower Tunbridge Wells Sand Formation and overlying Grinstead Clay Formation".
+- austen2018a, p. 189: "Ardingly Sandstone Member of the Lower Tunbridge Wells Sand Formation and overlying Grinstead Clay Formation".
 - The British Geological Survey Lexicon: "Grinstead Clay Member", parent Tunbridge Wells Sand Formation, with "Grinstead Clay Formation" marked obsolete; Tunbridge Wells Sand Formation in the Wealden Group; "Hastings Beds (Subgroup)" obsolete.
 
 **Ruled out.**

@@ -10,7 +10,7 @@
 - sabaj2020a, p. 650: "MCCM: Museo de las Ciencias de Castilla-La Mancha, Cuenca. Includes: Las Hoyas collection. Current as: MCCM (fossils), HUE (fossils, Lo Hueco collection)".
 - ortega2010a, p. 203: "Holotype. Specimen MCCM-LH 6666 at Museo de las Ciencias de Castilla-La Mancha, Cuenca".
 - pérez-moreno1994a, p. 364: "Holotype. LH 7777 (Museo de Cuenca, Cuenca, Spain; provisionally housed in the Unidad de Paleontología of the Universidad Autónoma de Madrid"; the MCCM-LH form for *Pelecanimimus* is later (serrano-brañas2025a).
-- díezdíaz2016a, accepted manuscript, p. 7: "HUE: Lo Hueco collection, housed at the Museo de Paleontología de Castilla-La Mancha", holotype "HUE-EC-01".
+- díezdíaz2016a, pp. 50–51: "HUE: Lo Hueco collection, housed at the Museo de Paleontología de Castilla-La Mancha", holotype "HUE-EC-01".
 - chokchaloemwong2019a, p. 5: "MCCM, Museo de Ciencias de Castilla-La Mancha, Cuenca, Spain, now MUPA".
 
 **Ruled out.**

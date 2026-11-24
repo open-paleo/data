@@ -27,7 +27,7 @@
 - currie1990a, p. 117: "Because most 'Paronychodon' teeth can be referred to known genera, the name Paronychodon lacustris should be restricted to non-serrate forms"; "It appears more likely that these teeth represent growth abnormalities".
 - sues2013a, p. 308: teeth identified as *Paronychodon* "possibly represent dental developmental stages of various paravian theropod dinosaurs", and these "'organ taxa' should not be considered equivalent to diagnosable dinosaurian taxa"; p. 310: "The affinities of Paronychodon remain uncertain".
 - makovicky2004b, p. 186, Table 9.1: *Paronychodon lacustris* Cope, 1876a among the nomina dubia of Troodontidae, on teeth.
-- csiki-sava2016a, Table: a "Paronychodon" morphotype tooth listed under Paraves.
+- csiki-sava2016a, Table 1: a "Paronychodon" morphotype tooth listed under Paraves.
 
 **Ruled out.**
 - *A valid species.* Currie and colleagues (1990) allow that the unserrated teeth "conceivably may represent a distinct taxon", and Larson and Currie (2013) mention in passing that it "may be a valid taxon", but neither argues for a diagnosis, and both exclude it from analysis or refer most such teeth elsewhere.

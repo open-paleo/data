@@ -46,7 +46,7 @@
 
 **Ruled out.**
 - *A Tithonian stage taken from a label alone.* Butler and colleagues give *Fruitadens* "Late Jurassic: early Tithonian" (butler2010a, p. 376) with no number; Xu and colleagues give *Fujianvenator* "(Tithonian stage; 149.9–150.2 Ma …)" (xu2023a, p. 337), dates that are Kimmeridgian at their central values.
-- *A Berriasian Morrison.* Cifelli and colleagues' "may also include the late Oxfordian and early Berriasian" (cifelli2014a, accepted manuscript, p. 3) is a hedge; the youngest dates stop about 6 Myr short of the Berriasian.
+- *A Berriasian Morrison.* Cifelli and colleagues' "may also include the late Oxfordian and early Berriasian" (cifelli2014a, p. 32) is a hedge; the youngest dates stop about 6 Myr short of the Berriasian.
 
 **Open.** The Carnegie Quarry. A second date, "148.97+ 0.12 Ma by Kowallis et al. (1998)" (carpenter2008a, p. 230), would be Tithonian, but its level relative to the quarry is not stated. On Whitlock and colleagues' date the quarry taxa would be Kimmeridgian, or Kimmeridgian–Tithonian with the older date as a dispute.
 

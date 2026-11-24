@@ -12,7 +12,7 @@
 - muir2017a, p. 278, Upper boundary: between the "generally resistant Enon and the overlying softer Kirkwood Formation", where it can be seen, "the contact is usually gradational".
 - muir2017a, p. 278, Lateral boundary: "The Enon Formation, being diachronous, locally displays a laterally gradational, interfingering contact with the Kirkwood Formation"; the boundary is placed where "conglomerates, which are dominant in the Enon Formation, give way to sand- and mudstone dominated lithologies typical of the Kirkwood Formation".
 - muir2017a, p. 278, Criteria for lateral extension: "The Enon Formation is conformably overlain by and interfingers with the Kirkwood Formation."
-- forster2023a, p. ? (online-first version, p. 3), Sedimentology and Stratigraphy of the Kirkwood Fm: "Muir et al. (2017b) assigned a Tithonian to Valanginian age for the entire Kirkwood Fm"; the paper's 2017b is the Enon Formation paper.
+- forster2023a, p. 1764, Sedimentology and Stratigraphy of the Kirkwood Fm: "Muir et al. (2017b) assigned a Tithonian to Valanginian age for the entire Kirkwood Fm"; the paper's 2017b is the Enon Formation paper.
 
 **Ruled out.**
 - *Middle Jurassic, from the preliminary U–Pb zircon ages.* Muir and colleagues (2017) call the analyses preliminary, report them only as a span across the Kirkwood's volcaniclastic layers, and do not use them to date the formation. They add no epoch.

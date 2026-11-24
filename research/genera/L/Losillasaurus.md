@@ -10,7 +10,7 @@
 - casanovas2001a, p. 110: "Horizon: Levels of micaceous arenite" (translated).
 - royo-torres2020a, Introduction: *Losillasaurus* "was found at the La Cañada site (Losilla de Aras, Valencia) and originates from the same geological unit as *Turiasaurus*".
 - royo-torres2020a, Introduction: "a complete anterior caudal vertebra (SHN (JJS) 180) from Baleal (Peniche, Portugal), Praia de Amoreira-Porto Novo Formation".
-- campos-soto2019a, Results: *Turiasaurus riodevensis* and *Losillasaurus giganteus* "were discovered … in the Riodeva and Losilla-Alpuente areas, respectively …, in the deposits of the Villar del Arzobispo Fm".
+- campos-soto2019a, p. 487, Results: *Turiasaurus riodevensis* and *Losillasaurus giganteus* "were discovered … in the Riodeva and Losilla-Alpuente areas, respectively …, in the deposits of the Villar del Arzobispo Fm".
 - upchurch2004a, Table 13.1: *L. giganteus*, "Unnamed unit (Valencia), Spain".
 - jones2026b, p. 376: "Villar del Arzobispo Fm., Spain Praia de Amoreira-Porto Novo Fm., Portugal".
 

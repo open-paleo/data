@@ -29,7 +29,7 @@
 **Evidence.**
 - csiki2010a, p. 302: "Type horizon and locality: Sânpetru Formation, Nălaţ-Vad, Haţeg Basin, Romania".
 - díezdíaz2025a, p. 19: "This locality belongs to the 'Râul Mare Beds', a not yet formally defined lithostratigraphical unit that either represents the uppermost part of the Sînpetru Formation … or is a distinct unit".
-- csiki-sava2016a, in-press version, p. 10: the Râul Mare beds "were tentatively referred to the Sînpetru Formation"; "it was recently proposed that the Raul Mare succession belongs to the Densus-Ciula Formation instead of the Sînpetru Formation (e.g., Panaiotu et al., 2011)"; "we treat the Raul Mare succession as a separate entity for the current review".
+- csiki-sava2016a, p. 672: the Râul Mare beds "were tentatively referred to the Sînpetru Formation"; "it was recently proposed that the Râul Mare succession belongs to the Densuş-Ciula Formation instead of the Sînpetru Formation (e.g., Panaiotu et al., 2011)"; "we treat the Râul Mare succession as a separate entity for the current review".
 
 **Ruled out.**
 - *member: Râul Mare Beds.* Díez Díaz and colleagues (2025) call the beds "not yet formally defined", and Csiki-Sava and colleagues (2016) write of a "succession"; neither gives them member rank.

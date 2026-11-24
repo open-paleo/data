@@ -8,9 +8,9 @@
 
 **Evidence.**
 - longrich2026a, p. 3, Geological Setting: "Couche III is late Maastrichtian, Couche II is Paleocene, and Couches 0 and I are Early Eocene in age"; for the lower part, "Its precise age is unknown, but the shark fauna resembles that of Upper Couche III".
-- kocsis2013a, p. 2 (accepted manuscript), Abstract: "The isotope data from the older Paleocene (Bed IIb) and Cretaceous (Bed III) beds in the Ouled Abdoun Basin can be correlated with the latest Danian - early Selandian and the latest Maastrichtian global isotope record, respectively."
-- kocsis2013a, p. 7 (accepted manuscript): in the Ganntour Basin "the top phosphate level (L2) most possibly correlates with the Maastrichtian level (Bed III) of the Ouled Abdoun Basin"; "Because the Cretaceous beds are very condensed in the Ouled Abdoun area, samples from the Ganntour Basins at Ben Guerir were acquired to widen our stratigraphic range."
-- kocsis2013a, p. 22 (accepted manuscript): in Bed III "while the δ18OPO4 values show a small positive shift, the carbon isotope values decrease. This variation can correspond to the latest Maastrichtian, when it is compared to the high-resolution deep-sea record from the Shatsky Rise".
+- kocsis2013a, p. 74, Abstract: "The isotope data from the older Paleocene (Bed IIb) and Cretaceous (upper Bed III) beds in the Ouled Abdoun Basin can be correlated with the latest Danian–early Selandian and the latest Maastrichtian global isotope record, respectively."
+- kocsis2013a, p. 75: in the Ganntour Basin "the top phosphate level (L2) most possibly correlates with the upper part of Bed III (from superior bone bed) of the Ouled Abdoun Basin"; p. 76: "Because the Cretaceous beds are very condensed in the Ouled Abdoun area, samples from the Ganntour Basins at Ben Guerir were acquired to widen our stratigraphic range."
+- kocsis2013a, p. 85: in Bed III "while the δ18OPO4 values show a small positive shift, the carbon isotope values decrease. This variation can correspond to the latest Maastrichtian, when it is compared to the high-resolution deep-sea record from the Shatsky Rise".
 
 **Ruled out.** Nothing.
 

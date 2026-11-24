@@ -7,7 +7,7 @@
 **Conclusion.** Disputed, at Iguanodontia incertae sedis. Norman's (2004) nomen dubium stands against later work that treats it as a valid iguanodontian, so neither status has consensus. The analyses since 2020 place it as an elasmarian, as a rhabdodontoid, or outside Dryosauridae; all of these lie within Iguanodontia, to which Forster and colleagues (2023) say the material certainly belongs. Governs `parent: Iguanodontia`, `status: disputed` and the dispute on [*Kangnasaurus*](../../../genera/K/Kangnasaurus.yml).
 
 **Evidence.**
-- forster2023a: "Norman (2004) regarded Kangnasaurus as a nomen dubium, although the material certainly pertains to an iguanodontian"; it has also been considered "a valid iguanodontian taxon basal to Ankylopollexia".
+- forster2023a, p. 1764: "Norman (2004) regarded Kangnasaurus as a nomen dubium, although the material certainly pertains to an iguanodontian"; it has also been considered "a valid iguanodontian taxon basal to Ankylopollexia".
 - cooper1985a: "Long considered an iguanodontid, it is here shown to be most closely allied to Dryosaurus".
 - fonseca2024a: under implied weighting it "becomes the third most basal elasmarian".
 - poole2022a: "Within Iguanodontia, there are two clades: Dryomorpha and Rhabdodontoidea, which includes Rhabdodontidae, *Tenontosaurus, Muttaburrasaurus, Talenkauen, Trinisaura, Anabisetia,* and *Kangnasaurus*."

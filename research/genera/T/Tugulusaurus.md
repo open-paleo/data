@@ -25,7 +25,7 @@
 
 **Evidence.**
 - rauhut2005c, p. 108, Locality and Horizon: "Wuerho, Lianmugin Formation, Xinjiang, China".
-- zheng2023a, p. 2 (online-first version): "the Tugulu Group consists (in ascending order) of the Qingshuihe, Hutubihe, Shengjinkou, and Lianmuqin Formations".
+- zheng2023a, p. 766: "the Tugulu Group consists (in ascending order) of the Qingshuihe, Hutubihe, Shengjinkou, and Lianmuqin Formations".
 
 **Ruled out.**
 - *Tugulu Group as the formation.* Holtz and colleagues (2004) give "Tugulu Group (Xinjiang Uygur Zizhiqu), People's Republic of China" (holtz2004a, p. 73, Table 4.1). It is the group containing the Lianmuqin. Dong (1973) gives field locality numbers but no formation for the material.
