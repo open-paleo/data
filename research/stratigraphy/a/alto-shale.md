@@ -1,5 +1,20 @@
 # Alto Shale
 
+## Which Lehman works do Breyer and colleagues (2007) credit for the upper shale member's age?
+
+*2026-11-23*
+
+**Conclusion.** Two of the three are identified and read. Lehman (1989), on the Maastrichtian paleosols of Trans-Pecos Texas, puts the upper part of the Aguja Formation in the Maastrichtian; Lehman (1991), on the Tornillo Basin, puts the upper shale member above a Late Campanian marine sandstone. Between them they give the "Upper Campanian/Lower Maastrichtian" that Breyer and colleagues credit, so that span is Lehman's, not Breyer and colleagues' own (see the earlier entry). The 1986 work is still unidentified and unread. Answers the earlier entry's Open line for 1989 and 1991; whether Lehman's Maastrichtian for the upper Aguja holds against Lehman and colleagues' (2024) age model is not settled here.
+
+**Evidence.**
+- breyer2007a, p. 246: the strata "must represent a previously unrecognized facies of the upper shale member, which is Upper Campanian/Lower Maastrichtian (Lehman 1986, 1989, 1991)".
+- lehman1989b, p. 188: "Fluvial flood-plain deposits of the upper Aguja, Javelina, and El Picacho Formations in Brewster and Presidio Counties of West Texas record multiple episodes of soil formation during Late Cretaceous (Maastrichtian) time."
+- lehman1991a, p. 18: the last regressive marine sandstone of the Aguja is "of Late Campanian age (ca. 81 to 78 Ma"; "Paleocurrent data from this unit, and the overlying upper shale member of the Aguja, indicate that the Late Campanian strandline prograded eastward across the Big Bend region".
+
+**Ruled out.** Nothing.
+
+**Open.** Lehman (1986), which the citing works give either as a West Texas Geological Society guidebook paper or as a Bulletin item, is unidentified and unheld.
+
 ## What do the cited works say about the age of the Alto Shale?
 
 *2026-11-23*
@@ -33,11 +48,13 @@
 
 ## References
 
+- `breyer2007a`: Breyer, J. A.; Busbey, A. B.; Hanson, R. E.; Befus, K. E.; Griffin, W. R.; Hargrove, U. S.; Bergman, S. C. (2007). Evidence for Late Cretaceous volcanism in Trans-Pecos Texas. *The Journal of Geology* 115: 243-251. doi:10.1086/510640
+- `lehman1989b`: Lehman, T. M. (1989). Upper Cretaceous (Maastrichtian) paleosols in Trans-Pecos Texas. *Geological Society of America Bulletin* 101(2): 188-203. doi:10.1130/0016-7606(1989)101<0188:UCMPIT>2.3.CO;2
+- `lehman1991a`: Lehman, T. M. (1991). Sedimentation and tectonism in the Laramide Tornillo Basin of West Texas. *Sedimentary Geology* 75(1-2): 9-28. doi:10.1016/0037-0738(91)90047-H
 - `lehman2024a`: Lehman, T. M.; Wick, S. L.; Macon, C. C.; Wagner, J. R.; Waggoner, K. J.; Brink, A. A.; Shiller, T. A., II (2024). Stratigraphy and depositional history of the Aguja Formation (Upper Cretaceous, Campanian) of West Texas, southwestern USA. *Geosphere* 20(3): 825-879. doi:10.1130/GES02662.1
 - `lehman2019a`: Lehman, T. M.; Wick, S. L.; Brink, A. A.; Shiller, T. A., II (2019). Stratigraphy and vertebrate fauna of the lower shale member of the Aguja Formation (lower Campanian) in West Texas. *Cretaceous Research* 99: 291-314. doi:10.1016/j.cretres.2019.02.028
 - `prieto-márquez2020a`: Prieto-Márquez, A.; Wagner, J. R.; Lehman, T. (2020). An unusual 'shovel-billed' dinosaur with trophic specializations from the early Campanian of Trans-Pecos Texas, and the ancestral hadrosaurian crest. *Journal of Systematic Palaeontology* 18(6): 461-498. doi:10.1080/14772019.2019.1625078
 - `befus2008a`: Befus, K. S.; Hanson, R. E.; Lehman, T. M.; Griffin, W. R. (2008). Cretaceous basaltic phreatomagmatic volcanism in West Texas: maar complex at Peña Mountain, Big Bend National Park, Texas. *Journal of Volcanology and Geothermal Research* 173: 245-264. doi:10.1016/j.jvolgeores.2008.01.021
-- `breyer2007a`: Breyer, J. A.; Busbey, A. B.; Hanson, R. E.; Befus, K. E.; Griffin, W. R.; Hargrove, U. S.; Bergman, S. C. (2007). Evidence for Late Cretaceous volcanism in Trans-Pecos Texas. *The Journal of Geology* 115: 243-251. doi:10.1086/510640
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 
 ## Other references
