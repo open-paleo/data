@@ -1,5 +1,21 @@
 # Wangshi
 
+## What does Chen (1983) base the ages of the Wangshi Group's two parts on?
+
+*2026-11-23*
+
+**Conclusion.** On different faunas. Chen (1983) calls the group Late Cretaceous red beds whose hadrosaurian fauna occurs in the upper part, and on that fauna correlates the upper part with the Belly River or Edmonton beds of North America; the lower part, on its ostracods, pelecypods, gastropods and conchostracans, "may be early Late Cretaceous in age". This gives the basis of the Chen reading that the 2026-10-10 entry already weighs, and changes none of its stages. Governs `stages` and `period` on [Wangshi](../../../stratigraphy/w/wangshi.yml) only through that entry, which stands.
+
+**Evidence.**
+- chen1983a, p. 138: "The Late Cretaceous Wangshi Group of E Shandong, composed of red beds, is well-known for its hadrosaurian fauna, which occurs in the upper part of this group"; "Accordingly, the upper part of the Wangshi Group may correspond to the Belly River beds or Edmonton beds of Northern America."
+- chen1983a, pp. 138–139: "The lower part of the Wangshi Group yields" ostracods, pelecypods and gastropods "and conchostracans. It may be early Late Cretaceous in age."
+- chen1983a, p. 128: the faunal overview lists "the Wangshi Formation of E Shandong" among the localities of the upper Upper Cretaceous Titanosauridae-Hadrosauridae fauna.
+
+**Ruled out.**
+- *Formation rank on Chen (1983, p. 128).* The faunal overview writes "Wangshi Formation", but the regional account that describes the unit and divides it into an upper and a lower part calls it a group throughout; under the rule on slips that their own document contradicts in [methods](../../methods.md), the overview's word is not a reading of the rank.
+
+**Open.** Nothing.
+
 ## Which scheme does the registry follow for the Wangshi Group's formations, and where are the Laiyang dinosaur beds?
 
 *2026-10-23*
@@ -56,12 +72,12 @@
 
 ## References
 
+- `chen1983a`: Chen, P. J. (1983). A survey of the non-marine Cretaceous in China. *Cretaceous Research* 4: 123-143.
 - `zhang1996a`: Zhang, Z. Q.; Liu, M. W. (eds.) (1996). 山东省岩石地层 [Stratigraphy (Lithostratigraphic) of Shandong Province]. China University of Geosciences Press, Wuhan.
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 - `xu2019a`: Xu, K. M.; Li, G.; Ning, Z. G.; Wang, Y. P.; Qin, J.; Zhang, F. Z.; Li, X. Z.; Zhu, X. Q. (2019). Field excursion introduction for IGCP 679 1st International Symposium: progress in Cretaceous geology in Shandong Province, China. *Open Journal of Geology* 9: 722-725. doi:10.4236/ojg.2019.910085
 - `hu2001a`: Hu, C. Z.; Cheng, Z. W.; Pang, Q. Q.; Fang, X. S. (2001). Shantungosaurus giganteus. Geological Publishing House, Beijing.
 - `rozhdestvensky1968a`: Rozhdestvensky, A. K. (1968). Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]. *[Upper Paleozoic and Mesozoic Amphibians and Reptiles]. Akademia Naul SSSR, Moscow*: 97-141.
 - `brusatte2013a`: Brusatte, S. L.; Hone, D. W. E.; Xu, X. (2013). Phylogenetic revision of Chingkankousaurus fragilis, a forgotten tyrannosauroid specimen from the Late Cretaceous of China. In *Tyrannosaurid Paleobiology*. Indiana University Press, Bloomington.
-- `chen1983a`: Chen, P. J. (1983). A survey of the non-marine Cretaceous in China. *Cretaceous Research* 4: 123-143.
 - `buffetaut1995a`: Buffetaut, E. (1995). An ankylosaurid dinosaur from the Upper Cretaceous of Shandong (China). *Geological Magazine* 132(6): 683-692. doi:10.1017/S0016756800018914
 - `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642

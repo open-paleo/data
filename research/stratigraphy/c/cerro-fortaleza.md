@@ -1,5 +1,20 @@
 # Cerro Fortaleza
 
+## What do Sickmann and colleagues (2018) give as the age of the Cerro Fortaleza?
+
+*2026-11-23*
+
+**Conclusion.** Campanian to Maastrichtian, with the Maastrichtian queried. In the western part of their study area, between Lago Viedma and Lago Argentino, detrital zircon samples throughout the terrestrial Cerro Fortaleza give maximum depositional ages throughout the Campanian, the stratigraphically highest 76.2 ± 1.6 Ma (quoted in the 2026-08-05 entry). The paper itself calls the formation "Campanian – Maastrichtian(?)", and in the southeast of the study area it describes the regional Paleogene unconformity as placing shallow marine rocks of probable Eocene age, the Man Aike Formation, on "Campanian to Maastrichtian rocks (Cerro Fortaleza Formation)". The Maastrichtian is the paper's own reading of the unit's top, beside maximum ages that set only a floor. Governs `stages: [Campanian, Maastrichtian]` on [Cerro Fortaleza](../../../stratigraphy/c/cerro-fortaleza.yml).
+
+**Evidence.**
+- sickmann2018a, p. ? (accepted manuscript, p. 12): "Stratigraphic correlation in the western part of the study area between Lago Viedma and Lago Argentino".
+- sickmann2018a, p. ? (accepted manuscript, p. 17): "In the southeastern part of the study area (Fig. 4), the unconformity places shallow marine rocks of probable Eocene age (Man Aike Formation) on Campanian to Maastrichtian rocks (Cerro Fortaleza Formation)".
+- sickmann2018a, p. ? (accepted manuscript, p. 18): "From the Campanian(?) La Anita to Campanian – Maastrichtian(?) Cerro Fortaleza Formations".
+
+**Ruled out.** Nothing beyond the readings the 2026-10-13 and 2026-08-05 entries rule out.
+
+**Open.** Nothing.
+
 ## What stages do the Cerro Fortaleza taxa take?
 
 *2026-10-13*
@@ -35,12 +50,12 @@
 
 ## References
 
+- `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729.
 - `novas2005b`: Novas, F.; Salgado, L.; Calvo, J.; Agnolin, F. (2005). Giant titanosaur (Dinosauria, Sauropoda) from the Late Cretaceous of Patagonia. *Revista del Museo Argentino de Ciencias Naturales* 7: 31-36. doi:10.22179/revmacn.7.340
 - `novas2008b`: Novas, F. E.; Ezcurra, M. D.; Lecuona, A. (2008). Orkoraptor burkei nov. gen. et sp., a large theropod from the Maastrichtian Pari Aike Formation, Southern Patagonia, Argentina. *Cretaceous Research* 29(3): 468-480. doi:10.1016/j.cretres.2008.01.001
 - `aranciagarolando2022a`: Aranciaga Rolando, A. M.; Motta, M. J.; Agnolín, F. L.; Manabe, M.; Tsuihiji, T.; Novas, F. E. (2022). A large Megaraptoridae (Theropoda: Coelurosauria) from Upper Cretaceous (Maastrichtian) of Patagonia, Argentina. *Scientific Reports* 12(1). doi:10.1038/s41598-022-09272-z
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
 - `novas2019a`: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L. (2019). Paleontological discoveries in the Chorrillo Formation (upper Campanian-lower Maastrichtian, Upper Cretaceous), Santa Cruz Province, Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales* 21: 217-293. doi:10.22179/revmacn.21.655
-- `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `varela2012a`: Varela, A. N.; Poiré, D. G.; Martin, T.; Gerdes, A.; Goin, F. J.; Gelfo, J. N.; Hoffmann, S. (2012). U-Pb zircon constraints on the age of the Cretaceous Mata Amarilla Formation, Southern Patagonia, Argentina: its relationship with the evolution of the Austral Basin. *Andean Geology* 39(3): 359-379. doi:10.5027/andgeoV39n3-a01
