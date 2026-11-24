@@ -1,5 +1,22 @@
 # Villalba de la Sierra
 
+## What does G1 name at Lo Hueco?
+
+*2026-11-23*
+
+**Conclusion.** A bed, and also an excavation area. Díez Díaz and colleagues (2016) identify "the bed in which the described specimen was collected" as G1, a grey mudstone level of the Lo Hueco section that their Fig. 1b labels among the site's lithosomes, with the specimen marked against it. Their Fig. 1 caption also calls G1 "one of the excavation areas" at Lo Hueco, the area mapped in Fig. 1e. That the excavation area takes its name from the level dug in it is an inference; the paper does not say so. The registry entry is the bed. Governs the G1 entry, with `informal: true`, in `beds` on [Villalba de la Sierra](../../../stratigraphy/v/villalba-de-la-sierra.yml).
+
+**Evidence.**
+- díezdíaz2016a, p. ? (accepted manuscript, p. 6, 1. Introduction): "The bed in which the described specimen was collected was identified as G1 (Fig. 1c), corresponding to the proximal part of a flooded muddy plain, close to distributary channels".
+- díezdíaz2016a, p. ? (accepted manuscript, p. 6, 1. Introduction): "The Lo Hueco fossil site is placed in sedimentary deposits belonging to the upper part of the Margas, Arcillas y Yesos de Villalba de la Sierra Formation".
+- díezdíaz2016a, p. ? (accepted manuscript, p. 37, Fig. 1 caption): "lateral view of the eastern talus of the outcrop during the excavation phase, with the identified litosomes (c)"; "general cartography of one of the excavation areas (G1) at Lo Hueco (e)".
+- díezdíaz2016a, Fig. 1b: the "Lo Hueco" column labels its levels S1, V, G1, C, R1, G2, S2, R2 and M, with G1 a grey mudstone about 2–4.5 m above the base and the specimen marked beside it.
+
+**Ruled out.**
+- *G1 as an excavation area only.* The text names G1 as the bed, and Fig. 1b draws it as a level of the section alongside G2, R1 and the others, so it is a bed whatever else the caption uses the label for.
+
+**Open.** Nothing.
+
 ## How do Vilas and colleagues (1982) define and date the Villalba de la Sierra Formation?
 
 *2026-11-23*
@@ -36,8 +53,8 @@ Supersedes the Campanian–Maastrichtian bed G1 carried until 2026-10-06.
 
 ## References
 
-- `vilas1982a`: Vilas, L.; Mas, R.; García, A.; Alonso, A.; Meléndez, N.; Rincón, R. (1982). Ibérica Suroccidental [The southwestern Iberian Range]. In *El Cretácico de España (García, A., ed.)*, pp. 457-508. Universidad Complutense de Madrid.
 - `díezdíaz2016a`: Díez Díaz, V.; Mocho, P.; Páramo, A.; Escaso, F.; Marcos-Fernández, F.; Sanz, J. L.; Ortega, F. (2016). A new titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous of Lo Hueco (Cuenca, Spain). *Cretaceous Research* 68: 49-60. doi:10.1016/j.cretres.2016.08.001
+- `vilas1982a`: Vilas, L.; Mas, R.; García, A.; Alonso, A.; Meléndez, N.; Rincón, R. (1982). Ibérica Suroccidental [The southwestern Iberian Range]. In *El Cretácico de España (García, A., ed.)*, pp. 457-508. Universidad Complutense de Madrid.
 
 ## Other references
 
