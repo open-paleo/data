@@ -1,5 +1,25 @@
 # Walloon Coal Measures
 
+## What do Wainman and colleagues' (2018a, 2018b) dates give for the age of the Walloon Coal Measures?
+
+*2026-11-25*
+
+**Conclusion.** Aalenian to Kimmeridgian. Supersedes the 2026-11-23 entry's Callovian to Tithonian and its Open line. Wainman and colleagues (2018b) date tuffs in Walloon lithofacies from 167.56 ± 0.06 Ma at Kalbar 1, in the Clarence–Moreton Basin, to 149.78 ± 0.06 Ma at Indy 3, below the Walloon–Springbok contact at 138 m; on the ICS chart v2024/12 these are Bathonian and Kimmeridgian, and the youngest date's error does not reach the 149.2 Ma base of the Tithonian. Their "early Tithonian" for a 150.77 Ma tuff (2018a) and their Wheeler diagram, drawn on the 2012 time scale, name stages from that chart; for a radiometric date the number decides. The dates narrow nothing: under the union rule a newer, narrower dating adds to the older readings, and the older readings are biostratigraphic stages, not numbers. Wainman and colleagues' own Table 1 gives the Walloon Coal Measures a biostratigraphic age of "Aalenian to Callovian", compiled from Exon (1976) and later work, and Leahey and colleagues (2015) give "Bajocian–Bathonian" after Hill and colleagues (1966). Governs `stages: [Aalenian, Bajocian, Bathonian, Callovian, Oxfordian, Kimmeridgian]` on [Walloon Coal Measures](../../../stratigraphy/w/walloon-coal-measures.yml), which drops the Tithonian and adds the Aalenian; [*Rhoetosaurus brownei*](../../../genera/R/Rhoetosaurus.yml), Callovian–Oxfordian, is unaffected.
+
+**Evidence.**
+- wainman2018b, p. 1156: "The CA-TIMS dates from the Kalbar 1 (167.56 ± 0.06 Ma) and Mt. Lindesay 1 (155.38 ± 0.07 Ma) wells in the Clarence–Moreton Basin and the Turallin 1 (164.74 ± 0.04 Ma) and Stratheden 60 (168.07 ± 0.07 Ma) wells in the Surat Basin".
+- wainman2018b, Table 3, p. 1159: Indy 3, 139.97–140.38 m, 149.78 ± 0.06 Ma; 104.40–104.62 m, 149.08 ± 0.06 Ma.
+- wainman2018b, p. 1161: "between Walloon lithofacies and the Springbok lithofacies at 138 m (453 ft)—there is less than 700 ka between dates in the two facies".
+- wainman2018b, Fig. 10, p. 1165: "Time scale by Gradstein et al. (2012)".
+- wainman2018a, p. 9: "An early Tithonian age (150.77 ± 0.06 Ma) was calculated from a tuff bed".
+- wainman2018b, Table 1, p. 1147: Walloon Coal Measures, biostratigraphic age "Aalenian to Callovian"; p. 1149: "Modified from Exon, 1976; Jones and Patrick, 1981".
+- leahey2015a, p. 2, Introduction: "Middle Jurassic (Bajocian–Bathonian) Walloon Coal Measures at Balgowan, Darling Downs, Queensland (Hill, Playford & Woods, 1966".
+
+**Ruled out.**
+- *Tithonian.* Todd and colleagues (2019) relay it from Wainman and colleagues, whose youngest Walloon tuff is Kimmeridgian on the current chart; the Tithonian label belongs to the 2012 chart.
+- *Bathonian to Kimmeridgian alone, from the dated tuffs.* The tuffs date the beds that hold them; they do not replace the biostratigraphic Aalenian and Bajocian that Wainman and colleagues' table and Leahey and colleagues publish.
+
+**Open.** Whether the lowest Walloon beds are older than the Bathonian anywhere they have been dated. A date from the base of the unit in the Clarence–Moreton Basin, below the 167.56 Ma tuff at Kalbar 1, would bear on it.
 ## What do Todd and colleagues (2019) say about the age of the Walloon Coal Measures?
 
 *2026-11-23*
@@ -31,6 +51,9 @@
 
 ## References
 
+- `wainman2018b`: Wainman, C. C.; McCabe, P. J.; Crowley, J. L. (2018). Solving a tuff problem: Defining a chronostratigraphic framework for Middle to Upper Jurassic nonmarine strata in eastern Australia using uranium-lead chemical abrasion-thermal ionization mass spectrometry zircon dates. *AAPG Bulletin* 102(6): 1141-1168. doi:10.1306/07261717140
+- `wainman2018a`: Wainman, C. C.; Hannaford, C.; Mantle, D.; McCabe, P. J. (2018). Utilizing U-Pb CA-TIMS dating to calibrate the Middle to Late Jurassic spore-pollen zonation of the Surat Basin, Australia to the geological time-scale. *Alcheringa* 42(3): 402-414. doi:10.1080/03115518.2018.1457179
+- `leahey2015a`: Leahey, L. G.; Molnar, R. E.; Carpenter, K.; Witmer, L. M.; Salisbury, S. W. (2015). Cranial osteology of the ankylosaurian dinosaur formerly known as Minmi sp. (Ornithischia: Thyreophora) from the Lower Cretaceous Allaru Mudstone of Richmond, Queensland, Australia. *PeerJ* 3: e1475. doi:10.7717/peerj.1475
 - `todd2019a`: Todd, C. N.; Roberts, E. M.; Knutsen, E. M.; Rozefelds, A. C.; Huang, H. Q.; Spandler, C. (2019). Refined age and geological context of two of Australia's most important Jurassic vertebrate taxa (Rhoetosaurus brownei and Siderops kehli), Queensland. *Gondwana Research* 76: 19-25. doi:10.1016/j.gr.2019.05.008
 - `longman1926a`: Longman, H. A. (1926). A giant dinosaur from Durham Downs, Queensland. *Memoirs of the Queensland Museum* 8(3): 183-194.
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
@@ -38,7 +61,5 @@
 
 ## Other references
 
-- `wainman2018a`: Wainman, C. C.; Hannaford, C.; Mantle, D.; McCabe, P. J. (2018). Utilizing U-Pb CA-TIMS dating to calibrate the Middle to Late Jurassic spore-pollen zonation of the Surat Basin, Australia to the geological time-scale. *Alcheringa* 42(3): 402-414. doi:10.1080/03115518.2018.1457179
-- `wainman2018b`: Wainman, C. C.; McCabe, P. J.; Crowley, J. L. (2018). Solving a tuff problem: Defining a chronostratigraphic framework for Middle to Upper Jurassic nonmarine strata in eastern Australia using uranium-lead chemical abrasion-thermal ionization mass spectrometry zircon dates. *AAPG Bulletin* 102(6): 1141-1168. doi:10.1306/07261717140
+- `exon1976a`: Exon, N. F. (1976). Geology of the Surat Basin in Queensland. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 166.
 - `hill1966a`: Hill, D.; Playford, G.; Woods, J. T. (1966). Jurassic Fossils of Queensland. Queensland Palaeontographical Society, Brisbane.
-- `leahey2015a`: Leahey, L. G.; Molnar, R. E.; Carpenter, K.; Witmer, L. M.; Salisbury, S. W. (2015). Cranial osteology of the ankylosaurian dinosaur formerly known as Minmi sp. (Ornithischia: Thyreophora) from the Lower Cretaceous Allaru Mudstone of Richmond, Queensland, Australia. *PeerJ* 3: e1475. doi:10.7717/peerj.1475

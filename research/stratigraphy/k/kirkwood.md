@@ -1,5 +1,24 @@
 # Kirkwood
 
+## What do Muir and colleagues' Kirkwood lithostratigraphy (2017) and U–Pb study (2020) give for the age of the Kirkwood?
+
+*2026-11-25*
+
+**Conclusion.** Aalenian to Early Cretaceous across its basins. Supersedes the Open line of the 2026-11-23 entry: the Tithonian–Valanginian comes from microfossils in the Algoa Basin, the Tithonian from microfossils in the Bethelsdorp and Colchester members, and the Lower Cretaceous top from a probable equivalence with the Sundays River Formation; the same paper says these ages may apply only to the type area. Muir and colleagues (2020) date nine pyroclastic beds in the Kirkwood Formation of the Robertson, Heidelberg, Mossel Bay, Vlees Bay, Oudtshoorn and Plettenberg Bay basins and read them as depositional ages. On the ICS chart v2024/12 their preferred ages fall in the Aalenian (172.6 Ma), Bajocian (170.5 Ma), Callovian (162.3 Ma), Oxfordian (156.4 Ma), Kimmeridgian (153.8 and 150.3 Ma) and Berriasian (139.8 Ma), and they describe deposition continuing "through the Jurassic and into the Early Cretaceous"; the Bathonian and Tithonian have no date but lie inside that span. The Hauterivian, from McPhee and colleagues (2016), is unchanged. Governs `period: [Middle Jurassic, Late Jurassic, Early Cretaceous]` and `stages`, Aalenian to Hauterivian, on [Kirkwood](../../../stratigraphy/k/kirkwood.yml).
+
+**Evidence.**
+- muir2017b, p. 281: "from the Tithonian to Valanginian. These microfossil-based ages may only apply to the unit in its type area in the Algoa Basin".
+- muir2017b, p. 283: "Microfossil assemblages from the Bethelsdorp and Colchester Members in the lower part of the Kirkwood Formation of the Algoa Basin are dated as Tithonian (McMillan et al., 1997; McMillan, 2010)".
+- muir2020a, p. 183: "Each are located within either the lacustrine or floodplain deposits of the Kirkwood Formation"; p. 184: "We therefore interpret ages extracted from these samples as direct depositional ages".
+- muir2020a, Table 1, p. 183: preferred ages MATJ 172.6 +0.6/−0.9, HBMB 170.5 ± 0.6, HBUP 162.3 +0.7/−0.9, VOEL 156.4 +0.7/−0.9, CALI 153.8 ± 0.2, ROBE 150.3 ± 0.2 Ma.
+- muir2020a, p. 186: "the Uitenhage Group deposition was well underway by the Aalenian"; "deposition continued from this time through the Jurassic and into the Early Cretaceous, with the PLET bentonite (139.8 ± 0.6 Ma)".
+
+**Ruled out.**
+- *Tithonian to Valanginian for the formation as a whole.* Muir and colleagues (2017) restrict it to the Algoa Basin, and their 2020 dates from the western basins are older.
+- *Only the dated stages.* The paper describes continuous deposition across the span, so the undated Bathonian and Tithonian stay.
+
+**Open.** Whether the Kirkwood of the Algoa Basin, where no pyroclastics have been dated, is older than the Tithonian. A radiometric date from the type area would settle it.
+
 ## What does the Enon Formation paper of Muir and colleagues (2017) say about the Kirkwood?
 
 *2026-11-23*
@@ -21,9 +40,12 @@
 
 ## References
 
+- `muir2017b`: Muir, R. A.; Bordy, E. M.; Reddering, J. S. V.; Viljoen, J. H. A. (2017). Lithostratigraphy of the Kirkwood Formation (Uitenhage Group), including the Bethelsdorp, Colchester and Swartkops Members, South Africa. *South African Journal of Geology* 120(2): 281-293. doi:10.25131/gssajg.120.2.281
+- `muir2020a`: Muir, R. A.; Bordy, E. M.; Mundil, R.; Frei, D. (2020). Recalibrating the breakup history of SW Gondwana: U–Pb radioisotopic age constraints from the southern Cape of South Africa. *Gondwana Research* 84: 177-193. doi:10.1016/j.gr.2020.02.011
 - `muir2017a`: Muir, R. A.; Bordy, E. M.; Reddering, J. S. V.; Viljoen, J. H. A. (2017). Lithostratigraphy of the Enon Formation (Uitenhage Group), South Africa. *South African Journal of Geology* 120(2): 273-280.
 - `forster2023a`: Forster, C. A.; de Klerk, W. J.; Poole, K. E.; Chinsamy-Turan, A.; Roberts, E. M.; Ross, C. F. (2023). Iyuku raathi, a new iguanodontian dinosaur from the Early Cretaceous Kirkwood Formation, South Africa. *The Anatomical Record* 306(7): 1762-1803. doi:10.1002/ar.25038
 
 ## Other references
 
+- `mcphee2016b`: McPhee, B. W.; Mannion, P. D.; de Klerk, W. J.; Choiniere, J. N. (2016). High diversity in the sauropod dinosaur fauna of the Lower Cretaceous Kirkwood Formation of South Africa: implications for the Jurassic-Cretaceous transition. *Cretaceous Research* 59: 228-248.
 - `dingle1983a`: Dingle, R. V.; Siesser, W. G.; Newton, A. R. (1983). Mesozoic and Tertiary Geology of Southern Africa. Balkema, Rotterdam.

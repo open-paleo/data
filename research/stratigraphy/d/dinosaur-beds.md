@@ -1,5 +1,23 @@
 # Dinosaur Beds
 
+## What do Colin and Jacobs (1990) say about the age of the Dinosaur Beds?
+
+*2026-11-25*
+
+**Conclusion.** Aptian or older within the Early Cretaceous. Supersedes the 2026-11-23 entry where it says the Barremian rests on Colin and Jacobs (1990): their ostracods from the Upper Member give "an Aptian minimum age", an age "no younger than Aptian", and they state that a pre-Aptian Early Cretaceous age "cannot be excluded"; they name no Barremian age for the beds. The Barremian is Widlansky and colleagues' (2018) reading of that evidence, and it fits the paper, which reports the ostracod genus from West African beds "presumably of Barremian age". Their vertebrate correlation is likewise relayed: "an Early Cretaceous age, perhaps as young as Aptian". Governs `stages: [Barremian, Aptian]` on [Dinosaur Beds](../../../stratigraphy/d/dinosaur-beds.yml), unchanged.
+
+**Evidence.**
+- colin1990a, p. 1025: "allow confirmation of an Aptian minimum age for these beds. This is based on the presence of the genus Hourcqia".
+- colin1990a, p. 1026: "indicate an age no younger than Aptian … However, an older (Lower Cretaceous, pre-Aptian) age cannot be excluded."
+- colin1990a, p. 1026: "this genus is also known from older sediments, presumably of Barremian age".
+- colin1990a, p. 1025: "an Early Cretaceous age, perhaps as young as Aptian, is proposed for the Dinosaur Beds".
+
+**Ruled out.**
+- *Aptian alone.* Colin and Jacobs give the Aptian as the youngest age the ostracods allow, not as the only one.
+- *Barremian on Colin and Jacobs's own authority.* They leave the pre-Aptian open without naming a stage.
+
+**Open.** No radiometric or magnetostratigraphic date bears on the beds.
+
 ## What do the cited works say about the age of the Dinosaur Beds?
 
 *2026-11-23*
@@ -39,6 +57,7 @@
 
 ## References
 
+- `colin1990a`: Colin, J. P.; Jacobs, L. L. (1990). L'âge des Couches à Dinosaures du Malawi : apport des ostracodes [On the age of the Malawi Dinosaur Beds: evidence from ostracodes]. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 311: 1025-1029.
 - `widlansky2018a`: Widlansky, S. J.; Clyde, W. C.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2018). Paleomagnetism of the Cretaceous Galula Formation and implications for vertebrate evolution. *Journal of African Earth Sciences* 139: 403-420. doi:10.1016/j.jafrearsci.2017.11.029
 - `dixey1928a`: Dixey, F. (1928). The Dinosaur Beds of Lake Nyasa. *Transactions of the Royal Society of South Africa* 16(1): 55-66. doi:10.1080/00359192809519657
 - `jacobs1993a`: Jacobs, L. L.; Winkler, D. A.; Downs, W. R.; Gomani, E. M. (1993). New material of an Early Cretaceous titanosaurid sauropod dinosaur from Malawi. *Palaeontology* 36(3): 523-534.
@@ -47,7 +66,3 @@
 - `gorscak2017a`: Gorscak, E.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2017). The second titanosaurian (Dinosauria: Sauropoda) from the middle Cretaceous Galula Formation, southwestern Tanzania, with remarks on African titanosaurian diversity. *Journal of Vertebrate Paleontology* 37(4): e1343250. doi:10.1080/02724634.2017.1343250
 - `gorscak2019a`: Gorscak, E.; O'Connor, P. M. (2019). A new African Titanosaurian Sauropod Dinosaur from the middle Cretaceous Galula Formation (Mtuka Member), Rukwa Rift Basin, Southwestern Tanzania. *PLOS ONE* 14(2): e0211412. doi:10.1371/journal.pone.0211412
 - `mannion2026a`: Mannion, P. D.; Carvalho, I. S. (2026). Re-evaluation of the Early Cretaceous titanosauriform sauropod dinosaur Triunfosaurus leonardii from the Triunfo Basin, Brazil: implications for the initial radiations of Somphospondyli and Titanosauria. *Zoological Journal of the Linnean Society* 207(1). doi:10.1093/zoolinnean/zlag073
-
-## Other references
-
-- `colin1990a`: Colin, J. P.; Jacobs, L. L. (1990). L'âge des Couches à Dinosaures du Malawi : apport des ostracodes [On the age of the Malawi Dinosaur Beds: evidence from ostracodes]. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 311: 1025-1029.
