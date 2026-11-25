@@ -61,5 +61,7 @@
 
 ## Other references
 
+- `jones1981a`: Jones, G.; Patrick, R. (1981). Stratigraphy and coal exploration geology of the northeastern Surat Basin. *Coal Geology* 1: 153-163.
+- `gradstein2012a`: Gradstein, F. M.; Ogg, J. G.; Schmitz, M.; Ogg, G. (eds.) (2012). The Geologic Time Scale 2012. Elsevier, Oxford.
 - `exon1976a`: Exon, N. F. (1976). Geology of the Surat Basin in Queensland. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 166.
 - `hill1966a`: Hill, D.; Playford, G.; Woods, J. T. (1966). Jurassic Fossils of Queensland. Queensland Palaeontographical Society, Brisbane.

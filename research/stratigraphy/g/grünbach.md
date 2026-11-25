@@ -39,3 +39,7 @@
 - `suess1881a`: Suess, E. (1881). Note on the Gosau Beds of the Neue Welt, west of Wiener Neustadt. *Quarterly Journal of the Geological Society of London* 37(1-4): 702-703. doi:10.1144/GSL.JGS.1881.037.01-04.50
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439
 - `augustin2023a`: Augustin, F. J.; Ősi, A.; Csiki-Sava, Z. (2023). The Rhabdodontidae (Dinosauria, Ornithischia), an enigmatic dinosaur group endemic to the Late Cretaceous European Archipelago. *Fossil Record* 26(2): 171-189. doi:10.3897/fr.26.108967
+
+## Other references
+
+- `robaszynski1995a`: Robaszynski, F.; Caron, M. (1995). Foraminiferes planctoniques du Crétacé: commentaire de la zonation Europe–Méditerranée [Cretaceous planktonic foraminifera: commentary on the Europe–Mediterranean zonation]. *Bulletin de la Société Géologique de France* 166(6): 681-692.

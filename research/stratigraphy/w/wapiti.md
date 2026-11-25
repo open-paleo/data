@@ -4,7 +4,7 @@
 
 *2026-11-25*
 
-**Conclusion.** Campanian to Maastrichtian. Supersedes the Open line of the 2026-11-23 entry. Fanti and Catuneanu (2009) give the lowest of the formation's five units a "lower–middle Campanian" age, infer that unit 3 is at least in part the updip equivalent of the Bearpaw Formation, and place at the top of unit 5 the Cutbank Coal Zone, whose palynomorphs, relayed from earlier palynological work, include "several Maastrichtian taxa" of the *Mancicorpus gibbus* subzone. Their own estimate puts the lower Red Willow coals, in the upper part of unit 4, at about 70.4 Ma, Maastrichtian on the ICS chart v2024/12, though it rests on the Pipestone Creek bentonite date that Currie and colleagues (2008) relay from Eberth. Their p. 264 phrase "the Campanian Wapiti beds" sits against their own Maastrichtian palynology for the top of the formation. Governs `stages: [Campanian, Maastrichtian]` on [Wapiti](../../../stratigraphy/w/wapiti.yml), unchanged.
+**Conclusion.** Campanian to Maastrichtian. Supersedes the Open line of the 2026-11-23 entry. Fanti and Catuneanu (2009) give the lowest of the formation's five units a "lower–middle Campanian" age, infer that unit 3 is at least in part the updip equivalent of the Bearpaw Formation, and place at the top of unit 5 the Cutbank Coal Zone, whose palynomorphs, relayed from Dawson and colleagues (1994), include "several Maastrichtian taxa" of the *Mancicorpus gibbus* subzone. Their own estimate puts the lower Red Willow coals, in the upper part of unit 4, at about 70.4 Ma, Maastrichtian on the ICS chart v2024/12, though it rests on the Pipestone Creek bentonite date that Currie and colleagues (2008) relay from Eberth. Their p. 264 phrase "the Campanian Wapiti beds" sits against their own Maastrichtian palynology for the top of the formation. Governs `stages: [Campanian, Maastrichtian]` on [Wapiti](../../../stratigraphy/w/wapiti.yml), unchanged.
 
 **Evidence.**
 - fanti2009a, p. 272: "the early progradation of the Wapiti clastic wedge during the lower–middle Campanian".
@@ -41,3 +41,8 @@
 - `fanti2009a`: Fanti, F.; Catuneanu, O. (2009). Stratigraphy of the Upper Cretaceous Wapiti Formation, west-central Alberta, Canada. *Canadian Journal of Earth Sciences* 46(4): 263-286. doi:10.1139/e09-020
 - `currie2008a`: Currie, P. J.; Langston, W.; Tanke, D. H. (2008). A new species of Pachyrhinosaurus (Dinosauria, Ceratopsidae) from the Upper Cretaceous of Alberta, Canada. In *A New Horned Dinosaur from an Upper Cretaceous Bone Bed in Alberta*, pp. 1-108. NRC Research Press.
 - `bell2015a`: Bell, P. R.; Currie, P. J. (2015). A high-latitude dromaeosaurid,Boreonykus certekorum, gen. et sp. nov. (Theropoda), from the upper Campanian Wapiti Formation, west-central Alberta. *Journal of Vertebrate Paleontology* 36(1): e1034359. doi:10.1080/02724634.2015.1034359
+
+## Other references
+
+- `dawson1994a`: Dawson, F.; Kalkreuth, W.; Sweet, A. (1994). Stratigraphy and coal resource potential of the Upper Cretaceous to Tertiary strata of northwestern Alberta. *Geological Survey of Canada Bulletin* 466.
+- `fanti2007a`: Fanti, F. (2007). Unfolding the geological history of the North: new comprehensive survey of the Wapiti Formation, Alberta, Canada. In *Dinosaur Park Symposium — Short Papers, Abstracts and Program (Braman, D.; Therrien, F.; Koppelhus, E.; Taylor, W., eds.)*, pp. 33-38.

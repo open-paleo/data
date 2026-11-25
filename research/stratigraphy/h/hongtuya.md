@@ -15,7 +15,7 @@
 - *73 Ma as a Hongtuya date.* Yan and Chen assign the Daxizhuang basalt only to the Wangshi Group.
 - *70 Ma, Maastrichtian, for the Hongtuya.* It is credited to a volume whose Hongtuya account, in the copy read, prints 85.52 Ma instead.
 
-**Open.** The Maastrichtian, which still rests on Borinder and colleagues (2021) and the work they cite, as the 2026-11-23 entry sets out. Yan and colleagues (2005) has not been read.
+**Open.** The Maastrichtian, which still rests on Borinder and colleagues (2021) citing Xing and colleagues (2014); Xing and colleagues' figures would settle it. Yan and colleagues (2005) has not been read.
 
 ## How does the provincial lithostratigraphy define the Hongtuya, and what dates do the cited works relay for it?
 
@@ -69,6 +69,7 @@
 
 ## Other references
 
+- `xing2014b`: Xing, H.; Zhao, X.; Wang, K.; Li, D.; Chen, S.; Mallon, J. C.; Zhang, Y.; Xu, X. (2014). Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia. *Acta Geologica Sinica (English Edition)* 88(6): 1623-1652. doi:10.1111/1755-6724.12334
 - `yan2005b`: Yan, J.; Chen, J. F.; Xie, Z.; Gao, T. S.; Foland, K. A.; Zhang, X. D.; Liu, M. W. (2005). [Studies on petrology and geochemistry of the Late Cretaceous basalts and mantle-derived xenoliths from eastern Shandong]. *Acta Petrologica Sinica* 21: 99-112.
 - `hu2001a`: Hu, C. Z.; Cheng, Z. W.; Pang, Q. Q.; Fang, X. S. (2001). Shantungosaurus giganteus. Geological Publishing House, Beijing.
 - `liu1994a`: Liu, M. W.; Luan, H. Y.; Chi, P. X.; Xu, L. J. (1994). 山东省侏罗—白垩纪岩石地层清理意见 [Proposals for the revision of the Jurassic–Cretaceous lithostratigraphy of Shandong Province]. *山东地质 [Shandong Geology]* 10(supplement).

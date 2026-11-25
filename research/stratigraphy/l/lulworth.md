@@ -44,4 +44,5 @@
 
 ## Other references
 
+- `casey1968a`: Casey, R. (1968). The type-section of the Volgian stage (Upper Jurassic) at Gorodishche, near Ulyanovsk, U.S.S.R. *Proceedings of the Geological Society of London* 1648: 74.
 - `casey1963a`: Casey, R. (1963). The dawn of the Cretaceous period in Britain. *Bulletin of the South-Eastern Union of Scientific Societies* 117: 1-15.

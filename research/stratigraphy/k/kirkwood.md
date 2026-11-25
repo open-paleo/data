@@ -47,5 +47,7 @@
 
 ## Other references
 
+- `mcmillan1997a`: McMillan, I. K.; Brink, G. I.; Broad, D. S.; Maier, J. J. (1997). Late Mesozoic sedimentary basins off the south coast of South Africa. *Sedimentary Basins of the World* 3: 319-376.
+- `mcmillan2010a`: McMillan, I. K. (2010). The Foraminifera of the Portlandian (Late Jurassic) Bethelsdorp Formation of the onshore Algoa Basin, Eastern Cape Province. Les Rosalines Press, Clovelly.
 - `mcphee2016b`: McPhee, B. W.; Mannion, P. D.; de Klerk, W. J.; Choiniere, J. N. (2016). High diversity in the sauropod dinosaur fauna of the Lower Cretaceous Kirkwood Formation of South Africa: implications for the Jurassic-Cretaceous transition. *Cretaceous Research* 59: 228-248.
 - `dingle1983a`: Dingle, R. V.; Siesser, W. G.; Newton, A. R. (1983). Mesozoic and Tertiary Geology of Southern Africa. Balkema, Rotterdam.

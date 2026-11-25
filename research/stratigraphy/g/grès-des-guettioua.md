@@ -4,7 +4,7 @@
 
 *2026-11-25*
 
-**Conclusion.** Bathonian at the base, from dinosaur bones reported in earlier work; no age of their own. Souhel and Canerot (1989) place the formation at the base of their Ensemble II, with the Iouaridène above, and allow an Upper Jurassic age only for the top of the ensemble, which their Fig. 2 makes the Iouaridène. Their Fig. 2 credits Jenny and colleagues (1981) with a queried Bathonian to Callovian; the 2026-11-23 entry, which reads Jenny and colleagues directly, finds the Bathonian alone, and Jenny's own text decides what Jenny says. The dispute stands. Governs `stages: [Bathonian, Callovian]` and the `dispute` on [Grès des Guettioua](../../../stratigraphy/g/grès-des-guettioua.yml), unchanged.
+**Conclusion.** Bathonian at the base, from dinosaur bones they relay from Monbaron and Taquet (1981); no age of their own. Souhel and Canerot (1989) place the formation at the base of their Ensemble II, with the Iouaridène above, and allow an Upper Jurassic age only for the top of the ensemble, which their Fig. 2 makes the Iouaridène. Their Fig. 2 credits Jenny and colleagues (1981) with a queried Bathonian to Callovian; the 2026-11-23 entry, which reads Jenny and colleagues directly, finds the Bathonian alone, and Jenny's own text decides what Jenny says. The dispute stands. Governs `stages: [Bathonian, Callovian]` and the `dispute` on [Grès des Guettioua](../../../stratigraphy/g/grès-des-guettioua.yml), unchanged.
 
 **Evidence.**
 - souhel1989a, p. 42: Ensemble II comprises "the Guettioua and Iouaridène Formations, assigned to the Middle Jurassic (Bathonian), certain at the base owing to the discovery of Dinosaur bones (MONBARON and TAQUET, 1982)" (translated).
@@ -43,4 +43,5 @@
 
 ## Other references
 
+- `monbaron1981a`: Monbaron, M.; Taquet, P. (1981). Découverte du squelette complet d'un grand Cétiosaure (Dinosaure, Soraupode) dans le bassin jurassique moyen de Tilougguit [Discovery of the complete skeleton of a large cetiosaur (Dinosauria, Sauropoda) in the Middle Jurassic Tilougguit basin]. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 292(2): 243-246.
 - `monbaron1980a`: Monbaron, M. (1980). Le magmatisme de la région de Tagalft, dans son contexte géologique régional (Haut Atlas central, Maroc) [Magmatism of the Tagalft region in its regional geological context (central High Atlas, Morocco)]. *Comptes Rendus de l'Académie des Sciences, Paris, série D* 290: 1337-1340.

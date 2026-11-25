@@ -49,4 +49,7 @@
 
 ## Other references
 
+- `musacchio1971a`: Musacchio, E. A.; Riccardi, A. C. (1971). Estratigrafía, principalmente del Jurásico, en la Sierra de Agnia, Chubut, República Argentina [Stratigraphy, mainly of the Jurassic, in the Sierra de Agnia, Chubut, Argentina]. *Revista de la Asociación Geológica Argentina* 26(2): 272-273.
+- `blasco1979a`: Blasco, G.; Levy, R.; Nullo, F. (1979). Los amonites de la formación Osta Arena (Liásico) y su posición estratigráfica, Pampa de Agnia (Provincia de Chubut) [The ammonites of the Osta Arena Formation (Liassic) and their stratigraphic position, Pampa de Agnia (Chubut Province)]. In *VII Congreso Geológico Argentino, Actas*, pp. 407-429.
+- `hillebrandt1987a`: Hillebrandt, A. von (1987). Liassic ammonite zones of South America and correlations with other provinces. In *Bioestratigrafía de los Sistemas Regionales del Jurásico y Cretácico de América del Sur (Volkheimer, W., ed.)*, pp. 111-129. Com. Sudam. Juras. Cretac., Mendoza.
 - `nullo1975a`: Nullo, F.; Proserpio, C. (1975). La Formación Taquetrén en Cañadón del Zaino (Chubut) y sus relaciones estratigráficas en el ámbito de la Patagonia, de acuerdo a la flora, República Argentina [The Taquetrén Formation at Cañadón del Zaino (Chubut) and its stratigraphic relationships within Patagonia, according to the flora, Argentina]. *Revista de la Asociación Geológica Argentina* 30(2): 133-150.
