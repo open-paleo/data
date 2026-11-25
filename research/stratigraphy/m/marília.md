@@ -8,7 +8,7 @@
 
 **Evidence.**
 - soares1980a, p. 182: "In this work the Marília Formation is defined as a unit composed of coarse to conglomeratic sandstones, with angular grains, variable matrix content, poor sorting" (translated); "The type section of the Marília Formation is located on the southern escarpment of the Marília Plateau, between the Rio do Peixe and the city of Marília", with "Another reference section presented is that of Monte Alto" (translated).
-- soares2020a, p. 953 (early-view version, p. 3): "this work refers to the deposits of the Marília Formation exposed in the northeastern part of the Bauru Basin (traditionally subdivided in Serra da Galga and Ponte Alta members) as the Serra da Galga Formation".
+- soares2020a, p. 953: "this work refers to the deposits of the Marília Formation exposed in the northeastern part of the Bauru Basin (traditionally subdivided in Serra da Galga and Ponte Alta members) as the Serra da Galga Formation".
 - iori2021a, p. 2: "the Marília Formation was reduced to the area of occurrence of the Echaporã Member"; "the majority of species used to formerly establish the relative dating of Marília Formation comes from the deposits now recognized as the new unit Serra da Galga Formation. Hence, considering the lateral relationships among the three formerly known members, a similar age is assumed".
 - iori2021a, p. 4, Locality and horizon: the Monte Alto site is in the "Marília Formation, Bauru Group, Bauru Basin, Upper Cretaceous (Maastrichtian)".
 - arai2023a, p. 2, English abstract: "micropaleontology of charophytes and ostracods has indicated Maastrichtian (upper Maastrichtian?) strata in the Serra da Galga Formation".
