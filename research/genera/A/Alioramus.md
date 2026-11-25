@@ -52,7 +52,7 @@
 
 **Evidence.**
 - kurzanov1976b, introduction (translated): "The upper red-colored beds are characterized only by scattered fragments of skulls"; *Alioramus remotus* "occurs in the lower gray beds".
-- barsbold1983a (translated), Nemegtskaya Horizon: "The theropod complex consists of tyrannosaurids (*Tarbosaurus, Alioramus*)"; "The upper part is represented by deposits of a somewhat different origin, and is considerably poor with regard to dinosaur remains. A similar thickness has exposures partly in the Nogon Tsav location (here identified under the name Nogon Tsav Svita".
+- barsbold1983a (translated), p. 82, Nemegtskaya Horizon: "The theropod complex consists of tyrannosaurids (*Tarbosaurus, Alioramus*)"; "The upper part is represented by deposits of a somewhat different origin, and is considerably poor with regard to dinosaur remains. A similar thickness has exposures partly in the Nogon Tsav location (here identified under the name Nogon Tsav Svita".
 - jones2026c, p. 502: "Beds of Nogon Tsav, Mongolia"; weishampel2004a, pp. 112–113: "Beds of Nogoon Tsav (Bayankhongor), Mongolia".
 
 **Ruled out.**

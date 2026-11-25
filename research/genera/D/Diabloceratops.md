@@ -7,8 +7,8 @@
 **Conclusion.** No. Its type locality is Last Chance Canyon, and Last Chance Creek is a nearby watercourse. Since 2022 the creek's name is also that of the lowest member of the Wahweap Formation, below the Reynolds Point Member that yielded the skull. Governs `location.locality: Last Chance Canyon` and `location.member: Reynolds Point` on [*Diabloceratops eatoni*](../../../genera/D/Diabloceratops.yml).
 
 **Evidence.**
-- kirkland2010a, Systematic Paleontology, Type Locality: "42Ka800V Grand Staircase-Escalante National Monument on the south side of Last Chance Canyon on the north flank of Reynolds Point".
-- kirkland2010a, Introduction: the skull was found "near the middle of the middle mudstone member of the Wahweap Formation (Eaton, 1991) near Last Chance Creek on the north side of Reynolds Point".
+- kirkland2010a, p. 122, Systematic Paleontology, Type Locality: "42Ka800V, Grand Staircase–Escalante National Monument, south side of Last Chance Canyon, north flank of Reynolds Point".
+- kirkland2010a, p. 118, Introduction: the skull was found "near the middle of the middle mudstone member of the Wahweap Formation (Eaton 1991) near Last Chance Creek on the north side of Reynolds Point".
 - beveridge2022a, p. 5: "The Last Chance Creek Member (formerly the lower member)"; "The name Last Chance Creek is derived from the so-named watercourse adjacent to the Reynolds Point lectostratotype section ... and proximal to the holotype locality of the ceratopsid dinosaur *Diabloceratops eatoni*".
 - beveridge2022a, p. 18: "collected from a typical channel lag deposit in the Reynolds Point Member 105 m above the base of the Wahweap Formation (UMNH VP Loc. 1092)".
 
