@@ -1,5 +1,20 @@
 # Baruungoyot
 
+## Do Shuvalov's basalt dates of 78–80 Myr belong to the svita?
+
+*2026-11-25*
+
+**Conclusion.** Only as his text states them. Shuvalov (2000) gives K–Ar dates of 78–80 Myr from basalts "in the middle and upper parts of the svita", but his Table 14.2 lists two other figures under the Baruungoyot Svita: 75 ± 7 Myr from an upper-svita basalt at Chuluut Uul, and 80 Myr from a North Mongolian "basaltic sheet on the Lower Cretaceous" that the row does not place in the svita. All three are Campanian on the ICS chart v2024/12, so the stages are unaffected; the dispute summary now says what the table shows. Governs the `dispute` and the note on shuvalov2000a on [Baruungoyot](../../../stratigraphy/b/baruungoyot.yml); `stages` unchanged.
+
+**Evidence.**
+- shuvalov2000a, pp. 269–270: "K–Ar dates from basalts in the middle and upper parts of the svita (in the gorge Borzongiin Gobi and others) are 78–80 Myr (Campanian)."
+- shuvalov2000a, Table 14.2, p. 261: under "Baruungoyot Svita", "1. South Gobi, Chuluut Uul mountain, upper part of svita, basalt", "75 ± 7 (IGEM)"; "2. North Mongolia, Tsagaan Nuur depression, basaltic sheet on the Lower Cretaceous", "80 (IG)".
+
+**Ruled out.**
+- *78–80 Myr as table dates from within the svita.* The table has neither figure for a sample placed in the svita.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Baruungoyot?
 
 *2026-11-23*
@@ -97,10 +112,10 @@
 
 ## References
 
+- `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 256-278. Cambridge University Press, Cambridge.
 - `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
 - `kielan-jaworowska1974a`: Kielan-Jaworowska, Z. (1974). Migrations of the Multituberculata and the Late Cretaceous connections between Asia and North America. *Annals of the South African Museum* 64: 231-243.
 - `karczewska1983a`: Karczewska, J.; Ziembinska-Tworzydlo, M. (1983). Age of the Upper Cretaceous Nemegt Formation (Mongolia) on charophytan evidence. *Acta Palaeontologica Polonica* 28(1-2): 137-146.
-- `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 256-278. Cambridge University Press, Cambridge.
 - `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `fanti2012a`: Fanti, F.; Currie, P. J.; Badamgarav, D.; Lalueza-Fox, C. (2012). New specimens of Nemegtomaia from the Baruungoyot and Nemegt Formations (Late Cretaceous) of Mongolia. *PLOS ONE* 7(2): e31330. doi:10.1371/journal.pone.0031330

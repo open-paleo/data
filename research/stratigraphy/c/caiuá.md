@@ -1,5 +1,19 @@
 # Caiuá
 
+## Does Batezelli (2015) adopt the Aptian–Albian himself?
+
+*2026-11-25*
+
+**Conclusion.** Yes. Batezelli (2015) reports the Aptian–Albian as other authors' suggestion and also states it in his own voice, "the Aptian/Albian Sequence 1", without citation; his own chronostratigraphic chart draws the group over the same interval. Governs the note on batezelli2015a on [Caiuá](../../../stratigraphy/c/caiuá.yml); no value changes.
+
+**Evidence.**
+- batezelli2015a, p. 4: "some authors also suggests Aptian-Albian ages to the Caiuá Group (e.g. Fulfaro et al., 1999; Dias-Brito et al., 2001)".
+- batezelli2015a, p. 13: "the expressive Unconformity K-0 was overlain by the aeolian deposits of the Aptian/Albian Sequence 1 (Figs 12 and 13)".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the makeup of the Caiuá Group and the source of its Aptian–Albian?
 
 *2026-11-23*
@@ -37,8 +51,8 @@ Nothing beyond the readings the 2026-10-09 entry rules out.
 
 ## References
 
-- `fernandes2000a`: Fernandes, L. A.; Coimbra, A. M. (2000). Revisão estratigráfica da parte oriental da Bacia Bauru (Neocretáceo) [Stratigraphic review of the eastern portion of the Bauru Basin (Neocretaceous)]. *Revista Brasileira de Geociências* 30(4): 717-728. doi:10.25249/0375-7536.2000304717728
 - `batezelli2015a`: Batezelli, A. (2015). Continental systems tracts of the Brazilian Cretaceous Bauru Basin and their relationship with the tectonic and climatic evolution of South America. *Basin Research* 29(S1): 1-25. doi:10.1111/bre.12128
+- `fernandes2000a`: Fernandes, L. A.; Coimbra, A. M. (2000). Revisão estratigráfica da parte oriental da Bacia Bauru (Neocretáceo) [Stratigraphic review of the eastern portion of the Bauru Basin (Neocretaceous)]. *Revista Brasileira de Geociências* 30(4): 717-728. doi:10.25249/0375-7536.2000304717728
 - `dias2020a`: Dias, A. N. C.; Chemale, F.; Candeiro, C. R. A.; Lana, C. C.; Guadagnin, F.; Sales, A. S. W. (2020). Unraveling multiple tectonic events and source areas in the intracratonic Bauru Basin through combined zircon geo and thermochronological studies. *Journal of South American Earth Sciences* 106: 103061. doi:10.1016/j.jsames.2020.103061
 - `menegazzo2016a`: Menegazzo, M. C.; Catuneanu, O.; Chang, H. K. (2016). The South American retroarc foreland system: the development of the Bauru Basin in the back-bulge province. *Marine and Petroleum Geology* 73: 131-156. doi:10.1016/j.marpetgeo.2016.02.027
 

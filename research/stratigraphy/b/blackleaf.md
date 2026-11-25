@@ -1,5 +1,19 @@
 # Blackleaf
 
+## Does Tykoski and colleagues' (2023) paper date the Blackleaf?
+
+*2026-11-25*
+
+**Conclusion.** No. Tykoski and colleagues (2023) name the Blackleaf among "Older deposits" than the Cenomanian Lewisville and Mussentuchit faunas and give it no stage; the "Albian-Cenomanian" the earlier note quoted is the title of Ullmann and colleagues' paper in their reference list. Governs the note on tykoski2023a on [Blackleaf](../../../stratigraphy/b/blackleaf.yml); `stages` unchanged.
+
+**Evidence.**
+- tykoski2023a, p. e2257238-7: "Older deposits, such as the Blackleaf, Twin Mountains, and Cloverly formations each preserve at least one small-bodied ornithopod".
+
+**Ruled out.**
+- *Albian–Cenomanian as Tykoski and colleagues' dating.* It is a cited title.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Blackleaf Formation?
 
 *2026-11-23*
@@ -18,6 +32,7 @@
 
 ## References
 
+- `tykoski2023a`: Tykoski, R. S.; Contreras, D. L.; Noto, C. (2023). The first small-bodied ornithopod dinosaur from the Lewisville Formation (middle Cenomanian) of Texas. *Journal of Vertebrate Paleontology* 43(2). doi:10.1080/02724634.2023.2257238
 - `ullmann2011a`: Ullmann, P. V.; Varricchio, D.; Knell, M. J. (2011). Taphonomy and taxonomy of a vertebrate microsite in the mid-Cretaceous (Albian-Cenomanian) Blackleaf Formation, southwest Montana. *Historical Biology* 24(3): 311-328. doi:10.1080/08912963.2011.602405
 
 ## Other references

@@ -1,5 +1,22 @@
 # Black Creek
 
+## Does any published source place the Black Creek in the Maastrichtian?
+
+*2026-11-25*
+
+**Conclusion.** No; the Maastrichtian is dropped. It rests only on Brett-Surman (1989), a doctoral thesis, and a thesis never sole-sources an age. Every published work read dates the formation Campanian: Stephenson (1914) places its marine beds in the *Exogyra ponderosa* zone and the *Exogyra costata* zone in the overlying Peedee sand, Gallagher (1993) gives the *E. ponderosa* units as late Campanian, and Baird and Horner (1979) give the formation and its Phoebus Landing assemblage as Campanian. Governs `stages: [Campanian]` on [Black Creek](../../../stratigraphy/b/black-creek.yml); [*Hypsibema crassicauda*](../../../genera/H/Hypsibema.yml), Campanian, is unaffected.
+
+**Evidence.**
+- gallagher1993a, p. 86: "*E. ponderosa* is a zone fossil for the Marshalltown Formation in New Jersey, the Black Creek Formation of North Carolina, and the Taylor Formation of Texas; these units are late Campanian in age."
+- stephenson1914a, p. 31: "In the Carolinas the vertical ranges of typical specimens of *Exogyra ponderosa* and *Exogyra costata* overlap little if any".
+- baird1979a, p. 10: "the Phoebus Landing assemblage is Campanian in age".
+- brett-surman1989a, p. 144: "Black Creek Fm, Campanian-Maastrichtian", in a doctoral thesis.
+
+**Ruled out.**
+- *Maastrichtian, from Brett-Surman (1989).* A thesis, and no published source repeats it.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Black Creek Formation?
 
 *2026-11-23*
@@ -18,9 +35,11 @@
 
 ## References
 
+- `gallagher1993a`: Gallagher, W. B. (1993). The Cretaceous/Tertiary mass extinction event in the northern Atlantic Coastal Plain. *The Mosasaur* 5: 75-154.
+- `stephenson1914a`: Stephenson, L. W. (1914). Cretaceous deposits of the eastern Gulf region and species of Exogyra from the eastern Gulf region and the Carolinas. *United States Geological Survey Professional Paper* 81. doi:10.3133/pp81
 - `baird1979a`: Baird, D.; Horner, J. R. (1979). Cretaceous dinosaurs of North Carolina. *Brimleyana* 2: 1-28.
+- `brett-surman1989a`: Brett-Surman, M. K. (1989). A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian. Doctoral thesis, The George Washington University.
 
 ## Other references
 
 - `brett1961a`: Brett, C. E.; Wheeler, W. H. (1961). A biostratigraphic evaluation of the Snow Hill Member, Upper Cretaceous of North Carolina. *Southeastern Geology* 5(2): 49-132.
-- `brett-surman1989a`: Brett-Surman, M. K. (1989). A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian. Doctoral thesis, The George Washington University.

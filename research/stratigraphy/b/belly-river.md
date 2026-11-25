@@ -1,5 +1,21 @@
 # Belly River
 
+## What is the CSPG lexicon's 85.8 Ma, and does the Santonian stand?
+
+*2026-11-25*
+
+**Conclusion.** The lexicon's numbers are stage limits, and the Santonian stands. The lexicon gives the Belly River Formation "Santonian - Campanian (85.8 - 70.6 ma)"; 85.8 and 70.6 Ma are GTS2004's bases of the Santonian and Maastrichtian, so they restate the stages and date nothing. The lexicon's Belly River is the foothills unit running from the Wapiabi to the Bearpaw and taking in Milk River equivalents, and Rozhdestvensky (1968) dates the formation "to the Campanian and Upper Santonian"; both are published readings. Eberth (2005) and Brown and colleagues (2013) date the group in Dinosaur Provincial Park and the Red Deer valley to the Campanian only, which adds no stage and removes none. Governs `stages: [Santonian, Campanian]` and the note on cspg2010a on [Belly River](../../../stratigraphy/b/belly-river.yml), unchanged.
+
+**Evidence.**
+- cspg2010a, p. ?: "Age Interval: Santonian - Campanian (85.8 - 70.6 ma)"; "The name Belly River Formation has been applied in the southern Alberta Foothills to the undivided sequence from the Wapiabi Formation to the Bearpaw Formation, including Judith River, Pakowki and Milk River equivalents."
+- ogg2004a, Table 19.4, p. 382: "Base of Santonian", 85.8; "Base of Maastrichtian", 70.6.
+- rozhdestvensky1968a, p. ?: "the Belly River Formation which has been dated to the Campanian and Upper Santonian".
+
+**Ruled out.**
+- *85.8 Ma as a date for the base of the unit.* It is the GTS2004 base of the Santonian.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the rank, contents and age of the Belly River?
 
 *2026-11-23*
@@ -24,6 +40,9 @@
 
 ## References
 
+- `cspg2010a`: Canadian Society of Petroleum Geologists (2010). Belly River Formation. Canadian Society of Petroleum Geologists.
+- `ogg2004a`: Ogg, J. G.; Agterberg, F. P.; Gradstein, F. M. (2004). The Cretaceous Period. In *A Geologic Time Scale 2004 (Gradstein, F. M.; Ogg, J. G.; Smith, A. G., eds)*, pp. 344-383. Cambridge University Press, Cambridge. doi:10.1017/CBO9780511536045.020
+- `rozhdestvensky1968a`: Rozhdestvensky, A. K. (1968). Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]. *[Upper Paleozoic and Mesozoic Amphibians and Reptiles]. Akademia Naul SSSR, Moscow*: 97-141.
 - `dawson1883a`: Dawson, G. M. (1883). Preliminary report on the geology of the Bow and Belly rivers region, North-west Territory, with special reference to coal deposits. *Geological and Natural History Survey and Museum of Canada, Report of Progress, 1880–82*: 1-23.
 - `eberth2005a`: Eberth, D. A. (2005). The geology. In *Dinosaur Provincial Park: A Spectacular Ancient Ecosystem Revealed*, pp. 54-82. Indiana University Press, Bloomington.
 

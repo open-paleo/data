@@ -1,5 +1,22 @@
 # Cabaços
 
+## Does the Cabaços reach the Callovian?
+
+*2026-11-25*
+
+**Conclusion.** Not on the formation's own sources, but the Callovian stays until the *Alocodon* horizon is placed. Azerêdo and colleagues (2002) attribute the formation to the Middle Oxfordian and add only that its lowermost part "could also encompass the Lower Oxfordian or even the uppermost Callovian"; a possibility is not a reading. Kullberg and colleagues (2013) give the Middle Oxfordian Plicatilis Zone, and Schneider and colleagues (2009) start the formation in the "?latest Early/Middle Oxfordian". Removing the Callovian would leave [*Alocodon kuehnei*](../../../genera/A/Alocodon.yml), placed in this formation at Pedrógão, outside its unit: Thulborn (1973) dates the Pedrógão horizon Upper Callovian on ostracods, while Azerêdo and colleagues put Late Callovian ammonites at Pedrógão below the disconformity that the Cabaços overlies. Which unit the *Alocodon* horizon belongs to is filed as a separate finding. Governs `stages: [Callovian, Oxfordian, Kimmeridgian]` and `period` on [Cabaços](../../../stratigraphy/c/cabaços.yml), unchanged for now.
+
+**Evidence.**
+- azerêdo2002a, p. 1342: "this alga is virtually absent in the lowermost part of the formation, which therefore could also encompass the Lower Oxfordian or even the uppermost Callovian".
+- kullberg2013a, p. 227: the Cabaços Formation, "[Middle Oxfordian, Plicatilis Zone]" (translated).
+- schneider2009a, p. 1951: "the Late Jurassic sedimentation started in the ?latest Early/Middle Oxfordian all across the Lusitanian Basin".
+- thulborn1973a, p. 94: "All specimens were collected from marls of Upper Callovian age near the village of Pedrógão".
+
+**Ruled out.**
+- *Callovian from Azerêdo and colleagues' possibility.* A possibility is not a reading; the stage stays only pending the *Alocodon* finding.
+
+**Open.** Whether the *Alocodon* horizon at Pedrógão lies in the Cabaços or in the Callovian beds below the disconformity. If below, the Callovian and Middle Jurassic leave this formation.
+
 ## What do the cited works say about the age of the Cabaços?
 
 *2026-11-23*
@@ -28,6 +45,7 @@
 - `azerêdo2002a`: Azerêdo, A. C.; Wright, V. P.; Ramalho, M. M. (2002). The Middle–Late Jurassic forced regression and disconformity in central Portugal: eustatic, tectonic and climatic effects on a carbonate ramp system. *Sedimentology* 49(6): 1339-1370. doi:10.1046/j.1365-3091.2002.00501.x
 - `kullberg2013a`: Kullberg, J. C.; Rocha, R. B.; Soares, A. F.; Rey, J.; Terrinha, P.; Azerêdo, A. C.; Callapez, P.; Duarte, L. V.; Kullberg, M. C.; Martins, L.; Miranda, R.; Alves, C.; Mata, J.; Madeira, J.; Mateus, O.; Moreira, M.; Nogueira, C. R. (2013). A Bacia Lusitaniana: Estratigrafia, Paleogeografia e Tectónica [The Lusitanian Basin: stratigraphy, paleogeography and tectonics]. In *Geologia de Portugal, Volume II – Geologia Meso-cenozóica de Portugal*, pp. 989-1141. Escolar Editora, Lisboa.
 - `schneider2009a`: Schneider, S.; Fürsich, F. T.; Werner, W. (2009). Sr-isotope stratigraphy of the Upper Jurassic of central Portugal (Lusitanian Basin) based on oyster shells. *International Journal of Earth Sciences* 98(8): 1949-1970. doi:10.1007/s00531-008-0359-3
+- `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
 - `choffat1901a`: Choffat, P. (1901). Notice préliminaire sur la limite entre le Jurassique et le Crétacé en Portugal [Preliminary notice on the boundary between the Jurassic and the Cretaceous in Portugal]. *Bulletin de la Société Belge de Géologie, de Paléontologie et d'Hydrologie* 15: 111-140.
 
 ## Other references
