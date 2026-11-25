@@ -12,7 +12,7 @@
 - bussert2009a, p. 170: "The age of the Tendaguru Formation ranges at least from the middle Oxfordian to the Hauterivian or possibly Aptian, but the exact chronostratigraphy of its members still needs to be established."
 - schrank2005a, p. 49: the cysts come "from the dinosaur-bearing Tendaguru Beds (Upper Jurassic-Lower Cretaceous)"; "the Rigaudella aemula-Chlamydophorella wallala assemblage from the Nerinea Bed (Oxfordian to Kimmeridgian)"; "the Muderongia-Oligosphaeridium assemblage probably from the Trigonia schwarzi Bed at Namunda Plateau, 8 km south of Tendaguru".
 - schrank2005a, p. 78: "This indicates a late Valanginian to Hauterivian age for the Muderongia—Oligosphaeridium assemblage, which is supported by ammonite data from the Trigonia schwarzi Bed (Valanginian to Barremian; Zwierzycki, 1914)".
-- mannion2019a, p. 785: "The Late Jurassic section of the Tendaguru Formation of southeastern Tanzania"; p. 862: "The Late Jurassic (Kimmeridgian–Tithonian) Tendaguru Formation has yielded evidence for at least seven sauropod genera".
+- mannion2019a, p. 785: "The Late Jurassic section of the Tendaguru Formation of south-eastern Tanzania"; p. 862: "The Late Jurassic (Kimmeridgian–Tithonian) Tendaguru Formation has yielded evidence for at least seven sauropod genera".
 - mannion2019a, pp. 788, 812, 817, 822: "Upper Dinosaur Member (Upper Saurian Bed), Tendaguru Formation; Tithonian, Late Jurassic", the horizon line for each sauropod treated.
 
 **Ruled out.**

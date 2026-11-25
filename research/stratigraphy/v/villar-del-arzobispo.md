@@ -37,7 +37,7 @@
 - aurell2016a, pp. 138, 159: "Two new lithostratigraphic units are defined and characterized, the Aguilar del Alfambra and the Galve formations", replacing a framework of "only two lithostratigraphic units (the Villar del Arzobispo and El Castellar formations) bounded by a single regional unconformity, and this resulted in significant misinterpretations"; *Galvesaurus* was "found in the lower half of the unit", the restricted Villar del Arzobispo.
 - campos-soto2019a, pp. 494, 496: "the new units defined by Aurell et al. (2016) cannot be accepted because of several reasons", namely their nomenclature and limits under the International Stratigraphic Guide, ages that disagree with later dating, and boundaries drawn at what "are, in fact, minor and local unconformities". For the Las Zabacheras section itself, though, "we could not obtain foraminifera with chronostratigraphic value".
 - santos2018a: the palynology of the *Aragosaurus* level "indicates a Berriasian age (most likely early Berriasian)", in the Villar del Arzobispo Formation.
-- mannion2019a: *Aragosaurus* "has most recently been placed in the lower section of the Galve Formation and assigned a probable late Berriasian–early Valanginian age (Aurell et al., 2016)".
+- mannion2019a, p. 864: *Aragosaurus* "has most recently been placed in the lower section of the Galve Formation and assigned a probable late Berriasian–early Valanginian age (Aurell et al., 2016)".
 - pérez-pueyo2019a: "The 'Cuesta Lonsal-1' site is included within the Villar del Arzobispo Fm. (Aurell et al., 2016)".
 - sánchez-fenollosa2026a: "The Villar del Arzobispo Formation (sensu Campos-Soto et al., 2019, eastern Spain)".
 

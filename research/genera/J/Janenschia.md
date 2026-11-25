@@ -8,7 +8,7 @@
 
 **Evidence.**
 - wild1991a: "Stratum typicum: Upper Saurian marl, upper Kimmeridgian (Janensch 1961: 188)".
-- mannion2019a: "Upper Dinosaur Member (Upper Saurian Bed), Tendaguru Formation; Tithonian, Late Jurassic".
+- mannion2019a, p. 788: "Upper Dinosaur Member (Upper Saurian Bed), Tendaguru Formation; Tithonian, Late Jurassic".
 - bussert2009a, p. 165: "More work is needed to decide unambiguously whether the Upper Dinosaur Member is wholly Late Jurassic or, in part, Early Cretaceous."
 
 **Ruled out.**
@@ -23,7 +23,7 @@
 **Conclusion.** Tithonian, from the Upper Dinosaur Member at Quarry B, as Mannion and colleagues (2019) give it. Governs `period.stage: [Tithonian]` on [*Janenschia robusta*](../../../genera/J/Janenschia.yml). The member's wider range is discussed in [Tendaguru](../../stratigraphy/t/tendaguru.md).
 
 **Evidence.**
-- mannion2019a, Systematic palaeontology, *Janenschia*: "Type locality and horizon: Quarry B, approximately 900 m southeast of Tendaguru Hill …; Upper Dinosaur Member (Upper Saurian Bed), Tendaguru Formation; Tithonian, Late Jurassic".
+- mannion2019a, p. 788, Systematic palaeontology, *Janenschia*: "Type locality and horizon: Quarry B, approximately 900 m southeast of Tendaguru Hill …; Upper Dinosaur Member (Upper Saurian Bed), Tendaguru Formation; Tithonian, Late Jurassic".
 - jones2026b, p. 375: "Tendaguru Fm., Tanzania *Late Jurassic, Tithonian*".
 - upchurch2004a, Table 13.1: *J. robusta*, "Tendaguru Formation (Mtwara), Tanzania", "Kimmeridgian".
 

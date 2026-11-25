@@ -8,7 +8,7 @@
 
 **Evidence.**
 - bussert2009a, p. 142: "Tendaguru Hill located approximately 10 km south of Mtapaia in the Lindi district, southeast Tanzania".
-- mannion2019a, p. 788: *Janenschia* from "Quarry B, approximately 900 m southeast of Tendaguru Hill, Lindi District, southeastern Tanzania"; the same paper gives Lindi District for Quarry G, "600 m south of Tendaguru Hill" (p. 817), and for Nambango, "about 15 km southeast of Tendaguru Hill" (p. 812).
+- mannion2019a, p. 788: *Janenschia* from "Quarry B, approximately 900 m southeast of Tendaguru Hill, Lindi District, southeastern Tanzania"; the same paper gives Lindi District for Quarry G, "600 m south of Tendaguru Hill" (p. 817), and for Nambango, "about 15 km south-east of Tendaguru Hill" (p. 812).
 
 **Ruled out.**
 - *Mtwara (`TZ-17`).* McIntosh (1990) lists *Brachiosaurus brancai* from "Tendaguru Beds, Mtwara, Tanzania" (mcintosh1990a, Table 16.1); Upchurch and colleagues (2004) give "Tendaguru Formation (Mtwara), Tanzania" (upchurch2004a, Table 13.1); Carrano and colleagues (2012) give "Kindope, north of Tendaguru, Mtwara, Tanzania" for *Elaphrosaurus* (carrano2012a, p. 231). These are compilation rows and name no site evidence; the papers that describe the sites give Lindi.

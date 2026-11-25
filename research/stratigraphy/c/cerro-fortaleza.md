@@ -7,9 +7,9 @@
 **Conclusion.** Campanian to Maastrichtian, with the Maastrichtian queried. In the western part of their study area, between Lago Viedma and Lago Argentino, detrital zircon samples throughout the terrestrial Cerro Fortaleza give maximum depositional ages throughout the Campanian, the stratigraphically highest 76.2 ± 1.6 Ma (quoted in the 2026-08-05 entry). The paper itself calls the formation "Campanian – Maastrichtian(?)", and in the southeast of the study area it describes the regional Paleogene unconformity as placing shallow marine rocks of probable Eocene age, the Man Aike Formation, on "Campanian to Maastrichtian rocks (Cerro Fortaleza Formation)". The Maastrichtian is the paper's own reading of the unit's top, beside maximum ages that set only a floor. Governs `stages: [Campanian, Maastrichtian]` on [Cerro Fortaleza](../../../stratigraphy/c/cerro-fortaleza.yml).
 
 **Evidence.**
-- sickmann2018a, p. ? (accepted manuscript, p. 12): "Stratigraphic correlation in the western part of the study area between Lago Viedma and Lago Argentino".
-- sickmann2018a, p. ? (accepted manuscript, p. 17): "In the southeastern part of the study area (Fig. 4), the unconformity places shallow marine rocks of probable Eocene age (Man Aike Formation) on Campanian to Maastrichtian rocks (Cerro Fortaleza Formation)".
-- sickmann2018a, p. ? (accepted manuscript, p. 18): "From the Campanian(?) La Anita to Campanian – Maastrichtian(?) Cerro Fortaleza Formations".
+- sickmann2018a, p. 717: "Stratigraphic correlations in the western part of the study area, between Lago Viedma and Lago Argentino".
+- sickmann2018a, p. 723: "In the southeastern part of the study area (Fig. 5), the unconformity places shallow marine rocks of probable Eocene age (Man Aike Formation) on Campanian to Maastrichtian rocks (Cerro Fortaleza Formation)".
+- sickmann2018a, p. 724: "From the Campanian(?) La Anita to Campanian – Maastrichtian(?) Cerro Fortaleza Formations".
 
 **Ruled out.** Nothing beyond the readings the 2026-10-13 and 2026-08-05 entries rule out.
 
@@ -40,7 +40,7 @@
 - aranciagarolando2022a, p. 2, Introduction: "*Orkoraptor burkei* from the Cerro Fortaleza Formation (Campanian)".
 - santucci2022a, p. 374: for *Puertasaurus reuili*, "Cerro Los Hornos, La Leona, Santa Cruz Province, Argentina … Cerro Fortaleza Formation (=Pari Aike Formation), Magallanes-Austral Basin, Campanian (Upper Cretaceous)".
 - novas2019a, p. 274: "Cerro Fortaleza Formation is Campanian (around 76.2Ma, based on studies by Sickman *et al*., 2018)"; "The Cerro Fortaleza beds, at Cerro de Los Hornos fossil site, shed different dinosaur taxa (i.e., *Talenkauen, Orkoraptor, Puertasaurus, Dreadnoughtus*".
-- sickmann2018a, accepted manuscript, p. 13, Results: "Samples throughout the terrestrial Cerro Fortaleza Formation in this area show maximum depositional ages throughout the Campanian with the stratigraphically highest sample EP-13 providing a YC1σ MDA of 76.2 ± 1.6 Ma".
+- sickmann2018a, p. 719, Results: "Samples throughout the terrestrial Cerro Fortaleza Formation in this area show maximum depositional ages that are Campanian, with the stratigraphically highest sample EP-13 providing a YC1σ MDA of 76.2 ± 1.6 Ma".
 
 **Ruled out.**
 - *Cenomanian.* Jones (2026) gives both as from the "Mata Amarilla Fm., Argentina, Late Cretaceous, Cenomanian" (jones2026c, Carcharodontosauria systematics table; jones2026b, Lithostrotia systematics table). The Cenomanian is the Mata Amarilla's age, "a U-Pb concordia age of 96.23±0.71 Ma, which corresponds to the middle Cenomanian" (varela2012a, p. 359), and neither holotype is from that unit (see [*Orkoraptor*](../../genera/O/Orkoraptor.md) and [*Puertasaurus*](../../genera/P/Puertasaurus.md)). Novas and colleagues (2013) gave "the beds that yielded Orkoraptor (i.e., Mata Amarilla Formation, former Pari Aike Formation)" as "Cenomanian–Santonian" (novas2013a, p. 194). That rests on the same Mata Amarilla assignment, which Novas and colleagues (2019) no longer make.
@@ -50,7 +50,7 @@
 
 ## References
 
-- `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729.
+- `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729. doi:10.1111/bre.12272
 - `novas2005b`: Novas, F.; Salgado, L.; Calvo, J.; Agnolin, F. (2005). Giant titanosaur (Dinosauria, Sauropoda) from the Late Cretaceous of Patagonia. *Revista del Museo Argentino de Ciencias Naturales* 7: 31-36. doi:10.22179/revmacn.7.340
 - `novas2008b`: Novas, F. E.; Ezcurra, M. D.; Lecuona, A. (2008). Orkoraptor burkei nov. gen. et sp., a large theropod from the Maastrichtian Pari Aike Formation, Southern Patagonia, Argentina. *Cretaceous Research* 29(3): 468-480. doi:10.1016/j.cretres.2008.01.001
 - `aranciagarolando2022a`: Aranciaga Rolando, A. M.; Motta, M. J.; Agnolín, F. L.; Manabe, M.; Tsuihiji, T.; Novas, F. E. (2022). A large Megaraptoridae (Theropoda: Coelurosauria) from Upper Cretaceous (Maastrichtian) of Patagonia, Argentina. *Scientific Reports* 12(1). doi:10.1038/s41598-022-09272-z

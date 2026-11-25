@@ -23,7 +23,7 @@
 **Conclusion.** Campanian, as recorded; the Cenomanian belongs to the Mata Amarilla Formation. Governs `stages: [Campanian]` on [*Talenkauen santacrucensis*](../../../genera/T/Talenkauen.yml).
 
 **Evidence.**
-- sickmann2018a, New Detrital Zircon MDAs: samples from the "terrestrial Cerro Fortaleza Formation in this area show maximum depositional ages throughout the Campanian with the stratigraphically highest sample EP-13 providing a YC1σ MDA of 76.2 ± 1.6 Ma".
+- sickmann2018a, p. 719, New Detrital Zircon MDAs: samples from the "terrestrial Cerro Fortaleza Formation in this area show maximum depositional ages that are Campanian, with the stratigraphically highest sample EP-13 providing a YC1σ MDA of 76.2 ± 1.6 Ma".
 - varela2012a, p. 359, abstract: a tuff of the middle section of the Mata Amarilla Formation yields "a U-Pb concordia age of 96.23±0.71 Ma, which corresponds to the middle Cenomanian".
 
 **Ruled out.**
@@ -37,5 +37,5 @@
 - `novas2019a`: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L. (2019). Paleontological discoveries in the Chorrillo Formation (upper Campanian-lower Maastrichtian, Upper Cretaceous), Santa Cruz Province, Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales* 21: 217-293. doi:10.22179/revmacn.21.655
 - `bandeira2024a`: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V. (2024). A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America. *Historical Biology* 37(3): 548-589. doi:10.1080/08912963.2024.2318406
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729.
+- `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729. doi:10.1111/bre.12272
 - `varela2012a`: Varela, A. N.; Poiré, D. G.; Martin, T.; Gerdes, A.; Goin, F. J.; Gelfo, J. N.; Hoffmann, S. (2012). U-Pb zircon constraints on the age of the Cretaceous Mata Amarilla Formation, Southern Patagonia, Argentina: its relationship with the evolution of the Austral Basin. *Andean Geology* 39(3): 359-379. doi:10.5027/andgeoV39n3-a01
