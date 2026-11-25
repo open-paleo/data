@@ -7,7 +7,7 @@
 **Conclusion.** SM PW1-0001 through SM PW1-0022, each listed on its own, in the form Suteethorn and colleagues (2009) give. Governs `type_specimen.specimen_id: [SM PW1-0001, …, SM PW1-0022]` on [*Phuwiangosaurus sirindhornae*](../../../genera/P/Phuwiangosaurus.yml).
 
 **Evidence.**
-- martin1994a, Type (English abridged version): "A partly articulated skeleton n° P.W.1-1 to P.W.1-21".
+- martin1994a, p. 1089, Type: "A partly articulated skeleton Nos. P.W.1-1 to P.W.1-21".
 - suteethorn2009a, p. 195: "Holotype. SM PW1-0001 to SM PW1-0022; partly articulated skeleton including three cervical vertebrae, three dorsal vertebrae, scapulae, left humerus, left ulna, ilia, pubes, ischia, femora, left fibula, coracoid, chevron and rib."
 
 **Ruled out.**
@@ -17,6 +17,6 @@
 
 ## References
 
-- `martin1994a`: Martin, V.; Buffetaut, E.; Suteethorn, V. (1994). A new genus of sauropod dinosaur from the Sao Khua Formation (Late Jurassic or Early Cretaceous) of northeastern Thailand. *Comptes Rendus de l'Académie des Sciences, Paris, série IIa* 319: 1085-1092.
+- `martin1994a`: Martin, V.; Buffetaut, E.; Suteethorn, V. (1994). A new genus of sauropod dinosaur from the Sao Khua Formation (Late Jurassic or Early Cretaceous) of northeastern Thailand. *Comptes Rendus de l'Académie des Sciences, Paris, série II* 319: 1085-1092.
 - `suteethorn2009a`: Suteethorn, S.; Le Loeuff, J.; Buffetaut, E.; Suteethorn, V.; Talubmook, C.; Chonglakmani, C. (2009). A new skeleton of Phuwiangosaurus sirindhornae (Dinosauria, Sauropoda) from NE Thailand. *Geological Society, London, Special Publications* 315(1): 189-215. doi:10.1144/SP315.14
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

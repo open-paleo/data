@@ -50,4 +50,4 @@
 
 ## Other references
 
-- `colin1990a`: Colin, J. P.; Jacobs, L. L. (1990). On the age of the Malawi Dinosaur Beds: evidence from ostracodes. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 311: 1025-1029.
+- `colin1990a`: Colin, J. P.; Jacobs, L. L. (1990). L'âge des Couches à Dinosaures du Malawi : apport des ostracodes [On the age of the Malawi Dinosaur Beds: evidence from ostracodes]. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 311: 1025-1029.
