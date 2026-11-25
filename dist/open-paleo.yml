@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-11-25T18:31:01.814Z
+  built_at: 2026-11-25T21:35:59.249Z
   clade_count: 187
   genus_count: 1429
   license: CC-BY-4.0
@@ -221597,6 +221597,16 @@ stratigraphy:
         issue: "1939"
         pages: "20202310"
         doi: 10.1098/rspb.2020.2310
+      - id: riccardi1992a
+        authors: Riccardi, A. C.; Gulisano, C. A.; Mojica, J.; Palacios, O.; Schubert, C.; Thomson, M. R. A.
+        year: 1992
+        title: Western South America and Antarctica
+        book: The Jurassic of the Circum-Pacific (Westermann, G. E. G., ed.)
+        pages: 122-161
+        publisher: Cambridge University Press, Cambridge
+        doi: 10.1017/cbo9780511529375.008
+        notes: |
+          Gives the underlying Osta Arena and Mulanguiñeu Formations "late Pliensbachian–early Toarcian ammonites", with the Carnerero "probably" unconformable on them; no age of its own.
   Cerro Castaño:
     rank: member
     parent: Cerro Barcino
@@ -222397,6 +222407,9 @@ stratigraphy:
         - Maastrichtian
       from_ma: 132.6
       to_ma: 66
+    dispute:
+      summary: |
+        Whether the group reaches above the Cenomanian. Suárez and colleagues (2014) date its youngest units, the Laguna Palacios Formation and the Manuel Arce Member, to the Cenomanian by U–Pb and call the group "not younger than the Cenomanian or the late Cenomanian-early Turonian"; Casal and colleagues (2015) reject that minimum age, placing their Coniacian to Maastrichtian Lago Colhué Huapi Formation below the Laguna Palacios.
     references:
       - id: canale2014a
         authors: Canale, J. I.; Novas, F. E.; Pol, D.
@@ -222525,6 +222538,16 @@ stratigraphy:
         pages: 1307-1387
         notes: |
           Cited by Martínez (1998) as one of the older age assignments for the group, Barremian to Campanian.
+      - id: suárez2014a
+        authors: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M.
+        year: 2014
+        title: "Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology"
+        journal: Journal of South American Earth Sciences
+        volume: "50"
+        pages: 67-74
+        doi: 10.1016/j.jsames.2013.10.008
+        notes: |
+          SHRIMP U–Pb dates its youngest units, the Laguna Palacios Formation and Manuel Arce Member, to the Cenomanian, the group "not younger than the Cenomanian or the late Cenomanian-early Turonian".
   Ciénaga del Río Huaco:
     rank: formation
     description: The Ciénaga del Río Huaco Formation is a formation in La Rioja, Argentina, dated to the Campanian to Maastrichtian stages of the Late Cretaceous. Dinosaurs known from it include Bravasaurus and Punatitan.
@@ -223979,15 +224002,14 @@ stratigraphy:
     rank: member
     parent: Kirtland
     lithology: green mudstone and siltstone, with minor sandstone
-    description: The De-na-zin Member is a member of the Kirtland Formation in New Mexico, United States, dated to the Campanian to Maastrichtian stages of the Late Cretaceous. It consists mainly of green mudstone and siltstone, with minor sandstone. Dinosaurs known from it include Parasaurolophus, Dinevenator, Kritosaurus, Naashoibitosaurus and 4 other genera.
+    description: The De-na-zin Member is a member of the Kirtland Formation in New Mexico, United States, dated to the Campanian stage of the Late Cretaceous. It consists mainly of green mudstone and siltstone, with minor sandstone. Dinosaurs known from it include Parasaurolophus, Dinevenator, Kritosaurus, Naashoibitosaurus and 4 other genera.
     period:
       name:
         - Late Cretaceous
       stage:
         - Campanian
-        - Maastrichtian
       from_ma: 83.6
-      to_ma: 66
+      to_ma: 72.2
     references:
       - id: sullivan1999a
         authors: Sullivan, R. M.
@@ -224077,6 +224099,18 @@ stratigraphy:
         volume: "209"
         pages: 151-164
         doi: 10.1130/SPE209-P151
+        notes: |
+          Never names the member; calls the upper shale member "most likely early Maastrichtian in age, based on stratigraphic position alone", with that stage starting at the Baculites reesidei zone.
+      - id: gale2020a
+        authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
+        year: 2020
+        title: The Cretaceous Period
+        book: Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)
+        publisher: Elsevier, Amsterdam
+        pages: 1023-1086
+        doi: 10.1016/B978-0-12-824360-2.00027-9
+        notes: |
+          Its Fig. 27.9 places the Baculites reesidei and B. jenseni zones below the 72.17 Ma base of the Maastrichtian.
   Deadhorse Coulee:
     rank: member
     parent: Milk River
@@ -224448,7 +224482,7 @@ stratigraphy:
         pages: 403-420
         doi: 10.1016/j.jafrearsci.2017.11.029
         notes: |
-          Relays the ostracod evidence of Colin and Jacobs (1990), which gives "strongest support" to a Barremian–Aptian age, and notes that no radiometric or magnetostratigraphic date exists.
+          Reads the ostracod evidence of Colin and Jacobs (1990) as giving "strongest support" to a Barremian–Aptian age, and notes that no radiometric or magnetostratigraphic date exists.
       - id: dixey1928a
         authors: Dixey, F.
         year: 1928
@@ -224467,6 +224501,8 @@ stratigraphy:
         journal: Comptes Rendus de l'Académie des Sciences de Paris, Série II
         volume: "311"
         pages: 1025-1029
+        notes: |
+          Gives an "Aptian minimum age" from ostracods of the Upper Member: "no younger than Aptian", while "an older (Lower Cretaceous, pre-Aptian) age cannot be excluded".
   Dinosaur Park:
     rank: formation
     parent: Belly River
@@ -225748,6 +225784,36 @@ stratigraphy:
         doi: 10.1371/journal.pone.0253599
         notes: |
           Places the Ariño occurrence in the Oliete sub-basin and dates it early Albian.
+      - id: degea2008a
+        authors: de Gea, G. A.; Rodríguez-López, J. P.; Meléndez, N.; Soria, A. R.
+        year: 2008
+        title: Bioestratigrafía de la Fm. Escucha a partir del estudio de foraminíferos planctónicos y nanofósiles en el sector de Alcaine, Teruel [Biostratigraphy of the Escucha Fm based on the study of planktonic foraminifera and nannofossils in the Alcaine area, Teruel]
+        journal: Geogaceta
+        volume: "44"
+        pages: 115-118
+        notes: |
+          Dates the basal Escucha at Alcaine to the late Aptian from nannofossils (Rhagodicus angustus Zone) and planktonic foraminifera (Ticinella bejaouaensis Zone).
+      - id: peyrot2007a
+        authors: Peyrot, D.; Rodríguez-López, J. P.; Barrón, E.; Meléndez, N.
+        year: 2007
+        title: Palynology and biostratigraphy of the Escucha Formation in the Early Cretaceous Oliete Sub-basin, Teruel, Spain
+        journal: Revista Española de Micropaleontología
+        volume: "39"
+        issue: 1-2
+        pages: 135-154
+        notes: |
+          Its miospores suggest "an Upper Aptian age for the studied material", which reaches the top of the formation; dinocysts "indicate an Upper Aptian–Lower Albian age for the oldest level studied".
+      - id: peyrot2007b
+        authors: Peyrot, D.; Rodríguez-López, J. P.; Lassaletta, L.; Meléndez, N.; Barrón, E.
+        year: 2007
+        title: Contributions to the palaeoenvironmental knowledge of the Escucha Formation in the Lower Cretaceous Oliete Sub-basin, Teruel, Spain
+        journal: Comptes Rendus Palevol
+        volume: "6"
+        issue: 6-7
+        pages: 469-481
+        doi: 10.1016/j.crpv.2007.09.014
+        notes: |
+          Samples "the Upper Aptian–lower Albian rocks of the Escucha Formation", relaying that age from Peyrot and colleagues (2007a).
   Eumeralla:
     rank: formation
     description: The Eumeralla Formation is a formation in Victoria, Australia, dated to the Hauterivian to Albian stages of the Early Cretaceous. Dinosaurs known from it include Diluvicursor, Atlascopcosaurus, Leaellynasaura and Timimus.
@@ -225806,6 +225872,16 @@ stratigraphy:
         pages: 54-63
         notes: |
           Dates the vertebrate localities of the Otway Group, among them Dinosaur Cove, "late Aptian–early Albian" on spores and pollen, without naming the formation.
+      - id: felton1997a
+        authors: Felton, E. A.
+        year: 1997
+        title: "A non-marine Lower Cretaceous rift-related epiclastic volcanic unit in southern Australia: the Eumeralla Formation in the Otway Basin. Part I: Lithostratigraphy and depositional environments"
+        journal: AGSO Journal of Australian Geology & Geophysics
+        volume: "16"
+        issue: "5"
+        pages: 717-730
+        notes: |
+          Gives the formation's four informal units ages from well palynology, from "?Late Barremian" at the base to "Albian (–?Cenomanian)" at the top.
   Farak:
     rank: formation
     description: The Farak Formation is a formation in Agadez, Niger, dated to the Albian to Cenomanian stages of the Early Cretaceous and the Late Cretaceous. Dinosaurs known from it include Carcharodontosaurus, Rugops and Spinosaurus.
@@ -225903,6 +225979,18 @@ stratigraphy:
         volume: "209"
         pages: 151-164
         doi: 10.1130/SPE209-P151
+        notes: |
+          At Durango, Colorado, puts the member in an interval "interpreted to be early Maastrichtian in age" from palynomorphs, with that stage starting at the Baculites reesidei zone.
+      - id: gale2020a
+        authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
+        year: 2020
+        title: The Cretaceous Period
+        book: Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)
+        publisher: Elsevier, Amsterdam
+        pages: 1023-1086
+        doi: 10.1016/B978-0-12-824360-2.00027-9
+        notes: |
+          Its Fig. 27.9 places the Baculites reesidei and B. jenseni zones below the 72.17 Ma base of the Maastrichtian.
   Farta Pão:
     rank: formation
     description: The Farta Pão Formation is a formation in Lisbon, Portugal, dated to the Kimmeridgian to Tithonian stages of the Late Jurassic. It includes the Sobral Member. The dinosaur Lourinhasaurus is known from it.
@@ -226904,7 +226992,7 @@ stratigraphy:
   Galula:
     rank: formation
     lithology: red, pink and purple sandstone, conglomerate and mudstone
-    description: The Galula Formation is a formation in Songwe, Tanzania, dated to the Aptian to Campanian stages of the Early Cretaceous and the Late Cretaceous. It consists mainly of red, pink and purple sandstone, conglomerate and mudstone. It includes the Mtuka Member and the Namba Member. Dinosaurs known from it include Mnyamawamtuka, Rukwatitan and Shingopana.
+    description: The Galula Formation is a formation in Songwe, Tanzania, dated to the Aptian to Maastrichtian stages of the Early Cretaceous and the Late Cretaceous. It consists mainly of red, pink and purple sandstone, conglomerate and mudstone. It includes the Mtuka Member and the Namba Member. Dinosaurs known from it include Mnyamawamtuka, Rukwatitan and Shingopana.
     period:
       name:
         - Early Cretaceous
@@ -226917,8 +227005,9 @@ stratigraphy:
         - Coniacian
         - Santonian
         - Campanian
+        - Maastrichtian
       from_ma: 121.4
-      to_ma: 72.2
+      to_ma: 66
     references:
       - id: gorscak2019a
         authors: Gorscak, E.; O'Connor, P. M.
@@ -226953,7 +227042,18 @@ stratigraphy:
         pages: 403-420
         doi: 10.1016/j.jafrearsci.2017.11.029
         notes: |
-          Dates the members by magnetostratigraphy, the Mtuka to the middle Cretaceous (Aptian–Cenomanian) and the Namba "no older than Late Cretaceous (Cenomanian-Campanian)". Source of the lithology.
+          Dates the members by magnetostratigraphy, the Mtuka to the middle Cretaceous (Aptian–Cenomanian) and the Namba "no older than Late Cretaceous (Cenomanian-Campanian)"; its preferred correlation puts the Namba localities "in the upper Campanian or lowermost Maastrichtian". Source of the lithology.
+      - id: roberts2010a
+        authors: Roberts, E. M.; O'Connor, P. M.; Stevens, N. J.; Gottfried, M. D.; Jinnah, Z. A.; Ngasala, S.; Choh, A. M.; Armstrong, R. A.
+        year: 2010
+        title: "Sedimentology and depositional environments of the Red Sandstone Group, Rukwa Rift Basin, southwestern Tanzania: New insight into Cretaceous and Paleogene terrestrial ecosystems and tectonics in sub-equatorial Africa"
+        journal: Journal of African Earth Sciences
+        volume: "57"
+        issue: "3"
+        pages: 179-212
+        doi: 10.1016/j.jafrearsci.2009.09.002
+        notes: |
+          Names the formation and its Mtuka and Namba members, and assigns it a middle Cretaceous, Aptian to Cenomanian, age from fossils and cross- cutting relationships.
   Gamma:
     rank: member
     parent: Snow Hill Island
@@ -227395,6 +227495,18 @@ stratigraphy:
         pages: 39-46
         publisher: Institut de Géologie, Université Louis-Pasteur, Strasbourg
         doi: 10.3406/sgeol.1989.2078
+        notes: |
+          Places the formation at the base of its Ensemble II, Bathonian at the base on dinosaur bones relayed from Monbaron and Taquet (1981); its Fig. 2 credits Jenny and colleagues (1981) with a queried Bathonian to Callovian.
+      - id: monbaron1981a
+        authors: Monbaron, M.; Taquet, P.
+        year: 1981
+        title: Découverte du squelette complet d'un grand Cétiosaure (Dinosaure, Soraupode) dans le bassin jurassique moyen de Tilougguit [Discovery of the complete skeleton of a large cetiosaur (Dinosauria, Sauropoda) in the Middle Jurassic Tilougguit basin]
+        journal: Comptes Rendus de l'Académie des Sciences de Paris, Série II
+        volume: "292"
+        issue: "2"
+        pages: 243-246
+        notes: |
+          Source, via Souhel and Canerot (1989), of the Bathonian dinosaur find at the base of the unit; not read.
   Grès supérieurs:
     rank: formation
     description: The Grès supérieurs Formation is a formation in Savannakhet, Laos, dated to the Barremian to Cenomanian stages of the Early Cretaceous and the Late Cretaceous. Dinosaurs known from it include Ichthyovenator and Tangvayosaurus.
@@ -227693,6 +227805,16 @@ stratigraphy:
         doi: 10.1144/GSL.JGS.1881.037.01-04.50
         notes: |
           Places the bones, without naming the formation, in the freshwater sandstones, marls and coal above the basal breccia of the Gosau beds of the "Neue Welt", and judges them older than the Turonian.
+      - id: hradecká1999a
+        authors: Hradecká, L.; Lobitzer, H.; Ottner, F.; Švábenická, L.; Svobodová, M.
+        year: 1999
+        title: Biostratigraphy and facies of selected exposures in the Grünbach-Neue Welt Gosau-Group (Coal-Bearing Series, Inoceramus-Marl and Zweiersdorf-Formation, Late Cretaceous and Paleocene, Lower Austria)
+        journal: Abhandlungen der Geologischen Bundesanstalt
+        volume: "56"
+        issue: "2"
+        pages: 519-551
+        notes: |
+          Dates the Coal-Bearing Series at Maiersdorf, from one sample, to the "late Early Campanian" by planktonic foraminifera and nannofossils.
   Gugyedong:
     rank: member
     parent: Hupyeongdong
@@ -228096,6 +228218,9 @@ stratigraphy:
         - Maastrichtian
       from_ma: 83.6
       to_ma: 66
+    dispute:
+      summary: |
+        The age of the lower part. Amato and colleagues (2017) date a tuff 10 to 15 m above the base at 73.2 ± 0.7 Ma, late Campanian; Lucas and colleagues (2019) date the lower part "Lancian (late Maastrichtian)" from dinosaurs 24–141 m above the base and "question its reliability".
     references:
       - id: dalman2021b
         authors: Dalman, S. G.; Lucas, S. G.; Jasinski, S. E.; Longrich, N. R.
@@ -228117,6 +228242,17 @@ stratigraphy:
         doi: 10.1130/B31629.1
         notes: |
           Dates a tuff 10 to 15 m above the base at 73.2 ± 0.7 Ma, placing the lower part in the "late Campanian", and reports late Maastrichtian dinosaurs whose level in the unit is uncertain.
+      - id: lucas2019a
+        authors: Lucas, S. G.; Nelson, W. J.; Krainer, K.; Elrick, S. D.
+        year: 2019
+        title: The Cretaceous System in central Sierra County, New Mexico
+        journal: New Mexico Geology
+        volume: "41"
+        issue: "1"
+        pages: 3-39
+        doi: 10.58799/NMG-v41n1.3
+        notes: |
+          Raises the unit to a formation and dates its lower part "Lancian (late Maastrichtian)" from dinosaurs 24–141 m above the base, questioning the 73.2 Ma tuff date.
   Hanson:
     rank: formation
     lithology: interbedded sandstone and tuff
@@ -228923,6 +229059,8 @@ stratigraphy:
         volume: "25"
         issue: "3"
         pages: 9-13
+        notes: |
+          Puts the 73 Ma Daxizhuang basalt only in the Wangshi Group, taking the date from earlier work, and relays a K–Ar age of 70 Ma for the Hongtuya from the provincial lithostratigraphy.
       - id: yan2005b
         authors: Yan, J.; Chen, J. F.; Xie, Z.; Gao, T. S.; Foland, K. A.; Zhang, X. D.; Liu, M. W.
         year: 2005
@@ -231821,17 +231959,24 @@ stratigraphy:
   Kirkwood:
     rank: formation
     lithology: variegated silty mudstone interbedded with sandy channel fill
-    description: The Kirkwood Formation is a formation in Eastern Cape, South Africa, dated to the Tithonian to Hauterivian stages of the Late Jurassic and the Early Cretaceous. It consists mainly of variegated silty mudstone interbedded with sandy channel fill. Dinosaurs known from it include Algoasaurus, Iyuku, Nqwebasaurus and Paranthodon.
+    description: The Kirkwood Formation is a formation in Eastern Cape, South Africa, dated to the Aalenian to Hauterivian stages of the Middle Jurassic, the Late Jurassic and the Early Cretaceous. It consists mainly of variegated silty mudstone interbedded with sandy channel fill. Dinosaurs known from it include Algoasaurus, Iyuku, Nqwebasaurus and Paranthodon.
     period:
       name:
+        - Middle Jurassic
         - Late Jurassic
         - Early Cretaceous
       stage:
+        - Aalenian
+        - Bajocian
+        - Bathonian
+        - Callovian
+        - Oxfordian
+        - Kimmeridgian
         - Tithonian
         - Berriasian
         - Valanginian
         - Hauterivian
-      from_ma: 149.2
+      from_ma: 174.7
       to_ma: 125.77
     references:
       - id: mcphee2016b
@@ -231884,6 +232029,27 @@ stratigraphy:
         title: Mesozoic and Tertiary Geology of Southern Africa
         publisher: Balkema, Rotterdam
         pages: 375 pp.
+      - id: muir2017b
+        authors: Muir, R. A.; Bordy, E. M.; Reddering, J. S. V.; Viljoen, J. H. A.
+        year: 2017
+        title: Lithostratigraphy of the Kirkwood Formation (Uitenhage Group), including the Bethelsdorp, Colchester and Swartkops Members, South Africa
+        journal: South African Journal of Geology
+        volume: "120"
+        issue: "2"
+        pages: 281-293
+        doi: 10.25131/gssajg.120.2.281
+        notes: |
+          Gives deposition "from the Tithonian to Valanginian" in the Algoa Basin from microfossils, ages that "may only apply to the unit in its type area".
+      - id: muir2020a
+        authors: Muir, R. A.; Bordy, E. M.; Mundil, R.; Frei, D.
+        year: 2020
+        title: "Recalibrating the breakup history of SW Gondwana: U–Pb radioisotopic age constraints from the southern Cape of South Africa"
+        journal: Gondwana Research
+        volume: "84"
+        pages: 177-193
+        doi: 10.1016/j.gr.2020.02.011
+        notes: |
+          U–Pb ages on nine Kirkwood tuffs in the western basins run from 172.6 to 139.8 Ma, Aalenian to Berriasian on the ICS chart v2024/12.
   Kirtland:
     rank: formation
     lithology: siltstone and sandstone
@@ -231937,6 +232103,16 @@ stratigraphy:
         pages: 217-239
         notes: |
           Names the Bisti, Hunter Wash and De-na-zin Members, and dates the members below the Naashoibito "Edmontonian (early Maastrichtian)" and the Naashoibito Lancian. Source of the lithology.
+      - id: baltz1966a
+        authors: Baltz, E. H., Jr.; Ash, S. R.; Anderson, R. Y.
+        year: 1966
+        title: History of nomenclature and stratigraphy of rocks adjacent to the Cretaceous-Tertiary boundary, western San Juan Basin, New Mexico
+        journal: U.S. Geological Survey Professional Paper
+        volume: 524-D
+        pages: 1-23
+        doi: 10.3133/pp524d
+        notes: |
+          Names the Naashoibito a member of the Kirtland Shale "because of lithologic and faunal similarity to the Kirtland", and dates the formation Montana, older than the Lance.
   Kita-ama:
     rank: formation
     parent: Izumi
@@ -233244,6 +233420,26 @@ stratigraphy:
         doi: 10.1093/zoolinnean/zlae150
         notes: |
           Calls the formation Maastrichtian and dates the Noasaurus occurrence to the "early or mid Maastrichtian", beneath the Maastrichtian–Danian Yacoraite Formation.
+      - id: marquillas2005a
+        authors: Marquillas, R. A.; del Papa, C.; Sabino, I. F.
+        year: 2005
+        title: "Sedimentary aspects and paleoenvironmental evolution of a rift basin: Salta Group (Cretaceous–Paleogene), northwestern Argentina"
+        journal: International Journal of Earth Sciences
+        volume: "94"
+        pages: 94-113
+        doi: 10.1007/s00531-004-0443-2
+        notes: |
+          Places the formation at the base of the Balbuena Subgroup, which accumulated "during the Maastrichtian to Early Paleocene", above volcanics dated 70 ± 5 Ma.
+      - id: montano2022a
+        authors: Montano, D.; Gasparrini, M.; Rohais, S.; Albert, R.; Gerdes, A.
+        year: 2022
+        title: Depositional age models in lacustrine systems from zircon and carbonate U-Pb geochronology
+        journal: Sedimentology
+        volume: "69"
+        pages: 2507-2534
+        doi: 10.1111/sed.13000
+        notes: |
+          Models the base of the overlying Yacoraite Formation at about 68.1 Ma, by extrapolation below its lowest dated ash.
   Lehmhagen:
     rank: member
     parent: Posidonia Shale
@@ -234939,6 +235135,8 @@ stratigraphy:
         publisher: Elsevier, Amsterdam
         pages: 955-1021
         doi: 10.1016/B978-0-12-824360-2.00026-7
+        notes: |
+          Source of the Volgian conversion: its Fig. 26.9 correlates the Late Volgian with the latest Tithonian and the early Berriasian.
       - id: casey1963a
         authors: Casey, R.
         year: 1963
@@ -234968,6 +235166,27 @@ stratigraphy:
         volume: RR/08/03
         notes: |
           Source of the lithology.
+      - id: casey1971a
+        authors: Casey, R.
+        year: 1971
+        title: Facies, faunas and tectonics in late Jurassic – early Cretaceous Britain
+        book: Faunal Provinces in Space and Time (Middlemiss, F. A., ed.)
+        series: Geological Journal Special Issue
+        volume: "4"
+        pages: 153-168
+        notes: |
+          Places the Lulworth Beds in the Upper Volgian, "uppermost Jurassic", below the Cinder Bed; GTS2020 runs the Late Volgian across the Tithonian–Berriasian boundary.
+      - id: dodson1964a
+        authors: Dodson, M. H.; Rex, D. C.; Casey, R.; Allen, P.
+        year: 1964
+        title: Glauconite dates from the Upper Jurassic and Lower Cretaceous
+        journal: Geological Society, London, Special Publications
+        volume: "1"
+        issue: "1"
+        pages: 145-158
+        doi: 10.1144/gsl.sp.1964.001.01.14
+        notes: |
+          Its Table 4 sets the Lulworth Beds on the Jurassic side of the Boreal boundary, after Casey (1963), and level with the lower Berriasian on the Tethyan scale.
   Lytle:
     rank: member
     parent: Purgatoire
@@ -237831,7 +238050,7 @@ stratigraphy:
     rank: member
     parent: Galula
     lithology: fine- to medium-grained sandstone, with less overbank mudstone
-    description: The Namba Member is a member of the Galula Formation in Songwe, Tanzania, dated to the Cenomanian to Campanian stages of the Late Cretaceous. It consists mainly of fine- to medium-grained sandstone, with less overbank mudstone. Dinosaurs known from it include Rukwatitan and Shingopana.
+    description: The Namba Member is a member of the Galula Formation in Songwe, Tanzania, dated to the Cenomanian to Maastrichtian stages of the Late Cretaceous. It consists mainly of fine- to medium-grained sandstone, with less overbank mudstone. Dinosaurs known from it include Rukwatitan and Shingopana.
     period:
       name:
         - Late Cretaceous
@@ -237841,11 +238060,12 @@ stratigraphy:
         - Coniacian
         - Santonian
         - Campanian
+        - Maastrichtian
       from_ma: 100.5
-      to_ma: 72.2
+      to_ma: 66
     dispute:
       summary: |
-        Campanian or considerably older. Gorscak and colleagues (2019) give "newly constrained ages for the Mtuka Member (Aptian-Cenomanian) and Namba Member (Campanian)"; the same group in 2022 writes that "although the Namba Member may potentially date to the Campanian, the possibility remains that this unit is somewhat older, perhaps Cenomanian-Santonian in age based on an alternative interpretation" of the paleontological data.
+        Campanian to earliest Maastrichtian, or considerably older. Gorscak and colleagues (2019) give "newly constrained ages for the Mtuka Member (Aptian-Cenomanian) and Namba Member (Campanian)"; the same group in 2022 writes that "although the Namba Member may potentially date to the Campanian, the possibility remains that this unit is somewhat older, perhaps Cenomanian-Santonian in age based on an alternative interpretation" of the paleontological data.
     references:
       - id: gorscak2019a
         authors: Gorscak, E.; O'Connor, P. M.
@@ -237879,7 +238099,18 @@ stratigraphy:
         pages: 403-420
         doi: 10.1016/j.jafrearsci.2017.11.029
         notes: |
-          Dates the member by magnetostratigraphy, favoring Chron C32 (Campanian) over excursions late in the Cretaceous Normal Superchron; together the two give "Cenomanian – Campanian". Source of the lithology.
+          Dates the member by magnetostratigraphy, favoring Chron C32, "the upper Campanian or lowermost Maastrichtian", over excursions late in the Cretaceous Normal Superchron. Source of the lithology.
+      - id: roberts2010a
+        authors: Roberts, E. M.; O'Connor, P. M.; Stevens, N. J.; Gottfried, M. D.; Jinnah, Z. A.; Ngasala, S.; Choh, A. M.; Armstrong, R. A.
+        year: 2010
+        title: "Sedimentology and depositional environments of the Red Sandstone Group, Rukwa Rift Basin, southwestern Tanzania: New insight into Cretaceous and Paleogene terrestrial ecosystems and tectonics in sub-equatorial Africa"
+        journal: Journal of African Earth Sciences
+        volume: "57"
+        issue: "3"
+        pages: 179-212
+        doi: 10.1016/j.jafrearsci.2009.09.002
+        notes: |
+          Names the member; its gondwanatherians, titanosaurs and notosuchians are taxa "most typically associated with Aptian–Late Cretaceous" sequences.
   Nanxiong:
     rank: formation
     lithology: red mudstone, sandstone and conglomerate
@@ -241404,6 +241635,17 @@ stratigraphy:
         doi: 10.3133/pp1673
         notes: |
           Cited by Fiorillo and colleagues (2010) for revising the Colville Basin nomenclature that restricts the Prince Creek Formation. Source of the lithology.
+      - id: frederiksen1988a
+        authors: Frederiksen, N. O.; Ager, T. A.; Edwards, L. E.
+        year: 1988
+        title: Palynology of Maastrichtian and Paleocene rocks, lower Colville River region, North Slope of Alaska
+        journal: Canadian Journal of Earth Sciences
+        volume: "25"
+        issue: "4"
+        pages: 512-527
+        doi: 10.1139/e88-051
+        notes: |
+          Dates its highest Maastrichtian sample mid-Maastrichtian and places every Paleocene sample of the lower Colville River in the Sagavanirktok Formation.
   Puesto Antigual:
     rank: member
     parent: La Amarga
@@ -244145,6 +244387,16 @@ stratigraphy:
         doi: 10.1016/j.cretres.2015.09.003
         notes: |
           Dates the lower part as early Maastrichtian from its conformable position on upper Campanian marine beds, perhaps latest Campanian at Petrești; the top is poorly constrained.
+      - id: vremir2014a
+        authors: Vremir, M.; Bălc, R.; Csiki-Sava, Z.; Brusatte, S. L.; Dyke, G.; Naish, D.; Norell, M. A.
+        year: 2014
+        title: Petreşti-Arini – An important but ephemeral Upper Cretaceous continental vertebrate site in the southwestern Transylvanian Basin, Romania
+        journal: Cretaceous Research
+        volume: "49"
+        pages: 13-38
+        doi: 10.1016/j.cretres.2014.02.002
+        notes: |
+          At Petrești-Arini the formation "began in this area sometime during the latest Campanian–earliest Maastrichtian", above marine beds of nannofossil zone CC22.
   Sembar:
     rank: formation
     lithology: shale, with minor marl and mudstone
@@ -244819,6 +245071,27 @@ stratigraphy:
         doi: 10.1139/e93-179
         notes: |
           Source of the lithology.
+      - id: vincent2001a
+        authors: Vincent, S. J.; Allen, M. B.
+        year: 2001
+        title: "Sedimentary record of Mesozoic intracontinental deformation in the eastern Junggar Basin, northwest China: Response to orogeny at the Asian margin"
+        book: "Paleozoic and Mesozoic Tectonic Evolution of Central Asia: From Continental Assembly to Intracontinental Deformation (Hendrix, M. S.; Davis, G. A., eds.)"
+        series: Geological Society of America Memoir
+        volume: "194"
+        pages: 341-360
+        notes: |
+          Calls the Shishugou Group "Middle to Upper Jurassic" from Chinese regional compilations, with no stage, noting that "the resolution of age dating is relatively poor".
+      - id: hendrix1992a
+        authors: Hendrix, M. S.; Graham, S. A.; Carroll, A. R.; Sobel, E. R.; McKnight, C. L.; Schulein, B. J.; Wang, Z.
+        year: 1992
+        title: "Sedimentary record and climatic implications of recurrent deformation in the Tian Shan: Evidence from Mesozoic strata of the north Tarim, south Junggar, and Turpan basins, northwest China"
+        journal: Geological Society of America Bulletin
+        volume: "104"
+        issue: "1"
+        pages: 53-79
+        doi: 10.1130/0016-7606(1992)104<0053:sracio>2.3.co;2
+        notes: |
+          Its Fig. 3 brackets the Shishugou Group across the Middle and Upper Jurassic of the south Junggar; the text names no stage for the unit.
   Sichakou:
     rank: member
     parent: Huajiying
@@ -245307,6 +245580,8 @@ stratigraphy:
         volume: "27"
         issue: "4"
         pages: 622-631
+        notes: |
+          Names the member as the lower part of the Wangjiashan Formation, about 240 m thick, and gives it no age of its own.
   Sudmoor Point Sandstone:
     rank: member
     informal: true
@@ -245423,13 +245698,19 @@ stratigraphy:
   Suining:
     rank: formation
     lithology: red mudstone, with interbedded arkosic sandstone and siltstone
-    description: The Suining Formation is a formation in Chongqing, China, dated to the Late Jurassic. It consists mainly of red mudstone, with interbedded arkosic sandstone and siltstone. Dinosaurs known from it include Qijianglong and Tongnanlong.
+    description: The Suining Formation is a formation in Chongqing, China, dated to the Tithonian to Berriasian stages of the Late Jurassic and the Early Cretaceous. It consists mainly of red mudstone, with interbedded arkosic sandstone and siltstone. Dinosaurs known from it include Qijianglong and Tongnanlong.
     period:
       name:
         - Late Jurassic
+        - Early Cretaceous
+      stage:
+        - Tithonian
+        - Berriasian
+      from_ma: 149.2
+      to_ma: 137.05
     dispute:
       summary: |
-        Xing and colleagues (2015) place the formation in the Upper Jurassic on its lithology and ostracods, and Wei and colleagues (2025) adopt the Late Jurassic on its dinosaur fauna, noting that its dinosaur and sporopollen assemblages support that age. Wang and colleagues (2019) date its youngest detrital zircons at a mean of 114.4 ± 1.1 Ma, Aptian on the ICS chart v2024/12, and correlate it with Lower Cretaceous units; as a maximum depositional age, that figure would exclude the Late Jurassic.
+        Late Jurassic, Jurassic–Cretaceous, or Aptian and younger. Xing and colleagues (2015) and Wei and colleagues (2025) place the formation in the Late Jurassic on its ostracods and dinosaurs; Huang and colleagues (2021) put the Jurassic–Cretaceous boundary in its upper part on conchostracans and ostracods. Liu and colleagues (2017) and Wang and colleagues (2019) give maximum depositional ages of about 120 Ma for the lower formation and 114.4 ± 1.1 Ma for a higher bed, both Aptian, which would exclude a Jurassic age.
     references:
       - id: wang2019c
         authors: Wang, J.; Norell, M. A.; Pei, R.; Ye, Y.; Chang, S. C.
@@ -245486,6 +245767,28 @@ stratigraphy:
         isbn: 7-5625-1280-9
         notes: |
           Source of the lithology.
+      - id: liu2017a
+        authors: Liu, G.; Dong, S. W.; Chen, X. H.; Cui, J. J.
+        year: 2017
+        title: Detrital zircon U-Pb dating of Suining Formation sandstone from the Daba Mountains, northeastern Sichuan and its stratigraphic implications
+        journal: Palaeoworld
+        volume: "26"
+        issue: "2"
+        pages: 380-395
+        doi: 10.1016/j.palwor.2017.03.002
+        notes: |
+          Detrital zircons from the lower formation give a maximum depositional age of about 120 Ma, from which it concludes the formation "includes a Lower Cretaceous component".
+      - id: huang2021a
+        authors: Huang, D. Y.; Fang, Y. N.; Li, J. G.; Li, X.
+        year: 2021
+        title: Lithostratigraphic subdivision and correlation of the Jurassic in China
+        journal: Journal of Stratigraphy
+        volume: "45"
+        issue: "3"
+        pages: 364-374
+        doi: 10.19839/j.cnki.dcxzz.2021.0029
+        notes: |
+          Places the Jurassic–Cretaceous boundary in the upper Suining, at the appearance of early Djungarica ostracods and Eosestheriopsis conchostracans.
   Sunjiawan:
     rank: formation
     lithology: purplish-red sandstone and conglomerate, with shale intercalations
@@ -248969,20 +249272,20 @@ stratigraphy:
   Walloon Coal Measures:
     rank: subgroup
     lithology: mudstone, siltstone, labile sandstone and coal
-    description: The Walloon Coal Measures is a subgroup in Queensland, Australia, dated to the Bajocian to Tithonian stages of the Middle Jurassic and the Late Jurassic. It consists mainly of mudstone, siltstone, labile sandstone and coal. The dinosaur Rhoetosaurus is known from it.
+    description: The Walloon Coal Measures is a subgroup in Queensland, Australia, dated to the Aalenian to Kimmeridgian stages of the Middle Jurassic and the Late Jurassic. It consists mainly of mudstone, siltstone, labile sandstone and coal. The dinosaur Rhoetosaurus is known from it.
     period:
       name:
         - Middle Jurassic
         - Late Jurassic
       stage:
+        - Aalenian
         - Bajocian
         - Bathonian
         - Callovian
         - Oxfordian
         - Kimmeridgian
-        - Tithonian
-      from_ma: 170.9
-      to_ma: 143.1
+      from_ma: 174.7
+      to_ma: 149.2
     dispute:
       summary: |
         Rank is unsettled. Nair and Salisbury (2012) equate the unit with a subgroup — "Walloon Coal Measures (= Walloon Subgroup; coeval with the Birkhead Formation of the Eromanga Basin)" — while group rank is also in use for it.
@@ -249043,16 +249346,40 @@ stratigraphy:
         volume: "166"
         notes: |
           Source of the lithology.
+      - id: wainman2018b
+        authors: Wainman, C. C.; McCabe, P. J.; Crowley, J. L.
+        year: 2018
+        title: "Solving a tuff problem: Defining a chronostratigraphic framework for Middle to Upper Jurassic nonmarine strata in eastern Australia using uranium-lead chemical abrasion-thermal ionization mass spectrometry zircon dates"
+        journal: AAPG Bulletin
+        volume: "102"
+        issue: "6"
+        pages: 1141-1168
+        doi: 10.1306/07261717140
+        notes: |
+          Its tuffs in Walloon lithofacies run from 167.56 to 149.78 Ma, Bathonian to Kimmeridgian on the ICS chart v2024/12; its Table 1 relays an "Aalenian to Callovian" biostratigraphic age.
+      - id: wainman2018a
+        authors: Wainman, C. C.; Hannaford, C.; Mantle, D.; McCabe, P. J.
+        year: 2018
+        title: Utilizing U-Pb CA-TIMS dating to calibrate the Middle to Late Jurassic spore-pollen zonation of the Surat Basin, Australia to the geological time-scale
+        journal: Alcheringa
+        volume: "42"
+        issue: "3"
+        pages: 402-414
+        doi: 10.1080/03115518.2018.1457179
+        notes: |
+          Calibrates the spore-pollen zones against the same tuffs; its "early Tithonian" for a 150.77 Ma tuff is Kimmeridgian on the ICS chart v2024/12.
   Wangjiashan:
     rank: formation
-    description: The Wangjiashan Formation is a formation in Gansu, China, dated to the Bathonian stage of the Middle Jurassic. It includes the Straw-yellow Sandstone. The dinosaur Baiyinosaurus is known from it.
+    description: The Wangjiashan Formation is a formation in Gansu, China, dated to the Bajocian to Callovian stages of the Middle Jurassic. It includes the Straw-yellow Sandstone. The dinosaur Baiyinosaurus is known from it.
     period:
       name:
         - Middle Jurassic
       stage:
+        - Bajocian
         - Bathonian
-      from_ma: 168.2
-      to_ma: 165.3
+        - Callovian
+      from_ma: 170.9
+      to_ma: 161.5
     references:
       - id: li2024a
         authors: Li, N.; Maidment, S. C. R.; Li, D.; You, H.; Peng, G.
@@ -249083,6 +249410,16 @@ stratigraphy:
         doi: 10.1007/978-3-540-93824-8
         notes: |
           Credits the name to "Li Baoxian, Xu Fuxiang, Ma Qihong, et al., 1982 ... First appeared in a 1976 manuscript by Gansu Coal Field Geological Exploration Team", with its type locality at "Wangjiashan close to Shuidonggou, northern part of Jingyuan County, Gansu Province"; "Age: Mid Jurassic."
+      - id: zhang2009c
+        authors: Zhang, H.
+        year: 2009
+        title: "[Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]"
+        journal: Acta Sedimentologica Sinica
+        volume: "27"
+        issue: "4"
+        pages: 622-631
+        notes: |
+          Its Fig. 2 draws the formation from within the Bajocian to the lower Callovian; the text gives no age to any single formation.
   Wangmen:
     rank: formation
     lithology: argillaceous siltstone, mudstone and fine sandstone
@@ -249286,6 +249623,25 @@ stratigraphy:
         pages: 1-108
         notes: |
           Calls it "the Campanian–Maastrichtian Wapiti Formation", from which only scrappy bones were known before the Pipestone Creek bone bed, and dates that bone bed Late Campanian.
+      - id: fanti2009a
+        authors: Fanti, F.; Catuneanu, O.
+        year: 2009
+        title: Stratigraphy of the Upper Cretaceous Wapiti Formation, west-central Alberta, Canada
+        journal: Canadian Journal of Earth Sciences
+        volume: "46"
+        issue: "4"
+        pages: 263-286
+        doi: 10.1139/e09-020
+        notes: |
+          The formation's stratigraphy: unit 1 is "lower–middle Campanian", and the Cutbank Coal Zone at the top includes "several Maastrichtian taxa" from Dawson and colleagues (1994).
+      - id: dawson1994a
+        authors: Dawson, F.; Kalkreuth, W.; Sweet, A.
+        year: 1994
+        title: Stratigraphy and coal resource potential of the Upper Cretaceous to Tertiary strata of northwestern Alberta
+        journal: Geological Survey of Canada Bulletin
+        volume: "466"
+        notes: |
+          Source, via Fanti and Catuneanu (2009), of the Maastrichtian palynology of the Cutbank Coal Zone; not read.
   Weald Clay:
     rank: group
     parent: Wealden
@@ -250308,6 +250664,16 @@ stratigraphy:
         doi: 10.1080/02724634.2018.1510412
         notes: |
           Source of the lithology.
+      - id: zheng2021c
+        authors: Zheng, D.; Wang, H.; Li, S.; Wang, B.; Jarzembowski, E. A.; Dong, C.; Fang, Y.; Teng, X.; Yu, T.; Yang, L.; Li, Y.; Zhao, X.; Xue, N.; Chang, S. C.; Zhang, H.
+        year: 2021
+        title: "Synthesis of a chrono- and biostratigraphical framework for the Lower Cretaceous of Jiuquan, NW China: implications for major evolutionary events"
+        journal: Earth-Science Reviews
+        volume: "213"
+        pages: "103474"
+        doi: 10.1016/j.earscirev.2020.103474
+        notes: |
+          Gives the formation "late early Aptian to early Albian (~120-112 Ma)" from ostracods, bivalves and correlation, below a 112.4 Ma basalt at the base of the Zhonggou.
   Xiaguan:
     rank: formation
     description: The Xiaguan Formation is a formation in Henan, China, dated to the Turonian to Campanian stages of the Late Cretaceous. Dinosaurs known from it include Baotianmansaurus, Mosaiceratops and Nanyangosaurus.
@@ -251998,6 +252364,28 @@ stratigraphy:
         isbn: 7-5625-1280-9
         notes: |
           Source of the lithology.
+      - id: franceschi2022a
+        authors: Franceschi, M.; Jin, X.; Shi, Z.; Chen, B.; Preto, N.; Roghi, G.; Dal Corso, J.; Han, L.
+        year: 2022
+        title: High-resolution record of multiple organic carbon-isotope excursions in lacustrine deposits of Upper Sinemurian through Pliensbachian (Early Jurassic) from the Sichuan Basin, China
+        journal: Geological Society of America Bulletin
+        volume: "135"
+        issue: 1-2
+        pages: 3-17
+        doi: 10.1130/b36235.1
+        notes: |
+          Places the Sinemurian–Pliensbachian boundary in the upper Dongyuemiao Member, from a carbon-isotope excursion, and the Ma'anshan Member in the Pliensbachian.
+      - id: xu2017c
+        authors: Xu, W.; Ruhl, M.; Jenkyns, H. C.; Hesselbo, S. P.; Riding, J. B.; Selby, D.; Naafs, B. D. A.; Weijers, J. W. H.; Pancost, R. D.; Tegelaar, E. W.; Idiz, E. F.
+        year: 2017
+        title: Carbon sequestration in an expanded lake system during the Toarcian oceanic anoxic event
+        journal: Nature Geoscience
+        volume: "10"
+        issue: "2"
+        pages: 129-134
+        doi: 10.1038/ngeo2871
+        notes: |
+          Dates the Da'anzhai Member's black shales at 180.3 ± 3.2 Ma by Re–Os, Toarcian on the ICS chart v2024/12, and ties them to the Toarcian anoxic event.
   Zuoyun:
     rank: formation
     lithology: purple-red conglomerate and mudstone, with some gray-green mudstone
