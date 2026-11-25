@@ -1,5 +1,20 @@
 # Kirtland
 
+## What do Baltz and colleagues (1966) give for the age of the Kirtland, and where do they put the Naashoibito?
+
+*2026-11-25*
+
+**Conclusion.** Montana, "Late, but not latest Cretaceous", with no stage; the Naashoibito is a member of the Kirtland. Baltz and colleagues (1966) name the Naashoibito from the lower conglomerate and medial shale of Bauer's Ojo Alamo Sandstone and place it in the Kirtland Shale "because of lithologic and faunal similarity to the Kirtland", restricting the Ojo Alamo to the beds above a channeled unconformity. They date the whole Kirtland, Naashoibito included, as of Montana age and older than the Lance, rejecting a Lance equivalence. Their dating adds no stage. The Maastrichtian stays on Hunt and Lucas's (1992) Lancian Naashoibito, a member of the Kirtland in their scheme as in Baltz's. Governs `stages: [Campanian, Maastrichtian]` on [Kirtland](../../../stratigraphy/k/kirtland.yml), unchanged; bears on the placement dispute on [Naashoibito](../../../stratigraphy/n/naashoibito.yml).
+
+**Evidence.**
+- baltz1966a, p. D1: "The dinosaur-bearing medial shale and the lower conglomerate of Bauer's Ojo Alamo Sandstone are here named the Naashoibito Member of the Kirtland Shale of Montana age, because of lithologic and faunal similarity to the Kirtland."
+- baltz1966a, p. D1: "The dinosaur faunas of the Kirtland Shale and of Bauer's Ojo Alamo Sandstone were considered to be of Montana (Late, but not latest Cretaceous) age by Barnum Brown and C. W. Gilmore."
+
+**Ruled out.**
+- *Dropping the Maastrichtian on Baltz and colleagues' Montana age.* A regional age with no stage conversion adds nothing and removes nothing; Hunt and Lucas's Lancian Naashoibito is a published reading.
+
+**Open.** The 2026-11-23 entry's Open line stands, now with Baltz and colleagues on the side of a Kirtland Naashoibito.
+
 ## What do the cited works say about the age of the Kirtland?
 
 *2026-11-23*
@@ -23,11 +38,12 @@
 
 ## References
 
+- `baltz1966a`: Baltz, E. H., Jr.; Ash, S. R.; Anderson, R. Y. (1966). History of nomenclature and stratigraphy of rocks adjacent to the Cretaceous-Tertiary boundary, western San Juan Basin, New Mexico. *U.S. Geological Survey Professional Paper* 524-D: 1-23. doi:10.3133/pp524d
 - `hunt1992a`: Hunt, A. P.; Lucas, S. G. (1992). Stratigraphy, paleontology and age of the Fruitland and Kirtland formations (Upper Cretaceous), San Juan Basin, New Mexico. In *San Juan Basin IV (Lucas, S. G.; Kues, B. S.; Williamson, T. E.; Hunt, A. P., eds.)*, pp. 217-239.
 - `fassett1997a`: Fassett, J. E.; Steiner, M. B. (1997). Precise age of C33N-C32R magnetic-polarity reversal, San Juan Basin, New Mexico and Colorado. In *Mesozoic Geology and Paleontology of the Four Corners Region (Anderson, O. J.; Kues, B. S.; Lucas, S. G., eds.)*, pp. 239-247.
 
 ## Other references
 
-- `baltz1966a`: Baltz, E. H., Jr.; Ash, S. R.; Anderson, R. Y. (1966). History of nomenclature and stratigraphy of rocks adjacent to the Cretaceous-Tertiary boundary, western San Juan Basin, New Mexico. *U.S. Geological Survey Professional Paper* 524-D: 1-23. doi:10.3133/pp524d
+- `bauer1916a`: Bauer, C. M. (1916). Contributions to the geology and paleontology of San Juan County, New Mexico. 1. Stratigraphy of a part of the Chaco River Valley.
 - `reeside1924a`: Reeside, J. B., Jr. (1924). Upper Cretaceous and Tertiary formations of the western part of the San Juan basin of Colorado and New Mexico.
 - `ford2000a`: Ford, T. L. (2000). A review of ankylosaur osteoderms from New Mexico and a preliminary review of ankylosaur armor. In *Dinosaurs of New Mexico*, pp. 157-176.

@@ -1,5 +1,21 @@
 # Chubut
 
+## What does Suárez and colleagues' (2014) U–Pb dating give for the top of the Chubut Group?
+
+*2026-11-25*
+
+**Conclusion.** A Cenomanian, possibly early Turonian, age for the group's youngest units, against Coniacian to Maastrichtian readings from other work; the disagreement is live and is recorded as a dispute. Supersedes the 2026-11-23 entry's Ruled out item on a Cenomanian minimum age and the part of its Open line about the U–Pb source, now read. Suárez and colleagues (2014) date tuffs in the Laguna Palacios Formation and the Manuel Arce Member of the Cerro Barcino Formation, which they treat as the youngest units, to 97.6 to 96.0 Ma, and the Bajo Barreal to 99.3 Ma; a few younger grains near 93 Ma allow a late Cenomanian–early Turonian reading, which they favor less. Casal and colleagues (2015) reject the minimum age on the stratigraphic position of their Lago Colhué Huapi Formation. Under the union rule the stages stay. Governs the `dispute` on [Chubut](../../../stratigraphy/c/chubut.yml); `stages` unchanged.
+
+**Evidence.**
+- suárez2014a, p. 72: "Thirteen grains of sample CH-8409 of the Laguna Palacios Formation gave a Cenomanian age of 97.6 ± 0.9 Ma".
+- suárez2014a, p. 73: "constraining the Chubut Group to an older age than previously thought, not younger than the Cenomanian or the late Cenomanian-early Turonian".
+- casal2015a, p. 90: "the paleontological content of the new unit and its stratigraphic relationship with the Laguna Palacios Formation rule out the Cenomanian age as the minimum age of the Chubut Group" (translated).
+
+**Ruled out.**
+- *Dropping the Coniacian to Maastrichtian.* Suárez and colleagues date the units they sampled; Casal and colleagues publish a Coniacian to Maastrichtian formation inside the group, and a newer dating adds to the older readings rather than replacing them.
+
+**Open.** Where the Lago Colhué Huapi lies relative to the dated Laguna Palacios tuffs. A date from the Lago Colhué Huapi itself would settle the dispute.
+
 ## What do the cited works say about the age of the Chubut Group?
 
 *2026-11-23*
@@ -24,10 +40,11 @@
 
 ## References
 
+- `suárez2014a`: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M. (2014). Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology. *Journal of South American Earth Sciences* 50: 67-74. doi:10.1016/j.jsames.2013.10.008
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `bonaparte1979c`: Bonaparte, J. F.; Gasparini, Z. (1979). Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]. *Actas del VII Congreso Geológico Argentino* 2: 393-406.
 - `martínez1998a`: Martínez, R. D. (1998). Notohypsilophodon comodorensis gen. et sp. nov. un Hypsilophodontidae (Ornitischia: Ornithopoda) del Cretácico Superior de Chubut, Patagonia central, Argentina [Notohypsilophodon comodorensis gen. et sp. nov., a Hypsilophodontidae (Ornithischia: Ornithopoda) from the Upper Cretaceous of Chubut, central Patagonia, Argentina]. *Acta Geologica Leopoldensia* 21(46/47): 119-135.
 - `rauhut2004a`: Rauhut, O. W. M. (2004). Provenance and anatomy of Genyodectes serus, a large-toothed ceratosaur (Dinosauria: Theropoda) from Patagonia. *Journal of Vertebrate Paleontology* 24(4): 894-902. doi:10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 
 ## Other references
 

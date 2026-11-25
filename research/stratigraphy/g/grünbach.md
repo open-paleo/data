@@ -1,5 +1,20 @@
 # Grünbach
 
+## What does Hradecká and colleagues' (1999) biostratigraphy give for the age of the Grünbach?
+
+*2026-11-25*
+
+**Conclusion.** Late early Campanian, from the paper's own planktonic foraminifera and nannofossils. Hradecká and colleagues (1999) call the unit the Coal-Bearing Series and date its one sample, from a roadcut at Maiersdorf, to the *Globotruncanita elevata* Zone and the lower part of nannofossil zone UC15. This is the primary dating that Csiki-Sava and colleagues (2015) relay. Governs `stages: [Campanian]` on [Grünbach](../../../stratigraphy/g/grünbach.yml), unchanged.
+
+**Evidence.**
+- hradecká1999a, p. 520, Abstract: "The Coal-Bearing Series at Maiersdorf can be assigned to the Globotruncana elevata planktonic foraminifera zone, i. e. late Early Campanian."
+- hradecká1999a, p. 525: the assemblage "was attributed to the Globotruncanita elevata Zone (Early Campanian) sensu ROBASZYNSKI & CARON (1995)".
+- hradecká1999a, p. 535: "So far only one sample from the Coal-Bearing Series at Maiersdorf has been investigated."
+
+**Ruled out.** Nothing.
+
+**Open.** The paper's nannofossil results are incomplete in the copy read: its p. 530 is missing.
+
 ## On what does Suess (1881) rest a pre-Turonian age for the Grünbach?
 
 *2026-11-23*
@@ -20,6 +35,7 @@
 
 ## References
 
+- `hradecká1999a`: Hradecká, L.; Lobitzer, H.; Ottner, F.; Švábenická, L.; Svobodová, M. (1999). Biostratigraphy and facies of selected exposures in the Grünbach-Neue Welt Gosau-Group (Coal-Bearing Series, Inoceramus-Marl and Zweiersdorf-Formation, Late Cretaceous and Paleocene, Lower Austria). *Abhandlungen der Geologischen Bundesanstalt* 56(2): 519-551.
 - `suess1881a`: Suess, E. (1881). Note on the Gosau Beds of the Neue Welt, west of Wiener Neustadt. *Quarterly Journal of the Geological Society of London* 37(1-4): 702-703. doi:10.1144/GSL.JGS.1881.037.01-04.50
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439
 - `augustin2023a`: Augustin, F. J.; Ősi, A.; Csiki-Sava, Z. (2023). The Rhabdodontidae (Dinosauria, Ornithischia), an enigmatic dinosaur group endemic to the Late Cretaceous European Archipelago. *Fossil Record* 26(2): 171-189. doi:10.3897/fr.26.108967

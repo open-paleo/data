@@ -1,5 +1,22 @@
 # Hongtuya
 
+## What do Yan and Chen (2005) date, and in which unit?
+
+*2026-11-25*
+
+**Conclusion.** Neither of their dates belongs to the Hongtuya as their citers report it. Answers the Yan and Chen part of the 2026-11-23 entry's Open line. Yan and Chen (2005) put the Daxizhuang basalt, whose Ar–Ar age of 73 Ma they take from an earlier paper by the first author, only in the Wangshi Group, never in the Hongtuya; Zhang and colleagues' (2019) report that Yan and Chen "obtained an isotope age of 73 Ma for the Jingangkou Formation (which they called the Hongtuya Formation)" is wrong on both counts. For the Hongtuya, Yan and Chen relay a K–Ar age of 70 Ma from the provincial lithostratigraphy of Zhang and Liu (1996); the Hongtuya section of that volume, in the chapter read, gives instead 85.52 Ma for a subvolcanic basalt southwest of Jiayue. Neither number adds a stage: the 70 Ma is second-hand and not found where it is credited, and a subvolcanic intrusion bounds its host rather than dating it. Governs `stages` on [Hongtuya](../../../stratigraphy/h/hongtuya.yml), unchanged.
+
+**Evidence.**
+- yan2005a, p. 11: "The host rock is an alkali basalt belonging to the Wangshi Group, with an Ar–Ar age of 73 Ma" (translated).
+- yan2005a, p. 11: "The lower part of the Wangshi Group is dominated by basalt and belongs to the Hongtuya Formation, with a K–Ar age of 70 Ma" (translated).
+- zhang1996a, p. 239: "Locally southwest of Jiayue, subvolcanic basalt is seen, with a K-Ar isotopic age of 85.52 Ma" (translated).
+
+**Ruled out.**
+- *73 Ma as a Hongtuya date.* Yan and Chen assign the Daxizhuang basalt only to the Wangshi Group.
+- *70 Ma, Maastrichtian, for the Hongtuya.* It is credited to a volume whose Hongtuya account, in the copy read, prints 85.52 Ma instead.
+
+**Open.** The Maastrichtian, which still rests on Borinder and colleagues (2021) and the work they cite, as the 2026-11-23 entry sets out. Yan and colleagues (2005) has not been read.
+
 ## How does the provincial lithostratigraphy define the Hongtuya, and what dates do the cited works relay for it?
 
 *2026-11-23*
@@ -40,6 +57,7 @@
 
 ## References
 
+- `yan2005a`: Yan, J.; Chen, J. F. (2005). Clinopyroxene megacrysts in the Late Mesozoic basalts from Daxizhuang, Jiaozhou. *Journal of Anhui University of Science and Technology (Natural Science)* 25(3): 9-13.
 - `zhang1996a`: Zhang, Z. Q.; Liu, M. W. (eds.) (1996). 山东省岩石地层 [Stratigraphy (Lithostratigraphic) of Shandong Province]. China University of Geosciences Press, Wuhan.
 - `zhang2019a`: Zhang, J.; Wang, X.; Wang, Q.; Jiang, S.; Cheng, X.; Li, N.; Qiu, R. (2019). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of Shandong, China. *Anais da Academia Brasileira de Ciências* 91(suppl 2). doi:10.1590/0001-3765201720160920
 - `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642
@@ -51,7 +69,6 @@
 
 ## Other references
 
-- `yan2005a`: Yan, J.; Chen, J. F. (2005). Clinopyroxene megacrysts in the Late Mesozoic basalts from Daxizhuang, Jiaozhou. *Journal of Anhui University of Science and Technology (Natural Science)* 25(3): 9-13.
 - `yan2005b`: Yan, J.; Chen, J. F.; Xie, Z.; Gao, T. S.; Foland, K. A.; Zhang, X. D.; Liu, M. W. (2005). [Studies on petrology and geochemistry of the Late Cretaceous basalts and mantle-derived xenoliths from eastern Shandong]. *Acta Petrologica Sinica* 21: 99-112.
 - `hu2001a`: Hu, C. Z.; Cheng, Z. W.; Pang, Q. Q.; Fang, X. S. (2001). Shantungosaurus giganteus. Geological Publishing House, Beijing.
 - `liu1994a`: Liu, M. W.; Luan, H. Y.; Chi, P. X.; Xu, L. J. (1994). 山东省侏罗—白垩纪岩石地层清理意见 [Proposals for the revision of the Jurassic–Cretaceous lithostratigraphy of Shandong Province]. *山东地质 [Shandong Geology]* 10(supplement).

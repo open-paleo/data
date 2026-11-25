@@ -1,5 +1,23 @@
 # Hall Lake
 
+## What do Lucas and colleagues (2019) give for the age of the Hall Lake?
+
+*2026-11-25*
+
+**Conclusion.** A late Maastrichtian lower part from dinosaurs, against Amato and colleagues' (2017) late Campanian tuff date for the same interval; the disagreement is live and is recorded as a dispute. Supersedes the 2026-11-23 entry where it says the dinosaurs' level in the unit is uncertain: Lucas and colleagues (2019), who raise the unit to a formation, place the bulk of the vertebrate assemblage 24–141 m above the base, including the ceratopsian skeletons "originally assigned to Torosaurus", and question the 73.2 Ma date because late Maastrichtian dinosaurs lie a short distance above the tuff. Their "may be Paleocene" for the upper part is a possibility they leave open while treating the formation as Cretaceous, and adds no epoch. Governs the `dispute` on [Hall Lake](../../../stratigraphy/h/hall-lake.yml); `stages` unchanged. [*Sierraceratops turneri*](../../../genera/S/Sierraceratops.yml) keeps Campanian–Maastrichtian.
+
+**Evidence.**
+- lucas2019a, p. 3: "Vertebrate biostratigraphy indicates that the lower part of the Hall Lake Formation is Lancian (late Maastrichtian) in age."
+- lucas2019a, p. 28: "the bulk of the assemblage (including the most identifiable dinosaur fossils) comes from low in the formation, 24–141 m above its base"; "partial skeletons of a new ceratopsian genus originally assigned to Torosaurus (24–43 m above the base)".
+- lucas2019a, p. 28: "this Campanian age is from a tuff stratigraphically just a short distance below late Maastrichtian dinosaur fossils, so we question its reliability".
+- lucas2019a, p. 35: "Although treated here as units of Cretaceous age, the upper Hall Lake Formation and the Double Canyon Formation may be of Paleocene age."
+
+**Ruled out.**
+- *Paleocene for the upper part.* Lucas and colleagues raise it as a possibility only.
+- *Dropping the Campanian.* The tuff date is published, and questioning it does not remove it under the union rule.
+
+**Open.** Whether the 73.2 Ma tuff date stands. A second date from the lower Hall Lake would settle it.
+
 ## What does the U–Pb date of Amato and colleagues (2017) establish about the age of the Hall Lake?
 
 *2026-11-23*
@@ -21,9 +39,6 @@
 
 ## References
 
+- `lucas2019a`: Lucas, S. G.; Nelson, W. J.; Krainer, K.; Elrick, S. D. (2019). The Cretaceous System in central Sierra County, New Mexico. *New Mexico Geology* 41(1): 3-39. doi:10.58799/NMG-v41n1.3
 - `amato2017a`: Amato, J. M.; Mack, G. H.; Jonell, T. N.; Seager, W. R.; Upchurch, G. R. (2017). Onset of Laramide orogeny and associated magmatism in southern New Mexico based on U-Pb geochronology. *Geological Society of America Bulletin* 129: 1209-1226. doi:10.1130/B31629.1
 - `dalman2021b`: Dalman, S. G.; Lucas, S. G.; Jasinski, S. E.; Longrich, N. R. (2021). Sierraceratops turneri, a new chasmosaurine ceratopsid from the Hall Lake Formation (Upper Cretaceous) of south-central New Mexico. *Cretaceous Research* 130. doi:10.1016/j.cretres.2021.105034
-
-## Other references
-
-- `lucas2019a`: Lucas, S. G.; Nelson, W. J.; Krainer, K.; Elrick, S. D. (2019). The Cretaceous System in central Sierra County, New Mexico. *New Mexico Geology* 41(1): 3-39. doi:10.58799/NMG-v41n1.3

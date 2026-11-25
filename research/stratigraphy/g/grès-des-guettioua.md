@@ -1,5 +1,20 @@
 # Grès des Guettioua
 
+## What do Souhel and Canerot (1989) give for the age of the Grès des Guettioua?
+
+*2026-11-25*
+
+**Conclusion.** Bathonian at the base, from dinosaur bones reported in earlier work; no age of their own. Souhel and Canerot (1989) place the formation at the base of their Ensemble II, with the Iouaridène above, and allow an Upper Jurassic age only for the top of the ensemble, which their Fig. 2 makes the Iouaridène. Their Fig. 2 credits Jenny and colleagues (1981) with a queried Bathonian to Callovian; the 2026-11-23 entry, which reads Jenny and colleagues directly, finds the Bathonian alone, and Jenny's own text decides what Jenny says. The dispute stands. Governs `stages: [Bathonian, Callovian]` and the `dispute` on [Grès des Guettioua](../../../stratigraphy/g/grès-des-guettioua.yml), unchanged.
+
+**Evidence.**
+- souhel1989a, p. 42: Ensemble II comprises "the Guettioua and Iouaridène Formations, assigned to the Middle Jurassic (Bathonian), certain at the base owing to the discovery of Dinosaur bones (MONBARON and TAQUET, 1982)" (translated).
+- souhel1989a, Fig. 2, p. 41: the column for "JENNY & al. (1981)" reads "BATHONIEN a CALLOVIEN ?".
+
+**Ruled out.**
+- *Callovian from Jenny and colleagues, on Souhel and Canerot's chart.* The chart restates Jenny and colleagues; their text gives the Bathonian alone.
+
+**Open.** The 2026-11-23 entry's Open line stands.
+
 ## What do the cited works say about the extent and age of the Grès des Guettioua?
 
 *2026-11-23*
@@ -22,6 +37,7 @@
 
 ## References
 
+- `souhel1989a`: Souhel, A.; Canerot, J. (1989). Polarités sédimentaires téthysienne puis atlantique : l'exemple des couches rouges jurassico-crétacées du Haut-Atlas central (Maroc) [Tethysian then Atlantic sedimentary polarities: the Jurassic and Cretaceous red beds of the central High Atlas (Morocco)]. In *Colloque franco-marocain de Géologie, Strasbourg, 24-26 mai 1989, Vol. II: Cycle alpin (fin), Quaternaire*, pp. 39-46. Institut de Géologie, Université Louis-Pasteur, Strasbourg. doi:10.3406/sgeol.1989.2078
 - `jenny1981a`: Jenny, J.; Le Marrec, A.; Monbaron, M. (1981). Les Couches rouges du Jurassique moyen du Haut Atlas central (Maroc) : corrélations lithostratigraphiques, éléments de datations et cadre tectono-sédimentaire [Middle Jurassic red beds of the Central High Atlas (Morocco): lithostratigraphic correlations, dating elements and tectono-sedimentary framework]. *Bulletin de la Société Géologique de France* 23(6): 627-639. doi:10.2113/gssgfbull.S7-XXIII.6.627
 - `allain2008a`: Allain, R.; Aquesbi, N. (2008). Anatomy and phylogenetic relationships of Tazoudasaurus naimi (Dinosauria, Sauropoda) from the late Early Jurassic of Morocco. *Geodiversitas* 30(2): 345-424.
 

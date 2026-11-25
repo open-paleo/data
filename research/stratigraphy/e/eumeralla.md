@@ -1,5 +1,20 @@
 # Eumeralla
 
+## What does Felton's (1997) lithostratigraphy give for the age of the Eumeralla?
+
+*2026-11-25*
+
+**Conclusion.** Late Barremian, queried, to Albian, queried into the Cenomanian at the top. Answers the 2026-11-23 entry's Open line on the lower limit only in part. Felton (1997) divides the formation into four informal units dated by well palynology from earlier zonal work, from "?Late Barremian–Albian" for Eumeralla I to "Albian (–?Cenomanian)" for Eumeralla IV, and in her discussion has the drainage system persist "to the end of the Albian". The Barremian to Albian now rests on the formation's own lithostratigraphy; the Hauterivian stays on Bell and colleagues (2018) under the union rule. Governs `stages`, Hauterivian to Albian, on [Eumeralla](../../../stratigraphy/e/eumeralla.yml), unchanged.
+
+**Evidence.**
+- felton1997a, Table 2, p. 719: Eumeralla I, "?Late Barremian–Albian; ?upper F. wonthaggiensis–C. striatus"; Eumeralla IV, "Albian (–?Cenomanian); upper C. paradoxa–P. pannosus".
+- felton1997a, p. 727: the drainage system "persisted to the end of the Albian".
+
+**Ruled out.**
+- *Cenomanian.* Felton queries it for the top unit only, and her own text ends the system at the end of the Albian.
+
+**Open.** The Hauterivian still rests on Bell and colleagues' (2018) passing "late Hauterivian–Albian".
+
 ## What does Wagstaff and McEwen Mason's (1989) dating contribute to the age of the Eumeralla Formation?
 
 *2026-11-23*
@@ -20,6 +35,7 @@
 
 ## References
 
+- `felton1997a`: Felton, E. A. (1997). A non-marine Lower Cretaceous rift-related epiclastic volcanic unit in southern Australia: the Eumeralla Formation in the Otway Basin. Part I: Lithostratigraphy and depositional environments. *AGSO Journal of Australian Geology & Geophysics* 16(5): 717-730.
 - `wagstaff1989a`: Wagstaff, B. E.; McEwen Mason, J. R. C. (1989). Palynological dating of Lower Cretaceous coastal vertebrate localities, Victoria, Australia. *National Geographic Research* 5: 54-63.
 
 ## Other references

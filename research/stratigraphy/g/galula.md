@@ -1,5 +1,21 @@
 # Galula
 
+## Does Widlansky and colleagues' preferred C32 correlation add the Maastrichtian to the Galula?
+
+*2026-11-25*
+
+**Conclusion.** Yes. Supersedes the 2026-11-23 entry's reading that the members run from the Aptian to the Campanian. Widlansky and colleagues (2018) prefer correlating the Namba Member's reversals to Chron C32, which "would place the TZ-07 fossil localities in the upper Campanian or lowermost Maastrichtian". That is the paper's own undecided dating between two stages, and under CONTRIBUTING it contributes both, as their alternative correlation to Chron C34 contributes its older span. Roberts and colleagues (2010), who name the formation, give it a middle Cretaceous age, Aptian to Cenomanian, and "ca. 120–90 Ma" from its fauna; that adds nothing outside the current span. Governs `stages`, Aptian to Maastrichtian, on [Galula](../../../stratigraphy/g/galula.yml), and Cenomanian to Maastrichtian on its [Namba Member](../../../stratigraphy/n/namba.yml); no record in either unit has a stage outside the new spans.
+
+**Evidence.**
+- widlansky2018a, p. ?, 5.1 Correlation to the Geomagnetic Polarity Timescale (GPTS): the C32 correlation "would place the TZ-07 fossil localities in the upper Campanian or lowermost Maastrichtian".
+- roberts2010a, p. 202: "the preponderance of faunal data indicate a ‘‘middle” Cretaceous age (ca. 120–90 Ma) for the formation".
+- roberts2010a, p. 202: taxa of the Namba Member "most typically associated with Aptian–Late Cretaceous and early Paleogene (in the case of the gondwanatherians)" sediments.
+
+**Ruled out.**
+- *Campanian as the top, from the C32 correlation.* The correlation as the paper states it reaches the lowermost Maastrichtian.
+
+**Open.** Which correlation of the Namba reversals holds; the 2026-11-23 entry's Open line stands.
+
 ## What do the cited works say about the age of the Galula Formation?
 
 *2026-11-23*
@@ -18,7 +34,4 @@
 ## References
 
 - `widlansky2018a`: Widlansky, S. J.; Clyde, W. C.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2018). Paleomagnetism of the Cretaceous Galula Formation and implications for vertebrate evolution. *Journal of African Earth Sciences* 139: 403-420. doi:10.1016/j.jafrearsci.2017.11.029
-
-## Other references
-
 - `roberts2010a`: Roberts, E. M.; O'Connor, P. M.; Stevens, N. J.; Gottfried, M. D.; Jinnah, Z. A.; Ngasala, S.; Choh, A. M.; Armstrong, R. A. (2010). Sedimentology and depositional environments of the Red Sandstone Group, Rukwa Rift Basin, southwestern Tanzania: New insight into Cretaceous and Paleogene terrestrial ecosystems and tectonics in sub-equatorial Africa. *Journal of African Earth Sciences* 57(3): 179-212. doi:10.1016/j.jafrearsci.2009.09.002

@@ -1,5 +1,21 @@
 # Cerro Carnerero
 
+## What does Riccardi and colleagues' (1992) chapter say lies beneath the Cerro Carnerero?
+
+*2026-11-25*
+
+**Conclusion.** Marine beds with late Pliensbachian to early Toarcian ammonites, on which the Carnerero "probably" lies unconformably. Answers the 2026-11-23 entry's Open line. The chapter gives the Carnerero no age of its own, and it relays the ammonites from earlier work. The beds beneath reach the early Toarcian, so the member is at least partly Toarcian. Pol and colleagues' (2022) "Pliensbachian or the early Toarcian" still contributes both stages, since an either-or contributes every stage it allows. The chapter's "Toarcian to Middle Jurassic" for the Lonco Trapial Group comes from stratigraphic relationships that the U–Pb bracket in [Lonco Trapial](../l/lonco-trapial.md) supersedes. Governs `stages: [Pliensbachian, Toarcian]` on [Cerro Carnerero](../../../stratigraphy/c/cerro-carnerero.yml), unchanged.
+
+**Evidence.**
+- riccardi1992a, p. 134: "The marine facies, called the Osta Arena or Lomas Chatas and the Mulanguiñeu Formations, yielded late Pliensbachian–early Toarcian ammonites (Musacchio and Riccardi 1971; Blasco et al. 1979a; Hillebrandt 1987)".
+- riccardi1992a, p. 134: "The Osta Arena and Mulanguiñeu Formations probably are unconformably overlain by 350 m of red and white tuffs and reddish and greenish siltstones with intercalated conglomerates of the Carnerero or Cerro Ferrarotti Formation, which yielded the sauropod Amygdalodon patagonicus Cabrera".
+- riccardi1992a, p. 134: "Stratigraphic relationships suggest a Toarcian to Middle Jurassic age for the Lonco Trapial Group".
+
+**Ruled out.**
+- *Toarcian alone, from the underlying beds.* The beds span the late Pliensbachian and early Toarcian, the contact is only "probably" an unconformity, and the chapter does not say the Carnerero lies on the Toarcian part everywhere; Pol and colleagues' either-or keeps the Pliensbachian.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Cerro Carnerero?
 
 *2026-11-23*
@@ -25,6 +41,7 @@
 
 ## References
 
+- `riccardi1992a`: Riccardi, A. C.; Gulisano, C. A.; Mojica, J.; Palacios, O.; Schubert, C.; Thomson, M. R. A. (1992). Western South America and Antarctica. In *The Jurassic of the Circum-Pacific (Westermann, G. E. G., ed.)*, pp. 122-161. Cambridge University Press, Cambridge. doi:10.1017/cbo9780511529375.008
 - `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 131-163. Springer International Publishing. doi:10.1007/978-3-030-95959-3_4
 - `rauhut2003c`: Rauhut, O. W. M. (2003). Revision of Amygdalodon patagonicus Cabrera, 1947 (Dinosauria, Sauropoda). *Fossil Record* 6: 173-181. doi:10.1002/mmng.20030060110
 - `page1999a`: Page, R.; Ardolino, A.; de Barrio, R. E.; Franchi, M.; Lizuain, A.; Page, S.; Silva Nieto, D. (1999). Estratigrafía del Jurásico y Cretácico del Macizo de Somún Curá, provincias de Río Negro y Chubut [Jurassic and Cretaceous stratigraphy of the Somún Curá Massif, Río Negro and Chubut provinces]. In *Geología Argentina*, pp. 460-488. Subsecretaría de Minería de la Nación.
@@ -32,5 +49,4 @@
 
 ## Other references
 
-- `riccardi1992a`: Riccardi, A. C.; Gulisano, C. A.; Mojica, J.; Palacios, O.; Schubert, C.; Thomson, M. R. A. (1992). Western South America and Antarctica. In *The Jurassic of the Circum-Pacific (Westermann, G. E. G., ed.)*, pp. 122-161. Cambridge University Press, Cambridge. doi:10.1017/cbo9780511529375.008
 - `nullo1975a`: Nullo, F.; Proserpio, C. (1975). La Formación Taquetrén en Cañadón del Zaino (Chubut) y sus relaciones estratigráficas en el ámbito de la Patagonia, de acuerdo a la flora, República Argentina [The Taquetrén Formation at Cañadón del Zaino (Chubut) and its stratigraphic relationships within Patagonia, according to the flora, Argentina]. *Revista de la Asociación Geológica Argentina* 30(2): 133-150.
