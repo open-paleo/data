@@ -1,5 +1,19 @@
 # Straw-yellow Sandstone
 
+## Does Zhang and colleagues' (2009) Baojishan–Honghui paper date the member?
+
+*2026-11-25*
+
+**Conclusion.** No. Answers the 2026-11-23 entry's Open line. Zhang and colleagues (2009), which Li and colleagues (2019, 2024) cite for the late Bathonian, name the member once, as the lower part of the Wangjiashan Formation, about 240 m thick, and give it no age; their Fig. 2 dates the formation as a whole, Bajocian to early Callovian (see [Wangjiashan](../w/wangjiashan.md)). No original cited for the late Bathonian names that stage. Li and colleagues' (2024) Bathonian, on the member's own plants and palynoflora and the invertebrates of the overlying member, is a published reading and stands. Governs `stages: [Bathonian]` on [Straw-yellow Sandstone](../../../stratigraphy/s/straw-yellow-sandstone.yml), unchanged.
+
+**Evidence.**
+- zhang2009c, p. 624: "the Wangjiashan Formation is divided into a lower straw-yellow sandstone member and an upper oil shale member. The former is relatively stable in thickness, generally 240 m" (translated).
+
+**Ruled out.**
+- *Bajocian to Callovian for the member, from the formation's span in Fig. 2.* The figure does not divide the members, and a parent's age does not date its child.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the definition and age of the Straw-yellow Sandstone?
 
 *2026-11-23*
@@ -25,6 +39,7 @@
 
 ## References
 
+- `zhang2009c`: Zhang, H. (2009). [Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]. *Acta Sedimentologica Sinica* 27(4): 622-631.
 - `li1982a`: Li, B.; Xu, F.; Ma, Q.; Pan, H.; Wang, S.; Li, Z. (1982). 甘肃靖远王家山盆地中侏罗世地层 [Middle Jurassic strata of the Wangjiashan Basin, Jingyuan, Gansu]. *Journal of Stratigraphy* 6(1): 33-40.
 - `du1985a`: Du, B. A. (1985). Sporo-pollen assemblages from the middle Jurassic in the Wangjiashan Basin of Jingyuan, Gansu, and their stratigraphic and paleogeographic significance. *Geological Review* 31(2): 131-141.
 - `li2019b`: Li, D. Q.; Xing, L. D.; Lockley, M. G.; Romilio, A.; Yang, J. T.; Li, L. F. (2019). The first theropod tracks from the Middle Jurassic of Gansu, Northwest China: new and rare evidence of quadrupedal progression in theropod dinosaurs. *Journal of Palaeogeography* 8: 10. doi:10.1186/s42501-019-0028-4
@@ -32,5 +47,4 @@
 
 ## Other references
 
-- `zhang2009c`: Zhang, H. (2009). [Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]. *Acta Sedimentologica Sinica* 27(4): 622-631.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8

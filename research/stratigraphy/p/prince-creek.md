@@ -1,5 +1,20 @@
 # Prince Creek
 
+## Are the Paleocene samples near Ocean Point Prince Creek rock?
+
+*2026-11-25*
+
+**Conclusion.** Not in Frederiksen and colleagues' (1988) usage: they assign every Paleocene sample of the lower Colville River, localities 6 to 11, to the Sagavanirktok Formation, following Carter and Galloway (1985), and date their highest Cretaceous sample, a fluvial sand east of Ocean Point, mid-Maastrichtian. Their samples place no Cretaceous–Paleogene boundary inside the Prince Creek, so the formation still takes no Danian; its Paleocene period rests, as before, on Fiorillo and colleagues' spans. Governs `stages: [Campanian, Maastrichtian]` and `period` on [Prince Creek](../../../stratigraphy/p/prince-creek.yml), unchanged.
+
+**Evidence.**
+- frederiksen1988a, p. 516: "These lignitic, gravelly strata were assigned to the Sagavanirktok Formation by Carter and Galloway (1985) (Fig. 3). Samples from localities 6–11 (Fig. 2) are from this unit and contain Paleocene spore and pollen assemblages."
+- frederiksen1988a, p. 519: "the Ocean Point beds (Fig. 2, localities 3, 4) and the fluvial sand unit at locality 5 are mid-Maastrichtian in age".
+
+**Ruled out.**
+- *Danian, from the Paleocene samples near Ocean Point.* The paper places them in another formation.
+
+**Open.** Whether the beds Frederiksen and colleagues call Sagavanirktok fall in the Prince Creek as Mull and colleagues (2003) later restricted it; the works read do not say.
+
 ## What do Fiorillo and colleagues (2010) say about the age of the Prince Creek Formation?
 
 *2026-11-23*
@@ -47,6 +62,7 @@
 
 ## References
 
+- `frederiksen1988a`: Frederiksen, N. O.; Ager, T. A.; Edwards, L. E. (1988). Palynology of Maastrichtian and Paleocene rocks, lower Colville River region, North Slope of Alaska. *Canadian Journal of Earth Sciences* 25(4): 512-527. doi:10.1139/e88-051
 - `fiorillo2010a`: Fiorillo, A. R.; McCarthy, P. J.; Flaig, P. P.; Brandlen, E.; Norton, D. W.; Zippi, P.; Jacobs, L.; Gangloff, R. A. (2010). Paleontology and paleoenvironmental interpretation of the Kikak-Tegoseak Quarry (Prince Creek Formation: Late Cretaceous), northern Alaska: a multi-disciplinary study of a high-latitude ceratopsian dinosaur bonebed. In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 456-477. Indiana University Press, Bloomington.
 - `fiorillo2012a`: Fiorillo, A. R.; Tykoski, R. S. (2012). A new Maastrichtian species of the centrosaurine ceratopsid Pachyrhinosaurus from the North Slope of Alaska. *Acta Palaeontologica Polonica* 57(3): 561-573. doi:10.4202/app.2011.0033
 - `fiorillo2013a`: Fiorillo, A. R.; Tykoski, R. S. (2013). An immature Pachyrhinosaurus perotorum (Dinosauria: Ceratopsidae) nasal reveals unexpected complexity of craniofacial ontogeny and integument in Pachyrhinosaurus. *PLOS ONE* 8(6): e65802. doi:10.1371/journal.pone.0065802
@@ -58,5 +74,6 @@
 
 ## Other references
 
+- `carter1985a`: Carter, L. D.; Galloway, J. P. (1985). Engineering-geologic maps of northern Alaska, Harrison Bay quadrangle. *United States Geological Survey Open-File Report* 85-256.
 - `mull2003a`: Mull, C. G.; Houseknecht, D. W.; Bird, K. J. (2003). Revised Cretaceous and Tertiary stratigraphic nomenclature in the Colville Basin, northern Alaska. *United States Geological Survey Professional Paper* 1673. doi:10.3133/pp1673
 - `conrad1992a`: Conrad, J. E.; McKee, E. H.; Turrin, B. D. (1992). Age of tephra beds at the Ocean Point dinosaur locality, North Slope, Alaska, based on K-Ar and 40Ar/39Ar analyses. *U.S. Geological Survey Bulletin* 1990-C: 1-12. doi:10.3133/b1990c

@@ -1,5 +1,22 @@
 # Xiagou
 
+## What do Zheng and colleagues (2021) give for the age of the Xiagou?
+
+*2026-11-25*
+
+**Conclusion.** Late early Aptian to early Albian, a determination for the formation itself. Answers the 2026-11-23 entry's Open line. Zheng and colleagues (2021) correlate the Xiagou with the upper Jiufotang and Shahai formations and support the span with its ostracods, its bivalves, OAE1b in the uppermost Xiagou of the Yujinzi Basin, and their own 112.4 Ma basalt at the base of the overlying Zhonggou, which they treat as a maximum age for that bed. The Albian now rests on this paper rather than on relays. Their charophytes' "late Barremian to early Aptian" is given for the Chijinpu and Xiagou together. Governs `stages: [Aptian, Albian]` on [Xiagou](../../../stratigraphy/x/xiagou.yml), unchanged.
+
+**Evidence.**
+- zheng2021c, p. 16: "the Xiagou Formation correlates with the upper Jiufotang and Shahai formations with a late early Aptian-early Albian age".
+- zheng2021c, p. 11: "The above bivalve assemblage from the Xiagou Formation providea middle Aptian-early Albian age."
+- zheng2021c, p. 2: "In the Yujinzi Basin, a pronounced positive carbon isotopic excursion in the Xinminpu Group (uppermost Xiagou Formation and lower Zhonggou Formation) is interpreted to represent OAE1b (Suarez et al., 2018)."
+- zheng2021c, p. 15: "These data indicate a late Barremian to early Aptian age for the Chijinpu and Xiagou formations."
+
+**Ruled out.**
+- *Barremian, from the charophytes.* The age is given to two formations together, which dates neither.
+
+**Open.** Nothing.
+
 ## Do the early Aptian dates from Changma fix the age of the whole Xiagou Formation?
 
 *2026-11-23*
@@ -50,13 +67,10 @@
 
 ## References
 
+- `zheng2021c`: Zheng, D.; Wang, H.; Li, S.; Wang, B.; Jarzembowski, E. A.; Dong, C.; Fang, Y.; Teng, X.; Yu, T.; Yang, L.; Li, Y.; Zhao, X.; Xue, N.; Chang, S. C.; Zhang, H. (2021). Synthesis of a chrono- and biostratigraphical framework for the Lower Cretaceous of Jiuquan, NW China: implications for major evolutionary events. *Earth-Science Reviews* 213: 103474. doi:10.1016/j.earscirev.2020.103474
 - `suarez2013a`: Suarez, M. B.; Ludvigson, G. A.; González, L. A.; Al-Suwaidi, A. H.; You, H. L. (2013). Stable isotope chemostratigraphy in lacustrine strata of the Xiagou Formation, Gansu Province, NW China. In *Isotopic Studies in Cretaceous Research (Bojar, A. V.; Melinte-Dobrinescu, M. C.; Smit, J., eds)*, pp. 143-155. doi:10.1144/SP382.1
 - `zhou2026a`: Zhou, L. Q.; Lamanna, M. C.; Poust, A. W.; Li, D. Q.; You, H. L.; O'Connor, J. K. (2026). First non-avian theropod (Dromaeosauridae, Microraptorinae) from the bird-bearing Lower Cretaceous Xiagou Formation of the Changma Basin, Gansu Province, northwestern China. *Annals of Carnegie Museum* 92(2): 89-110.
 - `suarez2018a`: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P. (2018). Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China. *Journal of Vertebrate Paleontology* 38(sup1): 12-21. doi:10.1080/02724634.2018.1510412
 - `you2018a`: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P. (2018). Introducing the Mazongshan Dinosaur Fauna. *Journal of Vertebrate Paleontology* 38(sup1): 1-11. doi:10.1080/02724634.2017.1396995
 - `you2014a`: You, H. L.; Li, D. Q.; Dodson, P. (2014). Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China. *Hadrosaurs*: 73-76.
 - `you2011a`: You, H.; Li, D.; Liu, W. (2011). A new hadrosauriform dinosaur from the Early Cretaceous of Gansu Province, China. *Acta Geologica Sinica (English Edition)* 85(1): 51-57. doi:10.1111/j.1755-6724.2011.00377.x
-
-## Other references
-
-- `zheng2021c`: Zheng, D.; Wang, H.; Li, S.; Wang, B.; Jarzembowski, E. A.; Dong, C.; Fang, Y.; Teng, X.; Yu, T.; Yang, L.; Li, Y.; Zhao, X.; Xue, N.; Chang, S. C.; Zhang, H. (2021). Synthesis of a chrono- and biostratigraphical framework for the Lower Cretaceous of Jiuquan, NW China: implications for major evolutionary events. *Earth-Science Reviews* 213: 103474. doi:10.1016/j.earscirev.2020.103474

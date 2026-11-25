@@ -1,5 +1,21 @@
 # Shishugou
 
+## Do Vincent and Allen (2001) and Hendrix and colleagues (1992) support the Bathonian?
+
+*2026-11-25*
+
+**Conclusion.** They name no stage. Answers part of the 2026-11-23 entry's Open line. Two of the four works Eberth and colleagues (2001) cite for the Bathonian to Oxfordian are now read: Vincent and Allen (2001) give the Shishugou Group as "Middle to Upper Jurassic" throughout, from Chinese regional compilations, and Hendrix and colleagues (1992) name no stage for it, placing it across the Middle and Upper Jurassic only in a figure. Eberth and colleagues' Bathonian is a published reading and stays under the union rule. Governs `stages: [Bathonian, Callovian, Oxfordian]` on [Shishugou](../../../stratigraphy/s/shishugou.yml), unchanged.
+
+**Evidence.**
+- eberth2001a, p. 1639: the megasequence "is regarded as Bathonian to Oxfordian in age (Chen 1985; Hendrix et al. 1992; Chen 1996a; Vincent and Allen in press)".
+- vincent2001a, p. 343: "Mesozoic strata within the Junggar Basin are nonmarine, and the resolution of age dating is relatively poor."
+- vincent2001a, p. 354: "the Middle to Upper Jurassic Shishugou Group".
+
+**Ruled out.**
+- *Dropping the Bathonian because two of the cited works name no stage.* Their silence does not contradict it; a newer, narrower dating would be needed to bound it, and a narrower one would add rather than replace.
+
+**Open.** The other two works Eberth and colleagues cite, Chen (1985) and Chen (1996), are unread; either may be where the Bathonian comes from.
+
 ## What do the cited works say about the age of the Shishugou?
 
 *2026-11-23*
@@ -24,10 +40,14 @@
 ## References
 
 - `eberth2001a`: Eberth, D. A.; Brinkman, D. B.; Chen, P. J.; Yuan, F. T.; Wu, S. Z.; Li, G.; Cheng, X. S. (2001). Sequence stratigraphy, paleoclimate patterns, and vertebrate fossil preservation in Jurassic–Cretaceous strata of the Junggar Basin, Xinjiang Autonomous Region, People's Republic of China. *Canadian Journal of Earth Sciences* 38(12): 1627-1644. doi:10.1139/e01-067
+- `vincent2001a`: Vincent, S. J.; Allen, M. B. (2001). Sedimentary record of Mesozoic intracontinental deformation in the eastern Junggar Basin, northwest China: Response to orogeny at the Asian margin. In *Paleozoic and Mesozoic Tectonic Evolution of Central Asia: From Continental Assembly to Intracontinental Deformation (Hendrix, M. S.; Davis, G. A., eds.)*, pp. 341-360.
 - `moore2018a`: Moore, A. J.; Mo, J.; Clark, J. M.; Xu, X. (2018). Cranial anatomy of Bellusaurus sui (Dinosauria: Eusauropoda) from the Middle-Late Jurassic Shishugou Formation of northwest China and a review of sauropod cranial ontogeny. *PeerJ* 6. doi:10.7717/peerj.4881
 - `upchurch2005a`: Upchurch, P.; Barrett, P. M. (2005). Phylogenetic and taxic perspectives on sauropod diversity. In *The Sauropods: Evolution and Paleobiology (Curry Rogers, K. A.; Wilson, J. A., eds)*, pp. 104-124. University of California Press, Berkeley.
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 
 ## Other references
 
+- `chen1985a`: Chen, Z. (1985). Explanatory notes on the Geological Map of Xinjiang Uygur Autonomous Region, China (1:2 000 000). Geological Publishing House, Beijing.
+- `chen1996a`: Chen, P. J. (1996). Nonmarine Jurassic strata of China. In *The Continental Jurassic (Morales, M., ed.)*, pp. 395-412.
+- `hendrix1992a`: Hendrix, M. S.; Graham, S. A.; Carroll, A. R.; Sobel, E. R.; McKnight, C. L.; Schulein, B. J.; Wang, Z. (1992). Sedimentary record and climatic implications of recurrent deformation in the Tian Shan: Evidence from Mesozoic strata of the north Tarim, south Junggar, and Turpan basins, northwest China. *Geological Society of America Bulletin* 104(1): 53-79. doi:10.1130/0016-7606(1992)104<0053:sracio>2.3.co;2
 - `dong1992a`: Dong, Z. (1992). Dinosaurian Faunas of China. China Ocean Press, Beijing.

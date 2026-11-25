@@ -1,5 +1,20 @@
 # Wangjiashan
 
+## What does Zhang and colleagues' (2009) basin chart give for the age of the Wangjiashan?
+
+*2026-11-25*
+
+**Conclusion.** Bajocian to early Callovian. Adds to the 2026-11-23 entry, whose Open line asked whether the formation reaches the Bajocian or Callovian. Zhang and colleagues (2009) give the basin's four Jurassic formations together a "Plensbachian" to Callovian age in the text, relayed from earlier work, and point to their Fig. 2 for each formation's age; the figure draws the Wangjiashan from within the Bajocian to the lower Callovian, without dividing its members. Under the union rule the figure adds the Bajocian and Callovian to Li and colleagues' (2024) Bathonian. Governs `stages: [Bajocian, Bathonian, Callovian]` on [Wangjiashan](../../../stratigraphy/w/wangjiashan.yml); [*Baiyinosaurus baojiensis*](../../../genera/B/Baiyinosaurus.yml), Bathonian, is unaffected.
+
+**Evidence.**
+- zhang2009c, p. 624: "the four lithostratigraphic units above belong, respectively, to deposits ranging from the Early Jurassic Plensbachian to the Middle Jurassic Callovian; the corresponding chronostratigraphic correlation is shown in Fig. 2" (translated).
+- zhang2009c, Fig. 2, p. 623: the Wangjiashan Formation box begins within the Bajocian and ends within the lower Callovian.
+
+**Ruled out.**
+- *Pliensbachian to Callovian for the Wangjiashan.* The text gives that span to four formations together, which dates none of them.
+
+**Open.** The age of the Oil Shale Member, which no work cited dates separately.
+
 ## What do the cited works say about the age of the Wangjiashan Formation?
 
 *2026-11-23*
@@ -18,11 +33,11 @@
 
 ## References
 
+- `zhang2009c`: Zhang, H. (2009). [Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]. *Acta Sedimentologica Sinica* 27(4): 622-631.
 - `li2024a`: Li, N.; Maidment, S. C. R.; Li, D.; You, H.; Peng, G. (2024). A new stegosaur (Dinosauria: Ornithischia) from the Middle Jurassic of Gansu Province, China. *Scientific Reports* 14(1). doi:10.1038/s41598-024-66280-x
 
 ## Other references
 
 - `li1982a`: Li, B.; Xu, F.; Ma, Q.; Pan, H.; Wang, S.; Li, Z. (1982). 甘肃靖远王家山盆地中侏罗世地层 [Middle Jurassic strata of the Wangjiashan Basin, Jingyuan, Gansu]. *Journal of Stratigraphy* 6(1): 33-40.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
-- `zhang2009c`: Zhang, H. (2009). [Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]. *Acta Sedimentologica Sinica* 27(4): 622-631.
 - `li2019b`: Li, D. Q.; Xing, L. D.; Lockley, M. G.; Romilio, A.; Yang, J. T.; Li, L. F. (2019). The first theropod tracks from the Middle Jurassic of Gansu, Northwest China: new and rare evidence of quadrupedal progression in theropod dinosaurs. *Journal of Palaeogeography* 8: 10. doi:10.1186/s42501-019-0028-4

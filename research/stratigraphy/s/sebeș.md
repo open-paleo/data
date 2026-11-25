@@ -1,5 +1,20 @@
 # Sebeș
 
+## Does the Sebeș begin in the latest Campanian?
+
+*2026-11-25*
+
+**Conclusion.** Possibly, at Petrești-Arini. Answers the first point of the 2026-11-23 entry's Open line. Vremir and colleagues (2014) date the marine Bozeș Formation below to the mid late Campanian by nannofossils and, from continuous sedimentation through the brackish beds at its top, conclude that the Sebeș "began in this area sometime during the latest Campanian–earliest Maastrichtian". They give the formation no date from within it. Their "perhaps continues into the Paleocene" for the top is a possibility and adds no epoch. Governs `stages: [Campanian, Maastrichtian]` on [Sebeș](../../../stratigraphy/s/sebeș.yml), unchanged.
+
+**Evidence.**
+- vremir2014a, p. 31: the Bozeș Formation at the site "falls within the CC22/UC15 … Zone, which is mid late Campanian in age (Ogg and Hinnov, 2012)".
+- vremir2014a, p. 31: "it can be most parsimoniously concluded that deposition of the continental vertebrate-bearing Sebeş Formation began in this area sometime during the latest Campanian–earliest Maastrichtian".
+
+**Ruled out.**
+- *Paleocene.* Raised as a possibility only.
+
+**Open.** Whether the top reaches the end of the Maastrichtian, as before.
+
 ## What do the cited works say about the age of the Sebeș?
 
 *2026-11-23*
@@ -35,12 +50,13 @@
 
 ## References
 
+- `vremir2014a`: Vremir, M.; Bălc, R.; Csiki-Sava, Z.; Brusatte, S. L.; Dyke, G.; Naish, D.; Norell, M. A. (2014). Petreşti-Arini – An important but ephemeral Upper Cretaceous continental vertebrate site in the southwestern Transylvanian Basin, Romania. *Cretaceous Research* 49: 13-38. doi:10.1016/j.cretres.2014.02.002
 - `csiki-sava2016a`: Csiki-Sava, Z.; Vremir, M.; Vasile, Ş.; Brusatte, S. L.; Dyke, G.; Naish, D.; Norell, M. A.; Totoianu, R. (2016). The East Side Story – The Transylvanian latest Cretaceous continental vertebrate record and its implications for understanding Cretaceous-Paleogene boundary events. *Cretaceous Research* 57: 662-698. doi:10.1016/j.cretres.2015.09.003
 - `díezdíaz2025a`: Díez Díaz, V.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P. (2025). Revision of Romanian sauropod dinosaurs reveals high titanosaur diversity and body-size disparity on the latest Cretaceous Haţeg Island, with implications for titanosaurian biogeography. *Journal of Systematic Palaeontology* 23(1). doi:10.1080/14772019.2024.2441516
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439
 
 ## Other references
 
+- `ogg2012a`: Ogg, J. G.; Hinnov, L. A. (2012). Cretaceous. In *The Geologic Time Scale 2012 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 793-853. Elsevier.
 - `vremir2010a`: Vremir, M. (2010). New faunal elements from the late Cretaceous (Maastrichtian) continental deposits of Sebeş area (Transylvania). *Terra Sebus, Acta Musei Sabesiensis* 2: 635-684.
-- `vremir2014a`: Vremir, M.; Bălc, R.; Csiki-Sava, Z.; Brusatte, S. L.; Dyke, G.; Naish, D.; Norell, M. A. (2014). Petreşti-Arini – An important but ephemeral Upper Cretaceous continental vertebrate site in the southwestern Transylvanian Basin, Romania. *Cretaceous Research* 49: 13-38. doi:10.1016/j.cretres.2014.02.002
 - `vremir2015a`: Vremir, M.; Dyke, G.; Totoianu, R. (2015). Repertoire of the Late Cretaceous vertebrate localities from Sebeş Area, Alba County (Romania). *Terra Sebus, Acta Musei Sabesiensis* 7: 695-724.
