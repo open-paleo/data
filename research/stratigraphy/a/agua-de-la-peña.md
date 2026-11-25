@@ -1,5 +1,22 @@
 # Agua de la Peña
 
+## Does dating the group by its formations hold, and is the Ladinian its floor?
+
+*2026-11-25*
+
+**Conclusion.** Yes on both. A group may take its age from a source that dates it by way of its members, and the group's Ladinian floor rests on a published source, Ezcurra's (2010) "Ladinian-early Carnian" for the Los Rastros Formation. Shipman (2004), a doctoral thesis that cannot carry the age alone, agrees: he gives the group as "Middle to Late Triassic", the Chañares Formation as Ladinian from its tetrapods, and the Ischichuca Formation, the Chañares's equivalent, as undated, with biostratigraphy "suggesting the Middle Triassic". No work read gives any formation of the group an Anisian age. Governs `stages: [Ladinian, Carnian, Norian]` on [Agua de la Peña](../../../stratigraphy/a/agua-de-la-peña.yml), unchanged.
+
+**Evidence.**
+- ezcurra2010a, p. 372: the Ischigualasto lies between "the Los Rastros Fm. (Ladinian-early Carnian) below and the Los Colorados Fm. (Norian) above".
+- shipman2004a, p. 18: "the Middle to Late Triassic Agua de la Peña Group (containing the Chañares/Ischichuca Formations, the Los Rastros Formation, the Ischigualasto Formation, and the Los Colorados Formation".
+- shipman2004a, pp. 125–126: "Tetrapod fauna found within the Chañares Formation indicate an age of Middle Triassic (Ladinian)".
+- shipman2004a, p. 126: "The Ischichuca Formation has no dates at present but has abundant biostratigraphic data suggesting the Middle Triassic".
+
+**Ruled out.**
+- *An Anisian floor, from the undated Ischichuca.* No source gives it a stage, and an undated unit adds none.
+
+**Open.** Nothing.
+
 ## Which formations make up the Agua de la Peña Group, and what range do they give it?
 
 *2026-11-23*
@@ -22,9 +39,9 @@
 
 ## References
 
-- `caselli2001a`: Caselli, A. T.; Marsicano, C. A.; Arcucci, A. B. (2001). Sedimentología y paleontología de la Formación Los Colorados, Triásico superior (provincias de La Rioja y San Juan, Argentina) [Sedimentology and palaeontology of Los Colorados Formation, Upper Triassic (La Rioja and San Juan provinces, Argentina)]. *Revista de la Asociación Geológica Argentina* 56(2): 173-188.
 - `ezcurra2010a`: Ezcurra, M. D. (2010). A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny. *Journal of Systematic Palaeontology* 8(3): 371-425. doi:10.1080/14772019.2010.484650
 - `shipman2004a`: Shipman, T. C. (2004). Links between sediment accumulation rates and the development of alluvial architecture: Triassic Ischigualasto Formation, northwestern Argentina. Doctoral thesis, Department of Geosciences, University of Arizona.
+- `caselli2001a`: Caselli, A. T.; Marsicano, C. A.; Arcucci, A. B. (2001). Sedimentología y paleontología de la Formación Los Colorados, Triásico superior (provincias de La Rioja y San Juan, Argentina) [Sedimentology and palaeontology of Los Colorados Formation, Upper Triassic (La Rioja and San Juan provinces, Argentina)]. *Revista de la Asociación Geológica Argentina* 56(2): 173-188.
 
 ## Other references
 

@@ -1,5 +1,20 @@
 # Argiles et Grès à Reptiles
 
+## Does the notice's "Rognacian (= Danian)" give the unit a Danian age?
+
+*2026-11-25*
+
+**Conclusion.** No. Answers the 2026-11-23 entry's Open line. The Aix-en-Provence notice heads the unit "Rognacian (= Danian)" but files that stage under its Mesozoic ("Secondary") series, with "Bégudian (= Maastrichtian)" below it and the Cretaceous series ending at the top of the Rognacian. By the notice's own arrangement its Danian is a Cretaceous stage, so it is not the Paleocene Danian of the current chart, and it adds no Paleocene. The notice gives no basis for either equation. The stages rest on later works. Governs `period` and `stages: [Campanian, Maastrichtian]` on [Argiles et Grès à Reptiles](../../../stratigraphy/a/argiles-et-grès-à-reptiles.yml), unchanged, and the note on catzigras1969a there.
+
+**Evidence.**
+- catzigras1969a, p. 6: under "SECONDARY", "C8. Rognacian (= Danian). The stage generally comprises four main formations" (translated).
+- catzigras1969a, p. 7: "C7. Bégudian (= Maastrichtian) (300 m)" (translated).
+
+**Ruled out.**
+- *Danian, or Paleocene, from the notice.* The notice places its Danian in the Mesozoic.
+
+**Open.** Nothing.
+
 ## What does the Aix-en-Provence map notice say about the age and fossils of the Argiles et Grès à Reptiles?
 
 *2026-11-23*

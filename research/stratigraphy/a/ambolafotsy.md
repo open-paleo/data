@@ -1,5 +1,22 @@
 # Ambolafotsy
 
+## Which parts of the Ambolafotsy are dated by their own fossils?
+
+*2026-11-25*
+
+**Conclusion.** The lower and upper parts. Randrianasolo (1989) dates the lower Ambolafotsy marls by their planktonic foraminifera and nannoplankton, and the upper Ambolafotsy by *Subprionocyclus neptuni* and the *Marginotruncana sigali* zone; only the middle sandstones, which hold the *Dahalokely* site, lack fossils of stratigraphic value and are dated by the units that bracket them. Farke and Sertich (2013) repeat the division. The earlier note that the whole unit is dated by bracketing marine deposits held only for the middle part. Governs the note on farke2013a on [Ambolafotsy](../../../stratigraphy/a/ambolafotsy.yml); `stages: [Turonian]` unchanged.
+
+**Evidence.**
+- randrianasolo1989a, p. 120: the lower formation "is well-dated by the microfauna" (translated).
+- randrianasolo1989a, p. 121: "Containing no fossils of stratigraphic value, this formation is dated by the marls of the lower Ambolafotsy and the sandstones of the upper Ambolafotsy that bracket it" (translated).
+- randrianasolo1989a, p. 124: the upper formation "is dated by the presence, in member b, of Subprionocyclus neptuni and, in member c, of the Marginotruncana sigali zone" (translated).
+- farke2013a, p. 2: "Because no biostratigraphically informative microfossils are known from the middle unit yet".
+
+**Ruled out.**
+- *The whole Ambolafotsy dated only by bracketing deposits.* That describes the middle unit alone.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age and divisions of the Ambolafotsy?
 
 *2026-11-23*
@@ -19,8 +36,8 @@
 
 ## References
 
-- `randrianasolo1989a`: Randrianasolo, A.; Philip, J. (1989). Le Turonien du nord de Madagascar dans son cadre géodynamique [The Turonian of northern Madagascar in its geodynamic context]. *Geobios* 11: 119-129.
 - `farke2013a`: Farke, A. A.; Sertich, J. J. W. (2013). An Abelisauroid Theropod Dinosaur from the Turonian of Madagascar. *PLoS ONE* 8(4): e62047. doi:10.1371/journal.pone.0062047
+- `randrianasolo1989a`: Randrianasolo, A.; Philip, J. (1989). Le Turonien du nord de Madagascar dans son cadre géodynamique [The Turonian of northern Madagascar in its geodynamic context]. *Geobios* 11: 119-129.
 
 ## Other references
 

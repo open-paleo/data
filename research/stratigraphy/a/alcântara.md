@@ -1,5 +1,19 @@
 # Alcântara
 
+## Does Bandeira and colleagues' (2024) Albian–Cenomanian row add the Albian?
+
+*2026-11-25*
+
+**Conclusion.** No. Bandeira and colleagues (2024) give the Alcântara Formation as "Albian – Cenomanian" in one row of an occurrence table, for cf. *Ouranosaurus* sp., and cite Novas (2009) for it. A compilation row repeats the reading it cites rather than making one, and a relayed statement adds nothing to the reading it relays; Novas (2009) has not been read. The Albian of the Undifferentiated Unit below is already ruled out as the Alcântara's in the 2026-11-23 entry. Governs `stages: [Cenomanian]` on [Alcântara](../../../stratigraphy/a/alcântara.yml), unchanged, and the note on bandeira2024a there.
+
+**Evidence.**
+- bandeira2024a, Table 3, p. 29: "cf. Ouranosaurus sp. | Brazil | Alcântara Formation | Albian – Cenomanian | Novas (2009)".
+
+**Ruled out.**
+- *Albian, from Bandeira and colleagues' table.* It relays Novas (2009) and makes no dating of its own.
+
+**Open.** What Novas (2009) bases the Albian on, and whether the specimen comes from the Alcântara or the unit below; reading it would settle both.
+
 ## How do Bittencourt and Langer (2011) divide the Itapecuru Group, and which localities do they place in the Alcântara?
 
 *2026-11-23*
@@ -18,9 +32,11 @@
 
 ## References
 
+- `bandeira2024a`: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V. (2024). A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America. *Historical Biology* 37(3): 548-589. doi:10.1080/08912963.2024.2318406
 - `bittencourt2011a`: Bittencourt, J. S.; Langer, M. C. (2011). Mesozoic dinosaurs from Brazil and their biogeographic implications. *Anais da Academia Brasileira de Ciências* 83(1): 23-60. doi:10.1590/s0001-37652011000100003
 
 ## Other references
 
+- `novas2009b`: Novas, F. E. (2009). The Age of Dinosaurs in South America. Indiana University Press, Bloomington.
 - `rossetti2001a`: Rossetti, D. F. (2001). Arquitetura deposicional da Bacia de São Luís-Grajaú [Depositional architecture of the São Luís-Grajaú Basin]. In *O Cretáceo na Bacia de São Luís-Grajaú (Rossetti, D. F.; Góes, A. M.; Truckenbrodt, W., eds.)*, pp. 31-46. Museu Paraense Emílio Goeldi.
 - `góes2001a`: Góes, A. M.; Rossetti, D. F. (2001). Gênese da Bacia de São Luís-Grajaú, meio norte do Brasil [Genesis of the São Luís-Grajaú Basin, mid-northern Brazil]. In *O Cretáceo na Bacia de São Luís-Grajaú (Rossetti, D. F.; Góes, A. M.; Truckenbrodt, W., eds.)*, pp. 15-30. Museu Paraense Emílio Goeldi.

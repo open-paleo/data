@@ -1,5 +1,20 @@
 # Andakhuduk
 
+## Where does Napoli and colleagues' (2019) Barremian come from?
+
+*2026-11-25*
+
+**Conclusion.** It is relayed, and misattributed. Napoli and colleagues (2019) give the Ondai Sayr locality as "generally considered to be Barremian" and credit Jerzykiewicz and Russell (1991), who name a Barremian to Hauterivian age only as the reading of earlier mollusc and ostracod work and accept an Aptian age from plant megafossils. Napoli and colleagues make no dating of their own. The stages are unaffected: the Hauterivian–Barremian rests on Khand and colleagues (2000) and the Aptian on Jerzykiewicz and Russell. Governs the note on napoli2019a on [Andakhuduk](../../../stratigraphy/a/andakhuduk.yml); `stages` unchanged.
+
+**Evidence.**
+- napoli2019a, p. 6: "The age of the locality is generally considered to be Barremian (Jerzykiewicz and Russell, 1991)."
+- jerzykiewicz1991a, p. 350: "Although abundant molluscan and ostracod fossils have been cited as evidence of a Barremian to Hauterivian age (Vasiliev et al., 1959; Shuvalov, 1975a), an Aptian age, suggested by similarities in plant megafossils to dated remains in eastern Siberia (Krassilov, 1982), is accepted here."
+
+**Ruled out.**
+- *Barremian from Jerzykiewicz and Russell.* They report it as an earlier reading and do not adopt it.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Andakhuduk Formation?
 
 *2026-11-23*
@@ -22,11 +37,14 @@
 
 ## References
 
-- `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
-- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `napoli2019a`: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A. (2019). Psittacosaurus amitabha, a new species of ceratopsian dinosaur from the Ondai Sayr Locality, Central Mongolia. *American Museum Novitates* 3932: 1-36. doi:10.1206/3932.1
+- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
+- `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `sinitsa1993a`: Sinitsa, S. M. (1993). Jurassic and Lower Cretaceous of Central Mongolia. *Trudy Sovmestnaya Rossiisko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 42: 1-236.
 
 ## Other references
 
+- `vasil'ev1959a`: Vasil'ev, V. G.; Volkhonin, V. S.; Grishin, G. L.; Ivanov, A. Kh.; Marinov, I. A.; Mokshantsev, K. B. (1959). Geologicheskoye stroyenie Mongolskoy Narodnoy Republiki (stratigrafia i tektonika) [Geological structure of the People's Republic of Mongolia (stratigraphy and tectonics)]. Gostoptekhizdat, Leningrad.
+- `shuvalov1975a`: Shuvalov, V. F. (1975). Stratigrafia mezozoya tsentralnoy Mongolii [Mesozoic stratigraphy of central Mongolia]. In *Stratigrafia mezozoiskikh otlozenii Mongolii (Martinson, G. G., and others, eds.)*, pp. 50-112.
+- `krassilov1982a`: Krassilov, V. (1982). Early Cretaceous flora of Mongolia. *Palaeontographica Abteilung B* 181: 1-43.
 - `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.

@@ -1,5 +1,21 @@
 # Aïn el Guettar
 
+## Does the Aptian trace to a single relayed reading?
+
+*2026-11-25*
+
+**Conclusion.** No. Ibrahim and colleagues (2020) adopt "the Aptian-Albian age as most likely" in their own voice, on the crocodyliforms *Sarcosuchus* and *Araripesuchus*, and Fanti and colleagues (2014) place the deposition of the Chenini Member "during the late Aptian" without citation. The palynology that Fanti and colleagues (2012) call "the sole direct evidence", from Ben Ismaïl (1991), a doctoral thesis, and Barale and colleagues (1998), is a third, unread source; Fanti and colleagues themselves date the formation Albian. Fanti and colleagues' (2014) "upper Aptian–Albian", credited to the 2012 paper, counts for nothing: it relays a paper that does not say it. Governs `stages: [Aptian, Albian]` on [Aïn el Guettar](../../../stratigraphy/a/aïn-el-guettar.yml), unchanged, and the note on fanti2014a there.
+
+**Evidence.**
+- ibrahim2020a, p. 183: "We regard the Aptian-Albian age as most likely, given the recent discovery of diagnostic remains of the giant crocodyliform Sarcosuchus (Dridi 2018) and the smaller notosuchian Araripesuchus."
+- fanti2014a, accepted manuscript, p. 26: "The deposition of the Chenini fluvial unit marks a major variation in the environmental condition in southern Tunisia during the late Aptian."
+- fanti2012b, p. 6: "The sole direct evidence to constrain the age of this interval are represented by palynomoprhs reported in Ben Ismaïl (1991) and Barale et al. (1998) that suggest an upper Aptian–lower Albian age for the Aïn El Guettar Formation."
+
+**Ruled out.**
+- *Aptian from Fanti and colleagues (2012).* They report the palynological age and date the formation Albian.
+
+**Open.** The palynology itself, which neither of its sources read here reports directly.
+
 ## What do the cited works say about the age of the Aïn el Guettar?
 
 *2026-11-23*
@@ -23,12 +39,15 @@
 
 ## References
 
-- `fanti2012b`: Fanti, F.; Contessi, M.; Franchi, F. (2012). The "Continental Intercalaire" of southern Tunisia: stratigraphy, paleontology, and paleoecology. *Journal of African Earth Sciences* 73-74: 1-23. doi:10.1016/j.jafrearsci.2012.07.006
+- `fanti2014a`: Fanti, F.; Cau, A.; Martinelli, A.; Contessi, M. (2014). Integrating palaeoecology and morphology in theropod diversity estimation: a case from the Aptian-Albian of Tunisia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 410: 39-57. doi:10.1016/j.palaeo.2014.05.033
 - `ibrahim2020a`: Ibrahim, N.; Sereno, P. C.; Varricchio, D. J.; Martill, D. M.; Dutheil, D. B.; Unwin, D. M.; Baidder, L.; Larsson, H. C. E.; Zouhri, S.; Kaoukaya, A. (2020). Geology and paleontology of the Upper Cretaceous Kem Kem Group of eastern Morocco. *ZooKeys* 928: 1-216. doi:10.3897/zookeys.928.47517
+- `fanti2012b`: Fanti, F.; Contessi, M.; Franchi, F. (2012). The "Continental Intercalaire" of southern Tunisia: stratigraphy, paleontology, and paleoecology. *Journal of African Earth Sciences* 73-74: 1-23. doi:10.1016/j.jafrearsci.2012.07.006
 - `fanti2015a`: Fanti, F.; Cau, A.; Cantelli, L.; Hassine, M.; Auditore, M. (2015). New information on Tataouinea hannibalis from the Early Cretaceous of Tunisia and implications for the tempo and mode of rebbachisaurid sauropod evolution. *PLOS ONE* 10(4): e0123475. doi:10.1371/journal.pone.0123475
 
 ## Other references
 
+- `benismaïl1991a`: Ben Ismaïl, M. H. (1991). Les bassins mésozoïques (Trias à Aptien) du sud de la Tunisie: stratigraphie intégrée, caractéristiques géophysiques et évolution géodynamique [The Mesozoic basins (Triassic to Aptian) of southern Tunisia: integrated stratigraphy, geophysical characteristics and geodynamic evolution]. Doctoral thesis, Université de Tunis II.
+- `barale1998a`: Barale, G.; Zarbout, M.; Philippe, M. (1998). Niveaux à végétaux fossiles en environnement fluviatile à marin proximal dans le Dahar (Bathonien à Albien–Sud Tunisien) [Fossil plant levels in fluvial to proximal marine environments in the Dahar (Bathonian to Albian, southern Tunisia)]. *Bulletin de la Société Géologique de France* 169: 811-819.
+- `dridi2018a`: Dridi, J. (2018). New fossils of the giant pholidosaurid genus Sarcosuchus from the Early Cretaceous of Tunisia. *Journal of African Earth Sciences* 147: 268-280. doi:10.1016/j.jafrearsci.2018.06.023
 - `busson1967a`: Busson, G. (1967). Le Mésozoïque saharien. 1re partie: l'Extrême-Sud tunisien [The Saharan Mesozoic. Part 1: the far south of Tunisia]. *Publications du Centre de Recherches sur les Zones Arides, Série Géologie* 8: 1-194.
 - `busson1970a`: Busson, G. (1970). Le Mésozoïque saharien. 2ème partie: Essai de synthèse des données des sondages algéro-tunisiens [The Saharan Mesozoic. Part 2: a synthesis of data from Algerian and Tunisian boreholes]. *Publications du Centre de Recherches sur les Zones Arides, Série Géologie* 11: 1-810.
-- `fanti2014a`: Fanti, F.; Cau, A.; Martinelli, A.; Contessi, M. (2014). Integrating palaeoecology and morphology in theropod diversity estimation: a case from the Aptian-Albian of Tunisia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 410: 39-57. doi:10.1016/j.palaeo.2014.05.033

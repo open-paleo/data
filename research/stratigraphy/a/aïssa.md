@@ -1,5 +1,22 @@
 # Aïssa
 
+## Whose determination is the Middle Jurassic of the lower member, and is the dispute a difference between troughs?
+
+*2026-11-25*
+
+**Conclusion.** The Middle Jurassic reading is Kacemi and colleagues' (2026), published by the author of the 2005 thesis it cites, and the dispute is a disagreement about the same beds. Kacemi and colleagues state in their own text that the Lophinae oysters of member MI are characteristic of "the Middle Jurassic (Bajocian to Callovian)", crediting Kacemi (2005), a master's thesis; a thesis never carries an age alone, but where a published version exists it is cited instead, and the 2026 paper is that version. Within the pre-Atlas trough the same paper also labels member MI Callovo-Oxfordian–Kimmeridgian in its Fig. 4, and it gives the Atlas trough a Kimmeridgian–Portlandian age only by regional correlation, credited to Bassoullet (1973), an unpublished dissertation. The conflict is therefore within one trough and one member, not between troughs. Governs `stages`, Bajocian to Tithonian, and the `dispute` on [Aïssa](../../../stratigraphy/a/aïssa.yml), unchanged.
+
+**Evidence.**
+- kacemi2026a, p. 9: "The presence of Lophinae in member MI is characteristic of the Middle Jurassic (Bajocian to Callovian) (Kacemi, 2005)" (translated).
+- kacemi2026a, Fig. 4, p. 6: member MI labelled "Callovo-Oxfordien-Kimmeridgien" and members MII and MIII "Kimmeridgien - Portlandien".
+- kacemi2026a, p. 14: in the Atlas trough, "all relative dating remains impossible in the absence of fossils. This formation, by regional correlation, can be attributed to the Late Jurassic (Kimmeridgian-Portlandian) (Bassoullet, 1973)" (translated).
+
+**Ruled out.**
+- *Dropping the Bajocian and Bathonian as thesis-only.* The reading is published in Kacemi and colleagues (2026), in their own text.
+- *A lateral age difference between troughs.* The two ages for member MI are given for the same trough.
+
+**Open.** What the Lophinae are and where they sit in member MI, which the 2005 thesis reports in detail.
+
 ## What do the cited works say about the age of the Aïssa Formation?
 
 *2026-11-23*
@@ -29,11 +46,12 @@
 
 ## References
 
+- `kacemi2026a`: Kacemi, A.; Benhamou, M.; Boucif, A.; Benramdane, H.; Hebib, H. (2026). Évolution des milieux de dépôt et traces des dinosauriens du Jurassique supérieur dans les Monts des Ksour (Atlas saharien, Algérie) [Evolution of depositional environments and dinosaur tracks of the Upper Jurassic in the Ksour Mountains (Saharan Atlas, Algeria)]. *Estudios Geológicos* 82(2): e1154. doi:10.3989/egeol.45894.1154
 - `amar-bekada2023a`: Amar-Bekada, Y.; Si Ali, C. (2023). Cartographie géologique et caractérisation linéamentaire à base d'un SIG de deux structures : Djebel Aïssa et Djebel Mekther (Aïn Séfra), Monts des Ksour-Atlas Saharien-Algérie [Geological mapping and GIS-based lineament characterization of two structures: Djebel Aïssa and Djebel Mekther (Aïn Séfra), Ksour Mountains, Saharan Atlas, Algeria]. Masters thesis, Université Aboubekr Belkaïd – Tlemcen.
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
-- `kacemi2026a`: Kacemi, A.; Benhamou, M.; Boucif, A.; Benramdane, H.; Hebib, H. (2026). Évolution des milieux de dépôt et traces des dinosauriens du Jurassique supérieur dans les Monts des Ksour (Atlas saharien, Algérie) [Evolution of depositional environments and dinosaur tracks of the Upper Jurassic in the Ksour Mountains (Saharan Atlas, Algeria)]. *Estudios Geológicos* 82(2): e1154. doi:10.3989/egeol.45894.1154
 - `läng2010a`: Läng, É.; Mahammed, F. (2010). New anatomical data and phylogenetic relationships of Chebsaurus algeriensis (Dinosauria, Sauropoda) from the Middle Jurassic of Algeria. *Historical Biology* 22(1-3): 142-164. doi:10.1080/08912960903515570
 
 ## Other references
 
+- `bassoullet1973a`: Bassoullet, J. P. (1973). Contribution à l'étude stratigraphique du Mésozoïque de l'Atlas saharien occidental (Algérie) [Contribution to the stratigraphic study of the Mesozoic of the western Saharan Atlas (Algeria)]. Doctoral thesis, Université Paris VI.
 - `kacemi2005a`: Kacemi, A. (2005). Cartographie et dynamique sédimentaire de la série fin Dogger – début Crétacé (Djara – Rhoundjaïa) des Monts des Ksour (Atlas saharien, Algérie) [Mapping and sedimentary dynamics of the late Dogger to early Cretaceous series (Djara to Rhoundjaïa) of the Ksour Mountains, Saharan Atlas, Algeria]. Masters thesis, Université d'Oran, Oran, Algeria.
