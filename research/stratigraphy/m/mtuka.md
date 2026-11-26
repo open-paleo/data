@@ -1,5 +1,18 @@
 # Mtuka
 
+## What does Bandeira and colleagues (2024) give the Mtuka?
+
+*2026-11-26*
+
+**Conclusion.** An Aptian label in passing. Bandeira and colleagues list *Mnyamawamtuka* "from the Aptian Mtuka Member" among titanosaurs with procoelous caudal vertebrae, with no argument for the age; the note no longer says they narrow the occurrence. Governs the note on bandeira2024a on [Mtuka](../../../stratigraphy/m/mtuka.yml); `stages` unchanged.
+
+**Evidence.**
+- bandeira2024a, p. 31: "the early lithostrotian titanosaurian *Mnyamawamtuka moyowamkia* from the Aptian Mtuka Member of the Galula Formation, which has anterior caudal vertebrae with 'mild procoely'".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What do the cited works say about the age of the Mtuka?
 
 *2026-11-23*
@@ -22,5 +35,6 @@
 
 ## References
 
+- `bandeira2024a`: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V. (2024). A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America. *Historical Biology* 37(3): 548-589. doi:10.1080/08912963.2024.2318406
 - `widlansky2018a`: Widlansky, S. J.; Clyde, W. C.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2018). Paleomagnetism of the Cretaceous Galula Formation and implications for vertebrate evolution. *Journal of African Earth Sciences* 139: 403-420. doi:10.1016/j.jafrearsci.2017.11.029
 - `gorscak2019a`: Gorscak, E.; O'Connor, P. M. (2019). A new African Titanosaurian Sauropod Dinosaur from the middle Cretaceous Galula Formation (Mtuka Member), Rukwa Rift Basin, Southwestern Tanzania. *PLOS ONE* 14(2): e0211412. doi:10.1371/journal.pone.0211412

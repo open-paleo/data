@@ -1,5 +1,19 @@
 # Nyker
 
+## Whose age does Lindgren and colleagues' "entire sequence" give?
+
+*2026-11-26*
+
+**Conclusion.** The Rabekke Formation's, in the Arnager–Sose block. The sentence closes a paragraph that names only the Rabekke and its Homanshald and Skyttegård members, so the Lindgren note now attributes it to them. The group's own age comes from Christiansen and Bonde (2003), who give it "(Tithonian?) Berriasian to Valanginian", matching the record. Governs the note on lindgren2008a on [Nyker](../../../stratigraphy/n/nyker.yml); `stages` unchanged.
+
+**Evidence.**
+- lindgren2008a, p. 254: "The Rabekke Formation (the lowermost formation of the Nyker Group) is subdivided into a lower Homanshald Member and an upper Skyttegård Member"; "The entire sequence spans the Berriasian–Valanginian interval, although its lowermost parts may be of Tithonian age (Christensen, 1974)."
+- christiansen2003a, p. 288: "The Nyker Group (Fig. 2) spans from (Tithonian?) Berriasian to Valanginian in age".
+
+**Ruled out.** Nothing.
+
+**Open.** Christensen (1974) has not been read.
+
 ## What do the cited works say about the age and setting of the Nyker Group?
 
 *2026-11-23*
@@ -17,8 +31,8 @@
 
 ## References
 
-- `christiansen2003a`: Christiansen, P.; Bonde, N. (2003). The first dinosaur from Denmark. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 227(2): 287-299. doi:10.1127/njgpa/227/2003/287
 - `lindgren2008a`: Lindgren, J.; Currie, P. J.; Rees, J.; Siverson, M.; Lindström, S.; Alwmark, C. (2008). Theropod dinosaur teeth from the lowermost Cretaceous Rabekke Formation on Bornholm, Denmark. *Geobios* 41(2): 253-262. doi:10.1016/j.geobios.2007.05.001
+- `christiansen2003a`: Christiansen, P.; Bonde, N. (2003). The first dinosaur from Denmark. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 227(2): 287-299. doi:10.1127/njgpa/227/2003/287
 
 ## Other references
 

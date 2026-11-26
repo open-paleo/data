@@ -1,5 +1,19 @@
 # Navajo Sandstone
 
+## Does the Navajo keep the Sinemurian?
+
+*2026-11-26*
+
+**Conclusion.** Yes. Supersedes the 2026-11-23 entry's account of Baird's basis. Baird (1980) states "a Sinemurian to Pliensbachian age for the Navajo Sandstone" itself, from Galton's faunal correlation of the Navajo with the Portland Formation, which Cornet and colleagues (1973) redated "not older than Sinemurian", and from Olsen and Galton's (1977) span for the Glen Canyon Group; it is not a Moenave age carried upward. Sertich and Loewen's (2010) "no earlier than Pleinsbachian" is a lower bound credited to Irmis (2005), unread, and a relayed bound does not remove another source's stage. Governs the Sinemurian in `stages` and the note on baird1980a on [Navajo Sandstone](../../../stratigraphy/n/navajo-sandstone.yml).
+
+**Evidence.**
+- baird1980a, p. 221: "While Galton's correlation of the Navajo with the Portland remains valid, the latter is no longer Triassic but has been redated as lower Liassic ("not older than Sinemurian")"; "This evidence suggests a Sinemurian to Pliensbachian age for the Navajo Sandstone."
+- sertich2010a, p. 2: "The Navajo Sandstone is the uppermost unit of the Glen Canyon Group with an age no earlier than Pleinsbachian [31]."
+
+**Ruled out.** Nothing.
+
+**Open.** Irmis (2005), the source of Sertich and Loewen's lower bound, has not been read; if it rules out the Sinemurian from dated evidence, the conflict becomes a dispute.
+
 ## On what evidence does Baird (1980) date the Navajo Sandstone Sinemurian to Pliensbachian?
 
 *2026-11-23*
@@ -23,11 +37,12 @@
 ## References
 
 - `baird1980a`: Baird, D. (1980). A prosauropod dinosaur trackway from the Navajo Sandstone (Lower Jurassic) of Arizona. In *Aspects of Vertebrate History: Essays in Honor of Edwin Harris Colbert (Jacobs, L. L., ed.)*, pp. 219-230. Museum of Northern Arizona Press.
-- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 47-70. University of California Press, Berkeley.
 - `sertich2010a`: Sertich, J. J. W.; Loewen, M. A. (2010). A New Basal Sauropodomorph Dinosaur from the Lower Jurassic Navajo Sandstone of Southern Utah. *PLoS ONE* 5(3): e9789. doi:10.1371/journal.pone.0009789
+- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 47-70. University of California Press, Berkeley.
 
 ## Other references
 
 - `galton1971a`: Galton, P. M. (1971). The prosauropod dinosaur Ammosaurus, the crocodile Protosuchus, and their bearing on the age of the Navajo Sandstone of northeastern Arizona. *Journal of Paleontology* 45(5): 781-795.
 - `olsen1977a`: Olsen, P. E.; Galton, P. M. (1977). Triassic-Jurassic tetrapod extinctions: are they real?. *Science* 197(4307): 983-986. doi:10.1126/science.197.4307.983
 - `irmis2005a`: Irmis, R. B. (2005). A review of the vertebrate fauna of the lower Jurassic Navajo Sandstone in Arizona. In *Vertebrate Paleontology of Arizona (McCord, R. D., ed.)*, pp. 55-71.
+- `cornet1973a`: Cornet, B.; Traverse, A.; McDonald, N. G. (1973). Fossil spores, pollen, and fishes from Connecticut indicate Early Jurassic age for part of the Newark Group. *Science* 182: 1243-1247.

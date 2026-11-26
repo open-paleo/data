@@ -1,5 +1,20 @@
 # Nam Phong
 
+## Which Racey (2009) do Laojumpon and colleagues cite?
+
+*2026-11-26*
+
+**Conclusion.** Racey's single-author chapter, by author and title; the Pliensbachian bound traces to Racey and Goodall (2009) either way. Laojumpon and colleagues' reference list gives "Racey, A., 2009" with the words of the chapter's title, though its pages, 67–81, match neither Racey paper. That chapter gives the Upper Nam Phong's "cannot be older than Pliensbachian" from the well palynology of Racey and Goodall, who state the same bound. Governs nothing on [Nam Phong](../../../stratigraphy/n/nam-phong.yml); the 2026-11-23 entry's reading stands.
+
+**Evidence.**
+- laojumpon2017a, p. 1169: "Palynological evidences indicated that the formation is not older than Pliensbachian (Late Early Jurassic period) (Racey, 2009)".
+- laojumpon2017a, p. 1178, References: "Racey, A., 2009. The Khorat Group of NE Thailand Mesozoic red bed sequences from SE Asia and the significance of Thailand."
+- racey2009a, p. 52: "Limited palynological data from the Phu Horm-1 well presented by Racey & Goodall (2009) suggest that the Upper Nam Phong Formation cannot be older than Pliensbachian".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What ages do the cited works give the two parts of the Nam Phong?
 
 *2026-11-23*
@@ -42,10 +57,10 @@
 
 ## References
 
+- `laojumpon2017a`: Laojumpon, C.; Suteethorn, V.; Chanthasit, P.; Lauprasert, K.; Suteethorn, S. (2017). New evidence of sauropod dinosaurs from the Early Jurassic period of Thailand. *Acta Geologica Sinica (English Edition)* 91(4): 1169-1178. doi:10.1111/1755-6724.13352
+- `racey2009a`: Racey, A. (2009). Mesozoic red bed sequences from SE Asia and the significance of the Khorat Group of NE Thailand. *Geological Society, London, Special Publications* 315(1): 41-67. doi:10.1144/SP315.5
 - `racey1996a`: Racey, A.; Love, M. A.; Canham, A. C.; Goodall, J. G. S.; Polachan, S.; Jones, P. D. (1996). Stratigraphy and reservoir potential of the Mesozoic Khorat Group, NE Thailand. Part 1: Stratigraphy and sedimentary evolution. *Journal of Petroleum Geology* 19: 5-40.
 - `racey2009b`: Racey, A.; Goodall, J. G. S. (2009). Palynology and stratigraphy of the Mesozoic Khorat Group red bed sequences from Thailand. *Geological Society, London, Special Publications* 315: 69-83. doi:10.1144/SP315.6
-- `racey2009a`: Racey, A. (2009). Mesozoic red bed sequences from SE Asia and the significance of the Khorat Group of NE Thailand. *Geological Society, London, Special Publications* 315(1): 41-67. doi:10.1144/SP315.5
-- `laojumpon2017a`: Laojumpon, C.; Suteethorn, V.; Chanthasit, P.; Lauprasert, K.; Suteethorn, S. (2017). New evidence of sauropod dinosaurs from the Early Jurassic period of Thailand. *Acta Geologica Sinica (English Edition)* 91(4): 1169-1178. doi:10.1111/1755-6724.13352
 - `rauhut2020a`: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H. (2020). A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland. *Swiss Journal of Geosciences* 113(1). doi:10.1186/s00015-020-00360-8
 - `hanta2023a`: Hanta, R.; Sekiya, T.; Shibata, M.; Naksri, W.; Tucker, R. T. (2023). Hatchling and early juvenile of early sauropod from the early Middle Jurassic Nam Phong Formation, Chaiyaphum Province, northeastern Thailand. *Paleontological Research* 28(3): 222-239. doi:10.2517/pr230002
 - `jia2022a`: Jia, S. W.; Huang, B. C.; Yan, Y. G.; Zhao, Q.; Li, N. T. (2022). Paleomagnetic study on the Mesozoic tectonic evolution of the Indochina Block. *Chinese Journal of Geophysics* 65(9): 3481-3501. doi:10.6038/cjg2022P0927

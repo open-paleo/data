@@ -1,5 +1,19 @@
 # Namba
 
+## Does Widlansky and colleagues' Aptian–Cenomanian bear on the Namba?
+
+*2026-11-26*
+
+**Conclusion.** No. Widlansky and colleagues (2018) read the Galula Formation's geological constraints as pointing to an Aptian–Cenomanian age while leaving it "unclear how the individual members" fit, and Roberts and colleagues (2010) give the formation the same age; neither assigns it to a member, and it lies within the [Galula](../../../stratigraphy/g/galula.yml)'s Aptian–Maastrichtian. The Galula note on Widlansky and colleagues now gives the sentence. Governs nothing on [Namba](../../../stratigraphy/n/namba.yml); `stages` unchanged.
+
+**Evidence.**
+- widlansky2018a, pp. 28–29: the constraints "point to an Aptian – Cenomanian age, though it remains unclear how the individual members of the Galula Formation fit into this age framework".
+- roberts2010a, p. 209: "A middle Cretaceous age (Aptian– Cenomanian) and a late Paleogene (Oligocene) age are assigned to the Galula and Nsungwe Formations, respectively".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged: a radiometric age for the upper Namba Member.
+
 ## What do the cited works say about the age of the Namba Member?
 
 *2026-11-23*
@@ -23,6 +37,7 @@
 ## References
 
 - `widlansky2018a`: Widlansky, S. J.; Clyde, W. C.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2018). Paleomagnetism of the Cretaceous Galula Formation and implications for vertebrate evolution. *Journal of African Earth Sciences* 139: 403-420. doi:10.1016/j.jafrearsci.2017.11.029
+- `roberts2010a`: Roberts, E. M.; O'Connor, P. M.; Stevens, N. J.; Gottfried, M. D.; Jinnah, Z. A.; Ngasala, S.; Choh, A. M.; Armstrong, R. A. (2010). Sedimentology and depositional environments of the Red Sandstone Group, Rukwa Rift Basin, southwestern Tanzania: New insight into Cretaceous and Paleogene terrestrial ecosystems and tectonics in sub-equatorial Africa. *Journal of African Earth Sciences* 57(3): 179-212. doi:10.1016/j.jafrearsci.2009.09.002
 - `gorscak2019a`: Gorscak, E.; O'Connor, P. M. (2019). A new African Titanosaurian Sauropod Dinosaur from the middle Cretaceous Galula Formation (Mtuka Member), Rukwa Rift Basin, Southwestern Tanzania. *PLOS ONE* 14(2): e0211412. doi:10.1371/journal.pone.0211412
 
 ## Other references

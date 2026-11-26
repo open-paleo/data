@@ -1,5 +1,22 @@
 # On Gong
 
+## Does any work date the On Gong to a stage?
+
+*2026-11-26*
+
+**Conclusion.** No; the Aptian and Albian are dropped, leaving the Early Cretaceous. Supersedes the 2026-11-23 entry. Every stage-level age is the Ondai Sair's carried over by correlation: Dong (1993) makes the On Gong "approximately equivalent" in age to the Ondai Sair and names no stage; Weishampel and colleagues (2004) give "Aptian-Albian (i.e., approximately equivalent with the Ondai Sair Formation; Dong 1993c)" and credit their Ondai Sair age to Shuvalov (1974), whose held text never names the Ondai Sair; Mannion (2011) reaches "Aptian-Albian (?)" the same way, and Averianov and colleagues (2025) repeat it in passing. The age of a correlative does not date a unit, and the Andakhuduk's dating would be the same. Gilmore (1933) gives the On Gong as Lower Cretaceous. Governs `period: [Early Cretaceous]` and the absent `stages` on [On Gong](../../../stratigraphy/o/on-gong.yml), and the absent `stage` on [*Mongolosaurus haplodon*](../../../genera/M/Mongolosaurus.yml).
+
+**Evidence.**
+- dong1993c, p. 2098: "In age, this formation is approximately equivalent to the Guyang Group of Inner Mongolia and the Ondai Sair Formation of Mongolia."
+- weishampel2004b, p. 567: "5. On Gong Formation (Gilmore 1933b; …) … Age: Aptian-Albian (i.e., approximately equivalent with the Ondai Sair Formation; Dong 1993c)".
+- mannion2011b, p. 358: "Aptian-Albian (?), Early Cretaceous, On Gong Formation (Hu Khung Ulan locality)".
+- gilmore1933b, p. 11: "HORIZON:—On Gong, Lower Cretaceous."
+
+**Ruled out.**
+- *Aptian–Albian from the Ondai Sair.* The age of a correlative.
+
+**Open.** No date or index fossil from the On Gong itself.
+
 ## How is the On Gong Formation dated?
 
 *2026-11-23*
@@ -28,3 +45,4 @@
 ## Other references
 
 - `shuvalov1974a`: Shuvalov, V. F. (1974). O geologicheskom stroenii i vozraste mestonakhozhdenii Khobur i Khuren-Dukh [On the geological structure and age of the Khobur and Khuren-Dukh localities]. *Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 1: 296-304.
+- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research* 181: 106271. doi:10.1016/j.cretres.2025.106271

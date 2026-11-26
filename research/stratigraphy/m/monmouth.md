@@ -1,5 +1,19 @@
 # Monmouth
 
+## Does the Monmouth Group reach the Campanian?
+
+*2026-11-26*
+
+**Conclusion.** Yes; the Campanian is added. Answers the 2026-11-23 entry's Open line. Owens and colleagues (1970), now read, date the group's lowest formation, the Mount Laurel, "mid-late Campanian" from its ammonites and put the Navesink "from late Campanian to earliest Maestrichtian", placing the Campanian–Maastrichtian boundary in the upper Navesink, against what they call the common practice of equating the whole group with the Maestrichtian. A group takes its age from a source that dates it by way of its members. Governs `stages: [Campanian, Maastrichtian]` and the note on owens1970a on [Monmouth](../../../stratigraphy/m/monmouth.yml).
+
+**Evidence.**
+- owens1970a, p. 31: "it has been common practice to equate the Monmouth Group (the Mount Laurel Sand and younger Cretaceous formations) with the Maestrichtian Stage"; the Mount Laurel and its equivalents have yielded ammonites "which strongly suggest a mid-late Campanian age".
+- owens1970a, p. 35: "In summation, the Navesink Formation appears to range in age from late Campanian to earliest Maestrichtian."
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age and rank of the Monmouth?
 
 *2026-11-23*
@@ -20,6 +34,7 @@
 
 ## References
 
+- `owens1970a`: Owens, J. P.; Minard, J. P.; Sohl, N. F.; Mello, J. F. (1970). Stratigraphy of the outcropping post-Magothy Upper Cretaceous formations in southern New Jersey and northern Delmarva Peninsula, Delaware and Maryland. *United States Geological Survey Professional Paper* 674: 60 pp. doi:10.3133/pp674
 - `gallagher1993a`: Gallagher, W. B. (1993). The Cretaceous/Tertiary mass extinction event in the northern Atlantic Coastal Plain. *The Mosasaur* 5: 75-154.
 - `prieto-márquez2006a`: Prieto-Márquez, A.; Weishampel, D. B.; Horner, J. R. (2006). The dinosaur Hadrosaurus foulkii, from the Campanian of the East Coast of North America, with a reevaluation of the genus. *Acta Palaeontologica Polonica* 51(1): 77-98.
 
@@ -29,5 +44,4 @@
 - `sohl1960a`: Sohl, N. F. (1960). Archeogastropoda, Mesogastropoda, and stratigraphy of the Ripley, Owl Creek, and Prairie Bluff formations. *United States Geological Survey Professional Paper* 331-A. doi:10.3133/pp331A
 - `cope1869c`: Cope, E. D. (1869). [Remarks on Holops brevispinus, Ornithotarsus immanis, and Macrosaurus proriger]. *Proceedings of the Academy of Natural Sciences of Philadelphia* 21: 123.
 - `lull1942a`: Lull, R. S.; Wright, N. E. (1942). Hadrosaurian Dinosaurs of North America. *Geological Society of America Special Papers* 40: 1-272. doi:10.1130/spe40-p1
-- `owens1970a`: Owens, J. P.; Minard, J. P.; Sohl, N. F.; Mello, J. F. (1970). Stratigraphy of the outcropping post-Magothy Upper Cretaceous formations in southern New Jersey and northern Delmarva Peninsula, Delaware and Maryland. *United States Geological Survey Professional Paper* 674: 60 pp. doi:10.3133/pp674
 - `olsson1989a`: Olsson, R. K. (1989). Depositional sequences in the Cretaceous post-rift sediments on the New Jersey Atlantic margin. *Marine Geology* 90(1-2): 113-118. doi:10.1016/0025-3227(89)90120-5

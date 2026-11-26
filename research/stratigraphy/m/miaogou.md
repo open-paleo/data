@@ -1,5 +1,21 @@
 # Miaogou
 
+## Does the Miaogou's Barremian depend on equating the Dashuiguo and the Dashuigou?
+
+*2026-11-26*
+
+**Conclusion.** No; the Barremian stays. Van Itterbeeck and colleagues (2001) date the continental strata of the Dashuiguo area Barremian–Albian from their own charophytes, and Hao and colleagues (2024) cite that dating as an age proposed for the Maortu dinosaur-bearing deposits, which they assign to the Miaogou Formation. The link from the dated strata to the Miaogou is therefore made in print, whichever unit the two spellings name; neither paper equates "Dashuiguo" with "Dashuigou". Hao and colleagues' own "tentatively" Aptian–Albian is narrower and adds to the range. Van Itterbeeck and colleagues credit their Aptian–Albian for the Moartu locality to Rozhdestvensky (1966) and Norman and Weishampel (1990), both now cited. Supersedes the 2026-11-23 entry's Open line. Governs `stages: [Barremian, Aptian, Albian]` on [Miaogou](../../../stratigraphy/m/miaogou.yml), unchanged, and the pointers to rozhdestvensky1966a and norman1990a.
+
+**Evidence.**
+- vanitterbeeck2001a, p. 62: "Therefore the studied flora is attributed to the Barremian –Albian interval."
+- vanitterbeeck2001a, p. ?, Introduction: for the Moartu locality, "an Aptian-Albian age was proposed for the strata (Rozhdestvensky, 1966; Norman & Weishampel, 1990)".
+- hao2024a, p. 2: the deposits are referred "further to the Barremian-Albian age proposed by Van Itterbeek et al. (2001)"; "we tentatively propose an Aptian-Albian age for the Maortu dinosaur-bearing unit".
+- hao2024a, p. 2: the fossil-bearing unit "actually belongs to the Miaogou Formation, which incorporated the formerly abandoned Dashuigou Formation and Wulanhushao Formation".
+
+**Ruled out.** Nothing.
+
+**Open.** Whether the Dashuiguo and the Dashuigou are one unit; it no longer decides a stage.
+
 ## What do the cited works say about the age of the Miaogou Formation?
 
 *2026-11-23*
@@ -22,8 +38,10 @@
 
 ## References
 
-- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167: 106023. doi:10.1016/j.cretres.2024.106023
+- `rozhdestvensky1966a`: Rozhdestvensky, A. K. (1966). Novye igyanodonti ie tsentrallinoy Asii. Phillogeneticheskye y taksonomicheskye veaimoothoshenia poednich Iguanodontidae y rannich Hadrosauridae [New iguanodonts from central Asia. Phylogenetic and taxonomic relationships of late Iguanodontidae and early Hadrosauridae]. *Paleontologicheskii Zhurnal* 1966(3): 103-116.
+- `norman1990a`: Norman, D. B.; Weishampel, D. B. (1990). Iguanodontidae and related ornithopods. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 510-533. University of California Press, Berkeley.
 - `vanitterbeeck2001a`: Van Itterbeeck, J.; Bultynck, P.; Li, G. W.; Vandenberghe, N. (2001). Stratigraphy, sedimentology and palaeoecology of the dinosaur-bearing Cretaceous strata at Dashuiguo (Inner Mongolia, People's Republic China). *Bulletin de l'Institut royal des Sciences naturelles, Sciences de la Terre* 71(Supplément): 51-70.
+- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167: 106023. doi:10.1016/j.cretres.2024.106023
 
 ## Other references
 

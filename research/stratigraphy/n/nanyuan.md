@@ -1,5 +1,21 @@
 # Nanyuan
 
+## Does the 148 Ma ignimbrite belong to the Nanyuan?
+
+*2026-11-26*
+
+**Conclusion.** No work read says so, and nothing places it outside; the Tithonian stays. Xu and colleagues (2023) put their excavated section in "the lower part of the Nanyuan Formation" and date ignimbrites that "underlie (Bdx03) and overlie (Bdx04) the fossil-bearing sediments", without naming their unit. Xi and colleagues (2021) carry the formation up to ">145—130 Ma", after Cao and colleagues (2020), so a bed of 148 ± 1.9 Ma above beds in its lower part falls within the formation's span as published; the placement remains an inference, not a statement. Governs `stages` on [Nanyuan](../../../stratigraphy/n/nanyuan.yml), Kimmeridgian to Tithonian, unchanged.
+
+**Evidence.**
+- xu2023a, p. ?, Methods: "The section that we excavated is 3.6 m in depth and belongs to the lower part of the Nanyuan Formation."
+- xu2023a, p. ?, Methods: "We also collected ignimbrite samples that underlie (Bdx03) and overlie (Bdx04) the fossil-bearing sediments."
+- xi2021a, p. 385: "其岩性以火山岩为主, 年龄>145—130 Ma (曹明轩等, 2020)" ["its lithology is dominated by volcanic rocks, and its age is >145–130 Ma", translated].
+
+**Ruled out.**
+- *The 148 Ma ignimbrite as a limit above the formation.* No work places a formation top between the fossil beds and the ignimbrite.
+
+**Open.** A section that names the unit of the Bdx04 ignimbrite would settle it. Xi and colleagues' Early Cretaceous for the formation, relayed from Cao and colleagues (2020), is not among the stages; that work has not been read.
+
 ## What age do Xu and colleagues' (2023) dates give the Nanyuan Formation?
 
 *2026-11-23*
@@ -20,3 +36,8 @@
 ## References
 
 - `xu2023a`: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z. (2023). A new avialan theropod from an emerging Jurassic terrestrial fauna. *Nature* 621(7978): 336-343. doi:10.1038/s41586-023-06513-7
+- `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
+
+## Other references
+
+- `cao2020a`: Cao, M. X.; Chu, P. L.; Duan, Z.; Yu, M. G.; Chen, R.; Fan, F. P.; Xing, G. F. (2020). 华南中生代火山活动时空演化及其问题探讨. *Geological Review* 66(4): 795-812.
