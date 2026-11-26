@@ -219,9 +219,13 @@ export interface OpenPaleoDataset {
 }
 export interface Metadata {
   /**
-   * Calendar version of the data release (YYYY.MM).
+   * Calendar version of the data release: the UTC date of the publish (YYYY.MM.DD), with .2, .3 and so on for later publishes that day. Each version is a git tag of the same name (see docs/VERSIONING.md).
    */
   version: string;
+  /**
+   * Full SHA of the source commit the build was run from.
+   */
+  commit: string;
   /**
    * Semantic version of this output schema (see docs/VERSIONING.md).
    */

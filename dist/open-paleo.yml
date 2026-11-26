@@ -1,15 +1,16 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-11-25T21:35:59.249Z
+  built_at: 2026-11-26T00:49:31.258Z
   clade_count: 187
+  commit: 13f11e6cc347fcfdf6804f0984df428d8567c278
   genus_count: 1429
   license: CC-BY-4.0
   paleogeography:
     model: GOLONKA
     citation: "Wright, N.; Zahirovic, S.; Müller, R. D.; Seton, M. (2013). Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10(3): 1529-1541. doi:10.5194/bg-10-1529-2013"
     license: CC-BY-3.0-AU
-  schema_version: 0.4.7
-  version: "2026.11"
+  schema_version: 0.4.8
+  version: 2026.11.26
 timescale:
   chart: ICS International Chronostratigraphic Chart v2024/12
   stages:
@@ -216048,7 +216049,7 @@ stratigraphy:
         pages: 39-57
         doi: 10.1016/j.palaeo.2014.05.033
         notes: |
-          Gives "Ain el Guettar Formation (upper Aptian–Albian)", with the Chenini Member "referred to the uppermost Aptian-lowermost Albian".
+          Gives "Ain el Guettar Formation (upper Aptian–Albian)", with the Chenini Member "referred to the uppermost Aptian-lowermost Albian"; it credits the formation's Aptian to Fanti and colleagues (2012), which date it Albian.
       - id: benton2000a
         authors: Benton, M. J.; Bouaziz, S.; Buffetaut, E.; Martill, D.; Ouaja, M.; Soussi, M.; Trueman, C.
         year: 2000
@@ -216144,7 +216145,7 @@ stratigraphy:
         pages: e1154
         doi: 10.3989/egeol.45894.1154
         notes: |
-          Attributes the formation "by regional correlation" to the Kimmeridgian–Portlandian, yet reports Middle Jurassic oysters in its lower member, and the finding of Chebsaurus in it in 2001.
+          Attributes the formation "by regional correlation" to the Kimmeridgian–Portlandian, yet reports Middle Jurassic oysters in its lower member, whose Middle Jurassic (Bajocian to Callovian) reading it credits to Kacemi (2005), and the finding of Chebsaurus in it in 2001.
       - id: benddine2022a
         authors: Benddine, A.; Benaouda, S.
         year: 2022
@@ -216297,7 +216298,14 @@ stratigraphy:
         pages: 548-589
         doi: 10.1080/08912963.2024.2318406
         notes: |
-          Tabulates it as "Albian - Cenomanian".
+          Tabulates it as "Albian - Cenomanian" in an occurrence-table row that cites Novas (2009); a relayed compilation row, which adds no Albian.
+      - id: novas2009b
+        authors: Novas, F. E.
+        year: 2009
+        title: The Age of Dinosaurs in South America
+        publisher: Indiana University Press, Bloomington
+        notes: |
+          Cited by Bandeira and colleagues (2024) for their Albian–Cenomanian row; not read.
   Alcobaça:
     rank: formation
     lithology: limestone and siliciclastic rocks
@@ -216773,7 +216781,7 @@ stratigraphy:
         pages: e62047
         doi: 10.1371/journal.pone.0062047
         notes: |
-          Names the unit and marks it informal: the section containing the Dahalokely site "is informally termed the 'Ambolafotsy Formation,' and is divided into lower, middle ... and upper units". Turonian, near Ampandriambengy in the Diego (Ambilobe) Basin of northernmost Madagascar, and dated by the marine deposits that bracket it rather than by fossils of its own.
+          Names the unit and marks it informal: the section containing the Dahalokely site "is informally termed the 'Ambolafotsy Formation,' and is divided into lower, middle ... and upper units". Turonian, near Ampandriambengy in the Diego (Ambilobe) Basin of northernmost Madagascar. Only the middle unit, which holds the Dahalokely site, lacks age-diagnostic fossils and is dated by the units that bracket it; the lower and upper units are dated by their own marine microfossils and ammonites.
       - id: rauhut2016b
         authors: Rauhut, O. W. M.; Carrano, M. T.
         year: 2016
@@ -217108,7 +217116,7 @@ stratigraphy:
         pages: 1-36
         doi: 10.1206/3932.1
         notes: |
-          Gives the assignment and the age for the Ondai Sayr locality in the Tsaagan Nor basin of central Mongolia, which "has also been considered the Andakhuduk Formation", the age "generally considered to be Barremian".
+          Gives the assignment and the age for the Ondai Sayr locality in the Tsaagan Nor basin of central Mongolia, which "has also been considered the Andakhuduk Formation", the age "generally considered to be Barremian", crediting Jerzykiewicz and Russell (1991), who report a Barremian–Hauterivian age only as an earlier view and accept an Aptian one.
       - id: jerzykiewicz1991a
         authors: Jerzykiewicz, T.; Russell, D. A.
         year: 1991
@@ -217513,7 +217521,7 @@ stratigraphy:
         publisher: Bureau de Recherches Géologiques et Minières (BRGM)
         isbn: 978-2-7159-3806-9
         notes: |
-          Maps the unit as Lower and Upper Clays and Sandstones with Reptiles either side of the Rognac Limestones, the lower forming "the base of the Rognacian series" north of Fuveau.
+          Maps the unit as Lower and Upper Clays and Sandstones with Reptiles either side of the Rognac Limestones, the lower forming "the base of the Rognacian series" north of Fuveau. It heads them "Rognacian (= Danian)" under its Mesozoic ("Secondary") series, so its Danian is a Cretaceous stage, not the Paleocene one.
   Arlington:
     rank: member
     parent: Lewisville
@@ -217851,7 +217859,7 @@ stratigraphy:
         pages: 873-877
         doi: 10.1007/978-3-319-04364-7_165
         notes: |
-          Dates this member directly by magnetostratigraphy, and ends at the Tithonian: "At the Porto da Calada section, the Assenta member of the Lourinha Formation is Tithonian in age", with the parent given as "Kimmeridgian-Tithonian in age". So it supports the Tithonian and not the Berriasian, which Mateus and colleagues (2017) propose.
+          Dates the member by magnetostratigraphy and calls it "Tithonian in age", but places the Tithonian–Berriasian boundary "at around 52 m of the log", below the member's top at 60 m, so by its own numbers the upper member is Berriasian, as Mateus and colleagues (2017) propose.
       - id: hill1989a
         authors: Hill, G.
         year: 1989
@@ -218266,7 +218274,7 @@ stratigraphy:
       to_ma: 66
     dispute:
       summary: |
-        The older limit is contested and both readings are current. Gradzinski and colleagues (1977) confine the formation to the "?middle Campanian", and Kielan-Jaworowska (1974) and Averianov and Lopatin (2022) likewise give it as Campanian. Shuvalov (2000) instead dates it Santonian-Campanian, because molluscs, ostracods and turtles "do not allow an age greater than Santonian" and K–Ar dates from basalts in the middle and upper svita are 78–80 Myr (Campanian); Karczewska and Ziembinska-Tworzydlo (1983) reach a "?Late Santonian" from charophytes, and the Santonian is still applied to the formation by Alifanov and Barsbold (2009) and by Chinzorig and colleagues (2017). Van Itterbeeck and colleagues (2005) treat the question as closed against the Santonian, but the source they rely on does not support them.
+        The older limit is contested and both readings are current. Gradzinski and colleagues (1977) confine the formation to the "?middle Campanian", and Kielan-Jaworowska (1974) and Averianov and Lopatin (2022) likewise give it as Campanian. Shuvalov (2000) instead dates it Santonian-Campanian, because molluscs, ostracods and turtles "do not allow an age greater than Santonian", citing basalts of 78–80 Myr (Campanian) in his text, though his table lists only 75 ± 7 Myr from the upper svita; Karczewska and Ziembinska-Tworzydlo (1983) reach a "?Late Santonian" from charophytes, and the Santonian is still applied to the formation by Alifanov and Barsbold (2009) and by Chinzorig and colleagues (2017). Van Itterbeeck and colleagues (2005) treat the question as closed against the Santonian, but the source they rely on does not support them.
     references:
       - id: gradziński1977a
         authors: Gradziński, R.; Kielan-Jaworowska, Z.; Maryańska, T.
@@ -218337,7 +218345,7 @@ stratigraphy:
         publisher: Cambridge University Press, Cambridge
         pages: 256-278
         notes: |
-          Dates the Baruungoyot Svita "Santonian–Campanian" in its own voice, from its molluscs, ostracods and turtles and from K–Ar dates on basalts within it.
+          Dates the Baruungoyot Svita "Santonian–Campanian" in its own voice, from its molluscs, ostracods and turtles. Its text gives K–Ar basalt dates of 78–80 Myr in the middle and upper svita, but its Table 14.2 lists 75 ± 7 Myr from the upper svita and 80 Myr from a North Mongolian basalt sheet it does not place in the svita.
       - id: alifanov2009a
         authors: Alifanov, V. R.; Barsbold, R.
         year: 2009
@@ -219010,7 +219018,7 @@ stratigraphy:
       to_ma: 89.8
     dispute:
       summary: |
-        Member in the United States, formation in Canada. Carpenter and Kirkland (1998) give "Belle Fourche Member (Middle Cenomanian ...), Frontier Formation" and records the reassignment that produced it: Merewether and colleagues (1979) "revised the Frontier Formation in Wyoming, and reidentified Dunbar's Frontier Formation as the Belle Fourche Member of the Frontier Formation". Pittman and colleagues (2020) tabulate a "Belle Fourche Formation" in Canada at the same Cenomanian age.
+        Member in the United States, formation in Canada. Carpenter and Kirkland (1998) give "Belle Fourche Member (Middle Cenomanian ...), Frontier Formation" and record the reassignment that produced it: "Merewether et al. (1983) and Merewether (1983) revised the Frontier Formation in Wyoming, and reidentified Dunbar's Frontier Formation as the Belle Fourche Member of the Frontier Formation". Their reference list has no Merewether and colleagues 1983; it gives Merewether (1983) and Merewether and colleagues under 1978, the paper printed in 1979. Pittman and colleagues (2020) tabulate a "Belle Fourche Formation" in Canada at the same Cenomanian age.
     references:
       - id: carpenter1998c
         authors: Carpenter, K.; Kirkland, J. I.
@@ -219155,7 +219163,7 @@ stratigraphy:
         title: Belly River Formation
         publisher: Canadian Society of Petroleum Geologists
         notes: |
-          Source of the lithology.
+          Gives the foothills Belly River, "including Judith River, Pakowki and Milk River equivalents", as "Santonian - Campanian (85.8 - 70.6 ma)"; the numbers are GTS2004's stage limits, not dates. Source of the lithology.
   Bissekty:
     rank: formation
     lithology: medium-grained, poorly lithified sandstone with infraformational conglomerate
@@ -219202,15 +219210,14 @@ stratigraphy:
   Black Creek:
     rank: formation
     lithology: poorly indurated clayey silt, silty clay, dark clay and coarse sand
-    description: The Black Creek Formation is a formation in North Carolina, United States, dated to the Campanian to Maastrichtian stages of the Late Cretaceous. It consists mainly of poorly indurated clayey silt, silty clay, dark clay and coarse sand. The dinosaur Hypsibema is known from it.
+    description: The Black Creek Formation is a formation in North Carolina, United States, dated to the Campanian stage of the Late Cretaceous. It consists mainly of poorly indurated clayey silt, silty clay, dark clay and coarse sand. The dinosaur Hypsibema is known from it.
     period:
       name:
         - Late Cretaceous
       stage:
         - Campanian
-        - Maastrichtian
       from_ma: 83.6
-      to_ma: 66
+      to_ma: 72.2
     references:
       - id: baird1979a
         authors: Baird, D.; Horner, J. R.
@@ -219239,7 +219246,7 @@ stratigraphy:
         school: The George Washington University
         pages: 1-272
         notes: |
-          Lists "Black Creek Fm, Campanian-Maastrichtian" among the formations with hadrosaurian remains.
+          A doctoral thesis. Lists "Black Creek Fm, Campanian-Maastrichtian" among the formations with hadrosaurian remains; no published work read places any part of the formation in the Maastrichtian.
       - id: brett1961a
         authors: Brett, C. E.; Wheeler, W. H.
         year: 1961
@@ -219248,6 +219255,24 @@ stratigraphy:
         volume: "5"
         issue: "2"
         pages: 49-132
+      - id: gallagher1993a
+        authors: Gallagher, W. B.
+        year: 1993
+        title: The Cretaceous/Tertiary mass extinction event in the northern Atlantic Coastal Plain
+        journal: The Mosasaur
+        volume: "5"
+        pages: 75-154
+        notes: |
+          Names Exogyra ponderosa a zone fossil for the Black Creek Formation of North Carolina among units that "are late Campanian in age".
+      - id: stephenson1914a
+        authors: Stephenson, L. W.
+        year: 1914
+        title: Cretaceous deposits of the eastern Gulf region and species of Exogyra from the eastern Gulf region and the Carolinas
+        journal: United States Geological Survey Professional Paper
+        volume: "81"
+        doi: 10.3133/pp81
+        notes: |
+          Places the formation's marine beds in the Exogyra ponderosa zone and the Exogyra costata zone in the overlying Peedee sand; it names no stage.
   Black Ven Marl:
     rank: member
     parent: Charmouth Mudstone
@@ -219349,7 +219374,7 @@ stratigraphy:
         issue: "2"
         doi: 10.1080/02724634.2023.2257238
         notes: |
-          Cites work on "a vertebrate microsite in the mid-Cretaceous (Albian-Cenomanian) Blackleaf Formation, southwest Montana", and groups it with the Twin Mountains and Cloverly as older deposits each preserving a small-bodied ornithopod.
+          Groups the Blackleaf with the Twin Mountains and Cloverly as "Older deposits" than the Cenomanian faunas, each preserving a small-bodied ornithopod, and gives it no stage; its "Albian-Cenomanian" is the title of Ullmann and colleagues' paper in its reference list.
       - id: bonde2022a
         authors: Bonde, J. W.; Hall, R. L.; Krumenacker, L. J.; Varricchio, D. J.
         year: 2022
@@ -220075,6 +220100,8 @@ stratigraphy:
         volume: "13"
         issue: "2"
         pages: 1-666
+        notes: |
+          Its table gives the formation "Hauterivian-Aptian", while its correlation chart, adapted from earlier work, draws the base within the Valanginian.
       - id: exon1976a
         authors: Exon, N. F.
         year: 1976
@@ -220309,7 +220336,7 @@ stratigraphy:
         pages: 1-25
         doi: 10.1111/bre.12128
         notes: |
-          Relays the Aptian–Albian suggested for the group by Fúlfaro and colleagues (1999) and Dias-Brito and colleagues (2001), and reports pterosaur bones, tentatively tapejarid, from the Goio Erê.
+          Relays the Aptian–Albian suggested for the group by Fúlfaro and colleagues (1999) and Dias-Brito and colleagues (2001), and adopts it in its own voice, "the Aptian/Albian Sequence 1"; reports pterosaur bones, tentatively tapejarid, from the Goio Erê.
       - id: dias-brito2001a
         authors: Dias-Brito, D.; Musacchio, E. A.; Castro, J. C.; Maranhão, M. S. A. S.; Suárez, J. M.; Rodrigues, R.
         year: 2001
@@ -220912,7 +220939,7 @@ stratigraphy:
         pages: 121-177
         doi: 10.22179/REVMACN.12.239
         notes: |
-          Assigns the formation a lower Cenomanian age from zircon dating and the Main Miránica unconformity beneath it, and sets aside an Albian from vertebrate tracks. Source of the lithology.
+          Assigns the formation a lower Cenomanian age above the Main Miránica unconformity, relaying a 98.6 ± 2.5 Ma maximum age on detrital zircons from Tunik and colleagues (2010), and sets aside an Albian from vertebrate tracks. Source of the lithology.
       - id: carballido2010a
         authors: Carballido, J. L.; Garrido, A. C.; Canudo, J. I.; Salgado, L.
         year: 2010
@@ -220954,6 +220981,17 @@ stratigraphy:
         pages: 61-87
         notes: |
           Gives the formation's own age as "may be regarded as Early Cenomanian", the basal unit of the Neuquén Group and of the Río Limay Subgroup. Its "Cenomanian to Early Turonian" is the subgroup's, and its "probably Cenomanian–Early Turonian" covers the Candeleros, Huincul and Cerro Lisandro together.
+      - id: tunik2010a
+        authors: Tunik, M.; Folguera, A.; Naipauer, M.; Pimentel, M.; Ramos, V.
+        year: 2010
+        title: "Early uplift and orogenic deformation in the Neuquén Basin: constraints on the Andean uplift from U–Pb and Hf isotopic data of detrital zircons"
+        journal: Tectonophysics
+        volume: "489"
+        issue: 1-4
+        pages: 258-273
+        doi: 10.1016/j.tecto.2010.04.017
+        notes: |
+          Source, via Garrido (2010), of the 98.6 ± 2.5 Ma maximum depositional age on detrital zircons from the Areniscas Violáceas; not read.
   Cannonball:
     rank: member
     parent: Öösh
@@ -221504,7 +221542,7 @@ stratigraphy:
         volume: "199"
         pages: 1-94
         notes: |
-          Maps two of its members on the Pampa de Agnia sheet, the Puesto La Paloma below and the Cerro Castaño above, in gradational contact, and gives their lithologies and thicknesses.
+          Maps two of its members on the Pampa de Agnia sheet, the Puesto La Paloma below and the Cerro Castaño above, in gradational contact, and gives their lithologies and thicknesses. Its member ages, a possibly Barremian lower Puesto La Paloma and a possibly Aptian Cerro Castaño, are relayed and hedged.
       - id: bonaparte1979c
         authors: Bonaparte, J. F.; Gasparini, Z.
         year: 1979
@@ -222088,7 +222126,7 @@ stratigraphy:
         volume: "1069"
         pages: 1-24
         notes: |
-          Places the ostracode faunule that Roth (1933) assumed came from the Morrison Formation in this member: "the faunule is from Lower Cretaceous rocks and belongs in the Chilson Member of the Lakota Formation, probably Unit 2". It estimates the time span of the member's ostracode-bearing rocks as "less than 10 m.y., somewhere between 118 m.y. and 128 m.y. before the present". Source of the lithology.
+          Places Roth's (1933) ostracode faunule in "the Chilson Member of the Lakota Formation, probably Unit 2", and puts its rocks "somewhere between 118 m.y. and 128 m.y. before the present", a figure hung on a pre-Aptian stage bracket, not a date, so not placed on the chart. Source of the lithology.
       - id: roth1933a
         authors: Roth, R.
         year: 1933
@@ -223169,6 +223207,15 @@ stratigraphy:
         journal: The Texas Journal of Science
         volume: "44"
         pages: 349-355
+      - id: martz2017a
+        authors: Martz, J. W.; Parker, W. G.
+        year: 2017
+        title: 'Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology'
+        book: Terrestrial Depositional Systems
+        pages: 39-125
+        doi: 10.1016/B978-0-12-803243-5.00002-9
+        notes: |
+          Places the Otischalkian, "the lowermost Cooper Canyon", at "about 227 to 224 Ma … during the earliest Lacian (earliest early Norian)", within the Norian.
   Cotham:
     rank: member
     parent: Lilstock
@@ -223416,14 +223463,13 @@ stratigraphy:
     rank: member
     parent: Lohan Cura
     lithology: coarse-grained red sandstone, with mudstone intercalations
-    description: The Cullín Grande Member is a member of the Lohan Cura Formation in Neuquén, Argentina, dated to the Aptian to Albian stages of the Early Cretaceous. It consists mainly of coarse-grained red sandstone, with mudstone intercalations. Dinosaurs known from it include Agustinia and Ligabuesaurus.
+    description: The Cullín Grande Member is a member of the Lohan Cura Formation in Neuquén, Argentina, dated to the Albian stage of the Early Cretaceous. It consists mainly of coarse-grained red sandstone, with mudstone intercalations. Dinosaurs known from it include Agustinia and Ligabuesaurus.
     period:
       name:
         - Early Cretaceous
       stage:
-        - Aptian
         - Albian
-      from_ma: 121.4
+      from_ma: 113.2
       to_ma: 100.5
     references:
       - id: martinelli2007b
@@ -223479,7 +223525,7 @@ stratigraphy:
         pages: 903-912
         doi: 10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2
         notes: |
-          Gives both Agustinia and a titanosaurian from "the Aptian-Albian Cullín Grande Member of the Lohan Cura Formation".
+          Gives both Agustinia and a titanosaurian from "the Aptian-Albian Cullín Grande Member of the Lohan Cura Formation", the formation's range applied in passing; it gives the member no age of its own.
       - id: bonaparte2006a
         authors: Bonaparte, J. F.; González Riga, B. J.; Apesteguía, S.
         year: 2006
@@ -249923,15 +249969,13 @@ stratigraphy:
   West Melbury Marly Chalk:
     rank: formation
     lithology: soft marly chalk and hard gray limestone in couplets
-    description: The West Melbury Marly Chalk is a formation in Cambridgeshire and Kent, United Kingdom, dated to the Albian to Cenomanian stages of the Early Cretaceous and the Late Cretaceous. It consists mainly of soft marly chalk and hard gray limestone in couplets. It includes the Cambridge Greensand. Dinosaurs known from it include Acanthopholis, Eucercosaurus, Macrurosaurus and Syngonosaurus.
+    description: The West Melbury Marly Chalk is a formation in Cambridgeshire and Kent, United Kingdom, dated to the Cenomanian stage of the Late Cretaceous. It consists mainly of soft marly chalk and hard gray limestone in couplets. It includes the Cambridge Greensand. Dinosaurs known from it include Acanthopholis, Eucercosaurus, Macrurosaurus and Syngonosaurus.
     period:
       name:
-        - Early Cretaceous
         - Late Cretaceous
       stage:
-        - Albian
         - Cenomanian
-      from_ma: 113.2
+      from_ma: 100.5
       to_ma: 93.9
     references:
       - id: hopson2005a
@@ -249942,7 +249986,7 @@ stratigraphy:
         publisher: British Geological Survey
         volume: RR/05/01
         notes: |
-          Defines the formation and names Copt Point among its primary reference sections. Source of the lithology.
+          Defines the formation, "Upper Cretaceous, Cenomanian", from the erosion surface at the base of its Glauconitic Marl Member, and names Copt Point among its primary reference sections. Source of the lithology.
       - id: barrett2020a
         authors: Barrett, P. M.; Bonsor, J. A.
         year: 2020

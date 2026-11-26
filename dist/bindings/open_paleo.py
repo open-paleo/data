@@ -26,8 +26,12 @@ class Paleogeography(BaseModel):
 
 
 class Metadata(BaseModel):
-    version: str = Field(
-        ..., description='Calendar version of the data release (YYYY.MM).'
+    version: constr(pattern=r'^\d{4}\.\d{2}\.\d{2}(\.\d+)?$') = Field(
+        ...,
+        description='Calendar version of the data release: the UTC date of the publish (YYYY.MM.DD), with .2, .3 and so on for later publishes that day. Each version is a git tag of the same name (see docs/VERSIONING.md).',
+    )
+    commit: constr(pattern=r'^[0-9a-f]{40}$') = Field(
+        ..., description='Full SHA of the source commit the build was run from.'
     )
     schema_version: str = Field(
         ...,
