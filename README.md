@@ -80,9 +80,9 @@ Clone the repository:
 git clone https://github.com/open-paleo/data.git
 ```
 
-The `dist/` directory holds the ready-to-use output files. A workflow rebuilds and commits them on every push to `main`, so `main` always carries outputs that match its data.
+The `dist/` directory holds the ready-to-use output files. A workflow rebuilds and publishes them once a day, and by hand between times, so `main`'s `dist/` can trail its source files by up to a day.
 
-Tagged releases will be published on the [Releases](https://github.com/open-paleo/data/releases) page, named by calendar version (`YYYY.MM`, the `_metadata.version` in the built output). Until the first release, pull from `main`.
+Each publish is a git tag named by its version: the UTC date of the publish (`YYYY.MM.DD`, with `.2`, `.3` and so on for later publishes the same day), the `_metadata.version` in the built output. Check out a tag to get the data exactly as it was published; see [docs/VERSIONING.md](docs/VERSIONING.md#when-the-data-is-published).
 
 ## Repository Structure
 
@@ -222,10 +222,10 @@ and encourages continued contributions.
 
 ### Citing a specific version
 
-Each tagged release, named by calendar version (`YYYY.MM`), will be a snapshot of the dataset at a point in time. For reproducibility, cite the specific version you used. It is the `_metadata.version` in `dist/open-paleo.json`:
+Each publish is a git tag named by its version (`YYYY.MM.DD`, with `.2`, `.3` and so on for later publishes the same day), a snapshot of the dataset at a point in time. For reproducibility, cite the specific version you used. It is the `_metadata.version` in `dist/open-paleo.json`, and the tag's URL leads back to that exact data:
 
-> Open Paleo contributors. (2026). *Open Paleo* (Version 2026.10)
-> [Dataset]. https://github.com/open-paleo/data
+> Open Paleo contributors. (2026). *Open Paleo* (Version 2026.11.26)
+> [Dataset]. https://github.com/open-paleo/data/tree/2026.11.26
 
 If a DOI is available for the release (via Zenodo), use that instead
 of the GitHub URL — DOIs are permanent and resolve even if the
@@ -240,8 +240,8 @@ repository moves.
                   dataset for paleontology},
   year         = {2026},
   publisher    = {GitHub},
-  url          = {https://github.com/open-paleo/data},
-  note         = {Version 2026.10}
+  url          = {https://github.com/open-paleo/data/tree/2026.11.26},
+  note         = {Version 2026.11.26}
 }
 ```
 

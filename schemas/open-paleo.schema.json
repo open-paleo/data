@@ -28,9 +28,10 @@
   "$defs": {
     "metadata": {
       "type": "object",
-      "required": ["version", "schema_version", "built_at", "license", "attribution", "genus_count", "clade_count"],
+      "required": ["version", "commit", "schema_version", "built_at", "license", "attribution", "genus_count", "clade_count"],
       "properties": {
-        "version": { "type": "string", "description": "Calendar version of the data release (YYYY.MM)." },
+        "version": { "type": "string", "pattern": "^\\d{4}\\.\\d{2}\\.\\d{2}(\\.\\d+)?$", "description": "Calendar version of the data release: the UTC date of the publish (YYYY.MM.DD), with .2, .3 and so on for later publishes that day. Each version is a git tag of the same name (see docs/VERSIONING.md)." },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Full SHA of the source commit the build was run from." },
         "schema_version": { "type": "string", "description": "Semantic version of this output schema (see docs/VERSIONING.md)." },
         "built_at": { "type": "string", "format": "date-time" },
         "license": { "type": "string" },

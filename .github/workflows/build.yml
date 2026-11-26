@@ -1,20 +1,27 @@
 name: Build
 
+# One build a day publishes the day's data. A manual run (Actions tab, or
+# `gh workflow run build.yml`) publishes out of schedule: a fix to a broken
+# build, or a timely addition such as a new genus or species. See
+# docs/VERSIONING.md for how each publish is versioned and tagged.
 on:
-  push:
-    branches: [main]
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-# Builds run one at a time: two pushes close together would otherwise build in
-# parallel and the second build's push would be rejected.
+# Builds run one at a time: a manual run started during the scheduled one
+# would otherwise pick the same version and race it to the push.
 concurrency:
   group: build-main
   cancel-in-progress: false
 
 jobs:
   build:
+    # A manual run can name any branch; only main is published.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,6 +40,35 @@ jobs:
 
       - name: Generate dictionary
         run: npm run generate-dictionary
+
+      # The version is the UTC date of the run. The day's first publish takes
+      # the bare date, whether scheduled or manual; each later one takes the
+      # next counter (.2, .3, ...) after the tags already on the remote. The
+      # version is chosen before the build because the build writes it into
+      # the output; a run that publishes nothing leaves it unused.
+      - name: Choose the release version
+        id: version
+        run: |
+          date="$(date -u +%Y.%m.%d)"
+          count=0
+          for tag in $(git ls-remote --tags --refs origin "refs/tags/$date*" | sed 's#.*refs/tags/##'); do
+            suffix="${tag#"$date"}"
+            if [ -z "$suffix" ]; then
+              number=1
+            elif [[ "$suffix" =~ ^\.([0-9]+)$ ]]; then
+              number="${BASH_REMATCH[1]}"
+            else
+              continue
+            fi
+            [ "$number" -gt "$count" ] && count="$number"
+          done
+          if [ "$count" -eq 0 ]; then
+            version="$date"
+          else
+            version="$date.$((count + 1))"
+          fi
+          echo "Release version: $version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
       # Paleocoordinates are reconstructed with pyGPlates before the build
       # merges them. The model and Natural Earth files are pinned by checksum
@@ -62,24 +98,22 @@ jobs:
       - name: Build outputs
         env:
           OPEN_PALEO_REQUIRE_PALEOCOORDINATES: "1"
+          OPEN_PALEO_VERSION: ${{ steps.version.outputs.version }}
+          OPEN_PALEO_COMMIT: ${{ github.sha }}
         run: npm run build
 
       # Regenerate the typed bindings only when the JSON Schema they derive
-      # from actually changed, so ordinary data pushes don't pay the
-      # generation cost or churn the bindings. Compares the schema at
-      # the pre-push commit (github.event.before) with the current file;
-      # regenerates on any difference, when that commit is unavailable
-      # (force-push, first push), or when the bindings are missing.
+      # from changed since the last publish, so ordinary data publishes don't
+      # pay the generation cost or churn the bindings. HEAD's
+      # dist/open-paleo.schema.json is the copy the last publish shipped; the
+      # bindings are also regenerated when either is missing.
       - name: Decide whether to regenerate bindings
         id: bindings
         run: |
-          before="${{ github.event.before }}"
           generate=true
           if [ -f dist/bindings/open_paleo.py ] && [ -f dist/bindings/open-paleo.d.ts ] \
-            && [ -n "$before" ] && [ "$before" != "0000000000000000000000000000000000000000" ] \
-            && git fetch --depth=1 origin "$before" 2>/dev/null \
-            && git cat-file -e "$before:schemas/open-paleo.schema.json" 2>/dev/null; then
-            old="$(git show "$before:schemas/open-paleo.schema.json" | sha256sum | cut -d' ' -f1)"
+            && git cat-file -e "HEAD:dist/open-paleo.schema.json" 2>/dev/null; then
+            old="$(git show "HEAD:dist/open-paleo.schema.json" | sha256sum | cut -d' ' -f1)"
             new="$(sha256sum schemas/open-paleo.schema.json | cut -d' ' -f1)"
             [ "$old" = "$new" ] && generate=false
           fi
@@ -93,45 +127,69 @@ jobs:
         if: steps.bindings.outputs.generate == 'true'
         run: npm run generate-bindings
 
-      # Records whether this commit changed dist/ and dist/references.bib, and
-      # the SHA that landed on main, for the dispatches below. A commit can
-      # change only dictionaries/, so dist_changed is not implied by a push.
-      # The SHA is read after the push, so it is the commit on main even after
-      # a rebase retry.
+      # Publishes only when the data changed: the build stamps built_at,
+      # version and commit on every run, and a difference confined to those
+      # fields is not a new release.
+      - name: Decide whether to publish
+        id: publish
+        run: node .github/scripts/check-dist-changed.cjs
+
+      # Commits the dictionary when it changed, and on a publish also dist/
+      # with a tag named by the version. A run that does not publish restores
+      # dist/ first, so its timestamp-only changes are never committed.
+      # Records whether references.bib changed, and the SHA that landed on
+      # main, for the dispatches below. The SHA is read after the push, so it
+      # is the commit on main even after a rebase retry.
       - name: Commit build outputs
         id: commit
+        env:
+          PUBLISH: ${{ steps.publish.outputs.publish }}
+          VERSION: ${{ steps.version.outputs.version }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f dist/ dictionaries/
-          if [ -n "$(git status --porcelain dist/ dictionaries/)" ]; then
-            if git diff --cached --quiet -- dist/; then
-              dist=false
-            else
-              dist=true
-            fi
-            if git diff --cached --quiet -- dist/references.bib; then
-              bib=false
-            else
-              bib=true
-            fi
-            git commit -m "build: update output files"
-            # A data commit can land on main while this build runs. On a
-            # rejected push, deepen the shallow checkout enough to find the
-            # merge base, rebase the build commit onto main and try again.
-            for attempt in 1 2 3; do
-              if git push; then
-                echo "dist_changed=$dist" >> "$GITHUB_OUTPUT"
-                echo "bib_changed=$bib" >> "$GITHUB_OUTPUT"
-                echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-                exit 0
-              fi
-              git fetch --deepen=50 origin main
-              git rebase origin/main
-            done
-            echo "Push still rejected after three attempts" >&2
-            exit 1
+          if [ "$PUBLISH" != "true" ]; then
+            git checkout HEAD -- dist/
+            git clean -fdxq -- dist/
           fi
+          git add -f dist/ dictionaries/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          if git diff --cached --quiet -- dist/references.bib; then
+            bib=false
+          else
+            bib=true
+          fi
+          if [ "$PUBLISH" = "true" ]; then
+            git commit -m "build: release $VERSION"
+            git tag -a "$VERSION" -m "Open Paleo $VERSION"
+            refs=(HEAD:main "refs/tags/$VERSION")
+          else
+            git commit -m "build: update dictionary"
+            refs=(HEAD:main)
+          fi
+          # A data commit can land on main while this build runs. On a
+          # rejected push, deepen the shallow checkout enough to find the
+          # merge base, rebase the build commit onto main, move the tag to
+          # the rebased commit and try again. --atomic pushes the commit and
+          # its tag together or not at all.
+          for attempt in 1 2 3; do
+            if git push --atomic origin "${refs[@]}"; then
+              echo "published=$PUBLISH" >> "$GITHUB_OUTPUT"
+              echo "bib_changed=$bib" >> "$GITHUB_OUTPUT"
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            git fetch --deepen=50 origin main
+            git rebase origin/main
+            if [ "$PUBLISH" = "true" ]; then
+              git tag -fa "$VERSION" -m "Open Paleo $VERSION"
+            fi
+          done
+          echo "Push still rejected after three attempts" >&2
+          exit 1
 
       # open-paleo/corpus keeps a bundled copy of the bib, and its update-bib
       # workflow takes the bib from the commit named in the payload rather than
@@ -151,11 +209,11 @@ jobs:
             -f event_type=bib-updated -f "client_payload[sha]=$SHA"
 
       # open-paleo/web builds the site from dist/ at the commit named in the
-      # payload, so it rebuilds when the outputs change. Like the corpus step,
-      # it needs a fine-grained token scoped to that repository, and a missed
-      # dispatch must not fail the build: the site also rebuilds nightly.
+      # payload, so it rebuilds on each publish. Like the corpus step, it needs
+      # a fine-grained token scoped to that repository, and a missed dispatch
+      # must not fail the build: the site also rebuilds nightly.
       - name: Tell the web repository the outputs changed
-        if: steps.commit.outputs.dist_changed == 'true'
+        if: steps.commit.outputs.published == 'true'
         continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.WEB_DISPATCH_TOKEN }}

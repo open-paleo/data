@@ -219,7 +219,7 @@ If you change the structure of any output format in `build.ts`:
 3. Update `CHANGELOG.md` with the schema change
 4. Run `npm run build` and verify all output files
 5. Before pushing a breaking bump (MAJOR, or MINOR before 1.0.0), tell the maintainers of open-paleo/web, whose build stops on one
-6. After pushing, wait for the Build workflow to commit the regenerated `dist/`, then run the *Publish bindings* workflow to publish the new version to npm and PyPI (see [docs/VERSIONING.md](../docs/VERSIONING.md#packages))
+6. After pushing, run the Build workflow by hand (`gh workflow run build.yml`) and wait for it to commit the regenerated `dist/`, then run the *Publish bindings* workflow to publish the new version to npm and PyPI (see [docs/VERSIONING.md](../docs/VERSIONING.md#packages))
 
 ## Types
 

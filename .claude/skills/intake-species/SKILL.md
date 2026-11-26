@@ -409,6 +409,19 @@ bash .claude/skills/intake-species/close-issue.sh <Genus> <species> <issue> <com
 Verify the issue actually closed via `gh issue view <issue> --json
 state` — `feedback_verify_bulk_ops`.
 
+Then ask the user whether to publish now. The Build workflow publishes
+`dist/` once a day at 05:00 UTC, so without a manual run the new
+species reaches the website only after the next scheduled build. A new
+species is timely news, so offer an out-of-schedule build, and wait for
+the answer. Only on a yes, run:
+
+```
+gh workflow run build.yml --ref main
+```
+
+If more intakes are queued in this session, say so: one build after
+the last of them publishes them all under a single version.
+
 ## Step 8 — Clean up staging
 
 ```

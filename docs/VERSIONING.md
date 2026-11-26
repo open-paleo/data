@@ -30,15 +30,44 @@ needed to render it, with no separate lookups required.
 
 `dist/open-paleo.json` carries both in `_metadata`:
 
-- **`version`** — a calendar version of the *data release* (`YYYY.MM`, e.g.
-  `2026.07`). It changes whenever the data is re-published, regardless of
-  whether the shape changed. Cite this for reproducibility (see the README).
+- **`version`** — a calendar version of the *data release*: the UTC date of
+  the publish (`YYYY.MM.DD`, e.g. `2026.11.26`), with `.2`, `.3` and so on
+  for later publishes the same day. It changes whenever the data is
+  re-published, regardless of whether the shape changed. Cite this for
+  reproducibility (see the README).
 - **`schema_version`** — a [semantic version](https://semver.org/) of the
   *output shape*. It changes only when the structure changes, per the rules
   below.
 
 The two are independent: most releases bump `version` while leaving
-`schema_version` untouched.
+`schema_version` untouched. `_metadata.commit` is the full SHA of the source
+commit a build was run from.
+
+## When the data is published
+
+The *Build* workflow (`.github/workflows/build.yml`) publishes `dist/`. It runs
+once a day at 05:00 UTC, not on every push, so `main`'s source files can be
+ahead of its `dist/` until the next run. Start it by hand from the Actions tab,
+or with `gh workflow run build.yml`, to publish sooner: to fix a broken build,
+or for a timely addition such as a new genus or species.
+
+A run publishes only when the data changed. Every build stamps `built_at`,
+`version` and `commit`, so a run whose output differs from the last publish
+only in those fields commits nothing, and one version never names two
+datasets. A run that publishes:
+
+1. takes the day's next version — the bare date if no version has that date
+   yet, whether the run was scheduled or started by hand, otherwise the next
+   counter;
+2. commits `dist/` to `main`;
+3. tags that commit with an annotated tag named exactly the version, so
+   `https://github.com/open-paleo/data/tree/<version>` and
+   `https://raw.githubusercontent.com/open-paleo/data/<version>/dist/open-paleo.json`
+   always serve that release;
+4. notifies open-paleo/web, which redeploys from it, and open-paleo/corpus
+   when `references.bib` changed.
+
+The tags are not GitHub Releases, and no DOI is minted for them.
 
 ## `schema_version` semantics
 
@@ -95,9 +124,11 @@ change:
    maintainers of [open-paleo/web](https://github.com/open-paleo/web) before
    pushing: its build checks the dataset's `schema_version` against its own
    bindings and stops on a breaking difference.
-6. After pushing, wait for the Build workflow to commit the regenerated
-   `dist/`, then run the *Publish bindings* workflow from the Actions tab to
-   publish the new version to npm and PyPI (see [Packages](#packages)).
+6. After pushing, run the Build workflow by hand (see
+   [When the data is published](#when-the-data-is-published)) and wait for
+   it to commit the regenerated `dist/`, then run the *Publish bindings*
+   workflow from the Actions tab to publish the new version to npm and PyPI
+   (see [Packages](#packages)).
 
 ## Validating against the schema
 
@@ -130,8 +161,8 @@ under `dist/bindings/`:
   `datamodel-code-generator`)
 
 The build workflow regenerates and commits them **only when
-`schemas/open-paleo.schema.json` changes** (it compares the schema at the
-pre-push commit against the current file), so ordinary data pushes don't churn
+`schemas/open-paleo.schema.json` changes** (it compares the schema with the
+copy in the last published `dist/`), so ordinary data publishes don't churn
 them.
 Regenerate locally with `npm run generate-bindings` (requires
 `pip install datamodel-code-generator`). Generation is deterministic, so an

@@ -1,3 +1,4 @@
+import * as childProcess from "node:child_process";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
@@ -135,9 +136,15 @@ type ProcessedClade = {
  */
 type DatasetMetadata = {
     /**
-     * Calendar version string (YYYY.MM).
+     * Calendar version of the data release: the UTC date of the publish
+     * (YYYY.MM.DD), with `.2`, `.3` and so on for later publishes that day.
      */
     version: string;
+
+    /**
+     * Full SHA of the source commit the build was run from.
+     */
+    commit: string;
 
     /**
      * Semantic version of the output schema.
@@ -1247,20 +1254,62 @@ if (!fs.existsSync(dist))
     fs.mkdirSync(dist, { recursive: true });
 }
 
+/**
+ * Reads the data release version. The Build workflow passes the version it
+ * will tag in `OPEN_PALEO_VERSION`; a local build, which is never published,
+ * falls back to the UTC date.
+ *
+ * @param date - The build time, used for the fallback.
+ * @returns The version, `YYYY.MM.DD` with an optional `.N` publish counter.
+ */
+function readReleaseVersion(date: Date): string
+{
+    const version = process.env.OPEN_PALEO_VERSION
+        ?? date.toISOString().slice(0, 10).replaceAll("-", ".");
+
+    if (!/^\d{4}\.\d{2}\.\d{2}(\.\d+)?$/.test(version))
+    {
+        throw new Error(`OPEN_PALEO_VERSION "${version}" is not YYYY.MM.DD or YYYY.MM.DD.N`);
+    }
+
+    return version;
+}
+
+/**
+ * Reads the full SHA of the source commit being built: `OPEN_PALEO_COMMIT`
+ * when the Build workflow sets it, otherwise the checkout's HEAD.
+ *
+ * @returns The 40-character commit SHA.
+ */
+function readSourceCommit(): string
+{
+    const commit = process.env.OPEN_PALEO_COMMIT
+        ?? childProcess.execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
+
+    if (!/^[0-9a-f]{40}$/.test(commit))
+    {
+        throw new Error(`Source commit "${commit}" is not a full SHA`);
+    }
+
+    return commit;
+}
+
 const now = new Date();
-const version = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, "0")}`;
+const version = readReleaseVersion(now);
+const commit = readSourceCommit();
 
 const dataset: Dataset = {
     _metadata: {
         attribution: "Open Paleo contributors",
         built_at: now.toISOString(),
         clade_count: Object.keys(clades).length,
+        commit,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
         ...(plateModel
             ? { paleogeography: { model: plateModel.model, citation: plateModel.citation, license: plateModel.license } }
             : { }),
-        schema_version: "0.4.7",
+        schema_version: "0.4.8",
         version,
     },
     // The chart named in the header of schema.yml's stage table; change both

@@ -545,6 +545,19 @@ Sequence:
    sub-label, and closes the issue. It does NOT touch any in-repo
    files.
 
+5. Ask the user whether to publish now. The Build workflow publishes
+   `dist/` once a day at 05:00 UTC, so without a manual run the new
+   genus reaches the website only after the next scheduled build. A new
+   genus is timely news, so offer an out-of-schedule build, and wait for
+   the answer. Only on a yes, run:
+
+   ```
+   gh workflow run build.yml --ref main
+   ```
+
+   If more intakes are queued in this session, say so: one build after
+   the last of them publishes them all under a single version.
+
 ## Step 8 — Clean up staging
 
 ```

@@ -3,11 +3,13 @@
 All notable changes to the Open Paleo dataset are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
-and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
+and this project uses [calendar versioning](https://calver.org/): each
+publish is versioned by its UTC date (YYYY.MM.DD, with .2, .3 and so on for
+later publishes the same day).
 
 ## [Unreleased]
 
-Initial public release. The output schema reaches 0.4.7 through the changes
+Initial public release. The output schema reaches 0.4.8 through the changes
 below, and becomes 1.0.0 when this release is cut.
 
 ### Added
@@ -202,8 +204,16 @@ below, and becomes 1.0.0 when this release is cut.
 - `lithology` on stratigraphic units: what the unit is made of, as a short
   phrase taken from a cited paper. The generated description says it. Output
   schema 0.4.6 → 0.4.7.
+- `_metadata.commit`: the full SHA of the source commit the build was run
+  from. Output schema 0.4.7 → 0.4.8.
 
 ### Changed
+- `_metadata.version` names each publish rather than each month: the UTC
+  date of the publish (`2026.11.26`), with `.2`, `.3` and so on for later
+  publishes that day, and every version is a git tag of the same name. The
+  outputs are built once a day, and by hand between times, instead of on
+  every push, and a build whose data matches the last publish publishes
+  nothing. Output schema 0.4.8, the same bump as `_metadata.commit` above.
 - Output schema versions renumbered for the period before the first
   release: each version X.Y.0 became 0.X.Y, so the schema stands at 0.4.7
   rather than 4.7.0 and the version notes in this file use the new numbers.
