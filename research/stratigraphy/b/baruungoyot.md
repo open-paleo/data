@@ -38,7 +38,7 @@
 - khand2000a, p. 76: "The position of some stratigraphic divisions, for example, Bayanshiree, Baruungoyot and others, more lower divisions remain to be quite unclear."
 - fanti2012a, p. 1, Abstract: the nest "was collected from the upper beds of the Baruungoyot Formation (Campanian-Maastrichtian)".
 - fanti2012a, p. 2, Geology and Stratigraphy: the cuts at Nemegt "provide some of the best exposures of the upper Campanian - lower Maastrichtian Baruungoyot and Nemegt formations".
-- fanti2012a, p. 14, Discussion: *Nemegtomaia* "is found in the typical upper Baruungoyot Formation facies, in the Baruungoyot-Nemegt interfingering interval, and also in the Nemegt Formation".
+- fanti2012a, p. 13, Discussion: *Nemegtomaia* "is found in the typical upper Baruungoyot Formation facies, in the Baruungoyot-Nemegt interfingering interval, and also in the Nemegt Formation".
 
 **Ruled out.**
 - *Van Itterbeeck and colleagues' (2005) rejection of the Santonian.* They credit the Campanian to radiometric calibrations by Shuvalov (2000), but Shuvalov dates the svita Santonian–Campanian in his own voice, after weighing those same K–Ar dates against molluscs, ostracods and turtles. The source does not support the rejection, so it does not close the question.

@@ -1,5 +1,22 @@
 # Ischigualasto
 
+## Do the Ladinian and the Middle Triassic stand for the Ischigualasto?
+
+*2026-11-26*
+
+**Conclusion.** No; both are dropped. Answers the 2026-11-23 entry's Open line. Martínez and Alcober (2009) write that the formation "may have begun during the Ladinian", a possibility drawn from a 228 Ma level near the base that they take from Rogers and colleagues (1993); on the ICS chart v2024/12 that date is late Carnian. Reig (1963) concludes in his own voice that the fauna is upper Ladinian, by faunal correlation with Santa María, the Manda beds and the Molteno, made before any radiometric date. Rogers and colleagues have since dated a bentonite in the lower formation at 227.8 ± 0.3 Ma, so Reig's epoch is superseded, as the Kayenta's early faunal Late Triassic was (see [Kayenta](../k/kayenta.md)). Governs `period: [Late Triassic]` and `stages: [Carnian, Norian]` on [Ischigualasto](../../../stratigraphy/i/ischigualasto.yml); its genera, all Carnian, are unaffected.
+
+**Evidence.**
+- martínez2009b, p. 11: "The absolute age of 228 My (earliest Carnian) for a level 20 meters above the base of the Ischigualasto Formation [7] suggests that deposition of the formation may have begun during the Ladinian."
+- reig1963a, p. 19: "La fauna de los Estratos de Ischigualasto representaría, entonces, un Mesotriásico cuspidal, equivalente al Ladiniano superior y probablemente a los "Upper Molteno Beds" de África del Sur."
+- rogers1993a, p. 794: a bentonite "interbedded in the Ischigualasto Formation of northwestern Argentina yielded a plateau age of 227.8 ± 0.3 million years ago".
+
+**Ruled out.**
+- *Ladinian from Martínez and Alcober (2009).* A possibility, from a date that is Carnian on the current chart.
+- *Ladinian and Middle Triassic from Reig (1963).* A faunal correlation superseded by the dated ash.
+
+**Open.** Nothing beyond the Norian questions the 2026-11-23 entry leaves.
+
 ## What do the cited works say about the age of the Ischigualasto Formation and its contacts?
 
 *2026-11-23*
@@ -26,6 +43,9 @@
 
 ## References
 
+- `martínez2009b`: Martínez, R. N.; Alcober, O. A. (2009). A Basal Sauropodomorph (Dinosauria: Saurischia) from the Ischigualasto Formation (Triassic, Carnian) and the Early Evolution of Sauropodomorpha. *PLoS ONE* 4(2): e4397. doi:10.1371/journal.pone.0004397
+- `reig1963a`: Reig, O. A. (1963). La presencia de dinosaurios saurisquios en los "Estratos de Ischigualasto" (Mesotriasico Superior) de las provincias de San Juan y La Rioja (República Argentina) [The presence of saurischian dinosaurs in the "Ischigualasto beds" (upper Middle Triassic) of San Juan and La Rioja Provinces (Argentine Republic)]. *Ameghiniana* 3(1): 3-20.
+- `rogers1993a`: Rogers, R. R.; Swisher, C. C., III; Sereno, P. C.; Monetta, A. M.; Forster, C. A.; Martínez, R. N. (1993). The Ischigualasto tetrapod assemblage (Late Triassic, Argentina) and 40Ar/39Ar dating of dinosaur origins. *Science* 260(5109): 794-797. doi:10.1126/science.260.5109.794
 - `ezcurra2010a`: Ezcurra, M. D. (2010). A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny. *Journal of Systematic Palaeontology* 8(3): 371-425. doi:10.1080/14772019.2010.484650
 - `shipman2004a`: Shipman, T. C. (2004). Links between sediment accumulation rates and the development of alluvial architecture: Triassic Ischigualasto Formation, northwestern Argentina. Doctoral thesis, Department of Geosciences, University of Arizona.
 - `cox1965a`: Cox, C. B. (1965). New Triassic dicynodonts from South America, their origins and relationships. *Philosophical Transactions of the Royal Society of London, Series B* 248(753): 457-516.
@@ -36,6 +56,3 @@
 - `casamiquela1961a`: Casamiquela, R. M. (1961). Dos nuevos estagonolepoideos argentinos (de Ischigualasto, San Juan) [Two new Argentine stagonolepoids (from Ischigualasto, San Juan)]. *Revista de la Asociación Geológica Argentina* 16(3-4): 143-203.
 - `colbert1963a`: Colbert, E. H. (1963). Relationships of the Triassic reptilian faunas of Brazil and South Africa. *South African Journal of Science* 59: 248-253.
 - `currie2009a`: Currie, B. S.; Colombi, C. E.; Tabor, N. J.; Shipman, T. C.; Montañez, I. P. (2009). Stratigraphy and architecture of the Upper Triassic Ischigualasto Formation, Ischigualasto Provincial Park, San Juan, Argentina. *Journal of South American Earth Sciences* 27(1): 74-87. doi:10.1016/j.jsames.2008.10.004
-- `martínez2009b`: Martínez, R. N.; Alcober, O. A. (2009). A Basal Sauropodomorph (Dinosauria: Saurischia) from the Ischigualasto Formation (Triassic, Carnian) and the Early Evolution of Sauropodomorpha. *PLoS ONE* 4(2): e4397. doi:10.1371/journal.pone.0004397
-- `reig1963a`: Reig, O. A. (1963). La presencia de dinosaurios saurisquios en los "Estratos de Ischigualasto" (Mesotriasico Superior) de las provincias de San Juan y La Rioja (República Argentina) [The presence of saurischian dinosaurs in the "Ischigualasto beds" (upper Middle Triassic) of San Juan and La Rioja Provinces (Argentine Republic)]. *Ameghiniana* 3(1): 3-20.
-- `rogers1993a`: Rogers, R. R.; Swisher, C. C., III; Sereno, P. C.; Monetta, A. M.; Forster, C. A.; Martínez, R. N. (1993). The Ischigualasto tetrapod assemblage (Late Triassic, Argentina) and 40Ar/39Ar dating of dinosaur origins. *Science* 260(5109): 794-797. doi:10.1126/science.260.5109.794

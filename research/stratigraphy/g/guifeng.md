@@ -1,5 +1,18 @@
 # Guifeng
 
+## Should Gale and colleagues (2020) stay cited on the Guifeng?
+
+*2026-11-26*
+
+**Conclusion.** No. GTS2020 was cited only for the base ages of the Coniacian and Santonian, used to place the 89–86 Ma basalt ages that Xi and colleagues (2018) relay; ages are now placed on the ICS chart v2024/12 in the research note, as the 2026-11-23 entry does, and the chart is not a source on the unit. Governs the removal of gale2020a from [Guifeng](../../../stratigraphy/g/guifeng.yml); `stages` unchanged.
+
+**Evidence.**
+- xi2018a, p. 275: "two isotopic ages of 89–86 Ma from the basalt of the Hekou Formation imply that the age of the Guifeng Group might be early to mid-late Cretaceous (Wu et al., 2002)".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the basis of the Guifeng Group's age readings and its equation with the Nanxiong?
 
 *2026-11-23*
@@ -36,6 +49,7 @@ Nothing beyond the readings the 2026-10-01 entry rules out.
 
 ## References
 
+- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 - `li2018a`: Li, X. H.; Zhang, C. K.; Wang, Y.; Liu, L. (2018). 华南晚中生代陆相地层年代及关系研究 [Age and relationships of Late Mesozoic continental strata in South China]. *Acta Geologica Sinica* 92(6): 1107-1130.

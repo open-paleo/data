@@ -1,5 +1,21 @@
 # Grès supérieurs
 
+## Can the Thai units Allain and colleagues correlate carry the Barremian for the Grès supérieurs?
+
+*2026-11-26*
+
+**Conclusion.** No; the Barremian is dropped. Supersedes the 2026-11-23 entry on the stages and answers its Open line. Allain and colleagues (2012) reach "late Barremian to early Cenomanian" by taking the formation as the lateral equivalent of the Khok Kruat and Phu Pan formations of Thailand; the age of a correlative unit does not date this one. None of the works they cite gives the Laotian beds a Barremian age: Buffetaut (1991) gives late Early to basal Late Cretaceous, Allain and colleagues (1999) Aptian–Albian and Sha (2007) Aptian to early Cenomanian, and Racey and Goodall (2009) date the Khok Kruat Aptian and only bracket the Phu Phan between the units above and below it. The Cenomanian stays on Sha's dating of the Ba Na Gnom Bed. Governs `stages: [Aptian, Albian, Cenomanian]` on [Grès supérieurs](../../../stratigraphy/g/grès-supérieurs.yml); [*Ichthyovenator laosensis*](../../../genera/I/Ichthyovenator.yml) and [*Tangvayosaurus hoffeti*](../../../genera/T/Tangvayosaurus.yml) are unaffected.
+
+**Evidence.**
+- allain2012a, p. 370, Horizon and locality: the formation "is considered here the lateral equivalent of the Khok Kruat and Phu Pan formations in neighbouring Thailand and is probably late Barremian to early Cenomanian in age".
+- sha2007a, p. 62, Abstract: assemblage (4), which p. 73 gives for the Ba Na Gnom Bed, is "Late Aptian-Early Cenomanian, but mainly Albian".
+- racey2009b, p. 69, Abstract: "an Aptian age for the Khok Kruat Formation"; the Phu Phan "must also be Early Cretaceous based on the age of the under- and overlying formations".
+
+**Ruled out.**
+- *Barremian from Allain and colleagues (2012).* The age of the Thai correlatives, which their own cited sources do not give as Barremian either.
+
+**Open.** A date or index fossil from the Grès supérieurs below the Aptian would restore the Barremian.
+
 ## What do the cited works say about the age of the Grès supérieurs?
 
 *2026-11-23*
@@ -35,9 +51,9 @@
 ## References
 
 - `allain2012a`: Allain, R.; Xaisanavong, T.; Richir, P.; Khentavong, B. (2012). The first definitive Asian spinosaurid (Dinosauria: Theropoda) from the early cretaceous of Laos. *Naturwissenschaften* 99(5): 369-377. doi:10.1007/s00114-012-0911-7
-- `buffetaut1991b`: Buffetaut, E. (1991). On the age of the Cretaceous dinosaur-bearing beds of southern Laos. *Newsletters on Stratigraphy* 24: 59-73. doi:10.1127/nos/24/1991/59
 - `sha2007a`: Sha, J. (2007). Cretaceous trigonioidid (non-marine Bivalvia) assemblages and biostratigraphy in Asia with special remarks on the classification of Trigonioidacea. *Journal of Asian Earth Sciences* 29: 62-83. doi:10.1016/j.jseaes.2006.01.003
 - `racey2009b`: Racey, A.; Goodall, J. G. S. (2009). Palynology and stratigraphy of the Mesozoic Khorat Group red bed sequences from Thailand. *Geological Society, London, Special Publications* 315: 69-83. doi:10.1144/SP315.6
+- `buffetaut1991b`: Buffetaut, E. (1991). On the age of the Cretaceous dinosaur-bearing beds of southern Laos. *Newsletters on Stratigraphy* 24: 59-73. doi:10.1127/nos/24/1991/59
 - `allain1999a`: Allain, R.; Taquet, P.; Battail, B.; Dejax, J.; Richir, P.; Véran, M.; Limon-Duparcmeur, F.; Vacant, R.; Mateus, O.; Sayarath, P.; Khenthavong, B.; Phouyavong, S. (1999). Un nouveau genre de dinosaure sauropode de la formation des Grès supérieurs (Aptien-Albien) du Laos [A new genus of sauropod dinosaur from the Grès supérieurs Formation (Aptian–Albian) of Laos]. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 329(8): 609-616. doi:10.1016/s1251-8050(00)87218-3
 
 ## Other references

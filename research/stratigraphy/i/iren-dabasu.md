@@ -1,5 +1,19 @@
 # Iren Dabasu
 
+## What does Berkey and Morris (1927) say about the Iren Dabasu?
+
+*2026-11-26*
+
+**Conclusion.** It describes the formation on the south side of the Iren Dabasu salt pan and relays W. D. Matthew's placement of it, tentatively and by personal communication, in the Lower Cretaceous. The placement is hedged and relayed, so it adds no Early Cretaceous to `period`. Governs the note on berkey1927a on [Iren Dabasu](../../../stratigraphy/i/iren-dabasu.yml).
+
+**Evidence.**
+- berkey1927a, p. 355: "The correlation of the dinosaur beds at Iren Dabasu must await a detailed study of the fauna. W. D. Matthew considers the fauna to be rather primitive, and holds that it is best to place the Iren Dabasu tentatively in the Lower Cretaceous (personal communication)."
+
+**Ruled out.**
+- *Early Cretaceous from Matthew.* A tentative placement relayed by personal communication.
+
+**Open.** Nothing.
+
 ## What do the earlier datings that Van Itterbeeck and colleagues (2005) review for the Iren Dabasu rest on?
 
 *2026-11-23*
@@ -90,8 +104,8 @@
 
 ## References
 
-- `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
 - `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
+- `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `bonnetti2014a`: Bonnetti, C.; Malartre, F.; Huault, V.; Cuney, M.; Bourlange, S.; Liu, X.; Peng, Y. (2014). Sedimentology, stratigraphy and palynological occurrences of the late Cretaceous Erlian Formation, Erlian Basin, Inner Mongolia, People's Republic of China. *Cretaceous Research* 48: 177-192. doi:10.1016/j.cretres.2013.09.013
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.

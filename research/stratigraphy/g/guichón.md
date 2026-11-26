@@ -1,5 +1,23 @@
 # Guichón
 
+## Does a clade's range give the Guichón the Maastrichtian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Maastrichtian is dropped. Supersedes the 2026-11-23 entry on the stages. Soto Núñez and colleagues (2026) take the Coniacian–Maastrichtian range of Aeolosaurini, in which their new sauropod nests, as evidence that "suggests this age" for the formation, and their Spanish abstract draws only a Late Cretaceous age from it. For the formation itself they give "perhaps late Santonian–early Campanian" and "Santonian or early Campanian". A clade's range offered as a suggestion is not a reading of the unit's age, and the paper's own reading stops in the Campanian. Its other Maastrichtian statements are an eggshell range relayed from Casadío and colleagues (2002) and the age of the overlying Mercedes Formation, a different unit. The stages between Goso and Perea's (2003) Aptian and the Campanian stay, since stages are contiguous. Governs `stages` on [Guichón](../../../stratigraphy/g/guichón.yml), Aptian to Campanian, and `stage: [Santonian, Campanian]` on [*Mesetasaurus*](../../../genera/M/Mesetasaurus.yml).
+
+**Evidence.**
+- sotonúñez2026a, p. 279, Abstract: "Given that Aeolosaurini is a Coniacian–Maastrichtian clade, this new sauropod provides additional evidence that suggests this age for the Guichón Formation."
+- sotonúñez2026a, p. 279, Resumen: "Dado que Aeolosaurini es un clado del Coniaciano–Maastrichtiano, este nuevo saurópodo es otra evidencia de la edad Cretácica Tardía de la Formación Guichón."
+- sotonúñez2026a, p. 295: "most lines of evidence seem to point to a Late Cretaceous age for the Guichón/Puerto Yeruá Formation, perhaps late Santonian–early Campanian, given that the overlying Mercedes Formation has been considered Campanian–Maastrichtian (Goso & Perea, 2003)".
+- sotonúñez2026a, p. 298: "Evidence favors a younger age for the unit (i.e., Santonian or early Campanian)".
+
+**Ruled out.**
+- *Maastrichtian from the range of Aeolosaurini.* A clade's range, offered as a suggestion, which the paper narrows for the formation.
+- *Maastrichtian from the Mercedes Formation.* The age of the unit above.
+
+**Open.** Unchanged: a numerical age from the formation would settle the range.
+
 ## What do the cited works say about the age of the Guichón?
 
 *2026-11-23*
@@ -21,11 +39,12 @@
 
 ## References
 
-- `soto2012a`: Soto, M.; Perea, D.; Cambiaso, A. (2012). First sauropod (Dinosauria: Saurischia) remains from the Guichón Formation, Late Cretaceous of Uruguay. *Journal of South American Earth Sciences* 33(1): 68-79. doi:10.1016/j.jsames.2011.08.003
 - `sotonúñez2026a`: Soto Núñez, M.; Montenegro, F.; Perea, D. (2026). A new Aeolosaurini (Sauropoda, Titanosauria) from the Upper Cretaceous of Uruguay. *Ameghiniana* 63(4): 279-302. doi:10.5710/AMGH.19.06.2026.3689
+- `soto2012a`: Soto, M.; Perea, D.; Cambiaso, A. (2012). First sauropod (Dinosauria: Saurischia) remains from the Guichón Formation, Late Cretaceous of Uruguay. *Journal of South American Earth Sciences* 33(1): 68-79. doi:10.1016/j.jsames.2011.08.003
 
 ## Other references
 
 - `mones1997a`: Mones, Á. (1997). Los vertebrados mesozoicos del Uruguay y sus relaciones con los de áreas vecinas [The Mesozoic vertebrates of Uruguay and their relationships with those of neighboring areas]. In *Homenaje al Profesor Ticul Álvarez (Arroyo Cabrales, J.; Polaco, O. J., eds.)*, pp. 205-222. Instituto Nacional de Antropología e Historia, México.
 - `goso2003a`: Goso, C. A.; Perea, D. (2003). El Cretácico post-basáltico de la Cuenca Litoral del Río Uruguay: geología y paleontología [The post-basaltic Cretaceous of the Litoral Basin of the Uruguay River: geology and paleontology]. In *Cuencas sedimentarias de Uruguay: geología, paleontología y recursos naturales. Mesozoico*, pp. 141-169. DIRAC, Facultad de Ciencias, Montevideo.
 - `rusconi1933a`: Rusconi, C. (1933). Sobre reptiles cretáceos del Uruguay (Uruguaysuchus aznarezi n. g. n. sp.) y sus relaciones con los notosúquidos de Patagonia [On Cretaceous reptiles of Uruguay (Uruguaysuchus aznarezi n. g. n. sp.) and their relationships with the notosuchids of Patagonia]. *Boletín del Instituto Geológico del Uruguay* 19: 1-64.
+- `casadío2002a`: Casadío, S.; Manera, T.; Parras, A.; Montalvo, C. I. (2002). Huevos de dinosaurio (Faveloolithidae) del Cretácico Superior de la cuenca del Colorado, provincia de La Pampa, Argentina [Dinosaur eggs (Faveloolithidae) from the Upper Cretaceous of the Colorado Basin, La Pampa Province, Argentina]. *Ameghiniana* 39(3): 285-293.
