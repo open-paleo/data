@@ -25,12 +25,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           lfs: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
@@ -75,12 +75,12 @@ jobs:
       # in scripts/plate-reconstruction/model.json and cached under that file's hash, so a
       # build downloads them only when the pins change.
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Cache plate model files
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: scratch/plate-reconstruction/cache
           key: plate-reconstruction-${{ hashFiles('scripts/plate-reconstruction/model.json') }}

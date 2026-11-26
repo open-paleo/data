@@ -1,13 +1,12 @@
 name: Paper Watch
 
+# Runs daily at 6:17 PM Pacific, started through workflow_dispatch by the
+# "Trigger paper watch" pipeline in the open-paleo-data Azure DevOps project
+# (repository scheduler): GitHub's own schedule started it seven to twelve
+# hours late. Keep it to one start per Pacific day. A second run on the same
+# date rewrites that day's issue with only the papers found since the first,
+# dropping the earlier list.
 on:
-  schedule:
-    # Daily at 6:17 PM Pacific. GitHub cron is UTC with no DST handling, so
-    # two season-gated lines keep it on Pacific time year-round:
-    #   18:17 PDT (Mar-Oct) = 01:17 UTC
-    - cron: "17 1 * 3-10 *"
-    #   18:17 PST (Nov-Feb) = 02:17 UTC
-    - cron: "17 2 * 1,2,11,12 *"
   workflow_dispatch:
     inputs:
       since:
@@ -24,10 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
@@ -36,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Restore watch state
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: .github/paper-watch
           # The run-id key never hits on a fresh run, so the restore falls
@@ -59,7 +58,7 @@ jobs:
 
       - name: Save watch state
         if: always()
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: .github/paper-watch
           key: paper-watch-state-${{ github.run_id }}

@@ -36,17 +36,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # registry-url writes the .npmrc that trusted publishing authenticates
       # against. Trusted publishing needs npm 11.5.1 or later, which Node 24
-      # ships.
+      # ships. No dependency cache in a publishing job: setup-node's docs warn
+      # that a poisoned cache can expose the OIDC token.
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-          cache: npm
+          package-manager-cache: false
 
       - name: Stage packages
         run: npm run stage-packages
@@ -117,16 +118,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # Node runs the staging script, which stages the Python package too.
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
