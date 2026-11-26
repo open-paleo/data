@@ -1,5 +1,23 @@
 # Piedra Parada
 
+## Does the Piedra Parada keep both the Barremian and the Aptian?
+
+*2026-11-26*
+
+**Conclusion.** Yes. Answers the 2026-11-23 entry's Open line. Leanza and Hugo's own charts set the member in the upper third of the Barremian (1995, 1997), and Leanza (2003) draws it in the Aptian, correlating it with the Salina Member, which he dates early Aptian; he does not say he is revising the charts, so the later reading adds to them. Salgado and colleagues' (2006) "Barremiano-Aptiano inferior" is not tied by its wording to the member rather than the formation, and adds nothing of the member's own. Leanza (2003) is now cited; the age sentence under his Piedra Parada heading names the Puesto Quiroga Member, a slip. Governs `stages: [Barremian, Aptian]`, unchanged, and the pointers to leanza2003a, leanza1997a, leanza1995a and salgado2006b on [Piedra Parada](../../../stratigraphy/p/piedra-parada.yml); [*Zapalasaurus bonapartei*](../../../genera/Z/Zapalasaurus.yml) is unaffected.
+
+**Evidence.**
+- leanza1995a, p. 31: the chart sets "Fm. La Amarga" in the Barremiano row, with Piedra Parada in its upper third.
+- leanza1997a, p. 38, Fig. 5: the formation and its three members in the "BARREMIANO" row, Piedra Parada in the upper third.
+- leanza2003a, p. 23: "El Miembro Piedra Parada de la Formación La Amarga es correlacionable, en consecuencia, con el Miembro Salina de la Formación Huitrín" ["The Piedra Parada Member of the La Amarga Formation is therefore correlatable with the Salina Member of the Huitrín Formation", translated]; p. 13: "la edad del Miembro Salina puede estimarse que corresponde al Aptiano inferior" ["the age of the Salina Member can be estimated to correspond to the lower Aptian", translated]; p. 19, Fig. 7: "APTIANO" beside "Mb. Piedra Parada".
+- leanza2003a, p. 23: "por su posición en secuencia el Miembro Puesto Quiroga puede ser asignado en sentido amplio al Aptiano" ["by its position in sequence the Puesto Quiroga Member can be broadly assigned to the Aptian", translated].
+- salgado2006b, p. 695, Resumen: "el Miembro Piedra Parada de la Formación La Amarga, cuya edad es considerada como Barremiano-Aptiano inferior".
+
+**Ruled out.**
+- *Leanza (2003) as a supersession of the Barremian charts.* It states no revision.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Piedra Parada Member, and whose dating is it?
 
 *2026-11-23*
@@ -22,11 +40,11 @@
 
 ## References
 
-- `salgado2006b`: Salgado, L.; Carvalho, I. de S.; Garrido, A. C. (2006). Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina. *Geobios* 39(5): 695-707. doi:10.1016/j.geobios.2005.06.001
-- `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
 - `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.
+- `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
+- `leanza1995a`: Leanza, H. A.; Hugo, C. A. (1995). Revisión estratigráfica del Cretácico inferior continental en el ámbito sudoriental de la Cuenca Neuquina [Stratigraphic revision of the continental Lower Cretaceous in the southeastern Neuquén Basin]. *Revista de la Asociación Geológica Argentina* 50(1-4): 30-32.
+- `salgado2006b`: Salgado, L.; Carvalho, I. de S.; Garrido, A. C. (2006). Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina. *Geobios* 39(5): 695-707. doi:10.1016/j.geobios.2005.06.001
 
 ## Other references
 
-- `leanza1995a`: Leanza, H. A.; Hugo, C. A. (1995). Revisión estratigráfica del Cretácico inferior continental en el ámbito sudoriental de la Cuenca Neuquina [Stratigraphic revision of the continental Lower Cretaceous in the southeastern Neuquén Basin]. *Revista de la Asociación Geológica Argentina* 50(1-4): 30-32.
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.

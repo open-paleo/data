@@ -1,5 +1,19 @@
 # Poison Strip Sandstone
 
+## What does Ludvigson and colleagues (2010) date in the Poison Strip?
+
+*2026-11-26*
+
+**Conclusion.** A micritic limestone in the lower part of the member at Ruby Ranch Road, by U–Pb to 119.4 ± 2.6 Ma, which they place in the early Aptian; the Aptian is already recorded, and the pointer now carries the date. Governs the note on ludvigson2010b on [Poison Strip Sandstone](../../../stratigraphy/p/poison-strip-sandstone.yml); `stages` unchanged.
+
+**Evidence.**
+- ludvigson2010b, p. 960: "In the lower Poison Strip Sandstone, at the position of samples RRR-7 to RRR-8 (Fig. 8), is a 1.1-meter-thick brecciated laminar and chalcedony-replaced micritic limestone".
+- ludvigson2010b, p. 961: "The radiogenic U-Pb isotopes in this rock indicate that it formed in the early Aptian Stage at about 119.4".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What do Kirkland and Madsen (2007) and Joeckel and colleagues (2019) say about the age of the Poison Strip Sandstone?
 
 *2026-11-23*
@@ -23,9 +37,9 @@
 
 ## References
 
+- `ludvigson2010b`: Ludvigson, G. A.; Joeckel, R. M.; González, L. A.; Gulbranson, E. L.; Rasbury, E. T.; Hunt, G. J.; Kirkland, J. I.; Madsen, S. (2010). Correlation of Aptian-Albian carbon isotope excursions in continental strata of the Cretaceous foreland basin, eastern Utah, U.S.A. *Journal of Sedimentary Research* 80(11): 955-974. doi:10.2110/jsr.2010.086
 - `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
 - `joeckel2019a`: Joeckel, R. M.; Ludvigson, G. A.; Möller, A.; Hotton, C. L.; Suarez, M. B.; Suarez, C. A.; Sames, B.; Kirkland, J. I.; Hendrix, B. (2019). Chronostratigraphy and terrestrial palaeoclimatology of Berriasian–Hauterivian strata of the Cedar Mountain Formation, Utah, USA. *Geological Society, London, Special Publications* 498(1): 75-100. doi:10.1144/SP498-2018-133
-- `ludvigson2010b`: Ludvigson, G. A.; Joeckel, R. M.; González, L. A.; Gulbranson, E. L.; Rasbury, E. T.; Hunt, G. J.; Kirkland, J. I.; Madsen, S. (2010). Correlation of Aptian-Albian carbon isotope excursions in continental strata of the Cretaceous foreland basin, eastern Utah, U.S.A. *Journal of Sedimentary Research* 80(11): 955-974. doi:10.2110/jsr.2010.086
 
 ## Other references
 

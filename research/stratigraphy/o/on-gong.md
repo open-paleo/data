@@ -25,7 +25,7 @@
 
 **Evidence.**
 - dong1993c, p. 2098: "In age, this formation is approximately equivalent to the Guyang Group of Inner Mongolia and the Ondai Sair Formation of Mongolia. The fossils obtained include a few fragments of turtle, a small theropod dinosaur, and the sauropod Mongolosaurus hoplodon".
-- weishampel2004b, p. 564: "Huhteeg Svita (= Ondai Sair and Oshih formations ...)", "Age: Aptian-Albian (Shuvalov 1974)".
+- weishampel2004b, p. 564: "Hühteeg Svita (= Ondai Sair and Oshih formations ...)", "Age: Aptian-Albian (Shuvalov 1974)".
 - weishampel2004b, p. 567: On Gong Formation, "Age: Aptian-Albian (i.e., approximately equivalent with the Ondai Sair Formation; Dong 1993c)".
 - mannion2011b, p. 356: "collected in 1928 by Walter Granger, as part of the Central Asiatic Expeditions"; "The On Gong Formation has been suggested to be approximately equivalent to the Ondai Sair Formation (included within the Hühteeg Svita Formation) of Mongolia (Dong 1993), which has been dated as Aptian-Albian (Shuvalov 1974; Weishampel et al. 2004)".
 - mannion2011b, p. 358: "Aptian-Albian (?), Early Cretaceous, On Gong Formation (Hu Khung Ulan locality)".

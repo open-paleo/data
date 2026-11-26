@@ -28,7 +28,7 @@
 - hao2024a, p. 2, Geological setting: the deposits "are consistently assigned to the upper Lower Cretaceous", "and further to the Barremian-Albian age proposed by Van Itterbeek et al. (2001) based on the stratigraphy, sedimentology and charophytan evidence of the area".
 - hao2024a, p. 3, Systematic paleontology: "Miaogou Formation (Aptian-Albian)".
 - vanitterbeeck2001a, p. 51: dinosaur bones were found "in equivalent strata at the Moartu locality, situated in the vicinity of the studied area"; Probactrosaurus gobiensis and P. alashanicus were described from it, and "Based on the phylogenetic position of the described dinosaurs an Aptian-Albian âge was proposed for the strata".
-- vanitterbeeck2001a, p. 62, Conclusions: "Based on the charophytan evidence, the continental strata in the Dashuiguo area are considered to be Barremian-Albian in âge"; the correlated formations "belong to the Khukhetian 'Age' which according to Jerzykiewicz & Russell, (1991) ends before the Late Albian, at about 100 Ma".
+- vanitterbeeck2001a, p. 62, Conclusions: "Based on the charophytan evidence, the continental strata in the Dashuiguo area are considered to be Barremian-Albian in age"; the correlated formations "belong to the Khukhetian 'Age' which according to Jerzykiewicz & Russell, (1991) ends before the Late Albian, at about 100 Ma".
 - vanitterbeeck2001a, p. 63: "the Dashuiguo formation can be correlated with the Jingchuang Formation of the Zhidan group of the Ordos Basin".
 
 **Ruled out.**

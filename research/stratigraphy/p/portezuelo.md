@@ -1,5 +1,18 @@
 # Portezuelo
 
+## Does any species record carry the misrelayed Santonian for the Portezuelo?
+
+*2026-11-26*
+
+**Conclusion.** No. The nine species records whose type horizon is in the Portezuelo Formation all take Turonian–Coniacian, so the Turonian–Santonian that Calvo and colleagues (2004) and Benson and colleagues (2010) misrelay reached no record. Governs nothing; `stages` on [Portezuelo](../../../stratigraphy/p/portezuelo.yml) unchanged.
+
+**Evidence.**
+- The species records with `location.formation: Portezuelo` (*Baalsaurus*, *Elemgasem*, *Futalognkosaurus*, *Megaraptor*, *Neuquenraptor*, *Pamparaptor*, *Patagonykus* and the two *Unenlagia* species) each carry `stage: [Turonian, Coniacian]`.
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What do the works behind the Portezuelo's datings give for the formation itself?
 
 *2026-11-23*

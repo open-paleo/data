@@ -1,5 +1,20 @@
 # La Amarga
 
+## What do Leanza and Hugo (1995, 1997) give the La Amarga?
+
+*2026-11-26*
+
+**Conclusion.** The late Hauterivian to Barremian, not the Barremian–early Aptian that Leanza and colleagues (2004) credit to them. Leanza and Hugo (1995) give the formation as habitually assigned to the late Hauterivian–Barremian on its microfauna, after Musacchio (1993), and chart it in the Barremian; Leanza and Hugo (1997) assign it "al Hauteriviano superior y Barremiano" from its microfauna and its position above early to middle Hauterivian ammonite beds. Their texts are the source of the record's Hauterivian. The notes on all three works now say so. Governs the notes on leanza1995a, leanza1997a and leanza2004a on [La Amarga](../../../stratigraphy/l/la-amarga.yml); `stages` unchanged.
+
+**Evidence.**
+- leanza1995a, p. 30: "En base a su contenido microfaunístico es asignada habitualmente al Hauteriviano tardío / Barremiano" ["Based on its microfaunistic content, it is usually assigned to the Late Hauterivian / Barremian", translated].
+- leanza1997a, p. 57: "La Formación La Amarga, sobre la base de su contenido microfaunístico y por yacer sobre niveles de la Formación Agrio con ammonites que indican edad hauteriviana inferior y media … se asigna al Hauteriviano superior y Barremiano." ["The La Amarga Formation, on the basis of its microfaunal content and because it lies on levels of the Agrio Formation with ammonites indicating an early and middle Hauterivian age, is assigned to the upper Hauterivian and Barremian", our translation].
+- leanza2004a, p. 65: "this unit may be regarded as Barremian–Early Aptian in age (Leanza and Hugo, 1995, 1997)".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What are the original sources of the La Amarga's Barremian–early Aptian?
 
 *2026-11-26*
@@ -32,11 +47,12 @@
 
 ## References
 
-- `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.
-- `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
-- `salgado2006b`: Salgado, L.; Carvalho, I. de S.; Garrido, A. C. (2006). Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina. *Geobios* 39(5): 695-707. doi:10.1016/j.geobios.2005.06.001
 - `leanza1995a`: Leanza, H. A.; Hugo, C. A. (1995). Revisión estratigráfica del Cretácico inferior continental en el ámbito sudoriental de la Cuenca Neuquina [Stratigraphic revision of the continental Lower Cretaceous in the southeastern Neuquén Basin]. *Revista de la Asociación Geológica Argentina* 50(1-4): 30-32.
+- `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
+- `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
+- `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.
+- `salgado2006b`: Salgado, L.; Carvalho, I. de S.; Garrido, A. C. (2006). Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina. *Geobios* 39(5): 695-707. doi:10.1016/j.geobios.2005.06.001
 
 ## Other references
 
-- `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
+- `musacchio1993a`: Musacchio, E. A. (1993). Use of global time scale in correlating nonmarine Cretaceous rocks in southern South America. *Cretaceous Research* 14: 113-126.

@@ -1,5 +1,24 @@
 # Phu Kradung
 
+## Which stages does the Phu Kradung take from the works read?
+
+*2026-11-26*
+
+**Conclusion.** Tithonian to Barremian: the Kimmeridgian is dropped and the Hauterivian and Barremian are added. Supersedes the 2026-11-23 entry on the stages and answers its Open line. Jia and colleagues (2022) attach "Kimmeridgian" to a detrital-zircon maximum depositional age of about 154 Ma, a limit, and give the beds only as Late Jurassic; Ren and colleagues (2024) relay them. Racey and Goodall (2009) date their own palynological samples from the upper formation, at Hui Sai and the Nong Bua Lamphu road cut, "as Berriasian to early Barremian", which carries the Valanginian, Hauterivian and Barremian; Tong and colleagues' (2021) "Berriasian–?Valanginian" credits Racey's single-author chapter, which names no Valanginian. The Tithonian stands on Nilpanapan and colleagues (2026), who regard the formation "as spanning the latest Jurassic" and give its lower part as "Latest Jurassic"; the latest Jurassic falls in the Tithonian. Racey's own Tithonian is credited to a personal communication from Buffetaut and to "Buffetaut et al. (2006, 2009)", the second of which is the introduction to the volume, not the held *Kinnareemimus* paper, which never names the Phu Kradung. Governs `stages: [Tithonian, Berriasian, Valanginian, Hauterivian, Barremian]` and the notes on tong2021a, nilpanapan2026a and racey2009b on [Phu Kradung](../../../stratigraphy/p/phu-kradung.yml); [*Uragasaurus kalasinensis*](../../../genera/U/Uragasaurus.yml) and [*Minimocursor phunoiensis*](../../../genera/M/Minimocursor.yml), Tithonian–Berriasian, are unaffected.
+
+**Evidence.**
+- jia2022a, p. 3493: "Phu Kradung 组的约 154 Ma 的最年轻碎屑锆石峰值年龄(晚侏罗世钦莫利期)" ["the youngest detrital zircon peak age of about 154 Ma from the Phu Kradung Formation (Late Jurassic Kimmeridgian)", translated].
+- racey2009b, p. 78: samples "from the upper part of the Phu Kradung Formation" at Hui Sai and the road cut east of Nong Bua Lamphu: "This assemblage is dated as Berriasian to early Barremian based on the occurrence of D. etruscus and absence of taxa younger than early Barremian."
+- tong2021a, p. 14: "the upper part of the Phu Kradung Formation is basal Cretaceous (Berriasian–?Valanginian [77]) in age", [77] being Racey's chapter.
+- nilpanapan2026a, p. 2: "the formation is best regarded as spanning the latest Jurassic and possibly extending into the earliest Cretaceous (Berriasian)"; p. 4, for the lower part at Phu Noi: "Latest Jurassic, based on regional stratigraphic correlations and the composition of the vertebrate assemblage".
+- racey2009a, p. 47: "the recent publications of Buffetaut et al. (2006, 2009, and references therein) indicate … the vertebrate dating suggests that the Phu Kradung Formation is Late Jurassic (Tithonian) or Early Cretaceous in age".
+
+**Ruled out.**
+- *Kimmeridgian from Jia and colleagues (2022).* A maximum depositional age.
+- *Racey and Goodall's "Barremian–Berriasian" (p. 70) and their abstract's Berriasian–Barremian.* The first is printed youngest first; the second dates three formations jointly. Neither is needed for the stages.
+
+**Open.** Buffetaut and colleagues (2006) has not been read.
+
 ## What do the cited works say about the age of the Phu Kradung Formation?
 
 *2026-11-23*
@@ -26,13 +45,15 @@
 
 ## References
 
-- `racey1996a`: Racey, A.; Love, M. A.; Canham, A. C.; Goodall, J. G. S.; Polachan, S.; Jones, P. D. (1996). Stratigraphy and reservoir potential of the Mesozoic Khorat Group, NE Thailand. Part 1: Stratigraphy and sedimentary evolution. *Journal of Petroleum Geology* 19: 5-40.
-- `racey2009a`: Racey, A. (2009). Mesozoic red bed sequences from SE Asia and the significance of the Khorat Group of NE Thailand. *Geological Society, London, Special Publications* 315(1): 41-67. doi:10.1144/SP315.5
 - `tong2021a`: Tong, H.; Chanthasit, P.; Naksri, W.; Ditbanjong, P.; Suteethorn, S.; Buffetaut, E.; Suteethorn, V.; Wongko, K.; Deesri, U.; Claude, J. (2021). Yakemys multiporcata n. g. n. sp., a large macrobaenid turtle from the basal Cretaceous of Thailand, with a review of the turtle fauna from the Phu Kradung Formation and its stratigraphical implications. *Diversity* 13(12): 630. doi:10.3390/d13120630
-- `jia2022a`: Jia, S. W.; Huang, B. C.; Yan, Y. G.; Zhao, Q.; Li, N. T. (2022). Paleomagnetic study on the Mesozoic tectonic evolution of the Indochina Block. *Chinese Journal of Geophysics* 65(9): 3481-3501. doi:10.6038/cjg2022P0927
+- `nilpanapan2026a`: Nilpanapan, Apirut; Manitkoon, Sita; Suteethorn, Varavudh; Lauprasert, Komsorn (2026). A new mamenchisaurid sauropod from the Lower Phu Kradung Formation, Upper Jurassic of northeastern Thailand. *Scientific Reports* 16(1). doi:10.1038/s41598-026-49822-3
 - `racey2009b`: Racey, A.; Goodall, J. G. S. (2009). Palynology and stratigraphy of the Mesozoic Khorat Group red bed sequences from Thailand. *Geological Society, London, Special Publications* 315: 69-83. doi:10.1144/SP315.6
+- `jia2022a`: Jia, S. W.; Huang, B. C.; Yan, Y. G.; Zhao, Q.; Li, N. T. (2022). Paleomagnetic study on the Mesozoic tectonic evolution of the Indochina Block. *Chinese Journal of Geophysics* 65(9): 3481-3501. doi:10.6038/cjg2022P0927
+- `racey2009a`: Racey, A. (2009). Mesozoic red bed sequences from SE Asia and the significance of the Khorat Group of NE Thailand. *Geological Society, London, Special Publications* 315(1): 41-67. doi:10.1144/SP315.5
+- `racey1996a`: Racey, A.; Love, M. A.; Canham, A. C.; Goodall, J. G. S.; Polachan, S.; Jones, P. D. (1996). Stratigraphy and reservoir potential of the Mesozoic Khorat Group, NE Thailand. Part 1: Stratigraphy and sedimentary evolution. *Journal of Petroleum Geology* 19: 5-40.
 
 ## Other references
 
 - `ren2024a`: Ren, X. X.; Wang, X. R.; Ji, Y. N.; Guo, Z.; Ji, Q. (2024). The first mamenchisaurid from the Upper Jurassic Dongxing Formation of Guangxi, southernmost China. *Historical Biology* 37(3): 465-478. doi:10.1080/08912963.2024.2309287
 - `carter2003a`: Carter, A.; Bristow, C. S. (2003). Linking hinterland evolution and continental basin sedimentation by using detrital zircon thermochronology: a study of the Khorat Plateau Basin, eastern Thailand. *Basin Research* 15(2): 271-285. doi:10.1046/j.1365-2117.2003.00201.x
+- `buffetaut2009a`: Buffetaut, E.; Suteethorn, V.; Tong, H. (2009). An early 'ostrich dinosaur' (Theropoda: Ornithomimosauria) from the Early Cretaceous Sao Khua Formation of NE Thailand. *Geological Society, London, Special Publications* 315(1): 229-243. doi:10.1144/sp315.16

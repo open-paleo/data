@@ -1,5 +1,22 @@
 # Plottier
 
+## Do the southern Mendoza beds belong to the Plottier?
+
+*2026-11-26*
+
+**Conclusion.** They are placed in it in print, so the Santonian stays. Answers the 2026-11-23 entry's Open line. Musacchio and Vallati (2007) report their Zampal assemblage "from the Plottier Formation" by name, citing the regional mapping, and assign it to the Coniacian–Santonian; Musacchio (2006) assigns the same beds by their likeness to the Plottier elsewhere, with the name in quotation marks; González Riga and colleagues (2016) put the *Notocolossus* beds at Cerro Guillermo in "the basal-most bed of the Upper Cretaceous (upper Coniacian–lower Santonian, ~86 Ma) Plottier Formation"; and Garrido (2010) has the unit's outcrops continue "hacia el sector mendocino". The distance from the type area, within the same basin, is not grounds to set aside a published assignment. Garrido's own late Coniacian, "pudiendo llegar extenderse hasta el Santoniano Temprano", is a possibility and adds nothing. Governs the Santonian in `stages` on [Plottier](../../../stratigraphy/p/plottier.yml), unchanged; [*Notocolossus gonzalezparejasi*](../../../genera/N/Notocolossus.yml) is unaffected.
+
+**Evidence.**
+- musacchio2007a, p. 273: "a non marine microfossil assemblage … is reported from the Plottier Formation Herrero-Ducloux. The same one was recovered next to Zampal and the Calmu-Có mine of evaporites, in the Malargüe Department, south of Mendoza"; p. 277: "the assignation of this assemblage to the interval Coniacian-Santonian within the Cretaceous".
+- musacchio2006a, p. 94: the brick-red mudstones at El Zampal are "muy parecidas a las que son conspicuas para la Formación Plottier en otras partes de la cuenca" ["very similar to those that are conspicuous for the Plottier Formation in other parts of the basin", translated].
+- gonzálezriga2016a, p. 2: "the basal-most bed of the Upper Cretaceous (upper Coniacian–lower Santonian, ~86 Ma) Plottier Formation".
+- garrido2010a, p. 148: "se considera a esta última edad como la más probable, pudiendo llegar extenderse hasta el Santoniano Temprano" ["this latter age is considered the most probable, potentially extending to the Early Santonian", translated].
+
+**Ruled out.**
+- *Dropping the Santonian for distance.* The beds are assigned to the formation in print.
+
+**Open.** No age from the type area itself.
+
 ## What do the cited works say about the age of the Plottier, and where does its Santonian come from?
 
 *2026-11-23*
@@ -48,13 +65,13 @@
 
 ## References
 
-- `musacchio2006a`: Musacchio, E. A. (2006). Charophyta del Cretácico Tardío y el Paleoceno del centro oeste de Argentina [Late Cretaceous and Paleocene Charophyta from west central Argentina]. *Revista Brasileira de Paleontologia* 9(1): 93-100. doi:10.4072/rbp.2006.1.10
 - `musacchio2007a`: Musacchio, E. A.; Vallati, P. (2007). Late Cretaceous non-marine microfossils of the Plottier Formation (Cretaceous) at Zampal, Argentina. In *4th European Meeting on the Palaeontology and Stratigraphy of Latin America (Díaz-Martínez, E.; Rábano, I., eds.)*, pp. 273-278. Instituto Geológico y Minero de España, Madrid.
-- `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
+- `musacchio2006a`: Musacchio, E. A. (2006). Charophyta del Cretácico Tardío y el Paleoceno del centro oeste de Argentina [Late Cretaceous and Paleocene Charophyta from west central Argentina]. *Revista Brasileira de Paleontologia* 9(1): 93-100. doi:10.4072/rbp.2006.1.10
+- `gonzálezriga2016a`: González Riga, B. J.; Lamanna, M. C.; Ortiz David, L. D.; Calvo, J. O.; Coria, J. P. (2016). A gigantic new dinosaur from Argentina and the evolution of the sauropod hind foot. *Scientific Reports* 6(1). doi:10.1038/srep19165
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
+- `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
 - `filippi2011a`: Filippi, L. S.; Canudo, J. I.; Salgado, J. L.; Garrido, A.; García, R.; Cerda, I. A.; Otero, A. (2011). A new sauropod titanosaur from the Plottier Formation (Upper Cretaceous) of Patagonia (Argentina). *Geologica Acta* 9(1): 1-12. doi:10.1344/105.000001648
 - `salgado2009b`: Salgado, L.; Canudo, J. I.; Garrido, A. C.; Ruiz-Omeñaca, J. I.; García, R. A.; de la Fuente, M. S.; Barco, J. L.; Bollati, R. (2009). Upper Cretaceous vertebrates from El Anfiteatro area, Río Negro, Patagonia, Argentina. *Cretaceous Research* 30(3): 767-784. doi:10.1016/j.cretres.2009.01.001
-- `gonzálezriga2016a`: González Riga, B. J.; Lamanna, M. C.; Ortiz David, L. D.; Calvo, J. O.; Coria, J. P. (2016). A gigantic new dinosaur from Argentina and the evolution of the sauropod hind foot. *Scientific Reports* 6(1). doi:10.1038/srep19165
 - `simón2023a`: Simón, M. E.; Salgado, L. (2023). A new gigantic titanosaurian sauropod from the early Late Cretaceous of Patagonia (Neuquén Province, Argentina). *Acta Palaeontologica Polonica* 68(4): 719-735. doi:10.4202/app.01086.2023
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 
