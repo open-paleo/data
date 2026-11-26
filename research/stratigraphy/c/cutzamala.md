@@ -1,5 +1,27 @@
 # Cutzamala
 
+## Does any work read date the Cutzamala Santonian, and do its hadrosaurs and pollen share a section?
+
+*2026-11-25*
+
+**Conclusion.** No to the first, yes to the second; the Santonian is dropped and the formation takes the Maastrichtian. Supersedes the 2026-11-23 entry on the stages and answers its Open line. The Santonian traces only to Ramírez-Velasco and colleagues (2012), who give the Barranca Los Bonetes strata "between 86.8 and 84 Ma" from a radiometric date and magnetostratigraphy they cite rather than report: Benammi and colleagues (2006), a conference abstract, and Mariscal-Ramos (2006), a master's thesis. A second-hand date adds no stage until its original is read, and a thesis never sole-sources a value. The 84 Ma lava that Martini and colleagues (2009) take from Mariscal-Ramos and colleagues (2005) is "a possible maximum age", a limit. Benammi and colleagues (2005) draw the pollen level and the three hadrosaur levels in one column at Barranca Los Bonetes, the pollen near its base, below all three. They read the pollen by first occurrences, which give "a maximum age of Maastrichtian", and make the deposits Late Cretaceous on the hadrosaurs; the Santonian appears in their paper only as the lower end of pollen ranges. Martini and colleagues give the Maastrichtian as "the youngest age for the folded part" of the formation. Governs `stages: [Maastrichtian]` and the notes on benammi2005a and ramírez-velasco2012a on [Cutzamala](../../../stratigraphy/c/cutzamala.yml), and `stage: [Maastrichtian]` on [*Huehuecanauhtlus tiquichensis*](../../../genera/H/Huehuecanauhtlus.yml).
+
+**Evidence.**
+- ramírez-velasco2012a, p. 383: "According to radiometric data (Benammi et al. 2006) and magnetostratigraphic analysis (Mariscal-Ramos 2006), the fossiliferous strata outcropping in Barranca Los Bonetes are Santonian (Late Cretaceous) in age, specifically dating back between 86.8 and 84 Ma, and corresponding to the upper part of chron C34n."
+- benammi2005a, p. 431, Fig. 2: one column at Barranca Los Bonetes marks "Po: nivel de polen" on a lacustrine limestone near its base and "F: nivel de restos de dinosaurios" at three levels, F1 to F3, above it.
+- benammi2005a, p. 432: the age "was reconsidered based on the same sedimentary sequence where the hadrosaur remains were found" (translated).
+- benammi2005a, p. 432: "the taxa found in this volcano-sedimentary basin have a stratigraphic range from the Santonian to the Paleocene" (translated).
+- benammi2005a, p. 433: "the mere presence of Nudopollis indicates a maximum age of Maastrichtian" (translated).
+- benammi2005a, p. 433: "The discovery of hadrosaur remains makes it possible to resolve this conflict about the age of the deposits, which henceforth can be considered as Late Cretaceous" (translated).
+- martini2009a, p. 159: "Mariscal-Ramos et al. (2005) reported a radiometric age of 84 Ma for a lava flow interbedded within the basal beds near the dinosaur site, indicating a possible maximum age of late Santonian".
+- martini2009a, p. 161: "considering that the youngest age for the folded part of the continental succession is Maastrichtian".
+
+**Ruled out.**
+- *Santonian from Ramírez-Velasco and colleagues (2012), and from Ramírez-Velasco (2022) after them.* A second-hand date whose originals are an abstract and a master's thesis.
+- *Santonian from the pollen.* It is the base of the taxa's ranges, which Benammi and colleagues narrow by first occurrences to no older than the Maastrichtian.
+
+**Open.** Benammi and colleagues (2006) and Mariscal-Ramos (2006) have not been read; they would show whether the magnetostratigraphy places the beds in chron C34n. Neither Benammi and colleagues (2005) nor Martini and colleagues (2009) call the hadrosaur beds Maastrichtian in so many words. The Paleocene or earliest Eocene of the upper part stays in the dispute.
+
 ## What do the cited works say about the age of the Cutzamala Formation?
 
 *2026-11-23*
@@ -21,12 +43,15 @@
 
 ## References
 
+- `benammi2005a`: Benammi, M.; Centeno-García, E.; Martínez-Hernández, E.; Morales-Gámez, M.; Tolson, G.; Urrutia-Fucugauchi, J. (2005). Presencia de dinosaurios en la Barranca Los Bonetes en el sur de México (Región de Tiquicheo, Estado de Michoacán) y sus implicaciones cronoestratigráficas [Presence of dinosaurs at Barranca Los Bonetes in southern Mexico (Tiquicheo region, Michoacán State) and their chronostratigraphic implications]. *Revista Mexicana de Ciencias Geológicas* 22(3): 429-435.
+- `ramírez-velasco2012a`: Ramírez-Velasco, A. A.; Benammi, M.; Prieto-Márquez, A.; Ortega, J. A.; Hernández-Rivera, R. (2012). Huehuecanauhtlus tiquichensis, a new hadrosauroid dinosaur (Ornithischia: Ornithopoda) from the Santonian (Late Cretaceous) of Michoacán, Mexico. *Canadian Journal of Earth Sciences* 49(2): 379-395. doi:10.1139/e11-062
 - `martini2009a`: Martini, M.; Ferrari, L.; López-Martínez, M.; Cerca-Martínez, M.; Valencia, V. A.; Serrano-Durán, L. (2009). Cretaceous-Eocene magmatism and Laramide deformation in southwestern Mexico: No role for terrane accretion. *Geological Society of America Memoir* 204: 151-182. doi:10.1130/2009.1204(07)
 - `villanueva-amadoz2014a`: Villanueva-Amadoz, U.; Calvillo-Canadell, L.; Cevallos-Ferriz, S. R. S. (2014). Síntesis de los trabajos paleobotánicos del Cretácico en México [Synthesis of paleobotanic works of the Cretaceous in Mexico]. *Boletín de la Sociedad Geológica Mexicana* 66(1): 97-121.
 
 ## Other references
 
 - `martínez-hernández2000a`: Martínez-Hernández, E.; Altamira-Areyán, A.; Ramírez-Arriaga, E.; Centeno-García, E.; Tolson-Jones, G. (2000). Palynostratigraphy of the westernmost outcrops of the Balsas Formation, near Tiquicheo, Michoacan state, Mexico. In *Geological Society of America Abstracts with Programs, Annual Meeting, Reno, Nevada*, pp. A-343.
-- `benammi2005a`: Benammi, M.; Centeno-García, E.; Martínez-Hernández, E.; Morales-Gámez, M.; Tolson, G.; Urrutia-Fucugauchi, J. (2005). Presencia de dinosaurios en la Barranca Los Bonetes en el sur de México (Región de Tiquicheo, Estado de Michoacán) y sus implicaciones cronoestratigráficas [Presence of dinosaurs at Barranca Los Bonetes in southern Mexico (Tiquicheo region, Michoacán State) and their chronostratigraphic implications]. *Revista Mexicana de Ciencias Geológicas* 22(3): 429-435.
 - `ramírez-velasco2022a`: Ramírez-Velasco, A. A. (2022). Phylogenetic and biogeography analysis of Mexican hadrosauroids. *Cretaceous Research* 138: 105267. doi:10.1016/j.cretres.2022.105267
-- `ramírez-velasco2012a`: Ramírez-Velasco, A. A.; Benammi, M.; Prieto-Márquez, A.; Ortega, J. A.; Hernández-Rivera, R. (2012). Huehuecanauhtlus tiquichensis, a new hadrosauroid dinosaur (Ornithischia: Ornithopoda) from the Santonian (Late Cretaceous) of Michoacán, Mexico. *Canadian Journal of Earth Sciences* 49(2): 379-395. doi:10.1139/e11-062
+- `benammi2006a`: Benammi, M.; Mariscal-Ramos, C.; Centeno-García, E.; Morales-Gámez, M.; Tolson, G.; Urrutia-Fucugauchi, J. (2006). Preliminary magnetostratigraphic study of the Upper Cretaceous Dinosaur Site from La Barranca Los Bonetes, Tiquicheo (Michoacan State, Southern Mexico). In *European Geosciences Union, Vienne, Austria*.
+- `mariscal-ramos2006a`: Mariscal-Ramos, C. (2006). Estudio paleontológico y magnetoestratigráfico de la localidad "Barranca los Bonetes" (Tuzantla, Michoacán) [Paleontological and magnetostratigraphic study of the "Barranca los Bonetes" locality (Tuzantla, Michoacán)]. Masters thesis, Facultad de Ciencias, Universidad Nacional Autónoma de México.
+- `mariscal-ramos2005a`: Mariscal-Ramos, C.; Talavera-Mendoza, O.; Centeno-García, E.; Morales-Gámez, M.; Benammi, M. (2005). Preliminary magnetostratigraphic study of the Upper Cretaceous dinosaur site from La Barranca Los Bonites, Tiquicheo (Michoacán State, Southern Mexico). *Reunión Anual de la Unión Geofísica Mexicana* 25(1): 57-58.

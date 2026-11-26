@@ -1,5 +1,18 @@
 # *Kazaklambia*
 
+## Which stage does the *Kazaklambia* holotype take?
+
+*2026-11-25*
+
+**Conclusion.** The Santonian. The holotype lies at the contact of the Darbazin and the Syuksyuk (see the 2026-09-20 entry), the Darbazin no longer takes the Coniacian (see [Darbazin](../../stratigraphy/d/darbazin.md)), and Nessov (1995) dates the Syuk-Syuk wells bed Santonian whichever of the two formations it lies in. Governs `stage: [Santonian]` on [*Kazaklambia convincens*](../../../genera/K/Kazaklambia.yml), replacing `[Coniacian, Santonian]`.
+
+**Evidence.**
+- nessov1995a, p. 101, locality 99: the Syuk-Syuk wells bed, "Lower part of the Darbazin Formation (Rozhdestvensky, 1964a). Syuk-Syuk Formation (Stratigraphic Dictionary, 1979)", is "Upper Cretaceous, Santonian".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is the *Kazaklambia* holotype's formation contested as a name or as a horizon?
 
 *2026-09-20*
@@ -36,8 +49,8 @@
 
 ## References
 
+- `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.
 - `rozhdestvensky1964a`: Rozhdestvensky, A. K. (1964). [New data on occurrences of dinosaurs in Kazakhstan and Central Asia]. *Tashkentskii Gosudarstvennyi Universitet, Nauchnye Trudy: Geologiya [Tashkent State University, Scientific Publications: Geology]*: 227-241.
-- `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
 - `bell2013a`: Bell, P. R.; Brink, K. S. (2013). Kazaklambia convincens comb. nov., a primitive juvenile lambeosaurine from the Santonian of Kazakhstan. *Cretaceous Research* 45: 265-274. doi:10.1016/j.cretres.2013.05.003
 - `rozhdestvensky1968a`: Rozhdestvensky, A. K. (1968). Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]. *[Upper Paleozoic and Mesozoic Amphibians and Reptiles]. Akademia Naul SSSR, Moscow*: 97-141.

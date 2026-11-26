@@ -1,5 +1,24 @@
 # Darbazin
 
+## Does any work read date the Darbazin Coniacian?
+
+*2026-11-25*
+
+**Conclusion.** No; the Coniacian is dropped. Supersedes the 2026-11-23 entry on the stages. The Stratigraphic Dictionary's own dating is the Senonian, with the upper subformation "possibly" Campanian; Muzafarova's Coniacian–Santonian is one of two earlier readings of the lower subformation that it lists, beside Minakova's Cenomanian–Turonian. A reading another work reports adds a stage only once its original is read, and Muzafarova (1963) has not been read. The Senonian is an obsolete stage that converts only through a quoted chart or regional correlation, and the GTS2020 Cretaceous chapter says only that the original Senonian was "progressively subdivided" into the current stages, which fixes no stages for it. The works read that date the formation's own beds begin at the Santonian. Governs `stages: [Santonian, Campanian]` on [Darbazin](../../../stratigraphy/d/darbazin.yml), and `stage: [Santonian]` on [*Kazaklambia convincens*](../../../genera/K/Kazaklambia.yml).
+
+**Evidence.**
+- vereshchagin1979a, p. 118: "Belongs to the Senonian, the upper subformation possibly to the Campanian as well" (translated).
+- vereshchagin1979a, p. 118: "The unit's author referred the lower subformation to the Cenomanian—Turonian; R. F. Muzafarova [1192, p. 36—43] to the Coniacian—Santonian" (translated).
+- gale2020a, p. 1034: "The original Turonian and Senonian stages … were progressively subdivided into the current six stages."
+- nessov1995a, p. 101, locality 99: the Syuk-Syuk wells bed, "Lower part of the Darbazin Formation (Rozhdestvensky, 1964a). Syuk-Syuk Formation (Stratigraphic Dictionary, 1979)", is "Upper Cretaceous, Santonian".
+- nessov1997a, p. ?, catalog of localities, Kazakhstan, locality 28: Darbaza, "Syuksyukian Formation or, more likely, lower part of the Darbazinian Formation, Santonian or Santonian-Lower Campanian" (translated).
+
+**Ruled out.**
+- *Coniacian from Muzafarova (1963), as the dictionary relays it.* A reported reading whose original has not been read.
+- *Coniacian from the dictionary's Senonian.* No quoted conversion fixes the Senonian's stages.
+
+**Open.** Muzafarova (1963) has not been read, nor a regional correlation that converts the Senonian of Soviet Central Asia; either could restore the Coniacian. Minakova's Cenomanian–Turonian stays as the 2026-11-23 entry leaves it.
+
 ## What do the cited works say about the age of the Darbazin Formation and the level of its base?
 
 *2026-11-23*
@@ -23,8 +42,9 @@
 ## References
 
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.
-- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
+- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
+- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 
 ## Other references
 

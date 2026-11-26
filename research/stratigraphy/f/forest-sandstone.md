@@ -1,5 +1,25 @@
 # Forest Sandstone
 
+## Does the Forest Sandstone take the Rhaetian and the Late Triassic?
+
+*2026-11-25*
+
+**Conclusion.** No; both are dropped. Supersedes the 2026-11-23 entry's Rhaetian to Pliensbachian. Viglietti and colleagues (2018) give the Rhaetian twice, neither time as an age: the fauna of the lower part provides "a maximum age" of Rhaetian/Hettangian for the lower layers, and the *Vulcanodon* stratum "could be as old as the Rhaetian", a possibility resting on that maximum and on Visser's (1984) suggested unconformity, while they judge Sinemurian–Pliensbachian "most likely". A limit adds no stage, and a possibility is not a reading. Raath's (1969) "Upper Triassic" is an early faunal reading made through Bond's (1955) correlation with the upper Red Beds; Viglietti and colleagues make the same faunal correlation, with the Upper Elliot, and reach only a Rhaetian/Hettangian maximum, so Raath's epoch is superseded, as the Kayenta's early faunal Late Triassic was (see [Kayenta](../k/kayenta.md)). Visser's (1984) "Late Triassic" is a label for the Stormberg basins as a whole. The Hettangian rests on Rauhut (2003) and Bristowe and Raath (2004). Governs `period: [Early Jurassic]` and `stages: [Hettangian, Sinemurian, Pliensbachian]` on [Forest Sandstone](../../../stratigraphy/f/forest-sandstone.yml).
+
+**Evidence.**
+- viglietti2018a, accepted manuscript, p. 9, 4.3 Revised Stratigraphy for *Vulcanodon karibaensis*: "the presence of the theropod genus *Coelophysis*, and the sauropodomorph species *Massospondylus carinatus* in the lower part of the Forest Sandstone in the Mid-Zambezi, Mana Pools, and Tuli basins (Cooper, 1981) provides some evidence for a maximum age for the lower layers of the Forest Sandstone of Rhaetian/Hettangian".
+- viglietti2018a, accepted manuscript, p. 10, same section: "the *Vulcanodon* stratum, which is situated only a few metres below the contact with the Batoka Basalt Formation, could be as old as the Rhaetian or as young as the Pliensbachian. A Sinemurian–Pliensbachian age seems most likely for this taxon".
+- raath1969a, p. 1: "on the basis of its fossil fauna Bond (op. cit.) has correlated the Forest Sandstone with the Upper part of the South African Red Beds. The deposits are thus Upper Karroo (Upper Triassic) in age."
+- visser1984a, p. 5: "Four Late Triassic depositional basins which were tectonically controlled are recognised."
+
+**Ruled out.**
+- *Rhaetian from the maximum age of the lower layers.* A limit.
+- *Rhaetian from the possible age of the* Vulcanodon *stratum.* A possibility resting on the same limit, against the authors' own most likely reading.
+- *Late Triassic from Raath (1969).* Superseded by the same faunal correlation made since.
+- *Late Triassic from Visser (1984).* A label for the Stormberg basins, not a dating of this unit.
+
+**Open.** Unchanged from the 2026-11-23 entry: a radiometric date from the formation or the basal Batoka Basalt would narrow the age.
+
 ## What do the cited works say about the age of the Forest Sandstone?
 
 *2026-11-23*
@@ -23,9 +43,14 @@
 ## References
 
 - `viglietti2018a`: Viglietti, P. A.; Barrett, P. M.; Broderick, T. J.; Munyikwa, D.; MacNiven, R.; Broderick, L.; Chapelle, K.; Glynn, D.; Edwards, S.; Zondo, M.; Broderick, P.; Choiniere, J. N. (2018). Stratigraphy of the Vulcanodon type locality and its implications for regional correlations within the Karoo Supergroup. *Journal of African Earth Sciences* 137: 149-156. doi:10.1016/j.jafrearsci.2017.10.015
+- `raath1969a`: Raath, M. A. (1969). A new coelurosaurian dinosaur from the Forest Sandstone of Rhodesia. *Arnoldia Rhodesia* 4(28): 1-25.
 - `visser1984a`: Visser, J. N. J. (1984). A review of the Stormberg Group and Drakensberg volcanics in southern Africa. *Palaeontologia Africana* 25: 5-27.
 - `jourdan2008a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Watkeys, M. K.; Renne, P. R. (2008). The 40Ar/39Ar ages of the sill complex of the Karoo large igneous province: implications for the Pliensbachian-Toarcian climate change. *Geochemistry, Geophysics, Geosystems* 9(6): 1-20. doi:10.1029/2008GC001994
 
 ## Other references
 
 - `fitch1971a`: Fitch, F. J.; Miller, J. A. (1971). Potassium-argon radio-ages of Karroo volcanic rocks from Lesotho. *Bulletin Volcanologique* 35(1): 64-84. doi:10.1007/bf02596808
+- `cooper1981a`: Cooper, M. R. (1981). The prosauropod dinosaur Massospondylus carinatus Owen from Zimbabwe: its biology, mode of life and phylogenetic significance. *Occasional Papers of the National Museums and Monuments of Rhodesia, Series B, Natural Sciences* 6: 689-840.
+- `bond1955a`: Bond, G. (1955). A note on dinosaur remains from the Forest Sandstone (Upper Karroo). *Occasional Papers of the National Museums of Southern Rhodesia* 2(20): 795-800.
+- `rauhut2003b`: Rauhut, O. W. M. (2003). The interrelationships and evolution of basal theropod dinosaurs. *Special Papers in Palaeontology* 69: 1-213.
+- `bristowe2004a`: Bristowe, A.; Raath, M. A. (2004). A juvenile coelophysoid skull from the Early Jurassic of Zimbabwe, and the synonymy of Coelophysis and Syntarsus. *Palaeontologia Africana*.

@@ -1,5 +1,19 @@
 # Fuson
 
+## Should the note on Cifelli and colleagues (2014) say their assignment is open to question?
+
+*2026-11-25*
+
+**Conclusion.** Yes. The member's whole age rests on one section that Cifelli and colleagues assign to the Fuson on its ostracods, after writing that its assignment to the Chilson or the Fuson "remains open to question"; the note now says so, and that only the beds above 6.5 m are assigned. Governs the note on cifelli2014a on [Fuson](../../../stratigraphy/f/fuson.yml); `stages` unchanged.
+
+**Evidence.**
+- cifelli2014a, p. 35: "explicit assignment of the Stage Barn Canyon Road sequence to either (part) of the Chilson Member (unit 2) and/or the Fuson Member remains open to question, and there is no consensus in the available geologic literature."
+- cifelli2014a, p. 36: "Therefore, the parts of section concerned here (at least those above 6.5 m … from where the mammal sample was collected) are assigned to the Fuson Member."
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged from the 2026-11-23 entry.
+
 ## What dates the Fuson to the late Valanginian–early Barremian?
 
 *2026-11-23*

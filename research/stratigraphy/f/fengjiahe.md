@@ -1,5 +1,22 @@
 # Fengjiahe
 
+## Is Sánchez-Fenollosa and Cobos's (2025) age for the Fengjiahe independent of Yao and colleagues'?
+
+*2026-11-25*
+
+**Conclusion.** No. Their "late Sinemurian–Toarcian" for the formation repeats Yao and colleagues (2022) word for word, and their supplement credits Yao and colleagues for it, so it is one reading, not two. Chen and colleagues (1982), the direct source for the formation's whole Lower Jurassic, gain a note on their correlation table. Governs the notes on sánchez-fenollosa2025a and chen1982a on [Fengjiahe](../../../stratigraphy/f/fengjiahe.yml); `stages` unchanged.
+
+**Evidence.**
+- yao2022a, p. 5: "Upper part of the Fengjiahe Formation, near Jiaojiadian village, Yimen County, Yuxi Prefecture, Yunnan Province, China; late Sinemurian–Toarcian (Huang et al., 2005; Figure 1C)."
+- sánchez-fenollosa2025a, p. 180: "Y. kopchicki (Fengjiahe Formation, late Sinemurian–Toarcian, China)".
+- sánchez-fenollosa2025a, File S1, p. 4: "Chronostratigraphic distribution: upper Sinemurian–Toarcian (Fengjiahe Formation) (Yao et al. 2022)."
+- chen1982a, p. 1230, Table 1: one "Fengjiahe Form." cell spans both Lower Jurassic rows, "J₁¹ Hett.-Plies." and "J₁² Dom.-Toar.".
+- chen1982a, p. 1232: "The Fengjiahe Formation (or Lower Lufeng Formation) (740—1600 m) now referred to Lower Jurassic".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing beyond the 2026-11-23 entry's.
+
 ## What do the cited works say about the age of the Fengjiahe Formation?
 
 *2026-11-23*
@@ -41,10 +58,11 @@
 
 ## References
 
+- `sánchez-fenollosa2025a`: Sánchez-Fenollosa, S.; Cobos, A. (2025). New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria). *Vertebrate Zoology* 75: 165-189. doi:10.3897/vz.75.e146618
 - `chen1982a`: Chen, P. J.; Li, W. B.; Chen, J. H.; Ye, C. H.; Wang, Z.; Shen, Y. B.; Sun, D. L. (1982). Stratigraphical classification of Jurassic and Cretaceous in China. *Scientia Sinica (Series B)* 25: 1227-1248.
+- `yao2022a`: Yao, X.; Barrett, P. M.; Yang, L.; Xu, X.; Bi, S. D. (2022). A new early branching armored dinosaur from the Lower Jurassic of southwestern China. *eLife* 11: e75248:1-37. doi:10.7554/eLife.75248
 - `zhen1985a`: Zhen, S.; Zhen, B.; Mateer, N. J.; Lucas, S. G. (1985). The Mesozoic reptiles of China. *Bulletin of the Geological Institutions of the University of Uppsala, New Series* 11: 133-150.
 - `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
-- `yao2022a`: Yao, X.; Barrett, P. M.; Yang, L.; Xu, X.; Bi, S. D. (2022). A new early branching armored dinosaur from the Lower Jurassic of southwestern China. *eLife* 11: e75248:1-37. doi:10.7554/eLife.75248
 - `peyredefabrègues2020a`: Peyre de Fabrègues, C.; Bi, S.; Li, H.; Li, G.; Yang, L.; Xu, X. (2020). A new species of early-diverging Sauropodiformes from the Lower Jurassic Fengjiahe Formation of Yunnan Province, China. *Scientific Reports* 10(1). doi:10.1038/s41598-020-67754-4
 - `bai1990a`: Bai, Z.; Yang, J.; Wang, G. (1990). [Yimenosaurus, a new genus of Prosauropoda from Yimen County, Yunnan province]. *Yuxiwenbo (Yuxi Culture and Scholarship)* 1: 14-23.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
