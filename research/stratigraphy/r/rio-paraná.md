@@ -1,5 +1,20 @@
 # Rio Paraná
 
+## Does Batezelli's stacking bear on the Rio Paraná's Aptian–Albian?
+
+*2026-11-26*
+
+**Conclusion.** Yes, and it now stands in the dispute. Arai and Dias-Brito (2023) extend the age of Goioerê fossils to the Rio Paraná because the units are interfingered, after Fernandes and Coimbra (1994), who with Fernandes and Coimbra (2000) describe a lateral, transitional contact; Batezelli (2015) stacks the Goio Erê, the Rio Paraná and the Santo Anastácio in ascending order. If the Rio Paraná lies above the Goio Erê, the stated reason for the extension does not hold. The stages stay, as the dispute's subject. Governs the `dispute` summary on [Rio Paraná](../../../stratigraphy/r/rio-paraná.yml); `stages` unchanged.
+
+**Evidence.**
+- arai2023a, p. 6: "O Grupo Caiuá deve ser considerado como Cretáceo Inferior (Aptiano–Albiano) em função das idades sugeridas por pterossauros" ["The Caiuá Group should be considered as Lower Cretaceous (Aptian–Albian) in view of the ages suggested by pterosaurs", translated]; the fossils come from the Goioerê, and their age "pode ser estendida para as formações Rio Paraná (FERNANDES & COIMBRA 1994)" because "as unidades se encontram interdigitadas".
+- fernandes2000a, p. 717: "Tem contato lateral gradual com a Formação Goio Erê." ["It has a gradual lateral contact with the Goio Erê Formation", translated].
+- batezelli2015a, pp. 3–4: the Caiuá Group "consists of three formations (in ascending stratigraphic order, with major depositional environments in parentheses): the Goio Erê Formation (margins of Draa), the Rio Paraná Formation (inner Draa) and the Santo Anastácio Formation (Paleosols)".
+
+**Ruled out.** Nothing.
+
+**Open.** A date or fossil from the Rio Paraná itself.
+
 ## What do the cited works say about the definition, group and age of the Rio Paraná?
 
 *2026-11-23*
@@ -43,8 +58,10 @@
 
 ## References
 
-- `fernandes1994a`: Fernandes, L. A.; Coimbra, A. M. (1994). O Grupo Caiuá (Ks): revisão estratigráfica e contexto deposicional [The Caiuá Group (Ks): stratigraphic revision and depositional context]. *Revista Brasileira de Geociências* 24(3): 164-176.
 - `arai2023a`: Arai, M.; Dias-Brito, D. (2023). Supersequência Bauru (Cretáceo da Bacia do Paraná): revisão estratigráfica com base em dados paleontológicos recentes [The Bauru Supersequence (Cretaceous of the Paraná Basin): stratigraphic revision based on recent paleontological data]. *Derbyana* 44: e800. doi:10.14295/derb.v44.800
+- `fernandes2000a`: Fernandes, L. A.; Coimbra, A. M. (2000). Revisão estratigráfica da parte oriental da Bacia Bauru (Neocretáceo) [Stratigraphic review of the eastern portion of the Bauru Basin (Neocretaceous)]. *Revista Brasileira de Geociências* 30(4): 717-728. doi:10.25249/0375-7536.2000304717728
+- `batezelli2015a`: Batezelli, A. (2015). Continental systems tracts of the Brazilian Cretaceous Bauru Basin and their relationship with the tectonic and climatic evolution of South America. *Basin Research* 29(S1): 1-25. doi:10.1111/bre.12128
+- `fernandes1994a`: Fernandes, L. A.; Coimbra, A. M. (1994). O Grupo Caiuá (Ks): revisão estratigráfica e contexto deposicional [The Caiuá Group (Ks): stratigraphic revision and depositional context]. *Revista Brasileira de Geociências* 24(3): 164-176.
 - `langer2019a`: Langer, M. C.; Martins, N. de O.; Manzig, P. C.; Ferreira, G. de S.; Marsola, J. C. de A.; Fortes, E.; Lima, R.; Sant'ana, L. C. F.; Vidal, L. da S.; Lorençato, R. H. da S.; Ezcurra, M. D. (2019). A new desert-dwelling dinosaur (Theropoda, Noasaurinae) from the Cretaceous of south Brazil. *Scientific Reports* 9(1). doi:10.1038/s41598-019-45306-9
 - `dias2010a`: Dias, A. N. C.; Tello, C. A.; Chemale, F., Jr.; Iunes, P. J.; Soares, C. J.; Curvo, E. A.; Guedes, S.; Barra, B. C.; Constâncio, M., Jr.; Hadler, J. C. (2010). Zircon fission track and U-Th-Pb in situ dating of Rio Paraná Formation, Paraná Basin, Brazil. *Revista Mexicana de Física S* 56(1): 16-21.
 

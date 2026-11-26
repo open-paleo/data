@@ -1,5 +1,19 @@
 # Quebrada del Barro
 
+## Should Martínez and colleagues (2015) be cited?
+
+*2026-11-26*
+
+**Conclusion.** Yes. It is the paper that proposes the late Norian–Rhaetian, "tentatively", from its own faunal comparison with the Los Colorados, and Martínez and colleagues (2017) credit their age to it. Governs the pointer to martínez2015a on [Quebrada del Barro](../../../stratigraphy/q/quebrada-del-barro.yml); `stages` unchanged.
+
+**Evidence.**
+- martínez2015a, p. 379: "A comparison of these two faunal assemblage suggest the fauna of QBF is younger than that of LCF and we tentatively assess a late Norian–Rhaetian age for the QBF."
+- martínez2017a, p. 489: "A late Norian–Rhaetian age is suggested for this unit based on the faunal assemblage known from the upper section of the Quebrada del Barro Formation".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What age do the cited works give the Quebrada del Barro Formation?
 
 *2026-11-23*
@@ -24,9 +38,9 @@
 
 ## References
 
-- `apaldetti2011a`: Apaldetti, C.; Martínez, R. N.; Alcober, O. A.; Pol, D. (2011). A New Basal Sauropodomorph (Dinosauria: Saurischia) from Quebrada del Barro Formation (Marayes-El Carrizal Basin), Northwestern Argentina. *PLoS ONE* 6(11): e26964. doi:10.1371/journal.pone.0026964
 - `martínez2015a`: Martínez, R. N.; Apaldetti, C.; Correa, G.; Colombi, C. E.; Fernández, E.; Santi Malnis, P.; Praderio, A.; Abelín, D.; Benegas, L. G.; Aguilar-Cameo, A.; Alcober, O. A. (2015). A new Late Triassic vertebrate assemblage from northwestern Argentina. *Ameghiniana* 52: 379-390. doi:10.5710/AMGH.27.04.2015.2889
 - `martínez2017a`: Martínez, R. N.; Apaldetti, C. (2017). A Late Norian-Rhaetian Coelophysid Neotheropod (Dinosauria, Saurischia) from the Quebrada Del Barro Formation, Northwestern Argentina. *Ameghiniana* 54(5): 488-505. doi:10.5710/amgh.09.04.2017.3065
+- `apaldetti2011a`: Apaldetti, C.; Martínez, R. N.; Alcober, O. A.; Pol, D. (2011). A New Basal Sauropodomorph (Dinosauria: Saurischia) from Quebrada del Barro Formation (Marayes-El Carrizal Basin), Northwestern Argentina. *PLoS ONE* 6(11): e26964. doi:10.1371/journal.pone.0026964
 
 ## Other references
 

@@ -1,5 +1,19 @@
 # Sao Khua
 
+## What did Buffetaut and Suteethorn (1999) give the Sao Khua?
+
+*2026-11-26*
+
+**Conclusion.** Not Valanginian–Hauterivian. Buffetaut and colleagues (2009) credit that range to Buffetaut and Suteethorn (1999), but the 1999 paper gives the formation only as "probably younger than Berriasian and older than Aptian", and its only Valanginian is for the Tsagantsabian of the Gobi. The note on the 2009 paper now says so. Governs the note on buffetaut2009a on [Sao Khua](../../../stratigraphy/s/sao-khua.yml); `stages` unchanged.
+
+**Evidence.**
+- buffetaut2009a, p. ?: "A Valanginian–Hauterivian age was suggested by Buffetaut & Suteethorn (1999), but the Sao Khua Formation may be somewhat younger (Barremian?)."
+- buffetaut1999a, p. 14: "Its exact age is still somewhat uncertain: it is probably younger than Berriasian and older than Aptian."
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What do the cited works say about the age of the Sao Khua?
 
 *2026-11-23*
@@ -18,8 +32,8 @@
 - racey1996a, p. 25: the sauropods "would indicate a Late Jurassic to Early Cretaceous age"; "the published vertebrate data suggests that the Sao Khua Formation is probably Early Cretaceous in age rather than Late Jurassic"; "Previous palynological studies (Hahn, 1982) indicate a Late Jurassic to Early Cretaceous age"; palynomorphs from the underlying Phra Wihan Formation show that the formation "is no older than Early Cretaceous in age"; with "the Aptian age of the Khok Kruat Formation", it "must fall within the age range Berriasian-Aptian".
 - martin1994a, p. 1087: "The Sao Khua Formation was usually thought to be Late Jurassic in age on the basis of its vertebrate fauna"; "Magnetostratigraphic data suggest a somewhat older, Middle Jurassic, age (Maranate and Vella, 1982)". The reference list gives Maranate and Vella's study as 1986 (p. 1092).
 - martin1994a, p. 1087: "Pending a clarification of its geological age, the Sao Khua Formation will be considered here as Late Jurassic to Early Cretaceous in age."
-- jia2022a, p. 3481, Abstract: zircon ages give "approximately 140 Ma" for the Sao Khua, "indicating that the Phra Wihan Formation and the overlying Sao Khua Formation are Early Cretaceous deposits" (translated).
-- jia2022a, p. 3485: the 140 Ma peak is read as "constraining the lower limit of its depositional age to the Early Cretaceous" (translated); the paleomagnetic samples from the formation's three sites "did not yield meaningful paleomagnetic results" (translated).
+- jia2022a, p. 3481, Abstract: zircon ages give "~140 Ma" for the Sao Khua, "indicating that the Phra Wihan Formation and the overlying Sao Khua Formation were deposited in the Early Cretaceous" (translated).
+- jia2022a, p. 3485: the 140 Ma peak is read as "which constrains the lower limit of its depositional age to the Early Cretaceous" (translated); the paleomagnetic samples from the formation's three sites "yielded no meaningful paleomagnetic results" (translated).
 
 **Ruled out.**
 - *Late Jurassic.* Buffetaut and Ingavat (1986) draw it from the resemblance of the vertebrates to Morrison and Shangshaximiao faunas and name no stage; Racey and colleagues (1996) relay the same dating from Buffetaut and colleagues (1993). Racey and colleagues find that many of the taxa range into the Early Cretaceous, and the Phra Wihan palynology puts the formation no older than Early Cretaceous, as do the zircon ages of Jia and colleagues (2022) and Tucker and colleagues (2022).
@@ -61,9 +75,9 @@
 
 ## References
 
-- `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
-- `buffetaut1999a`: Buffetaut, E.; Suteethorn, V. (1999). The dinosaur fauna of the Sao Khua Formation of Thailand and the beginning of the Cretaceous radiation of dinosaurs in Asia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 150(1-2): 13-23. doi:10.1016/S0031-0182(99)00004-8
 - `buffetaut2009a`: Buffetaut, E.; Suteethorn, V.; Tong, H. (2009). An early 'ostrich dinosaur' (Theropoda: Ornithomimosauria) from the Early Cretaceous Sao Khua Formation of NE Thailand. *Geological Society, London, Special Publications* 315(1): 229-243. doi:10.1144/sp315.16
+- `buffetaut1999a`: Buffetaut, E.; Suteethorn, V. (1999). The dinosaur fauna of the Sao Khua Formation of Thailand and the beginning of the Cretaceous radiation of dinosaurs in Asia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 150(1-2): 13-23. doi:10.1016/S0031-0182(99)00004-8
+- `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
 - `tumpeesuwan2010a`: Tumpeesuwan, S.; Sato, Y.; Nakhapadungrat, S. (2010). A new species of Pseudohyria (Matsumotoina) (Bivalvia: Trigonioidoidea) from the Early Cretaceous Sao Khua Formation, Khorat Group, northeastern Thailand. *Tropical Natural History* 10: 93-106.
 - `samathi2019a`: Samathi, A.; Chanthasit, P.; Sander, P. M. (2019). Two new basal coelurosaurian theropod dinosaurs from the Lower Cretaceous Sao Khua Formation of Thailand. *Acta Palaeontologica Polonica* 64(2): 239-260. doi:10.4202/app.00540.2018
 - `buffetaut1986b`: Buffetaut, E.; Ingavat, R. (1986). The succession of vertebrate faunas in the continental Mesozoic of Thailand. *Bulletin of the Geological Society of Malaysia* 19: 167-172.

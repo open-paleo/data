@@ -1,5 +1,18 @@
 # Straw-yellow Sandstone
 
+## What does Du (1985) give the Straw-yellow Sandstone?
+
+*2026-11-26*
+
+**Conclusion.** Middle Jurassic, reaching the late Middle Jurassic, from its own palynology, with no stage; Li and colleagues (2019) cite it for a late Bathonian. The note now gives Du's own reading. Governs the note on du1985a on [Straw-yellow Sandstone](../../../stratigraphy/s/straw-yellow-sandstone.yml); `stages` unchanged.
+
+**Evidence.**
+- du1985a, p. 135: "从本段的孢粉属种上看，与龙凤山组合基本相同，其时代亦可划归中侏罗世；但应该说已达中侏罗世晚期。" ["its age can likewise be assigned to the Middle Jurassic; but it should be said to have reached the late Middle Jurassic", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does Zhang and colleagues' (2009) Baojishan–Honghui paper date the member?
 
 *2026-11-25*
@@ -39,9 +52,9 @@
 
 ## References
 
+- `du1985a`: Du, B. A. (1985). Sporo-pollen assemblages from the middle Jurassic in the Wangjiashan Basin of Jingyuan, Gansu, and their stratigraphic and paleogeographic significance. *Geological Review* 31(2): 131-141.
 - `zhang2009c`: Zhang, H. (2009). [Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]. *Acta Sedimentologica Sinica* 27(4): 622-631.
 - `li1982a`: Li, B.; Xu, F.; Ma, Q.; Pan, H.; Wang, S.; Li, Z. (1982). 甘肃靖远王家山盆地中侏罗世地层 [Middle Jurassic strata of the Wangjiashan Basin, Jingyuan, Gansu]. *Journal of Stratigraphy* 6(1): 33-40.
-- `du1985a`: Du, B. A. (1985). Sporo-pollen assemblages from the middle Jurassic in the Wangjiashan Basin of Jingyuan, Gansu, and their stratigraphic and paleogeographic significance. *Geological Review* 31(2): 131-141.
 - `li2019b`: Li, D. Q.; Xing, L. D.; Lockley, M. G.; Romilio, A.; Yang, J. T.; Li, L. F. (2019). The first theropod tracks from the Middle Jurassic of Gansu, Northwest China: new and rare evidence of quadrupedal progression in theropod dinosaurs. *Journal of Palaeogeography* 8: 10. doi:10.1186/s42501-019-0028-4
 - `li2024a`: Li, N.; Maidment, S. C. R.; Li, D.; You, H.; Peng, G. (2024). A new stegosaur (Dinosauria: Ornithischia) from the Middle Jurassic of Gansu Province, China. *Scientific Reports* 14(1). doi:10.1038/s41598-024-66280-x
 

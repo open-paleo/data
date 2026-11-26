@@ -1,5 +1,19 @@
 # Rock Point
 
+## Who equated the Apachean with the Rhaetian, and on what?
+
+*2026-11-26*
+
+**Conclusion.** Lucas and Hunt (1993), on the reasoning of Hunt (1991), and with a hedge. They take the Apachean to be Rhaetian because its tetrapods are more advanced than those of the late Norian Knollenmergel, and add that the assignment "is not certain, and it might be of late Norian age". Hunt and colleagues (1998) give "Apachean (Rhaetian)" after Lucas and Hunt alone, and cite Lucas (1993) only, with Lucas and Hunt, for the Chinle Group's overall late Carnian to Rhaetian range. The dispute now names Lucas and Hunt and their hedge, and the note on Lucas (1993) is narrowed. Governs the `dispute` summary and the notes on lucas1993b and the pointer to hunt1991b on [Rock Point](../../../stratigraphy/r/rock-point.yml).
+
+**Evidence.**
+- lucas1993a, p. 329: "We consider Apachean to be of Rhaetian age because its tetrapods are more evolutionarily advanced than those of the late Norian German Knollenmergel (Hunt, 1991a)"; "assignment of a Rhaetian age to the Apachean is not certain, and it might be of late Norian age".
+- hunt1998a, p. 513: "Chinle Group strata range from late Carnian (early Tuvalian) to Rhaetian in age (Lucas 1993; Lucas & Hunt 1993b)"; "Apachean (Rhaetian) (Lucas & Hunt 1993b)".
+
+**Ruled out.** Nothing.
+
+**Open.** Hunt (1991), an abstract, has not been read.
+
 ## Is the Rock Point ever Hettangian, and where does the Apachean's Rhaetian come from?
 
 *2026-11-23*
@@ -41,10 +55,12 @@
 
 ## References
 
-- `rinehart2009a`: Rinehart, L. F.; Lucas, S. G.; Heckert, A. B.; Spielmann, J. A.; Celeskey, M. D. (2009). The paleobiology of Coelophysis bauri (Cope) from the Upper Triassic (Apachean) Whitaker quarry, New Mexico, with detailed analysis of a single quarry block. *New Mexico Museum of Natural History and Science Bulletin* 45: 1-260.
-- `zeigler2009a`: Zeigler, K. E.; Geissman, J. W. (2009). Examining new possibilities for the age of Upper Triassic strata in northern New Mexico using magnetostratigraphy. *New Mexico Geology* 31: 42.
+- `lucas1993b`: Lucas, S. G. (1993). The Chinle Group: revised stratigraphy and biochronology of Upper Triassic nonmarine strata in the western United States. *Museum of Northern Arizona Bulletin* 59: 27-50.
+- `hunt1991b`: Hunt, A. P. (1991). Redonda Formation and Rock Point Member of the Chinle Formation (southwestern United States): are they Rhaetian (latest Triassic) in age?. *Geological Society of America Abstracts with Programs* 23: 35.
 - `lucas1993a`: Lucas, S. G.; Hunt, A. P. (1993). Tetrapod biochronology of the Chinle Group (Upper Triassic), western United States. *New Mexico Museum of Natural History and Science Bulletin* 3: 327-329.
 - `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
+- `rinehart2009a`: Rinehart, L. F.; Lucas, S. G.; Heckert, A. B.; Spielmann, J. A.; Celeskey, M. D. (2009). The paleobiology of Coelophysis bauri (Cope) from the Upper Triassic (Apachean) Whitaker quarry, New Mexico, with detailed analysis of a single quarry block. *New Mexico Museum of Natural History and Science Bulletin* 45: 1-260.
+- `zeigler2009a`: Zeigler, K. E.; Geissman, J. W. (2009). Examining new possibilities for the age of Upper Triassic strata in northern New Mexico using magnetostratigraphy. *New Mexico Geology* 31: 42.
 - `cather2013a`: Cather, S. M.; Zeigler, K. E.; Mack, G. H.; Kelley, S. A. (2013). Toward standardization of Phanerozoic stratigraphic nomenclature in New Mexico. *Rocky Mountain Geology* 48(2): 101-124. doi:10.2113/gsrocky.48.2.101
 - `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341
 - `nesbitt2020a`: Nesbitt, S. J.; Sues, H. D. (2020). The osteology of the early-diverging dinosaur Daemonosaurus chauliodus (Archosauria: Dinosauria) from the Coelophysis Quarry (Triassic: Rhaetian) of New Mexico and its relationships to other early dinosaurs. *Zoological Journal of the Linnean Society* 191: 150-179. doi:10.1093/zoolinnean/zlaa080

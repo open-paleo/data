@@ -1,5 +1,19 @@
 # Puesto Antigual
 
+## Where does the La Amarga's Aptian trace to, and does it reach the Puesto Antigual?
+
+*2026-11-26*
+
+**Conclusion.** To Leanza (2003) and Leanza and colleagues (2004), both cited here, and it does not reach this member. Leanza and Hugo (1995, 1997) give the formation the late Hauterivian to Barremian (see [La Amarga](../l/la-amarga.md)); the Aptian enters with Leanza's (2003) late Barremian–early Aptian for the formation, which Leanza and colleagues (2004) repeat as Barremian–Early Aptian. Leanza (2003) draws the Puesto Antigual in the Barremian and gives the Aptian to the Piedra Parada above it. Governs `stages: [Barremian]`, unchanged, and the note on leanza2003a on [Puesto Antigual](../../../stratigraphy/p/puesto-antigual.yml).
+
+**Evidence.**
+- leanza2003a, p. 19, Fig. 7: "BARREMIANO" beside "Mb. Puesto Antigual" and "Mb. Bañados de Caichigüe"; "APTIANO" beside "Mb. Piedra Parada".
+- leanza2003a, p. 1: the La Amarga Formation "se atribuye al Barremiano superior – Aptiano inferior" ["is assigned to the Late Barremian – Early Aptian", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## How did Leanza and Hugo define the Puesto Antigual Member, and what does the Barremian–Early Aptian of Leanza and colleagues (2004) rest on?
 
 *2026-11-23*
@@ -43,10 +57,10 @@
 
 ## References
 
+- `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.
 - `leanza1995a`: Leanza, H. A.; Hugo, C. A. (1995). Revisión estratigráfica del Cretácico inferior continental en el ámbito sudoriental de la Cuenca Neuquina [Stratigraphic revision of the continental Lower Cretaceous in the southeastern Neuquén Basin]. *Revista de la Asociación Geológica Argentina* 50(1-4): 30-32.
 - `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
 - `pereda-suberbiola2013a`: Pereda-Suberbiola, X.; Galton, P. M.; Mallison, H.; Novas, F. (2013). A plated dinosaur (Ornithischia, Stegosauria) from the Early Cretaceous of Argentina, South America: an evaluation. *Alcheringa: An Australasian Journal of Palaeontology*. doi:10.1080/03115518.2012.702531
-- `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.
 - `gallina2016a`: Gallina, P. A. (2016). Reappraisal of the Early Cretaceous sauropod dinosaur Amargatitanis macni (Apesteguía, 2007), from northwestern Patagonia, Argentina. *Cretaceous Research*. doi:10.1016/j.cretres.2016.04.002
 - `salgado2006b`: Salgado, L.; Carvalho, I. de S.; Garrido, A. C. (2006). Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina. *Geobios* 39(5): 695-707. doi:10.1016/j.geobios.2005.06.001

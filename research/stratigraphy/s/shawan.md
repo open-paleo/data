@@ -1,5 +1,20 @@
 # Shawan
 
+## Does any work read date the Shawan Member to the Hettangian?
+
+*2026-11-26*
+
+**Conclusion.** Not yet; the Hettangian is held pending the originals. Barrett and colleagues (2005) give the Dull Purplish Beds as Hettangian "Traditionally", after Young (1951), Sun and colleagues (1985), Sun and Cui (1986) and Luo and Wu (1994, 1995), and the holotype horizon of *Lufengosaurus* as Hettangian after Luo and Wu; Liang and colleagues (2024) give the member's "(Hettangian)" in passing, after other work. Chen and colleagues (2026) date the base of the Lufeng in a Kunming Basin core and never name the Shawan. Huang and colleagues' (2005) own magnetostratigraphy puts part of the member "roughly" in the middle Sinemurian and gives its lowest sites no age. A reading another work reports adds a stage only once its original is read; Luo and Wu (1994) and Sun and colleagues (1985) are held and come next, and Luo and Wu (1995), Young (1951) and Sun and Cui (1986) are on the fetch list. Governs nothing yet; `stages` on [Shawan](../../../stratigraphy/s/shawan.yml) unchanged.
+
+**Evidence.**
+- barrett2005b, p. 806: "Traditionally, the Lower Lufeng Formation has been divided into two horizons: the lower Dull Purplish Beds (Hettangian) and upper Dark Red Beds (Sinemurian), which can be distinguished on the basis of lithology and faunal content (Young, 1951; Sun et al., 1985; Sun and Cui, 1986; Luo and Wu, 1994, 1995)."
+- barrett2005b, p. 807: "Horizon—Dull Purplish Beds of the Lower Lufeng Formation, Lower Jurassic (Hettangian: Luo and Wu, 1994, 1995)."
+- huang2005a, p. 325: "采点21~14的层位大致相对于西涅缪尔阶（Sinemurian）中部" ["the horizons of sites 21–14 roughly correspond to the middle Sinemurian", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Whether Luo and Wu (1994, 1995), Sun and colleagues (1985), Sun and Cui (1986) or Young (1951) date the Dull Purplish Beds to the Hettangian themselves. If none does, the Hettangian goes, and [*Jingshanosaurus xinwaensis*](../../../genera/J/Jingshanosaurus.yml) and [*Xingxiulong chengi*](../../../genera/X/Xingxiulong.yml), Hettangian only, need re-dating.
+
 ## What do the cited works say about the age of the Shawan Member?
 
 *2026-11-23*
@@ -23,11 +38,17 @@
 
 ## References
 
-- `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.
-- `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
 - `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
+- `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
+- `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 
 ## Other references
 
 - `chen2026a`: Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z. (2026). Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal. *Communications Earth & Environment* 7: 91. doi:10.1038/s43247-025-03083-6
+- `young1951a`: Young, C. C. (1951). The Lufeng saurischian fauna in China. *Palaeontologia Sinica, New Series C* 13: 1-96.
+- `sun1985a`: Sun, A. L.; Cui, G. H.; Li, Y. H.; Wu, X. C. (1985). [A verified list of the Lufeng saurischian fauna]. *Vertebrata PalAsiatica* 23(1): 1-12.
+- `sun1986a`: Sun, A. L.; Cui, K. H. (1986). A brief introduction to the Lower Lufeng saurischian fauna (Lower Jurassic: Lufeng, Yunnan, People's Republic of China). In *The Beginning of the Age of Dinosaurs: Faunal Change Across the Triassic-Jurassic Boundary (Padian, K., ed.)*, pp. 275-278. Cambridge University Press.
+- `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press, Cambridge.
+- `luo1995a`: Luo, Z. X.; Wu, X. C. (1995). Correlation of vertebrate assemblage of the Lower Lufeng Formation, Yunnan, China. In *Sixth Symposium on Mesozoic Terrestrial Ecosystems and Biota, Short Papers (Sun, A.; Wang, Y., eds)*, pp. 83-88. China Ocean Press, Beijing.
+- `liang2024a`: Liang, Q.; Falkingham, P. L.; Xing, L. (2024). Virtual skeleton and body mass for revealing the life strategies of Sinosaurus. *Historical Biology*: 1-15. doi:10.1080/08912963.2024.2385615

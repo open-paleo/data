@@ -1,5 +1,20 @@
 # Syuksyuk
 
+## Do the Syuksyuk's Turonian and Campanian stand?
+
+*2026-11-26*
+
+**Conclusion.** Both stay. Answers the 2026-11-23 entry's Open line. The Turonian is the Stratigraphic Dictionary's own reading of the whole formation, "Upper Turonian–Coniacian"; Nessov (1995, 1997) rejects a late Turonian only for the Syuk-Syuk wells bed, which does not supersede a reading of the formation. The Campanian stands on Nessov (1997), who gives the Azatbash locality as "Сюксюкская свита, сантон - нижний кампан" without a hedge; his queried and either-or readings elsewhere, and the 1995 line credited to an oral communication, add nothing of their own. Governs `stages` on [Syuksyuk](../../../stratigraphy/s/syuksyuk.yml), Turonian to Campanian, unchanged, and the note on nessov1997a.
+
+**Evidence.**
+- vereshchagin1979a, p. 378: "Относится к в. турону — коньяку." ["Belongs to the Upper Turonian–Coniacian", translated].
+- nessov1995a, p. 101: the Syuk-Syuk wells bed is "Upper Cretaceous, Santonian … it is not late Turonian".
+- nessov1997a, p. ?, catalog of localities, locality 61: "Азатбаш … Сюксюкская свита, сантон - нижний кампан." ["Azatbash … Syuksyuk Formation, Santonian–lower Campanian", our translation].
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Syuksyuk?
 
 *2026-11-23*
@@ -20,6 +35,7 @@
 
 ## References
 
+- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
 
