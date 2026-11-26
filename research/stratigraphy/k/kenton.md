@@ -1,5 +1,21 @@
 # Kenton
 
+## Does the Kenton keep the Tithonian?
+
+*2026-11-26*
+
+**Conclusion.** Yes, on Carrano and colleagues (2012), not on the 148.96 Ma age. Carrano and colleagues give Stovall Quarry 1 directly as "?Tithonian, Late Jurassic"; the query marks their doubt about a reading they make, and a queried stage counts, as for the [Gruhalde](../g/gruhalde.md). The 148.96 Ma age dates Morrison beds in Utah, is relayed from Kowallis and colleagues (2007), and reaches the Kenton only through correlation, so it adds nothing. Governs the Tithonian in `stages` on the [Kenton Member](../../../stratigraphy/k/kenton.yml), unchanged; [*Saurophaganax maximus*](../../../genera/S/Saurophaganax.yml) is unaffected.
+
+**Evidence.**
+- carrano2012a, p. 241: "Stovall Quarry 1, east of Kenton, Cimarron County, Oklahoma, USA; upper Brushy Basin Member equivalent, Morrison Formation; ?Tithonian, Late Jurassic (Stovall 1938; Chure 1995)".
+- kirkland2016a, p. 118: "148.96 +2.54 to -2.21 Ma based on U-Pb ages determined by laser ablation of zircons extracted from a volcanic ash bed about 9 m below the base of the Naturita Formation", west of Hanksville, Utah.
+- danison2024a, p. 83: "The Kenton Member correlates with the Brushy Basin Member of the Morrison Formation, which is 153–145 million years old".
+
+**Ruled out.**
+- *Tithonian from the 148.96 Ma age.* A relayed date from Utah, reaching the Kenton by correlation.
+
+**Open.** The Kimmeridgian. Its only support is the same kind of correlation: Kirkland and colleagues' 150.00 Ma from the top of the Brushy Basin Member in Utah, and Danison and colleagues' relayed 153–145 Ma for the Brushy Basin. No work read dates the Kenton beds themselves Kimmeridgian.
+
 ## What do the cited works say about the age of the Kenton Member?
 
 *2026-11-23*
@@ -20,8 +36,11 @@
 
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
+- `danison2024a`: Danison, A. D.; Wedel, M. J.; Barta, D. E.; Woodward, H. N.; Flora, H. M.; Lee, A. H.; Snively, E. (2024). Chimerism of specimens referred to Saurophaganax maximus reveals a new species of Allosaurus (Dinosauria, Theropoda). *Vertebrate Anatomy Morphology Palaeontology* 12(1): 81-114. doi:10.18435/vamp29404
 - `trujillo2015a`: Trujillo, K. C.; Kowallis, B. J. (2015). Recalibrated legacy 40Ar/39Ar ages for the Upper Jurassic Morrison Formation, Western Interior, U.S.A. *Geology of the Intermountain West* 2: 1-8. doi:10.31711/giw.v2.pp1-8
 
 ## Other references
 
 - `kowallis2007a`: Kowallis, B. J.; Britt, B. B.; Greenhalgh, B. W.; Sprinkel, D. A. (2007). New U-Pb zircon ages from an ash bed in the Brushy Basin Member of the Morrison Formation near Hanksville, Utah. In *Central Utah: diverse geology of a dynamic landscape (Willis, G. C.; Hylland, M. D.; Clark, D. L.; Chidsey, T. C., Jr., eds.)*, pp. 75-80.
+- `stovall1938a`: Stovall, J. W. (1938). The Morrison of Oklahoma and its dinosaurs. *Journal of Geology* 46: 583-600.
+- `chure1995a`: Chure, D. J. (1995). A reassessment of the gigantic theropod Saurophagus maximus from the Morrison Formation (Upper Jurassic) of Oklahoma, USA. In *Sixth Symposium on Mesozoic Terrestrial Ecosystems and Biota, Short Papers (Sun, A.; Wang, Y., eds.)*, pp. 103-106. China Ocean Press, Beijing.

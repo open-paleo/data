@@ -1,5 +1,20 @@
 # Khuren Dukh
 
+## Do Ito and colleagues and Nichols and colleagues agree on the Khuren Dukh's age?
+
+*2026-11-26*
+
+**Conclusion.** No. Ito and colleagues (2006) credit Nichols and colleagues (2006) with refining the formation's age to the late Albian, but Nichols and colleagues give the formation "middle to late Albian" throughout and use "late Albian" only for the dinosaur fauna. The Ito note now says so, so the two notes do not read as agreeing. Governs the note on ito2006a on [Khuren Dukh](../../../stratigraphy/k/khuren-dukh.yml); `stages` unchanged.
+
+**Evidence.**
+- ito2006a, p. 229: "Nichols et al. (2006) have further refined the age of the Khuren Dukh Formation as late Albian, based on new palynological data."
+- nichols2006a, p. 241, Abstract: "The Khuren Dukh Formation is determined to be middle to late Albian in age."
+- nichols2006a, p. 250: "The palynological evidence presented in the foregoing indicates that this fauna is late Albian in age."
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What strata did Ito and colleagues (2006) erect the Khuren Dukh Formation for?
 
 *2026-11-23*

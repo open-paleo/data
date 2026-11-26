@@ -1,5 +1,19 @@
 # Khodzhakul
 
+## What does Danilov and colleagues (2018) give the Khodzhakul?
+
+*2026-11-26*
+
+**Conclusion.** An early Cenomanian age, with no basis. Danilov and colleagues refer to "the lower Cenomanian Khodzhakul Formation" while reporting Nessov's (1978) description of *Tienfucheloides*, and Tong and colleagues (2021) cite them for the Cenomanian of that turtle. The printed paper is in the Turtle Evolution Symposium volume, pp. 34–37, not the proceedings and pages Tong and colleagues give. Governs the note on danilov2018a on [Khodzhakul](../../../stratigraphy/k/khodzhakul.yml) and the book, publisher and pages of the danilov2018a store entry; `stages` unchanged.
+
+**Evidence.**
+- danilov2018a, p. 34: specimens "from the lower Cenomanian Khodzhakul Formation of Uzbekistan".
+- tong2021a, p. 10: "Tienfucheloides (Khodzhakul Formation (Cenomaian), Uzbekistan [70])".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## How does Nessov (1997) date the parts of the Khodzhakul Formation?
 
 *2026-11-23*
@@ -21,6 +35,8 @@
 
 ## References
 
+- `danilov2018a`: Danilov, I. G.; Obraztsova, E. M.; Syromyatnikova, E. V. (2018). Tienfucheloides undatus – a turtle puzzle from the Cenomanian of Uzbekistan. In *Turtle Evolution Symposium*, pp. 34-37. Scidinge Hall Verlag, Tübingen.
+- `tong2021a`: Tong, H.; Chanthasit, P.; Naksri, W.; Ditbanjong, P.; Suteethorn, S.; Buffetaut, E.; Suteethorn, V.; Wongko, K.; Deesri, U.; Claude, J. (2021). Yakemys multiporcata n. g. n. sp., a large macrobaenid turtle from the basal Cretaceous of Thailand, with a review of the turtle fauna from the Phu Kradung Formation and its stratigraphical implications. *Diversity* 13(12): 630. doi:10.3390/d13120630
 - `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 
 ## Other references
@@ -28,3 +44,4 @@
 - `shultz1972a`: Shultz, S. S., Jr. (1972). Geologicheskoe stroenie zony sochleneniya Urala i Tyan'-Shanya [Geological structure of the zone of junction of the Urals and Tian-Shan]. Nauka.
 - `nessov1977a`: Nessov, L. A. (1977). Cherepakhi i nekotorye drugie reptilii mela Karakalpakii [Turtles and some other reptiles of the Cretaceous of Karakalpakia]. In *Voprosy gerpetologii (Avtoreferaty dokladov IV Vsesoyuznoi gerpetologicheskoi konferentsii)*, pp. 155-156.
 - `nessov1977b`: Nessov, L. A. (1977). O nekotorykh osobennostyakh stroeniya cherepa dvukh pozdnemelovykh cherepakh [On some features of the skull structure of two Late Cretaceous turtles]. *Vestnik Leningradskogo universiteta, seriya biologiya* 21(4): 45-48.
+- `nessov1978a`: Nessov, L. A. (1978). [An archaic Late Cretaceous turtle from western Uzbekistan]. *Paleontologicheskii Zhurnal*: 101-105.

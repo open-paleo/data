@@ -1,5 +1,21 @@
 # Khok Kruat
 
+## Is the Khok Kruat's Barremian a reading?
+
+*2026-11-26*
+
+**Conclusion.** No; the Barremian is dropped. Supersedes the 2026-11-23 entry on the stages and answers its Open line. Hasegawa and colleagues (2010) date only the overlying Phu Thok Formation, by magnetostratigraphy, its base at about 126 Ma, late Barremian to early Aptian, and draw the Khok Kruat below it in the Barremian in their Fig. 2 without a word of text; their own Table 1 keeps the Khok Kruat "Apt.?". Shibata and colleagues (2011) relay the Barremian as "a possibility" with "no direct information" from the formation. An age from the unit above is a limit, not an age. Governs `stages: [Aptian, Albian]` and the note on hasegawa2010a on [Khok Kruat](../../../stratigraphy/k/khok-kruat.yml); its genera, all Aptian or Aptian–Albian, are unaffected.
+
+**Evidence.**
+- hasegawa2010a, p. 616: "deposition of the Phu Thok Formation began at approximately c. 126 Ma and ended by c. 84 Ma or earlier (from the late Barremian–early Aptian to the late Santonian or earlier)".
+- hasegawa2010a, p. 615, Table 1: the Khok Kruat "Apt.?", with palynological ages that "are quoted by Sattayarak et al. (1991a,b). However, no palyno-fossil assemblage data were presented."
+- shibata2011a, p. 970: "Hasegawa, et al. (2010) pointed out a possibility of Barremian age based on magnetostratigraphic data from the overlying Phu Thok Formation. However, no direct information from the Khok Kruat Formation was obtained for its age."
+
+**Ruled out.**
+- *Barremian from Hasegawa and colleagues' Fig. 2.* A placement drawn from the age of the unit above.
+
+**Open.** Unchanged from the 2026-11-23 entry.
+
 ## What do the cited works say about the age of the Khok Kruat?
 
 *2026-11-23*
@@ -21,9 +37,9 @@
 
 ## References
 
-- `racey1996a`: Racey, A.; Love, M. A.; Canham, A. C.; Goodall, J. G. S.; Polachan, S.; Jones, P. D. (1996). Stratigraphy and reservoir potential of the Mesozoic Khorat Group, NE Thailand. Part 1: Stratigraphy and sedimentary evolution. *Journal of Petroleum Geology* 19: 5-40.
-- `shibata2011a`: Shibata, M.; Jintasakul, P.; Azuma, Y. (2011). A New Iguanodontian Dinosaur from the Lower Cretaceous Khok Kruat Formation, Nakhon Ratchasima in Northeastern Thailand. *Acta Geologica Sinica (English Edition)* 85(5): 969-976. doi:10.1111/j.1755-6724.2011.00530.x
 - `hasegawa2010a`: Hasegawa, H.; Imsamut, S.; Charusiri, P.; Tada, R.; Horiuchi, Y.; Hisada, K. (2010). 'Thailand was a desert' during the mid-Cretaceous: equatorward shift of the subtropical high-pressure belt indicated by eolian deposits (Phu Thok Formation) in the Khorat Basin, northeastern Thailand. *Island Arc* 19(4): 605-621. doi:10.1111/j.1440-1738.2010.00728.x
+- `shibata2011a`: Shibata, M.; Jintasakul, P.; Azuma, Y. (2011). A New Iguanodontian Dinosaur from the Lower Cretaceous Khok Kruat Formation, Nakhon Ratchasima in Northeastern Thailand. *Acta Geologica Sinica (English Edition)* 85(5): 969-976. doi:10.1111/j.1755-6724.2011.00530.x
+- `racey1996a`: Racey, A.; Love, M. A.; Canham, A. C.; Goodall, J. G. S.; Polachan, S.; Jones, P. D. (1996). Stratigraphy and reservoir potential of the Mesozoic Khorat Group, NE Thailand. Part 1: Stratigraphy and sedimentary evolution. *Journal of Petroleum Geology* 19: 5-40.
 - `jia2022a`: Jia, S. W.; Huang, B. C.; Yan, Y. G.; Zhao, Q.; Li, N. T. (2022). Paleomagnetic study on the Mesozoic tectonic evolution of the Indochina Block. *Chinese Journal of Geophysics* 65(9): 3481-3501. doi:10.6038/cjg2022P0927
 
 ## Other references

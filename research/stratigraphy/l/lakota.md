@@ -1,5 +1,19 @@
 # Lakota
 
+## Is Kirkland and colleagues' Barremian a younger reading?
+
+*2026-11-26*
+
+**Conclusion.** No. Kirkland and colleagues (1993) relay Sohn (1979), dropping his "or older"; Sohn gives the formation as Barremian or older, revising an earlier late Aptian. The note now calls it a relay. Governs the note on kirkland1993a on [Lakota](../../../stratigraphy/l/lakota.yml); `stages` unchanged.
+
+**Evidence.**
+- kirkland1993a, p. 3: "The Lakota Formation has been dated independently of vertebrate fossils as Barremian (Sohn, 1979)."
+- sohn1979a, p. 1: the age "is Barremian or older rather than late Aptian as previously considered".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Lakota Formation?
 
 *2026-11-23*
@@ -52,10 +66,10 @@
 
 ## References
 
+- `kirkland1993a`: Kirkland, J. I.; Burge, D.; Gaston, R. (1993). A large dromaeosaur (Theropoda) from the Lower Cretaceous of eastern Utah. *Hunteria* 2(10): 1-16.
+- `sohn1979a`: Sohn, I. G. (1979). Nonmarine ostracodes in the Lakota Formation (Lower Cretaceous) from South Dakota and Wyoming. *United States Geological Survey Professional Paper* 1069: 1-24.
 - `cifelli2014a`: Cifelli, R. L.; Davis, B. M.; Sames, B. (2014). Earliest Cretaceous mammals from the western United States. *Acta Palaeontologica Polonica* 59: 31-52. doi:10.4202/app.2012.0089
 - `boyd2015b`: Boyd, C. A.; Pagnac, D. C. (2015). Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis. *PeerJ* 3: e1263. doi:10.7717/peerj.1263
-- `kirkland1993a`: Kirkland, J. I.; Burge, D.; Gaston, R. (1993). A large dromaeosaur (Theropoda) from the Lower Cretaceous of eastern Utah. *Hunteria* 2(10): 1-16.
 - `weishampel1989a`: Weishampel, D. B.; Bjork, P. R. (1989). The first indisputable remains of Iguanodon (Ornithischia: Ornithopoda) from North America: Iguanodon lakotaensis, sp. nov. *Journal of Vertebrate Paleontology* 9(1): 56-66. doi:10.1080/02724634.1989.10011738
 - `d'emic2019a`: D'Emic, M. D.; Foreman, B. Z.; Jud, N. A.; Britt, B. B.; Schmitz, M.; Crowley, J. L. (2019). Chronostratigraphic revision of the Cloverly Formation (Lower Cretaceous, Western Interior, USA). *Bulletin of the Peabody Museum of Natural History* 60(1): 3-40. doi:10.3374/014.060.0101
-- `sohn1979a`: Sohn, I. G. (1979). Nonmarine ostracodes in the Lakota Formation (Lower Cretaceous) from South Dakota and Wyoming. *United States Geological Survey Professional Paper* 1069: 1-24.
 - `mcdonald2011a`: McDonald, A. T. (2011). The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda). *Zootaxa* 2783(1). doi:10.11646/zootaxa.2783.1.4
