@@ -1,5 +1,18 @@
 # Loe-ein
 
+## Which sources does Weishampel and colleagues' Lura row cite?
+
+*2026-11-26*
+
+**Conclusion.** Zhao (1983), Dong (1990), Sun and colleagues (1992) and unpublished data from Zhao. Zhao (1983), as held, names neither the Lura nor the Loe-ein Formation, so the unpublished data are the one cited source that could carry the name Lura. The dispute summary now says so. Governs the `dispute` summary on [Loe-ein](../../../stratigraphy/l/loe-ein.yml).
+
+**Evidence.**
+- weishampel2004b, p. 565: "1. Lura Formation (?= Loe-ein Formation; Zhao 1983; Dong 1990b; Sun et al. 1992; Zhao unpubl. data)", with an Early Cretaceous age.
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged: whether the Lura Formation is the Loe-ein.
+
 ## What do the cited works say about the age of the Loe-ein?
 
 *2026-11-23*
@@ -21,7 +34,11 @@
 
 ## References
 
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `dong1990b`: Dong, Z. (1990). Stegosaurs of Asia. In *Dinosaur Systematics: Perspectives and Approaches (Carpenter, K.; Currie, P. J., eds.)*, pp. 255-268. Cambridge University Press, Cambridge.
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `sun1992a`: Sun, A. L.; Li, J. L.; Ye, X. K.; Dong, Z. M.; Hou, L. H. (1992). The Chinese Fossil Reptiles and Their Kins. Science Press, Beijing.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+
+## Other references
+
+- `zhao1983a`: Zhao, X. (1983). Phylogeny and evolutionary stages of Dinosauria. *Acta Palaeontologica Polonica* 28(1-2): 295-306.

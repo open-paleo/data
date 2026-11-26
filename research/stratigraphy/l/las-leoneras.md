@@ -1,5 +1,23 @@
 # Las Leoneras
 
+## Does the Las Leoneras keep the Toarcian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Toarcian is dropped. Supersedes the 2026-11-23 entry on the stages and answers its Open line. Pol and colleagues (2011) relay "Pliensbachian–Toarcian" from Figari and Courtade (1993) and "Upper Sinemurian–Toarcian" from Page and colleagues (1999), and add that the beds have no direct date. Page and colleagues give the formation only as Liassic "con reservas", from its stratigraphic position; the chart in their paper that draws it through the Toarcian is Figari and Courtade's. Both readings therefore trace to Figari and Courtade (1993), which has not been read, and a reported reading adds a stage only once its original is read. Cúneo and colleagues (2013) date a tuff in the upper formation, about 40 m below the Lonco Trapial, at 188.946 ± 0.096 Ma, early Pliensbachian, and give the formation "a Sinemurian to Pliensbachian age". Governs `stages: [Sinemurian, Pliensbachian]` and the notes on pol2011b, cúneo2013a and page1999a on [Las Leoneras](../../../stratigraphy/l/las-leoneras.yml); [*Leonerasaurus taquetrensis*](../../../genera/L/Leonerasaurus.yml), Pliensbachian, is unaffected.
+
+**Evidence.**
+- pol2011b, p. 5: the formation is "more specifically referred to the Pliensbachian–Toarcian [32] or Upper Sinemurian–Toarcian [33], although no direct datings of these sediments are available".
+- page1999a, p. 462: "La edad de esta unidad, liásica con reservas, surge de su posición estratigráfica" ["The age of this unit, Liassic with reservations, stems from its stratigraphic position", translated].
+- page1999a, p. 468, Cuadro 2, captioned "(FIGARI Y COURTADE 1993)": "F. LAS LEONERAS" drawn from the upper Sinemurian to the top of the Toarcian.
+- cúneo2013a, p. 3: tuff sample LL041012-2 was "collected from the Las Leoneras Formation in its type locality (Cañadón Las Leoneras, Fig. 1), about 40 m below the basal agglomerates of the overlying Lonco Trapial Formation"; p. 5, Table 1: "188.946 | 0.096".
+- cúneo2013a, p. 8: "The results indicate a Sinemurian to Pliensbachian age for the Las Leoneras Formation and its equivalents".
+
+**Ruled out.**
+- *Toarcian from Pol and colleagues (2011) and Page and colleagues (1999).* Both relay Figari and Courtade (1993), unread.
+
+**Open.** Figari and Courtade (1993) has not been read; it would show what their Toarcian rests on.
+
 ## What do the cited works say about the age of the Las Leoneras?
 
 *2026-11-23*
@@ -22,8 +40,8 @@
 
 - `pol2011b`: Pol, D.; Garrido, A.; Cerda, I. A. (2011). A New Sauropodomorph Dinosaur from the Early Jurassic of Patagonia and the Origin and Evolution of the Sauropod-type Sacrum. *PLoS ONE* 6(1): e14572. doi:10.1371/journal.pone.0014572
 - `cúneo2013a`: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A. (2013). High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic. *Gondwana Research* 24(3-4): 1267-1275. doi:10.1016/j.gr.2013.01.010
+- `page1999a`: Page, R.; Ardolino, A.; de Barrio, R. E.; Franchi, M.; Lizuain, A.; Page, S.; Silva Nieto, D. (1999). Estratigrafía del Jurásico y Cretácico del Macizo de Somún Curá, provincias de Río Negro y Chubut [Jurassic and Cretaceous stratigraphy of the Somún Curá Massif, Río Negro and Chubut provinces]. In *Geología Argentina*, pp. 460-488. Subsecretaría de Minería de la Nación.
 
 ## Other references
 
 - `figari1993a`: Figari, E. G.; Courtade, S. F. (1993). Evolución tectosedimentaria de la Cuenca de Cañadón Asfalto, Chubut, Argentina [Tectono-sedimentary evolution of the Cañadón Asfalto Basin, Chubut, Argentina]. In *Actas del XII Congreso Geológico Argentino y II Congreso de Exploración de Hidrocarburos*, pp. 66-77.
-- `page1999a`: Page, R.; Ardolino, A.; de Barrio, R. E.; Franchi, M.; Lizuain, A.; Page, S.; Silva Nieto, D. (1999). Estratigrafía del Jurásico y Cretácico del Macizo de Somún Curá, provincias de Río Negro y Chubut [Jurassic and Cretaceous stratigraphy of the Somún Curá Massif, Río Negro and Chubut provinces]. In *Geología Argentina*, pp. 460-488. Subsecretaría de Minería de la Nación.

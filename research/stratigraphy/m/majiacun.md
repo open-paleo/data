@@ -1,5 +1,20 @@
 # Majiacun
 
+## Does the Majiacun keep the Cenomanian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Cenomanian is dropped. Supersedes the 2026-11-23 entry on the stages and answers its Open line. Lü and colleagues (2010) credit "Cenomanian to Turonian" to Zhou and colleagues (1983), but Zhou and colleagues give the formation "相当于土仑期至赛诺早期" (Turonian to early Senonian) and never name the Cenomanian; traced to its original, the relay misreports its source and adds nothing. Zhou and colleagues' own reading keeps the Turonian, and their early Senonian needs no conversion, since later readings already cover the Coniacian onward. Wang and colleagues (2006), whom Lü and colleagues cite for a Coniacian–Santonian correlation, are now cited on the unit. Governs `stages: [Turonian, Coniacian, Santonian, Campanian, Maastrichtian]` and the notes on zhou1983a and wang2006a on [Majiacun](../../../stratigraphy/m/majiacun.yml); its genera, all Coniacian or younger, are unaffected.
+
+**Evidence.**
+- lü2010a, p. 387: "the Majiacun Formation was described as Cenoma− nian to Turonian (Zhou et al. 1983) in age on the bases of spores and pollens, and dinosaur egg fossils"; "Later, Wang et al. (2006) thought that the Majiacun Formation correlated with the Coniacian–Santonian."
+- zhou1983a, p. 69: "该组时代以归入晚白垩世早—中期较为适宜，相当于土仑期至赛诺早期。" ["it is more appropriate to assign this formation to the early–middle Late Cretaceous, corresponding to the Turonian to early Senonian", translated].
+
+**Ruled out.**
+- *Cenomanian from Lü and colleagues (2010).* A misrelay of Zhou and colleagues (1983).
+
+**Open.** Wang and colleagues (2006) has not been read.
+
 ## What do the cited works say about the age of the Majiacun Formation?
 
 *2026-11-23*
@@ -20,7 +35,8 @@
 
 ## References
 
-- `lü2010a`: Lü, J.; Xu, L.; Liu, Y.; Zhang, X.; Jia, S.; Ji, Q. (2010). A New Troodontid Theropod from the Late Cretaceous of Central China, and the Radiation of Asian Troodontids. *Acta Palaeontologica Polonica* 55(3): 381-388. doi:10.4202/app.2009.0047
 - `zhou1983a`: Zhou, S. Q.; Han, S. J.; Zhang, Y. C. (1983). Late Cretaceous strata of Xixia Basin, Henan Province. *Journal of Stratigraphy* 7(1): 64-70.
+- `wang2006a`: Wang, D. Y.; Chen, P. J.; Chen, J. H.; Cao, M. Z.; Pan, H. Z.; Li, G.; Zhu, S. G.; Feng, Z. J.; Wu, S. Q.; Pang, F. J.; Li, G. W. (2006). Discovery of invertebrate fossils from the dinosaurian egg-bearing strata in the Xixia Basin of Henan, China. *Acta Palaeontologica Sinica* 45: 494-497.
+- `lü2010a`: Lü, J.; Xu, L.; Liu, Y.; Zhang, X.; Jia, S.; Ji, Q. (2010). A New Troodontid Theropod from the Late Cretaceous of Central China, and the Radiation of Asian Troodontids. *Acta Palaeontologica Polonica* 55(3): 381-388. doi:10.4202/app.2009.0047
 - `chen2007a`: Chen, J. H.; Wang, D. Y.; Feng, J. C.; Fu, G. H.; Zhu, S. G. (2007). Late Cretaceous non-marine bivalves from the dinosaur egg-bearing strata of Xixia Basin, Henan, China. *Acta Palaeontologica Sinica* 46: 299-313.
 - `pan2007a`: Pan, H. Z.; Wang, D. Y.; Feng, J. C.; Fu, G. H.; Zhu, S. G. (2007). Late Cretaceous non-marine Gastropoda from the dinosaur egg-bearing strata of Xixia Basin, Henan. *Acta Palaeontologica Sinica* 46: 293-298.

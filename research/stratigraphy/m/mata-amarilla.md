@@ -1,5 +1,20 @@
 # Mata Amarilla
 
+## Does Varela and colleagues' upper Albian–lower Cenomanian add the Albian?
+
+*2026-11-26*
+
+**Conclusion.** No. Varela and colleagues (2012) place the start of the lower section, the onset of the foreland stage, between the upper Albian and the lower Cenomanian by bracketing it: older than their 96.23 ± 0.71 Ma tuff in the middle section and younger than the lower Albian Piedra Clavada Formation below. A bracket between two limits is not an age, and the abstract hedges it as "could have occurred". Governs `stages` on [Mata Amarilla](../../../stratigraphy/m/mata-amarilla.yml), Cenomanian to Santonian, unchanged.
+
+**Evidence.**
+- varela2012a, p. 359, Abstract: "the onset of the foreland stage could have occurred between the upper Albian and lower Cenomanian, as the underlying Piedra Clavada Formation is lower Albian in age".
+- varela2012a, p. 372: "the age of compression is older than 96.2±0.7 Ma and is located within the range between the lower Cenomanian and the upper Albian (~100 Ma), since the Piedra Clavada Formation, underlying the Mata Amarilla Formation, is lower Albian".
+
+**Ruled out.**
+- *Albian from the onset of the foreland stage.* A bracket between the dated tuff and the underlying unit.
+
+**Open.** Unchanged from the 2026-11-23 entry.
+
 ## What do the cited works say about the age of the Mata Amarilla?
 
 *2026-11-23*

@@ -1,5 +1,19 @@
 # Mackunda
 
+## What does Tucker and colleagues (2016) give the Mackunda?
+
+*2026-11-26*
+
+**Conclusion.** Two detrital-zircon maximum depositional ages, about 102.9 Ma for the uppermost formation and 130.5 Ma for its middle part, the second far older than the formation's late Albian biostratigraphic age. Maximum ages are limits and add no stage. Governs the note on tucker2016a on [Mackunda](../../../stratigraphy/m/mackunda.yml); `stages` unchanged.
+
+**Evidence.**
+- tucker2016a, p. 1464: "A single uppermost Mackunda Formation sample from GSQ Longreach 1–1B core"; p. 1468, Table 1: average ages "102.9 Ma" for Longreach and "130.5 Ma" for Maneroo_331, from the middle of the formation.
+- tucker2016a, p. 1469: the middle Mackunda sample is "significantly older than its purported depositional age of late Albian (ca. 105 Ma) based on biostratigraphic constraints".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do Herne and colleagues (2026) say about the age of the Mackunda?
 
 *2026-11-23*
@@ -28,6 +42,6 @@
 
 ## References
 
-- `herne2026a`: Herne, M. C.; Bevitt, J. J.; Milan, L.; Hocknull, S. A.; Tait, A. M.; Allen, C. M.; Rozefelds, A. C.; Molnar, R. E.; Weisbecker, V.; Bell, P. R. (2026). Cranial anatomy, palaeoneurology, palaeobiology and stratigraphic age of the large-bodied ornithopod, Muttaburrasaurus langdoni Bartholomai and Molnar, 1981, from the mid-Cretaceous of Australia. *PeerJ* 14: e20794. doi:10.7717/peerj.20794
 - `tucker2016a`: Tucker, R. T.; Roberts, E. M.; Henderson, R. A.; Kemp, A. I. S. (2016). Large igneous province or long-lived magmatic arc along the eastern margin of Australia during the Cretaceous? Insights from the sedimentary record. *Geological Society of America Bulletin* 128(9-10): 1461-1480. doi:10.1130/B31337.1
+- `herne2026a`: Herne, M. C.; Bevitt, J. J.; Milan, L.; Hocknull, S. A.; Tait, A. M.; Allen, C. M.; Rozefelds, A. C.; Molnar, R. E.; Weisbecker, V.; Bell, P. R. (2026). Cranial anatomy, palaeoneurology, palaeobiology and stratigraphic age of the large-bodied ornithopod, Muttaburrasaurus langdoni Bartholomai and Molnar, 1981, from the mid-Cretaceous of Australia. *PeerJ* 14: e20794. doi:10.7717/peerj.20794
 - `gray2002a`: Gray, A. R. G.; McKillop, M.; McKellar, J. L. (2002). Eromanga Basin stratigraphy. In *Geology of the Cooper and Eromanga Basins, Queensland (Draper, J. J., ed.)*, pp. 30-56. Queensland Department of Natural Resources and Mines, Brisbane.

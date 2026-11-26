@@ -1,5 +1,21 @@
 # Lufeng
 
+## Which contact does Chen and colleagues' 15.23 m mark in core WK23-1?
+
+*2026-11-26*
+
+**Conclusion.** The Yubacun–Lufeng contact, but the core dates no Lufeng stage. Chen and colleagues (2026) bound the Yubacun at the overlying Lufeng at 15.23 m and the underlying Shezi at 157.60 m and give its thickness as the difference; their "Shezi–Yubacun" for 15.23 m in the Fig. 1 caption and the Methods is a slip, since they use that name for the lower contact as well. Their figures draw the two contacts nearer 10 m and 166 m. They date no level at the contact: the dated level is the *Wudingloong* horizon at the top of the Yubacun, at about 200.17 Ma by astrochronology, which is a maximum for the Lufeng in this core, not an age. Governs nothing on [Lufeng](../../../stratigraphy/l/lufeng.yml); `stages` unchanged.
+
+**Evidence.**
+- chen2026a, pp. 2–3: "the Triassic–Jurassic transitional Yubacun Formation is stratigraphically bounded by the overlying Lufeng Formation (Lower Jurassic) at 15.23 m depth and the underlying Shezi Formation (Upper Triassic) at 157.60 m depth, yielding a total thickness of 142.37 m".
+- chen2026a, p. 7: "the dinosaur-bearing horizon occurs no shallower than the Shezi–Yubacun lithologic contact at 15.23 m within the core".
+- chen2026a, p. 5: "We place the sauropodomorph Wudingloong fossil horizon (occurring ~15.23 to 23.73 m depth in the topmost Yubacun Formation) at approximately ~200.17 Ma".
+
+**Ruled out.**
+- *The 15.23 m contact as Shezi–Yubacun.* A slip in the caption and Methods.
+
+**Open.** Unchanged from the 2026-11-22 entry.
+
 ## What do the cited works say about the age of the Lufeng Formation?
 
 *2026-11-22*
@@ -90,12 +106,12 @@
 
 ## References
 
+- `chen2026a`: Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z. (2026). Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal. *Communications Earth & Environment* 7: 91. doi:10.1038/s43247-025-03083-6
 - `bien1940a`: Bien, M. N. (1940). Discovery of Triassic saurischian and primitive mammalian remains at Lufeng, Yunnan. *Bulletin of the Geological Society of China* 20(3-4): 225-234. doi:10.1111/j.1755-6724.1940.mp203-4002.x
 - `you2014b`: You, H. L.; Azuma, Y.; Wang, T.; Wang, Y. M.; Dong, Z. M. (2014). The first well-preserved coelophysoid theropod dinosaur from Asia. *Zootaxa* 3873(3). doi:10.11646/zootaxa.3873.3.3
 - `olsen1984a`: Olsen, P. E.; Galton, P. M. (1984). A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg. *Palaeontologia Africana* 25: 87-110.
 - `sigogneau-russell1981a`: Sigogneau-Russell, D.; Sun, A. L. (1981). A brief review of Chinese synapsids. *Geobios* 14(2): 275-279. doi:10.1016/s0016-6995(81)80012-5
 - `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
-- `chen2026a`: Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z. (2026). Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal. *Communications Earth & Environment* 7: 91. doi:10.1038/s43247-025-03083-6
 - `pang2002a`: Pang, Q. Q.; Fang, X. S.; Zhang, Z. X.; Li, Y. A.; Li, P. X.; Cheng, Z. W. (2002). 滇中鱼坝村组的建立及陆相侏罗系底界 [Establishment of the Yubacun Formation in central Yunnan and the base of the continental Jurassic]. *Geological Review* 48(1): 1-8. doi:10.16509/j.georeview.2002.01.001
 - `wang2025a`: Wang, Y. M.; Zhang, Q. N.; Wang, Y. C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H. L. (2025). A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia. *Scientific Reports* 15(1). doi:10.1038/s41598-025-12185-2
 - `irmis2004a`: Irmis, R. B. (2004). First report of Megapnosaurus (Theropoda: Coelophysoidea) from China. *PaleoBios* 24(3): 11-18.
