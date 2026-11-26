@@ -1,5 +1,20 @@
 # Cerro Barcino
 
+## What ages does Nullo (1983) give the Cerro Barcino's members?
+
+*2026-11-25*
+
+**Conclusion.** Only relayed, hedged ones. Nullo (1983) reports Codignotto and colleagues' (1978) "possibly Barremian" age for the lower Puesto La Paloma Member or the upper Bardas Coloradas Member below it, and places the Cerro Castaño Member in the Lower Cretaceous "with the possibility of being Aptian" on material that Musacchio and Chebli (1975) studied. Neither is a reading of his own, and a possibility adds no stage. Governs the note on nullo1983a on [Cerro Barcino](../../../stratigraphy/c/cerro-barcino.yml); `stages` unchanged.
+
+**Evidence.**
+- nullo1983a, p. 59: "Codignotto et al. (1978), analyzing together the paleontological data presented in Chebli et al. (1976), assign a possibly Barremian age to the lower portions of the Puesto La Paloma Member or the upper portions of the Bardas Coloradas Member" (translated).
+- nullo1983a, p. 59: the levels of the Cerro Castaño Member "are placed in the Lower Cretaceous, with the possibility of being Aptian" (translated).
+
+**Ruled out.**
+- *Barremian or Aptian member ages from Nullo.* Both are relayed possibilities.
+
+**Open.** Nothing.
+
 ## What does Nullo (1983) record of the Cerro Barcino's members on the Pampa de Agnia sheet?
 
 *2026-11-23*
@@ -19,3 +34,9 @@
 ## References
 
 - `nullo1983a`: Nullo, F. E. (1983). Descripción geológica de la Hoja 45c, Pampa de Agnia, provincia del Chubut [Geological description of Sheet 45c, Pampa de Agnia, Chubut Province]. *Boletín del Servicio Geológico Nacional* 199: 1-94.
+
+## Other references
+
+- `codignotto1978a`: Codignotto, J.; Nullo, F.; Panza, J.; Proserpio, C. (1978). Estratigrafía del Grupo Chubut entre Paso de Indios y Las Plumas, Provincia del Chubut, Argentina [Stratigraphy of the Chubut Group between Paso de Indios and Las Plumas, Chubut Province, Argentina]. In *7º Congreso Geológico Argentino, Actas 1*, pp. 471-480.
+- `chebli1976a`: Chebli, G. A.; Nakayama, C.; Sciutto, J. C.; Serraiotto, A. A. (1976). Estratigrafía del Grupo Chubut en la región central de la provincia homónima [Stratigraphy of the Chubut Group in the central region of the province of the same name]. In *6º Congreso Geológico Argentino, Actas 1*, pp. 375-392.
+- `musacchio1975a`: Musacchio, E. A.; Chebli, G. (1975). Ostrácodos no marinos y carófitas del Cretácico inferior en las provincias de Chubut y Neuquén, Argentina [Non-marine ostracods and charophytes from the Lower Cretaceous of Chubut and Neuquén provinces, Argentina]. *Ameghiniana* 12(1): 70-96.

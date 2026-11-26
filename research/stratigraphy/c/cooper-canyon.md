@@ -1,5 +1,20 @@
 # Cooper Canyon
 
+## Does the lowest Cooper Canyon reach the Carnian?
+
+*2026-11-25*
+
+**Conclusion.** No. Martz and Parker (2017) place the Otischalkian, which takes in the lowermost Cooper Canyon, "during the earliest Lacian (earliest early Norian)", about 227 to 224 Ma. The Carnian appears only in Martz and colleagues' (2013) Fig. 3, which draws the Otischalkian down into the Tuvalian; the 2017 chapter, by the same lead author, narrows that, and an earlier dating the authors narrow is not a reading. [*Lepidus praecisio*](../../../genera/L/Lepidus.yml), which carries the Carnian, is recorded at group level while its formation is disputed. Governs `stages: [Norian]` on [Cooper Canyon](../../../stratigraphy/c/cooper-canyon.yml), unchanged.
+
+**Evidence.**
+- martz2017a, p. 112: "The Otischalkian estimated holochron extends from about 227 to 224 Ma (an interval of 3 million years) during the earliest Lacian (earliest early Norian)".
+- martz2013a, Fig. 3, p. 341: the Otischalkian is drawn from the Tuvalian into the earliest Lacian.
+
+**Ruled out.**
+- *Carnian, from Martz and colleagues' 2013 chart.* Narrowed by Martz and Parker (2017).
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age and name of the Cooper Canyon Formation?
 
 *2026-11-23*
@@ -22,6 +37,7 @@
 
 ## References
 
+- `martz2017a`: Martz, J. W.; Parker, W. G. (2017). Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology. In *Terrestrial Depositional Systems*, pp. 39-125. doi:10.1016/B978-0-12-803243-5.00002-9
 - `martz2013a`: Martz, J. W.; Mueller, B.; Nesbitt, S. J.; Stocker, M. R.; Parker, W. G.; Atanassov, M.; Fraser, N.; Weinbaum, J.; Lehane, J. R. (2013). A taxonomic and biostratigraphic re-evaluation of the Post Quarry vertebrate assemblage from the Cooper Canyon Formation (Dockum Group, Upper Triassic) of southern Garza County, western Texas. *Earth and Environmental Science Transactions of the Royal Society of Edinburgh* 103(3-4): 339-364. doi:10.1017/s1755691013000376
 - `cather2013a`: Cather, S. M.; Zeigler, K. E.; Mack, G. H.; Kelley, S. A. (2013). Toward standardization of Phanerozoic stratigraphic nomenclature in New Mexico. *Rocky Mountain Geology* 48(2): 101-124. doi:10.2113/gsrocky.48.2.101
 

@@ -1,5 +1,21 @@
 # Cullín Grande
 
+## Does the Cullín Grande take the Aptian?
+
+*2026-11-25*
+
+**Conclusion.** No; the Aptian is dropped. Leanza and Hugo, who erected the member, make it Early Albian, above the Late Aptian Puesto Quiroga Member, and Martinelli and colleagues (2007) follow them. The Aptian rested on Salgado and colleagues' (2004) "the Aptian-Albian Cullín Grande Member", the formation's range applied in passing with no basis of the member's own; a passing label is not a reading, and a member does not take its parent's stages. Bonaparte (1999), describing *Agustinia*, gives its horizon as the upper section of the formation, Aptian, and names no member. Governs `stages: [Albian]` on [Cullín Grande](../../../stratigraphy/c/cullín-grande.yml); [*Agustinia ligabuei*](../../../genera/A/Agustinia.yml), Albian, is unaffected.
+
+**Evidence.**
+- salgado2004a, p. 903: "both of which were recovered from the Aptian-Albian Cullín Grande Member of the Lohan Cura Formation".
+- bonaparte1999c, p. 2: "Provenance: Upper section of the Lohan Cura Formation, Aptian".
+
+**Ruled out.**
+- *Aptian from Salgado and colleagues.* A label carrying the formation's range.
+- *Aptian from Bonaparte (1999).* It dates the formation's upper section and names no member.
+
+**Open.** Nothing.
+
 ## What do Martinelli and colleagues (2007) say about the age and beds of the Cullín Grande Member?
 
 *2026-11-23*
@@ -19,6 +35,8 @@
 
 ## References
 
+- `salgado2004a`: Salgado, L.; Garrido, A.; Cocca, S. E.; Cocca, J. R. (2004). Lower Cretaceous rebbachisaurid sauropods from Cerro Aguada del León (Lohan Cura Formation), Neuquén Province, northwestern Patagonia, Argentina. *Journal of Vertebrate Paleontology* 24(4): 903-912. doi:10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2
+- `bonaparte1999c`: Bonaparte, J. F. (1999). An armoured sauropod from the Aptian of northern Patagonia, Argentina. In *Proceedings of the Second Gondwanan Dinosaur Symposium (Tomida, Y.; Rich, T. H.; Vickers-Rich, P., eds.)*, pp. 1-12.
 - `martinelli2007b`: Martinelli, A. G.; Garrido, A. C.; Forasiepi, A. M.; Paz, E. R.; Gurovich, Y. (2007). Notes on fossil remains from the Early Cretaceous Lohan Cura Formation, Neuquén Province, Argentina. *Gondwana Research* 11(4): 537-552.
 
 ## Other references

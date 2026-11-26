@@ -1,5 +1,21 @@
 # Chubut
 
+## Why does the Chubut Group not take Lesta and Ferello's Valanginian?
+
+*2026-11-25*
+
+**Conclusion.** Their Valanginian is known only through relays, its authors called it provisional, and later work modified it. Bonaparte and Gasparini (1979) report that Lesta and Ferello's (1972) scheme, "which they expressly considered provisional", placed the Sierra San Bernardo units in the Valanginian to lower Senonian, and that Chebli and colleagues (1976) "by extension modified" it; Martínez (1998) lists it among "older ages". Lesta and Ferello (1972) has not been read, a relayed statement adds nothing to the reading it relays, and the reading as relayed is provisional. Answers the 2026-11-23 entry's Open line on the Valanginian. Governs `stages` on [Chubut](../../../stratigraphy/c/chubut.yml), which start at the Hauterivian, unchanged.
+
+**Evidence.**
+- bonaparte1979c, p. 405: "The stratigraphic scheme of these authors, which they expressly considered provisional, indicates that the Cretaceous units outcropping in the region of Sierra San Bernardo occupying the Valenginian-lower Senonian interval".
+- bonaparte1979c, p. 405: "Chebli et al. (1976) interpreted the age of the Chubut Group, to the east of Paso de Indios, as spanning the Barremian-Aptian interval (in part), an interpretation that by extension modified the opinion of Lesta and Ferello (1972)."
+- martínez1998a, p. 120: "Older ages have been suggested by Lesta and Ferello (Valanginian - lower Senonian, 1972)" (translated).
+
+**Ruled out.**
+- *Valanginian from Lesta and Ferello (1972).* Relayed, provisional, and modified.
+
+**Open.** Lesta and Ferello (1972) itself, which would show the basis of the scheme.
+
 ## What does Suárez and colleagues' (2014) U–Pb dating give for the top of the Chubut Group?
 
 *2026-11-25*
@@ -40,10 +56,10 @@
 
 ## References
 
-- `suárez2014a`: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M. (2014). Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology. *Journal of South American Earth Sciences* 50: 67-74. doi:10.1016/j.jsames.2013.10.008
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `bonaparte1979c`: Bonaparte, J. F.; Gasparini, Z. (1979). Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]. *Actas del VII Congreso Geológico Argentino* 2: 393-406.
 - `martínez1998a`: Martínez, R. D. (1998). Notohypsilophodon comodorensis gen. et sp. nov. un Hypsilophodontidae (Ornitischia: Ornithopoda) del Cretácico Superior de Chubut, Patagonia central, Argentina [Notohypsilophodon comodorensis gen. et sp. nov., a Hypsilophodontidae (Ornithischia: Ornithopoda) from the Upper Cretaceous of Chubut, central Patagonia, Argentina]. *Acta Geologica Leopoldensia* 21(46/47): 119-135.
+- `suárez2014a`: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M. (2014). Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology. *Journal of South American Earth Sciences* 50: 67-74. doi:10.1016/j.jsames.2013.10.008
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `rauhut2004a`: Rauhut, O. W. M. (2004). Provenance and anatomy of Genyodectes serus, a large-toothed ceratosaur (Dinosauria: Theropoda) from Patagonia. *Journal of Vertebrate Paleontology* 24(4): 894-902. doi:10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
 
 ## Other references

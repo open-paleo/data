@@ -1,5 +1,20 @@
 # Clarens
 
+## Do Norman and colleagues (2011) misrelay Olsen and Galton (1984)?
+
+*2026-11-25*
+
+**Conclusion.** Against the text, yes; against the figure, no. Olsen and Galton (1984) date the upper Stormberg assemblage, the upper Elliot and Clarens together, "Early Jurassic (Hettangian-Pliensbachian)", and their text gives no Sinemurian range for the Stormberg. Norman and colleagues (2011) cite them for "Hettangian-Sinemurian", which matches Olsen and Galton's Fig. 2, where the upper Elliot sits level with the Hettangian and the Clarens in the lower Sinemurian; Norman and colleagues do not say which they used. Olsen and Galton's range is for the two formations together and does not date the Clarens alone. Governs nothing in `stages` on [Clarens](../../../stratigraphy/c/clarens.yml), unchanged.
+
+**Evidence.**
+- olsen1984a, p. 87: "the upper Stormberg assemblage is Early Jurassic (Hettangian-Pliensbachian) in age".
+- norman2011a, p. 189: "Clarens Formation (formerly 'Cave Sandstone', Stormberg Series): Hettangian-Sinemurian (Olsen & Galton, 1984)".
+
+**Ruled out.**
+- *Hettangian–Sinemurian as Olsen and Galton's stated range.* Their text says Hettangian–Pliensbachian.
+
+**Open.** Nothing.
+
 ## Do the upper Elliot dates and the Lesotho lavas narrow the Clarens's Sinemurian–Toarcian range?
 
 *2026-11-23*
@@ -80,9 +95,10 @@
 
 ## References
 
+- `olsen1984a`: Olsen, P. E.; Galton, P. M. (1984). A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg. *Palaeontologia Africana* 25: 87-110.
+- `norman2011a`: Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J. (2011). The Lower Jurassic ornithischian dinosaur Heterodontosaurus tucki Crompton & Charig, 1962: cranial anatomy, functional morphology, taxonomy, and relationships. *Zoological Journal of the Linnean Society*: 182-276. doi:10.1111/j.1096-3642.2011.00697.x
 - `bordy2020a`: Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N. (2020). A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa. *Earth-Science Reviews* 203: 103120. doi:10.1016/j.earscirev.2020.103120
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
-- `olsen1984a`: Olsen, P. E.; Galton, P. M. (1984). A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg. *Palaeontologia Africana* 25: 87-110.
 - `jourdan2008a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Watkeys, M. K.; Renne, P. R. (2008). The 40Ar/39Ar ages of the sill complex of the Karoo large igneous province: implications for the Pliensbachian-Toarcian climate change. *Geochemistry, Geophysics, Geosystems* 9(6): 1-20. doi:10.1029/2008GC001994
 - `bordy2018a`: Bordy, E. M.; Head, H. V. (2018). Lithostratigraphy of the Clarens Formation (Stormberg Group, Karoo Supergroup), South Africa. *South African Journal of Geology* 121(1): 119-130. doi:10.25131/sajg.121.0009
 - `smith1993a`: Smith, R. M. H.; Eriksson, P. G.; Botha, W. J. (1993). A review of the stratigraphy and sedimentary environments of the Karoo-aged basins of Southern Africa. *Journal of African Earth Sciences* 16: 143-169.

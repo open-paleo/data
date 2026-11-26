@@ -1,5 +1,21 @@
 # Candeleros
 
+## Where do Garrido's zircon dates come from?
+
+*2026-11-25*
+
+**Conclusion.** From Tunik and colleagues (2010), as a maximum age, and from an unnamed source. Garrido (2010) reports Tunik and colleagues' youngest zircons from the "Areniscas Violáceas" at 98.6 ± 2.5 Ma, a maximum depositional age, and adds a second sentence on "recent dating" of zircons above the δ1 unconformity that names no source, value or sample; he leaves open whether the Areniscas Violáceas belong to the Candeleros at all. A maximum age is a bound, not an age, and the Cenomanian rests on the stage Garrido and others state. Governs the note on garrido2010a on [Candeleros](../../../stratigraphy/c/candeleros.yml); `stages: [Cenomanian]` unchanged.
+
+**Evidence.**
+- garrido2010a, pp. 133–134: "Tunik et al. (2010) performed zircon analyses from deposits assignable to the "Violet Sandstones", obtaining an age value for the youngest zircons of 98.6 ± 2.5 Ma" (translated).
+- garrido2010a, pp. 134–135: "Recent dating carried out on zircons indicates for the deposits located above the δ1 unconformity (north of the dorsal) an age of depositional beginning situated in the basal Cenomanian" (translated).
+- garrido2010a, p. 135: "On the basis of the existing information, the Candeleros Fm. is assigned a Lower Cenomanian age" (translated).
+
+**Ruled out.**
+- *The zircon date as the Candeleros's age.* It is a maximum, for beds the paper does not firmly place in the formation.
+
+**Open.** Tunik and colleagues (2010) has not been read; it would show the sample and whether its beds are Candeleros.
+
 ## On what grounds do Calvo (1999), Hugo and Leanza (2001) and Garrido (2010) date the Candeleros?
 
 *2026-11-23*
@@ -59,8 +75,8 @@
 
 ## References
 
-- `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
+- `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
 - `calvo1999a`: Calvo, J. O. (1999). Dinosaurs and other vertebrates of the Lake Ezequiel Ramos Mexía area, Neuquén-Patagonia, Argentina. *National Science Museum Monographs* 15: 13-45.
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
 - `corbella2004a`: Corbella, H.; Novas, F. E.; Apesteguía, S.; Leanza, H. A. (2004). First fission-track age for the dinosaur-bearing Neuquén Group (Upper Cretaceous), Neuquén Basin, Argentina. *Revista del Museo Argentino de Ciencias Naturales, nueva serie* 6(2): 227-232.
@@ -74,5 +90,6 @@
 
 ## Other references
 
+- `tunik2010a`: Tunik, M.; Folguera, A.; Naipauer, M.; Pimentel, M.; Ramos, V. (2010). Early uplift and orogenic deformation in the Neuquén Basin: constraints on the Andean uplift from U–Pb and Hf isotopic data of detrital zircons. *Tectonophysics* 489(1-4): 258-273. doi:10.1016/j.tecto.2010.04.017
 - `calvo1991b`: Calvo, J. O. (1991). Huellas de dinosaurios en la Formación Río Limay (Albiano-Cenomaniano?), Picún Leufú, Provincia de Neuquén, República Argentina (Ornithischia-Saurischia: Sauropoda-Theropoda) [Dinosaur tracks in the Río Limay Formation (Albian-Cenomanian?), Picún Leufú, Neuquén Province, Argentine Republic]. *Ameghiniana* 28(3-4): 241-258.
 - `calvo1996a`: Calvo, J. O.; Salgado, L. (1996). A land bridge connection between South America and Africa during Albian-Cenomanian times based on sauropod dinosaur evidence. In *1st Annual Conference of South Atlantic Mesozoic Correlations, IGCP Project 381, XXXIX Congresso Brasileiro de Geologia*. Salvador, Brazil.
