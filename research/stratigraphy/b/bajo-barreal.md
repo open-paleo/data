@@ -1,5 +1,19 @@
 # Bajo Barreal
 
+## Does Navarrete and colleagues' Coniacian date the formation?
+
+*2026-11-27*
+
+**Conclusion.** No; the stages stand, Cenomanian and Turonian. Navarrete and colleagues (2011) say that the age range of *Drusilasaura* "podría extenderse" (could extend) to the late Turonian and even the Coniacian, by comparison with other lognkosaurs; it is a possibility about the taxon, not an age of the beds, and [methods](../../methods.md) excludes a stage named only as a possibility. Governs `stages` on [Bajo Barreal](../../../stratigraphy/b/bajo-barreal.yml), unchanged.
+
+**Evidence.**
+- navarrete2011a, p. 12: "De este modo el rango de edad de Drusilasaura deseadensis gen. et sp. nov. podría extenderse hasta el Turoniano Superior e incluso hasta el Coniaciano" ["In this way, the age range of Drusilasaura deseadensis gen. et sp. nov. could extend to the late Turonian and even to the Coniacian", translated].
+
+**Ruled out.**
+- *Coniacian.* A possibility about a taxon's range.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Bajo Barreal?
 
 *2026-11-23*
@@ -29,8 +43,8 @@
 
 ## References
 
-- `martínez2016a`: Martínez, R. D. F.; Lamanna, M. C.; Novas, F. E.; Ridgely, R. C.; Casal, G. A.; Martínez, J. E.; Vita, J. R.; Witmer, L. M. (2016). A Basal Lithostrotian Titanosaur (Dinosauria: Sauropoda) with a Complete Skull: Implications for the Evolution and Paleobiology of Titanosauria. *PLOS ONE* 11(4): e0151661. doi:10.1371/journal.pone.0151661
 - `navarrete2011a`: Navarrete, C.; Casal, G.; Martínez, R. (2011). Drusilasaura deseadensis gen. et sp. nov., un nuevo titanosaurio (Dinosauria-Sauropoda), de la Formación Bajo Barreal, Cretácico Superior del norte de Santa Cruz, Argentina [Drusilasaura deseadensis gen. et sp. nov., a New Titanosaur (Dinosauria-Sauropoda) of the Bajo Barreal Formation, Upper Cretaceous of North of Santa Cruz, Argentina]. *REVISTA BRASILEIRA DE PALEONTOLOGIA* 14(1): 1-14. doi:10.4072/rbp.2011.1.01
+- `martínez2016a`: Martínez, R. D. F.; Lamanna, M. C.; Novas, F. E.; Ridgely, R. C.; Casal, G. A.; Martínez, J. E.; Vita, J. R.; Witmer, L. M. (2016). A Basal Lithostrotian Titanosaur (Dinosauria: Sauropoda) with a Complete Skull: Implications for the Evolution and Paleobiology of Titanosauria. *PLOS ONE* 11(4): e0151661. doi:10.1371/journal.pone.0151661
 - `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `casal2007a`: Casal, G.; Martínez, R. D.; Luna, M.; Sciutto, J. C.; Lamanna, M. C. (2007). Aeolosaurus colhuehuapensis sp. nov. (Sauropoda, Titanosauria) de la Formación Bajo Barreal, Cretácico superior de Argentina. *Revista Brasileira de Paleontologia* 10(1): 53-62. doi:10.4072/rbp.2007.1.05
 

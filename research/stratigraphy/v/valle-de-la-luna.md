@@ -1,5 +1,20 @@
 # Valle de la Luna
 
+## What carries the Valle de la Luna's Carnian?
+
+*2026-11-27*
+
+**Conclusion.** Martínez and colleagues (2011), not Currie and colleagues (2009); both stages and the dispute stay. Currie and colleagues give the member "a Carnian age of deposition" by reading their dates "based on the Triassic time-scale of Gradstein et al. (1995)"; under CONTRIBUTING a stage looked up from a radiometric date on the chart of its day goes by the number, and their 217.0 ± 1.7 Ma near the top of the member is Norian on the ICS chart v2024/12 (Norian base 227.3 Ma). Their Carnian is therefore an old-chart label. Martínez and colleagues bracket the formation with their own argon dates of 231.4 and 225.9 Ma and place all its early dinosaurs, among them *Eodromaeus* from the Valle de la Luna Member about 200 m above the base, in a biozone "from 231.5 to 229 Ma in the latter half of the Carnian stage", so the lower member is Carnian on their own dates. Governs the notes on currie2009a and martínez2011a on [Valle de la Luna](../../../stratigraphy/v/valle-de-la-luna.yml); `stages` and `dispute` unchanged.
+
+**Evidence.**
+- currie2009a, p. 76: "Collectively, these ages support a Carnian age of deposition based on the Triassic time-scale of Gradstein et al. (1995) (Fig. 2)."
+- martínez2011a, p. 209: "All of the early dinosaurs from the Ischigualasto Formation thrived during what we identify here as the Scaphonyx-Exaeretodon-Herrerasaurus biozone, a narrow temporal interval from 231.5 to 229 Ma in the latter half of the Carnian stage (Fig. 4)."
+
+**Ruled out.**
+- *Carnian from Currie and colleagues.* An old-chart label on dates that are Norian today.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the definition and age of the Valle de la Luna Member?
 
 *2026-11-23*
@@ -60,8 +75,8 @@ Supersedes in part the 2026-10-21 entry, which has Ezcurra (2010) combine two of
 ## References
 
 - `currie2009a`: Currie, B. S.; Colombi, C. E.; Tabor, N. J.; Shipman, T. C.; Montañez, I. P. (2009). Stratigraphy and architecture of the Upper Triassic Ischigualasto Formation, Ischigualasto Provincial Park, San Juan, Argentina. *Journal of South American Earth Sciences* 27(1): 74-87. doi:10.1016/j.jsames.2008.10.004
-- `ezcurra2010a`: Ezcurra, M. D. (2010). A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny. *Journal of Systematic Palaeontology* 8(3): 371-425. doi:10.1080/14772019.2010.484650
 - `martínez2011a`: Martínez, R. N.; Sereno, P. C.; Alcober, O. A.; Colombi, C. E.; Renne, P. R.; Montañez, I. P.; Currie, B. S. (2011). A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea. *Science* 331(6014): 206-210. doi:10.1126/science.1198467
+- `ezcurra2010a`: Ezcurra, M. D. (2010). A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny. *Journal of Systematic Palaeontology* 8(3): 371-425. doi:10.1080/14772019.2010.484650
 - `sciscio2017a`: Sciscio, L.; de Kock, M.; Bordy, E. M.; Knoll, F. (2017). Magnetostratigraphy across the Triassic-Jurassic boundary in the main Karoo Basin. *Gondwana Research* 51: 177-192. doi:10.1016/j.gr.2017.07.009
 - `shipman2004a`: Shipman, T. C. (2004). Links between sediment accumulation rates and the development of alluvial architecture: Triassic Ischigualasto Formation, northwestern Argentina. Doctoral thesis, Department of Geosciences, University of Arizona.
 - `martínez2012b`: Martínez, R. N.; Apaldetti, C.; Alcober, O. A.; Colombi, C. E.; Sereno, P. C.; Fernandez, E.; Santi Malnis, P.; Correa, G. A.; Abelín, D. (2012). Vertebrate succession in the Ischigualasto Formation. *Journal of Vertebrate Paleontology* 32(sup1): 10-30. doi:10.1080/02724634.2013.818546

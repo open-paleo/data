@@ -1,5 +1,19 @@
 # Klettgau
 
+## Does the abstract's "Norian to Rhaetian" stand against the definition?
+
+*2026-11-27*
+
+**Conclusion.** No; the Carnian stays. Confirms the 2026-11-23 entry. The abstract of Jordan and colleagues (2016) calls the formation "Norian to Rhaetian", but the same abstract gives the Gansingen Member "Carnian bivalves", and the formal definitions give the formation "Carnian to Rhaetian" and three members Carnian; a slip that its own document contradicts is not a reading, and it would add nothing under the union rule. Governs `stages` on [Klettgau](../../../stratigraphy/k/klettgau.yml), unchanged.
+
+**Evidence.**
+- jordan2016a, p. 257, abstract: "the Late Ladinian to Early Norian Bänkerjoch Formation and the Norian to Rhaetian Klettgau Formation of northern Switzerland are formally defined"; "The Gansingen Member (formerly «Gansinger Dolomit s.l.») starts with partly porous dolomite with Carnian bivalves".
+
+**Ruled out.**
+- *Norian to Rhaetian as the formation's whole range.* Contradicted by the same paper.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Klettgau?
 
 *2026-11-23*

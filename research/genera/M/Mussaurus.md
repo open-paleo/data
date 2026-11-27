@@ -1,5 +1,17 @@
 # *Mussaurus*
 
+## Which stages does the *Mussaurus* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's epoch, with no stage. Supersedes the 2026-10-13 entry. Pol and colleagues' (2021) dates from the *Mussaurus* interval are maximum depositional ages, which add no stage (see [Laguna Colorada](../../stratigraphy/l/laguna-colorada.md)). Governs the absent `stage` on [*Mussaurus patagonicus*](../../../genera/M/Mussaurus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Laguna Colorada](../../stratigraphy/l/laguna-colorada.md) entry.
+
+**Open.** Nothing.
+
 ## What stages does *Mussaurus* take?
 
 *2026-10-13*

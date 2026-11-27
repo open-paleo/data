@@ -1,5 +1,20 @@
 # Nemegt
 
+## Is Karczewska and Ziembińska-Tworzydło's Lower Campanian a reading?
+
+*2026-11-27*
+
+**Conclusion.** No; it is a bound, and the stages stand. Confirms the 2026-11-23 entry. Karczewska and Ziembińska-Tworzydło (1983) find from the formation's charophytes that it "is not younger than the Lower Campanian", a limit rather than an age, and Van Itterbeeck and colleagues (2005) reject the estimate, since the Nemegt overlies the Baruungoyot, which radiometric dates make Campanian. Their note now says both. Governs the notes on karczewska1983a and vanitterbeeck2005b on [Nemegt](../../../stratigraphy/n/nemegt.yml); `stages` unchanged.
+
+**Evidence.**
+- karczewska1983a, p. 137: "Comparisons with the Chinese, European and American assemblages indicate that the Nemegt Formation is not younger than the Lower Campanian, thus is older than it was supposed before."
+- vanitterbeeck2005b, p. 714: "Since the Nemegt Formation overlies the Barun Goyot (Gradzinski et al., 1977, fig. 12), it must be younger; accordingly, we regard the age estimation for the Nemegt Formation as proposed by Karczewska".
+
+**Ruled out.**
+- *A pre-Campanian Nemegt.* A bound, rejected by later work.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Nemegt?
 
 *2026-11-23*
@@ -23,9 +38,9 @@
 
 ## References
 
-- `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `karczewska1983a`: Karczewska, J.; Ziembinska-Tworzydlo, M. (1983). Age of the Upper Cretaceous Nemegt Formation (Mongolia) on charophytan evidence. *Acta Palaeontologica Polonica* 28(1-2): 137-146.
 - `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
+- `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 
 ## Other references
 

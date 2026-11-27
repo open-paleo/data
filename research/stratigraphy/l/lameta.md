@@ -1,5 +1,22 @@
 # Lameta
 
+## On what ground do Chatterjee's Santonian and Huene and Matley's stages stay out?
+
+*2026-11-27*
+
+**Conclusion.** On the rules; the Maastrichtian stands. Confirms the 2026-11-23 entry's rulings and restates one ground. Chatterjee's (1978) "The lower limit may extend down to Santonian" names a stage only as a possible extension of his bound, which [methods](../../methods.md) now excludes for stages as for epochs. Huene and Matley (1933) date Pisdura by correlation with the Madagascan beds that Depéret and Lemoine dated, the age of a correlative unit, and take Bara Simla to be "a little older", supported by an "age not high in the Upper Cretaceous" from its fauna's grade, a bound; their Turonian and lowest Senonian rest on these, not on the later work that the 2026-11-23 entry cites against them. Governs `stages` on [Lameta](../../../stratigraphy/l/lameta.yml), unchanged.
+
+**Evidence.**
+- chatterjee1978a, p. 571: "The lower limit may extend down to Santonian as the megalosaur is highly advanced and the tyrannosaur is highly primitive."
+- huene1933a, p. 71: "From the presence of the last-mentioned species and genus, the fauna of Pisdura is inferred to be contemporaneous with the fauna described from Madagascar by Depéret."
+- huene1933a, p. 71: "For the present, therefore, we may take the fossiliferous beds at Jubbulpore to be Turonian and the Pisdura beds to be lowest Senonian."
+
+**Ruled out.**
+- *Santonian from Chatterjee.* A possibility beyond his bound.
+- *Turonian and lowest Senonian from Huene and Matley.* The age of a correlative unit, and a bound.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Lameta?
 
 *2026-11-23*
@@ -62,10 +79,10 @@ Supersedes the Maastrichtian the Sauropod Bed carried until 2026-10-06.
 
 ## References
 
-- `jain1997a`: Jain, S. L.; Bandyopadhyay, S. (1997). New titanosaurid (Dinosauria: Sauropoda) from the Late Cretaceous of central India. *Journal of Vertebrate Paleontology* 17(1): 114-136. doi:10.1080/02724634.1997.10010958
-- `wilson2003a`: Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A. (2003). A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India. *Contributions from the Museum of Paleontology, University of Michigan* 31(1): 1-42.
 - `chatterjee1978a`: Chatterjee, S. (1978). Indosuchus and Indosaurus, Cretaceous carnosaurs from India. *Journal of Paleontology* 52(3): 570-580.
 - `huene1933a`: Huene, F. V.; Matley, C. A. (1933). The Cretaceous Saurischia and Ornithischia of the Central Provinces of India. *Palaeontologica Indica (New Series), Memoirs of the Geological Survey of India* 21(1): 1-74.
+- `jain1997a`: Jain, S. L.; Bandyopadhyay, S. (1997). New titanosaurid (Dinosauria: Sauropoda) from the Late Cretaceous of central India. *Journal of Vertebrate Paleontology* 17(1): 114-136. doi:10.1080/02724634.1997.10010958
+- `wilson2003a`: Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A. (2003). A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India. *Contributions from the Museum of Paleontology, University of Michigan* 31(1): 1-42.
 - `carrano2008a`: Carrano, M. T.; Sampson, S. D. (2008). The Phylogeny of Ceratosauria (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 6(2): 183-236. doi:10.1017/S1477201907002246
 - `matley1921a`: Matley, C. A. (1921). On the stratigraphy, fossils and geological relationships of the Lameta beds of Jubbulpore. *Records of the Geological Survey of India* 53(2): 142-164.
 - `chure2000a`: Chure, D. J. (2000). A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae. Doctoral thesis, Columbia University.

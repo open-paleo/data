@@ -1,5 +1,19 @@
 # La Quinta
 
+## Does Langer and colleagues' Late Triassic start add the Late Triassic?
+
+*2026-11-27*
+
+**Conclusion.** No; it stays out of `period`. Confirms the 2026-11-23 entry. Langer and colleagues (2014) write that "the radioisotopic dates and scant fossil evidence suggest" deposition began in the Late Triassic, in their own voice, but the dates and fossils are ones they relay from earlier work, among them a U–Pb date of 229 ± 15 Ma from the basal tuff in the Mérida Andes; a relayed date adds nothing until its original is read. Their own date, 200.72 Ma from the fossil bed, is a maximum depositional age. Governs `period` on [La Quinta](../../../stratigraphy/l/la-quinta.yml), unchanged.
+
+**Evidence.**
+- langer2014a, p. 3: "Together, the radioisotopic dates and scant fossil evidence suggest that the deposition of the La Quinta Formation started in the Late Triassic."
+
+**Ruled out.**
+- *Late Triassic.* Relayed dates and fossils.
+
+**Open.** The original of the 229 ± 15 Ma date has not been read.
+
 ## Do the earlier readings that Langer and colleagues (2014) review widen the age of the La Quinta?
 
 *2026-11-23*

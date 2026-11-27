@@ -1,5 +1,20 @@
 # La Bocana Roja
 
+## Where does Molnar's late Campanian ceiling come from?
+
+*2026-11-27*
+
+**Conclusion.** From a potassium-argon date in the overlying El Gallo, not from Kilmer; confirms the corrected reading of the 2026-11-23 entry. Molnar (1974) presumes the formation "late Campanian or earlier" from a 73 ± 2 Ma date in the middle third of the El Gallo, given as a personal communication and read as late Campanian on the time scale of Kulp (1961); a date from an overlying unit is a limit, and a personal communication is not a published determination. Kilmer (1963) is credited only with the unit names and the description of the rocks. Governs the notes on molnar1974a and kilmer1963a on [La Bocana Roja](../../../stratigraphy/l/la-bocana-roja.yml); `stages` and `dispute` unchanged.
+
+**Evidence.**
+- molnar1974a, pp. 1009–1010: "a potassium-argon date of 73 ± 2 million years has been obtained from the middle third of the … "El Gallo" (Morris, pers. comm., 1972)".
+- molnar1974a, p. 1010: "The "La Bocana Roja" may thus be presumed late Campanian or earlier in age."
+
+**Ruled out.**
+- *A ceiling from Kilmer's correlation.* Molnar credits Kilmer with no age.
+
+**Open.** Nothing.
+
 ## What do the cited works rest their ages for the La Bocana Roja Formation on?
 
 *2026-11-23*
@@ -38,9 +53,10 @@
 ## References
 
 - `molnar1974a`: Molnar, R. E. (1974). A distinctive theropod dinosaur from the Upper Cretaceous of Baja California (Mexico). *Journal of Paleontology* 48(5): 1009-1017.
+- `kilmer1963a`: Kilmer, F. H. (1963). Cretaceous and Cenozoic stratigraphy and paleontology, El Rosario area, Baja California. Doctoral thesis, University of California, Berkeley.
 - `kane2022a`: Kane, I. A.; Hodgson, D. M.; Hubbard, S. M.; McArthur, A. D.; Poyatos-Moré, M.; Soutter, E. L.; Flint, S. S.; Matthews, W. (2022). Deep-water tectono-stratigraphy at a plate boundary constrained by large n-detrital zircon and micropaleontological approaches: Peninsular Ranges forearc, Baja California, Mexico. *The Sedimentary Record* 20(1). doi:10.2110/001c.37652
 - `rivera-sylva2024a`: Rivera-Sylva, H. E.; Longrich, N. R. (2024). A new tyrant dinosaur from the Late Campanian of Mexico reveals a tribe of southern tyrannosaurs. *Fossil Studies* 2(4): 245-272. doi:10.3390/fossils2040012
 
 ## Other references
 
-- `kilmer1963a`: Kilmer, F. H. (1963). Cretaceous and Cenozoic stratigraphy and paleontology, El Rosario area, Baja California. Doctoral thesis, University of California, Berkeley.
+- `kulp1961a`: Kulp, J. L. (1961). Geologic time scale. *Science* 133: 1105-1114.

@@ -1,5 +1,19 @@
 # Tendaguru
 
+## Does Bussert and colleagues' "possibly Aptian" add the Aptian?
+
+*2026-11-27*
+
+**Conclusion.** No; the stages stand, Oxfordian to Hauterivian. Bussert and colleagues (2009) commit to a range ending in the Hauterivian and name the Aptian only as a possible extension, which [methods](../../methods.md) excludes for stages as for epochs. Governs `stages` on [Tendaguru](../../../stratigraphy/t/tendaguru.yml), unchanged.
+
+**Evidence.**
+- bussert2009a, p. 170: "The age of the Tendaguru Formation ranges at least from the middle Oxfordian to the Hauterivian or possibly Aptian".
+
+**Ruled out.**
+- *Aptian.* A possibility beyond the committed range.
+
+**Open.** Nothing.
+
 ## Which parts of the Tendaguru Formation carry its Oxfordian and its Early Cretaceous stages?
 
 *2026-11-23*

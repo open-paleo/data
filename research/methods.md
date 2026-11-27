@@ -79,6 +79,26 @@
 
 **Exceptions.** None.
 
+## A stage the authors query counts; a stage they only allow does not
+
+*2026-11-27*
+
+**Rule.** The epoch rule above applies to stages too, with one distinction. A query on a stage inside the range the authors commit to is part of their dating and counts: "Carnian to Rhaetian (?)", "(Tithonian?) Berriasian to Valanginian", "?Lower Santonian". A stage named only as a possibility beyond that range is not a reading and adds nothing: "may extend down to Santonian", "to the Hauterivian or possibly Aptian", "could be as old as the Rhaetian", "cannot be excluded". Decides `stages` and `stage`.
+
+**Why.** The epoch rule counts a hedge as no reading, but the [Gruhalde](stratigraphy/g/gruhalde.md) showed that a queried stage in a considered dating is the authors' reading, and [Nyker](stratigraphy/n/nyker.md) keeps its Tithonian on the same ground. The [Lameta](stratigraphy/l/lameta.md)'s Santonian and the [Tendaguru](stratigraphy/t/tendaguru.md)'s Aptian are the other kind: Chatterjee (1978) and Bussert and colleagues (2009) name each as a possible extension of the range they commit to.
+
+**Exceptions.** None.
+
+## The defining authors' own stratigraphic table is a reading
+
+*2026-11-27*
+
+**Rule.** A stage that the defining or describing authors assign a unit in their own stratigraphic table or chart counts as their reading when nothing they write contradicts it. A table or figure that compiles or relays other works' ages is a label and adds nothing. Decides `stages`.
+
+**Why.** Leanza and Hugo (1997) give the [Cullín Grande](stratigraphy/c/cullín-grande.md) Member no stage in their text but set it in the Albian in their own table; that is their placement. The [Walloon Coal Measures](stratigraphy/w/walloon-coal-measures.md) Aalenian, from a compiled table, and the [Wangjiashan](stratigraphy/w/wangjiashan.md) stages, from a figure whose text credits earlier works, are labels.
+
+**Exceptions.** None.
+
 ## A reported spread is other authors' readings, and a bound licenses nothing
 
 *2026-09-30*

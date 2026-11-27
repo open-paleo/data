@@ -1,5 +1,20 @@
 # Los Colorados
 
+## On what ground does the Los Colorados's Rhaetian stay out?
+
+*2026-11-27*
+
+**Conclusion.** On the rules, not on the magnetostratigraphy; the Norian stands. Restates the ground of the 2026-11-23 entry, which ruled the Rhaetian out because the magnetostratigraphy contradicts it, a ground the union rule does not give. Heckert and Lucas (2000) list the formation's theropods among "Rhaetian and probable Rhaetian" ones with no basis given for the formation's age, a passing label in a compilation. Olsen and colleagues (2010) give the formation as "likely at least in part Rhaetian" by correlation through the Fleming Fjord Formation, the age of correlative units, and say that "these correlations require more rigorous independent confirmation"; the magnetostratigraphy of the formation itself, reported by Langer and colleagues (2018), puts its upper strata at about 213 to 216 Ma, Norian. Governs the notes on heckert2000a and olsen2010a on [Los Colorados](../../../stratigraphy/l/los-colorados.yml); `stages` unchanged.
+
+**Evidence.**
+- heckert2000a, p. 70: "Rhaetian and probable Rhaetian theropods include … poorly known theropods from the Los Colorados Formation in Argentina."
+- olsen2010a, p. 222: "The Los Colorados Formation is likely at least in part Rhaetian, as is the upper Petrified Forest and Owl Rock members, although again these correlations require more rigorous independent confirmation."
+
+**Ruled out.**
+- *Rhaetian.* A compilation label, and the age of correlative units.
+
+**Open.** Nothing.
+
 ## Do the Rhaetian of Heckert and Lucas (2000) or the Early Jurassic affinities found by Shubin and Sues (1991) extend the Los Colorados beyond the Norian?
 
 *2026-11-23*
@@ -44,6 +59,7 @@
 ## References
 
 - `heckert2000a`: Heckert, A. B.; Lucas, S. G. (2000). Global correlation of the Triassic theropod record. *Gaia* 15: 63-74.
+- `olsen2010a`: Olsen, P. E.; Kent, D. V.; Whiteside, J. H. (2010). Implications of the Newark Supergroup-based astrochronology and geomagnetic polarity time scale (Newark-APTS) for the tempo and mode of the early diversification of the Dinosauria. *Earth and Environmental Science Transactions of the Royal Society of Edinburgh* 101: 201-229. doi:10.1017/s1755691011020032
 - `arcucci2003a`: Arcucci, A. B.; Coria, R. A. (2003). A new Triassic carnivorous dinosaur from Argentina. *Ameghiniana* 40(2): 217-228.
 - `shubin1991a`: Shubin, N. H.; Sues, H. D. (1991). Biogeography of early Mesozoic continental tetrapods: Patterns and implications. *Paleobiology* 17(3): 214-230.
 - `langer2018a`: Langer, M. C.; Ramezani, J.; Da Rosa, Á. A. S. (2018). U-Pb age constraints on dinosaur rise from south Brazil. *Gondwana Research* 57: 133-140. doi:10.1016/j.gr.2018.01.005

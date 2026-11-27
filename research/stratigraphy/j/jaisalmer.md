@@ -1,5 +1,19 @@
 # Jaisalmer
 
+## Is the Hamira's "Early Jurassic to Bajocian" an age?
+
+*2026-11-27*
+
+**Conclusion.** No; it is a bound, and the stages stand, Bajocian to Oxfordian. Confirms the 2026-11-23 entry. Pandey and colleagues (2012) record no index fossils from the Hamira Member and assign it to "the interval from Early Jurassic to Bajocian" from the fossils of the Joyan Member above, a ceiling from position; the same span fills the Hamira's shared cell in their tables. Governs `stages` and `period` on [Jaisalmer](../../../stratigraphy/j/jaisalmer.yml), unchanged.
+
+**Evidence.**
+- pandey2012a, p. 69: "Hitherto, no index fossils has been recorded from this member, however, on the basis of fossil records in the overlying Joyan Member, the Hamira Member can be safely assigned to the interval from Early Jurassic to Bajocian (Table 4)."
+
+**Ruled out.**
+- *Early Jurassic and Aalenian.* An outer bound from the member above.
+
+**Open.** Nothing.
+
 ## What ages do Pandey and colleagues (2012) give the members of the Jaisalmer Formation?
 
 *2026-11-23*

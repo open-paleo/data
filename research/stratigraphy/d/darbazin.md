@@ -1,5 +1,19 @@
 # Darbazin
 
+## Do Minakova's and Rozhdestvensky's ages belong in the Darbazin's dispute?
+
+*2026-11-27*
+
+**Conclusion.** No; both stay out, and the dispute is unchanged. Minakova's (1941) Cenomanian–Turonian is one of the earlier readings that the Stratigraphic Dictionary lists, not read at its source, as the 2026-11-25 entry rules. Rozhdestvensky (1964) dates the lower Darbaza beds at Syuk-Syuk "no later than the Upper Turonian", from Upper Turonian marine shells in the sandstones above, and credits the assignment to Belen'kii (1961); "no later than" is a bound, not an age. Governs the `dispute` on [Darbazin](../../../stratigraphy/d/darbazin.yml), unchanged.
+
+**Evidence.**
+- rozhdestvensky1964a, p. ?, an English translation without page numbers: the band "has been assigned, according to G. A. Belen’kii (1961), to the lower part of the Darbaza Suite and dates from no later than the Upper Turonian, since the overlying gray sandstones that crown the section at the Syuk-Syuk wells also contain the shells of marine pelecypods and gastropods of the Upper Turonian".
+
+**Ruled out.**
+- *Turonian from Rozhdestvensky.* A bound.
+
+**Open.** Nothing.
+
 ## Is Nessov's (1997) Santonian for Darbaza his own?
 
 *2026-11-27*
@@ -54,6 +68,7 @@
 
 ## References
 
+- `rozhdestvensky1964a`: Rozhdestvensky, A. K. (1964). [New data on occurrences of dinosaurs in Kazakhstan and Central Asia]. *Tashkentskii Gosudarstvennyi Universitet, Nauchnye Trudy: Geologiya [Tashkent State University, Scientific Publications: Geology]*: 227-241.
 - `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
@@ -61,7 +76,6 @@
 
 ## Other references
 
-- `rozhdestvensky1964a`: Rozhdestvensky, A. K. (1964). [New data on occurrences of dinosaurs in Kazakhstan and Central Asia]. *Tashkentskii Gosudarstvennyi Universitet, Nauchnye Trudy: Geologiya [Tashkent State University, Scientific Publications: Geology]*: 227-241.
 - `rozhdestvensky1964b`: Rozhdestvensky, A. K. (1964). [Faunas of terrestrial vertebrates of the Mesozoic and Cenozoic of Middle Asia and adjacent regions of Kazakhstan and their stratigraphic position] (in Russian). In *Tyezisy X syessii Vsyesoyznogo palyeontologichyeskogo obshchyestva, Lyeningrad*, pp. 35-37.
 - `rozhdestvensky1965b`: Rozhdestvensky, A. K.; Khozatsky, L. I. (1965). [Terrestrial vertebrates of the Late Mesozoic of Soviet Asia]. In *Tyezisy dokladov k myezhvyedomstvyennomu sovyeshchaniyu po kontinyental'nym otlozhyeniyam myezozoya i kainozoya Sovyetskoi Azii i ikh biostratigrafii, Lyeningrad*, pp. 12-15.
 - `belenky1965a`: Belenky, G. A.; Mirkamalova, S. K. (1965). [Paleogeography of the Cretaceous and Paleogene of the Tashkent depression]. Nauka, Leningrad.

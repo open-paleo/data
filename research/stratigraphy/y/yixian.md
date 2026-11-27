@@ -1,5 +1,19 @@
 # Yixian
 
+## Does the uncertainty of Zhong and colleagues' onset age add the Hauterivian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation stays Barremian. CONTRIBUTING places a date by its central value and has the note say when its error range reaches into the next stage. Zhong and colleagues' (2021) onset of 125.755 ± 0.061 Ma is Barremian at its central value on the ICS chart v2024/12, whose Barremian begins at 125.77 Ma; its uncertainty reaches 0.046 Myr into the latest Hauterivian, which the note on zhong2021a now says. Governs that note on [Yixian](../../../stratigraphy/y/yixian.yml); `stages` unchanged.
+
+**Evidence.**
+- zhong2021a, p. ?, first page, which prints no page number: "Our new ages collectively provide very tight constraints on the onset at 125.755 ± 0.061 Ma (CY17–9) and termination at 124.122 ± 0.048 Ma (CY18–20) of the Yixian Formation".
+
+**Ruled out.**
+- *Hauterivian.* Reached only by the error range.
+
+**Open.** Nothing.
+
 ## Does any record take an Albian from Sereno's (2010) Lujiatun line?
 
 *2026-11-26*
@@ -110,9 +124,9 @@
 
 ## References
 
+- `zhong2021a`: Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G. (2021). High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation. *National Science Review* 8(6): nwab063. doi:10.1093/nsr/nwab063
 - `zhou2006b`: Zhou, C. F.; Gao, K. Q.; Fox, R. C.; Chen, S. H. (2006). A new species of Psittacosaurus (Dinosauria: Ceratopsia) from the Early Cretaceous Yixian Formation of Liaoning, China. *Palaeoworld* 15(1): 100-114. doi:10.1016/j.palwor.2005.11.001
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
-- `zhong2021a`: Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G. (2021). High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation. *National Science Review* 8(6): nwab063. doi:10.1093/nsr/nwab063
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `jiang2006a`: Jiang, B.; Sha, J. (2006). Late Mesozoic stratigraphy in western Liaoning, China: a review. *Journal of Asian Earth Sciences* 28: 205-217.
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.

@@ -1,5 +1,19 @@
 # Hayang
 
+## Does the Hayang keep the Albian?
+
+*2026-11-27*
+
+**Conclusion.** Held until Choi (1985) is read. The Albian rests on two kinds of evidence, neither yet a reading. Lee and colleagues (2010) make the group "equal to or younger than late Albian" from the maximum depositional age of the Sindong Group below, a limit; and the Aptian–Albian that they and Choi and Kwon (2019) relay comes from the palynology of Choi (1985), with Seo (1985), a thesis, and charophyte work. Lee and colleagues set that palynological age aside for "Cenomanian to early Campanian", and Jwa and colleagues (2009) date the Gusandong Tuff in the upper group to the middle Cenomanian from its magmatic zircons. The Albian of the [Hupyeongdong](../h/hupyeongdong.md) and its [Gugyedong](../g/gugyedong.md) Member rests on their position below the Sagok, whose 100–97 Ma is a bracket between a maximum depositional age and the tuff above. Dropping the Albian now would take it from all three units and from [*Ultrasaurus tabriensis*](../../../genera/U/Ultrasaurus.yml), which a reading of Choi (1985) could restore. Governs nothing yet; `stages` on [Hayang](../../../stratigraphy/h/hayang.yml) unchanged.
+
+**Evidence.**
+- lee2010b, p. 653: "Based on palynological data (Choi 1985; Seo 1985; Choi 1987, 1989; Choi & Park 1987), the Hayang Group was interpreted to have been deposited during the Aptian and Albian."
+- jwa2009a, p. 265: "The zircon U−Pb ages of the Kusandong Tuff are 97.1 ± 2.0 Ma and 97.3 ± 1.8 Ma, indicating that the tuffaceous bed formed during the middle Cenomanian."
+
+**Ruled out.** Nothing.
+
+**Open.** Choi (1985) has not been read.
+
 ## What do Lee and colleagues (2010) and Choi and Kwon (2019) say about the age of the Hayang Group?
 
 *2026-11-23*
@@ -23,9 +37,11 @@
 ## References
 
 - `lee2010b`: Lee, Y. I.; Choi, T.; Lim, H. S.; Orihashi, Y. (2010). Detrital zircon geochronology of the Cretaceous Sindong Group, Southeast Korea: implications for depositional age and Early Cretaceous igneous activity. *Island Arc* 19(4): 647-658. doi:10.1111/j.1440-1738.2010.00717.x
+- `jwa2009a`: Jwa, Y. J.; Lee, Y. I.; Orihashi, Y. (2009). Eruption age of the Kusandong Tuff in the Cretaceous Gyeongsang Basin, Korea. *Geosciences Journal* 13(3): 265-273. doi:10.1007/s12303-009-0026-0
 - `choi2019a`: Choi, T.; Kwon, M. G. (2019). 쇄설성 저어콘 U-Pb 연대 측정을 이용한 백악기 의성소분지 사암의 퇴적시기와 기원지 [Depositional age and provenance of the sandstones in the Cretaceous Euiseong subbasin inferred by detrital zircon U-Pb age dating]. *Journal of the Geological Society of Korea* 55(5): 551-581. doi:10.14770/jgsk.2019.55.5.551
 
 ## Other references
 
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `lee2020a`: Lee, T. H.; Park, K. H. (2020). Detrital zircon U-Pb geochronology and Hf isotope geochemistry of the Hayang Group, SE Korea and the Himenoura and Goshoura Groups, SW Japan: Signs of subduction-related magmatism after a long resting period. *Minerals* 10(11): 936. doi:10.3390/min10110936
+- `choi1985a`: Choi, D. K. (1985). Spores and pollen from the Gyeongsang Supergroup, southeastern Korea and their chronologic and paleoecologic implications. *Journal of the Paleontological Society of Korea* 1: 33-50.
