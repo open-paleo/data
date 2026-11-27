@@ -1,5 +1,21 @@
 # Tecovas
 
+## Do Cornet (1993) and Chatterjee (1986) give the Tecovas the Carnian?
+
+*2026-11-26*
+
+**Conclusion.** Yes, and as stated stages, so the Carnian does not depend on the older calibration of the Carnian–Norian boundary. Answers the 2026-11-23 entry's Open line. Chatterjee (1986), now read, puts the Tecovas in the *Parasuchus* zone by its vertebrates, and *Parasuchus* is "restricted to the Carnian"; Cornet (1993) recognizes two Carnian pollen zones in the Dockum Group, the older with taxa of a possible middle Carnian correlation in its basal samples, which his Fig. 5 places in the Tecovas. A stated stage is carried over; only a bare number is re-placed on the current chart. The Norian of Martz and colleagues (2013) and the `dispute` stand. Governs the Carnian in `stages` and the notes on chatterjee1986a and cornet1993a on [Tecovas](../../../stratigraphy/t/tecovas.yml); `stages` unchanged.
+
+**Evidence.**
+- chatterjee1986a, pp. 143–144: "Parasuchus is restricted to the Carnian".
+- chatterjee1986a, p. 145: "The Parasuchus zone corresponds to the lower Dockum (Tecovas Member), and the Nicrosaurus zone to the upper Dockum (Cooper Member)."
+- cornet1993a, p. 75: "Three zones ranging in age from middle Carnian to early Norian are recognized in the Chinle Formation, but only the older two zones are recognized in the Dockum Group."
+
+**Ruled out.**
+- *A Carnian that rests on the pre-2010 calibration.* Both authors name the stage; neither places a number on a chart.
+
+**Open.** Unchanged: a radioisotopic date from the Tecovas itself.
+
 ## What age and extent do the cited works give the Tecovas Formation?
 
 *2026-11-23*
@@ -24,6 +40,8 @@
 
 ## References
 
+- `chatterjee1986a`: Chatterjee, S. (1986). The Late Triassic Dockum vertebrates: their stratigraphic and paleobiogeographic significance. In *The Beginning of the Age of Dinosaurs: Faunal Change across the Triassic–Jurassic Boundary (Padian, K., ed.)*, pp. 139-150. Cambridge University Press, Cambridge.
+- `cornet1993a`: Cornet, B. (1993). Applications and limitations of palynology in age, climate, and paleoenvironmental analysis of Triassic sequences in North America.
 - `chatterjee1985a`: Chatterjee, S. (1985). Postosuchus, a new thecodontian reptile from the Triassic of Texas and the origin of tyrannosaurs. *Philosophical Transactions of the Royal Society of London B* 309(1139): 395-460. doi:10.1098/rstb.1985.0092
 - `lehman2005a`: Lehman, T.; Chatterjee, S. (2005). Depositional setting and vertebrate biostratigraphy of the Triassic Dockum Group of Texas. *Journal of Earth System Science* 114(3): 325-351.
 - `martz2013a`: Martz, J. W.; Mueller, B.; Nesbitt, S. J.; Stocker, M. R.; Parker, W. G.; Atanassov, M.; Fraser, N.; Weinbaum, J.; Lehane, J. R. (2013). A taxonomic and biostratigraphic re-evaluation of the Post Quarry vertebrate assemblage from the Cooper Canyon Formation (Dockum Group, Upper Triassic) of southern Garza County, western Texas. *Earth and Environmental Science Transactions of the Royal Society of Edinburgh* 103(3-4): 339-364. doi:10.1017/s1755691013000376
@@ -31,5 +49,3 @@
 ## Other references
 
 - `gould1907a`: Gould, C. N. (1907). The geology and water resources of the western portion of the Panhandle of Texas.
-- `chatterjee1986a`: Chatterjee, S. (1986). The Late Triassic Dockum vertebrates: their stratigraphic and paleobiogeographic significance. In *The Beginning of the Age of Dinosaurs: Faunal Change across the Triassic–Jurassic Boundary (Padian, K., ed.)*, pp. 139-150. Cambridge University Press, Cambridge.
-- `cornet1993a`: Cornet, B. (1993). Applications and limitations of palynology in age, climate, and paleoenvironmental analysis of Triassic sequences in North America.

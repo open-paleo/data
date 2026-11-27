@@ -1,5 +1,19 @@
 # Arlington
 
+## Who named the Arlington, and in which unit?
+
+*2026-11-26*
+
+**Conclusion.** Dodge (1969), as a member of the Woodbine Formation. He proposes that the uppermost fossiliferous sandstone of Hill's (1901) Lewisville Beds be the Arlington Member, above his restricted Lewisville Member, into which it grades downward, with a type section in a roadcut in the 2000 block of West Park Row Street, Arlington. He gives it no stage. The record keeps `parent: Lewisville`, after Denne and colleagues (2016), who place the member "at the top of the Lewisville"; Dodge's scheme is recorded in the note. Governs the pointers to dodge1969a and hill1901a on [Arlington](../../../stratigraphy/a/arlington.yml); `parent` and `stages` unchanged.
+
+**Evidence.**
+- dodge1969a, p. 54: "It is also proposed here that the uppermost fossiliferous sandstone unit of Hill’s (1901) Lewisville Beds be designated the “Arlington Member” of the Woodbine Formation."
+- dodge1969a, p. 57: "The Lewisville Member is gradational upward into the Arlington Member."
+
+**Ruled out.** Nothing.
+
+**Open.** Whether the parent should follow Dodge's Woodbine Formation or Denne and colleagues' Lewisville; it changes no stage.
+
 ## What do the cited works say about the age of the Arlington?
 
 *2026-11-23*
@@ -18,5 +32,7 @@
 
 ## References
 
+- `dodge1969a`: Dodge, C. F. (1969). Stratigraphic nomenclature of the Woodbine Formation, Tarrant County, Texas. *The Texas Journal of Science* 21(1): 43-62.
+- `hill1901a`: Hill, R. T. (1901). Geography and geology of the Black and Grand Prairies, Texas. *U.S. Geological Survey, 21st Annual Report, 1899–1900*: 666 pp..
 - `head1998a`: Head, J. J. (1998). A new species of basal hadrosaurid (Dinosauria, Ornithischia) from the Cenomanian of Texas. *Journal of Vertebrate Paleontology* 18(4): 718-738. doi:10.1080/02724634.1998.10011101
 - `denne2016a`: Denne, R. A.; Breyer, J. A.; Callender, A. D.; Hinote, R. E.; Kariminia, M.; Kosanke, T. H.; Kita, Z.; Lees, J. A.; Rowe, H.; Spaw, J. M.; Tur, N. (2016). Biostratigraphic and geochemical constraints on the stratigraphy and depositional environments of the Eagle Ford and Woodbine Groups of Texas. In *The Eagle Ford Shale: A Renaissance in U.S. Oil Production (Breyer, J. A., ed.)*, pp. 1-86. doi:10.1306/13541957m1103660

@@ -1,5 +1,20 @@
 # Shawan
 
+## Does Luo and Wu (1994) date the Shawan beds Hettangian?
+
+*2026-11-26*
+
+**Conclusion.** Yes; the Hettangian stays. Answers the 2026-11-26 entry's Open line. Luo and Wu (1994) date the faunal assemblage of the Dull Purplish Beds of the Lufeng Basin itself, by their own correlation of its tritylodont *Bienotherium* and sphenodontian *Clevosaurus*, as "Early Jurassic in age, probably Hettangian", a reading in their own voice with a hedge of confidence. Sun and Cui (1986) and Sun and colleagues (1985) give only the formation's Early Jurassic. The Hettangian reaches the type area directly, not only by correlation with the Kunming Basin core, so [*Jingshanosaurus xinwaensis*](../../../genera/J/Jingshanosaurus.yml) and [*Xingxiulong chengi*](../../../genera/X/Xingxiulong.yml) keep it. Young (1951) and Luo and Wu (1995) are no longer needed for the stage. Governs the Hettangian in `stages` and the pointers to luo1994a, sun1985a and sun1986a on [Shawan](../../../stratigraphy/s/shawan.yml); `stages` unchanged.
+
+**Evidence.**
+- luo1994a, p. 268: "We suggest that the Bienotherium-saurischian faunal assemblage in the Dull Purplish Beds of the Lower Lufeng Formation is also Early Jurassic in age, probably Hettangian."
+- sun1986a, p. 278: "Because there are no radiometric records of these sediments, the dating relies upon paleontological evidence."
+
+**Ruled out.**
+- *Dropping the Hettangian for want of a type-area reading.* Luo and Wu (1994) give one.
+
+**Open.** Nothing.
+
 ## Does any work read date the Shawan Member to the Hettangian?
 
 *2026-11-26*
@@ -38,6 +53,9 @@
 
 ## References
 
+- `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press, Cambridge.
+- `sun1985a`: Sun, A. L.; Cui, G. H.; Li, Y. H.; Wu, X. C. (1985). [A verified list of the Lufeng saurischian fauna]. *Vertebrata PalAsiatica* 23(1): 1-12.
+- `sun1986a`: Sun, A. L.; Cui, K. H. (1986). A brief introduction to the Lower Lufeng saurischian fauna (Lower Jurassic: Lufeng, Yunnan, People's Republic of China). In *The Beginning of the Age of Dinosaurs: Faunal Change Across the Triassic-Jurassic Boundary (Padian, K., ed.)*, pp. 275-278. Cambridge University Press.
 - `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
 - `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
 - `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.
@@ -47,8 +65,5 @@
 
 - `chen2026a`: Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z. (2026). Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal. *Communications Earth & Environment* 7: 91. doi:10.1038/s43247-025-03083-6
 - `young1951a`: Young, C. C. (1951). The Lufeng saurischian fauna in China. *Palaeontologia Sinica, New Series C* 13: 1-96.
-- `sun1985a`: Sun, A. L.; Cui, G. H.; Li, Y. H.; Wu, X. C. (1985). [A verified list of the Lufeng saurischian fauna]. *Vertebrata PalAsiatica* 23(1): 1-12.
-- `sun1986a`: Sun, A. L.; Cui, K. H. (1986). A brief introduction to the Lower Lufeng saurischian fauna (Lower Jurassic: Lufeng, Yunnan, People's Republic of China). In *The Beginning of the Age of Dinosaurs: Faunal Change Across the Triassic-Jurassic Boundary (Padian, K., ed.)*, pp. 275-278. Cambridge University Press.
-- `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press, Cambridge.
 - `luo1995a`: Luo, Z. X.; Wu, X. C. (1995). Correlation of vertebrate assemblage of the Lower Lufeng Formation, Yunnan, China. In *Sixth Symposium on Mesozoic Terrestrial Ecosystems and Biota, Short Papers (Sun, A.; Wang, Y., eds)*, pp. 83-88. China Ocean Press, Beijing.
 - `liang2024a`: Liang, Q.; Falkingham, P. L.; Xing, L. (2024). Virtual skeleton and body mass for revealing the life strategies of Sinosaurus. *Historical Biology*: 1-15. doi:10.1080/08912963.2024.2385615

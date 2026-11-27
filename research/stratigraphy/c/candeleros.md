@@ -1,5 +1,19 @@
 # Candeleros
 
+## What does Tunik and colleagues (2010) give for the Candeleros?
+
+*2026-11-26*
+
+**Conclusion.** Maximum ages only. Answers the 2026-11-25 entry's question at its source. Tunik and colleagues (2010), now read, give their own detrital-zircon "Maximum age of Candeleros" as 98.6 ± 2.5 Ma in southern Mendoza, 100.5 ± 2.1 Ma at Cerro Rayoso and 104.3 ± 2.5 Ma further south, and call them "the maximum age of sedimentation"; a maximum depositional age is a limit and adds no stage. Their early Cenomanian for the base of the group is relayed from Leanza and colleagues (2004), already on the record. Governs the note on tunik2010a on [Candeleros](../../../stratigraphy/c/candeleros.yml); `stages` unchanged.
+
+**Evidence.**
+- tunik2010a, p. 270: "Maximum age of Candeleros is about 98.6 ± 2.5 Ma in southern Mendoza (GN1); 100.5 ±2.1 Ma in the Cerro Rayoso area (GN4), and 104.3 ± 2.5 Ma further south (GN6)"; "These ages represent the maximum age of sedimentation of the Candeleros Formation."
+
+**Ruled out.**
+- *A stage from the zircon dates.* Maximum ages.
+
+**Open.** Nothing.
+
 ## Where do Garrido's zircon dates come from?
 
 *2026-11-25*
@@ -75,6 +89,7 @@
 
 ## References
 
+- `tunik2010a`: Tunik, M.; Folguera, A.; Naipauer, M.; Pimentel, M.; Ramos, V. (2010). Early uplift and orogenic deformation in the Neuquén Basin: constraints on the Andean uplift from U–Pb and Hf isotopic data of detrital zircons. *Tectonophysics* 489(1-4): 258-273. doi:10.1016/j.tecto.2010.04.017
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
 - `calvo1999a`: Calvo, J. O. (1999). Dinosaurs and other vertebrates of the Lake Ezequiel Ramos Mexía area, Neuquén-Patagonia, Argentina. *National Science Museum Monographs* 15: 13-45.
@@ -90,6 +105,5 @@
 
 ## Other references
 
-- `tunik2010a`: Tunik, M.; Folguera, A.; Naipauer, M.; Pimentel, M.; Ramos, V. (2010). Early uplift and orogenic deformation in the Neuquén Basin: constraints on the Andean uplift from U–Pb and Hf isotopic data of detrital zircons. *Tectonophysics* 489(1-4): 258-273. doi:10.1016/j.tecto.2010.04.017
 - `calvo1991b`: Calvo, J. O. (1991). Huellas de dinosaurios en la Formación Río Limay (Albiano-Cenomaniano?), Picún Leufú, Provincia de Neuquén, República Argentina (Ornithischia-Saurischia: Sauropoda-Theropoda) [Dinosaur tracks in the Río Limay Formation (Albian-Cenomanian?), Picún Leufú, Neuquén Province, Argentine Republic]. *Ameghiniana* 28(3-4): 241-258.
 - `calvo1996a`: Calvo, J. O.; Salgado, L. (1996). A land bridge connection between South America and Africa during Albian-Cenomanian times based on sauropod dinosaur evidence. In *1st Annual Conference of South Atlantic Mesozoic Correlations, IGCP Project 381, XXXIX Congresso Brasileiro de Geologia*. Salvador, Brazil.
