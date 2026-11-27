@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-11-27T05:01:35.096Z
+  built_at: 2026-11-27T14:41:27.912Z
   clade_count: 187
-  commit: be5db04d166a0e1c36483da9ae91a7476bfe6b94
+  commit: 2e60fa577cc802933f75ca5317fec42e16772e91
   genus_count: 1429
   license: CC-BY-4.0
   paleogeography:
@@ -10,7 +10,7 @@ _metadata:
     citation: "Wright, N.; Zahirovic, S.; Müller, R. D.; Seton, M. (2013). Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10(3): 1529-1541. doi:10.5194/bg-10-1529-2013"
     license: CC-BY-3.0-AU
   schema_version: 0.4.8
-  version: 2026.11.27
+  version: 2026.11.27.2
 timescale:
   chart: ICS International Chronostratigraphic Chart v2024/12
   stages:
@@ -158543,12 +158543,12 @@ genera:
         type_species: false
         period:
           stage:
+            - Hauterivian
             - Barremian
-            - Aptian
           name:
             - Early Cretaceous
-          from_ma: 125.77
-          to_ma: 113.2
+          from_ma: 132.6
+          to_ma: 121.4
         location:
           country: MN
           region: Övörkhangai
@@ -158556,11 +158556,11 @@ genera:
           locality: Ondai Sayr, Ussuk
           region_code: MN-055
           paleocoordinates:
-            latitude: 41.9257
-            longitude: 113.6522
+            latitude: 42.4538
+            longitude: 110.418
             latitude_present: 45.8351
             longitude_present: 102.707
-            age_ma: 119.485
+            age_ma: 127
             model: GOLONKA
             model_plate_id: 401
             approximate: true
@@ -160044,12 +160044,15 @@ genera:
           stage:
             - Campanian
             - Maastrichtian
+          resolution: horizon
           from_ma: 83.6
           to_ma: 66
         location:
           country: FR
           locality: La Boucharde
           region: Bouches-du-Rhône
+          notes: |
+            Allain and Taquet (2000) give the horizon as "Fluvio-lacustrine sandstones, Begudian (Upper Campanian to Lower Maastrichtian)" and name no formation. The site lies in the Arc Basin near Trets, where the boundary between the Begudian and the Argiles et Grès à Reptiles is imprecise, so the sandstones may lie below the formation; the stages are those Allain and Taquet give the horizon.
           formation: Argiles et Grès à Reptiles
           region_code: FR-13
           paleocoordinates:
@@ -216078,23 +216081,20 @@ stratigraphy:
         pages: 1-194
   Aïssa:
     rank: formation
-    description: The Aïssa Formation is a formation in Naama, Algeria, dated to the Bajocian to Tithonian stages of the Middle Jurassic and the Late Jurassic. The dinosaur Chebsaurus is known from it.
+    description: The Aïssa Formation is a formation in Naama, Algeria, dated to the Callovian to Kimmeridgian stages of the Middle Jurassic and the Late Jurassic. The dinosaur Chebsaurus is known from it.
     period:
       name:
         - Middle Jurassic
         - Late Jurassic
       stage:
-        - Bajocian
-        - Bathonian
         - Callovian
         - Oxfordian
         - Kimmeridgian
-        - Tithonian
-      from_ma: 170.9
-      to_ma: 143.1
+      from_ma: 165.3
+      to_ma: 149.2
     dispute:
       summary: |
-        Kacemi and colleagues (2026) attribute the formation "by regional correlation" to "the Late Jurassic (Kimmeridgian-Portlandian)", yet find in its lower member, the Member of the Rouis el Djir Alternations, Lophinae oysters "characteristic of the Middle Jurassic (Bajocian to Callovian)", and give the dinosaur and crocodilian biotope of that member as "the Callovian-Kimmeridgian"; the Chebsaurus bones come from the same member. Benddine and Benaouda (2022) weigh the same oysters against the eastern sections and find "the Kimmeridgian age is much more probable". Under the earlier unit-by-unit scheme of Kacemi (2005) the formation is Kimmeridgian-Portlandian and starts at unit 12, with the Lower Bathonian to Callovian-Oxfordian below it in the Djara Formation, while Mannion and colleagues (2019) and Läng and Mahammed (2010) date Chebsaurus Callovian and Middle Jurassic respectively.
+        Kacemi and colleagues (2026) give the formation as Late Jurassic and the dinosaur and crocodilian biotope of its lower member, the Member of the Rouis el Djir Alternations, which yielded Chebsaurus, as "the Callovian-Kimmeridgian"; Mannion and colleagues (2019) date Chebsaurus Callovian and Läng and Mahammed (2010) Middle Jurassic, while Benddine and Benaouda (2022) find "the Kimmeridgian age is much more probable".
     references:
       - id: amar-bekada2023a
         authors: Amar-Bekada, Y.; Si Ali, C.
@@ -217092,16 +217092,15 @@ stratigraphy:
       - Ondai Sair
       - Ondai Sayr
     lithology: bituminous paper shale, dark coal-bearing mudstone and sandstone, with sporadic limestone and marl
-    description: The Andakhuduk Formation is a formation in Övörkhangai, Mongolia, dated to the Hauterivian to Aptian stages of the Early Cretaceous. It consists mainly of bituminous paper shale, dark coal-bearing mudstone and sandstone, with sporadic limestone and marl. It is also known as the Andaikhudag, Andakhudag, Ondai Sair or Ondai Sayr. The dinosaur Psittacosaurus is known from it.
+    description: The Andakhuduk Formation is a formation in Övörkhangai, Mongolia, dated to the Hauterivian to Barremian stages of the Early Cretaceous. It consists mainly of bituminous paper shale, dark coal-bearing mudstone and sandstone, with sporadic limestone and marl. It is also known as the Andaikhudag, Andakhudag, Ondai Sair or Ondai Sayr. The dinosaur Psittacosaurus is known from it.
     period:
       name:
         - Early Cretaceous
       stage:
         - Hauterivian
         - Barremian
-        - Aptian
       from_ma: 132.6
-      to_ma: 113.2
+      to_ma: 121.4
     references:
       - id: khand2000a
         authors: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R.
@@ -217112,7 +217111,7 @@ stratigraphy:
         volume: "17"
         pages: 49-79
         notes: |
-          Describes the Andaikhudag ("= Ondai Sayr") between the Undurukhaa and Khulsangol formations and dates it to the Hauterivian–Barremian on its fossil assemblage.
+          Describes the Andaikhudag ("= Ondai Sayr") between the Undurukhaa and Khulsangol formations and dates it to the Hauterivian–Barremian on its fossil assemblage, in a chapter that summarizes published data.
       - id: napoli2019a
         authors: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A.
         year: 2019
@@ -217135,7 +217134,7 @@ stratigraphy:
         pages: 345-377
         doi: 10.1016/0195-6671(91)90015-5
         notes: |
-          Treats it as the offshore lacustrine facies of the Gobi Basin, beneath the Khulsyngol (or Dushilin) Formation, and accepts an Aptian age from its plant megafossils. Source of the lithology.
+          Treats it as the offshore lacustrine facies of the Gobi Basin, beneath the Khulsyngol (or Dushilin) Formation, and accepts the Aptian that Krassilov (1982) gives from plant megafossils. Source of the lithology.
       - id: sinitsa1993a
         authors: Sinitsa, S. M.
         year: 1993
@@ -217143,6 +217142,13 @@ stratigraphy:
         journal: Trudy Sovmestnaya Rossiisko-Mongol'skaya Paleontologicheskaya Ekspeditsiya
         volume: "42"
         pages: 1-236
+      - id: krassilov1982a
+        authors: Krassilov, V.
+        year: 1982
+        title: Early Cretaceous flora of Mongolia
+        journal: Palaeontographica Abteilung B
+        volume: "181"
+        pages: 1-43
   Anembalemba:
     rank: member
     parent: Maevarano
@@ -217429,15 +217435,14 @@ stratigraphy:
           Uses the rank word in place of the lithic term, placing the Blasi 1 locality of Arén, Huesca, in "the upper part of the Arén Formation, late Maastrichtian in age", and in the type horizon narrows that level to "Late Cretaceous, latest Maastrichtian (upper part of chron 30n)". Arén is also a town and the name of a Tremp-syncline sector, which the lithic form disambiguates.
   Argiles et Grès à Reptiles:
     rank: formation
-    description: The Argiles et Grès à Reptiles Formation is a formation in Bouches-du-Rhône, France, dated to the Campanian to Maastrichtian stages of the Late Cretaceous. Dinosaurs known from it include Atsinganosaurus, Garrigatitan, Matheronodon and Pyroraptor.
+    description: The Argiles et Grès à Reptiles Formation is a formation in Bouches-du-Rhône, France, dated to the Campanian stage of the Late Cretaceous. Dinosaurs known from it include Atsinganosaurus, Garrigatitan, Matheronodon and Pyroraptor.
     period:
       name:
         - Late Cretaceous
       stage:
         - Campanian
-        - Maastrichtian
       from_ma: 83.6
-      to_ma: 66
+      to_ma: 72.2
     dispute:
       summary: |
         Tabuce and colleagues (2013) place the Aix-en-Provence Basin localities in "an argillite formation ... (historically named Lower 'Argiles et Grès à Reptiles' Formation or Lower 'Argiles Rutilantes' Formation) dated from the Lower Rognacian", and the Aix-en-Provence geological map notice (Catzigras and colleagues, 1969) divides this unit at the Calcaire de Rognac into lower and upper parts, the lower forming "the base of the Rognacian series". Díez Díaz and colleagues (2018) place the Velaux-La Bastide Neuve locality in the formation, while the papers describing its taxa (Garcia and colleagues, 2010; Godefroit and colleagues, 2017; Díez Díaz and colleagues, 2021) give it only the "'Begudian' (local stage)", the stage below the Rognacian; the notice makes the Bégudian-Rognacian boundary "imprecise" in "the eastern part of the Arc basin from Trets".
@@ -217473,7 +217478,7 @@ stratigraphy:
         pages: 610-674
         doi: 10.1093/zoolinnean/zlaa173
         notes: |
-          Tabulates the Atsinganosaurus velauciensis specimens MMS/VBN.09.41 and MMS/VBN.09.167 under the formation with an age spanning the Campanian and Maastrichtian, citing Díez Díaz and colleagues (2018).
+          Tabulates the Atsinganosaurus velauciensis specimens MMS/VBN.09.41 and MMS/VBN.09.167 under the formation with an age spanning the Campanian and Maastrichtian, citing Díez Díaz and colleagues (2018), who give the locality "upper Campanian".
       - id: garcia2010a
         authors: Garcia, G.; Amico, S.; Fournier, F.; Thouand, E.; Valentin, X.
         year: 2010
@@ -217576,6 +217581,22 @@ stratigraphy:
         doi: 10.1306/13541957m1103660
         notes: |
           Cited by Tykoski and colleagues (2023) for the revision that makes the Woodbine a group with the Lewisville as its upper formation. Source of the lithology.
+      - id: dodge1969a
+        authors: Dodge, C. F.
+        year: 1969
+        title: Stratigraphic nomenclature of the Woodbine Formation, Tarrant County, Texas
+        journal: The Texas Journal of Science
+        volume: "21"
+        issue: "1"
+        pages: 43-62
+        notes: |
+          Names the member: the "uppermost fossiliferous sandstone unit" of Hill's Lewisville Beds, as the "Arlington Member" of the Woodbine Formation, above its Lewisville Member, with a type section on West Park Row Street, Arlington.
+      - id: hill1901a
+        authors: Hill, R. T.
+        year: 1901
+        title: Geography and geology of the Black and Grand Prairies, Texas
+        journal: U.S. Geological Survey, 21st Annual Report, 1899–1900
+        pages: 666 pp.
   Arnstadt:
     rank: formation
     description: The Arnstadt Formation is a formation in Thuringia and Saxony-Anhalt, Germany, dated to the Norian to Rhaetian stages of the Late Triassic. Dinosaurs known from it include Liliensternus, Pterospondylus and Ruehleia.
@@ -219105,14 +219126,13 @@ stratigraphy:
   Belly River:
     rank: group
     lithology: interbedded mudstone and very fine-grained sandstone, with coarser sandstone beds and minor bentonite, coal and concretions
-    description: The Belly River Group is a group in Alberta, Canada, dated to the Santonian to Campanian stages of the Late Cretaceous. It consists mainly of interbedded mudstone and very fine-grained sandstone, with coarser sandstone beds and minor bentonite, coal and concretions. It includes the Dinosaur Park Formation, the Foremost Formation and the Oldman Formation. Dinosaurs known from it include Brachylophosaurus, Daspletosaurus, Gorgosaurus, Styracosaurus and 42 other genera.
+    description: The Belly River Group is a group in Alberta, Canada, dated to the Campanian stage of the Late Cretaceous. It consists mainly of interbedded mudstone and very fine-grained sandstone, with coarser sandstone beds and minor bentonite, coal and concretions. It includes the Dinosaur Park Formation, the Foremost Formation and the Oldman Formation. Dinosaurs known from it include Brachylophosaurus, Daspletosaurus, Gorgosaurus, Styracosaurus and 42 other genera.
     period:
       name:
         - Late Cretaceous
       stage:
-        - Santonian
         - Campanian
-      from_ma: 85.7
+      from_ma: 83.6
       to_ma: 72.2
     references:
       - id: eberth2005a
@@ -219170,7 +219190,7 @@ stratigraphy:
         title: Belly River Formation
         publisher: Canadian Society of Petroleum Geologists
         notes: |
-          Gives the foothills Belly River, "including Judith River, Pakowki and Milk River equivalents", as "Santonian - Campanian (85.8 - 70.6 ma)"; the numbers are GTS2004's stage limits, not dates. Source of the lithology.
+          Gives the foothills Belly River, "including Judith River, Pakowki and Milk River equivalents", as "Santonian - Campanian (85.8 - 70.6 ma)", in a header field that names no source; the numbers are GTS2004's stage limits, not dates. Source of the lithology.
   Bissekty:
     rank: formation
     lithology: medium-grained, poorly lithified sandstone with infraformational conglomerate
@@ -220998,7 +221018,7 @@ stratigraphy:
         pages: 258-273
         doi: 10.1016/j.tecto.2010.04.017
         notes: |
-          Source, via Garrido (2010), of the 98.6 ± 2.5 Ma maximum depositional age on detrital zircons from the Areniscas Violáceas; not read.
+          Gives its own detrital-zircon "Maximum age of Candeleros" of 98.6 ± 2.5 Ma in southern Mendoza, and 100.5 and 104.3 Ma at two other sites, as "the maximum age of sedimentation".
   Cannonball:
     rank: member
     parent: Öösh
@@ -221480,23 +221500,18 @@ stratigraphy:
   Cerro Barcino:
     rank: formation
     parent: Chubut
-    description: The Cerro Barcino Formation is a formation of the Chubut Group in Chubut, Argentina, dated to the Hauterivian to Campanian stages of the Early Cretaceous and the Late Cretaceous. It includes the Bayo Overo Member and the Cerro Castaño Member. Dinosaurs known from it include Chubutisaurus, Genyodectes, Patagotitan and Tyrannotitan.
+    description: The Cerro Barcino Formation is a formation of the Chubut Group in Chubut, Argentina, dated to the Aptian to Turonian stages of the Early Cretaceous and the Late Cretaceous. It includes the Bayo Overo Member and the Cerro Castaño Member. Dinosaurs known from it include Chubutisaurus, Genyodectes, Patagotitan and Tyrannotitan.
     period:
       name:
         - Early Cretaceous
         - Late Cretaceous
       stage:
-        - Hauterivian
-        - Barremian
         - Aptian
         - Albian
         - Cenomanian
         - Turonian
-        - Coniacian
-        - Santonian
-        - Campanian
-      from_ma: 132.6
-      to_ma: 72.2
+      from_ma: 121.4
+      to_ma: 89.8
     references:
       - id: carrano2012a
         authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
@@ -221533,7 +221548,7 @@ stratigraphy:
         pages: 1-32
         doi: 10.1080/08912963.2013.861830
         notes: |
-          Uses the narrower "Cerro Barcino Formation (Albian ...)" for the Cerro Castaño Member, while the formation as a whole "has been regarded as Hauterivian to Senonian (Campanian?) in age" after Page and colleagues (1999).
+          Uses the narrower "Cerro Barcino Formation (Albian ...)" for the Cerro Castaño Member, while the formation as a whole "has been regarded as Hauterivian to Senonian (Campanian?) in age" after Page and colleagues (1999), who give it no Hauterivian.
       - id: page1999a
         authors: Page, R.; Ardolino, A.; de Barrio, R. E.; Franchi, M.; Lizuain, A.; Page, S.; Silva Nieto, D.
         year: 1999
@@ -221541,6 +221556,8 @@ stratigraphy:
         book: Geología Argentina
         publisher: Subsecretaría de Minería de la Nación
         pages: 460-488
+        notes: |
+          A synthesis chapter: relays a partly Senonian Puesto Manuel Arce, a Turonian–Coniacian Bayo Overo and a Barremian–Campanian formation, and infers a Campanian–lower Maastrichtian Puesto Manuel Arce from its conformable passage into the Salamanca Formation.
       - id: nullo1983a
         authors: Nullo, F. E.
         year: 1983
@@ -221567,19 +221584,16 @@ stratigraphy:
         volume: "12"
         issue: "1"
         pages: 70-96
+        notes: |
+          Dates the member, as the Cerro Barcino Member of the Gorro Frigio Formation, by its own ostracods and charophytes at Paso de Indios: "a Lower Cretaceous age (near to or just Aptian)".
   Cerro Carnerero:
     rank: member
     parent: Lonco Trapial
     lithology: andesitic crystalline tuff
-    description: The Cerro Carnerero Member is a member of the Lonco Trapial Formation in Chubut, Argentina, dated to the Pliensbachian to Toarcian stages of the Early Jurassic. It consists mainly of andesitic crystalline tuff. The dinosaur Amygdalodon is known from it.
+    description: The Cerro Carnerero Member is a member of the Lonco Trapial Formation in Chubut, Argentina, dated to the Early Jurassic. It consists mainly of andesitic crystalline tuff. The dinosaur Amygdalodon is known from it.
     period:
       name:
         - Early Jurassic
-      stage:
-        - Pliensbachian
-        - Toarcian
-      from_ma: 192.9
-      to_ma: 174.7
     dispute:
       summary: |
         Nullo and Proserpio (1975) make it a member of the Lonco Trapial Formation, one of the formations of the former Lonco Trapial Group that article 7 of the Argentine code reduces to members. Rauhut (2003) and Pol and colleagues (2022) still write "Cerro Carnerero Formation", Rauhut as "the basal formation of the Lonco Trapial Group" and Pol and colleagues as a unit "overlain by the Lonco Trapial Formation".
@@ -221605,7 +221619,7 @@ stratigraphy:
         pages: 131-163
         doi: 10.1007/978-3-030-95959-3_4
         notes: |
-          Dates the unit "Pliensbachian–early Toarcian", between Pliensbachian ammonites below and the overlying Lonco Trapial, for Amygdalodon from Cañadón Puelman, Chubut.
+          Dates the unit "Pliensbachian–early Toarcian", for Amygdalodon from Cañadón Puelman, Chubut, only by bracketing it between Pliensbachian ammonites below and the overlying Lonco Trapial: "there are no radiometric dates for this unit".
       - id: upchurch2004a
         authors: Upchurch, P.; Barrett, P. M.; Dodson, P.
         year: 2004
@@ -222271,6 +222285,17 @@ stratigraphy:
         doi: 10.3133/pp690
         notes: |
           Source of the lithology.
+      - id: atchley2013a
+        authors: Atchley, S. C.; Nordt, L. C.; Dworkin, S. I.; Ramezani, J.; Parker, W. G.; Ash, S. R.; Bowring, S. A.
+        year: 2013
+        title: "A linkage among Pangean tectonism, cyclic alluviation, climate change, and biologic turnover in the Late Triassic: the record from the Chinle Formation, southwestern United States"
+        journal: Journal of Sedimentary Research
+        volume: "83"
+        issue: "12"
+        pages: 1147-1161
+        doi: 10.2110/jsr.2013.89
+        notes: |
+          Dates a tuffaceous sandstone 2 m above the base of the formation, in the Mesa Redondo Member, to 227.604 ± 0.28 Ma by CA-TIMS U–Pb on zircons, and reads its dated beds as "reliable indicators of depositional age"; it places most of the formation in the Norian.
   Chipping Norton Limestone:
     rank: formation
     parent: Great Oolite
@@ -222434,14 +222459,12 @@ stratigraphy:
           Gives the narrower reading, that the formation "was regarded to be Middle Jurassic (Bajocian)".
   Chubut:
     rank: group
-    description: The Chubut Group is a group in Chubut, Argentina, dated to the Hauterivian to Maastrichtian stages of the Early Cretaceous and the Late Cretaceous. It includes the Cerro Barcino Formation. Dinosaurs known from it include Campylodoniscus, Chubutisaurus, Genyodectes, Patagotitan and 1 other genera.
+    description: The Chubut Group is a group in Chubut, Argentina, dated to the Aptian to Maastrichtian stages of the Early Cretaceous and the Late Cretaceous. It includes the Cerro Barcino Formation. Dinosaurs known from it include Campylodoniscus, Chubutisaurus, Genyodectes, Patagotitan and 1 other genera.
     period:
       name:
         - Early Cretaceous
         - Late Cretaceous
       stage:
-        - Hauterivian
-        - Barremian
         - Aptian
         - Albian
         - Cenomanian
@@ -222450,7 +222473,7 @@ stratigraphy:
         - Santonian
         - Campanian
         - Maastrichtian
-      from_ma: 132.6
+      from_ma: 121.4
       to_ma: 66
     dispute:
       summary: |
@@ -222538,7 +222561,7 @@ stratigraphy:
         pages: 894-902
         doi: 10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
         notes: |
-          Gives the group as "Hauterivian-Cenomanian" around the probable type locality of Genyodectes serus, and dates its lowest units nearby from the Hauterivian to the Albian.
+          Gives the group as "Hauterivian-Cenomanian" around the probable type locality of Genyodectes serus, after Lizuaín and colleagues' provincial map, and dates its lowest units nearby from the Hauterivian to the Albian, after Nullo (1983).
       - id: huene1929a
         authors: Huene, F. V.
         year: 1929
@@ -222573,6 +222596,8 @@ stratigraphy:
         journal: Boletín del Servicio Geológico Nacional
         volume: "199"
         pages: 1-94
+        notes: |
+          Places the whole Los Adobes Formation in the Lower Cretaceous and the lowest Cerro Barcino in the "Cretácica inferior (Aptiano?)"; its "posiblemente barremiana" for the Puesto La Paloma or Bardas Coloradas is relayed from Codignotto and colleagues (1978).
       - id: lesta1980a
         authors: Lesta, P. J.; Chebli, G.
         year: 1980
@@ -222593,6 +222618,12 @@ stratigraphy:
         doi: 10.1016/j.jsames.2013.10.008
         notes: |
           SHRIMP U–Pb dates its youngest units, the Laguna Palacios Formation and Manuel Arce Member, to the Cenomanian, the group "not younger than the Cenomanian or the late Cenomanian-early Turonian".
+      - id: codignotto1978a
+        authors: Codignotto, J.; Nullo, F.; Panza, J.; Proserpio, C.
+        year: 1978
+        title: Estratigrafía del Grupo Chubut entre Paso de Indios y Las Plumas, Provincia del Chubut, Argentina [Stratigraphy of the Chubut Group between Paso de Indios and Las Plumas, Chubut Province, Argentina]
+        book: 7º Congreso Geológico Argentino, Actas 1
+        pages: 471-480
   Ciénaga del Río Huaco:
     rank: formation
     description: The Ciénaga del Río Huaco Formation is a formation in La Rioja, Argentina, dated to the Campanian to Maastrichtian stages of the Late Cretaceous. Dinosaurs known from it include Bravasaurus and Punatitan.
@@ -237034,6 +237065,17 @@ stratigraphy:
         doi: 10.1016/j.earscirev.2016.12.014
         notes: |
           Cited in Ogg and colleagues' 2020 Triassic chapter for the chron ages behind the 227.3 Ma base-Norian.
+      - id: atchley2013a
+        authors: Atchley, S. C.; Nordt, L. C.; Dworkin, S. I.; Ramezani, J.; Parker, W. G.; Ash, S. R.; Bowring, S. A.
+        year: 2013
+        title: "A linkage among Pangean tectonism, cyclic alluviation, climate change, and biologic turnover in the Late Triassic: the record from the Chinle Formation, southwestern United States"
+        journal: Journal of Sedimentary Research
+        volume: "83"
+        issue: "12"
+        pages: 1147-1161
+        doi: 10.2110/jsr.2013.89
+        notes: |
+          Dates a tuffaceous sandstone in the member, 2 m above the base of the Chinle, to 227.604 ± 0.28 Ma by CA-TIMS U–Pb on zircons.
   Mesaverde:
     rank: group
     description: The Mesaverde Group is a group in Utah, United States, dated to the Campanian stage of the Late Cretaceous. It includes the Neslen Formation. The dinosaur Rhinorex is known from it.
@@ -245181,6 +245223,30 @@ stratigraphy:
         doi: 10.1080/08912963.2025.2458130
         notes: |
           Source of the lithology.
+      - id: luo1994a
+        authors: Luo, Z.; Wu, X. C.
+        year: 1994
+        title: The small tetrapods of the Lower Lufeng Formation, Yunnan, China
+        book: "In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods"
+        publisher: Cambridge University Press, Cambridge
+        pages: 251-270
+        notes: |
+          Dates the faunal assemblage of the Dull Purplish Beds "Early Jurassic in age, probably Hettangian", by its tritylodonts and sphenodontians.
+      - id: sun1985a
+        authors: Sun, A. L.; Cui, G. H.; Li, Y. H.; Wu, X. C.
+        year: 1985
+        title: "[A verified list of the Lufeng saurischian fauna]"
+        journal: Vertebrata PalAsiatica
+        volume: "23"
+        issue: "1"
+        pages: 1-12
+      - id: sun1986a
+        authors: Sun, A. L.; Cui, K. H.
+        year: 1986
+        title: "A brief introduction to the Lower Lufeng saurischian fauna (Lower Jurassic: Lufeng, Yunnan, People's Republic of China)"
+        book: "The Beginning of the Age of Dinosaurs: Faunal Change Across the Triassic-Jurassic Boundary (Padian, K., ed.)"
+        publisher: Cambridge University Press
+        pages: 275-278
   Shaximiao:
     rank: formation
     variants:
@@ -246890,6 +246956,8 @@ stratigraphy:
         book: "The Beginning of the Age of Dinosaurs: Faunal Change across the Triassic–Jurassic Boundary (Padian, K., ed.)"
         publisher: Cambridge University Press, Cambridge
         pages: 139-150
+        notes: |
+          Places the Tecovas, which it ranks a member of the Dockum, in the Parasuchus zone, "restricted to the Carnian", by its vertebrates, with the Cooper above in the Norian.
       - id: cornet1993a
         authors: Cornet, B.
         year: 1993
@@ -246897,6 +246965,8 @@ stratigraphy:
         series: New Mexico Museum of Natural History and Science Bulletin
         volume: "3"
         pages: 75-93
+        notes: |
+          Recognizes two Carnian pollen zones in the Dockum Group, the older with possible middle Carnian taxa in its basal Tecovas samples.
       - id: lucas1989a
         authors: Lucas, S. G.; Hunt, A. P.
         year: 1989
