@@ -1,5 +1,17 @@
 # *Fulgurotherium*
 
+## Which stage does the *Fulgurotherium australe* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's Albian, Early Cretaceous, replacing the Cenomanian. The record files the holotype in the formation, since Huene (1932) gives no opal field for it. No work read dates the holotype's level; the Cenomanian came from Bell and colleagues' (2019) maximum depositional age for a bed above the Lightning Ridge fossil beds, which adds no stage (see [Griman Creek](../../stratigraphy/g/griman-creek.md)). Governs `period` and `stage: [Albian]` on [*Fulgurotherium australe*](../../../genera/F/Fulgurotherium.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the unit entry.
+
+**Open.** Nothing.
+
 ## Where does *Fulgurotherium* sit? (revisited)
 
 *2026-10-24*
@@ -42,3 +54,7 @@
 - `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
 - `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
 - `madzia2021a`: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C. (2021). The phylogenetic nomenclature of ornithischian dinosaurs. *PeerJ* 9: e12362. doi:10.7717/peerj.12362
+
+## Other references
+
+- `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.

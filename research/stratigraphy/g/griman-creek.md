@@ -1,5 +1,23 @@
 # Griman Creek
 
+## Does the Griman Creek reach the Cenomanian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation is Albian, Early Cretaceous. Supersedes the 2026-11-23 entry. Burger (1980), with the formation's own palynology from drilled sections across the Surat Basin, finds it associated with the *Coptospora paradoxa* Zone and dates that interval middle Albian, and Exon (1976) gives "probably … middle Albian", possibly ranging into the late Albian; Cook and colleagues (2013) agree. The Cenomanian has no reading: Bell and colleagues' (2019) "early to mid-Cenomanian" is a maximum depositional age, and its bed lies above the fossil-bearing claystone; Bell and colleagues (2018) relay that age; and Scheibner's (1998) "Albian to earliest Cenomanian" covers the Wallumbilla Formation, Surat Siltstone and Griman Creek Formation together. Governs `period: [Early Cretaceous]`, `stages: [Albian]` and the notes on bell2019b, bell2018a, burger1980a and cook2013a on [Griman Creek](../../../stratigraphy/g/griman-creek.yml); the [Wallangulla Sandstone](../w/wallangulla-sandstone.md) and [*Fulgurotherium*](../../genera/F/Fulgurotherium.md) follow.
+
+**Evidence.**
+- burger1980a, p. 37: "This interval is the youngest sequence preserved in the Surat Basin, and represents most (if not all) of the Coptospora paradoxa Zone. It is associated with the upper part of the Surat Siltstone and the Griman Creek Formation in most drilled sections", under "Description of the middle Albian pollen sequence".
+- exon1976a, p. 122: "On stratigraphic and palaeontological evidence the formation is probably of middle Albian age, but it possibly ranges into the late Albian."
+- cook2013a, p. 574: the Griman Creek Formation "represents the last known deposition in the Surat Basin in the late Albian".
+- bell2019b, p. 667: "The GCF preferred maximum depositional age range is early to mid-Cenomanian, with a range of 100.2–96.6 Ma."
+- scheibner1998a, p. 314: "Albian to earliest Cenomanian transgressive/regressive strata (Wallumbilla Formation, Surat Siltstone, Griman Creek Formation)".
+
+**Ruled out.**
+- *Cenomanian.* A maximum depositional age from a bed above the fossils, its relay, and an age given to three formations together.
+
+**Open.** Whether the Lightning Ridge section, which Bell and colleagues (2019) cannot yet tie into the formation's regional stratigraphy, lies within Burger's dated interval.
+
 ## Does the Cenomanian date from Lightning Ridge apply to the whole Griman Creek Formation?
 
 *2026-11-23*
@@ -21,7 +39,8 @@
 ## References
 
 - `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
-
-## Other references
-
 - `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
+- `burger1980a`: Burger, D. (1980). Palynological studies in the Lower Cretaceous of the Surat Basin, Australia. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 189.
+- `cook2013a`: Cook, A. G.; Bryan, S. E.; Draper, J. J. (2013). Post-orogenic Mesozoic basins and magmatism. In *Geology of Queensland (Jell, P. A., ed.)*, pp. 515-576. Geological Survey of Queensland, Brisbane.
+- `exon1976a`: Exon, N. F. (1976). Geology of the Surat Basin in Queensland. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 166.
+- `scheibner1998a`: Scheibner, E.; Basden, H. (1998). Geology of New South Wales – Synthesis. Volume 2, Geological Evolution. *Geological Survey of New South Wales Memoir (Geology)* 13(2): 1-666.

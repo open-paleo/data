@@ -1,5 +1,20 @@
 # Wallangulla Sandstone
 
+## Which stage does the Wallangulla Sandstone take?
+
+*2026-11-27*
+
+**Conclusion.** The Albian, from its parent; the Cenomanian is dropped. Supersedes the 2026-09-30 entry on the Lightning Ridge fauna's age. No work read dates the member itself. Its Cenomanian came from Bell and colleagues' (2019) maximum depositional age for the "waxy band", which lies above the uppermost fossil-bearing claystone, so it does not bound the fossil beds at all; the 2026-09-30 entry's "Cenomanian at the oldest" read that limit as an age. Their suggestion that the youngest grain "might mark the actual depositional age" is a possibility. The [Griman Creek](../g/griman-creek.md) is now dated to the Albian alone, and a member of a single-stage parent takes that stage ([methods](../../methods.md)). [*Rapator*](../../../genera/R/Rapator.yml), [*Fostoria*](../../../genera/F/Fostoria.yml), [*Walgettosuchus*](../../../genera/W/Walgettosuchus.yml) and [*Weewarrasaurus*](../../../genera/W/Weewarrasaurus.yml), with no horizon reading of their own, take the member's Albian. Governs `period: [Early Cretaceous]`, `stages: [Albian]` and the note on bell2018a on [Wallangulla Sandstone](../../../stratigraphy/w/wallangulla-sandstone.yml).
+
+**Evidence.**
+- bell2019b, p. 660: the waxy band "lies between the ‘steel band’ marker bed (above) and the uppermost fossil- and opal-bearing claystone (below; see Geological setting; Fig. 2B)".
+- bell2019b, p. 667: "there is a potential for the youngest single grain to be significant in that it might mark the actual depositional age of the GCF (c. 97 Ma)".
+
+**Ruled out.**
+- *Cenomanian.* A maximum depositional age from a bed above the fossils, and a possibility.
+
+**Open.** Unchanged from the [Griman Creek](../g/griman-creek.md) entry.
+
 ## Where in the Wallangulla Sandstone does the dated claystone lie, and how does the member meet the Coocoran Claystone?
 
 *2026-11-23*
@@ -65,7 +80,7 @@
 
 ## References
 
+- `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
 - `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
 - `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
-- `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
 - `boyd2015a`: Boyd, C. A. (2015). The systematic relationships and biogeographic history of ornithischian dinosaurs. *PeerJ* 3: e1523. doi:10.7717/peerj.1523
