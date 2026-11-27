@@ -1,5 +1,24 @@
 # Wangmen
 
+## Does a Lower Jurassic Baixing above the Wangmen conflict with Meng's Middle Jurassic?
+
+*2026-11-26*
+
+**Conclusion.** No. Answers the 2026-11-23 entry's Open line on the Baixing. Meng (2000) gives the Middle Jurassic only for the upper part of the Wangmen in the small and medium-sized basins on the northern margin, keeps the early Early Jurassic for the Wangmen of the Shiwandashan Basin itself, and has the margin basins deposited later; the margin-basin beds, as he gives them from the regional survey, have their top unseen or under Cretaceous conglomerate. Mo and colleagues (2025) put the Lower Jurassic Baixing above the Wangmen in the Shiwandashan Basin, where their quarry is. A Lower Jurassic unit above the main-basin Wangmen does not contradict a partly Middle Jurassic Wangmen in the margin basins. Mo and colleagues apply Meng's range to the whole formation, as the `dispute` already states. Governs nothing new on [Wangmen](../../../stratigraphy/w/wangmen.yml); `period` and `dispute` unchanged.
+
+**Evidence.**
+- meng2000a, p. 19: the margin-basin beds lie "以其角度不整合覆于前期地层之上，未见顶或被白垩系的底砾岩角度不整合覆盖" ["unconformably overlie earlier strata at an angle, with the top either not seen or unconformably overlain at an angle by the basal conglomerate of the Cretaceous", translated].
+- meng2000a, p. 20: "在十万大山盆地，汪门组的地质时代为早侏罗世早期产物" ["The Wangmen Formation in the Shiwandashan Basin is of early Early Jurassic age", translated]; "根据在盆地北缘的中小型盆地剖面中采获轮藻类植物化石组成看，其地质时代应暂时划归早、中侏罗世" ["Judging from the composition of the charophyte assemblage collected from the sections of the small and medium-sized basins on the northern margin of the basin, its geological age should provisionally be assigned to the Early–Middle Jurassic", translated].
+- meng2000a, p. 21: "十万大山盆地与其北缘的中小型盆地不是同时形成，后者可能要晚些时候沉积" ["the Shiwandashan Basin and the small and medium-sized basins on its northern margin did not form at the same time; the latter may have been deposited somewhat later", translated].
+- mo2025a, p. 909: "Most of the sauropod specimens from this site in the Shiwandashan Basin were scattered on the surface of the quarry floor."
+- mo2025a, p. 910: "above the top are calcareous mudstone, mudstone and lithic sandstone of the Lower Jurassic Baixing Fm."
+- mo2025a, p. 911: "Wangmen Formation, Early to Middle Jurassic (Meng, 2000)".
+
+**Ruled out.**
+- *A conflict between the Baixing and a Middle Jurassic upper Wangmen.* The two statements are about different basins.
+
+**Open.** Unchanged: whether the Middle Jurassic reaches the Wangmen of the Shiwandashan Basin itself, where the quarry lies.
+
 ## What do Meng (2000) and Mo and colleagues (2025) say about the age of the Wangmen?
 
 *2026-11-23*

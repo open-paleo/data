@@ -1,5 +1,22 @@
 # Yellow Cat
 
+## Which of Mori's samples gives 119.2 Ma?
+
+*2026-11-26*
+
+**Conclusion.** Sample sgz-2 at the Suarez sister's site, and as a probability peak, not a maximum depositional age; it adds no Aptian. Answers the 2026-11-23 entry's Open line. Mori (2009) prints "Peak at 119.2 ± 1.3 Ma" for sgz-2 in a figure that assigns it to the Yellow Cat and Poison Strip Members together, and never cites the value in the text; Joeckel and colleagues (2019) count it among seven "MDAs". Mori gives the package an Early Aptian age of his own, but his work is a master's thesis, and a thesis never carries a value alone. Governs `stages` on [Yellow Cat](../../../stratigraphy/y/yellow-cat.yml), Berriasian to Barremian, unchanged, and the note on mori2009a.
+
+**Evidence.**
+- mori2009a, title page: "A thesis submitted to the faculty of Brigham Young University in partial fulfillment of the requirements for the degree of Master of Science".
+- mori2009a, p. 14, Fig. 4: "sgz-2 Peak at 119.2 ± 1.3 Ma".
+- mori2009a, p. 30: "the Yellow Cat/Poison Strip Members range from 125 to 121 Ma (Early Aptian)".
+- joeckel2019a, p. ?: "Mori (2009) reported seven detrital zircon U-Pb MDAs ranging between 130±2.4 Ma to 119.2±1.3 Ma from strata of the Yellow Cat Member".
+
+**Ruled out.**
+- *Aptian from Mori (2009), directly or through Joeckel and colleagues (2019).* A thesis, and the 119.2 Ma figure is a peak, not an age.
+
+**Open.** The printed pages of Joeckel and colleagues (2019) have not been read.
+
 ## What do the cited works say about the age and extent of the Yellow Cat?
 
 *2026-11-23*
@@ -75,10 +92,10 @@
 
 ## References
 
+- `mori2009a`: Mori, H. (2009). Dinosaurian faunas of the Cedar Mountain Formation and LA-ICP-MS detrital zircon ages for three stratigraphic sections. Masters thesis, Brigham Young University.
 - `joeckel2019a`: Joeckel, R. M.; Ludvigson, G. A.; Möller, A.; Hotton, C. L.; Suarez, M. B.; Suarez, C. A.; Sames, B.; Kirkland, J. I.; Hendrix, B. (2019). Chronostratigraphy and terrestrial palaeoclimatology of Berriasian–Hauterivian strata of the Cedar Mountain Formation, Utah, USA. *Geological Society, London, Special Publications* 498(1): 75-100. doi:10.1144/SP498-2018-133
 - `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
 - `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
-- `mori2009a`: Mori, H. (2009). Dinosaurian faunas of the Cedar Mountain Formation and LA-ICP-MS detrital zircon ages for three stratigraphic sections. Masters thesis, Brigham Young University.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `joeckel2023a`: Joeckel, R. M.; Suarez, C. A.; McLean, N. M.; Möller, A.; Ludvigson, G. A.; Suarez, M. B.; Kirkland, J. I.; Andrew, J.; Kiessling, S.; Hatzell, G. A. (2023). Berriasian–Valanginian geochronology and carbon-isotope stratigraphy of the Yellow Cat Member, Cedar Mountain Formation, eastern Utah, USA. *Geosciences* 13(2): 32. doi:10.3390/geosciences13020032
 - `senter2012b`: Senter, P.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S.; Toth, N. (2012). New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail. *PLoS ONE* 7(5): e36790. doi:10.1371/journal.pone.0036790

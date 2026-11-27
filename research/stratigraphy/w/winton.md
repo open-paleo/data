@@ -1,5 +1,20 @@
 # Winton
 
+## Does the Winton keep the Turonian?
+
+*2026-11-26*
+
+**Conclusion.** Yes, under the `dispute`. Answers the 2026-11-23 entry's Open line. Tucker and colleagues (2013) say on one page that their zircon ages "are not a true depositional age of the formation", but their conclusions hold that the youngest population "was likely deposited syndepositionally" and that deposition of the formation and its fossils "occurred within the early-Turonian to Turonian–Cenomanian boundary". That is an argued depositional age in the authors' own voice, hedged "likely", not a bare maximum, so it counts as a reading. Poropat and colleagues (2020) relay it, Hocknull and colleagues (2021) query it, and Korasidis and colleagues (2026) find no Turonian assemblages in two wells, which keeps it disputed. Governs `stages`, Albian to Turonian, the `dispute` and the note on tucker2013a on [Winton](../../../stratigraphy/w/winton.yml), and the stages of [Manuka](../../../stratigraphy/m/manuka.yml); all unchanged except the note.
+
+**Evidence.**
+- tucker2013a, p. 774: "these derived zircon ages only represent an age for the youngest sediment sources and are not a true depositional age of the formation".
+- tucker2013a, p. 777: "the youngest of theses populations was likely deposited syndepositionally"; the youngest samples "indicate that deposition of the Winton Formation and associated fossil material occurred within the early-Turonian to Turonian–Cenomanian boundary".
+
+**Ruled out.**
+- *Dropping the Turonian as a limit.* The conclusions argue that the youngest grains date deposition, which a bare maximum depositional age does not.
+
+**Open.** Unchanged: a direct date, or palynology from the fossil-bearing outcrop beds.
+
 ## What do the cited works say about the age of the Winton?
 
 *2026-11-23*
@@ -24,9 +39,9 @@
 
 ## References
 
+- `tucker2013a`: Tucker, R. T.; Roberts, E. M.; Hu, Y.; Kemp, A. I. S.; Salisbury, S. W. (2013). Detrital zircon age constraints for the Winton Formation, Queensland: contextualizing Australia's Late Cretaceous dinosaur faunas. *Gondwana Research* 24(2): 767-779. doi:10.1016/j.gr.2012.12.009
 - `gray2002a`: Gray, A. R. G.; McKillop, M.; McKellar, J. L. (2002). Eromanga Basin stratigraphy. In *Geology of the Cooper and Eromanga Basins, Queensland (Draper, J. J., ed.)*, pp. 30-56. Queensland Department of Natural Resources and Mines, Brisbane.
 - `hocknull2021a`: Hocknull, S. A.; Wilkinson, M.; Lawrence, R. A.; Konstantinov, V.; Mackenzie, S.; Mackenzie, R. (2021). A new giant sauropod, Australotitan cooperensis gen. et sp. nov., from the mid-Cretaceous of Australia. *PeerJ* 9: e11317. doi:10.7717/peerj.11317
-- `tucker2013a`: Tucker, R. T.; Roberts, E. M.; Hu, Y.; Kemp, A. I. S.; Salisbury, S. W. (2013). Detrital zircon age constraints for the Winton Formation, Queensland: contextualizing Australia's Late Cretaceous dinosaur faunas. *Gondwana Research* 24(2): 767-779. doi:10.1016/j.gr.2012.12.009
 - `poropat2020a`: Poropat, S. F.; Mannion, P. D.; Upchurch, P.; Tischler, T. R.; Sloan, T.; Sinapius, G. H. K.; Elliott, J. A.; Elliott, D. A. (2020). Osteology of the wide-hipped titanosaurian sauropod dinosaur Savannasaurus elliottorum from the Upper Cretaceous Winton Formation of Queensland, Australia. *Journal of Vertebrate Paleontology* 40(3): e1786836. doi:10.1080/02724634.2020.1786836
 - `korasidis2026a`: Korasidis, V. A.; Wilkinson, M.; Wood, G.; Murdoch, C.; Wagstaff, B. E.; Mackenzie, S.; Mackenzie, R. (2026). New palynostratigraphic insights into the uppermost Albian–Cenomanian Winton Formation of Australia. *Alcheringa: An Australasian Journal of Palaeontology* 50(3): 730-740. doi:10.1080/03115518.2026.2661205
 

@@ -8,7 +8,7 @@
 
 **Evidence.**
 - leanza1995a, p. 30: "En base a su contenido microfaunístico es asignada habitualmente al Hauteriviano tardío / Barremiano" ["Based on its microfaunistic content, it is usually assigned to the Late Hauterivian / Barremian", translated].
-- leanza1997a, p. 57: "La Formación La Amarga, sobre la base de su contenido microfaunístico y por yacer sobre niveles de la Formación Agrio con ammonites que indican edad hauteriviana inferior y media … se asigna al Hauteriviano superior y Barremiano." ["The La Amarga Formation, on the basis of its microfaunal content and because it lies on levels of the Agrio Formation with ammonites indicating an early and middle Hauterivian age, is assigned to the upper Hauterivian and Barremian", our translation].
+- leanza1997a, p. 57: "La Formación La Amarga, sobre la base de su contenido microfaunístico y por yacer sobre niveles de la Formación Agrio con ammonites que indican edad hauteriviana inferior y media … se asigna al Hauteriviano superior y Barremiano." ["On the basis of its microfaunal content, and because it lies upon levels of the Agrio Formation with ammonites indicating an early and middle Hauterivian age … the La Amarga Formation is assigned to the late Hauterivian and Barremian", translated].
 - leanza2004a, p. 65: "this unit may be regarded as Barremian–Early Aptian in age (Leanza and Hugo, 1995, 1997)".
 
 **Ruled out.** Nothing.

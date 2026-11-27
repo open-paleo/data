@@ -1,5 +1,19 @@
 # *Janenschia*
 
+## Does the *Janenschia* holotype keep the Berriasian?
+
+*2026-11-26*
+
+**Conclusion.** No; the record follows its member to Kimmeridgian–Tithonian, Late Jurassic. Supersedes the 2026-10-07 entry on the stages, whose rule (the holotype takes the member's range) stands; the member's Berriasian is dropped because it rests only on Romer's (2001) minimum age, relayed (see [Upper Dinosaur](../../stratigraphy/u/upper-dinosaur.md)). Governs `stage: [Kimmeridgian, Tithonian]` and `period: [Late Jurassic]` on [*Janenschia robusta*](../../../genera/J/Janenschia.yml).
+
+**Evidence.**
+- schrank2005a, p. 52: dinosaur bone from the Upper Saurian Bed "resulted in a possible minimum age of 140 to 150 Ma (Romer, 2001) that corresponds to Berriasian to Tithonian (Haq and Van Eysinga, 1998)".
+
+**Ruled out.**
+- *Berriasian.* A relayed minimum age.
+
+**Open.** Unchanged from the 2026-10-07 entry.
+
 ## Which stages does the *Janenschia* holotype take?
 
 *2026-10-07*
@@ -34,8 +48,14 @@
 
 ## References
 
+- `schrank2005a`: Schrank, E. (2005). Dinoflagellate cysts and associated aquatic palynomorphs from the Tendaguru Beds (Upper Jurassic–Lower Cretaceous) of southeast Tanzania. *Palynology* 29(1): 49-85. doi:10.1080/01916122.2005.9989604
 - `wild1991a`: Wild, R. (1991). Janenschia n. g. robusta (E. Fraas 1908) pro Tornieria robusta (E. Fraas 1908) (Reptilia, Saurischia, Sauropodomorpha) [Janenschia n. g. robusta (E. Fraas 1908) for Tornieria robusta (E. Fraas 1908) (Reptilia, Saurischia, Sauropodomorpha)]. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 173: 1-4.
 - `mannion2019a`: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O. (2019). Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution. *Zoological Journal of the Linnean Society* 185(3): 784-909. doi:10.1093/zoolinnean/zly068
 - `bussert2009a`: Bussert, R.; Heinrich, W. D.; Aberhan, M. (2009). The Tendaguru Formation (Late Jurassic to Early Cretaceous, southern Tanzania): definition, palaeoenvironments, and sequence stratigraphy. *Fossil Record* 12(2): 141-174. doi:10.5194/fr-12-141-2009
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
+
+## Other references
+
+- `romer2001a`: Romer, R. L. (2001). Isotopically heterogeneous initial Pb and continuous 222Rn loss in fossils: The U-Pb systematics of Brachiosaurus brancai. *Geochimica et Cosmochimica Acta* 65(22): 4201-4213. doi:10.1016/S0016-7037(01)00716-5
+- `haq1998a`: Haq, B. U.; van Eysinga, F. W. B. (1998). Geological Time Table. Elsevier, Amsterdam.

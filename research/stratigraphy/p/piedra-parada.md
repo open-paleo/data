@@ -29,7 +29,7 @@
 - salgado2006b, p. 696: Leanza and Hugo (1995, 1997) "assigned to these units an age ranging from the late Hauterivian to the Barremian", the units "finally being assigned to the Barremian–early Aptian interval (Leanza, 2002; Leanza et al., 2004)" (translated).
 - salgado2006b, p. 698: "Its deposits form a monotonous fluvial sequence composed of sandstones, conglomerates, sandy mudstones, and siltstones. With thicknesses ranging from 110 to 190 m, paleontological records from these levels had not been previously documented" (translated).
 - salgado2006b, p. 699, Horizon and locality: "Piedra Parada Member of the La Amarga Formation (upper Barremian–lower Aptian, Leanza and Hugo, 1997)" (translated).
-- leanza1997a, p. 57: the La Amarga Formation "is assigned to the upper Hauterivian and Barremian" (translated).
+- leanza1997a, p. 57: the La Amarga Formation "se asigna al Hauteriviano superior y Barremiano" ["is assigned to the late Hauterivian and Barremian", translated].
 - leanza2003a, p. 23, Piedra Parada Member, Age and correlations: "In the absence of paleontological records, by its position in sequence the Puesto Quiroga Member can be assigned broadly to the Aptian"; "The Piedra Parada Member of the La Amarga Formation is correlatable, consequently, with the Salina Member of the Huitrín Formation" (translated).
 - leanza2003a, p. 7, Fig. 3: the Piedra Parada Member drawn in the Aptian row, beside the Salina Member, below the Intermediate Miranican unconformity "(ca 117 Ma)".
 

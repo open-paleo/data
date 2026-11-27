@@ -1,5 +1,21 @@
 # Wonthaggi
 
+## Does the Wonthaggi keep the Albian, and what does its Valanginian rest on?
+
+*2026-11-26*
+
+**Conclusion.** The Albian is dropped; the Valanginian stays. Answers the 2026-11-23 entry's Open line. Carrano and colleagues' (2012) "Valanginian–Albian Wonthaggi Formation" is a passing statement with no source, and their own supplementary table gives the same specimen, and a second one, "Valanginian–Barremian"; a slip that its own document contradicts is not a reading, and Agnolín and colleagues (2010) give the formation no Albian. The Valanginian rests on Wagstaff and McEwen Mason's (1989) own "middle Valanginian–Aptian" for the Strzelecki Group localities, whose zone base they date from a personal communication and relay as the base of the Valanginian from Helby and colleagues (1987); the support is weak, but it is the authors' reading, and Agnolín and colleagues repeat it. Governs `stages: [Valanginian, Hauterivian, Barremian, Aptian]` and the notes on carrano2012a and wagstaff1989a on [Wonthaggi](../../../stratigraphy/w/wonthaggi.yml); its genera, Barremian or Aptian, are unaffected.
+
+**Evidence.**
+- carrano2012a, p. 262: "the ungual from the Valanginian–Albian Wonthaggi Formation once referred to Megalosaurus (NMV P.10058; Woodward 1906; Huene 1926a; Rich & Rich 1989)".
+- carrano2012a, supplementary Table 4, p. 30: NMV P.10058, "Wonthaggi Formation; Valanginian–Barremian, Early Cretaceous"; p. 33, the same for NMV P150070.
+- wagstaff1989a, p. 61, Summary: "The Strzelecki Group localities fall within the *Cy. hughesii* Subzone of the *D. speciosus* Zone and are middle Valanginian–Aptian in age."
+
+**Ruled out.**
+- *Albian from Carrano and colleagues (2012).* A slip against the paper's own table.
+
+**Open.** The renewed palynology behind Herne and colleagues' (2019) late Barremian, and Helby and colleagues (1987), have not been read.
+
 ## What do the cited works say about the age of the Wonthaggi?
 
 *2026-11-23*
@@ -24,6 +40,7 @@
 
 ## References
 
+- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `wagstaff1989a`: Wagstaff, B. E.; McEwen Mason, J. R. C. (1989). Palynological dating of Lower Cretaceous coastal vertebrate localities, Victoria, Australia. *National Geographic Research* 5: 54-63.
 - `herne2019a`: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M. (2019). New small-bodied ornithopods (Dinosauria, Neornithischia) from the Early Cretaceous Wonthaggi Formation (Strzelecki Group) of the Australian-Antarctic rift system, with revision of Qantassaurus intrepidus Rich and Vickers-Rich, 1999. *Journal of Paleontology* 93(3): 543-584. doi:10.1017/jpa.2018.95
 
@@ -31,4 +48,7 @@
 
 - `helby1987a`: Helby, R.; Morgan, R.; Partridge, A. D. (1987). A palynological zonation of the Australian Mesozoic.
 - `lindsay1982a`: Lindsay, N. M. (1982). The burial history of the Strzelecki Group Sandstones, southeastern Australia: a petrographic and fission track study. Masters thesis, Melbourne University, Melbourne, Victoria, Australia.
-- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
+- `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
+- `woodward1906a`: Woodward, A. S. (1906). On a tooth of Ceratodus and a dinosaurian claw from the Lower Jurassic of Victoria, Australia. *Annals and Magazine of Natural History, Decade 7* 18: 1-3.
+- `huene1926b`: Huene, F. V. (1926). The carnivorous Saurischia in the Jura and Cretaceous formations, principally in Europe. *Revista del Museo de La Plata* 29: 35-167.
+- `rich1989a`: Rich, T. H.; Vickers-Rich, P. (1989). Polar dinosaurs and biotas of the Early Cretaceous of southeastern Australia. *National Geographic Research* 5(1): 15-53.

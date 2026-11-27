@@ -1,5 +1,21 @@
 # Ukureyskaya
 
+## Does the Ukureyskaya take the Bathonian?
+
+*2026-11-26*
+
+**Conclusion.** Yes; `stages` becomes `[Bathonian]`. Cincotta and colleagues (2019) state a Bathonian age for the Kulinda deposits in their own voice, on palynology, above an Aalenian zircon maximum; the same sentence calls the Bathonian "a minimum age", which does not withdraw the stated age. The Kulinda beds lie in the lower part of the formation, and a stage dated in part of a formation dates the formation. The Late Jurassic in `period` takes no stage: every Late Jurassic age the cited works give the rest of the formation is relayed, from K–Ar dates and faunal comparisons by earlier authors. Governs `stages: [Bathonian]` and the note on cincotta2019a on [Ukureyskaya](../../../stratigraphy/u/ukureyskaya.yml); [*Kulindadromeus zabaikalicus*](../../../genera/K/Kulindadromeus.yml), Bathonian, is unaffected.
+
+**Evidence.**
+- cincotta2019a, p. 13, Conclusions: "The absolute dating of igneous and volcaniclastic rocks collected at Kulinda, indicate a maximal Aalenian age (172.8 ± 1.6 Ma) for the deposits that have yielded the Kulindadromeus fossils"; "Palynological data support a Bathonian age for the deposits, corresponding to an age ranging between 168.3 and 166.1 Ma (Gradstein et al., 2012), hence giving a minimum age"; "its lower part extending to the Middle Jurassic".
+- cincotta2019a, p. 2: "K-Ar radiometric analyses on basalts and rhyolites from the base of the Ukurey Fm proposed ages between 153–157 Ma (Kimmeridgian) and 147–165 Ma (Callovian-Berriasian), respectively (Sinitsa, 2011a; Sinitsa, 2011b)"; faunal comparisons "also suggested a Late Jurassic—Early Cretaceous age for the Ukurey Formation (Sinitsa & Starukhina, 1986; Sinitsa, 2011a; Sinitsa, 2011b)".
+
+**Ruled out.**
+- *Empty stages.* The Bathonian is a stated reading in the paper's own voice.
+- *Late Jurassic stages from the K–Ar dates or the faunal comparisons.* Both are relayed, and their originals have not been read.
+
+**Open.** Whether the Late Jurassic in `period` stands on any reading not relayed; the 2026-09-30 entry leaves the rest of the formation's age open.
+
 ## What does Cincotta and colleagues' Bathonian date?
 
 *2026-11-23*
@@ -54,3 +70,10 @@
 - `hattori2023a`: Hattori, S.; Shibata, M.; Kawabe, S.; Imai, T.; Nishi, H.; Azuma, Y. (2023). New theropod dinosaur from the Lower Cretaceous of Japan provides critical implications for the early evolution of ornithomimosaurs. *Scientific Reports* 13(1). doi:10.1038/s41598-023-40804-3
 - `godefroit2014a`: Godefroit, P.; Sinitsa, S. M.; Dhouailly, D.; Bolotsky, Y. L.; Sizov, A. V.; McNamara, M. E.; Benton, M. J.; Spagna, P. (2014). A Jurassic ornithischian dinosaur from Siberia with both feathers and scales. *Science* 345(6195): 451-455. doi:10.1126/science.1253351
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+
+## Other references
+
+- `sinitsa2011a`: Sinitsa, S. M. (2011). Environmental cooperative studies in the cross-border ecological region: Russia, China, and Mongolia. Institute of Natural Resources, Ecology and Cryology, Siberian Branch of the Russian Academy of Sciences, Chita.
+- `sinitsa2011b`: Sinitsa, S. M. (2011). Transitional horizons in the stratigraphy of the Upper Mesozoic of Transbaikalia. *Bulletin of Chita State University* 70: 98-103.
+- `sinitsa1986a`: Sinitsa, S. M.; Starukhina, L. P. (1986). New data and problems of stratigraphy and paleontology of the Upper Mesozoic of the Eastern Transbaikalia. New data on the geology of Transbaikalia. Ministry of Geology USSR, Moscow.
+- `gradstein2012a`: Gradstein, F. M.; Ogg, J. G.; Schmitz, M.; Ogg, G. (eds.) (2012). The Geologic Time Scale 2012. Elsevier, Oxford.
