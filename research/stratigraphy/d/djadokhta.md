@@ -1,5 +1,21 @@
 # Djadokhta
 
+## Do the Santonian or the Maastrichtian join the Djadokhta?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation stays Campanian. Gradziński and colleagues' (1977) "?upper Santonian" rests on the beds' position above a svita dated by freshwater molluscs, which they call "possible, but far from proven": a bound, and a possibility. Lillegraven and McKenna (1986) "concur with Fox (1978)" that the formation is "approximately late Campanian or even early Maastrichtian", a reading credited to a work not read, and their own radiometric equivalent of about 75 Ma is Campanian on the ICS chart v2024/12. Governs `stages` on [Djadokhta](../../../stratigraphy/d/djadokhta.yml), unchanged.
+
+**Evidence.**
+- gradziński1977a, p. 308: "Thus it is possible, but far from proven, that the Djadokhta Formation embraces the lower part of the Campanian stage, and perhaps the upper part of the Santonian as well."
+- lillegraven1986a, p. 58: "We concur with Fox (1978) that the Djadokhta of eastern Asia and the Judith River and Oldman faunas of North America are essentially of the same age and that, more indirectly, the Djadokhta Formation is therefore approximately late Campanian or even early Maastrichtian in age."
+
+**Ruled out.**
+- *Santonian.* A bound and a possibility.
+- *Maastrichtian.* Relayed from an unread work.
+
+**Open.** Fox (1978) has not been read.
+
 ## What do the cited works say about the age of the Djadokhta?
 
 *2026-11-23*
@@ -83,11 +99,11 @@
 
 ## References
 
+- `gradziński1977a`: Gradziński, R.; Kielan-Jaworowska, Z.; Maryańska, T. (1977). Upper Cretaceous Djadokhta, Barun Goyot and Nemegt formations of Mongolia, including remarks on previous subdivisions. *Acta Geologica Polonica* 27(3): 281-318.
+- `lillegraven1986a`: Lillegraven, J. A.; McKenna, M. C. (1986). Fossil mammals from the "Mesaverde" Formation (Late Cretaceous, Judithian) of the Bighorn and Wind River Basins, Wyoming, with definitions of Late Cretaceous North American land-mammal "ages". *American Museum Novitates* 2840: 1-68.
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `barsbold1983a`: Barsbold, R. (1983). Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs from the Cretaceous of Mongolia]. *Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 19: 1-117.
-- `gradziński1977a`: Gradziński, R.; Kielan-Jaworowska, Z.; Maryańska, T. (1977). Upper Cretaceous Djadokhta, Barun Goyot and Nemegt formations of Mongolia, including remarks on previous subdivisions. *Acta Geologica Polonica* 27(3): 281-318.
 - `dashzeveg2005a`: Dashzeveg, D.; Dingus, L.; Loope, D. B.; Swisher, C. C., III; Dulam, T.; Sweeney, M. R. (2005). New stratigraphic subdivision, depositional environment, and age estimate for the Upper Cretaceous Djadokhta Formation, southern Ulan Nur Basin, Mongolia. *American Museum Novitates* 3498: 1-31. doi:10.1206/0003-0082(2005)498[0001:NSSDEA]2.0.CO;2
-- `lillegraven1986a`: Lillegraven, J. A.; McKenna, M. C. (1986). Fossil mammals from the "Mesaverde" Formation (Late Cretaceous, Judithian) of the Bighorn and Wind River Basins, Wyoming, with definitions of Late Cretaceous North American land-mammal "ages". *American Museum Novitates* 2840: 1-68.
 - `averianov1997a`: Averianov, A. O. (1997). New Late Cretaceous mammals of southern Kazakhstan. *Acta Palaeontologica Polonica* 42: 243-256.
 - `dingus2008a`: Dingus, L.; Loope, D. B.; Dashzeveg, D.; Swisher, C. C.; Minjin, C.; Novacek, M. J.; Norell, M. A. (2008). The Geology of Ukhaa Tolgod (Djadokhta Formation, Upper Cretaceous, Nemegt Basin, Mongolia). *American Museum Novitates* 3616(1): 1-40. doi:10.1206/442.1
 - `tucker2025a`: Tucker, R. T.; Venter, K. E.; Lana, C.; Roberts, E. M.; Chinzorig, T.; Tsogtbaatar, K.; Zanno, L. E. (2025). U-Pb calcite age dating of fossil eggshell as an accurate deep time geochronometer. *Communications Earth & Environment* 6: 872. doi:10.1038/s43247-025-02895-w
@@ -104,3 +120,4 @@
 - `loope1998a`: Loope, D. B.; Dingus, L.; Swisher, C. C.; Minjin, C. (1998). Life and death in a Late Cretaceous dune field, Nemegt basin, Mongolia. *Geology* 26(1): 27-30. doi:10.1130/0091-7613(1998)026<0027:LADIAL>2.3.CO;2
 - `khand1974a`: Khand, E. (1974). The Late Cretaceous genus Gobiocypris gen. nov. in Mongolia. *Trudy Sovmestnoi Sovetsko-Mongol'skoi Paleontologicheskoi Ekspeditsii* 1: 265-267.
 - `barsbold1972a`: Barsbold, R. (1972). Biostratigraphy and freshwater molluscs of the Upper Cretaceous of the Gobi part of the Mongolian People's Republic. Nauka, Moscow.
+- `fox1978a`: Fox, R. C. (1978). Upper Cretaceous terrestrial vertebrate stratigraphy of the Gobi Desert (Mongolian People's Republic) and western North America. In *Western and Arctic Canadian Biostratigraphy (Stelck, C. R.; Chatterton, B. D. E., eds.)*, pp. 577-594.

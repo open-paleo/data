@@ -1,5 +1,19 @@
 # Figuerola
 
+## Is Fondevilla and colleagues' late Maastrichtian a live dispute?
+
+*2026-11-27*
+
+**Conclusion.** No; the dispute is removed and the stages stand, Maastrichtian and Danian. Fondevilla and colleagues (2019) conclude that the formation "only records the late Maastrichtian", but their own Fig. 9 draws the Cretaceous–Paleogene boundary near its top, and the chrons they assign, C31n to C29n, reach across it; a statement its own document contradicts is not a reading. Colombo and Cuevas (1993) place the boundary in the upper third of the formation. The point now sits in the note on fondevilla2019a. Governs the removed `dispute` and that note on [Figuerola](../../../stratigraphy/f/figuerola.yml).
+
+**Evidence.**
+- fondevilla2019a, p. 174: "Hence, the latter formation only records the late Maastrichtian (Fig. 8)."
+
+**Ruled out.**
+- *Late Maastrichtian only.* Contradicted by the same paper.
+
+**Open.** Nothing.
+
 ## Does Fondevilla and colleagues' "only records the late Maastrichtian" take the Figuerola Formation out of the Danian?
 
 *2026-11-23*

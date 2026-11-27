@@ -1,5 +1,20 @@
 # Point Loma
 
+## Does the Point Loma regain the Maastrichtian?
+
+*2026-11-27*
+
+**Conclusion.** Yes; the formation is Campanian to Maastrichtian. Supersedes the 2026-11-23 entry on the stages. Sliter (1968), now read, places the uppermost siltstone, siltstone–sandstone and sandstone members of the La Jolla section in his *Rugoglobigerina rugosa* Zone, which his own foraminifera date early Maastrichtian; he refers the beds to the Rosario Formation, and Kennedy and Moore (1971), who name the Point Loma Formation, place them in it, with "Lower Maestrichtian forams … about 30 m below the base of the Cabrillo Formation". The upper beds at Point Loma itself Sliter puts in the latest Campanian. Governs `stages: [Campanian, Maastrichtian]` and the notes on kennedy1971a and sliter1968a on [Point Loma](../../../stratigraphy/p/point-loma.yml).
+
+**Evidence.**
+- sliter1968a, p. 14: "The Rugoglobigerina rugosa Zone is restricted to the La Jolla section where it occurs in the uppermost part of the siltstone member and throughout the siltstone-sandstone member and sandstone member."
+- sliter1968a, p. 9: "Rugoglobigerina rugosa Zone—early Maastrichtian".
+- kennedy1971a, p. 713: "Lower Maestrichtian forams have been found about 30 m below the base of the Cabrillo Formation in siltstone of the Point Loma Formation (Sliter, 1968, p. 14)".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does Nilsen and Abbott's late Campanian–early Maestrichtian age date the Point Loma Formation?
 
 *2026-11-23*
@@ -22,10 +37,10 @@
 
 ## References
 
-- `nilsen1981a`: Nilsen, T. H.; Abbott, P. L. (1981). Paleogeography and sedimentology of Upper Cretaceous turbidites, San Diego, California. *American Association of Petroleum Geologists Bulletin* 65(7): 1256-1284. doi:10.1306/03B59495-16D1-11D7-8645000102C1865D
 - `kennedy1971a`: Kennedy, M. P.; Moore, G. W. (1971). Stratigraphic relations of Upper Cretaceous and Eocene formations, San Diego coastal area, California. *AAPG Bulletin* 55(5): 709-722. doi:10.1306/819A3C5A-16C5-11D7-8645000102C1865D
+- `sliter1968a`: Sliter, W. V. (1968). Upper Cretaceous Foraminifera from southern California and northwestern Baja California, Mexico. *University of Kansas Paleontological Contributions* 49(7).
+- `nilsen1981a`: Nilsen, T. H.; Abbott, P. L. (1981). Paleogeography and sedimentology of Upper Cretaceous turbidites, San Diego, California. *American Association of Petroleum Geologists Bulletin* 65(7): 1256-1284. doi:10.1306/03B59495-16D1-11D7-8645000102C1865D
 
 ## Other references
 
 - `sundberg1979a`: Sundberg, F. A. (1979). Upper Cretaceous macrofossils of San Diego. In *Geological Excursions in the Southern California Area (Abbott, P. L., ed.)*, pp. 173-176. San Diego State University, Department of Geological Sciences.
-- `sliter1968a`: Sliter, W. V. (1968). Upper Cretaceous Foraminifera from southern California and northwestern Baja California, Mexico. *University of Kansas Paleontological Contributions* 49(7).

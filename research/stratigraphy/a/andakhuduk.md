@@ -1,5 +1,18 @@
 # Andakhuduk
 
+## Does Sinitsa's Late Jurassic join the Andakhuduk?
+
+*2026-11-27*
+
+**Conclusion.** Yes, as an epoch, with a dispute; `period` becomes Late Jurassic and Early Cretaceous. Sinitsa (1993) dates the formation Late Jurassic in his own voice, from his own ostracods, chiefly *Cypridea unicostata*, which he places in a Late Jurassic zone, and from correlation with the Dund-Argalant Series, which he takes as Late Jurassic. Khand and colleagues (2000) date the same beds Hauterivian–Barremian from their fossil assemblage. Two readings of the unit's own fossils conflict, so both stand and the conflict goes in the dispute. Governs `period`, the new `dispute` and the note on sinitsa1993a on [Andakhuduk](../../../stratigraphy/a/andakhuduk.yml); `stages` unchanged.
+
+**Evidence.**
+- sinitsa1993a, p. 63: "Возраст анда-худукской свиты нами принимается как позднеюрский, такой же возраст определен для дунд-аргалантских отложений." ["We regard the age of the Anda-Khuduk Formation as Late Jurassic, and the same age has been determined for the Dund-Argalant deposits.", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Which reading holds; Sinitsa notes that *C. unicostata* indexes an Early Cretaceous zone in Transbaikalia.
+
 ## Which of the Andakhuduk's stages survive?
 
 *2026-11-26*
@@ -55,10 +68,10 @@
 
 ## References
 
+- `sinitsa1993a`: Sinitsa, S. M. (1993). Jurassic and Lower Cretaceous of Central Mongolia. *Trudy Sovmestnaya Rossiisko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 42: 1-236.
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `napoli2019a`: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A. (2019). Psittacosaurus amitabha, a new species of ceratopsian dinosaur from the Ondai Sayr Locality, Central Mongolia. *American Museum Novitates* 3932: 1-36. doi:10.1206/3932.1
-- `sinitsa1993a`: Sinitsa, S. M. (1993). Jurassic and Lower Cretaceous of Central Mongolia. *Trudy Sovmestnaya Rossiisko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 42: 1-236.
 
 ## Other references
 

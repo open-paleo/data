@@ -1,5 +1,19 @@
 # Baruungoyot
 
+## Does Shuvalov's svita age date the Baruungoyot?
+
+*2026-11-27*
+
+**Conclusion.** No, not alone; the Santonian stands on other readings, and the dispute is reworded. Shuvalov's (2000) Baruungoyot Svita "unites" the red beds of the Djadokhta Formation, the Djadokhta and Bayanzag svitas and others, so his Santonian–Campanian is an age for several units together. Karczewska and Ziembinska-Tworzydlo's (1983) "?Late Santonian" follows from the bound their charophytes set on the Nemegt above. The Santonian keeps Alifanov and Barsbold's (2009) queried "?Lower Santonian" for the *Ceratonykus* horizon, a query on a stage they commit to. Governs the `dispute` and the note on shuvalov2000a on [Baruungoyot](../../../stratigraphy/b/baruungoyot.yml); `stages` unchanged.
+
+**Evidence.**
+- shuvalov2000a, p. 268: "The Baruungoyot Svita unites the red sediments of the Djadokhta Formation (Berkey and Morris, 1927; Kielan-Jaworowska, 1968, 1970, 1975; Kaie and Devyatkin, 1969), the Djadokhta Svita (Barsbold, 1972, 1983), or the Bayanzag Svita (Khand, 1974)".
+
+**Ruled out.**
+- *Santonian from Shuvalov.* An age for several units together.
+
+**Open.** Unchanged.
+
 ## Do the Baruungoyot's Santonian and Maastrichtian survive?
 
 *2026-11-26*
@@ -126,8 +140,8 @@
 
 ## References
 
-- `fanti2012a`: Fanti, F.; Currie, P. J.; Badamgarav, D.; Lalueza-Fox, C. (2012). New specimens of Nemegtomaia from the Baruungoyot and Nemegt Formations (Late Cretaceous) of Mongolia. *PLOS ONE* 7(2): e31330. doi:10.1371/journal.pone.0031330
 - `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 256-278. Cambridge University Press, Cambridge.
+- `fanti2012a`: Fanti, F.; Currie, P. J.; Badamgarav, D.; Lalueza-Fox, C. (2012). New specimens of Nemegtomaia from the Baruungoyot and Nemegt Formations (Late Cretaceous) of Mongolia. *PLOS ONE* 7(2): e31330. doi:10.1371/journal.pone.0031330
 - `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
 - `kielan-jaworowska1974a`: Kielan-Jaworowska, Z. (1974). Migrations of the Multituberculata and the Late Cretaceous connections between Asia and North America. *Annals of the South African Museum* 64: 231-243.
 - `karczewska1983a`: Karczewska, J.; Ziembinska-Tworzydlo, M. (1983). Age of the Upper Cretaceous Nemegt Formation (Mongolia) on charophytan evidence. *Acta Palaeontologica Polonica* 28(1-2): 137-146.

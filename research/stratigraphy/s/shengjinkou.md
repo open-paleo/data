@@ -1,5 +1,18 @@
 # Shengjinkou
 
+## Does the Valanginian apply to the Hami Shengjinkou?
+
+*2026-11-27*
+
+**Conclusion.** It applies to the formation; no work dates the Hami beds separately. Zheng and colleagues (2023) date a tuff at the top of the formation in the Junggar Basin and conclude that it "places the upper Shengjinkou Formation within the Valanginian Stage", an argued reading in their own voice. Wang and colleagues (2021) give the Hami beds only as Early Cretaceous, and Mannion and colleagues' (2026) "upper Valanginian" for them credits work on the Junggar section. A taxon with no reading of its own takes its unit's range, so *Hamititan* and *Silutitan* keep the Valanginian. Governs `stages` on [Shengjinkou](../../../stratigraphy/s/shengjinkou.yml), unchanged.
+
+**Evidence.**
+- zheng2023a, pp. 768–769: "Our ca. 135.2 Ma U-Pb age … places the upper Shengjinkou Formation within the Valanginian Stage."
+
+**Ruled out.** Nothing.
+
+**Open.** A date from the Shengjinkou in the Hami area.
+
 ## Which succession do Wang and colleagues (2021) give for the Shengjinkou in the Turpan-Hami Basin?
 
 *2026-11-23*
@@ -35,6 +48,10 @@
 
 ## References
 
-- `wang2021a`: Wang, X.; Bandeira, K. L. N.; Qiu, R.; Jiang, S.; Cheng, X.; Ma, Y.; Kellner, A. W. A. (2021). The first dinosaurs from the Early Cretaceous Hami Pterosaur Fauna, China. *Scientific Reports* 11(1). doi:10.1038/s41598-021-94273-7
 - `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin* 136: 765-773. doi:10.1130/B36795.1
+- `wang2021a`: Wang, X.; Bandeira, K. L. N.; Qiu, R.; Jiang, S.; Cheng, X.; Ma, Y.; Kellner, A. W. A. (2021). The first dinosaurs from the Early Cretaceous Hami Pterosaur Fauna, China. *Scientific Reports* 11(1). doi:10.1038/s41598-021-94273-7
 - `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research* 181: 106271. doi:10.1016/j.cretres.2025.106271
+
+## Other references
+
+- `mannion2026a`: Mannion, P. D.; Carvalho, I. S. (2026). Re-evaluation of the Early Cretaceous titanosauriform sauropod dinosaur Triunfosaurus leonardii from the Triunfo Basin, Brazil: implications for the initial radiations of Somphospondyli and Titanosauria. *Zoological Journal of the Linnean Society* 207(1). doi:10.1093/zoolinnean/zlag073

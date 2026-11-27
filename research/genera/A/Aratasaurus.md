@@ -1,5 +1,17 @@
 # *Aratasaurus*
 
+## Which stages does the *Aratasaurus museunacionali* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's, after the unit's change. Sayão and colleagues (2020) give the lower strata as Aptian in their text, after other works, while their title calls the formation Albian. Governs `period` and `stage` on [*Aratasaurus museunacionali*](../../../genera/A/Aratasaurus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Romualdo](../../stratigraphy/r/romualdo.md) entry.
+
+**Open.** Nothing.
+
 ## What stages does *Aratasaurus* take?
 
 *2026-10-14*

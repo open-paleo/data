@@ -1,5 +1,21 @@
 # Morrison
 
+## Does Miall and colleagues' Berriasian keep the Morrison in the Cretaceous?
+
+*2026-11-27*
+
+**Conclusion.** No; the Berriasian and the Early Cretaceous are dropped, and the formation is Oxfordian to Tithonian. Answers the 2026-11-23 entry and the record's conflict with the 2026-10-03 ruling. Miall and colleagues (2008) say the clastic wedge "constituting the Morrison and Kootenay formations, continued into the Berriasian", an age for two formations together, cited to other works with no evidence of their own, and the same chapter calls the Morrison "Upper Jurassic (Oxfordian–Tithonian)". Kowallis and colleagues (1998), from their own argon dates of about 155 to 148 Ma, conclude that the formation "is entirely Late Jurassic in age", and Kirkland and colleagues (2016) put its top in the lower third of the Tithonian. [*Atlantosaurus montanus*](../../../genera/A/Atlantosaurus.yml), [*Haplocanthosaurus delfsi*](../../../genera/H/Haplocanthosaurus.yml), [*Hesperosaurus mjosi*](../../../genera/H/Hesperosaurus.yml) and [*Hypsirhophus discurus*](../../../genera/H/Hypsirhophus.yml), which carry `resolution: unit`, follow. Governs `period: [Late Jurassic]`, `stages: [Oxfordian, Kimmeridgian, Tithonian]` and the notes on miall2008a and kowallis1998a on [Morrison](../../../stratigraphy/m/morrison.yml).
+
+**Evidence.**
+- miall2008a, p. 329: "The first major clastic wedge, constituting the Morrison and Kootenay formations, continued into the Berriasian".
+- miall2008a, p. 329: "the Upper Jurassic (Oxfordian–Tithonian) Morrison Formation in the United States".
+- kowallis1998a, p. 256: "We conclude that deposition of the Morrison Formation ended before the end of the Jurassic, and that the formation is entirely Late Jurassic in age."
+
+**Ruled out.**
+- *Berriasian.* An age given to two formations together, cited to other works and contradicted in the same chapter.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the top of the Morrison?
 
 *2026-11-23*
@@ -19,10 +35,7 @@
 
 ## References
 
+- `miall2008a`: Miall, A. D.; Catuneanu, O.; Vakarelov, B. K.; Post, R. (2008). The Western Interior Basin. In *The Sedimentary Basins of the United States and Canada (Miall, A. D., ed.), Sedimentary Basins of the World 5*, pp. 329-362. Elsevier, Amsterdam. doi:10.1016/S1874-5997(08)00009-9
+- `kowallis1998a`: Kowallis, B. J.; Christiansen, E. H.; Deino, A. L.; Peterson, F.; Turner, C. E.; Kunk, M. J.; Obradovich, J. D. (1998). The age of the Morrison Formation. *Modern Geology* 22: 235-260.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `cifelli2014a`: Cifelli, R. L.; Davis, B. M.; Sames, B. (2014). Earliest Cretaceous mammals from the western United States. *Acta Palaeontologica Polonica* 59: 31-52. doi:10.4202/app.2012.0089
-
-## Other references
-
-- `kowallis1998a`: Kowallis, B. J.; Christiansen, E. H.; Deino, A. L.; Peterson, F.; Turner, C. E.; Kunk, M. J.; Obradovich, J. D. (1998). The age of the Morrison Formation. *Modern Geology* 22: 235-260.
-- `miall2008a`: Miall, A. D.; Catuneanu, O.; Vakarelov, B. K.; Post, R. (2008). The Western Interior Basin. In *The Sedimentary Basins of the United States and Canada (Miall, A. D., ed.), Sedimentary Basins of the World 5*, pp. 329-362. Elsevier, Amsterdam. doi:10.1016/S1874-5997(08)00009-9

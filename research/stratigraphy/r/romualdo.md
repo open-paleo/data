@@ -1,5 +1,20 @@
 # Romualdo
 
+## Does the Romualdo keep the Albian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation is Aptian. Supersedes the 2026-11-23 entry on the stages. Arai and Assine (2020) date the formation upper Aptian from their own palynology, and report that "indisputably Albian palynomorphs" have not been published from it. No work read gives the Albian a reading: Naish and colleagues (2004) relay Pons and colleagues (1990), not read; Sues and colleagues' (2002) "probably younger than early Albian" is a bound inferred from Pons and colleagues' age for the Crato Formation below, and their "(Albian; Maisey, 2000)" credits a work their reference list does not contain; and Sales and Schultz (2017) give "Albian" in occurrence lines. [*Irritator challengeri*](../../../genera/I/Irritator.yml) and [*Aratasaurus museunacionali*](../../../genera/A/Aratasaurus.yml) take the formation's Aptian. Governs `stages: [Aptian]` and the notes on sues2002a and arai2020a on [Romualdo](../../../stratigraphy/r/romualdo.yml).
+
+**Evidence.**
+- arai2020a, p. 7: "although commonly referred to as Albian in the literature (Fig. 3), indisputably Albian palynomorphs … have not been reported thus far in any published work from the Romualdo Formation".
+- sues2002a, p. 535: "Thus the concretion-bearing horizon of the Romualdo Member is probably younger than early Albian."
+
+**Ruled out.**
+- *Albian.* Relays, a bound and occurrence labels.
+
+**Open.** Pons and colleagues (1990) have not been read.
+
 ## What do the cited works say about the age of the Romualdo, and of which beds?
 
 *2026-11-23*
@@ -29,11 +44,11 @@
 
 ## References
 
-- `naish2004a`: Naish, D.; Martill, D. M.; Frey, E. (2004). Ecology, Systematics and Biogeographical Relationships of Dinosaurs, Including a New Theropod, from the Santana Formation (?Albian, Early Cretaceous) of Brazil. *Historical Biology* 16(2-4): 57-70. doi:10.1080/08912960410001674200
 - `sues2002a`: Sues, H. D.; Frey, E.; Martill, D. M.; Scott, D. M. (2002). Irritator challengeri, a spinosaurid (Dinosauria: Theropoda) from the Lower Cretaceous of Brazil. *Journal of Vertebrate Paleontology* 22(3): 535-547. doi:10.1671/0272-4634(2002)022[0535:ICASDT]2.0.CO;2
+- `arai2020a`: Arai, M.; Assine, M. L. (2020). Chronostratigraphic constraints and paleoenvironmental interpretation of the Romualdo Formation (Santana Group, Araripe Basin, Northeastern Brazil) based on palynology. *Cretaceous Research* 116: 104610. doi:10.1016/j.cretres.2020.104610
+- `naish2004a`: Naish, D.; Martill, D. M.; Frey, E. (2004). Ecology, Systematics and Biogeographical Relationships of Dinosaurs, Including a New Theropod, from the Santana Formation (?Albian, Early Cretaceous) of Brazil. *Historical Biology* 16(2-4): 57-70. doi:10.1080/08912960410001674200
 - `sales2017a`: Sales, M. A. F.; Schultz, C. L. (2017). Spinosaur taxonomy and evolution of craniodental features: Evidence from Brazil. *PLOS ONE* 12(11): e0187070. doi:10.1371/journal.pone.0187070
 - `sayão2020a`: Sayão, J. M.; Saraiva, A. Á. F.; Brum, A. S.; Bantim, R. A. M.; de Andrade, R. C. L. P.; Cheng, X.; de Lima, F. J.; de Paula Silva, H.; Kellner, A. W. A. (2020). The first theropod dinosaur (Coelurosauria, Theropoda) from the base of the Romualdo Formation (Albian), Araripe Basin, Northeast Brazil. *Scientific Reports* 10(1). doi:10.1038/s41598-020-67822-9
-- `arai2020a`: Arai, M.; Assine, M. L. (2020). Chronostratigraphic constraints and paleoenvironmental interpretation of the Romualdo Formation (Santana Group, Araripe Basin, Northeastern Brazil) based on palynology. *Cretaceous Research* 116: 104610. doi:10.1016/j.cretres.2020.104610
 - `delcourt2025a`: Delcourt, R.; Grillo, O. N.; Hendrickx, C.; Kellermann, M.; Langer, M. C. (2025). The coelurosaur theropods of the Romualdo formation, early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica. *The Anatomical Record*: ar.70085. doi:10.1002/ar.70085
 
 ## Other references

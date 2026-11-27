@@ -1,5 +1,18 @@
 # Sudmoor Point Sandstone
 
+## Do Jacobs and colleagues and Robinson and Hesselbo disagree?
+
+*2026-11-27*
+
+**Conclusion.** No; both place the Hauterivian–Barremian boundary above the member, and the dispute is reworded. Jacobs and colleagues (2023) put it "a short distance above the Sudmoor Point Sandstone" on paleomagnetic results given as a personal communication; Robinson and Hesselbo (2004) place it "close to the base of the exposed Wessex Formation", which on their figures lies above the member. Jacobs and colleagues' summary of Robinson and Hesselbo as "approximately 70 m above the base" is not in that paper. The live disagreement is with Martill (2015), who holds the exposed formation "entirely Barremian". Governs the `dispute` on [Sudmoor Point Sandstone](../../../stratigraphy/s/sudmoor-point-sandstone.yml); `stages` unchanged.
+
+**Evidence.**
+- robinson2004a, pp. 141–142: "it is proposed that the Hauterivian–Barremian boundary should be placed close to the base of the exposed Wessex Formation".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## Where does the Hauterivian–Barremian boundary fall relative to the Sudmoor Point Sandstone?
 
 *2026-11-23*
@@ -20,10 +33,11 @@
 
 ## References
 
-- `jacobs2023a`: Jacobs, M. L.; Pérez-García, A.; Martín-Jiménez, M.; Mottram, C. M.; Martill, D. M.; Gale, A. S.; Mattsson, O. L.; Wood, C. (2023). A well preserved pan-pleurodiran (Dortokidae) turtle from the English Lower Cretaceous and the first radiometric date for the Wessex Formation (Hauterivian–Barremian) of the Isle of Wight, United Kingdom. *Cretaceous Research* 150: 105590. doi:10.1016/j.cretres.2023.105590
 - `robinson2004a`: Robinson, S. A.; Hesselbo, S. P. (2004). Fossil-wood carbon-isotope stratigraphy of the non-marine Wealden Group (Lower Cretaceous, southern England). *Journal of the Geological Society* 161(1): 133-145. doi:10.1144/0016-764903-004
+- `jacobs2023a`: Jacobs, M. L.; Pérez-García, A.; Martín-Jiménez, M.; Mottram, C. M.; Martill, D. M.; Gale, A. S.; Mattsson, O. L.; Wood, C. (2023). A well preserved pan-pleurodiran (Dortokidae) turtle from the English Lower Cretaceous and the first radiometric date for the Wessex Formation (Hauterivian–Barremian) of the Isle of Wight, United Kingdom. *Cretaceous Research* 150: 105590. doi:10.1016/j.cretres.2023.105590
 
 ## Other references
 
 - `stewart1981a`: Stewart, D. J. (1981). A meander-belt sandstone of the Lower Cretaceous of southern England. *Sedimentology* 28(1): 1-20. doi:10.1111/j.1365-3091.1981.tb01658.x
 - `lockwood2021a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2021). A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England. *Journal of Systematic Palaeontology* 19(12): 847-888. doi:10.1080/14772019.2021.1978005
+- `martill2015a`: Martill, D. M. (2015). First occurrence of the pterosaur Coloborhynchus (Pterosauria, Ornithocheiridae) from the Wessex Formation (Lower Cretaceous) of the Isle of Wight, England. *Proceedings of the Geologists' Association* 126(3): 377-380. doi:10.1016/j.pgeola.2015.03.004

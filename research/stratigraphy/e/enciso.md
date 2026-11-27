@@ -1,5 +1,19 @@
 # Enciso
 
+## Do Schudack and Schudack's ostracod ages join the Enciso's stages?
+
+*2026-11-27*
+
+**Conclusion.** Yes; the group is Valanginian to Aptian, with a dispute. Supersedes the 2026-11-23 entry on the stages. Schudack and Schudack (2009), from their own ostracods, "prefer to propose a Valanginian age for the lower part" and give the middle and upper parts as Hauterivian–Barremian, "but not Aptian"; Suarez-Gonzalez and colleagues (2013), from their own dasycladales and foraminifera, give the group as upper Barremian–lower Aptian. Both are readings of their own evidence, so the union rule takes both and the conflict goes in the dispute. Governs `stages: [Valanginian, Hauterivian, Barremian, Aptian]`, the `dispute` and the note on schudack2009a on [Enciso](../../../stratigraphy/e/enciso.yml).
+
+**Evidence.**
+- schudack2009a, p. 151: "we prefer to propose a Valanginian age for the lower part of the Enciso group".
+- schudack2009a, p. 151: "the middle and upper parts of the Enciso group are Hauterivian-Barremian in age, most probably Barremian in its upper part, but not Aptian".
+
+**Ruled out.** Nothing.
+
+**Open.** Which reading holds.
+
 ## What do the cited works say about the age of the Enciso Group?
 
 *2026-11-23*
@@ -27,8 +41,8 @@
 
 ## References
 
-- `suarez-gonzalez2013a`: Suarez-Gonzalez, P.; Quijada, I. E.; Benito, M. I.; Mas, R. (2013). Eustatic versus tectonic control in an intraplate rift basin (Leza Fm, Cameros Basin): chronostratigraphic and paleogeographic implications for the Aptian of Iberia. *Journal of Iberian Geology* 39(2): 285-312. doi:10.5209/rev_JIGE.2013.v39.n2.42502
 - `schudack2009a`: Schudack, U.; Schudack, M. (2009). Ostracod biostratigraphy in the Lower Cretaceous of the Iberian Chain (eastern Spain). *Journal of Iberian Geology* 35: 141-168.
+- `suarez-gonzalez2013a`: Suarez-Gonzalez, P.; Quijada, I. E.; Benito, M. I.; Mas, R. (2013). Eustatic versus tectonic control in an intraplate rift basin (Leza Fm, Cameros Basin): chronostratigraphic and paleogeographic implications for the Aptian of Iberia. *Journal of Iberian Geology* 39(2): 285-312. doi:10.5209/rev_JIGE.2013.v39.n2.42502
 - `suarez-gonzalez2015a`: Suarez-Gonzalez, P.; Quijada, I. E.; Benito, M. I.; Mas, R. (2015). Sedimentology of ancient coastal wetlands: insights from a Cretaceous multifaceted depositional system. *Journal of Sedimentary Research* 85(2): 95-117. doi:10.2110/jsr.2015.07
 - `isasmendi2024a`: Isasmendi, E.; Cuesta, E.; Díaz-Martínez, I.; Company, J.; Sáez-Benito, P.; Viera, L. I.; Torices, A.; Pereda-Suberbiola, X. (2024). Increasing the theropod record of Europe: a new basal spinosaurid from the Enciso Group of the Cameros Basin (La Rioja, Spain). Evolutionary implications and palaeobiodiversity. *Zoological Journal of the Linnean Society* 202(3). doi:10.1093/zoolinnean/zlad193
 

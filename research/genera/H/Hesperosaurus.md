@@ -1,5 +1,17 @@
 # *Hesperosaurus*
 
+## Which stages does the *Hesperosaurus mjosi* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's, after the unit's change. The record carries `resolution: unit`. Governs `period` and `stage` on [*Hesperosaurus mjosi*](../../../genera/H/Hesperosaurus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Morrison](../../stratigraphy/m/morrison.md) entry.
+
+**Open.** Nothing.
+
 ## What site and level in the Morrison is the *Hesperosaurus* holotype from?
 
 *2026-10-03*
@@ -40,3 +52,7 @@
 - `galton2016a`: Galton, P. M.; Carpenter, K. (2016). The plated dinosaur Stegosaurus longispinus Gilmore, 1914 (Dinosauria: Ornithischia; Upper Jurassic, western USA), type species of Alcovasaurus n. gen. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 279(2): 185-208. doi:10.1127/njgpa/2016/0551
 - `sonoda2016a`: Sonoda, T.; Noda, Y. (2016). Transfer of museum collection from the Hayashibara Museum of Natural Sciences to the Fukui Prefectural Dinosaur Museum. *Memoir of the Fukui Prefectural Dinosaur Museum* 15: 93-98.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+
+## Other references
+
+- `kowallis1998a`: Kowallis, B. J.; Christiansen, E. H.; Deino, A. L.; Peterson, F.; Turner, C. E.; Kunk, M. J.; Obradovich, J. D. (1998). The age of the Morrison Formation. *Modern Geology* 22: 235-260.

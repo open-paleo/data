@@ -1,5 +1,17 @@
 # *Haplocanthosaurus*
 
+## Which stages does the *Haplocanthosaurus delfsi* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's, after the unit's change. The record carries `resolution: unit`. Governs `period` and `stage` on [*Haplocanthosaurus delfsi*](../../../genera/H/Haplocanthosaurus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Morrison](../../stratigraphy/m/morrison.md) entry.
+
+**Open.** Nothing.
+
 ## Is *Haplocanthosaurus* a diplodocoid?
 
 *2026-10-21*
@@ -24,3 +36,7 @@
 - `gomez2024a`: Gomez, K. L.; Carballido, J. L.; Pol, D. (2024). Cranial anatomy of Bagualia alba (Dinosauria, Eusauropoda) from the Early Jurassic of Patagonia and the implications for sauropod cranial evolution. *Journal of Systematic Palaeontology* 22(1): 2400471. doi:10.1080/14772019.2024.2400471
 - `carballido2011a`: Carballido, J. L.; Rauhut, O. W. M.; Pol, D.; Salgado, L. (2011). Osteology and phylogenetic relationships of Tehuelchesaurus benitezii (Dinosauria, Sauropoda) from the Upper Jurassic of Patagonia. *Zoological Journal of the Linnean Society* 163(2): 605-662. doi:10.1111/j.1096-3642.2011.00723.x
 - `mannion2011a`: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H. (2011). New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids. *Journal of Systematic Palaeontology* 10(3): 521-551. doi:10.1080/14772019.2011.595432
+
+## Other references
+
+- `kowallis1998a`: Kowallis, B. J.; Christiansen, E. H.; Deino, A. L.; Peterson, F.; Turner, C. E.; Kunk, M. J.; Obradovich, J. D. (1998). The age of the Morrison Formation. *Modern Geology* 22: 235-260.

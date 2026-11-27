@@ -1,5 +1,19 @@
 # Kota
 
+## Does the Kota keep its dispute, and does the Hettangian stay out?
+
+*2026-11-27*
+
+**Conclusion.** The Hettangian stays out, and the dispute is removed. Supersedes the ground of the 2026-09-20 entry. The only Hettangian is Bandyopadhyay and Sengupta's (2006) report of Bandyopadhyay and Roy Chowdhury (1996), not read; Bandyopadhyay's own later dating in the same paper and in 2010 gives the lower Kota Sinemurian to Pliensbachian and the upper Kota Toarcian to ?Aalenian, which supersedes it. The dispute set the 2010 abstract's "Sinemurian to Pliensbachian" for the whole formation against Kareem and colleagues' (2024) "Early to Middle Jurassic"; the abstract's line is the lower Kota's age, which the same paper's text gives as such, and Kareem and colleagues relay the same split, so no live disagreement remains. Governs the removed `dispute` and the note on bandyopadhyay2006a on [Kota](../../../stratigraphy/k/kota.yml); `stages` unchanged.
+
+**Evidence.**
+- bandyopadhyay2006a, p. 80: "Close scrutiny of the taxa of both the lower and the upper units of the Kota Formation led Bandyopadhyay and Roy Chowdhury (1996) to suggest that the Kota Formation has an age ranging from Hettangian to Toarcian".
+
+**Ruled out.**
+- *Hettangian.* A relay, superseded by the same author.
+
+**Open.** Bandyopadhyay and Roy Chowdhury (1996) have not been read.
+
 ## Which part of the Kota does Bandyopadhyay and colleagues' (2010) "Sinemurian to Pliensbachian" date?
 
 *2026-11-23*
@@ -36,8 +50,8 @@
 
 ## References
 
-- `bandyopadhyay2010a`: Bandyopadhyay, S.; Gillette, D. D.; Ray, S.; Sengupta, D. P. (2010). Osteology of Barapasaurus tagorei (Dinosauria: Sauropoda) from the Early Jurassic of India. *Palaeontology* 53(3): 533-569. doi:10.1111/j.1475-4983.2010.00933.x
 - `bandyopadhyay2006a`: Bandyopadhyay, S.; Sengupta, D. P. (2006). Vertebrate faunal turnover during the Triassic–Jurassic transition: an Indian scenario. In *The Triassic–Jurassic Terrestrial Transition (Harris, J. D.; Lucas, S. G.; Spielmann, J. A.; Lockley, M. G.; Milner, A. R. C.; Kirkland, J. I., eds.)*, pp. 77-85.
+- `bandyopadhyay2010a`: Bandyopadhyay, S.; Gillette, D. D.; Ray, S.; Sengupta, D. P. (2010). Osteology of Barapasaurus tagorei (Dinosauria: Sauropoda) from the Early Jurassic of India. *Palaeontology* 53(3): 533-569. doi:10.1111/j.1475-4983.2010.00933.x
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `buffetaut2000a`: Buffetaut, E.; Suteethorn, V.; Cuny, G.; Tong, H.; Le Loeuff, J.; Khansubha, S.; Jongautchariyakul, S. (2000). The earliest known sauropod dinosaur. *Nature* 407(6800): 72-74. doi:10.1038/35024060
 - `rincón2022a`: Rincón, A. F.; Raad Pájaro, D. A.; Jiménez Velandia, H. F.; Ezcurra, M. D.; Wilson Mantilla, J. A. (2022). A sauropod from the Lower Jurassic La Quinta Formation (Dept. Cesar, Colombia) and the initial diversification of eusauropods at low latitudes. *Journal of Vertebrate Paleontology* 42(1). doi:10.1080/02724634.2021.2077112
@@ -46,3 +60,4 @@
 
 - `bandyopadhyay1996a`: Bandyopadhyay, S.; Roychowdhury, T. K. (1996). Beginning of the continental Jurassic in India: a palaeontological approach. In *The Continental Jurassic (Morales, M., ed.)*, pp. 371-378.
 - `chinnappa2019a`: Chinnappa, C.; Rajanikanth, A.; Pauline Sabina, K. (2019). Palaeofloras from the Kota Formation, India: palaeodiversity and ecological implications. *Volumina Jurassica* 17: 1-16.
+- `kareem2024a`: Kareem, T. A.; Chakraborty, S.; Wilson Mantilla, J. A. (2024). Sauropod tail clubs from the Kota Formation (Lower to Middle Jurassic) of India and their implications for early sauropod evolution. *Journal of Vertebrate Paleontology* 44(1): e2396814. doi:10.1080/02724634.2024.2396814

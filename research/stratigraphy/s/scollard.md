@@ -1,5 +1,19 @@
 # Scollard
 
+## Does Sankey's 65–60 Ma add the Selandian?
+
+*2026-11-27*
+
+**Conclusion.** No; the stages stand, Maastrichtian and Danian. Sankey (2001) gives the Scollard "(65–60 Ma)" after Eberth and Ryan (1992), not read, and no work read dates the top of the formation. Governs `stages` on [Scollard](../../../stratigraphy/s/scollard.yml), unchanged.
+
+**Evidence.**
+- sankey2001a, p. 214: "Scollard (65–60 Ma) formations span 20 mys (Eberth and Ryan, 1992)".
+
+**Ruled out.**
+- *Selandian.* Relayed from an unread work.
+
+**Open.** Eberth and Ryan (1992) have not been read.
+
 ## What do the cited works say about the age of the Scollard, and about its lower and upper parts?
 
 *2026-11-23*
@@ -25,10 +39,10 @@
 
 ## References
 
+- `sankey2001a`: Sankey, J. T. (2001). Late Campanian southern dinosaurs, Aguja Formation, Big Bend, Texas. *Journal of Paleontology* 75(1): 208-215. doi:10.1666/0022-3360(2001)075<0208:LCSDAF>2.0.CO;2
 - `eberth2019a`: Eberth, D. A.; Kamo, S. L. (2019). First high-precision U-Pb CA-ID-TIMS age for the Battle Formation (Upper Cretaceous), Red Deer River valley, Alberta, Canada: implications for ages, correlations, and dinosaur biostratigraphy of the Scollard, Frenchman, and Hell Creek formations. *Canadian Journal of Earth Sciences* 56(10): 1041-1051. doi:10.1139/cjes-2018-0098
 - `eberth2020a`: Eberth, D. A.; Kamo, S. L. (2020). High-precision U-Pb CA-ID-TIMS dating and chronostratigraphy of the dinosaur-rich Horseshoe Canyon Formation (Upper Cretaceous, Campanian- Maastrichtian), Red Deer River valley, Alberta, Canada. *Canadian Journal of Earth Sciences* 57(10): 1220-1237. doi:10.1139/cjes-2019-0019
 - `eberth2012a`: Eberth, D. A.; Braman, D. R. (2012). A revised stratigraphy and depositional history for the Horseshoe Canyon Formation (Upper Cretaceous), southern Alberta plains. *Canadian Journal of Earth Sciences* 49(9): 1053-1086. doi:10.1139/e2012-035
-- `sankey2001a`: Sankey, J. T. (2001). Late Campanian southern dinosaurs, Aguja Formation, Big Bend, Texas. *Journal of Paleontology* 75(1): 208-215. doi:10.1666/0022-3360(2001)075<0208:LCSDAF>2.0.CO;2
 
 ## Other references
 

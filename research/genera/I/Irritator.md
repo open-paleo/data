@@ -1,5 +1,17 @@
 # *Irritator*
 
+## Which stages does the *Irritator challengeri* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's, after the unit's change. Sales and Schultz's (2017) "Albian" is an occurrence line. Governs `period` and `stage` on [*Irritator challengeri*](../../../genera/I/Irritator.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Romualdo](../../stratigraphy/r/romualdo.md) entry.
+
+**Open.** Nothing.
+
 ## Is the *Irritator* holotype from the Romualdo Formation or the Santana Formation?
 
 *2026-08-06*
@@ -25,3 +37,7 @@
 - `delcourt2025a`: Delcourt, R.; Grillo, O. N.; Hendrickx, C.; Kellermann, M.; Langer, M. C. (2025). The coelurosaur theropods of the Romualdo formation, early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica. *The Anatomical Record*: ar.70085. doi:10.1002/ar.70085
 - `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+
+## Other references
+
+- `sales2017a`: Sales, M. A. F.; Schultz, C. L. (2017). Spinosaur taxonomy and evolution of craniodental features: Evidence from Brazil. *PLOS ONE* 12(11): e0187070. doi:10.1371/journal.pone.0187070

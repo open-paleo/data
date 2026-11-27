@@ -1,5 +1,20 @@
 # Marnes de la Maurine
 
+## Does the Marnes de la Maurine keep the Campanian?
+
+*2026-11-27*
+
+**Conclusion.** No; the member is Maastrichtian, and the dispute is removed. Supersedes the 2026-11-23 entry. Bilotte (1985), whom Le Loeuff (2005) credits, dates the member Maastrichtian and confines the Campanian to the Marnes rouges de Campagne two members below; Le Loeuff's "upper Campanian to lower Maastrichtian (Bilotte 1985)" misstates him, and his Campanian alternative for the Grès des Estous rests on a personal communication, not a published determination. [*Ampelosaurus atacis*](../../../genera/A/Ampelosaurus.yml), from the base of the member at Bellevue, takes the Maastrichtian. Governs `stages: [Maastrichtian]`, the removed `dispute` and the note on leloeuff2005a on [Marnes de la Maurine](../../../stratigraphy/m/marnes-de-la-maurine.yml).
+
+**Evidence.**
+- leloeuff2005a, p. 118: "Horizon. Marnes Rouges Inférieures Formation, Marnes de la Maurine member, upper Campanian to lower Maastrichtian (Bilotte 1985)."
+- bilotte1985a, p. 242: the Marnes rouges de Campagne are "datées du Campanien supérieur" ["dated to the upper Campanian", translated].
+
+**Ruled out.**
+- *Campanian.* A misrelay and a personal communication.
+
+**Open.** Nothing.
+
 ## Does the Marnes de la Maurine reach the Campanian?
 
 *2026-11-23*
@@ -17,9 +32,9 @@
 ## References
 
 - `leloeuff2005a`: Le Loeuff, J. (2005). Osteology of Ampelosaurus atacis (Titanosauria) from southern France. In *Thunder-Lizards: The Sauropodomorph Dinosaurs*, pp. 115-137. Indiana University Press, Bloomington.
+- `bilotte1985a`: Bilotte, M. (1985). Le Crétacé supérieur des plates-formes est-pyrénéennes [The Upper Cretaceous of the eastern Pyrenean platforms]. *Strata* 5: 1-438.
 
 ## Other references
 
-- `bilotte1985a`: Bilotte, M. (1985). Le Crétacé supérieur des plates-formes est-pyrénéennes [The Upper Cretaceous of the eastern Pyrenean platforms]. *Strata* 5: 1-438.
 - `leloeuff1995a`: Le Loeuff, J. (1995). Ampelosaurus atacis (nov, gen., nov. sp.), un nouveau Titanosauridae (Dinosauria, Sauropoda) du Crétacé supérieur de la Haute Vallée de l'Aude (France) [Ampelosaurus atacis (nov, gen., nov. sp.), a new titanosaurid (Dinosauria, Sauropoda) from the Upper Cretaceous of the Upper Aude Valley (France)]. *Comptes Rendus de l'Académie des Sciences à Paris, Série IIa* 321: 693-699.
 - `bessière1989a`: Bessière, G.; Bilotte, M.; Crochet, B.; Tambareau, J.; Villatte, J.; Berger, G.; Marchal, M. P.; Vautrelle, C.; Viallard, P. (1989). Notice feuille Quillan [Explanatory notice, Quillan sheet].

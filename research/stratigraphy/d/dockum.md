@@ -1,5 +1,20 @@
 # Dockum
 
+## Does Martz and Parker's Apachean add the Rhaetian to the Dockum?
+
+*2026-11-27*
+
+**Conclusion.** No; the group stays Carnian–Norian. Martz and Parker (2017) calibrate the Apachean outside the Dockum, and correlate the Dockum of northeastern New Mexico, which holds the Redonda Formation, to it "using tentative lithostratigraphic correlations", the biostratigraphic data being "mostly unavailable"; that is the age of a correlative unit. Lehman and Chatterjee's (2005) Rhaetian is a possibility. The Chinle's Rhaetian rests on its own record and is not affected. Governs `stages` on [Dockum](../../../stratigraphy/d/dockum.yml), unchanged.
+
+**Evidence.**
+- martz2017a, p. 93: the Dockum Group of northeastern New Mexico is "correlated to the estimated biochronozones using tentative lithostratigraphic correlations (Fig. 14), even though explicit biostratigraphic data is mostly unavailable for these local study areas".
+- lehman2005a, p. 347: "Hence, it is possible that strata correlative with the Rhaetian Stage are indeed present in the Dockum Group."
+
+**Ruled out.**
+- *Rhaetian.* The age of a correlative unit, and a possibility.
+
+**Open.** Nothing.
+
 ## Does the 210 Ma date from the Cooper Canyon put the Dockum Group in the Rhaetian?
 
 *2026-11-23*
@@ -40,10 +55,10 @@
 
 ## References
 
+- `martz2017a`: Martz, J. W.; Parker, W. G. (2017). Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology. In *Terrestrial Depositional Systems*, pp. 39-125. doi:10.1016/B978-0-12-803243-5.00002-9
 - `lehman2005a`: Lehman, T.; Chatterjee, S. (2005). Depositional setting and vertebrate biostratigraphy of the Triassic Dockum Group of Texas. *Journal of Earth System Science* 114(3): 325-351.
 - `long1994a`: Long, L. E.; Lehman, T. M. (1994). Mid-Paleozoic age of provenance of Triassic (Dockum Group) sandstone, Texas Panhandle, USA. *U.S. Geological Survey Circular* 1107: 197.
 - `ogg2020a`: Ogg, J. G.; Chen, Z. Q.; Orchard, M. J.; Jiang, H. S. (2020). The Triassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 903-953. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00025-5
-- `martz2017a`: Martz, J. W.; Parker, W. G. (2017). Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology. In *Terrestrial Depositional Systems*, pp. 39-125. doi:10.1016/B978-0-12-803243-5.00002-9
 - `lucas1994a`: Lucas, S. G.; Anderson, O. J.; Hunt, A. P. (1994). Triassic stratigraphy and correlations, southern High Plains of New Mexico-Texas. *New Mexico Bureau of Mines & Mineral Resources Bulletin* 150: 105-126.
 - `lucas1995a`: Lucas, S. G.; Anderson, O. J. (1995). Dockum (Upper Triassic) stratigraphy and nomenclature. *West Texas Geological Society Bulletin* 34(7): 5-11.
 - `martz2013a`: Martz, J. W.; Mueller, B.; Nesbitt, S. J.; Stocker, M. R.; Parker, W. G.; Atanassov, M.; Fraser, N.; Weinbaum, J.; Lehane, J. R. (2013). A taxonomic and biostratigraphic re-evaluation of the Post Quarry vertebrate assemblage from the Cooper Canyon Formation (Dockum Group, Upper Triassic) of southern Garza County, western Texas. *Earth and Environmental Science Transactions of the Royal Society of Edinburgh* 103(3-4): 339-364. doi:10.1017/s1755691013000376

@@ -1,5 +1,19 @@
 # Elrhaz
 
+## Does GAD 5 keep the Albian, and its dispute?
+
+*2026-11-27*
+
+**Conclusion.** The Albian stays and the dispute is removed. Sereno and colleagues (1999), describing *Nigersaurus* from GAD 5, call it "a new small-bodied sauropod of Aptian-Albian age (~110 million years ago)", an own reading of a GAD 5 taxon's age, so the union rule keeps the Albian beside Taquet's (1976) Aptian. The dispute concerned whether GAD 5 crosses into the Echkar Formation, and it called Sereno and colleagues the only Albian support, which Carrano and colleagues (2008) also give; their crosscut is one reading that later work does not adopt, and it stays in the note on sereno1999a. Governs the removed `dispute` on the GAD 5 bed of [Elrhaz](../../../stratigraphy/e/elrhaz.yml); `stages` unchanged.
+
+**Evidence.**
+- sereno1999a, p. 1342: "A new small-bodied sauropod of Aptian-Albian age (~110 million years ago), in contrast, reveals the highly modified cranial form of rebbachisaurid diplodocoids."
+
+**Ruled out.**
+- *A dispute over the units GAD 5 spans.* A single unadopted reading.
+
+**Open.** Nothing.
+
 ## What does Taquet (1976) say about the position and age of GAD 5?
 
 *2026-11-23*
@@ -21,4 +35,9 @@
 
 ## References
 
+- `sereno1999a`: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Larsson, H. C. E.; Lyon, G. H.; Moussa, B.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. J.; Wilson, G. P.; Wilson, J. A. (1999). Cretaceous Sauropods from the Sahara and the Uneven Rate of Skeletal Evolution Among Dinosaurs. *Science* 286(5443): 1342-1347. doi:10.1126/science.286.5443.1342
 - `taquet1976a`: Taquet, P. (1976). Géologie et paléontologie du gisement de Gadoufaoua (Aptien du Niger). *Cahiers de Paléontologie*.
+
+## Other references
+
+- `carrano2008a`: Carrano, M. T.; Sampson, S. D. (2008). The Phylogeny of Ceratosauria (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 6(2): 183-236. doi:10.1017/S1477201907002246

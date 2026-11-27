@@ -1,5 +1,17 @@
 # *Atlantosaurus*
 
+## Which stages does the *Atlantosaurus montanus* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's, after the unit's change. The record carries `resolution: unit`. Governs `period` and `stage` on [*Atlantosaurus montanus*](../../../genera/A/Atlantosaurus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Morrison](../../stratigraphy/m/morrison.md) entry.
+
+**Open.** Nothing.
+
 ## What stages does *Atlantosaurus montanus* take?
 
 *2026-10-13*
@@ -37,3 +49,7 @@
 - `mcintosh1975a`: McIntosh, J. S.; Berman, D. S. (1975). Description of the palate and lower jaw of the sauropod dinosaur Diplodocus (Reptilia: Saurischia) with remarks on the nature of the skull of Apatosaurus. *Journal of Paleontology* 49(1): 187-199.
 - `tschopp2015a`: Tschopp, E.; Mateus, O.; Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ* 3: e857. doi:10.7717/peerj.857
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+
+## Other references
+
+- `kowallis1998a`: Kowallis, B. J.; Christiansen, E. H.; Deino, A. L.; Peterson, F.; Turner, C. E.; Kunk, M. J.; Obradovich, J. D. (1998). The age of the Morrison Formation. *Modern Geology* 22: 235-260.
