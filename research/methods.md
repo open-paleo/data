@@ -429,6 +429,16 @@
 
 **Exceptions.** None.
 
+## A spelling an orthographic reform replaced counts as a variant
+
+*2026-11-27*
+
+**Rule.** Adds to the entry below. A spelling that a national orthographic reform replaced, printed as the unit's name, counts as a variant in the same way as another romanization: "Sînpetru" for Sânpetru, the Romanian spelling before the 1993 reform. A one-off misspelling or a transposed letter does not ("Dabrazinskaya" for Darbazinskaya). Decides `variants` on registry entries.
+
+**Why.** Most of the paleontological literature on the [Sânpetru](stratigraphy/s/sânpetru.md) prints "Sînpetru", and î and â are different letters, so the form is neither a fold nor a romanization; the older spelling is how papers name the unit (user ruling, 2026-11-27).
+
+**Exceptions.** None.
+
 ## A variant changes the romanization; a fold changes only the typography
 
 *2026-10-07*

@@ -1,5 +1,18 @@
 # Wessex
 
+## Is "Variegated Marls and Sandstones" a name for the Wessex?
+
+*2026-11-27*
+
+**Conclusion.** Yes; it is added to the variants. The BGS Lexicon lists it as an obsolete name for the formation, and Rawson (1978) and Hopson (2008) print it. Governs `variants` on [Wessex](../../../stratigraphy/w/wessex.yml).
+
+**Evidence.**
+- bgs2020a, Wessex Formation entry: "Variegated Marls and Sandstones [Obsolete Name and Code: Use WSEX]"
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Hypsilophodon Bed and the numbering of the plant debris beds?
 
 *2026-11-23*
@@ -127,6 +140,7 @@ Supersedes the Barremian these three beds carried until 2026-10-06.
 
 ## References
 
+- `bgs2020a`: British Geological Survey (2020). Wessex Formation. British Geological Survey.
 - `stewart1978a`: Stewart, D. J. (1978). The sedimentology and palaeoenvironment of the Wealden Group of the Isle of Wight, southern England. Doctoral thesis, Portsmouth Polytechnic.
 - `galton1974a`: Galton, P. M. (1974). The ornithischian dinosaur Hypsilophodon from the Wealden of the Isle of Wight. *Bulletin of the British Museum (Natural History), Geology* 25: 1-152.
 - `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.
@@ -139,7 +153,6 @@ Supersedes the Barremian these three beds carried until 2026-10-06.
 - `kerth1988a`: Kerth, M.; Hailwood, E. A. (1988). Magnetostratigraphy of the Lower Cretaceous Vectis Formation (Wealden Group) on the Isle of Wight, southern England. *Journal of the Geological Society* 145(2): 351-360. doi:10.1144/gsjgs.145.2.0351
 - `hughes1958a`: Hughes, N. F. (1958). Palaeontological evidence for the age of the English Wealden. *Geological Magazine* 95: 41-49. doi:10.1017/s0016756800062518
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
-- `bgs2020a`: British Geological Survey (2020). Wessex Formation. British Geological Survey.
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 
 ## Other references
@@ -150,3 +163,5 @@ Supersedes the Barremian these three beds carried until 2026-10-06.
 - `howse1993a`: Howse, S. C. B.; Milner, A. R. (1993). Ornithodesmus—a maniraptoran theropod dinosaur from the Lower Cretaceous of the Isle of Wight, England. *Palaeontology* 36: 425-437.
 - `hughes1990a`: Hughes, N. F.; McDougall, A. B. (1990). New Wealden correlation for the Wessex Basin. *Proceedings of the Geologists' Association* 101(1): 85-90. doi:10.1016/S0016-7878(08)80208-8
 - `benson2009a`: Benson, R. B. J.; Brusatte, S. L.; Hutt, S.; Naish, D. (2009). A new large basal tetanuran (Dinosauria: Theropoda) from the Wessex Formation (Barremian) of the Isle of Wight, England. *Journal of Vertebrate Paleontology* 29(2): 612-615. doi:10.1671/039.029.0202
+- `rawson1978a`: Rawson, P. F.; Curry, D.; Dilley, F. C.; Hancock, J. M.; Kennedy, W. J.; Neale, J. W.; Wood, C. J.; Worssam, B. C. (1978). A correlation of Cretaceous rocks in the British Isles. *Geological Society of London Special Report* 9: 1-70.
+- `hopson2008a`: Hopson, P. M.; Wilkinson, I. P.; Woods, M. A. (2008). A stratigraphical framework for the Lower Cretaceous of England. *British Geological Survey Research Report* RR/08/03.

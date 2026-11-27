@@ -1,5 +1,17 @@
 # Sânpetru
 
+## Does the variant Sînpetru stay?
+
+*2026-11-27*
+
+**Conclusion.** Yes. Sînpetru is the Romanian spelling before the 1993 reform and the one most of the paleontological literature prints; [methods](../../methods.md) now counts a spelling an orthographic reform replaced as a variant. Governs `variants` on [Sânpetru](../../../stratigraphy/s/sânpetru.yml), unchanged.
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age and the spelling of the Sânpetru Formation?
 
 *2026-11-23*

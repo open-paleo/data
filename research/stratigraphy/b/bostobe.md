@@ -1,5 +1,17 @@
 # Bostobe
 
+## Are "Bostobine" and "Bostobinskian" variants of the Bostobe?
+
+*2026-11-27*
+
+**Conclusion.** No. Both occur only in the corpus's English translations of Shilin (1982) and Nessov (1997), which print the Russian name; a translation's rendering is not a name a paper prints. Governs `variants` on [Bostobe](../../../stratigraphy/b/bostobe.yml), unchanged.
+
+**Evidence.** None.
+
+**Ruled out.** - *Bostobine and Bostobinskian.* Translators' renderings.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Bostobe Formation?
 
 *2026-11-23*

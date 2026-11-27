@@ -1,5 +1,17 @@
 # Magnesian Conglomerate
 
+## Is "Dolomitic Conglomerate" a name for the Magnesian Conglomerate?
+
+*2026-11-27*
+
+**Conclusion.** Yes; it is added to the variants. Galton (2007), relaying Moore (1881), and Foffa and colleagues (2014) print it for the Clifton breccia's host unit, as Owen (1842) and Etheridge (1870) did. Governs `variants` on [Magnesian Conglomerate](../../../stratigraphy/m/magnesian-conglomerate.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do Owen (1842) and Galton (2007) say about the Magnesian Conglomerate's names, age and outcrop at Clifton?
 
 *2026-11-23*

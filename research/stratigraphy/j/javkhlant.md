@@ -1,5 +1,18 @@
 # Javkhlant
 
+## Is "Jibhalanta Suite" a variant of the Javkhlant?
+
+*2026-11-27*
+
+**Conclusion.** No. Eberth and colleagues (2009) list the Jibhalanta Suite and the Javkhlant Formation side by side among the units the Shine Us Khudag red beds have been assigned to, which does not show that they are one unit. Governs the absent `variants` on [Javkhlant](../../../stratigraphy/j/javkhlant.yml).
+
+**Evidence.**
+- eberth2009a, p. 295: "The Shine Us Khudag redbeds have variously been assigned to the Jibhalanta Suite, Javkhlant Formation, Baruungoyot Svita, Djadokhta Formation"
+
+**Ruled out.** - *Jibhalanta.* Listed as a separate assignment.
+
+**Open.** Nothing.
+
 ## Does any work give the Javkhlant the Maastrichtian?
 
 *2026-11-26*
@@ -40,10 +53,10 @@
 
 ## References
 
+- `eberth2009a`: Eberth, D. A.; Kobayashi, Y.; Lee, Y. N.; Mateus, O.; Therrien, F.; Zelenitsky, D. K.; Norell, M. A. (2009). Assignment of Yamaceratops dorngobiensis and associated redbeds at Shine Us Khudag (eastern Gobi, Dorngobi Province, Mongolia) to the redescribed Javkhlant Formation (Upper Cretaceous). *Journal of Vertebrate Paleontology* 29(1): 295-302.
 - `fowler2020b`: Fowler, D. W.; Wilson, J. P.; Freedman Fowler, E. A.; Noto, C. R.; Anduza, D.; Horner, J. R. (2020). Trierarchuncus prairiensis gen. et sp. nov., the last alvarezsaurid: Hell Creek Formation (uppermost Maastrichtian), Montana. *Cretaceous Research* 116. doi:10.1016/j.cretres.2020.104560
 - `nesbitt2011a`: Nesbitt, S. J.; Clarke, J. A.; Turner, A. H.; Norell, M. A. (2011). A small alvarezsaurid from the eastern Gobi Desert offers insight into evolutionary patterns in the Alvarezsauroidea. *Journal of Vertebrate Paleontology* 31(1): 144-153. doi:10.1080/02724634.2011.540053
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
-- `eberth2009a`: Eberth, D. A.; Kobayashi, Y.; Lee, Y. N.; Mateus, O.; Therrien, F.; Zelenitsky, D. K.; Norell, M. A. (2009). Assignment of Yamaceratops dorngobiensis and associated redbeds at Shine Us Khudag (eastern Gobi, Dorngobi Province, Mongolia) to the redescribed Javkhlant Formation (Upper Cretaceous). *Journal of Vertebrate Paleontology* 29(1): 295-302.
 - `norell2016a`: Norell, M. A.; Barta, D. E. (2016). A new specimen of the ornithischian dinosaur Haya griva, cross-Gobi geologic correlation, and the age of the Zos Canyon beds. *American Museum Novitates* 3851: 1-20. doi:10.1206/3851.1
 - `jerzykiewicz2000a`: Jerzykiewicz, T. (2000). Lithostratigraphy and sedimentary settings of the Cretaceous dinosaur beds of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 279-296. Cambridge University Press, Cambridge.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5

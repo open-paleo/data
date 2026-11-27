@@ -1,5 +1,19 @@
 # Cabaços
 
+## Are the Vale Verde and Valverde beds other names for the Cabaços?
+
+*2026-11-27*
+
+**Conclusion.** Yes; both are added to the variants. Azerêdo and colleagues (2002) say the formation "basically corresponds to the Cabaços Beds and the Vale Verde Beds of earlier workers", and Kullberg and colleagues (2013) give it as "= Valverde Member". The two forms differ by more than spacing, so each is a printed name. Governs `variants` on [Cabaços](../../../stratigraphy/c/cabaços.yml).
+
+**Evidence.**
+- azerêdo2002a, p. 1341: "which basically corresponds to the Cabac¸os Beds and the Vale Verde Beds of earlier workers"
+- kullberg2013a, p. 229: "the Cabaços Formation (= Valverde Member, Choffat, 1901; Ruget-Perrot, 1961; Mouterde *et al*., 1972; Rocha *in* Ribeiro *et al.,* 1979)"
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does any work place the *Alocodon* horizon on either side of the Pedrógão disconformity?
 
 *2026-11-26*
@@ -59,10 +73,10 @@
 
 ## References
 
-- `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
 - `azerêdo2002a`: Azerêdo, A. C.; Wright, V. P.; Ramalho, M. M. (2002). The Middle–Late Jurassic forced regression and disconformity in central Portugal: eustatic, tectonic and climatic effects on a carbonate ramp system. *Sedimentology* 49(6): 1339-1370. doi:10.1046/j.1365-3091.2002.00501.x
-- `mateus2009b`: Mateus, O.; Milàn, J. (2009). A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal. *Lethaia* 43: 245-257. doi:10.1111/j.1502-3931.2009.00190.x
 - `kullberg2013a`: Kullberg, J. C.; Rocha, R. B.; Soares, A. F.; Rey, J.; Terrinha, P.; Azerêdo, A. C.; Callapez, P.; Duarte, L. V.; Kullberg, M. C.; Martins, L.; Miranda, R.; Alves, C.; Mata, J.; Madeira, J.; Mateus, O.; Moreira, M.; Nogueira, C. R. (2013). A Bacia Lusitaniana: Estratigrafia, Paleogeografia e Tectónica [The Lusitanian Basin: stratigraphy, paleogeography and tectonics]. In *Geologia de Portugal, Volume II – Geologia Meso-cenozóica de Portugal*, pp. 989-1141. Escolar Editora, Lisboa.
+- `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
+- `mateus2009b`: Mateus, O.; Milàn, J. (2009). A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal. *Lethaia* 43: 245-257. doi:10.1111/j.1502-3931.2009.00190.x
 - `schneider2009a`: Schneider, S.; Fürsich, F. T.; Werner, W. (2009). Sr-isotope stratigraphy of the Upper Jurassic of central Portugal (Lusitanian Basin) based on oyster shells. *International Journal of Earth Sciences* 98(8): 1949-1970. doi:10.1007/s00531-008-0359-3
 - `choffat1901a`: Choffat, P. (1901). Notice préliminaire sur la limite entre le Jurassique et le Crétacé en Portugal [Preliminary notice on the boundary between the Jurassic and the Cretaceous in Portugal]. *Bulletin de la Société Belge de Géologie, de Paléontologie et d'Hydrologie* 15: 111-140.
 

@@ -1,5 +1,17 @@
 # Liangtoutang
 
+## Does the variant Laijia stay on the Liangtoutang?
+
+*2026-11-27*
+
+**Conclusion.** Yes. Papers print Laijia as this unit's name; that the Laijia once also covered the Chichengshan does not make it wrong here, and it goes on another unit only where a paper prints it for that unit. Governs `variants` on [Liangtoutang](../../../stratigraphy/l/liangtoutang.yml), unchanged.
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Liangtoutang, and what did the name Laijia cover?
 
 *2026-11-23*

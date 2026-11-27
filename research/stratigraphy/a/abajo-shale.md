@@ -1,5 +1,18 @@
 # Abajo Shale
 
+## Is "Lower Shale" a variant of the Abajo Shale?
+
+*2026-11-27*
+
+**Conclusion.** No. "Lower shale member", printed for this unit by Prieto-Márquez and colleagues (2020) and capitalized by Beveridge and colleagues (2022), is a positional label used for several units, among them the Kirtland's and the Chinle's; lower, middle and upper are never part of a formal name ([methods](../../methods.md)). Governs the absent `variants` on [Abajo Shale](../../../stratigraphy/a/abajo-shale.yml).
+
+**Evidence.**
+- beveridge2022a, p. 16: "early Campanian Lower Shale Member of the Aguja Formation"
+
+**Ruled out.** - *Lower Shale.* A positional label.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the definition and age of the Abajo Shale?
 
 *2026-11-23*
@@ -21,10 +34,10 @@
 
 ## References
 
+- `beveridge2022a`: Beveridge, T. L.; Roberts, E. M.; Ramezani, J.; Titus, A. L.; Eaton, J. G.; Irmis, R. B.; Sertich, J. J. W. (2022). Refined geochronology and revised stratigraphic nomenclature of the Upper Cretaceous Wahweap Formation, Utah, U.S.A. and the age of early Campanian vertebrates from southern Laramidia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 591: 110876. doi:10.1016/j.palaeo.2022.110876
 - `lehman2024a`: Lehman, T. M.; Wick, S. L.; Macon, C. C.; Wagner, J. R.; Waggoner, K. J.; Brink, A. A.; Shiller, T. A., II (2024). Stratigraphy and depositional history of the Aguja Formation (Upper Cretaceous, Campanian) of West Texas, southwestern USA. *Geosphere* 20(3): 825-879. doi:10.1130/GES02662.1
 - `prieto-márquez2020a`: Prieto-Márquez, A.; Wagner, J. R.; Lehman, T. (2020). An unusual 'shovel-billed' dinosaur with trophic specializations from the early Campanian of Trans-Pecos Texas, and the ancestral hadrosaurian crest. *Journal of Systematic Palaeontology* 18(6): 461-498. doi:10.1080/14772019.2019.1625078
 
 ## Other references
 
-- `beveridge2022a`: Beveridge, T. L.; Roberts, E. M.; Ramezani, J.; Titus, A. L.; Eaton, J. G.; Irmis, R. B.; Sertich, J. J. W. (2022). Refined geochronology and revised stratigraphic nomenclature of the Upper Cretaceous Wahweap Formation, Utah, U.S.A. and the age of early Campanian vertebrates from southern Laramidia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 591: 110876. doi:10.1016/j.palaeo.2022.110876
 - `waggoner2006a`: Waggoner, K. J. (2006). Sutural form and shell morphology of Placenticeras and systematic descriptions of Late Cretaceous ammonites from the Big Bend region, Texas. Doctoral thesis, Texas Tech University.

@@ -1,5 +1,18 @@
 # Grès des Guettioua
 
+## Where does the variant "Guettioua Sandstone" come from?
+
+*2026-11-27*
+
+**Conclusion.** From Weishampel and colleagues (2004), now cited. Jenny and colleagues (1981) print "Grès des Guettioua"; the English form in their entry is the corpus translation's. Weishampel and colleagues print the unit in English as the Guettioua Sandstone, so the variant stands on a printed source. Governs `variants` and the pointer to weishampel2004b on [Grès des Guettioua](../../../stratigraphy/g/grès-des-guettioua.yml).
+
+**Evidence.**
+- weishampel2004b, p. 542: "Guettioua Sandstone (Monbaron and Taquet 1981; Monbaron et al. 1999)"
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do Souhel and Canerot (1989) give for the age of the Grès des Guettioua?
 
 *2026-11-25*
@@ -37,6 +50,7 @@
 
 ## References
 
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `souhel1989a`: Souhel, A.; Canerot, J. (1989). Polarités sédimentaires téthysienne puis atlantique : l'exemple des couches rouges jurassico-crétacées du Haut-Atlas central (Maroc) [Tethysian then Atlantic sedimentary polarities: the Jurassic and Cretaceous red beds of the central High Atlas (Morocco)]. In *Colloque franco-marocain de Géologie, Strasbourg, 24-26 mai 1989, Vol. II: Cycle alpin (fin), Quaternaire*, pp. 39-46. Institut de Géologie, Université Louis-Pasteur, Strasbourg. doi:10.3406/sgeol.1989.2078
 - `jenny1981a`: Jenny, J.; Le Marrec, A.; Monbaron, M. (1981). Les Couches rouges du Jurassique moyen du Haut Atlas central (Maroc) : corrélations lithostratigraphiques, éléments de datations et cadre tectono-sédimentaire [Middle Jurassic red beds of the Central High Atlas (Morocco): lithostratigraphic correlations, dating elements and tectono-sedimentary framework]. *Bulletin de la Société Géologique de France* 23(6): 627-639. doi:10.2113/gssgfbull.S7-XXIII.6.627
 - `allain2008a`: Allain, R.; Aquesbi, N. (2008). Anatomy and phylogenetic relationships of Tazoudasaurus naimi (Dinosauria, Sauropoda) from the late Early Jurassic of Morocco. *Geodiversitas* 30(2): 345-424.

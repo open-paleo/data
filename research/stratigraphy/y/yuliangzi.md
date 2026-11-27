@@ -1,5 +1,18 @@
 # Yuliangzi
 
+## Is "Yuliangze" a variant of the Yuliangzi?
+
+*2026-11-27*
+
+**Conclusion.** Yes; it is added. Godefroit and colleagues (2000) and many later works print "Yuliangze Formation" consistently; it romanizes 子 differently, so it is a variant, not a misprint. Governs `variants` on [Yuliangzi](../../../stratigraphy/y/yuliangzi.yml).
+
+**Evidence.**
+- godefroit2000a, p. 875: "Large bonebeds have been excavated in the Late Maastrichian Yuliangze Formation near Jiayin"
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Yuliangzi Formation?
 
 *2026-11-23*

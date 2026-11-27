@@ -1,5 +1,18 @@
 # Hunter Wash
 
+## Is "Lower Shale" a variant of the Hunter Wash?
+
+*2026-11-27*
+
+**Conclusion.** No. Hunt and Lucas (1992) report the "lower shale member" of the Kirtland as an informal term, and Fassett and Hinds (1971) used it for a wider interval; it is a positional label used for several units, and not part of a formal name ([methods](../../methods.md)). Governs the absent `variants` on [Hunter Wash](../../../stratigraphy/h/hunter-wash.yml).
+
+**Evidence.**
+- hunt1992a, p. 218: "a unit informally termed the lower shale"
+
+**Ruled out.** - *Lower Shale.* A positional label.
+
+**Open.** Nothing.
+
 ## Who erected the Hunter Wash Member, and how is it defined?
 
 *2026-11-23*

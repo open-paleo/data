@@ -1,5 +1,17 @@
 # Xinminpu
 
+## Does Chen's "Xiangou" add anything to the Xinminpu?
+
+*2026-11-27*
+
+**Conclusion.** No; it is a misprint for the Xiagou (see [Xiagou](../x/xiagou.md)). Governs nothing on [Xinminpu](../../../stratigraphy/x/xinminpu.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do Zanno (2010) and Chen (1983) add on the age and subdivision of the Xinminpu?
 
 *2026-11-23*

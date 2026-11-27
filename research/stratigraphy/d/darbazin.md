@@ -1,5 +1,18 @@
 # Darbazin
 
+## Is "Dabrazinskaya" a variant of the Darbazin?
+
+*2026-11-27*
+
+**Conclusion.** No; it is removed. Bell and Brink (2013) print "Dabrazinskaya Svita", which transposes two letters of Darbazinskaya; a misspelling is not a variant ([methods](../../methods.md)). Governs `variants` on [Darbazin](../../../stratigraphy/d/darbazin.yml).
+
+**Evidence.**
+- bell2013a, p. 265: "in rocks of the Dabrazinskaya Svita at the Syuk–Syuk well site"
+
+**Ruled out.** - *Dabrazinskaya.* A misspelling.
+
+**Open.** Nothing.
+
 ## Do Minakova's and Rozhdestvensky's ages belong in the Darbazin's dispute?
 
 *2026-11-27*
@@ -68,6 +81,7 @@
 
 ## References
 
+- `bell2013a`: Bell, P. R.; Brink, K. S. (2013). Kazaklambia convincens comb. nov., a primitive juvenile lambeosaurine from the Santonian of Kazakhstan. *Cretaceous Research* 45: 265-274. doi:10.1016/j.cretres.2013.05.003
 - `rozhdestvensky1964a`: Rozhdestvensky, A. K. (1964). [New data on occurrences of dinosaurs in Kazakhstan and Central Asia]. *Tashkentskii Gosudarstvennyi Universitet, Nauchnye Trudy: Geologiya [Tashkent State University, Scientific Publications: Geology]*: 227-241.
 - `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.

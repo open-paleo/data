@@ -1,5 +1,18 @@
 # Xiagou
 
+## Is Chen's "Xiangou" a variant of the Xiagou?
+
+*2026-11-27*
+
+**Conclusion.** No; it is a misprint. Chen (1983) prints "Xiangou Formation" once, beside the Zhonggou Formation above it, for the lower Xinminpu Group. Governs the absent `variants` on [Xiagou](../../../stratigraphy/x/xiagou.yml).
+
+**Evidence.**
+- chen1983a, p. 134: "the Lower Cretaceous Xinminpu Group is subdivided into the Xiangou Formation (below) and the Zhonggou Formation (above)"
+
+**Ruled out.** - *Xiangou.* A misprint.
+
+**Open.** Nothing.
+
 ## What do Zheng and colleagues (2021) give for the age of the Xiagou?
 
 *2026-11-25*
@@ -67,6 +80,7 @@
 
 ## References
 
+- `chen1983a`: Chen, P. J. (1983). A survey of the non-marine Cretaceous in China. *Cretaceous Research* 4: 123-143.
 - `zheng2021c`: Zheng, D.; Wang, H.; Li, S.; Wang, B.; Jarzembowski, E. A.; Dong, C.; Fang, Y.; Teng, X.; Yu, T.; Yang, L.; Li, Y.; Zhao, X.; Xue, N.; Chang, S. C.; Zhang, H. (2021). Synthesis of a chrono- and biostratigraphical framework for the Lower Cretaceous of Jiuquan, NW China: implications for major evolutionary events. *Earth-Science Reviews* 213: 103474. doi:10.1016/j.earscirev.2020.103474
 - `suarez2013a`: Suarez, M. B.; Ludvigson, G. A.; González, L. A.; Al-Suwaidi, A. H.; You, H. L. (2013). Stable isotope chemostratigraphy in lacustrine strata of the Xiagou Formation, Gansu Province, NW China. In *Isotopic Studies in Cretaceous Research (Bojar, A. V.; Melinte-Dobrinescu, M. C.; Smit, J., eds)*, pp. 143-155. doi:10.1144/SP382.1
 - `zhou2026a`: Zhou, L. Q.; Lamanna, M. C.; Poust, A. W.; Li, D. Q.; You, H. L.; O'Connor, J. K. (2026). First non-avian theropod (Dromaeosauridae, Microraptorinae) from the bird-bearing Lower Cretaceous Xiagou Formation of the Changma Basin, Gansu Province, northwestern China. *Annals of Carnegie Museum* 92(2): 89-110.

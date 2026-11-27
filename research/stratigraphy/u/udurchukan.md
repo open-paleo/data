@@ -1,5 +1,18 @@
 # Udurchukan
 
+## Is "Lower Tsagayan" a former name for the Udurchukan?
+
+*2026-11-27*
+
+**Conclusion.** Yes; it is added to the variants. Alifanov and Bolotsky (2010) say the formation was "previously referred to as the Tsagayan Formation or Lower Tsagayan Formation". "Tsagayan" alone is left for the question of a Tsagayan Group. Governs `variants` on [Udurchukan](../../../stratigraphy/u/udurchukan.yml).
+
+**Evidence.**
+- alifanov2010a, p. 84: "the Udurchukan Formation (previously referred to as the Tsagayan Formation or Lower Tsagayan Formation)"
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Udurchukan's Campanian stand?
 
 *2026-11-26*
@@ -33,8 +46,8 @@
 
 ## References
 
-- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 - `alifanov2010a`: Alifanov, V. R.; Bolotsky, Y. (2010). Arkharavia heterocoelica gen. et sp. nov., a new sauropod dinosaur from the Upper Cretaceous of the Far East of Russia. *Paleontological Journal* 44(1): 84-91. doi:10.1134/S0031030110010119
+- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 
 ## Other references
 

@@ -1,5 +1,18 @@
 # Bajo de la Carpa
 
+## Is the Balsa Formation a former name for the Bajo de la Carpa?
+
+*2026-11-27*
+
+**Conclusion.** Yes; "Balsa" is added to the variants. Hugo and Leanza (2001) assimilate Weber's (1968) Balsa Formation, south of Paso Córdova, to the Bajo de la Carpa on its lithology and position, and conclude that the name should be abandoned. Governs `variants` on [Bajo de la Carpa](../../../stratigraphy/b/bajo-de-la-carpa.yml).
+
+**Evidence.**
+- hugo2001a, p. 20: "debe ser asimilada, por sus características litológicas y su posición en la secuencia sedimentaria, a la Formación Bajo de la Carpa. De ello se desprende que el término Balsense (= Formación Balsa), a estar con los conocimientos actuales, debería ser abandonado" ["must be assimilated, by its lithological characteristics and its position in the sedimentary sequence, to the Bajo de la Carpa Formation. It follows that the term Balsense (= Balsa Formation), in the light of current knowledge, should be abandoned", translated]
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Which of the cited ages are for the Bajo de la Carpa itself, and which for its subgroup?
 
 *2026-11-23*
@@ -62,8 +75,8 @@
 
 ## References
 
-- `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `hugo2001a`: Hugo, C. A.; Leanza, H. A. (2001). Hoja Geológica 3969-IV, General Roca, provincias de Río Negro y Neuquén [Geological Sheet 3969-IV, General Roca, Río Negro and Neuquén provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 308: 1-65.
+- `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `cruz1989a`: Cruz, C. E.; Condat, P.; Kozlowski, E.; Manceda, R. (1989). Análisis estratigráfico secuencial del Grupo Neuquén (Cretácico superior) en el valle del río Grande, Provincia de Mendoza [Sequential stratigraphic analysis of the Neuquén Group (Upper Cretaceous) in the valley of the Río Grande, Mendoza Province]. In *I Congreso Nacional de Exploración de Hidrocarburos, Mar del Plata. Actas*, pp. 689-714. Instituto Argentino del Petróleo.
 - `filippi2015a`: Filippi, L. S. (2015). Los dinosaurios Sauropoda del Cretácico Superior del Norte de la Cuenca Neuquina, Patagonia Argentina [Sauropod dinosaurs of the Upper Cretaceous from North of the Neuquen Basin, Patagonia Argentina]. *Boletín del Instituto de Fisiografía y Geología* 85: 19-28.
 - `pérez-moreno2023a`: Pérez-Moreno, A.; Otero, A.; Carballido, J. L.; Salgado, L.; Calvo, J. O. (2023). The appendicular skeleton of Rinconsaurus caudamirus (Sauropoda: Titanosauria) from the Upper Cretaceous of Patagonia, Argentina. *Cretaceous Research* 142: 105389. doi:10.1016/j.cretres.2022.105389
