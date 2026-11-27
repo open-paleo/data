@@ -1,5 +1,18 @@
 # Darbazin
 
+## Is Nessov's (1997) Santonian for Darbaza his own?
+
+*2026-11-27*
+
+**Conclusion.** Yes; the Santonian stays. Answers the 2026-11-25 entry's Open line. Nessov's (1997) catalogue entry for Darbaza, which he marks as surveyed by himself, gives the bed "Syuksyukian Formation or, more likely, lower part of the Darbazinian Formation, Santonian or Santonian-Lower Campanian", with no source credited for the age; both alternatives give the Santonian. Governs `stages` on [Darbazin](../../../stratigraphy/d/darbazin.yml), unchanged.
+
+**Evidence.**
+- nessov1997a, p. ?, PDF p. 103, no. 28: "Сюксюкская свита или, вероятнее, нижняя часть дарбазинской свиты, сантон или сантон- нижний кампан." ["Syuksyukian Formation or, more likely, lower part of the Darbazinian Formation, Santonian or Santonian-Lower Campanian.", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does any work read date the Darbazin Coniacian?
 
 *2026-11-25*
@@ -41,10 +54,10 @@
 
 ## References
 
+- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
-- `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
 
 ## Other references
 

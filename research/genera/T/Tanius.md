@@ -1,5 +1,18 @@
 # *Tanius*
 
+## Which stages does the *Tanius sinensis* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Campanian–Maastrichtian, with `resolution: horizon`. The record files the holotype in the Hongtuya, after the provincial lithostratigraphy, but three works give its horizon as the Jiangjunding Formation, which Borinder and colleagues (2021) date upper Campanian–lower Maastrichtian, while the Hongtuya is Campanian (see [Hongtuya](../../stratigraphy/h/hongtuya.md)). The bed's unit is uncertain, so the stages are the horizon's. Governs `stage`, `resolution: horizon` and the location note on [*Tanius sinensis*](../../../genera/T/Tanius.yml).
+
+**Evidence.**
+- borinder2021a, p. e1914642-3: the Jiangjunding is "upper Campanian–lower Maastrichtian".
+
+**Ruled out.** Nothing.
+
+**Open.** Whether the Tianqiaotun–Jiangjunding section belongs to the Hongtuya or the Jiangjunding.
+
 ## What is *Tanius chingkankouensis*?
 
 *2026-10-29*
@@ -19,6 +32,6 @@
 
 ## References
 
+- `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642
 - `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 438-463. University of California Press, Berkeley.
 - `prieto-márquez2013b`: Prieto-Márquez, A.; Wagner, J. R. (2013). The "unicorn" dinosaur that wasn't: a new reconstruction of the crest of Tsintaosaurus and the early evolution of the lambeosaurine crest and rostrum. *PLOS ONE* 8(11): e82268. doi:10.1371/journal.pone.0082268
-- `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642

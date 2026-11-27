@@ -1,5 +1,21 @@
 # Dinosaur Beds
 
+## Does the Dinosaur Beds' Barremian or Aptian rest on a reading?
+
+*2026-11-27*
+
+**Conclusion.** The Aptian does, the Barremian does not; the unit becomes Aptian. Supersedes the 2026-11-25 entry. No work read gives the beds a Barremian: Widlansky and colleagues (2018) credit their Barremian–Aptian to Colin and Jacobs (1990), whose ostracods give "an Aptian minimum age" and only allow an older age ("cannot be excluded"), and whose Barremian is the age of other West African beds. Gorscak and colleagues (2014) give "the Aptian Dinosaur Beds" in their own voice, with no basis, and that reading carries the Aptian. Governs `stages: [Aptian]` and the notes on widlansky2018a and gorscak2014a on [Dinosaur Beds](../../../stratigraphy/d/dinosaur-beds.yml); [*Malawisaurus*](../../../genera/M/Malawisaurus.yml) and [*Karongasaurus*](../../../genera/K/Karongasaurus.yml) are unaffected.
+
+**Evidence.**
+- colin1990a, p. 1025: the ostracods "allow confirmation of an Aptian minimum age for these beds".
+- colin1990a, p. 1026: "However, an older (Lower Cretaceous, pre-Aptian) age cannot be excluded."
+- gorscak2014a, p. 1133: "the Aptian Dinosaur Beds (DB) of Malawi".
+
+**Ruled out.**
+- *Barremian.* A misrelay of Colin and Jacobs (1990).
+
+**Open.** Unchanged: no radiometric or magnetostratigraphic date bears on the beds.
+
 ## What do Colin and Jacobs (1990) say about the age of the Dinosaur Beds?
 
 *2026-11-25*
@@ -57,12 +73,12 @@
 
 ## References
 
-- `colin1990a`: Colin, J. P.; Jacobs, L. L. (1990). L'âge des Couches à Dinosaures du Malawi : apport des ostracodes [On the age of the Malawi Dinosaur Beds: evidence from ostracodes]. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 311: 1025-1029.
 - `widlansky2018a`: Widlansky, S. J.; Clyde, W. C.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2018). Paleomagnetism of the Cretaceous Galula Formation and implications for vertebrate evolution. *Journal of African Earth Sciences* 139: 403-420. doi:10.1016/j.jafrearsci.2017.11.029
+- `gorscak2014a`: Gorscak, E.; O'Connor, P. M.; Stevens, N. J.; Roberts, E. M. (2014). The basal titanosaurian Rukwatitan bisepultus (Dinosauria, Sauropoda) from the middle Cretaceous Galula Formation, Rukwa Rift Basin, southwestern Tanzania. *Journal of Vertebrate Paleontology* 34(5): 1133-1154. doi:10.1080/02724634.2014.845568
+- `colin1990a`: Colin, J. P.; Jacobs, L. L. (1990). L'âge des Couches à Dinosaures du Malawi : apport des ostracodes [On the age of the Malawi Dinosaur Beds: evidence from ostracodes]. *Comptes Rendus de l'Académie des Sciences de Paris, Série II* 311: 1025-1029.
 - `dixey1928a`: Dixey, F. (1928). The Dinosaur Beds of Lake Nyasa. *Transactions of the Royal Society of South Africa* 16(1): 55-66. doi:10.1080/00359192809519657
 - `jacobs1993a`: Jacobs, L. L.; Winkler, D. A.; Downs, W. R.; Gomani, E. M. (1993). New material of an Early Cretaceous titanosaurid sauropod dinosaur from Malawi. *Palaeontology* 36(3): 523-534.
 - `gomani2005a`: Gomani, E. M. (2005). Sauropod dinosaurs from the Early Cretaceous of Malawi. *Palaeontologia Electronica* 8(1): 1-37.
-- `gorscak2014a`: Gorscak, E.; O'Connor, P. M.; Stevens, N. J.; Roberts, E. M. (2014). The basal titanosaurian Rukwatitan bisepultus (Dinosauria, Sauropoda) from the middle Cretaceous Galula Formation, Rukwa Rift Basin, southwestern Tanzania. *Journal of Vertebrate Paleontology* 34(5): 1133-1154. doi:10.1080/02724634.2014.845568
 - `gorscak2017a`: Gorscak, E.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J. (2017). The second titanosaurian (Dinosauria: Sauropoda) from the middle Cretaceous Galula Formation, southwestern Tanzania, with remarks on African titanosaurian diversity. *Journal of Vertebrate Paleontology* 37(4): e1343250. doi:10.1080/02724634.2017.1343250
 - `gorscak2019a`: Gorscak, E.; O'Connor, P. M. (2019). A new African Titanosaurian Sauropod Dinosaur from the middle Cretaceous Galula Formation (Mtuka Member), Rukwa Rift Basin, Southwestern Tanzania. *PLOS ONE* 14(2): e0211412. doi:10.1371/journal.pone.0211412
 - `mannion2026a`: Mannion, P. D.; Carvalho, I. S. (2026). Re-evaluation of the Early Cretaceous titanosauriform sauropod dinosaur Triunfosaurus leonardii from the Triunfo Basin, Brazil: implications for the initial radiations of Somphospondyli and Titanosauria. *Zoological Journal of the Linnean Society* 207(1). doi:10.1093/zoolinnean/zlag073

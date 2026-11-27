@@ -1,5 +1,20 @@
 # Hongtuya
 
+## Does any work give the Hongtuya the Maastrichtian?
+
+*2026-11-27*
+
+**Conclusion.** No; the Maastrichtian is dropped, and the formation is Campanian. Answers the 2026-11-25 entry's Open line. Xing and colleagues (2014) give the formation's members "middle Campanian" and "late Campanian" and draw the whole formation below the Campanian–Maastrichtian line; An and colleagues (2015) conclude that it "was deposited during the Campanian"; the "upper Campanian–lower Maastrichtian" of Borinder and colleagues (2021) is for the Jiangjunding Formation above. [*Tanius sinensis*](../../../genera/T/Tanius.yml), whose horizon three works place in the Jiangjunding, keeps its Campanian–Maastrichtian with `resolution: horizon`. Governs `stages: [Campanian]` and the note on borinder2021a on [Hongtuya](../../../stratigraphy/h/hongtuya.yml).
+
+**Evidence.**
+- xing2014b, p. 1625, Table 1: the lower member of the Hongtuya Formation "middle Campanian", the middle member "late Campanian".
+- an2015a, p. 85: "the Hongtuya Formation was deposited during the Campanian (from 83.6 ± 0.2 Ma to 72.1 ± 0.2 Ma)".
+
+**Ruled out.**
+- *Maastrichtian from Borinder and colleagues (2021).* Their age is the Jiangjunding's.
+
+**Open.** Nothing.
+
 ## What do Yan and Chen (2005) date, and in which unit?
 
 *2026-11-25*
@@ -57,11 +72,12 @@
 
 ## References
 
+- `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642
+- `xing2014b`: Xing, H.; Zhao, X.; Wang, K.; Li, D.; Chen, S.; Mallon, J. C.; Zhang, Y.; Xu, X. (2014). Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia. *Acta Geologica Sinica (English Edition)* 88(6): 1623-1652. doi:10.1111/1755-6724.12334
+- `an2015a`: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X. (2015). Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China. *Journal of Palaeogeography* 5(1): 72-99. doi:10.1016/j.jop.2015.11.002
 - `yan2005a`: Yan, J.; Chen, J. F. (2005). Clinopyroxene megacrysts in the Late Mesozoic basalts from Daxizhuang, Jiaozhou. *Journal of Anhui University of Science and Technology (Natural Science)* 25(3): 9-13.
 - `zhang1996a`: Zhang, Z. Q.; Liu, M. W. (eds.) (1996). 山东省岩石地层 [Stratigraphy (Lithostratigraphic) of Shandong Province]. China University of Geosciences Press, Wuhan.
 - `zhang2019a`: Zhang, J.; Wang, X.; Wang, Q.; Jiang, S.; Cheng, X.; Li, N.; Qiu, R. (2019). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of Shandong, China. *Anais da Academia Brasileira de Ciências* 91(suppl 2). doi:10.1590/0001-3765201720160920
-- `borinder2021a`: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P. (2021). Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China. *Journal of Vertebrate Paleontology* 41(1): e1914642. doi:10.1080/02724634.2021.1914642
-- `an2015a`: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X. (2015). Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China. *Journal of Palaeogeography* 5(1): 72-99. doi:10.1016/j.jop.2015.11.002
 - `xu2010c`: Xu, X.; Wang, K.; Zhao, X.; Sullivan, C.; Chen, S. (2010). A New Leptoceratopsid (Ornithischia: Ceratopsia) from the Upper Cretaceous of Shandong, China and Its Implications for Neoceratopsian Evolution. *PLoS ONE* 5(11): e13835. doi:10.1371/journal.pone.0013835
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
@@ -69,7 +85,6 @@
 
 ## Other references
 
-- `xing2014b`: Xing, H.; Zhao, X.; Wang, K.; Li, D.; Chen, S.; Mallon, J. C.; Zhang, Y.; Xu, X. (2014). Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia. *Acta Geologica Sinica (English Edition)* 88(6): 1623-1652. doi:10.1111/1755-6724.12334
 - `yan2005b`: Yan, J.; Chen, J. F.; Xie, Z.; Gao, T. S.; Foland, K. A.; Zhang, X. D.; Liu, M. W. (2005). [Studies on petrology and geochemistry of the Late Cretaceous basalts and mantle-derived xenoliths from eastern Shandong]. *Acta Petrologica Sinica* 21: 99-112.
 - `hu2001a`: Hu, C. Z.; Cheng, Z. W.; Pang, Q. Q.; Fang, X. S. (2001). Shantungosaurus giganteus. Geological Publishing House, Beijing.
 - `liu1994a`: Liu, M. W.; Luan, H. Y.; Chi, P. X.; Xu, L. J. (1994). 山东省侏罗—白垩纪岩石地层清理意见 [Proposals for the revision of the Jurassic–Cretaceous lithostratigraphy of Shandong Province]. *山东地质 [Shandong Geology]* 10(supplement).

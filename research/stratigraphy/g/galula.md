@@ -1,5 +1,20 @@
 # Galula
 
+## Does Widlansky and colleagues' C32 correlation add the Maastrichtian?
+
+*2026-11-27*
+
+**Conclusion.** No; the Maastrichtian is dropped, and the formation runs Aptian to Campanian. Supersedes the 2026-11-25 entry. Widlansky and colleagues (2018) give "upper Campanian or lowermost Maastrichtian" only as what the C32 correlation "would place" the Namba localities in; their conclusions give that correlation as Campanian, and what they commit to for the member is "Cenomanian – Campanian". A conditional is not a reading. Governs `stages`, Aptian to Campanian, and the note on widlansky2018a on [Galula](../../../stratigraphy/g/galula.yml); its genera, Aptian to Cenomanian, are unaffected.
+
+**Evidence.**
+- widlansky2018a, accepted manuscript, p. 28: "This correlation would place the TZ-07 fossil localities in the upper Campanian or lowermost Maastrichtian."
+- widlansky2018a, accepted manuscript, p. 36: "These reversals may be equivalent to Chron C32 (Campanian)"; "Together these interpretations constrain the age of the Namba Member to Cenomanian – Campanian".
+
+**Ruled out.**
+- *Maastrichtian.* A conditional consequence of one correlation.
+
+**Open.** Nothing.
+
 ## Does Widlansky and colleagues' preferred C32 correlation add the Maastrichtian to the Galula?
 
 *2026-11-25*

@@ -1,5 +1,20 @@
 # Eumeralla
 
+## Does the Eumeralla keep the Hauterivian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation runs from the Barremian to the Albian. Supersedes the 2026-11-25 entries on the stages. Felton (1997) dates the formation's four informal units from well palynology, Eumeralla I "?Late Barremian–Albian" and Eumeralla II from the late Aptian; the query qualifies her own reading. The Hauterivian rests only on Bell and colleagues' (2018) "late Hauterivian–Albian", which cites nothing and which their own Fig. 1C does not draw, the base sitting in the uppermost Barremian. Governs `stages`, Barremian to Albian, and the note on bell2018a on [Eumeralla](../../../stratigraphy/e/eumeralla.yml); its genera, Barremian to Albian, are unaffected.
+
+**Evidence.**
+- felton1997a, p. 719, Table 2: Eumeralla I "?Late Barremian–Albian"; Eumeralla II "Late Aptian–early to mid-Albian".
+- bell2018a, p. 6: the "Eumeralla Formation (late Hauterivian–Albian) in Victoria".
+
+**Ruled out.**
+- *Hauterivian.* Unsourced and contradicted by the same paper's chart.
+
+**Open.** Nothing.
+
 ## Which zonation governs the Eumeralla's Aptian?
 
 *2026-11-25*
@@ -51,14 +66,14 @@
 
 ## References
 
+- `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
+- `felton1997a`: Felton, E. A. (1997). A non-marine Lower Cretaceous rift-related epiclastic volcanic unit in southern Australia: the Eumeralla Formation in the Otway Basin. Part I: Lithostratigraphy and depositional environments. *AGSO Journal of Australian Geology & Geophysics* 16(5): 717-730.
 - `herne2018a`: Herne, M. C.; Tait, A. M.; Weisbecker, V.; Hall, M.; Nair, J. P.; Cleeland, M.; Salisbury, S. W. (2018). A new small-bodied ornithopod (Dinosauria, Ornithischia) from a deep, high-energy Early Cretaceous river of the Australian-Antarctic rift system. *PeerJ* 5: e4113. doi:10.7717/peerj.4113
 - `wagstaff1989a`: Wagstaff, B. E.; McEwen Mason, J. R. C. (1989). Palynological dating of Lower Cretaceous coastal vertebrate localities, Victoria, Australia. *National Geographic Research* 5: 54-63.
-- `felton1997a`: Felton, E. A. (1997). A non-marine Lower Cretaceous rift-related epiclastic volcanic unit in southern Australia: the Eumeralla Formation in the Otway Basin. Part I: Lithostratigraphy and depositional environments. *AGSO Journal of Australian Geology & Geophysics* 16(5): 717-730.
 
 ## Other references
 
 - `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
-- `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
 - `helby1987a`: Helby, R.; Morgan, R.; Partridge, A. D. (1987). A palynological zonation of the Australian Mesozoic.
 - `gradstein2012a`: Gradstein, F. M.; Ogg, J. G.; Schmitz, M.; Ogg, G. (eds.) (2012). The Geologic Time Scale 2012. Elsevier, Oxford.
 - `burger1980a`: Burger, D. (1980). Palynological studies in the Lower Cretaceous of the Surat Basin, Australia. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 189.

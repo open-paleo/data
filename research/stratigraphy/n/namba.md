@@ -1,5 +1,19 @@
 # Namba
 
+## Does the Namba keep the Maastrichtian?
+
+*2026-11-27*
+
+**Conclusion.** No; the member is Cenomanian to Campanian (see [Galula](../g/galula.md)). Widlansky and colleagues (2018) reach the lowermost Maastrichtian only in a conditional, and commit to "Cenomanian – Campanian" for the member. Governs `stages`, Cenomanian to Campanian, and the note on widlansky2018a on [Namba](../../../stratigraphy/n/namba.yml); [*Rukwatitan*](../../../genera/R/Rukwatitan.yml) and [*Shingopana*](../../../genera/S/Shingopana.yml) are unaffected.
+
+**Evidence.**
+- widlansky2018a, accepted manuscript, p. 36: "Together these interpretations constrain the age of the Namba Member to Cenomanian – Campanian".
+
+**Ruled out.**
+- *Maastrichtian.* A conditional.
+
+**Open.** Unchanged: a radiometric age for the upper member.
+
 ## Does Widlansky and colleagues' Aptian–Cenomanian bear on the Namba?
 
 *2026-11-26*
