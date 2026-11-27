@@ -1,5 +1,18 @@
 # Yezo
 
+## Does any record read Matsumoto and Obata's Fig. 1 as an equivalence?
+
+*2026-11-26*
+
+**Conclusion.** No. Answers the 2026-11-23 entry's Open line for the dataset. Only two records cite Matsumoto and Obata (1979): the Yezo, which takes no stage from it, and [*Nipponosaurus*](../../../genera/N/Nipponosaurus.yml), whose stages come from Obata's appendix text, which ties the horizon to stages in words. No record carries a K unit converted to a stage through the figure. Governs nothing; `stages` on [Yezo](../../../stratigraphy/y/yezo.yml) unchanged.
+
+**Evidence.**
+- matsumoto1979a, p. 58: the *Nipponosaurus* horizon is "Inoc. orientalis 帯（K6a1）かそれ以下，つまりカンパニアン下部ないしはサントニアン上部と考えられる" ["in the *Inoc. orientalis* Zone (K6a1) or lower, in other words in the lower Campanian to upper Santonian", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged: whether the figure is meant as an equivalence.
+
 ## Does the Yezo Group take in the Hakobuchi beds, and what do Matsumoto and Obata's correlation units add to its age?
 
 *2026-11-23*
@@ -50,9 +63,9 @@ Supersedes the 2026-09-30 entry's closing clause: the stage list does include th
 
 ## References
 
+- `matsumoto1979a`: Matsumoto, T.; Obata, I. (1979). Evaluation of ammonites and other fossils from the Cretaceous of Japan for interregional correlation. *Kaseki (Fossils)* 29: 43-58.
 - `takashima2004a`: Takashima, R.; Kawabe, F.; Nishi, H.; Moriya, K.; Wani, R.; Ando, H. (2004). Geology and stratigraphy of forearc basin sediments in Hokkaido, Japan: Cretaceous environmental events on the north-west Pacific margin. *Cretaceous Research* 25: 365-390. doi:10.1016/j.cretres.2004.02.004
 - `hayakawa2005a`: Hayakawa, H.; Manabe, M.; Carpenter, K. (2005). Nodosaurid ankylosaur from the Cenomanian of Japan. *Journal of Vertebrate Paleontology* 25(1): 240-245. doi:10.1671/0272-4634(2005)025[0240:NAFTCO]2.0.CO;2
-- `matsumoto1979a`: Matsumoto, T.; Obata, I. (1979). Evaluation of ammonites and other fossils from the Cretaceous of Japan for interregional correlation. *Kaseki (Fossils)* 29: 43-58.
 
 ## Other references
 

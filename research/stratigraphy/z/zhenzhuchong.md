@@ -1,5 +1,24 @@
 # Zhenzhuchong
 
+## What does the Zhenzhuchong's Sinemurian rest on?
+
+*2026-11-26*
+
+**Conclusion.** On Franceschi and colleagues (2022), not on Han and colleagues' (2024) hedge. Answers the 2026-11-23 entry's Open line. Han and colleagues' "possibly in Sinemurian" cites Meng and colleagues (2003) and Franceschi and colleagues, the latter held. Franceschi and colleagues sample the upper part of the member at Dacao, at the base of an interval they date by carbon isotopes "from the Sinemurian to the lowermost Toarcian", and place the Sinemurian–Pliensbachian boundary within the overlying Dongyuemiao Member; their figures label the sampled Zhenzhuchong Sinemurian. Their "Hettangian–Sinemurian" is stated of the Dongyuemiao and Zhenzhuchong together, an age shared across two units, and the same paper puts part of the Dongyuemiao in the Pliensbachian, so it adds no Hettangian. Governs `stages: [Sinemurian]`, unchanged, the note on han2024b and the pointers to franceschi2022a and meng2003a on [Zhenzhuchong](../../../stratigraphy/z/zhenzhuchong.yml); [*Qianlong shouhu*](../../../genera/Q/Qianlong.yml), Sinemurian, is unaffected.
+
+**Evidence.**
+- han2024b, p. 2: "the Lower Jurassic Zhenzhuchong Member (possibly in Sinemurian), Ziliujing Formation [10,11]".
+- franceschi2022a, p. 4: "We analyzed δ13Corg in the fluvial-lacustrine Ziliujing Formation covering an interval from the Sinemurian to the lowermost Toarcian".
+- franceschi2022a, p. 5: "Sampling covered a total thickness of ∼120 m and encompassed the upper part of the Zhenzhuchong Member, the entire Dongyuemiao and Ma’anshan Members, and the lowermost part of the Da’anzhai Member."
+- franceschi2022a, p. 13: the boundary event's "recognition allows us to place the Sinemurian-Pliensbachian boundary within the Dongyuemiao Member (Fig. 4)".
+- franceschi2022a, p. 10: "the underlying Dongyuemiao and Zhenzhuchong Members can be referred to the Hettangian–Sinemurian".
+
+**Ruled out.**
+- *Dropping the stage on Han and colleagues' hedge.* The work they cite gives the Sinemurian in its own voice.
+- *Hettangian from Franceschi and colleagues (2022).* An age shared across two members.
+
+**Open.** No sample from the member yielded palynomorphs, and its lower part is undated.
+
 ## What do the cited works say about the age of the Zhenzhuchong, and on what evidence?
 
 *2026-11-23*
@@ -39,6 +58,9 @@
 
 ## References
 
+- `han2024b`: Han, F.; Yu, Y.; Zhang, S.; Zeng, R.; Wang, X.; Cai, H.; Wu, T.; Wen, Y.; Cai, S.; Li, C.; Wu, R.; Zhao, Q.; Xu, X. (2024). Exceptional Early Jurassic fossils with leathery eggs shed light on dinosaur reproductive biology. *National Science Review* 11(6). doi:10.1093/nsr/nwad258
+- `franceschi2022a`: Franceschi, M.; Jin, X.; Shi, Z.; Chen, B.; Preto, N.; Roghi, G.; Dal Corso, J.; Han, L. (2022). High-resolution record of multiple organic carbon-isotope excursions in lacustrine deposits of Upper Sinemurian through Pliensbachian (Early Jurassic) from the Sichuan Basin, China. *Geological Society of America Bulletin* 135(1-2): 3-17. doi:10.1130/b36235.1
+- `meng2003a`: Meng, F. S.; Li, X. B.; Chen, H. M. (2003). Fossil plants from Dongyuemiao Member of the Ziliujing Formation and Lower-Middle Jurassic boundary in Sichuan Basin, China. *Acta Geol Sin* 42: 525-536.
 - `dong1983a`: Dong, Z.; Zhou, S.; Zhang, H. (1983). [Dinosaurs from the Jurassic of Sichuan]. *Palaeontologica Sinica, New Series C, Whole Number* 162(23): 1-136.
 - `gu1997a`: Gu, X. D.; Liu, X. H. (eds.) (1997). 四川省岩石地层 [Stratigraphy (Lithostratic) of Sichuan Province]. China University of Geosciences Press, Wuhan.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
@@ -52,4 +74,3 @@
 ## Other references
 
 - `tan1933a`: Tan, X.; Li, C. Y. (1933). Geology of Sichuan.
-- `han2024b`: Han, F.; Yu, Y.; Zhang, S.; Zeng, R.; Wang, X.; Cai, H.; Wu, T.; Wen, Y.; Cai, S.; Li, C.; Wu, R.; Zhao, Q.; Xu, X. (2024). Exceptional Early Jurassic fossils with leathery eggs shed light on dinosaur reproductive biology. *National Science Review* 11(6). doi:10.1093/nsr/nwad258

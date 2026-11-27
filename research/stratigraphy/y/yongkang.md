@@ -1,5 +1,22 @@
 # Yongkang
 
+## Does the Yongkang keep the Turonian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Turonian is dropped. Supersedes the 2026-09-30 entry on the stages and answers the 2026-11-23 entry's Open line. Luo and Yu's (2004) 113–90 Ma, "Aptian 期到 Turonian 期", takes its younger end from relayed ages of the Xiaoxiong Formation, which they place above the Chaochuan and leave outside the group they define as the Guantou, Chaochuan and Fangyan. Li and colleagues' (2014) younger end of 91 Ma rests on Tiantai Basin tuffs dated by He and colleagues (2012), in a sequence they call "equivalent to the upper Yongkang Group"; their own youngest date for the group is 104 ± 2 Ma. Both are second-hand, and the second is the age of a correlative. Governs `stages: [Aptian, Albian, Cenomanian]`, the notes on luo2004a and li2014c and the pointer to he2012a on [Yongkang](../../../stratigraphy/y/yongkang.yml); its genera, from the Chaochuan, and the Chaochuan itself are unaffected.
+
+**Evidence.**
+- luo2004a, p. 396: "朝川组之上小雄组粗面岩、石英粗面岩和碱长流纹岩,同位素年龄为 90~91.4 Ma。永康群同位素年龄在 113~90 Ma 间。即相当于 Aptian 期到 Turonian 期。" ["the trachyte, quartz trachyte and alkali-feldspar rhyolite of the Xiaoxiong Formation above the Chaochuan Formation give isotopic ages of 90–91.4 Ma. The isotopic ages of the Yongkang Group thus lie between 113 and 90 Ma, corresponding to the Aptian through the Turonian", translated].
+- li2014c, p. 1612: "six younger interbedded tuff layers yield zircon U-Pb ages of 99–91 Ma (Figure 3C, He et al. 2013)".
+- li2014c, p. 1618: the central and southern Tiantai Basin sequence of "coarse sandstones, 104–91 Ma ignimbrites, and Fangyan conglomerates", after Cui and colleagues (2010) and He and colleagues (2012), is "equivalent to the upper Yongkang Group".
+
+**Ruled out.**
+- *Turonian from Luo and Yu (2004).* The Xiaoxiong lies above the group they define, and its ages are relayed.
+- *Turonian from Li and colleagues (2014).* A relayed date from a unit they correlate with the group, in another basin.
+
+**Open.** A date from the Fangyan Formation, the group's top.
+
 ## How do Luo and Yu (2004) trace the Yongkang Group's name and date its formations?
 
 *2026-11-23*
@@ -32,4 +49,10 @@
 ## References
 
 - `luo2004a`: Luo, Y.; Yu, Y. (2004). 试论永康群时代及区域地层对比 [A tentative discussion on the age of the Yongkang Group and regional stratigraphic correlation]. *Geology in China* 31(4): 395-399. doi:10.12029/gc20040409
+- `li2014c`: Li, J.; Ma, Z.; Zhang, Y.; Dong, S.; Li, Y.; Lu, M.; Tan, J. (2014). Tectonic evolution of Cretaceous extensional basins in Zhejiang Province, eastern South China: structural and geochronological constraints. *International Geology Review* 56(13): 1602-1629. doi:10.1080/00206814.2014.951978
+- `he2012a`: He, H.; Wang, X.; Wang, Q.; Jiang, S.; Cheng, X.; Zhang, J.; Zhou, Z.; Zhao, Z.; Jiang, Y.; Yu, F.; Deng, C.; Yang, J.; Zhu, R. (2012). SIMS zircon U-Pb dating of the Late Cretaceous dinosaur egg-bearing red deposits in the Tiantai Basin, southeastern China. *Journal of Asian Earth Sciences* 62: 654-661. doi:10.1016/j.jseaes.2012.11.015
 - `pond2023a`: Pond, S.; Strachan, S. J.; Raven, T. J.; Simpson, M. I.; Morgan, K.; Maidment, S. C. R. (2023). Vectipelta barretti, a new ankylosaurian dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, UK. *Journal of Systematic Palaeontology* 21(1). doi:10.1080/14772019.2023.2210577
+
+## Other references
+
+- `cui2010a`: Cui, Y. R.; Xie, Z.; Chen, J. F.; Yu, Y. W.; Hu, L. H. (2010). SHRIMP U-Pb dating of zircons from the Late Mesozoic basalts in eastern Zhejiang province and its geological significance. *Geological Journal of China Universities* 16(2): 198-212.

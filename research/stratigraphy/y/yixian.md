@@ -1,5 +1,18 @@
 # Yixian
 
+## Does any record take an Albian from Sereno's (2010) Lujiatun line?
+
+*2026-11-26*
+
+**Conclusion.** No. Sereno's "late Barremian or earliest Albian" for the Lujiatun Beds adds no stage, as the 2026-11-23 entry rules; [*Psittacosaurus lujiatunensis*](../../../genera/P/Psittacosaurus.yml) and [Lujiatun](../../../stratigraphy/l/lujiatun.yml) are Barremian. The genus record cites Sereno (2010) for its taxonomy, with no age, and the Albian of the other *Psittacosaurus* species comes from their own units, the Jiufotang, Ejinhoro, Ilek and Öösh. The note on zhou2006b now records that Zhou and colleagues (2006) give their 128.4 Ma date to two horizons (see [Lujiatun](../l/lujiatun.md)). Governs nothing new on [Yixian](../../../stratigraphy/y/yixian.yml) beyond that note.
+
+**Evidence.**
+- sereno2010a, p. 28: the type horizon is "Lujiatun Beds, lowermost Yixian Formation (late Barremian or earliest Albian)".
+
+**Ruled out.** Nothing new.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Yixian?
 
 *2026-11-23*
@@ -97,13 +110,13 @@
 
 ## References
 
+- `zhou2006b`: Zhou, C. F.; Gao, K. Q.; Fox, R. C.; Chen, S. H. (2006). A new species of Psittacosaurus (Dinosauria: Ceratopsia) from the Early Cretaceous Yixian Formation of Liaoning, China. *Palaeoworld* 15(1): 100-114. doi:10.1016/j.palwor.2005.11.001
+- `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
 - `zhong2021a`: Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G. (2021). High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation. *National Science Review* 8(6): nwab063. doi:10.1093/nsr/nwab063
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
-- `zhou2006b`: Zhou, C. F.; Gao, K. Q.; Fox, R. C.; Chen, S. H. (2006). A new species of Psittacosaurus (Dinosauria: Ceratopsia) from the Early Cretaceous Yixian Formation of Liaoning, China. *Palaeoworld* 15(1): 100-114. doi:10.1016/j.palwor.2005.11.001
 - `jiang2006a`: Jiang, B.; Sha, J. (2006). Late Mesozoic stratigraphy in western Liaoning, China: a review. *Journal of Asian Earth Sciences* 28: 205-217.
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
 - `tong2021a`: Tong, H.; Chanthasit, P.; Naksri, W.; Ditbanjong, P.; Suteethorn, S.; Buffetaut, E.; Suteethorn, V.; Wongko, K.; Deesri, U.; Claude, J. (2021). Yakemys multiporcata n. g. n. sp., a large macrobaenid turtle from the basal Cretaceous of Thailand, with a review of the turtle fauna from the Phu Kradung Formation and its stratigraphical implications. *Diversity* 13(12): 630. doi:10.3390/d13120630
-- `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
 - `swisher2002a`: Swisher, C. C., III; Wang, X.; Zhou, Z.; Wang, Y.; Jin, F.; Zhang, J.; Xu, X.; Zhang, F.; Wang, Y. (2002). Further support for a Cretaceous age for the feathered-dinosaur beds of Liaoning, China: New 40Ar/39Ar dating of the Yixian and Tuchengzi Formations. *Chinese Science Bulletin* 47(2): 136-139.
 - `xu2004a`: Xu, X.; Wang, X. L. (2004). A new dromaeosaur (Dinosauria: Theropoda) from the Early Cretaceous Yixian Formation of western Liaoning. *Vertebrata PalAsiatica* 42(2): 111-119.
 - `xu2000b`: Xu, X.; Wang, X. L.; You, H. L. (2000). A primitive ornithopod from the Early Cretaceous Yixian Formation of Liaoning. *Vertebrata PalAsiatica* 38(4): 318-325.

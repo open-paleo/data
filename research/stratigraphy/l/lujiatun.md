@@ -1,5 +1,19 @@
 # Lujiatun
 
+## Does the Lujiatun cite Zhou and colleagues (2006) for its age?
+
+*2026-11-26*
+
+**Conclusion.** It did not, and now does. Zhou and colleagues (2006) give "the upper parts of the Lujiatun beds" a 40Ar/39Ar date of 128.4 ± 0.2 Ma after Wang and colleagues (2001), the date the same paper gives on p. 101 for a basalt in the lower Jianshangou sequence at Sihetun, and read the beds as Hauterivian from it. The Hauterivian stays ruled out, as the 2026-11-23 entry records for the Wang and colleagues date. Governs the pointers to zhou2006b and wang2001c on [Lujiatun](../../../stratigraphy/l/lujiatun.yml); `stages` unchanged.
+
+**Evidence.**
+- zhou2006b, p. 112: "Because the upper parts of the Lujiatun beds of the Yixian Formation in western Liaoning have been dated as 128.4 ± 0.2 Ma by 40Ar/39Ar radiometric techniques (Wang et al., 2001), the age of these beds appears to be Hauterivian (132.0–127.0 Ma)".
+- zhou2006b, p. 101: "A basalt sample from the lower part of the Jianshangou sequence at Sihetun has yielded a 40Ar/39Ar date of 128.4 ± 0.2 Ma".
+
+**Ruled out.** Nothing new.
+
+**Open.** Nothing.
+
 ## How do the argon dates on and above the Lujiatun bear on its age?
 
 *2026-11-23*
@@ -44,6 +58,8 @@
 
 ## References
 
+- `zhou2006b`: Zhou, C. F.; Gao, K. Q.; Fox, R. C.; Chen, S. H. (2006). A new species of Psittacosaurus (Dinosauria: Ceratopsia) from the Early Cretaceous Yixian Formation of Liaoning, China. *Palaeoworld* 15(1): 100-114. doi:10.1016/j.palwor.2005.11.001
+- `wang2001c`: Wang, S. S.; Hu, H. G.; Li, P. X.; Wang, Y. Q. (2001). [Further discussion on the geologic age of Sihetun vertebrate assemblage in western Liaoning, China: evidence from Ar-Ar dating]. *Acta Petrologica Sinica* 17(4): 663-668.
 - `he2006a`: He, H. Y.; Wang, X. L.; Zhou, Z. H.; Jin, F.; Wang, F.; Yang, L. K.; Ding, X.; Boven, A.; Zhu, R. X. (2006). 40Ar/39Ar dating of Lujiatun Bed (Jehol Group) in Liaoning, northeastern China. *Geophysical Research Letters* 33(4). doi:10.1029/2005GL025274
 - `chang2017a`: Chang, S. C.; Gao, K. Q.; Zhou, C. F.; Jourdan, F. (2017). New chronostratigraphic constraints on the Yixian Formation with implications for the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology* 487: 399-406. doi:10.1016/j.palaeo.2017.09.026
 - `zhong2021a`: Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G. (2021). High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation. *National Science Review* 8(6): nwab063. doi:10.1093/nsr/nwab063
@@ -51,7 +67,3 @@
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
 - `sereno2009a`: Sereno, P. C.; Tan, L.; Brusatte, S. L.; Kriegstein, H. J.; Zhao, X.; Cloward, K. (2009). Tyrannosaurid Skeletal Design First Evolved at Small Body Size. *Science* 326(5951): 418-422. doi:10.1126/science.1177428
 - `cuenca-bescós2003a`: Cuenca-Bescós, G.; Canudo, J. I. (2003). A new gobiconodontid mammal from the Early Cretaceous of Spain and its palaeogeographic implications. *Acta Palaeontologica Polonica* 48(4): 575-582.
-
-## Other references
-
-- `wang2001c`: Wang, S. S.; Hu, H. G.; Li, P. X.; Wang, Y. Q. (2001). [Further discussion on the geologic age of Sihetun vertebrate assemblage in western Liaoning, China: evidence from Ar-Ar dating]. *Acta Petrologica Sinica* 17(4): 663-668.
