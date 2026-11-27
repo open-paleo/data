@@ -1,5 +1,23 @@
 # Kenton
 
+## Does the Kenton keep the Kimmeridgian?
+
+*2026-11-26*
+
+**Conclusion.** Held until the member is defined. Answers the 2026-11-26 entry's Open line in part. Schudack and colleagues (1998) date a sample from the upper Morrison of the Kenton section, 40 m above the Bell Ranch Formation, Kimmeridgian on their own charophyte and ostracod biozone 4, with the Kimmeridgian in French usage, succeeded by the Tithonian; the Saurophaganax quarry lies 12.04 m below the top of the Morrison (Chure 1995), so both are high in the formation near Kenton. Neither paper names the Kenton Member, which Danison and colleagues (2024) credit to Richmond and colleagues (2020), not held; placing the sample in the member would be our own correlation. Chure's (2000) "AGE: Kimmeridgian" for the quarry is a thesis and gives no basis. Governs `stages` on [Kenton](../../../stratigraphy/k/kenton.yml) and on [*Saurophaganax maximus*](../../../genera/S/Saurophaganax.yml), unchanged for now.
+
+**Evidence.**
+- schudack1998a, p. 407: "Type level. Upper part of Morrison Formation, Kimmeridgian, biozone 4 (this paper), 40 m above Bell Ranch Formation (Kenton section)."
+- schudack1998a, p. 392: "Kimmeridgian in this report follows French usage (sensu gallico) in which the Kimmeridgian Stage is succeeded by the Tithonian Stage."
+- chure1995a, p. 106: "Stratigraphic position is 12.04m (39. 5feet) below top of the Morrison Fm."
+- chure2000a, p. 447: "AGE: Kimmeridgian."
+- danison2024a, p. 81: the Kenton Member of the Morrison Formation in western Oklahoma "(Chure 1995; Richmond et al. 2020)".
+
+**Ruled out.**
+- *Kimmeridgian from Chure (2000).* A thesis never carries a value alone.
+
+**Open.** Whether the Kenton Member, as Richmond and colleagues (2020) define it, includes the beds of Schudack and colleagues' biozone 4 sample.
+
 ## Does the Kenton keep the Tithonian?
 
 *2026-11-26*
@@ -34,13 +52,16 @@
 
 ## References
 
+- `schudack1998a`: Schudack, M. E.; Turner, C. E.; Peterson, F. (1998). Biostratigraphy, paleoecology and biogeography of charophytes and ostracodes from the Upper Jurassic Morrison Formation, Western Interior, USA. In *The Upper Jurassic Morrison Formation: An Interdisciplinary Study (Carpenter, K.; Chure, D. J.; Kirkland, J. I., eds.)*, pp. 379-414.
+- `chure1995a`: Chure, D. J. (1995). A reassessment of the gigantic theropod Saurophagus maximus from the Morrison Formation (Upper Jurassic) of Oklahoma, USA. In *Sixth Symposium on Mesozoic Terrestrial Ecosystems and Biota, Short Papers (Sun, A.; Wang, Y., eds.)*, pp. 103-106. China Ocean Press, Beijing.
+- `chure2000a`: Chure, D. J. (2000). A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae. Doctoral thesis, Columbia University.
+- `danison2024a`: Danison, A. D.; Wedel, M. J.; Barta, D. E.; Woodward, H. N.; Flora, H. M.; Lee, A. H.; Snively, E. (2024). Chimerism of specimens referred to Saurophaganax maximus reveals a new species of Allosaurus (Dinosauria, Theropoda). *Vertebrate Anatomy Morphology Palaeontology* 12(1): 81-114. doi:10.18435/vamp29404
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
-- `danison2024a`: Danison, A. D.; Wedel, M. J.; Barta, D. E.; Woodward, H. N.; Flora, H. M.; Lee, A. H.; Snively, E. (2024). Chimerism of specimens referred to Saurophaganax maximus reveals a new species of Allosaurus (Dinosauria, Theropoda). *Vertebrate Anatomy Morphology Palaeontology* 12(1): 81-114. doi:10.18435/vamp29404
 - `trujillo2015a`: Trujillo, K. C.; Kowallis, B. J. (2015). Recalibrated legacy 40Ar/39Ar ages for the Upper Jurassic Morrison Formation, Western Interior, U.S.A. *Geology of the Intermountain West* 2: 1-8. doi:10.31711/giw.v2.pp1-8
 
 ## Other references
 
 - `kowallis2007a`: Kowallis, B. J.; Britt, B. B.; Greenhalgh, B. W.; Sprinkel, D. A. (2007). New U-Pb zircon ages from an ash bed in the Brushy Basin Member of the Morrison Formation near Hanksville, Utah. In *Central Utah: diverse geology of a dynamic landscape (Willis, G. C.; Hylland, M. D.; Clark, D. L.; Chidsey, T. C., Jr., eds.)*, pp. 75-80.
 - `stovall1938a`: Stovall, J. W. (1938). The Morrison of Oklahoma and its dinosaurs. *Journal of Geology* 46: 583-600.
-- `chure1995a`: Chure, D. J. (1995). A reassessment of the gigantic theropod Saurophagus maximus from the Morrison Formation (Upper Jurassic) of Oklahoma, USA. In *Sixth Symposium on Mesozoic Terrestrial Ecosystems and Biota, Short Papers (Sun, A.; Wang, Y., eds.)*, pp. 103-106. China Ocean Press, Beijing.
+- `richmond2020a`: Richmond, D. R.; Hunt, T. C.; Cifelli, R. L. (2020). Stratigraphy and sedimentology of the Morrison Formation in the western panhandle of Oklahoma with reference to the historical Stovall dinosaur quarries. *The Journal of Geology* 128: 477-515.
