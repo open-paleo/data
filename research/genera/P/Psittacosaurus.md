@@ -1,5 +1,19 @@
 # *Psittacosaurus*
 
+## Which stages does the *Psittacosaurus amitabha* holotype take?
+
+*2026-11-26*
+
+**Conclusion.** Its unit's, Hauterivian–Barremian. Napoli and colleagues (2019), who name the species, give the Ondai Sayr locality as "generally considered to be Barremian" after Jerzykiewicz and Russell (1991), who accept an Aptian instead, so the species has no reading of its own and takes the [Andakhuduk](../../stratigraphy/a/andakhuduk.md)'s range. Governs `stage: [Hauterivian, Barremian]` on [*Psittacosaurus amitabha*](../../../genera/P/Psittacosaurus.yml), replacing `[Barremian, Aptian]`.
+
+**Evidence.**
+- napoli2019a, p. 6: "The Ondai Sayr locality has also been considered the Andakhuduk Formation (Jerzykiewicz, 2000). The age of the locality is generally considered to be Barremian (Jerzykiewicz and Russell, 1991)."
+
+**Ruled out.**
+- *Barremian alone.* A misrelay.
+
+**Open.** Nothing.
+
 ## Are *P. major* and *P. houi* species of the record?
 
 *2026-10-29*
@@ -36,8 +50,12 @@
 
 ## References
 
-- `hedrick2013a`: Hedrick, B. P.; Dodson, P. (2013). Lujiatun psittacosaurids: understanding individual and taphonomic variation using 3D geometric morphometrics. *PLoS ONE* 8(8): e69265. doi:10.1371/journal.pone.0069265
 - `napoli2019a`: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A. (2019). Psittacosaurus amitabha, a new species of ceratopsian dinosaur from the Ondai Sayr Locality, Central Mongolia. *American Museum Novitates* 3932: 1-36. doi:10.1206/3932.1
+- `hedrick2013a`: Hedrick, B. P.; Dodson, P. (2013). Lujiatun psittacosaurids: understanding individual and taphonomic variation using 3D geometric morphometrics. *PLoS ONE* 8(8): e69265. doi:10.1371/journal.pone.0069265
 - `fonseca2024a`: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T. (2024). A comprehensive phylogenetic analysis on early ornithischian evolution. *Journal of Systematic Palaeontology* 22: 2346577. doi:10.1080/14772019.2024.2346577
 - `ishikawa2025a`: Ishikawa, A.; Zheng, W.; Imai, T.; Hattori, S.; Shibata, M.; Kawabe, S.; Jin, X. (2025). Psittacosaurus houi, a longer snouted psittacosaurid from the Lower Cretaceous Lujiatun Unit of Yixian Formation, China, with the synonymy of the unresolved genus Hongshanosaurus revisited. *PeerJ* 13: e19547. doi:10.7717/peerj.19547
 - `averianov2006a`: Averianov, A. O.; Voronkevich, A. V.; Leshchinskiy, S. V.; Fayngertz, A. V. (2006). A ceratopsian dinosaur Psittacosaurus sibiricus from the Early Cretaceous of West Siberia. *Journal of Systematic Palaeontology* 4(4): 359-395. doi:10.1017/S1477201906001933
+
+## Other references
+
+- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5

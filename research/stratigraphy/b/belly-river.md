@@ -1,5 +1,21 @@
 # Belly River
 
+## Does the Belly River keep the Santonian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Santonian is dropped. Supersedes the 2026-11-25 entry on the stages. Its only sources are the CSPG lexicon, whose header field gives "Santonian - Campanian (85.8 - 70.6 ma)" and names no source, for a foothills unit that takes in Milk River equivalents, and Rozhdestvensky (1968), whose "has been dated to the Campanian and Upper Santonian" names none either; a reference work does not carry a value alone, and an unsourced relay adds nothing. Eberth (2005) and Brown and colleagues (2013) give the group wholly in the Campanian. Governs `stages: [Campanian]` and the note on cspg2010a on [Belly River](../../../stratigraphy/b/belly-river.yml); its genera, all Campanian, are unaffected.
+
+**Evidence.**
+- cspg2010a, p. ?: "Age Interval: Santonian - Campanian (85.8 - 70.6 ma)".
+- rozhdestvensky1968a, p. ?: remains "were found in the Belly River Formation which has been dated to the Campanian and Upper Santonian".
+- eberth2005a, p. 65: "Thus, in the Park the entire Belly River Group (outcrop and subsurface) ranges in age from 80.0 to 74.2 Ma".
+
+**Ruled out.**
+- *Santonian from the lexicon or Rozhdestvensky (1968).* Neither names a source.
+
+**Open.** Nothing.
+
 ## What is the CSPG lexicon's 85.8 Ma, and does the Santonian stand?
 
 *2026-11-25*
@@ -41,10 +57,10 @@
 ## References
 
 - `cspg2010a`: Canadian Society of Petroleum Geologists (2010). Belly River Formation. Canadian Society of Petroleum Geologists.
-- `ogg2004a`: Ogg, J. G.; Agterberg, F. P.; Gradstein, F. M. (2004). The Cretaceous Period. In *A Geologic Time Scale 2004 (Gradstein, F. M.; Ogg, J. G.; Smith, A. G., eds)*, pp. 344-383. Cambridge University Press, Cambridge. doi:10.1017/CBO9780511536045.020
 - `rozhdestvensky1968a`: Rozhdestvensky, A. K. (1968). Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]. *[Upper Paleozoic and Mesozoic Amphibians and Reptiles]. Akademia Naul SSSR, Moscow*: 97-141.
-- `dawson1883a`: Dawson, G. M. (1883). Preliminary report on the geology of the Bow and Belly rivers region, North-west Territory, with special reference to coal deposits. *Geological and Natural History Survey and Museum of Canada, Report of Progress, 1880–82*: 1-23.
 - `eberth2005a`: Eberth, D. A. (2005). The geology. In *Dinosaur Provincial Park: A Spectacular Ancient Ecosystem Revealed*, pp. 54-82. Indiana University Press, Bloomington.
+- `ogg2004a`: Ogg, J. G.; Agterberg, F. P.; Gradstein, F. M. (2004). The Cretaceous Period. In *A Geologic Time Scale 2004 (Gradstein, F. M.; Ogg, J. G.; Smith, A. G., eds)*, pp. 344-383. Cambridge University Press, Cambridge. doi:10.1017/CBO9780511536045.020
+- `dawson1883a`: Dawson, G. M. (1883). Preliminary report on the geology of the Bow and Belly rivers region, North-west Territory, with special reference to coal deposits. *Geological and Natural History Survey and Museum of Canada, Report of Progress, 1880–82*: 1-23.
 
 ## Other references
 

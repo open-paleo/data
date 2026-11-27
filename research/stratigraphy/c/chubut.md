@@ -1,5 +1,24 @@
 # Chubut
 
+## Does the Chubut Group keep the Hauterivian and Barremian, and what dates its top?
+
+*2026-11-26*
+
+**Conclusion.** The base moves to the Aptian; the Coniacian–Maastrichtian top stands. Supersedes the 2026-11-25 entries on the stages. No work read gives any unit of the group a Hauterivian. The Barremian appears only relayed: Codignotto and colleagues' (1978) "possibly Barremian" in Nullo (1983), and Chebli and colleagues' (1976) Barremian–Aptian in Bonaparte and Gasparini (1979); Nullo's own reading puts the whole Los Adobes in the Lower Cretaceous. The Aptian rests on Musacchio and Chebli's (1975) own microfossils from the Cerro Barcino (see [Cerro Barcino](../c/cerro-barcino.md)). At the top, Casal and colleagues (2015) date the Lago Colhué Huapi Formation Coniacian–Maastrichtian from its dinosaurs, and Ibiricu and colleagues (2025) give it the same range and a late Maastrichtian level near its top. Governs `stages`, Aptian to Maastrichtian, and the notes on nullo1983a and rauhut2004a on [Chubut](../../../stratigraphy/c/chubut.yml); [*Campylodoniscus ameghinoi*](../../../genera/C/Campylodoniscus.yml) is unaffected.
+
+**Evidence.**
+- nullo1983a, p. 60: "se ubica a toda la Formación Los Adobes en el Cretácico inferior, mientras que si bien los niveles más bajos de la Formación Cerro Barcino son de edad Cretácica inferior (Aptiano?)" ["the entire Los Adobes Formation is placed in the Lower Cretaceous, while although the lowest levels of the Cerro Barcino Formation are of Lower Cretaceous age (Aptian?)", translated].
+- nullo1983a, p. 59: Codignotto and colleagues "asignan una edad posiblemente barremiana para los términos inferiores del Miembro Puesto La Paloma o superiores del Miembro Bardas Coloradas" ["assign a possibly Barremian age to the lower portions of the Puesto La Paloma Member or the upper portions of the Bardas Coloradas Member", translated].
+- bonaparte1979c, p. 405: "Chebli et al. (1976) interpreted the age of the Chubut Group, to the east of Paso de Indios, as spanning the Barremian-Aptian interval (in part)".
+- casal2015a, p. 77: "El contenido paleontológico de restos de dinosaurios permitió definir una edad comprendida entre el Coniaciano-Maastrichtiano" ["The paleontological content of dinosaur remains allowed us to define an age ranging between the Coniacian-Maastrichtian", translated].
+- ibiricu2025a, p. 2: "the Upper Cretaceous (Coniacian–Maastrichtian) Lago Colhué Huapi Formation"; the new taxon comes from a horizon a few meters below the top, "latest Cretaceous (Maastrichtian, probably late Maastrichtian) in age".
+
+**Ruled out.**
+- *Hauterivian.* No work read gives it.
+- *Barremian.* A relayed possibility and a relay of an unread work.
+
+**Open.** Chebli and colleagues (1976) and Lizuaín and colleagues (1995) have not been read.
+
 ## Why does the Chubut Group not take Lesta and Ferello's Valanginian?
 
 *2026-11-25*
@@ -56,11 +75,13 @@
 
 ## References
 
+- `nullo1983a`: Nullo, F. E. (1983). Descripción geológica de la Hoja 45c, Pampa de Agnia, provincia del Chubut [Geological description of Sheet 45c, Pampa de Agnia, Chubut Province]. *Boletín del Servicio Geológico Nacional* 199: 1-94.
+- `rauhut2004a`: Rauhut, O. W. M. (2004). Provenance and anatomy of Genyodectes serus, a large-toothed ceratosaur (Dinosauria: Theropoda) from Patagonia. *Journal of Vertebrate Paleontology* 24(4): 894-902. doi:10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
 - `bonaparte1979c`: Bonaparte, J. F.; Gasparini, Z. (1979). Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]. *Actas del VII Congreso Geológico Argentino* 2: 393-406.
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
+- `ibiricu2025a`: Ibiricu, L. M.; Lamanna, M. C.; Álvarez, B. N.; Cerda, I. A.; Caglianone, J. L.; Cardozo, N. V.; Luna, M.; Martínez, R. D. (2025). Latest Cretaceous megaraptorid theropod dinosaur sheds light on megaraptoran evolution and palaeobiology. *Nature Communications* 16(1). doi:10.1038/s41467-025-63793-5
 - `martínez1998a`: Martínez, R. D. (1998). Notohypsilophodon comodorensis gen. et sp. nov. un Hypsilophodontidae (Ornitischia: Ornithopoda) del Cretácico Superior de Chubut, Patagonia central, Argentina [Notohypsilophodon comodorensis gen. et sp. nov., a Hypsilophodontidae (Ornithischia: Ornithopoda) from the Upper Cretaceous of Chubut, central Patagonia, Argentina]. *Acta Geologica Leopoldensia* 21(46/47): 119-135.
 - `suárez2014a`: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M. (2014). Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology. *Journal of South American Earth Sciences* 50: 67-74. doi:10.1016/j.jsames.2013.10.008
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
-- `rauhut2004a`: Rauhut, O. W. M. (2004). Provenance and anatomy of Genyodectes serus, a large-toothed ceratosaur (Dinosauria: Theropoda) from Patagonia. *Journal of Vertebrate Paleontology* 24(4): 894-902. doi:10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
 
 ## Other references
 
@@ -69,10 +90,10 @@
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `musacchio1975a`: Musacchio, E. A.; Chebli, G. (1975). Ostrácodos no marinos y carófitas del Cretácico inferior en las provincias de Chubut y Neuquén, Argentina [Non-marine ostracods and charophytes from the Lower Cretaceous of Chubut and Neuquén provinces, Argentina]. *Ameghiniana* 12(1): 70-96.
 - `lizuaín1995a`: Lizuaín, A.; Ragona, D.; Folguera, A. (1995). Mapa geológico de la Provincia del Chubut, República Argentina, 1:750.000 [Geological map of Chubut Province, Argentine Republic, 1:750,000]. Secretaría de Minería, Dirección Nacional del Servicio Geológico, Buenos Aires.
-- `nullo1983a`: Nullo, F. E. (1983). Descripción geológica de la Hoja 45c, Pampa de Agnia, provincia del Chubut [Geological description of Sheet 45c, Pampa de Agnia, Chubut Province]. *Boletín del Servicio Geológico Nacional* 199: 1-94.
 - `hechem1987a`: Hechem, J. J.; Figari, E. G.; Musacchio, E. A. (1987). Hallazgo de la Formación D-129 [Discovery of the D-129 Formation]. *Petrotecnia* 28: 13-15.
 - `hechem1990a`: Hechem, J. J.; Homovc, J. F.; Figari, E. G. (1990). Estratigrafía del Chubutiano (Cretácico) en la Sierra de San Bernardo, cuenca del Golfo San Jorge, Argentina [Stratigraphy of the Chubutian (Cretaceous) in the Sierra de San Bernardo, Golfo San Jorge Basin, Argentina]. In *Actas del 11º Congreso Geológico Argentino*, pp. 173-176.
 - `sciutto1994a`: Sciutto, J. C.; Martínez, R. D. (1994). Un nuevo yacimiento fosilífero de la Formación Bajo Barreal (Cretácico Tardío) y su fauna de saurópodos [A new fossil locality in the Bajo Barreal Formation (Late Cretaceous) and its sauropod fauna]. *Naturalia Patagónica, Ciencias de la Tierra* 2: 27-47.
 - `menéndez1959a`: Menéndez, C. A. (1959). Flora cretácica de la Serie del Castillo al sur del Cerro Cachetamán, Chubut [Cretaceous flora of the Castillo Series south of Cerro Cachetamán, Chubut]. *Revista de la Asociación Geológica Argentina* 14(3-4): 219-238.
 - `lesta1980a`: Lesta, P. J.; Chebli, G. (1980). Chubut extraandino [Extra-Andean Chubut]. In *Simposio de Geología Regional Argentina*, pp. 1307-1387. Academia Nacional de Ciencias, Córdoba.
 - `martínez2016a`: Martínez, R. D. F.; Lamanna, M. C.; Novas, F. E.; Ridgely, R. C.; Casal, G. A.; Martínez, J. E.; Vita, J. R.; Witmer, L. M. (2016). A Basal Lithostrotian Titanosaur (Dinosauria: Sauropoda) with a Complete Skull: Implications for the Evolution and Paleobiology of Titanosauria. *PLOS ONE* 11(4): e0151661. doi:10.1371/journal.pone.0151661
+- `codignotto1978a`: Codignotto, J.; Nullo, F.; Panza, J.; Proserpio, C. (1978). Estratigrafía del Grupo Chubut entre Paso de Indios y Las Plumas, Provincia del Chubut, Argentina [Stratigraphy of the Chubut Group between Paso de Indios and Las Plumas, Chubut Province, Argentina]. In *7º Congreso Geológico Argentino, Actas 1*, pp. 471-480.

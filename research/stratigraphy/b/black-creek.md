@@ -1,5 +1,19 @@
 # Black Creek
 
+## Does the Black Creek's Campanian rest on its own reading?
+
+*2026-11-26*
+
+**Conclusion.** Yes. Gallagher (1993) gives the formation a late Campanian age because the zone fossil *Exogyra ponderosa* occurs in it; the sentence names three units, but it is a zone age that holds for each, not a span across several. Baird and Horner's (1979) "Tayloran, i.e. Campanian" converts Brett and Wheeler's (1961) relayed "Taylor time" and agrees. Governs the Campanian in `stages` on [Black Creek](../../../stratigraphy/b/black-creek.yml), unchanged.
+
+**Evidence.**
+- gallagher1993a, p. 86: "E. ponderosa is a zone fossil for the Marshalltown Formation in New Jersey, the Black Creek Formation of North Carolina, and the Taylor Formation of Texas; these units are late Campanian in age."
+
+**Ruled out.**
+- *A joint age for three units.* A zone fossil dates each unit it occurs in.
+
+**Open.** Nothing.
+
 ## Does any published source place the Black Creek in the Maastrichtian?
 
 *2026-11-25*

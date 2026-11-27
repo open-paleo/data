@@ -1,5 +1,19 @@
 # Baruungoyot
 
+## Do the Baruungoyot's Santonian and Maastrichtian survive?
+
+*2026-11-26*
+
+**Conclusion.** Yes, both. The Santonian rests on Shuvalov's (2000) own Santonian–Campanian from the unit's molluscs, ostracods and turtles, and on Alifanov's (2009) queried "?Lower Santonian" for the Ceratonykus horizon. The Maastrichtian rests on Fanti and colleagues (2012), who give the upper beds "Campanian-Maastrichtian" and, from their own sections, find the upper Baruungoyot interfingering with the Nemegt and the two in partial overlap in time. Fowler's (2020) "lower Maastrichtian" is a passing label and adds nothing. Governs `stages` on [Baruungoyot](../../../stratigraphy/b/baruungoyot.yml), unchanged.
+
+**Evidence.**
+- fanti2012a, p. 1: "Specimen MPC-D 107/15 was collected from the upper beds of the Baruungoyot Formation (Campanian-Maastrichtian)"; "data presented here indicate partial overlap across the Baruungoyot-Nemegt transition".
+
+**Ruled out.**
+- *Maastrichtian from Fowler (2020).* A passing label.
+
+**Open.** Nothing.
+
 ## Do Shuvalov's basalt dates of 78–80 Myr belong to the svita?
 
 *2026-11-25*
@@ -112,13 +126,13 @@
 
 ## References
 
+- `fanti2012a`: Fanti, F.; Currie, P. J.; Badamgarav, D.; Lalueza-Fox, C. (2012). New specimens of Nemegtomaia from the Baruungoyot and Nemegt Formations (Late Cretaceous) of Mongolia. *PLOS ONE* 7(2): e31330. doi:10.1371/journal.pone.0031330
 - `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 256-278. Cambridge University Press, Cambridge.
 - `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
 - `kielan-jaworowska1974a`: Kielan-Jaworowska, Z. (1974). Migrations of the Multituberculata and the Late Cretaceous connections between Asia and North America. *Annals of the South African Museum* 64: 231-243.
 - `karczewska1983a`: Karczewska, J.; Ziembinska-Tworzydlo, M. (1983). Age of the Upper Cretaceous Nemegt Formation (Mongolia) on charophytan evidence. *Acta Palaeontologica Polonica* 28(1-2): 137-146.
 - `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
-- `fanti2012a`: Fanti, F.; Currie, P. J.; Badamgarav, D.; Lalueza-Fox, C. (2012). New specimens of Nemegtomaia from the Baruungoyot and Nemegt Formations (Late Cretaceous) of Mongolia. *PLOS ONE* 7(2): e31330. doi:10.1371/journal.pone.0031330
 - `napoli2021a`: Napoli, J. G.; Ruebenstahl, A. A.; Bhullar, B. A. S.; Turner, A. H.; Norell, M. A. (2021). A New Dromaeosaurid (Dinosauria: Coelurosauria) from Khulsan, Central Mongolia. *American Museum Novitates* 2021(3982). doi:10.1206/3982.1
 - `lee2022a`: Lee, S.; Lee, Y. N.; Currie, P. J.; Sissons, R.; Park, J. Y.; Kim, S. H.; Barsbold, R.; Tsogtbaatar, K. (2022). A non-avian dinosaur with a streamlined body exhibits potential adaptations for swimming. *Communications Biology* 5(1). doi:10.1038/s42003-022-04119-9
 - `turner2021a`: Turner, A. H.; Montanari, S.; Norell, M. A. (2021). A New Dromaeosaurid from the Late Cretaceous Khulsan Locality of Mongolia. *American Museum Novitates* 2020(3965): 1-46. doi:10.1206/3965.1

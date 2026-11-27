@@ -1,5 +1,22 @@
 # Aïssa
 
+## Which of the Aïssa's stages survive the thesis and relay rules?
+
+*2026-11-26*
+
+**Conclusion.** Callovian to Kimmeridgian; the Bajocian, Bathonian and Tithonian are dropped. Supersedes the 2026-11-25 entry on the stages. Kacemi and colleagues (2026) credit the Bajocian–Callovian of the Lophinae in the lower member to Kacemi's (2005) master's thesis, and their own sampling reports no Lophinae; a thesis never carries a value alone. Their Kimmeridgian–Portlandian "peut être attribuée" by regional correlation credited to Bassoullet's (1973) doctoral thesis, so the Tithonian goes too. In their own voice they give the dinosaur and crocodilian proliferation as Oxfordian–Kimmeridgian and, on p. 18, the biotope as "Callovien-Kimméridgien"; Mannion and colleagues (2019) date Chebsaurus Callovian. The `dispute` now gives only the readings that survive. Governs `stages: [Callovian, Oxfordian, Kimmeridgian]` and the `dispute` on [Aïssa](../../../stratigraphy/a/aïssa.yml); [*Chebsaurus algeriensis*](../../../genera/C/Chebsaurus.yml), Callovian–Kimmeridgian, is unaffected.
+
+**Evidence.**
+- kacemi2026a, p. 9: "La présence des Lophinae dans le membre MI caractérise le Jurassique moyen (Bajocien à Callovien) (Kacemi, 2005)." ["The presence of Lophinae in member MI is characteristic of the Middle Jurassic (Bajocian to Callovian) (Kacemi, 2005).", translated].
+- kacemi2026a, p. 14: "Cette formation, par corrélation régionale peut être attribuée au Jurassique supérieur (Kimméridgien-Portlandien) (Bassoullet, 1973)." ["This formation, by regional correlation, can be attributed to the Late Jurassic (Kimmeridgian-Portlandian) (Bassoullet, 1973).", translated].
+- kacemi2026a, p. 1: "Ces conditions paléoenvironnementales ont favorisé la prolifération des dinosauriens et des crocodiliens durant l’Oxfordien-Kimméridgien." ["These paleoenvironmental conditions favored the proliferation of dinosaurs and crocodilians during the Oxfordian-Kimmeridgian.", translated].
+
+**Ruled out.**
+- *Bajocian–Bathonian.* Credited to a master's thesis.
+- *Tithonian.* A possibility by correlation, credited to a doctoral thesis.
+
+**Open.** Kacemi (2005) and Bassoullet (1973) have not been read.
+
 ## Whose determination is the Middle Jurassic of the lower member, and is the dispute a difference between troughs?
 
 *2026-11-25*
@@ -55,3 +72,4 @@
 
 - `bassoullet1973a`: Bassoullet, J. P. (1973). Contribution à l'étude stratigraphique du Mésozoïque de l'Atlas saharien occidental (Algérie) [Contribution to the stratigraphic study of the Mesozoic of the western Saharan Atlas (Algeria)]. Doctoral thesis, Université Paris VI.
 - `kacemi2005a`: Kacemi, A. (2005). Cartographie et dynamique sédimentaire de la série fin Dogger – début Crétacé (Djara – Rhoundjaïa) des Monts des Ksour (Atlas saharien, Algérie) [Mapping and sedimentary dynamics of the late Dogger to early Cretaceous series (Djara to Rhoundjaïa) of the Ksour Mountains, Saharan Atlas, Algeria]. Masters thesis, Université d'Oran, Oran, Algeria.
+- `mannion2019a`: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O. (2019). Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution. *Zoological Journal of the Linnean Society* 185(3): 784-909. doi:10.1093/zoolinnean/zly068

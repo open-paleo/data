@@ -1,5 +1,19 @@
 # Cerro Carnerero
 
+## Does Pol and colleagues' Pliensbachian–Toarcian date the Cerro Carnerero?
+
+*2026-11-26*
+
+**Conclusion.** No; the stages are dropped and the unit keeps its Early Jurassic `period`. Supersedes the 2026-11-25 entry on the stages. Pol and colleagues (2022) state that there are no radiometric dates for the unit and reach "Pliensbachian or the early Toarcian" only between Pliensbachian ammonites below, relayed from Riccardi (1992), and the overlying Lonco Trapial; a bracket between two limits gives no stage. Riccardi (1992) gives the unit no age of its own. Governs the absent `stages` and the note on pol2022a on [Cerro Carnerero](../../../stratigraphy/c/cerro-carnerero.yml).
+
+**Evidence.**
+- pol2022a, p. 135: "Although there are no radiometric dates for this unit, there are ammonites from underlying horizons biostratigraphically dated as Pliensbachian (Riccardi 1992)"; "It is therefore likely that the Cerro Carnerero Formation was deposited at some point during the Pliensbachian or the early Toarcian."
+
+**Ruled out.**
+- *Pliensbachian–Toarcian from Pol and colleagues (2022).* A bracket.
+
+**Open.** A date or index fossil from the unit itself.
+
 ## What does Riccardi and colleagues' (1992) chapter say lies beneath the Cerro Carnerero?
 
 *2026-11-25*
@@ -41,8 +55,8 @@
 
 ## References
 
-- `riccardi1992a`: Riccardi, A. C.; Gulisano, C. A.; Mojica, J.; Palacios, O.; Schubert, C.; Thomson, M. R. A. (1992). Western South America and Antarctica. In *The Jurassic of the Circum-Pacific (Westermann, G. E. G., ed.)*, pp. 122-161. Cambridge University Press, Cambridge. doi:10.1017/cbo9780511529375.008
 - `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 131-163. Springer International Publishing. doi:10.1007/978-3-030-95959-3_4
+- `riccardi1992a`: Riccardi, A. C.; Gulisano, C. A.; Mojica, J.; Palacios, O.; Schubert, C.; Thomson, M. R. A. (1992). Western South America and Antarctica. In *The Jurassic of the Circum-Pacific (Westermann, G. E. G., ed.)*, pp. 122-161. Cambridge University Press, Cambridge. doi:10.1017/cbo9780511529375.008
 - `rauhut2003c`: Rauhut, O. W. M. (2003). Revision of Amygdalodon patagonicus Cabrera, 1947 (Dinosauria, Sauropoda). *Fossil Record* 6: 173-181. doi:10.1002/mmng.20030060110
 - `page1999a`: Page, R.; Ardolino, A.; de Barrio, R. E.; Franchi, M.; Lizuain, A.; Page, S.; Silva Nieto, D. (1999). Estratigrafía del Jurásico y Cretácico del Macizo de Somún Curá, provincias de Río Negro y Chubut [Jurassic and Cretaceous stratigraphy of the Somún Curá Massif, Río Negro and Chubut provinces]. In *Geología Argentina*, pp. 460-488. Subsecretaría de Minería de la Nación.
 - `cúneo2013a`: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A. (2013). High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic. *Gondwana Research* 24(3-4): 1267-1275. doi:10.1016/j.gr.2013.01.010

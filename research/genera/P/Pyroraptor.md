@@ -1,5 +1,18 @@
 # *Pyroraptor*
 
+## Which stages does the *Pyroraptor* holotype take, when its formation may not hold its bed?
+
+*2026-11-26*
+
+**Conclusion.** Allain and Taquet's (2000) Campanian–Maastrichtian, with `resolution: horizon`. The formation now carries the Campanian only (see [Argiles et Grès à Reptiles](../../stratigraphy/a/argiles-et-grès-à-reptiles.md)), and the 2026-09-02 entry leaves open whether the Begudian sandstones at La Boucharde lie within it or in the Begudian beds below; the type's bed is uncertain, which is what the `horizon` resolution declares. Governs `stage`, `resolution: horizon` and the location note on [*Pyroraptor olympius*](../../../genera/P/Pyroraptor.yml).
+
+**Evidence.**
+- allain2000a, p. 404: "Horizon—Fluvio-lacustrine sandstones, Begudian (Upper Campanian to Lower Maastrichtian)."
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged from the 2026-09-02 entry.
+
 ## Which formation, when the describing paper names none?
 
 *2026-09-02*

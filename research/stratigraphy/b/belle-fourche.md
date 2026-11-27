@@ -1,5 +1,21 @@
 # Belle Fourche
 
+## Do Merewether and colleagues (2010) narrow their own Turonian top?
+
+*2026-11-26*
+
+**Conclusion.** No; the Turonian stays. The three papers number their zones differently, so the same number names different fossils: zone 21 is *Mammites* (early Turonian) in Merewether (1996) and *Burroceras* (late Cenomanian) in Merewether and colleagues (2010). Merewether (1996) and Merewether and colleagues (1979) date the top early Turonian in southern and central Johnson County, around Kaycee; the 2010 paper's late late Cenomanian is for Buffalo, and it gives no top for Kaycee and states no revision. Governs the Turonian in `stages` on [Belle Fourche](../../../stratigraphy/b/belle-fourche.yml), unchanged.
+
+**Evidence.**
+- merewether1996a, p. T28: the age of the top varies "from early late Cenomanian (fig. 7, zone 13) in east-central Natrona County to early Turonian (fig. 7, zone 20 or 21) in southern and central Johnson County".
+- merewether2010a, p. 45: the top ranges "from Zones 21 or 22 of the late late Cenomanian near Buffalo to Zones 16 or 17 of the early late Cenomanian in the vicinity of Casper".
+- merewether1979a, p. 92: north of section D the top is "of latest Cenomanian or earliest Turonian age (zone 9 or 10)".
+
+**Ruled out.**
+- *The 2010 paper narrowing the Turonian.* Different zone numbers and a different locality.
+
+**Open.** Nothing.
+
 ## Does the Belle Fourche reach the Turonian, and whose work do Carpenter and Kirkland cite?
 
 *2026-11-25*
@@ -55,9 +71,9 @@
 
 ## References
 
-- `merewether1979a`: Merewether, E. A.; Cobban, W. A.; Cavanaugh, E. T. (1979). Frontier Formation and equivalent rocks in eastern Wyoming. *The Mountain Geologist* 16: 67-102.
 - `merewether1996a`: Merewether, E. A. (1996). Stratigraphy and tectonic implications of Upper Cretaceous rocks in the Powder River Basin, northeastern Wyoming and southeastern Montana. *U.S. Geological Survey Bulletin* 1917-T. doi:10.3133/b1917t
 - `merewether2010a`: Merewether, E. A.; Cobban, W. A.; Tillman, R. W. (2010). Outcrops, fossils, geophysical logs, and tectonic interpretations of the Upper Cretaceous Frontier Formation and contiguous strata in the Bighorn Basin, Wyoming and Montana. *U.S. Geological Survey Scientific Investigations Report* 2009-5256. doi:10.3133/sir20095256
+- `merewether1979a`: Merewether, E. A.; Cobban, W. A.; Cavanaugh, E. T. (1979). Frontier Formation and equivalent rocks in eastern Wyoming. *The Mountain Geologist* 16: 67-102.
 - `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 249-270.
 - `singer2020a`: Singer, B. S.; Jicha, B. R.; Sawyer, D. A.; Walaszczyk, I.; Buchwaldt, R.; Mutterlose, J. (2020). Geochronology of late Albian–Cenomanian strata in the U.S. Western Interior. *Geological Society of America Bulletin* 133(7-8): 1665-1678. doi:10.1130/B35794.1
 - `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
