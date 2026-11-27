@@ -1,5 +1,19 @@
 # Shishugou
 
+## Does the Shishugou keep the Bathonian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation is Callovian to Oxfordian. Supersedes the 2026-11-25 entry on the stages and answers its Open line. The Bathonian's only source is Eberth and colleagues' (2001) "is regarded as Bathonian to Oxfordian", relayed from four works: Hendrix and colleagues (1992) and Vincent and Allen (2001), both read, name no stage, and Chen (1985) and Chen (1996) have not been read. A reading another work reports adds a stage only once its original is read. The Callovian and Oxfordian rest on Moore and colleagues (2018, 2020). [*Fushanosaurus*](../../../genera/F/Fushanosaurus.yml), [*Tienshanosaurus*](../../../genera/T/Tienshanosaurus.yml) and [*Monolophosaurus*](../../../genera/M/Monolophosaurus.yml), which have no horizon reading of their own, take the formation's range. Governs `stages: [Callovian, Oxfordian]` and the note on eberth2001a on [Shishugou](../../../stratigraphy/s/shishugou.yml).
+
+**Evidence.**
+- eberth2001a, p. 1639: the megasequence "is regarded as Bathonian to Oxfordian in age (Chen 1985; Hendrix et al. 1992; Chen 1996a; Vincent and Allen in press)".
+
+**Ruled out.**
+- *Bathonian.* A relay whose read originals name no stage.
+
+**Open.** Chen (1985) and Chen (1996) have not been read.
+
 ## Do Vincent and Allen (2001) and Hendrix and colleagues (1992) support the Bathonian?
 
 *2026-11-25*

@@ -1,5 +1,19 @@
 # Wangjiashan
 
+## Does the Wangjiashan keep the Bajocian, Bathonian and Callovian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation keeps the Middle Jurassic only. Supersedes the 2026-11-25 entry. Zhang and colleagues (2009) give the basin's four formations together a Pliensbachian to Callovian age taken from earlier work, and refer the reader to their Fig. 2 for each formation; the figure's Bajocian to lower Callovian for the Wangjiashan therefore relays the cited works, and those held, Li and colleagues (1982) and Du (1985), give only the Middle Jurassic. The Bathonian is Li and colleagues' (2024) misrelay (see [Straw-yellow Sandstone](../s/straw-yellow-sandstone.md)). Governs the absent `stages` and the note on zhang2009c on [Wangjiashan](../../../stratigraphy/w/wangjiashan.yml).
+
+**Evidence.**
+- zhang2009c, p. 624: "按照近年研究成果[7~12],上述 4 个岩石地层单位分别属早侏罗世 Plensbachian 期—中侏罗世 Callovian 期沉积[7, 13~15],相应的年代地层对比关系见图 2。" ["According to recent research results, the four lithostratigraphic units above belong, respectively, to deposits ranging from the Early Jurassic Plensbachian to the Middle Jurassic Callovian; the corresponding chronostratigraphic correlation is shown in Fig. 2.", translated].
+
+**Ruled out.**
+- *Bajocian and Callovian from Zhang's Fig. 2.* Relayed from works that, where read, give no stage.
+
+**Open.** Zhang's other cited works have not been read.
+
 ## What does Zhang and colleagues' (2009) basin chart give for the age of the Wangjiashan?
 
 *2026-11-25*
@@ -41,3 +55,4 @@
 - `li1982a`: Li, B.; Xu, F.; Ma, Q.; Pan, H.; Wang, S.; Li, Z. (1982). 甘肃靖远王家山盆地中侏罗世地层 [Middle Jurassic strata of the Wangjiashan Basin, Jingyuan, Gansu]. *Journal of Stratigraphy* 6(1): 33-40.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
 - `li2019b`: Li, D. Q.; Xing, L. D.; Lockley, M. G.; Romilio, A.; Yang, J. T.; Li, L. F. (2019). The first theropod tracks from the Middle Jurassic of Gansu, Northwest China: new and rare evidence of quadrupedal progression in theropod dinosaurs. *Journal of Palaeogeography* 8: 10. doi:10.1186/s42501-019-0028-4
+- `du1985a`: Du, B. A. (1985). Sporo-pollen assemblages from the middle Jurassic in the Wangjiashan Basin of Jingyuan, Gansu, and their stratigraphic and paleogeographic significance. *Geological Review* 31(2): 131-141.

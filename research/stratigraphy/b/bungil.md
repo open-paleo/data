@@ -1,5 +1,21 @@
 # Bungil
 
+## Where does the Bungil's base lie?
+
+*2026-11-27*
+
+**Conclusion.** In the Hauterivian; the formation is Hauterivian to Aptian. Supersedes the 2026-11-25 entry. Exon (1976) dates the formation "Neocomian to early Aptian" on fossil evidence and has the sea "first" enter the basin "in late Neocomian time, when the paralic sediments of the Bungil Formation were laid down"; the Neocomian is the Berriasian, Valanginian and Hauterivian (Gale and colleagues 2020), and its late part is read here as the Hauterivian. Day's appendix in the same bulletin dates the Nullawurt Member, by his own fossils, only "possible Neocomian". No work read gives the Bungil a Valanginian. Governs `stages: [Hauterivian, Barremian, Aptian]` and the note on exon1976a on [Bungil](../../../stratigraphy/b/bungil.yml); [*Minmi paravertebra*](../../../genera/M/Minmi.yml), Aptian, is unaffected.
+
+**Evidence.**
+- exon1976a, p. 115: "The age of the formation is thus, on fossil evidence, Neocomian to early Aptian."
+- exon1976a, p. 43: "The Cretaceous sea first entered the basin in late Neocomian time, when the paralic sediments of the Bungil Formation were laid down."
+- exon1976a, p. 140: "A MARINE FAUNA OF POSSIBLE NEOCOMIAN AGE FROM THE NULLAWURT SANDSTONE MEMBER".
+
+**Ruled out.**
+- *Valanginian.* No reading gives it.
+
+**Open.** Burger's (1974) spores from the Kingull Member, not held, would date the base directly.
+
 ## Does Scheibner and Basden (1998) put the Bungil's base in the Hauterivian?
 
 *2026-11-25*
@@ -39,9 +55,9 @@
 
 ## References
 
+- `exon1976a`: Exon, N. F. (1976). Geology of the Surat Basin in Queensland. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 166.
 - `scheibner1998a`: Scheibner, E.; Basden, H. (1998). Geology of New South Wales – Synthesis. Volume 2, Geological Evolution. *Geological Survey of New South Wales Memoir (Geology)* 13(2): 1-666.
 - `leahey2015a`: Leahey, L. G.; Molnar, R. E.; Carpenter, K.; Witmer, L. M.; Salisbury, S. W. (2015). Cranial osteology of the ankylosaurian dinosaur formerly known as Minmi sp. (Ornithischia: Thyreophora) from the Lower Cretaceous Allaru Mudstone of Richmond, Queensland, Australia. *PeerJ* 3: e1475. doi:10.7717/peerj.1475
-- `exon1976a`: Exon, N. F. (1976). Geology of the Surat Basin in Queensland. *Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin* 166.
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
 

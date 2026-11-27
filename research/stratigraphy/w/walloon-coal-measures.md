@@ -1,5 +1,22 @@
 # Walloon Coal Measures
 
+## Which of the Walloon's stages rest on a reading?
+
+*2026-11-27*
+
+**Conclusion.** Bathonian to Kimmeridgian; the Aalenian and Bajocian are dropped. Supersedes the 2026-11-25 entry on the stages. The Aalenian rests only on the compiled "Aalenian to Callovian" of Wainman and colleagues' (2018b) Table 1, modified from earlier works, and no work read gives the Walloon a Bajocian. Their own CA-TIMS date of 167.56 Ma from Walloon lithofacies at Kalbar 1 is Bathonian on the ICS chart v2024/12. Wainman and colleagues' (2018a) "early Tithonian" labels a 150.77 Ma tuff they measured, Kimmeridgian on the current chart, and their 149.08 Ma tuff lies in the Springbok Sandstone, so the Tithonian is not added. Governs `stages: [Bathonian, Callovian, Oxfordian, Kimmeridgian]` and the notes on wainman2018a and wainman2018b on [Walloon Coal Measures](../../../stratigraphy/w/walloon-coal-measures.yml); [*Rhoetosaurus*](../../../genera/R/Rhoetosaurus.yml) is unaffected.
+
+**Evidence.**
+- wainman2018b, p. 1156: "The CA-TIMS dates from the Kalbar 1 (167.56 ± 0.06 Ma) and Mt. Lindesay 1 (155.38 ± 0.07 Ma) wells in the Clarence–Moreton Basin".
+- wainman2018b, p. 1147, Table 1: "Walloon Coal Measures | Aalenian to Callovian".
+- wainman2018a, p. 9: "An early Tithonian age (150.77 ± 0.06 Ma) was calculated from a tuff bed 30.42 m below the first occurrence of Retitriletes watherooensis".
+
+**Ruled out.**
+- *Aalenian.* A compiled table entry.
+- *Tithonian.* A label on a measured number, re-placed on the current chart.
+
+**Open.** Nothing.
+
 ## What do Wainman and colleagues' (2018a, 2018b) dates give for the age of the Walloon Coal Measures?
 
 *2026-11-25*
@@ -51,8 +68,8 @@
 
 ## References
 
-- `wainman2018b`: Wainman, C. C.; McCabe, P. J.; Crowley, J. L. (2018). Solving a tuff problem: Defining a chronostratigraphic framework for Middle to Upper Jurassic nonmarine strata in eastern Australia using uranium-lead chemical abrasion-thermal ionization mass spectrometry zircon dates. *AAPG Bulletin* 102(6): 1141-1168. doi:10.1306/07261717140
 - `wainman2018a`: Wainman, C. C.; Hannaford, C.; Mantle, D.; McCabe, P. J. (2018). Utilizing U-Pb CA-TIMS dating to calibrate the Middle to Late Jurassic spore-pollen zonation of the Surat Basin, Australia to the geological time-scale. *Alcheringa* 42(3): 402-414. doi:10.1080/03115518.2018.1457179
+- `wainman2018b`: Wainman, C. C.; McCabe, P. J.; Crowley, J. L. (2018). Solving a tuff problem: Defining a chronostratigraphic framework for Middle to Upper Jurassic nonmarine strata in eastern Australia using uranium-lead chemical abrasion-thermal ionization mass spectrometry zircon dates. *AAPG Bulletin* 102(6): 1141-1168. doi:10.1306/07261717140
 - `leahey2015a`: Leahey, L. G.; Molnar, R. E.; Carpenter, K.; Witmer, L. M.; Salisbury, S. W. (2015). Cranial osteology of the ankylosaurian dinosaur formerly known as Minmi sp. (Ornithischia: Thyreophora) from the Lower Cretaceous Allaru Mudstone of Richmond, Queensland, Australia. *PeerJ* 3: e1475. doi:10.7717/peerj.1475
 - `todd2019a`: Todd, C. N.; Roberts, E. M.; Knutsen, E. M.; Rozefelds, A. C.; Huang, H. Q.; Spandler, C. (2019). Refined age and geological context of two of Australia's most important Jurassic vertebrate taxa (Rhoetosaurus brownei and Siderops kehli), Queensland. *Gondwana Research* 76: 19-25. doi:10.1016/j.gr.2019.05.008
 - `longman1926a`: Longman, H. A. (1926). A giant dinosaur from Durham Downs, Queensland. *Memoirs of the Queensland Museum* 8(3): 183-194.

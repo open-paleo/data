@@ -1,5 +1,19 @@
 # Maastrichtian in the lower Kirtland members
 
+## Does the 2026-11-25 ruling on the De-na-zin stand?
+
+*2026-11-27*
+
+**Conclusion.** No, for the De-na-zin; it stands for the Farmington. Supersedes the 2026-11-25 entry on the De-na-zin. That entry re-placed Newman's (1987) early Maastrichtian by his definition of the stage from the *Baculites reesidei* zone; under CONTRIBUTING a stage the author names is carried over, and only a bare number is placed on the current chart, so Newman's stage stands for the upper shale member (see [De-na-zin](../stratigraphy/d/de-na-zin.md)). The same reading keeps Hunt and Lucas's (1992) "Edmontonian (early Maastrichtian)" for the pre-Naashoibito Kirtland (see [Kirtland](../stratigraphy/k/kirtland.md)). Governs nothing new beyond those entries.
+
+**Evidence.**
+- newman1987a, p. 159: "the upper shale member of the Kirtland is most likely early Maastrichtian in age, based on stratigraphic position alone".
+
+**Ruled out.**
+- *Re-placing a named stage by the author's boundary definition.*
+
+**Open.** Nothing.
+
 ## Does Newman's (1987) early Maastrichtian put the Farmington or the De-na-zin in the Maastrichtian?
 
 *2026-11-25*

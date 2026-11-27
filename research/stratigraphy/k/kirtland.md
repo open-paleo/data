@@ -1,5 +1,18 @@
 # Kirtland
 
+## Does the Kirtland keep the Maastrichtian?
+
+*2026-11-27*
+
+**Conclusion.** Yes. Answers the 2026-11-25 entry. Hunt and Lucas (1992) give the pre-Naashoibito Kirtland "Edmontonian (early Maastrichtian)" from radiometric dates, palynology and its conformable position between Judithian and Lancian strata, a stage they name, which is carried over; the Naashoibito, which they place in the Kirtland and the registry files under the Ojo Alamo, is not needed for it. Dalman and colleagues (2025) give every Kirtland member as late Campanian. Governs `stages` on [Kirtland](../../../stratigraphy/k/kirtland.yml), unchanged.
+
+**Evidence.**
+- hunt1992a, p. 217: "the pre-Naashoibito Kirtland is of Edmontonian (early Maastrichtian) age and the Naashoibito is of Lancian (late Maastrichtian) age".
+
+**Ruled out.** Nothing.
+
+**Open.** Whether the Naashoibito belongs to the Kirtland or the Ojo Alamo; it changes no stage.
+
 ## What do Baltz and colleagues (1966) give for the age of the Kirtland, and where do they put the Naashoibito?
 
 *2026-11-25*
@@ -38,8 +51,8 @@
 
 ## References
 
-- `baltz1966a`: Baltz, E. H., Jr.; Ash, S. R.; Anderson, R. Y. (1966). History of nomenclature and stratigraphy of rocks adjacent to the Cretaceous-Tertiary boundary, western San Juan Basin, New Mexico. *U.S. Geological Survey Professional Paper* 524-D: 1-23. doi:10.3133/pp524d
 - `hunt1992a`: Hunt, A. P.; Lucas, S. G. (1992). Stratigraphy, paleontology and age of the Fruitland and Kirtland formations (Upper Cretaceous), San Juan Basin, New Mexico. In *San Juan Basin IV (Lucas, S. G.; Kues, B. S.; Williamson, T. E.; Hunt, A. P., eds.)*, pp. 217-239.
+- `baltz1966a`: Baltz, E. H., Jr.; Ash, S. R.; Anderson, R. Y. (1966). History of nomenclature and stratigraphy of rocks adjacent to the Cretaceous-Tertiary boundary, western San Juan Basin, New Mexico. *U.S. Geological Survey Professional Paper* 524-D: 1-23. doi:10.3133/pp524d
 - `fassett1997a`: Fassett, J. E.; Steiner, M. B. (1997). Precise age of C33N-C32R magnetic-polarity reversal, San Juan Basin, New Mexico and Colorado. In *Mesozoic Geology and Paleontology of the Four Corners Region (Anderson, O. J.; Kues, B. S.; Lucas, S. G., eds.)*, pp. 239-247.
 
 ## Other references
@@ -47,3 +60,4 @@
 - `bauer1916a`: Bauer, C. M. (1916). Contributions to the geology and paleontology of San Juan County, New Mexico. 1. Stratigraphy of a part of the Chaco River Valley.
 - `reeside1924a`: Reeside, J. B., Jr. (1924). Upper Cretaceous and Tertiary formations of the western part of the San Juan basin of Colorado and New Mexico.
 - `ford2000a`: Ford, T. L. (2000). A review of ankylosaur osteoderms from New Mexico and a preliminary review of ankylosaur armor. In *Dinosaurs of New Mexico*, pp. 157-176.
+- `dalman2025a`: Dalman, S. G.; Jasinski, S. E.; Malinzak, D. E.; Lucas, S. G.; Kundrát, M.; Fiorillo, A. R. (2025). A new saurolophine hadrosaurid (Ornithischia: Hadrosauridae) from the Upper Cretaceous (Campanian) Hunter Wash Member, Kirtland Formation, San Juan Basin, New Mexico. In *Fossil Record 11*, pp. 73-114. New Mexico Museum of Natural History and Science.

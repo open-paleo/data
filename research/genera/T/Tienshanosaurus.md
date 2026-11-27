@@ -1,5 +1,18 @@
 # *Tienshanosaurus*
 
+## Does the *Tienshanosaurus* holotype keep the Bathonian?
+
+*2026-11-27*
+
+**Conclusion.** No; it takes the [Shishugou](../../stratigraphy/s/shishugou.md)'s Callovian–Oxfordian. The record gives no level within the formation, so the holotype takes the formation's range, which no longer includes the Bathonian. Governs `stage: [Callovian, Oxfordian]` on [*Tienshanosaurus chitaiensis*](../../../genera/T/Tienshanosaurus.yml).
+
+**Evidence.** None beyond the Shishugou entry.
+
+**Ruled out.**
+- *Bathonian.* The formation's Bathonian rests on an unread relay.
+
+**Open.** Nothing.
+
 ## Where, and at what level, was the *Tienshanosaurus* holotype found?
 
 *2026-09-08*

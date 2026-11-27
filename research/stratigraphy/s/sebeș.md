@@ -1,5 +1,18 @@
 # Sebeș
 
+## Does the Sebeș begin in the Campanian?
+
+*2026-11-27*
+
+**Conclusion.** Yes; the Campanian stays. Answers the 2026-11-25 entry. Vremir and colleagues (2014) date the underlying Bozeș Formation by their own nannofossils and argue from the continuous, conformable passage into the Sebeș that its deposition "began … sometime during the latest Campanian–earliest Maastrichtian"; that is an argued reading in their own voice, not a bare bracket. Csiki-Sava and colleagues (2016) place the basal localities "probably still … around the Campanian-Maastrichtian boundary". Governs `stages` on [Sebeș](../../../stratigraphy/s/sebeș.yml), unchanged.
+
+**Evidence.**
+- vremir2014a, p. 31: "Because the Petreşti-Arini section records essentially continuous sedimentation between the dominantly marine Bozeş Formation and the overlying continental Sebeş Formation … it can be most parsimoniously concluded that deposition of the".
+
+**Ruled out.** Nothing.
+
+**Open.** No magnetostratigraphic or radiometric age is available for the formation.
+
 ## Does the Sebeș begin in the latest Campanian?
 
 *2026-11-25*

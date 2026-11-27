@@ -1,5 +1,20 @@
 # De-na-zin
 
+## Does Newman's early Maastrichtian stand for the De-na-zin?
+
+*2026-11-27*
+
+**Conclusion.** Yes; the member is Campanian to Maastrichtian. Supersedes the 2026-11-25 entry of the [Lower Kirtland](../../topics/lower-kirtland-maastrichtian.md) topic on the De-na-zin. Newman (1987) gives the upper shale member, between the Farmington and the Naashoibito, as "most likely early Maastrichtian in age, based on stratigraphic position alone", a stage he names from position, not a number he measured; a stated stage is carried over, even where the author's boundary definition differs from the current chart. Sullivan (1999) gives the member late Campanian. Governs `stages: [Campanian, Maastrichtian]` and the note on newman1987a on [De-na-zin](../../../stratigraphy/d/de-na-zin.yml); its genera, all Campanian, are unaffected.
+
+**Evidence.**
+- newman1987a, p. 159: "the upper shale member of the Kirtland is most likely early Maastrichtian in age, based on stratigraphic position alone".
+- sullivan1999a, p. 126: the De-na-zin Member is "now considered to be late Campanian in age".
+
+**Ruled out.**
+- *Re-placing Newman's stage by his zonal definition.* A stage the author names is carried over.
+
+**Open.** A date from the upper part of the member.
+
 ## What strata did Hunt and Lucas (1992) name the De-na-zin Member?
 
 *2026-11-23*
@@ -17,6 +32,8 @@
 
 ## References
 
+- `newman1987a`: Newman, K. R. (1987). Biostratigraphic correlation of Cretaceous-Tertiary boundary rocks, Colorado to San Juan Basin, New Mexico. In *The Cretaceous-Tertiary Boundary in the San Juan and Raton Basins, New Mexico and Colorado*, pp. 151-164. doi:10.1130/SPE209-P151
+- `sullivan1999a`: Sullivan, R. M. (1999). Nodocephalosaurus kirtlandensis, gen. et sp. nov., a new ankylosaurid dinosaur (Ornithischia: Ankylosauria) from the Upper Cretaceous Kirtland Formation (upper Campanian), San Juan Basin, New Mexico. *Journal of Vertebrate Paleontology* 19(1): 126-139. doi:10.1080/02724634.1999.10011128
 - `hunt1992a`: Hunt, A. P.; Lucas, S. G. (1992). Stratigraphy, paleontology and age of the Fruitland and Kirtland formations (Upper Cretaceous), San Juan Basin, New Mexico. In *San Juan Basin IV (Lucas, S. G.; Kues, B. S.; Williamson, T. E.; Hunt, A. P., eds.)*, pp. 217-239.
 
 ## Other references

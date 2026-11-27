@@ -1,5 +1,20 @@
 # Prince Creek
 
+## Do the Prince Creek's Campanian and Paleocene rest on a reading?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation becomes Maastrichtian, and the Paleocene leaves `period`. Supersedes the 2026-11-25 entry. Mull and colleagues (2003), revising the formation, make it "Campanian to Paleocene", with the ages of its beds relayed from micropaleontological and palynological reports that have not been read, and Fiorillo and colleagues' papers relay the same span. Frederiksen and colleagues (1990), the only own dating held, place the upper part in the "very late Maastrichtian" by its pollen; that their section's top lies near the Cretaceous–Tertiary boundary rests on a written communication. Governs `period: [Late Cretaceous]`, `stages: [Maastrichtian]` and the note on mull2003a on [Prince Creek](../../../stratigraphy/p/prince-creek.yml); its genera, all Maastrichtian, are unaffected.
+
+**Evidence.**
+- mull2003a, p. 31: "we here extend the age of the Prince Creek Formation into the Tertiary, making the unit Campanian to Paleocene"; "Foraminifera and palynomorphs recovered from the Prince Creek Formation as here revised range in age from Campanian to early Paleocene (Micropaleo Consultants, 1994; Frederiksen and others, 1996; Frederiksen and McIntyre, 2000)".
+- frederiksen1990a, p. E13: "The uppermost part of the Cretaceous sequence of the lower Colville River area must be very late Maastrichtian in age".
+
+**Ruled out.**
+- *Campanian and Paleocene.* Relayed from unread works.
+
+**Open.** Frederiksen and colleagues (1996), Frederiksen and McIntyre (2000) and the 1994 consultants' report have not been read.
+
 ## Are the Paleocene samples near Ocean Point Prince Creek rock?
 
 *2026-11-25*
@@ -62,6 +77,8 @@
 
 ## References
 
+- `mull2003a`: Mull, C. G.; Houseknecht, D. W.; Bird, K. J. (2003). Revised Cretaceous and Tertiary stratigraphic nomenclature in the Colville Basin, northern Alaska. *United States Geological Survey Professional Paper* 1673. doi:10.3133/pp1673
+- `frederiksen1990a`: Frederiksen, N. O. (1990). Pollen zonation and correlation of Maastrichtian marine beds and associated strata, Ocean Point dinosaur locality, North Slope, Alaska. *U.S. Geological Survey Bulletin* 1990-E: 1-24.
 - `frederiksen1988a`: Frederiksen, N. O.; Ager, T. A.; Edwards, L. E. (1988). Palynology of Maastrichtian and Paleocene rocks, lower Colville River region, North Slope of Alaska. *Canadian Journal of Earth Sciences* 25(4): 512-527. doi:10.1139/e88-051
 - `fiorillo2010a`: Fiorillo, A. R.; McCarthy, P. J.; Flaig, P. P.; Brandlen, E.; Norton, D. W.; Zippi, P.; Jacobs, L.; Gangloff, R. A. (2010). Paleontology and paleoenvironmental interpretation of the Kikak-Tegoseak Quarry (Prince Creek Formation: Late Cretaceous), northern Alaska: a multi-disciplinary study of a high-latitude ceratopsian dinosaur bonebed. In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 456-477. Indiana University Press, Bloomington.
 - `fiorillo2012a`: Fiorillo, A. R.; Tykoski, R. S. (2012). A new Maastrichtian species of the centrosaurine ceratopsid Pachyrhinosaurus from the North Slope of Alaska. *Acta Palaeontologica Polonica* 57(3): 561-573. doi:10.4202/app.2011.0033
@@ -70,10 +87,11 @@
 - `eberth2020a`: Eberth, D. A.; Kamo, S. L. (2020). High-precision U-Pb CA-ID-TIMS dating and chronostratigraphy of the dinosaur-rich Horseshoe Canyon Formation (Upper Cretaceous, Campanian- Maastrichtian), Red Deer River valley, Alberta, Canada. *Canadian Journal of Earth Sciences* 57(10): 1220-1237. doi:10.1139/cjes-2019-0019
 - `loewen2024a`: Loewen, M. A.; Sertich, J. J. W.; Sampson, S.; O'Connor, J. K.; Carpenter, S.; Sisson, B.; Øhlenschlæger, A.; Farke, A. A.; Makovicky, P. J.; Longrich, N.; Evans, D. C. (2024). Lokiceratops rangiformis gen. et sp. nov. (Ceratopsidae: Centrosaurinae) from the Campanian Judith River Formation of Montana reveals rapid regional radiations and extreme endemism within centrosaurine dinosaurs. *PeerJ* 12: e17224. doi:10.7717/peerj.17224
 - `brett-surman1989a`: Brett-Surman, M. K. (1989). A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian. Doctoral thesis, The George Washington University.
-- `frederiksen1990a`: Frederiksen, N. O. (1990). Pollen zonation and correlation of Maastrichtian marine beds and associated strata, Ocean Point dinosaur locality, North Slope, Alaska. *U.S. Geological Survey Bulletin* 1990-E: 1-24.
 
 ## Other references
 
 - `carter1985a`: Carter, L. D.; Galloway, J. P. (1985). Engineering-geologic maps of northern Alaska, Harrison Bay quadrangle. *United States Geological Survey Open-File Report* 85-256.
-- `mull2003a`: Mull, C. G.; Houseknecht, D. W.; Bird, K. J. (2003). Revised Cretaceous and Tertiary stratigraphic nomenclature in the Colville Basin, northern Alaska. *United States Geological Survey Professional Paper* 1673. doi:10.3133/pp1673
 - `conrad1992a`: Conrad, J. E.; McKee, E. H.; Turrin, B. D. (1992). Age of tephra beds at the Ocean Point dinosaur locality, North Slope, Alaska, based on K-Ar and 40Ar/39Ar analyses. *U.S. Geological Survey Bulletin* 1990-C: 1-12. doi:10.3133/b1990c
+- `frederiksen1996a`: Frederiksen, N. O.; Sheehan, T. P.; Ager, T. A.; Collett, T. S.; Fouch, T. D.; Franczyk, K. J.; Johnsson, M. (1996). Palynomorph biostratigraphy of Upper Cretaceous to Eocene samples from the Sagavanirktok Formation in its type region, North Slope of Alaska.
+- `frederiksen2000a`: Frederiksen, N. O.; McIntyre, D. J. (2000). Palynomorph biostratigraphy of mid(?)-Campanian to upper Maastrichtian strata along the Colville River, North Slope of Alaska.
+- `micropaleo1994a`: Micropaleo Consultants (1994). Biostratigraphic report of 29 outcrop samples from North Slope, Alaska. Unpublished report prepared for the Alaska Division of Geological and Geophysical Surveys.

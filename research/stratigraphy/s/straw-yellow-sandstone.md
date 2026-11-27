@@ -1,5 +1,20 @@
 # Straw-yellow Sandstone
 
+## Does the Straw-yellow Sandstone keep the Bathonian?
+
+*2026-11-27*
+
+**Conclusion.** No; the member keeps the Middle Jurassic only. Supersedes the 2026-11-25 entry. Li and colleagues (2024, 2019) give "late Bathonian" after Li and colleagues (1982), Zhang (2009) and Du (1985), all read: Li and colleagues and Du give only the Middle Jurassic, Du adding "the late Middle Jurassic", and Zhang dates no formation separately in his text. Neither Li paper presents fossils of its own from the member. A relay that misreports its sources adds nothing. Governs the absent `stages` and the notes on li2024a and li2019b on [Straw-yellow Sandstone](../../../stratigraphy/s/straw-yellow-sandstone.yml), and the absent `stage` on [*Baiyinosaurus baojiensis*](../../../genera/B/Baiyinosaurus.yml).
+
+**Evidence.**
+- li2024a, p. 2: "the Straw-yellow Sandstone Member of the Wangjiashan Formation is considered to be late Bathonian in age26–28".
+- li1982a, p. 39: "In summary, the Wangjiashan Formation is of Middle Jurassic age" (translated).
+
+**Ruled out.**
+- *Bathonian.* A misrelay of three read works.
+
+**Open.** Nothing.
+
 ## What does Du (1985) give the Straw-yellow Sandstone?
 
 *2026-11-26*
@@ -52,11 +67,11 @@
 
 ## References
 
+- `li2024a`: Li, N.; Maidment, S. C. R.; Li, D.; You, H.; Peng, G. (2024). A new stegosaur (Dinosauria: Ornithischia) from the Middle Jurassic of Gansu Province, China. *Scientific Reports* 14(1). doi:10.1038/s41598-024-66280-x
+- `li2019b`: Li, D. Q.; Xing, L. D.; Lockley, M. G.; Romilio, A.; Yang, J. T.; Li, L. F. (2019). The first theropod tracks from the Middle Jurassic of Gansu, Northwest China: new and rare evidence of quadrupedal progression in theropod dinosaurs. *Journal of Palaeogeography* 8: 10. doi:10.1186/s42501-019-0028-4
+- `li1982a`: Li, B.; Xu, F.; Ma, Q.; Pan, H.; Wang, S.; Li, Z. (1982). 甘肃靖远王家山盆地中侏罗世地层 [Middle Jurassic strata of the Wangjiashan Basin, Jingyuan, Gansu]. *Journal of Stratigraphy* 6(1): 33-40.
 - `du1985a`: Du, B. A. (1985). Sporo-pollen assemblages from the middle Jurassic in the Wangjiashan Basin of Jingyuan, Gansu, and their stratigraphic and paleogeographic significance. *Geological Review* 31(2): 131-141.
 - `zhang2009c`: Zhang, H. (2009). [Sedimentary environments and coal accumulation of the Baojishan-Honghui Basin, eastern Qilian Mountains]. *Acta Sedimentologica Sinica* 27(4): 622-631.
-- `li1982a`: Li, B.; Xu, F.; Ma, Q.; Pan, H.; Wang, S.; Li, Z. (1982). 甘肃靖远王家山盆地中侏罗世地层 [Middle Jurassic strata of the Wangjiashan Basin, Jingyuan, Gansu]. *Journal of Stratigraphy* 6(1): 33-40.
-- `li2019b`: Li, D. Q.; Xing, L. D.; Lockley, M. G.; Romilio, A.; Yang, J. T.; Li, L. F. (2019). The first theropod tracks from the Middle Jurassic of Gansu, Northwest China: new and rare evidence of quadrupedal progression in theropod dinosaurs. *Journal of Palaeogeography* 8: 10. doi:10.1186/s42501-019-0028-4
-- `li2024a`: Li, N.; Maidment, S. C. R.; Li, D.; You, H.; Peng, G. (2024). A new stegosaur (Dinosauria: Ornithischia) from the Middle Jurassic of Gansu Province, China. *Scientific Reports* 14(1). doi:10.1038/s41598-024-66280-x
 
 ## Other references
 
