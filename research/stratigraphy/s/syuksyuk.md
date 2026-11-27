@@ -9,7 +9,7 @@
 **Evidence.**
 - vereshchagin1979a, p. 378: "Относится к в. турону — коньяку." ["Belongs to the Upper Turonian–Coniacian", translated].
 - nessov1995a, p. 101: the Syuk-Syuk wells bed is "Upper Cretaceous, Santonian … it is not late Turonian".
-- nessov1997a, p. ?, catalog of localities, locality 61: "Азатбаш … Сюксюкская свита, сантон - нижний кампан." ["Azatbash … Syuksyuk Formation, Santonian–lower Campanian", our translation].
+- nessov1997a, p. ?, catalog of localities, locality 61: "Азатбаш … Сюксюкская свита, сантон - нижний кампан." ["Azatbash … Syuksyuk Formation, Santonian - lower Campanian", translated].
 
 **Ruled out.** Nothing.
 

@@ -1,5 +1,20 @@
 # Tangbian
 
+## Does any work date the Tangbian Campanian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Campanian is dropped, leaving the Late Cretaceous. Supersedes the 2026-11-23 entry on the stages and answers its Open line. Neither Xi paper dates the Tangbian in its text; Xi and colleagues (2018) date only the Guifeng Group as a whole, after Wu and colleagues (2002), and the Campanian comes from where their compiled correlation charts draw the Tangbian box, with no reason given. A chart position is a label, not a reading. Zhu and colleagues (2025) relay "deposited in Campanian" from those charts. The Hekou that Jin and colleagues (2022) date Maastrichtian is the Guifeng Group's lowest formation, below the Tangbian in the stacked order, not the Hekou Group of Gansu in the registry. Governs `period: [Late Cretaceous]` and the absent `stages` on [Tangbian](../../../stratigraphy/t/tangbian.yml), and the absent `stage` on [*Huaxiazhoulong shouwen*](../../../genera/H/Huaxiazhoulong.yml).
+
+**Evidence.**
+- xi2018a, p. 275: "two isotopic ages of 89–86 Ma from the basalt of the Hekou Formation imply that the age of the Guifeng Group might be early to mid-late Cretaceous (Wu et al., 2002)".
+- xi2018a, p. 274, Fig. 9: "Tangbian Fm." drawn in the Campanian row of the Jiangxi column, with no age printed on the box.
+
+**Ruled out.**
+- *Campanian from Xi and colleagues' charts, and from Zhu and colleagues (2025) after them.* A chart position with no stated basis.
+
+**Open.** A date or index fossil from the Tangbian itself.
+
 ## What do the cited works say about the definition and age of the Tangbian?
 
 *2026-11-23*
@@ -20,9 +35,12 @@
 
 ## References
 
+- `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
 - `ling1996a`: Ling, L. (1996). 江西省白垩纪茅店组、河口组及塘边组的建立 [Establishment of the Cretaceous Maodian, Hekou and Tangbian formations of Jiangxi Province]. *Geological Science and Technology of Jiangxi* 23(2): 55-59.
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 
 ## Other references
 
-- `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
+- `zhu2025a`: Zhu, Z.; Wu, J.; You, Y.; Jia, Y.; Chen, C.; Yao, X.; Zheng, W.; Xu, X. (2025). A new ankylosaurid dinosaur from the Upper Cretaceous of Jiangxi Province, southern China. *Historical Biology* 37(12): 2783-2799. doi:10.1080/08912963.2024.2417208
+- `jin2022a`: Jin, X.; Mao, F.; Du, T.; Yang, Y.; Meng, J. (2022). A new multituberculate from the latest Cretaceous of central China and its implications for multituberculate tooth homologies and occlusion. *Journal of Mammalian Evolution* 30(1): 1-20. doi:10.1007/s10914-022-09636-2
+- `wu2002a`: Wu, J. H.; Zhou, W. X.; Zhang, B. T. (2002). 江西及广东北部中生代晚期地层层序和时代 [Stratigraphical sequence and geochronology of the late Mesozoic Era in Jiangxi Province and Northern Guangdong Province]. *Geological Review* 48(1): 44-53.

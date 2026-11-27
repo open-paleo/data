@@ -1,5 +1,21 @@
 # Tiaojishan
 
+## Does Yang and Li's dating add the Bathonian or the Tithonian?
+
+*2026-11-26*
+
+**Conclusion.** The Bathonian, not the Tithonian. Answers the 2026-11-23 entry's Open line. Yang and Li (2008) date a basalt from the "lower bed of the Lanqi Formation", the Tiaojishan under another name, by their own Ar–Ar to 166.1 ± 0.9 Ma, Bathonian on the ICS chart v2024/12 at its central value (base of the Callovian 165.3 Ma), with an error that reaches the Callovian. Their own dates have the lavas erupt "from 166 to 153 Ma", the 153 Ma from an intrusion; their "166–148 Ma" for the formation takes its younger end from published ages relayed by Davis (2005), a second-hand figure that adds no stage. Governs `stages: [Bathonian, Callovian, Oxfordian, Kimmeridgian]` and the note on yang2008a on [Tiaojishan](../../../stratigraphy/t/tiaojishan.yml), and the stages of [*Aurornis xui*](../../../genera/A/Aurornis.yml), which takes its unit's.
+
+**Evidence.**
+- yang2008a, p. 92: "HFG-13 and HFG-15 are basalts collected from the lower bed of the Lanqi Formation in Haifanggou of Beipiao".
+- yang2008a, p. 101: basalt HFG-13 "yields the 40Ar/39Ar plateau age of 166.1 ± 0.9 Ma".
+- yang2008a, p. 107: "Our results indicate that the Lanqi lavas erupted from 166 to 153 Ma"; "Collectively, these ages indicate an age range of ca. 166–148 Ma for the Tiaojishan and Lanqi Formations."
+
+**Ruled out.**
+- *Tithonian from the 148 Ma end.* Relayed from Davis (2005), unread.
+
+**Open.** Davis (2005) has not been read.
+
 ## What do the cited works say about the age of the Tiaojishan?
 
 *2026-11-23*
@@ -25,6 +41,7 @@
 
 ## References
 
+- `yang2008a`: Yang, W.; Li, S. G. (2008). Geochronology and geochemistry of the Mesozoic volcanic rocks in Western Liaoning: implications for lithospheric thinning of the North China Craton. *Lithos* 102(1-2): 88-117. doi:10.1016/j.lithos.2007.09.018
 - `godefroit2013a`: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P. (2013). Reduced plumage and flight ability of a new Jurassic paravian theropod from China. *Nature Communications* 4(1): 1394. doi:10.1038/ncomms2389
 - `sullivan2014a`: Sullivan, C.; Wang, Y.; Hone, D. W. E.; Wang, Y. Q.; Xu, X.; Zhang, F. (2014). The vertebrates of the Jurassic Daohugou Biota of northeastern China. *Journal of Vertebrate Paleontology* 34(2): 243-280. doi:10.1080/02724634.2013.787316
 - `xu2016b`: Xu, X.; Zhou, Z.; Sullivan, C.; Wang, Y.; Ren, D. (2016). An updated review of the Middle-Late Jurassic Yanliao Biota: chronology, taphonomy, paleontology and paleoecology. *Acta Geologica Sinica (English Edition)* 90(6): 2229-2243. doi:10.1111/1755-6724.13033
@@ -32,6 +49,6 @@
 
 ## Other references
 
-- `yang2008a`: Yang, W.; Li, S. G. (2008). Geochronology and geochemistry of the Mesozoic volcanic rocks in Western Liaoning: implications for lithospheric thinning of the North China Craton. *Lithos* 102(1-2): 88-117. doi:10.1016/j.lithos.2007.09.018
 - `zhang2008b`: Zhang, H.; Wang, M. X.; Liu, X. M. (2008). Constraints on the upper boundary age of the Tiaojishan Formation volcanic rocks in West Liaoning-North Hebei by LA-ICP-MS dating. *Chinese Science Bulletin* 53(22): 3574-3584. doi:10.1007/s11434-008-0287-4
 - `chang2009b`: Chang, S. C.; Zhang, H. C.; Renne, P. R.; Fang, Y. (2009). High-precision 40Ar/39Ar age constraints on the basal Lanqi Formation and its implications for the origin of angiosperm plants. *Earth and Planetary Science Letters* 279(3-4): 212-221. doi:10.1016/j.epsl.2008.12.045
+- `davis2005a`: Davis, G. A. (2005). The Late Jurassic "Tuchengzi/Hongcheng" formation of the Yanshan fold thrust belt: an analysis. *Earth Science Frontiers* 12: 331-345.

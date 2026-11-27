@@ -1,5 +1,21 @@
 # Süntel
 
+## Does the Süntel reach the Tithonian?
+
+*2026-11-26*
+
+**Conclusion.** No; it stays Kimmeridgian. Answers the 2026-11-23 entry's Open line. Zuo and colleagues (2017) state that the formation "covers early to late Kimmeridgian time", and their Fig. 2 draws the Upper Süntel wholly in ostracod zone 15, below the line they draw at the base of the Tithonian, with zone 16 beside the Gigas-Schichten above it. Their one sentence giving the Upper Süntel "zones 15 to 16" is outweighed by their own statement and figure. Gramann and colleagues (1997), the correlation scheme they cite, is now on the record and on the fetch list. Governs `stages: [Kimmeridgian]`, unchanged, and the pointers to zuo2017a and gramann1997a on [Süntel](../../../stratigraphy/s/süntel.yml).
+
+**Evidence.**
+- zuo2017a, pp. 2–3: the Süntel Formation "is subdivided into the Lower, Middle and Upper Süntel Formations and covers early to late Kimmeridgian time".
+- zuo2017a, p. 3: "the Middle and Upper Süntel Formations encompass zones 13 to 14 and zones 15 to 16, respectively (Fig. 2)".
+- zuo2017a, p. 4, Fig. 2: the Upper Süntel box ends at the 152.1 Ma line, which is the base of the Tithonian box and of zone 16.
+
+**Ruled out.**
+- *Tithonian from "zones 15 to 16".* Against the paper's own Kimmeridgian statement and figure.
+
+**Open.** Gramann and colleagues (1997) has not been read.
+
 ## What do the cited works say about the age of the Süntel and of bed 83 at Langenberg?
 
 *2026-11-23*
@@ -20,6 +36,7 @@
 ## References
 
 - `zuo2017a`: Zuo, F.; Heimhofer, U.; Huck, S.; Luppold, F. W.; Wings, O.; Erbacher, J. (2017). Sedimentology and depositional sequences of a Kimmeridgian carbonate ramp system, Lower Saxony Basin, Northern Germany. *Facies* 64(1). doi:10.1007/s10347-017-0513-0
+- `gramann1997a`: Gramann, F.; Heunisch, C.; Klassen, H.; Kockel, F.; Dulce, G.; Harms, F.; Katschorek, T.; Mönnig, E.; Schudack, M.; Schudack, U.; Thies, D.; Weiss, M. (1997). Das Niedersächsische Oberjura-Becken-Ergebnisse Interdisziplinärer Zusammenarbeit. *Zeitschrift der Deutschen Geologischen Gesellschaft* 148: 165-236.
 - `evers2020a`: Evers, S. W.; Wings, O. (2020). Late Jurassic theropod dinosaur bones from the Langenberg Quarry (Lower Saxony, Germany) provide evidence for several theropod lineages in the central European archipelago. *PeerJ* 8: e8437. doi:10.7717/peerj.8437
 
 ## Other references

@@ -1,5 +1,19 @@
 # Tugulu
 
+## Does the Tugulu take the Berriasian?
+
+*2026-11-26*
+
+**Conclusion.** Yes; the Berriasian is added. Answers the 2026-11-23 entry's Open line. Zheng and colleagues (2023) adopt an age model for the group's formations in which the Qingshuihe Formation is Berriasian, on clam shrimp, ostracods and pollen reported by Wang and colleagues (2012) and Wang (2013); a group takes its age from a source that dates it by way of its members. Dong's (1992) Neocomian–Albian, relayed by Tumanova (2018), is not needed and has not been read. Governs `stages`, Berriasian to Albian, and the pointers to wang2012b and wang2013d on [Tugulu](../../../stratigraphy/t/tugulu.yml).
+
+**Evidence.**
+- zheng2023a, p. 768: "The Qingshuihe Formation was interpreted as Berriasian in age based on clam shrimp, ostracod, and sporopollen fossils (Wang et al., 2012; Wang, 2013)."
+- zheng2023a, p. 769: "the combination of radioisotopic and biostratigraphic constraints supports the following age model for the group: the Qingshuihe Formation as Berriasian, the Hutubihe and Shengjinkou Formations as Valanginian, and the Lianmuqin Formation as Valanginian to Albian".
+
+**Ruled out.** Nothing.
+
+**Open.** Wang and colleagues (2012), Wang (2013) and Dong (1992) have not been read.
+
 ## What does Zheng and colleagues' (2023) age model give the Tugulu Group?
 
 *2026-11-23*
@@ -33,6 +47,8 @@
 
 ## References
 
+- `wang2012b`: Wang, S.; Pang, Q.; Wang, D. (2012). New advances in the study of Jurassic–Cretaceous biostratigraphy and isotopic ages of the Junggar Basin in Xinjiang and their significance. *Geological Bulletin of China* 31: 493-502.
+- `wang2013d`: Wang, S. (2013). The Late Jurassic–early Early Cretaceous new clam shrimp fossils from north China. *Geological Bulletin of China* 32: 957-966.
 - `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin* 136: 765-773. doi:10.1130/B36795.1
 - `xu2018c`: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L. (2018). Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution. *Current Biology* 28(17): 2853-2860.e3. doi:10.1016/j.cub.2018.07.057
 

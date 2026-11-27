@@ -9,7 +9,7 @@
 **Evidence.**
 - chen2026a, p. 2: in drill core WK23-1 the formation is bounded by the Lufeng Formation at 15.23 m and the Shezi Formation at 157.60 m, "yielding a total thickness of 142.37 m"; p. 6: the authors "placed the Triassic–Jurassic boundary (TJB, 201.4 Ma) at 111.29 m depth"; p. 5: the *Wudingloong* horizon in the topmost Yubacun lies at about 200.17 Ma. The Shezi is "assigned to the Norian–Rhaetian" (p. 6).
 - pang2002a, p. 7: "大体相当海相的赫唐阶—下辛涅缪尔阶" ("roughly equivalent to the marine Hettangian–lower Sinemurian", translated), from spores and pollen, plants, ostracods and magnetostratigraphy.
-- huang2005a, p. 328: "大体相当于赫唐阶至下西涅缪尔阶" ("corresponding roughly to the Hettangian through lower Sinemurian", translated).
+- huang2005a, p. 328: "大体相当于赫唐阶至下西涅缪尔阶" ("corresponding roughly to the Hettangian through the lower Sinemurian", translated).
 
 **Ruled out.**
 - *The boundary at the formation's base.* Pang and colleagues (2002) draw the base of the Jurassic at the base of the Yubacun, and Huang and colleagues (2005) assign the whole formation to the Jurassic. Chen and colleagues' tuned core puts about 46 m of the formation below the boundary. The earlier readings stay in the record's union for the Hettangian and Sinemurian; they do not exclude the Rhaetian.

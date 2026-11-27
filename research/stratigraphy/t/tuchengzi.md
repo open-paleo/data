@@ -1,5 +1,19 @@
 # Tuchengzi
 
+## What does Chang and colleagues (2009) date in the Tuchengzi?
+
+*2026-11-26*
+
+**Conclusion.** Two tuffs from the uppermost formation, by Ar–Ar on sanidine, at 138.8 ± 0.3 and 139.5 ± 1.0 Ma, Berriasian on the ICS chart v2024/12; the stage is already carried. Governs the note on chang2009a on [Tuchengzi](../../../stratigraphy/t/tuchengzi.yml); `stages` unchanged.
+
+**Evidence.**
+- chang2009a, p. 96: "Both tuff TCZ07-1 and tuff TCZ07-2 were collected from the uppermost Tuchengzi Formation."
+- chang2009a, p. 97: "The weighted mean age of two plateau ages is 138.8±0.3 Ma"; "The weighted mean age of single crystal total fusion results for TCZ07-2 sanidine is 139.5±1.0 Ma".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What do the cited works say about the age of the Tuchengzi?
 
 *2026-11-23*
@@ -20,6 +34,7 @@
 
 ## References
 
+- `chang2009a`: Chang, S. C.; Zhang, H.; Renne, P. R.; Fang, Y. (2009). High-precision 40Ar/39Ar age for the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology* 280: 94-104. doi:10.1016/j.palaeo.2009.06.021
 - `liu2012a`: Liu, Y. Q.; Kuang, H. W.; Jiang, X. J.; Peng, N.; Xu, H.; Sun, H. Y. (2012). Timing of the earliest known feathered dinosaurs and transitional pterosaurs older than the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology* 323-325: 1-12. doi:10.1016/j.palaeo.2012.01.017
 - `swisher2002a`: Swisher, C. C., III; Wang, X.; Zhou, Z.; Wang, Y.; Jin, F.; Zhang, J.; Xu, X.; Zhang, F.; Wang, Y. (2002). Further support for a Cretaceous age for the feathered-dinosaur beds of Liaoning, China: New 40Ar/39Ar dating of the Yixian and Tuchengzi Formations. *Chinese Science Bulletin* 47(2): 136-139.
 - `butler2008b`: Butler, R. J.; Upchurch, P.; Norman, D. B. (2008). The phylogeny of the ornithischian dinosaurs. *Journal of Systematic Palaeontology* 6(1): 1-40. doi:10.1017/S1477201907002271

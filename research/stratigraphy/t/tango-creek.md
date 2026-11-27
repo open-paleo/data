@@ -1,5 +1,19 @@
 # Tango Creek
 
+## Is a paper's preferred reading of one site enough for the Maastrichtian?
+
+*2026-11-26*
+
+**Conclusion.** Yes; the Maastrichtian stays. Arbour and colleagues (2020) weigh the published map, which shows the Turtle Site in the Brothers Peak Formation, against the site's lithology, and prefer the reading that the Tango Creek extends into the Maastrichtian there; their own pollen dates the site late Maastrichtian. A preferred reading in the authors' own voice counts. Governs the Maastrichtian in `stages` on [Tango Creek](../../../stratigraphy/t/tango-creek.yml), unchanged.
+
+**Evidence.**
+- arbour2020a, accepted manuscript, p. 15: "We prefer the second hypothesis, because the lithology at this site more closely matches that of the Tatlatui Member of the Tango Creek Formation".
+- arbour2020a, accepted manuscript, p. 15: "The late Maastrichtian age of this site, as suggested by palynomorphs".
+
+**Ruled out.** Nothing.
+
+**Open.** Unchanged.
+
 ## What do the cited works say about the age of the Tango Creek Formation?
 
 *2026-11-23*
@@ -22,6 +36,6 @@
 
 ## References
 
+- `arbour2020a`: Arbour, V. M.; Evans, D. C.; Simon, D. J.; Cullen, T. M.; Braman, D. (2020). Cretaceous flora and fauna of the Sustut Group near the Sustut River, northern British Columbia, Canada. *Canadian Journal of Earth Sciences* 57(6): 671-680. doi:10.1139/cjes-2019-0031
 - `evenchick2001a`: Evenchick, C. A.; Poulton, T. P.; Tipper, H. W.; Braidek, I. (2001). Fossils and facies of the northern two-thirds of the Bowser Basin, British Columbia. *Geological Survey of Canada, Open File* 3956: 103 pp.. doi:10.4095/212067
 - `evenchick2003a`: Evenchick, C. A.; Ferri, F.; Mustard, P. S.; McMechan, M.; Osadetz, K. G.; Stasiuk, L.; Wilson, N. S. F.; Enkin, R. J.; Hadlari, T.; McNicoll, V. J. (2003). Recent results and activities of the Integrated Petroleum Resource Potential and Geoscience Studies of the Bowser and Sustut Basins project, British Columbia. *Geological Survey of Canada, Current Research* 2003-A13: 1-11. doi:10.4095/214831
-- `arbour2020a`: Arbour, V. M.; Evans, D. C.; Simon, D. J.; Cullen, T. M.; Braman, D. (2020). Cretaceous flora and fauna of the Sustut Group near the Sustut River, northern British Columbia, Canada. *Canadian Journal of Earth Sciences* 57(6): 671-680. doi:10.1139/cjes-2019-0031

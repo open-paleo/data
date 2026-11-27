@@ -1,5 +1,20 @@
 # Tatlatui
 
+## Does any work give the Tatlatui the Campanian?
+
+*2026-11-26*
+
+**Conclusion.** No; the Campanian is dropped. Its only source is Ryan and colleagues (2023), who have the member straddle "the Campanian-Maastrichtian boundary in this part of the Sustut Basin" after Arbour and colleagues (2020); Arbour and colleagues give the member no Campanian, only the late Maastrichtian of the Turtle Site, and a relay that misreports its source adds nothing. Governs `stages: [Maastrichtian]` and the note on ryan2023a on [Tatlatui](../../../stratigraphy/t/tatlatui.yml); [*Ferrisaurus sustutensis*](../../../genera/F/Ferrisaurus.yml), Maastrichtian, is unaffected.
+
+**Evidence.**
+- ryan2023a, p. 152: the specimen "has been identified as coming from the Tatlatui Member of the Tango Creek Formation that straddles the Campanian-Maastrichtian boundary in this part of the Sustut Basin (Arbour et al. 2020)".
+- arbour2020a, accepted manuscript, p. 15: "The late Maastrichtian age of this site, as suggested by palynomorphs".
+
+**Ruled out.**
+- *Campanian from Ryan and colleagues (2023).* A misrelay.
+
+**Open.** Nothing.
+
 ## What do Arbour and colleagues (2020) say about the lithology and age of the Tatlatui member?
 
 *2026-11-23*
@@ -18,9 +33,9 @@
 
 ## References
 
+- `ryan2023a`: Ryan, M. J.; Micucci, L.; Rizo, H.; Sullivan, C.; Lee, Y. N.; Evans, D. C. (2023). A new Late Cretaceous leptoceratopsid (Dinosauria: Ceratopsia) from the Oldman Formation (Campanian) of Alberta, Canada. *Windows into Sauropsid and Synapsid Evolution: Essays in Honor of Prof. Louis L. Jacobs*: 151-165.
 - `arbour2020a`: Arbour, V. M.; Evans, D. C.; Simon, D. J.; Cullen, T. M.; Braman, D. (2020). Cretaceous flora and fauna of the Sustut Group near the Sustut River, northern British Columbia, Canada. *Canadian Journal of Earth Sciences* 57(6): 671-680. doi:10.1139/cjes-2019-0031
 
 ## Other references
 
 - `eisbacher1974a`: Eisbacher, G. H. (1974). Sedimentary history and tectonic evolution of the Sustut and Sifton basins, north-central British Columbia. *Geological Survey of Canada Paper* 73-31: 1-57.
-- `ryan2023a`: Ryan, M. J.; Micucci, L.; Rizo, H.; Sullivan, C.; Lee, Y. N.; Evans, D. C. (2023). A new Late Cretaceous leptoceratopsid (Dinosauria: Ceratopsia) from the Oldman Formation (Campanian) of Alberta, Canada. *Windows into Sauropsid and Synapsid Evolution: Essays in Honor of Prof. Louis L. Jacobs*: 151-165.

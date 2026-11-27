@@ -1,5 +1,19 @@
 # Udurchukan
 
+## Does the Udurchukan's Campanian stand?
+
+*2026-11-26*
+
+**Conclusion.** Yes. Answers the 2026-11-23 entry's Open line. Nessov (1997) dates the Blagoveshchensk locality, in the lower part of the Tsagayan Formation, probably terminal Campanian to early and ?middle Maastrichtian, by its dinosaurs and turtles in common with the Nemegt Formation; Alifanov and Bolotsky (2010) give the Udurchukan as the formation "previously referred to as the Tsagayan Formation or Lower Tsagayan Formation". A stage dated at one locality of a formation dates the formation, so the Kundur beds need not carry it themselves. Governs `stages: [Campanian, Maastrichtian]`, unchanged, and the note on nessov1997a on [Udurchukan](../../../stratigraphy/u/udurchukan.yml).
+
+**Evidence.**
+- nessov1997a, p. ?, PDF p. 18: "Последний комплекс, вероятно, должен быть ныне датирован терминальным кампаном-ранним маастрихтом-?средним маастрихтом, как и возраст комплекса позвоночных местонахождения Благовещенск в Амурской области" ["The latter complex should probably now be dated as terminal Campanian–Early Maastrichtian–?Middle Maastrichtian, as is the age of the vertebrate complex at locality Blagoveshchensk in Amur Oblast", translated].
+- alifanov2010a, p. 84: "the Udurchukan Formation (previously referred to as the Tsagayan Formation or Lower Tsagayan Formation)".
+
+**Ruled out.** Nothing.
+
+**Open.** Bolotsky and Kurzanov (1991) has not been read.
+
 ## What do the cited works say about the age of the Udurchukan Formation?
 
 *2026-11-23*
@@ -19,9 +33,10 @@
 
 ## References
 
-- `alifanov2010a`: Alifanov, V. R.; Bolotsky, Y. (2010). Arkharavia heterocoelica gen. et sp. nov., a new sauropod dinosaur from the Upper Cretaceous of the Far East of Russia. *Paleontological Journal* 44(1): 84-91. doi:10.1134/S0031030110010119
 - `nessov1997a`: Nessov, L. A. (1997). Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-218.
+- `alifanov2010a`: Alifanov, V. R.; Bolotsky, Y. (2010). Arkharavia heterocoelica gen. et sp. nov., a new sauropod dinosaur from the Upper Cretaceous of the Far East of Russia. *Paleontological Journal* 44(1): 84-91. doi:10.1134/S0031030110010119
 
 ## Other references
 
 - `bolotsky1991a`: Bolotsky, Y. L.; Kurzanov, S. M. (1991). Gadrosavry Priamuriy [The hadrosaurs of the pre-Amur Region]. *Geology of the Pacific Ocean Border*: 94-103.
+- `godefroit2011a`: Godefroit, P.; Lauters, P.; Van Itterbeeck, J.; Bolotsky, Yu. L.; Dong, Z.; Jin, L.; Wu, W.; Bolotsky, I. Y.; Hai, S.; Yu, T. (2011). Recent advances on study of hadrosaurid dinosaurs in Heilongjiang (Amur) River area between China and Russia. *Global Geology* 14(3): 160-191. doi:10.3969/j.issn.1673-9736.2011.03.03

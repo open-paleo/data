@@ -1,5 +1,19 @@
 # Tiantai
 
+## What dates does Yu and colleagues (2010) give the Tiantai?
+
+*2026-11-26*
+
+**Conclusion.** Relayed ones, all Albian except the Chichengshan's. Yu and colleagues report for volcanics of the Tangshang Formation 109.2 Ma by biotite Ar–Ar, from Li and colleagues (1989), and 108 Ma by zircon U–Pb, and 101 Ma by zircon U–Pb for a layer less than 10 m below the egg- and dinosaur-bearing beds, the zircon ages from a 2004 regional survey report; 94 Ma for the Chichengshan comes from the same report. Being second-hand, they are recorded as reported and add no stage; the Albian is already carried. Governs the note on yu2010a and the pointer to li1989a on [Tiantai](../../../stratigraphy/t/tiantai.yml); `stages` unchanged.
+
+**Evidence.**
+- yu2010a, p. 98: "天台盆地下部塘上组火山岩年龄为(109.2±1.8)Ma[19](黑云母 ³⁹Ar-⁴⁰Ar 坪年龄)和 108 Ma❶(锆石 U-Pb 年龄)" ["The volcanic rocks of the lower Tangshang Formation in the Tiantai Basin have ages of (109.2±1.8) Ma (biotite ³⁹Ar-⁴⁰Ar plateau age) and 108 Ma (zircon U-Pb age)", translated].
+- yu2010a, pp. 98–99: a volcanic layer less than 10 m below the egg- and dinosaur-bearing beds "has a zircon U-Pb age of 101 Ma❶" (translated).
+
+**Ruled out.** Nothing.
+
+**Open.** The 2004 survey report and Li and colleagues (1989) have not been read.
+
 ## Where do the dates on the Tiantai Group's formations fall on the current chart?
 
 *2026-11-23*
@@ -37,6 +51,7 @@
 ## References
 
 - `yu2010a`: Yu, Y.; Jin, X.; Wu, X.; Zhang, Z. (2010). 浙江恐龙和蛋化石的时代 [The age of dinosaur and dinosaur egg fossils in Zhejiang]. *Geology in China* 37(1): 94-100.
+- `li1989a`: Li, K.; Shen, J.; Wang, X. (1989). 中国浙闽赣地区中生代陆相火山岩同位素年代学 [Isotopic geochronology of Mesozoic terrestrial volcanic rocks in Zhejiang, Fujian and Jiangxi, China]. *Journal of Stratigraphy* 13(1): 1-13.
 - `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 
