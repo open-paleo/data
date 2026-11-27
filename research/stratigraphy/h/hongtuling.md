@@ -1,5 +1,18 @@
 # Hongtuling
 
+## Do Holtz and colleagues (2004) belong on the Hongtuling?
+
+*2026-11-27*
+
+**Conclusion.** No; the pointer is removed. Holtz and colleagues' (2004) theropod chapter never mentions *Qinlingosaurus* or the Hongtuling. Zhao and colleagues (2008) credit Holtz and colleagues (2004) with treating *Qinlingosaurus* as a sauropod nomen dubium, but the work that lists it so is Upchurch and colleagues' (2004) sauropod chapter of the same book, which tabulates the taxon among sauropod nomina dubia and gives no horizon or age, so it adds nothing to the unit either. Governs the removed pointer to holtz2004a on [Hongtuling](../../../stratigraphy/h/hongtuling.yml); `period` unchanged.
+
+**Evidence.**
+- zhao2008a, p. 285: "Holtz et al. (2004) regarded this taxon as Sauropoda Nomina dubia", under *Qinlingosaurus luonanensis*.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Hongtuling?
 
 *2026-11-23*
@@ -18,11 +31,12 @@
 
 ## References
 
-- `xue1996a`: Xue, X.; Zhang, Y.; Bi, Y.; Yue, L.; Chen, D. (1996). The development and environmental changes of the intermontane basins in the eastern part of Qinling Mountains. Geological Publishing House, Beijing.
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `zhao2008a`: Zhao, Q.; Xu, X.; Jia, C.; Dong, Z. (2008). Order Saurischia. In *The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)*, pp. 279-335. Science Press, Beijing.
+- `xue1996a`: Xue, X.; Zhang, Y.; Bi, Y.; Yue, L.; Chen, D. (1996). The development and environmental changes of the intermontane basins in the eastern part of Qinling Mountains. Geological Publishing House, Beijing.
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 
 ## Other references
 
-- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.

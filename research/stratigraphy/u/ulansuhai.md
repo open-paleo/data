@@ -1,5 +1,17 @@
 # Ulansuhai
 
+## How should the Xu and colleagues (2013) note read?
+
+*2026-11-27*
+
+**Conclusion.** As a statement of what the paper says, without comment on the registry. The note on xu2013a ended by saying that the Bayan Mandahu beds are entered separately and that their Campanian is not this unit's; that is a statement about our records, which a note does not make. It now says only that Xu and colleagues apply the name Wulansuhai to the Bayan Mandahu beds and date those beds Campanian. The 2026-10-06 entry, which keeps Bayan Mandahu as a separate unit, is unchanged. Governs the note on xu2013a on [Ulansuhai](../../../stratigraphy/u/ulansuhai.yml).
+
+**Evidence.** None beyond the 2026-10-06 entry.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Ulansuhai Formation include the beds at Bayan Mandahu?
 
 *2026-10-06*

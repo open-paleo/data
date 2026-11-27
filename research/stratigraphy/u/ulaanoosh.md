@@ -1,5 +1,19 @@
 # Ulaanoosh
 
+## What do Khand and colleagues (2000) make of the 126 Ma basalt?
+
+*2026-11-27*
+
+**Conclusion.** They accept it, and the stages stand on Yu and colleagues (2020). Supersedes the 2026-09-30 entry's statement that the source reporting the date "doubts it". Khand and colleagues take the 126 ± 3 Ma basalt covering the red beds at Uush mountain as Neocomian volcanism and conclude that "we cannot put" those beds into the upper Lower Cretaceous, while the same chapter reports Khand's ostracod dating of the formation as Albian–Cenomanian. Their conclusion about the beds rests on the basalt above them, a limit, and a bound licenses no stage; Yu and colleagues date the formation Albian–Cenomanian, and its lower member Aptian–Albian, from fossils. Governs the note on khand2000a on [Ulaanoosh](../../../stratigraphy/u/ulaanoosh.yml); `stages` unchanged.
+
+**Evidence.**
+- khand2000a, p. 60: "At the Uush mountain the red beds of the Baruunbayan Formation is covered by basalts. The K-Ar isotopic dating of this basalt yields an age of 126 ± 3 Ma, and we cannot put this red-colored and coarse-grained sediments into the upper part of the Lower Cretaceous."
+
+**Ruled out.**
+- *A pre-Aptian age for the beds.* An inference from a limit.
+
+**Open.** Nothing.
+
 ## Where does Khand and colleagues' 126 ± 3 Ma basalt date fall on the current chart?
 
 *2026-11-23*

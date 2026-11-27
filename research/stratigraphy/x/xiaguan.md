@@ -1,5 +1,20 @@
 # Xiaguan
 
+## Is R. F. Wang and colleagues' "early Late Cretaceous" a Cenomanian reading?
+
+*2026-11-27*
+
+**Conclusion.** No; it names no stage, and the stages stand on D. Y. Wang and colleagues (2013). R. F. Wang and colleagues (2013) take the Nanyangosaurus horizon as the Xiaguan Formation "of early Late Cretaceous age", the age "regional geological workers insist on", after Feng and colleagues (1999) and Zhou and colleagues (2003), neither read. The phrase names a part of the epoch, not a stage, and the same paper uses "early Late Cretaceous" for "pre-Campanian", so there is no Cenomanian to rule out; the formation's Turonian to Campanian rests on D. Y. Wang and colleagues' own fossils. Governs the notes on wang2013a, feng1999a and zhou2003b on [Xiaguan](../../../stratigraphy/x/xiaguan.yml); `stages` unchanged.
+
+**Evidence.**
+- wang2013a, p. 11: "Furthermore, regional geological workers insist on an early Late Cretaceous age for the Nanyangosaurus-bearing red beds in Xiaguan Basin of southern Henan Province".
+- wang2013a, p. 1, abstract: "only six early Late Cretaceous (pre-Campanian) basal hadrosauroids have been found".
+
+**Ruled out.**
+- *A Cenomanian from "early Late Cretaceous".* The phrase names no stage.
+
+**Open.** Feng and colleagues (1999) and Zhou and colleagues (2003) have not been read.
+
 ## What do the cited works say about the age of the Xiaguan?
 
 *2026-11-23*
@@ -19,6 +34,8 @@
 
 ## References
 
-- `wang2013c`: Wang, D. Y.; Cao, X. Q.; Zhao, H. Y.; Cao, M. Z.; Fu, G. H.; Yan, F. C.; Qiang, W. G.; Wang, Y. Q. (2013). Discovery of invertebrate zoolite in the Xiaguan Formation of Xiaguan-Gaoqiu Basin, Henan, China, and its importance for stratigraphic subdivision comparison. *Acta Geologica Sinica* 87(8): 1049-1058.
 - `wang2013a`: Wang, R. F.; You, H. L.; Xu, S. C.; Wang, S. Z.; Yi, J.; Xie, L. J.; Jia, L.; Li, Y. X. (2013). A New Hadrosauroid Dinosaur from the Early Late Cretaceous of Shanxi Province, China. *PLoS ONE* 8(10): e77058. doi:10.1371/journal.pone.0077058
+- `feng1999a`: Feng, Z. J.; Zhou, S. Q.; Li, Z. Y. (1999). The age of the Late Cretaceous red beds in southwestern Henan Province. *Regional Geology of China* 18(3): 320-328.
+- `zhou2003b`: Zhou, S. Q.; Zhu, G. B.; Feng, Z. J. (2003). The age of Xiaguan Formation in Xiaguan-Gaoqiu Basin of Neixiang County, Henan Province. *Resources Survey & Environment* 24(1): 69-74.
+- `wang2013c`: Wang, D. Y.; Cao, X. Q.; Zhao, H. Y.; Cao, M. Z.; Fu, G. H.; Yan, F. C.; Qiang, W. G.; Wang, Y. Q. (2013). Discovery of invertebrate zoolite in the Xiaguan Formation of Xiaguan-Gaoqiu Basin, Henan, China, and its importance for stratigraphic subdivision comparison. *Acta Geologica Sinica* 87(8): 1049-1058.
 - `xu2000a`: Xu, X.; Zhao, X. J.; Lü, J. C.; Huang, W. B.; Li, Z. Y.; Dong, Z. M. (2000). A new iguanodontian from Sangping Formation of Neixiang, Henan and its stratigraphical implication. *Vertebrata PalAsiatica* 38(3): 176-191.
