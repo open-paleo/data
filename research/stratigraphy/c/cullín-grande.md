@@ -1,5 +1,20 @@
 # Cullín Grande
 
+## Does the stratigraphic table of the defining work date the Cullín Grande?
+
+*2026-11-27*
+
+**Conclusion.** Yes; the Albian stays. Answers the 2026-11-25 entry's question at its source. Leanza and Hugo, who erected the member, give it no stage in their text; their stratigraphic table in the Picún Leufú sheet report (Leanza and Hugo 1997) sets the Cullín Grande Member in the Lower Cretaceous Albian and the Puesto Quiroga Member below it in the Aptian, and Leanza and Hugo (2001) ascribe the formation "to the late Aptian and Albian" in words. The table is the defining authors' own scheme, not a compilation of other works' ages, and nothing they write contradicts it, so it counts as their reading; the rule against table labels covers compiled and relayed tables (see [Walloon Coal Measures](../w/walloon-coal-measures.md) and [Wangjiashan](../w/wangjiashan.md)). The member's correlation with the upper Rayoso Formation, "assigned to the Early Albian" by Leanza, adds nothing, being the age of a correlative unit. [*Agustinia ligabuei*](../../../genera/A/Agustinia.yml) and [*Ligabuesaurus leanzai*](../../../genera/L/Ligabuesaurus.yml), 6 m apart in the lower part of the member at Cerro de Los Leones, have no stage reading of their own and keep the member's Albian. Governs `stages: [Albian]` on [Cullín Grande](../../../stratigraphy/c/cullín-grande.yml), unchanged.
+
+**Evidence.**
+- leanza1997a, p. 14, stratigraphic table: "Albiano | Formación Lohan Cura (23): Miembro Cullín Grande" ["Albian | Lohan Cura Formation (23): Cullín Grande Member", translated]; "Aptiano | Miembro Puesto Quiroga" ["Aptian | Puesto Quiroga Member", translated].
+- leanza2001a, p. 118: "Based on tectosedimentary aspects and field relationships, the Lohan Cura Formation can be ascribed to the late Aptian and Albian."
+
+**Ruled out.**
+- *Dropping the Albian as a table label.* The table is the defining authors' own placement.
+
+**Open.** Nothing.
+
 ## Does the Cullín Grande take the Aptian?
 
 *2026-11-25*
@@ -35,6 +50,8 @@
 
 ## References
 
+- `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
+- `leanza2001a`: Leanza, H. A.; Hugo, C. A. (2001). Cretaceous red beds from southern Neuquén Basin (Argentina): age, distribution and stratigraphic discontinuities. In *VII International Symposium on Mesozoic Terrestrial Ecosystems*, pp. 117-122.
 - `salgado2004a`: Salgado, L.; Garrido, A.; Cocca, S. E.; Cocca, J. R. (2004). Lower Cretaceous rebbachisaurid sauropods from Cerro Aguada del León (Lohan Cura Formation), Neuquén Province, northwestern Patagonia, Argentina. *Journal of Vertebrate Paleontology* 24(4): 903-912. doi:10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2
 - `bonaparte1999c`: Bonaparte, J. F. (1999). An armoured sauropod from the Aptian of northern Patagonia, Argentina. In *Proceedings of the Second Gondwanan Dinosaur Symposium (Tomida, Y.; Rich, T. H.; Vickers-Rich, P., eds.)*, pp. 1-12.
 - `martinelli2007b`: Martinelli, A. G.; Garrido, A. C.; Forasiepi, A. M.; Paz, E. R.; Gurovich, Y. (2007). Notes on fossil remains from the Early Cretaceous Lohan Cura Formation, Neuquén Province, Argentina. *Gondwana Research* 11(4): 537-552.

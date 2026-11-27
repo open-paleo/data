@@ -1,5 +1,17 @@
 # *Vulcanodon*
 
+## Which stages does the *Vulcanodon karibaensis* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's epoch, with no stage. Supersedes the 2026-08-05 entry on the stages. Viglietti and colleagues (2018) place the holotype a few metres below the Batoka Basalt and date it "most likely" Sinemurian–Pliensbachian by correlation with the Clarens; Cooper (1984) gives an early Jurassic age. Governs the absent `stage` on [*Vulcanodon karibaensis*](../../../genera/V/Vulcanodon.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Forest Sandstone](../../stratigraphy/f/forest-sandstone.md) entry.
+
+**Open.** Nothing.
+
 ## Is the *Vulcanodon* holotype from the Batoka Basalt Formation?
 
 *2026-09-09*

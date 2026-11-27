@@ -1,5 +1,22 @@
 # Cutzamala
 
+## Does the Cutzamala keep the Maastrichtian?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation keeps the Late Cretaceous only. Supersedes the 2026-11-25 entry on the stages. Benammi and colleagues (2005) give the Maastrichtian as the maximum age set by *Nudopollis*, and date the deposits only to the Late Cretaceous; Martini and colleagues' (2009) "youngest age for the folded part … is Maastrichtian" rests on the same pollen first occurrences, which are limits; and Martini and colleagues' own date of about 74 Ma is on an andesite clast in a conglomerate, which gives only a maximum for the bed. A limit adds no stage. [*Huehuecanauhtlus tiquichensis*](../../../genera/H/Huehuecanauhtlus.yml), whose Santonian is ruled out, takes the formation's range. Governs the absent `stages` on [Cutzamala](../../../stratigraphy/c/cutzamala.yml).
+
+**Evidence.**
+- benammi2005a, p. 433: "la sola presencia de Nudopollis indica una edad máxima de Maastrichtiano" ["the mere presence of Nudopollis indicates a maximum age of Maastrichtian", translated].
+- martini2009a, p. 159: "In the same area, Altamira-Areyán (2002) found pollen species of the Momipites microcoriphaeous and Momipites temipolus groups, the first occurrence of which is Maastrichtian in age (Nicholls, 1973)."
+- martini2009a, p. 161: "considering that the youngest age for the folded part of the continental succession is Maastrichtian".
+
+**Ruled out.**
+- *Maastrichtian.* A maximum age from pollen first occurrences.
+- *Campanian from the 74 Ma clast.* A clast dates its source, not the bed.
+
+**Open.** Unchanged: a date from the formation itself.
+
 ## Does any work read date the Cutzamala Santonian, and do its hadrosaurs and pollen share a section?
 
 *2026-11-25*
@@ -44,8 +61,8 @@
 ## References
 
 - `benammi2005a`: Benammi, M.; Centeno-García, E.; Martínez-Hernández, E.; Morales-Gámez, M.; Tolson, G.; Urrutia-Fucugauchi, J. (2005). Presencia de dinosaurios en la Barranca Los Bonetes en el sur de México (Región de Tiquicheo, Estado de Michoacán) y sus implicaciones cronoestratigráficas [Presence of dinosaurs at Barranca Los Bonetes in southern Mexico (Tiquicheo region, Michoacán State) and their chronostratigraphic implications]. *Revista Mexicana de Ciencias Geológicas* 22(3): 429-435.
-- `ramírez-velasco2012a`: Ramírez-Velasco, A. A.; Benammi, M.; Prieto-Márquez, A.; Ortega, J. A.; Hernández-Rivera, R. (2012). Huehuecanauhtlus tiquichensis, a new hadrosauroid dinosaur (Ornithischia: Ornithopoda) from the Santonian (Late Cretaceous) of Michoacán, Mexico. *Canadian Journal of Earth Sciences* 49(2): 379-395. doi:10.1139/e11-062
 - `martini2009a`: Martini, M.; Ferrari, L.; López-Martínez, M.; Cerca-Martínez, M.; Valencia, V. A.; Serrano-Durán, L. (2009). Cretaceous-Eocene magmatism and Laramide deformation in southwestern Mexico: No role for terrane accretion. *Geological Society of America Memoir* 204: 151-182. doi:10.1130/2009.1204(07)
+- `ramírez-velasco2012a`: Ramírez-Velasco, A. A.; Benammi, M.; Prieto-Márquez, A.; Ortega, J. A.; Hernández-Rivera, R. (2012). Huehuecanauhtlus tiquichensis, a new hadrosauroid dinosaur (Ornithischia: Ornithopoda) from the Santonian (Late Cretaceous) of Michoacán, Mexico. *Canadian Journal of Earth Sciences* 49(2): 379-395. doi:10.1139/e11-062
 - `villanueva-amadoz2014a`: Villanueva-Amadoz, U.; Calvillo-Canadell, L.; Cevallos-Ferriz, S. R. S. (2014). Síntesis de los trabajos paleobotánicos del Cretácico en México [Synthesis of paleobotanic works of the Cretaceous in Mexico]. *Boletín de la Sociedad Geológica Mexicana* 66(1): 97-121.
 
 ## Other references

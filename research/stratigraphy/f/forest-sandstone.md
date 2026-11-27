@@ -1,5 +1,22 @@
 # Forest Sandstone
 
+## Does any stage reach the Forest Sandstone by its own evidence?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation keeps the Early Jurassic only. Supersedes the 2026-11-25 entry on the stages. Viglietti and colleagues' (2018) "most likely" Sinemurian–Pliensbachian for the *Vulcanodon* stratum rests on their correlation of the upper formation with the Clarens and on the Toarcian lava above it, a limit; their Rhaetian/Hettangian for the lower part is a maximum from fauna shared with the upper Elliot. Raath (1969) dates the deposits "Upper Triassic" from Bond's (1955) correlation with the South African Red Beds, and the Hettangian of Rauhut (2003) and Bristowe and Raath (2004) is the range of a taxon. Cooper (1984) gives *Vulcanodon* an "early Jurassic age" in his own voice, which supports the epoch. [*Vulcanodon karibaensis*](../../../genera/V/Vulcanodon.yml) and [*Megapnosaurus rhodesiensis*](../../../genera/M/Megapnosaurus.yml) take the formation's range. Governs the absent `stages` on [Forest Sandstone](../../../stratigraphy/f/forest-sandstone.yml).
+
+**Evidence.**
+- viglietti2018a, accepted manuscript, p. 10: "A Sinemurian–Pliensbachian age seems most likely for this taxon, given its stratigraphic proximity to the Toarcian-aged Lower Basalt".
+- raath1969a, p. 1: "on the basis of its fossil fauna Bond (op. cit.) has correlated the Forest Sandstone with the Upper part of the South African Red Beds. The deposits are thus Upper Karroo (Upper Triassic) in age."
+- cooper1984a, p. 203: "in view of its early Jurassic age, its characters have considerable phylogenetic significance".
+
+**Ruled out.**
+- *Sinemurian and Pliensbachian.* The age of a correlative unit, bounded by the lava above.
+- *Hettangian.* A maximum, and a taxon's range.
+
+**Open.** Raath (1972), the *Vulcanodon* type description, has not been read.
+
 ## Does the Forest Sandstone take the Rhaetian and the Late Triassic?
 
 *2026-11-25*
@@ -44,6 +61,7 @@
 
 - `viglietti2018a`: Viglietti, P. A.; Barrett, P. M.; Broderick, T. J.; Munyikwa, D.; MacNiven, R.; Broderick, L.; Chapelle, K.; Glynn, D.; Edwards, S.; Zondo, M.; Broderick, P.; Choiniere, J. N. (2018). Stratigraphy of the Vulcanodon type locality and its implications for regional correlations within the Karoo Supergroup. *Journal of African Earth Sciences* 137: 149-156. doi:10.1016/j.jafrearsci.2017.10.015
 - `raath1969a`: Raath, M. A. (1969). A new coelurosaurian dinosaur from the Forest Sandstone of Rhodesia. *Arnoldia Rhodesia* 4(28): 1-25.
+- `cooper1984a`: Cooper, M. R. (1984). A reassessment of Vulcanodon karibaensis Raath (Dinosauria: Saurischia) and the origin of the Sauropoda. *Palaeontologia Africana* 25: 203-231.
 - `visser1984a`: Visser, J. N. J. (1984). A review of the Stormberg Group and Drakensberg volcanics in southern Africa. *Palaeontologia Africana* 25: 5-27.
 - `jourdan2008a`: Jourdan, F.; Féraud, G.; Bertrand, H.; Watkeys, M. K.; Renne, P. R. (2008). The 40Ar/39Ar ages of the sill complex of the Karoo large igneous province: implications for the Pliensbachian-Toarcian climate change. *Geochemistry, Geophysics, Geosystems* 9(6): 1-20. doi:10.1029/2008GC001994
 
@@ -54,3 +72,4 @@
 - `bond1955a`: Bond, G. (1955). A note on dinosaur remains from the Forest Sandstone (Upper Karroo). *Occasional Papers of the National Museums of Southern Rhodesia* 2(20): 795-800.
 - `rauhut2003b`: Rauhut, O. W. M. (2003). The interrelationships and evolution of basal theropod dinosaurs. *Special Papers in Palaeontology* 69: 1-213.
 - `bristowe2004a`: Bristowe, A.; Raath, M. A. (2004). A juvenile coelophysoid skull from the Early Jurassic of Zimbabwe, and the synonymy of Coelophysis and Syntarsus. *Palaeontologia Africana*.
+- `raath1972a`: Raath, M. A. (1972). Fossil vertebrate studies in Rhodesia: a new dinosaur (Reptilia: Saurischia) from near the Tria-Jurassic boundary. *Arnoldia* 5(31): 1-37.

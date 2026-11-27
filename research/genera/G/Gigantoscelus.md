@@ -1,5 +1,17 @@
 # *Gigantoscelus*
 
+## Which stages does the *Gigantoscelus molengraaffi* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's Pliensbachian. Supersedes the 2026-10-14 entry on the stages. Van Hoepen (1916) left the level of the femur open and gives no age; the record keeps the formation, under its older name Bushveld Sandstone, as the [Clarens](../../stratigraphy/c/clarens.md) entry of 2026-10-14 settles. Governs `stage: [Pliensbachian]` on [*Gigantoscelus molengraaffi*](../../../genera/G/Gigantoscelus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Clarens](../../stratigraphy/c/clarens.md) entry.
+
+**Open.** Nothing.
+
 ## Which unit and age does *Gigantoscelus* take now that the Bushveld Sandstone is the Clarens?
 
 *2026-10-14*

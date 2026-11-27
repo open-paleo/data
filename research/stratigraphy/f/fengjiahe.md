@@ -1,5 +1,24 @@
 # Fengjiahe
 
+## Does any work date the Fengjiahe to a stage?
+
+*2026-11-27*
+
+**Conclusion.** No; the formation keeps the Early Jurassic only. Supersedes the 2026-11-23 and 2026-10-06 entries on the stages. Of the eleven works read on the formation and its six genera, none dates the Fengjiahe itself below the epoch. Chen and colleagues (1982) give "Lower Jurassic" in their text, and their stages are rows of a correlation table; Yao and colleagues' (2022) "late Sinemurian–Toarcian" is the Lufeng Formation's magnetostratigraphy (Huang and colleagues 2005), applied to a unit they call "a lateral equivalent"; Fonseca and colleagues' (2024) "Sinemurian–Pliensbachian" for *Yuxisaurus* is an unsourced table entry. No work treats the Fengjiahe as the Lufeng itself, and they disagree on how the two relate: "slightly younger" (Bai 1990), "slightly older" (Peyre de Fabrègues and colleagues 2020), "a lateral equivalent" (Upchurch and colleagues 2007; Yao and colleagues 2022), or only its First Member "roughly equivalent to the Zhangjiaao Member" (Hu and colleagues 2026). The age of a correlative unit does not date this one. [*Chinshakiangosaurus*](../../../genera/C/Chinshakiangosaurus.yml), [*Irisosaurus*](../../../genera/I/Irisosaurus.yml), [*Shuangbaisaurus*](../../../genera/S/Shuangbaisaurus.yml), [*Xiangyunloong*](../../../genera/X/Xiangyunloong.yml), [*Yimenosaurus*](../../../genera/Y/Yimenosaurus.yml) and [*Yuxisaurus*](../../../genera/Y/Yuxisaurus.yml) take the formation's range. Governs the absent `stages` on [Fengjiahe](../../../stratigraphy/f/fengjiahe.yml).
+
+**Evidence.**
+- yao2022a, p. 3: "The Fengjiahe Formation is currently thought to be a lateral equivalent of the Lufeng Formation, which crops out in the adjacent Lufeng Basin (Fang et al., 2008)."
+- yao2022a, p. 4: "more recent magnetostratigraphic evidence posits a younger age for the Lufeng Formation, namely late Sinemurian–Toarcian (Huang et al., 2005)".
+- bai1990a, translation, p. 10: "the Early Jurassic Fengjiahe Fm. is stratigraphically slightly younger than the Lower Lufeng Fm".
+- peyredefabrègues2020a, p. 14: "it is stratigraphically slightly older than the abovementioned Formation".
+- upchurch2007a, p. 248: "Ye (1975) suggested an Early Jurassic age for the Fengjiahe Formation, a conclusion supported by biostratigraphical correlations using ostracods, bivalves and other aquatic invertebrates (Chen et al. 1982)."
+
+**Ruled out.**
+- *The Lufeng's stages.* The Fengjiahe is a correlative, not the Lufeng under another name.
+- *Stages from Chen and colleagues' table or Fonseca and colleagues' table.* Table labels.
+
+**Open.** Ye (1975), the first work to date the formation, has not been read.
+
 ## Is Sánchez-Fenollosa and Cobos's (2025) age for the Fengjiahe independent of Yao and colleagues'?
 
 *2026-11-25*
@@ -58,16 +77,20 @@
 
 ## References
 
+- `yao2022a`: Yao, X.; Barrett, P. M.; Yang, L.; Xu, X.; Bi, S. D. (2022). A new early branching armored dinosaur from the Lower Jurassic of southwestern China. *eLife* 11: e75248:1-37. doi:10.7554/eLife.75248
+- `bai1990a`: Bai, Z.; Yang, J.; Wang, G. (1990). [Yimenosaurus, a new genus of Prosauropoda from Yimen County, Yunnan province]. *Yuxiwenbo (Yuxi Culture and Scholarship)* 1: 14-23.
+- `peyredefabrègues2020a`: Peyre de Fabrègues, C.; Bi, S.; Li, H.; Li, G.; Yang, L.; Xu, X. (2020). A new species of early-diverging Sauropodiformes from the Lower Jurassic Fengjiahe Formation of Yunnan Province, China. *Scientific Reports* 10(1). doi:10.1038/s41598-020-67754-4
+- `upchurch2007a`: Upchurch, P.; Barrett, P. M.; Zhao, X. J.; Xu, X. (2007). A re-evaluation of Chinshakiangosaurus chunghoensis Ye vide Dong 1992 (Dinosauria, Sauropodomorpha): implications for cranial evolution in basal sauropod dinosaurs. *Geological Magazine* 144(2): 247-262. doi:10.1017/S0016756806003062
 - `sánchez-fenollosa2025a`: Sánchez-Fenollosa, S.; Cobos, A. (2025). New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria). *Vertebrate Zoology* 75: 165-189. doi:10.3897/vz.75.e146618
 - `chen1982a`: Chen, P. J.; Li, W. B.; Chen, J. H.; Ye, C. H.; Wang, Z.; Shen, Y. B.; Sun, D. L. (1982). Stratigraphical classification of Jurassic and Cretaceous in China. *Scientia Sinica (Series B)* 25: 1227-1248.
-- `yao2022a`: Yao, X.; Barrett, P. M.; Yang, L.; Xu, X.; Bi, S. D. (2022). A new early branching armored dinosaur from the Lower Jurassic of southwestern China. *eLife* 11: e75248:1-37. doi:10.7554/eLife.75248
 - `zhen1985a`: Zhen, S.; Zhen, B.; Mateer, N. J.; Lucas, S. G. (1985). The Mesozoic reptiles of China. *Bulletin of the Geological Institutions of the University of Uppsala, New Series* 11: 133-150.
 - `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
-- `peyredefabrègues2020a`: Peyre de Fabrègues, C.; Bi, S.; Li, H.; Li, G.; Yang, L.; Xu, X. (2020). A new species of early-diverging Sauropodiformes from the Lower Jurassic Fengjiahe Formation of Yunnan Province, China. *Scientific Reports* 10(1). doi:10.1038/s41598-020-67754-4
-- `bai1990a`: Bai, Z.; Yang, J.; Wang, G. (1990). [Yimenosaurus, a new genus of Prosauropoda from Yimen County, Yunnan province]. *Yuxiwenbo (Yuxi Culture and Scholarship)* 1: 14-23.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
 
 ## Other references
 
 - `young1951a`: Young, C. C. (1951). The Lufeng saurischian fauna in China. *Palaeontologia Sinica, New Series C* 13: 1-96.
+- `hu2026a`: Hu, S. B.; Wang, Y. C.; Mo, X.; Zhang, X. Q.; Zeng, W. T.; Wang, T.; Sun, Z. B.; Dong, Q. X.; Guan, Q.; Liu, Y. H.; Zhang, Y. S.; Bing, Y.; Wang, Y. M.; You, H. L. (2026). A new sauropodomorph dinosaur from the Lower Jurassic Fengjiahe Formation of Dali of Yunnan Province, China. *Royal Society Open Science* 13(3). doi:10.1098/rsos.252219
+- `fonseca2024a`: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T. (2024). A comprehensive phylogenetic analysis on early ornithischian evolution. *Journal of Systematic Palaeontology* 22: 2346577. doi:10.1080/14772019.2024.2346577
+- `yeh1975a`: Yeh, H. K. (1975). Zhū luó xì [Jurassic system]. *Yúnnán zhōngshēngdài hóng céng [Mesozoic Red Beds of Yunnan]*: 11-31.

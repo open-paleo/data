@@ -1,5 +1,17 @@
 # *Xiangyunloong*
 
+## Which stages does the *Xiangyunloong fengming* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's epoch, with no stage. Hu and colleagues (2026) place the type material in the upper part of the First Member, "Lower Jurassic"; the Sinemurian–Pliensbachian bar of their time-scaled tree is a figure, with its ages taken from another work. Governs the absent `stage` on [*Xiangyunloong fengming*](../../../genera/X/Xiangyunloong.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Fengjiahe](../../stratigraphy/f/fengjiahe.md) entry.
+
+**Open.** Nothing.
+
 ## Does the *Xiangyunloong* holotype take a member or a `part`?
 
 *2026-09-14*

@@ -1,5 +1,18 @@
 # *Heterodontosaurus*
 
+## Which stages does the *Heterodontosaurus tucki* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's Pliensbachian. No work read dates the type level below the formation: Crompton and Charig (1962) give it as "probably of Upper Keuper age", an epoch now superseded; Norman and colleagues (2011) relay the formation's age; and Sereno (2012) places it in the lower Clarens with an age relayed from Knoll (2005). Supersedes the stages of earlier entries. Governs `stage: [Pliensbachian]` on [*Heterodontosaurus tucki*](../../../genera/H/Heterodontosaurus.yml).
+
+**Evidence.** 
+- crompton1962a, p. 1075: "In the transitional beds of the Cave Sandstone², below the basalt; probably of Upper Keuper age."
+
+**Ruled out.** Nothing beyond the [Clarens](../../stratigraphy/c/clarens.md) entry.
+
+**Open.** Nothing.
+
 ## Is "zone B/1" a horizon for the *Heterodontosaurus* holotype?
 
 *2026-08-26*
@@ -37,3 +50,7 @@
 - `norman2011a`: Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J. (2011). The Lower Jurassic ornithischian dinosaur Heterodontosaurus tucki Crompton & Charig, 1962: cranial anatomy, functional morphology, taxonomy, and relationships. *Zoological Journal of the Linnean Society*: 182-276. doi:10.1111/j.1096-3642.2011.00697.x
 - `olsen1984a`: Olsen, P. E.; Galton, P. M. (1984). A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg. *Palaeontologia Africana* 25: 87-110.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+
+## Other references
+
+- `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840

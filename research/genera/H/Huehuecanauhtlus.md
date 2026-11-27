@@ -1,5 +1,17 @@
 # *Huehuecanauhtlus*
 
+## Which stages does the *Huehuecanauhtlus tiquichensis* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** Its unit's epoch, with no stage. Supersedes the 2026-11-25 entry on the stages. Ramírez-Velasco and colleagues' (2012) Santonian for Barranca Los Bonetes relays an abstract and a thesis and is ruled out; their 2022 "Late Santonian" cites the 2012 paper. Governs the absent `stage` on [*Huehuecanauhtlus tiquichensis*](../../../genera/H/Huehuecanauhtlus.yml).
+
+**Evidence.** None beyond the unit entry.
+
+**Ruled out.** Nothing beyond the [Cutzamala](../../stratigraphy/c/cutzamala.md) entry.
+
+**Open.** Nothing.
+
 ## Which stage does the *Huehuecanauhtlus* holotype take?
 
 *2026-11-25*
@@ -21,3 +33,7 @@
 - `benammi2005a`: Benammi, M.; Centeno-García, E.; Martínez-Hernández, E.; Morales-Gámez, M.; Tolson, G.; Urrutia-Fucugauchi, J. (2005). Presencia de dinosaurios en la Barranca Los Bonetes en el sur de México (Región de Tiquicheo, Estado de Michoacán) y sus implicaciones cronoestratigráficas [Presence of dinosaurs at Barranca Los Bonetes in southern Mexico (Tiquicheo region, Michoacán State) and their chronostratigraphic implications]. *Revista Mexicana de Ciencias Geológicas* 22(3): 429-435.
 - `martini2009a`: Martini, M.; Ferrari, L.; López-Martínez, M.; Cerca-Martínez, M.; Valencia, V. A.; Serrano-Durán, L. (2009). Cretaceous-Eocene magmatism and Laramide deformation in southwestern Mexico: No role for terrane accretion. *Geological Society of America Memoir* 204: 151-182. doi:10.1130/2009.1204(07)
 - `ramírez-velasco2012a`: Ramírez-Velasco, A. A.; Benammi, M.; Prieto-Márquez, A.; Ortega, J. A.; Hernández-Rivera, R. (2012). Huehuecanauhtlus tiquichensis, a new hadrosauroid dinosaur (Ornithischia: Ornithopoda) from the Santonian (Late Cretaceous) of Michoacán, Mexico. *Canadian Journal of Earth Sciences* 49(2): 379-395. doi:10.1139/e11-062
+
+## Other references
+
+- `ramírez-velasco2022a`: Ramírez-Velasco, A. A. (2022). Phylogenetic and biogeography analysis of Mexican hadrosauroids. *Cretaceous Research* 138: 105267. doi:10.1016/j.cretres.2022.105267

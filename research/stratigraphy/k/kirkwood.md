@@ -1,5 +1,19 @@
 # Kirkwood
 
+## Do the Kirkwood's genera keep the Valanginian?
+
+*2026-11-27*
+
+**Conclusion.** Held until two works are read. Muir and colleagues' (2020) own dates support Aalenian to Berriasian. The Valanginian of the four Algoa Basin genera comes only by correlation or relay: Forster and colleagues (2023) infer it for the *Iyuku* site from McMillan's (2003) foraminiferal age for the base of the Sundays River Formation; de Klerk and colleagues (2000) give "Berriasian–Valanginian" after McMillan; and Galton (1981) gives the formation "Berriasian to Lower Valanginian" after McLachlan and McMillan (1976). No work read has a date or fossil age of its own for any of the four type levels. Dropping the Valanginian now would widen [*Iyuku*](../../../genera/I/Iyuku.yml), [*Algoasaurus*](../../../genera/A/Algoasaurus.yml), [*Nqwebasaurus*](../../../genera/N/Nqwebasaurus.yml) and [*Paranthodon*](../../../genera/P/Paranthodon.yml) to Aalenian–Berriasian, which a reading of McLachlan and McMillan (1976) could reverse. Governs nothing yet; `stages` on [Kirkwood](../../../stratigraphy/k/kirkwood.yml) unchanged.
+
+**Evidence.**
+- forster2023a, p. 1764: "Work by McMillan (2003) on Sundays River Fm foraminifera indicates that the base of the Sundays River Fm in the Algoa Basin is Middle Valanginian in age. This would indicate an Early Cretaceous age (early-mid Valanginian) for the Kirkwood Fm stratotype exposure and bone-bearing fossil site".
+- deklerk2000a, p. 325: "Lower Cretaceous Kirkwood Formation (Berriasian–Valanginian), Uitenhage Group, Algoa Basin, Eastern Cape Province, South Africa (McMillan, 1999; Fig. 1)".
+
+**Ruled out.** Nothing.
+
+**Open.** McLachlan and McMillan (1976) and McMillan (2003) have not been read.
+
 ## What do Muir and colleagues' Kirkwood lithostratigraphy (2017) and U–Pb study (2020) give for the age of the Kirkwood?
 
 *2026-11-25*
@@ -40,10 +54,11 @@
 
 ## References
 
+- `forster2023a`: Forster, C. A.; de Klerk, W. J.; Poole, K. E.; Chinsamy-Turan, A.; Roberts, E. M.; Ross, C. F. (2023). Iyuku raathi, a new iguanodontian dinosaur from the Early Cretaceous Kirkwood Formation, South Africa. *The Anatomical Record* 306(7): 1762-1803. doi:10.1002/ar.25038
+- `deklerk2000a`: de Klerk, W. J.; Forster, C. A.; Sampson, S. D.; Chinsamy, A.; Ross, C. F. (2000). A new coelurosaurian dinosaur from the Early Cretaceous of South Africa. *Journal of Vertebrate Paleontology* 20(2): 324-332. doi:10.1671/0272-4634(2000)020[0324:ancdft]2.0.co;2
 - `muir2017b`: Muir, R. A.; Bordy, E. M.; Reddering, J. S. V.; Viljoen, J. H. A. (2017). Lithostratigraphy of the Kirkwood Formation (Uitenhage Group), including the Bethelsdorp, Colchester and Swartkops Members, South Africa. *South African Journal of Geology* 120(2): 281-293. doi:10.25131/gssajg.120.2.281
 - `muir2020a`: Muir, R. A.; Bordy, E. M.; Mundil, R.; Frei, D. (2020). Recalibrating the breakup history of SW Gondwana: U–Pb radioisotopic age constraints from the southern Cape of South Africa. *Gondwana Research* 84: 177-193. doi:10.1016/j.gr.2020.02.011
 - `muir2017a`: Muir, R. A.; Bordy, E. M.; Reddering, J. S. V.; Viljoen, J. H. A. (2017). Lithostratigraphy of the Enon Formation (Uitenhage Group), South Africa. *South African Journal of Geology* 120(2): 273-280.
-- `forster2023a`: Forster, C. A.; de Klerk, W. J.; Poole, K. E.; Chinsamy-Turan, A.; Roberts, E. M.; Ross, C. F. (2023). Iyuku raathi, a new iguanodontian dinosaur from the Early Cretaceous Kirkwood Formation, South Africa. *The Anatomical Record* 306(7): 1762-1803. doi:10.1002/ar.25038
 
 ## Other references
 
@@ -51,3 +66,6 @@
 - `mcmillan2010a`: McMillan, I. K. (2010). The Foraminifera of the Portlandian (Late Jurassic) Bethelsdorp Formation of the onshore Algoa Basin, Eastern Cape Province. Les Rosalines Press, Clovelly.
 - `mcphee2016b`: McPhee, B. W.; Mannion, P. D.; de Klerk, W. J.; Choiniere, J. N. (2016). High diversity in the sauropod dinosaur fauna of the Lower Cretaceous Kirkwood Formation of South Africa: implications for the Jurassic-Cretaceous transition. *Cretaceous Research* 59: 228-248.
 - `dingle1983a`: Dingle, R. V.; Siesser, W. G.; Newton, A. R. (1983). Mesozoic and Tertiary Geology of Southern Africa. Balkema, Rotterdam.
+- `galton1981a`: Galton, P. M.; Coombs, W. P. Jr. (1981). Paranthodon africanus (Broom) a stegosaurian dinosaur from the Lower Cretaceous of South Africa. *Geobios* 14(3): 299-309. doi:10.1016/S0016-6995(81)80177-5
+- `mclachlan1976a`: McLachlan, I. R.; McMillan, I. K. (1976). Review and stratigraphic significance of southern Cape Mesozoic palaeontology. *Transactions of the Geological Society of South Africa* 79: 197-212.
+- `mcmillan2003a`: McMillan, I. K. (2003). The Foraminifera of the Late Valanginian to Hauterivian (Early Cretaceous) Sundays River Formation of the Algoa Basin, Eastern Cape Province, South Africa. *Annals of the South African Museum* 106: 1-274.
