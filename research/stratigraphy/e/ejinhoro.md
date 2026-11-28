@@ -1,5 +1,19 @@
 # Ejinhoro
 
+## Is the *Sinornithoides* site at Huamuxiao in the Ejinhoro Formation?
+
+*2026-11-27*
+
+**Conclusion.** Yes. Russell and Dong (1993) report the exposures west of the village "locally referred to the Ejinhoroqi Formation". Russell and Zhao (1996), who also make Huamuxiao the type locality of *Psittacosaurus ordosensis*, put the red sandstones and greyish mudstones near the village in the Ejinhoro, while noting that the locality is mapped in the Zhidan Group; they find its sequence closer to the map's description of the Ejinhoro. It is the Yangpo case of the 2026-11-23 entry, with the same answer. Governs `location.formation: Ejinhoro` on [*Sinornithoides youngi*](../../../genera/S/Sinornithoides.yml), unchanged.
+
+**Evidence.**
+- russell1993a, p. 2170: "The exposures are locally referred to the Ejinhoroqi Formation."
+- russell1996a, p. 645: "The locality is mapped as occurring within the Zhidan Group, although the sequence appears to conform better to 'brick red with greyish green clastics' referred to the Ejinhoro Formation".
+
+**Ruled out.** - *The Zhidan Group, from the regional map.* Russell and Zhao record the mapping and still assign the beds to the Ejinhoro, and no work cited moves them.
+
+**Open.** How the Ejinhoro and the Zhidan Group are drawn in the Ordos Basin, as in the 2026-11-23 entry.
+
 ## Is the Yangpo locality of *Psittacosaurus neimongoliensis* in the Ejinhoro Formation?
 
 *2026-11-23*
@@ -24,6 +38,7 @@
 
 ## References
 
+- `russell1993a`: Russell, D. A.; Dong, Z. M. (1993). A nearly complete skeleton of a new troodontid dinosaur from the Early Cretaceous of the Ordos Basin, Inner Mongolia, People's Republic of China. *Canadian Journal of Earth Sciences* 30(10): 2163-2173. doi:10.1139/e93-187
 - `russell1996a`: Russell, D. A.; Zhao, X. J. (1996). New psittacosaur occurrences in Inner Mongolia. *Canadian Journal of Earth Sciences* 33(4): 637-648. doi:10.1139/e96-047
 - `dong1993b`: Dong, Z. M. (1993). A new species of stegosaur (Dinosauria) from the Ordos Basin, Inner Mongolia, People's Republic of China. *Canadian Journal of Earth Sciences* 30(10): 2174-2176. doi:10.1139/e93-188
 

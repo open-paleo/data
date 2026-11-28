@@ -1,5 +1,20 @@
 # Sobral
 
+## Which unit holds the coastal beds between Santa Cruz and Areia Branca?
+
+*2026-11-27*
+
+**Conclusion.** The [Praia Azul](../../../stratigraphy/p/praia-azul.yml) Member of the Lourinhã; this supersedes the 2026-10-07 entry where it takes that coast into the Sobral. The registry follows Mateus and colleagues (2017) for the Lusitanian Basin members ([Lusitanian Basin members](../../topics/lusitanian-basin-members.md), 2026-09-30). They treat the coastal package as Hill's (1989) Praia Azul Member of the Lourinhã Formation, equate it with the Sobral unit of earlier geological mapping, and match it to the south with the Arranhó I and part of the Arranhó II members of the Farta Pão. Schneider and colleagues (2009) carry their Sobral member of the Farta Pão north along the coast, where it "forms part of Hill's (1989) Praia Azul member", and Mocho and colleagues (2014) put the *Lusotitan* and *Lourinhanosaurus* types in the "Sobral Formation/Member"; under the registry's scheme those coastal beds are Praia Azul. The Sobral entry is the Farta Pão member of the Arruda and Turcifal sub-basins, which holds [*Lourinhasaurus*](../../../genera/L/Lourinhasaurus.yml) at Moinho do Carmo. No record changes. Governs the extent of [Sobral](../../../stratigraphy/s/sobral.yml) and Praia Azul, and `location.member` on [*Lusotitan*](../../../genera/L/Lusotitan.yml) and [*Lourinhanosaurus*](../../../genera/L/Lourinhanosaurus.yml), unchanged.
+
+**Evidence.**
+- mateus2017a, p. 83: "This sedimentary package was named as Praia Azul Member by Hill (1989)"; "To the south, the Praia Azul Mb. corresponds to the Arranhó I Mb. and part of the Arranhó II Mb., both from the Farta Pão Fm.".
+- schneider2009a, p. 1952: the Sobral member "can be traced into the Turcifal Subbasin of the Torres Vedras region, and along the Atlantic coast from Santa Cruz (where it forms part of Hill’s (1989) Praia Azul member) in the south to Praia do Areia Branca west of Lourinhã in the north".
+- mocho2014a, p. 877: "The Sobral Formation/Member has yielded a rich vertebrae fossil assemblage highlighting the type specimens of the titanosauriform Lusotitan atalaiensis (Lapparent & Zbyszewski, 1957) and the theropod Lourinhanosaurus antunesi Mateus, 1998."
+
+**Ruled out.** - *The coast in the Sobral.* Schneider and colleagues' scheme, which the registry does not follow for the coastal members.
+
+**Open.** Nothing.
+
 ## What age do Schneider and colleagues (2009) give the Sobral Member?
 
 *2026-11-23*
@@ -35,10 +50,10 @@
 
 ## References
 
-- `schneider2009a`: Schneider, S.; Fürsich, F. T.; Werner, W. (2009). Sr-isotope stratigraphy of the Upper Jurassic of central Portugal (Lusitanian Basin) based on oyster shells. *International Journal of Earth Sciences* 98(8): 1949-1970. doi:10.1007/s00531-008-0359-3
-- `kullberg2013a`: Kullberg, J. C.; Rocha, R. B.; Soares, A. F.; Rey, J.; Terrinha, P.; Azerêdo, A. C.; Callapez, P.; Duarte, L. V.; Kullberg, M. C.; Martins, L.; Miranda, R.; Alves, C.; Mata, J.; Madeira, J.; Mateus, O.; Moreira, M.; Nogueira, C. R. (2013). A Bacia Lusitaniana: Estratigrafia, Paleogeografia e Tectónica [The Lusitanian Basin: stratigraphy, paleogeography and tectonics]. In *Geologia de Portugal, Volume II – Geologia Meso-cenozóica de Portugal*, pp. 989-1141. Escolar Editora, Lisboa.
-- `mocho2014a`: Mocho, P.; Royo-Torres, R.; Ortega, F. (2014). Phylogenetic reassessment of Lourinhasaurus alenquerensis, a basal Macronaria (Sauropoda) from the Upper Jurassic of Portugal. *Zoological Journal of the Linnean Society* 170(4): 875-916. doi:10.1111/zoj.12113
 - `mateus2017a`: Mateus, O.; Dinis, J.; Cunha, P. P. (2017). The Lourinhã Formation: the Upper Jurassic to lowermost Cretaceous of the Lusitanian Basin, Portugal - landscapes where dinosaurs walked. *Ciências da Terra - Earth Sciences Journal* 19(1): 75-97. doi:10.21695/cterra/esj.v19i1.355
+- `schneider2009a`: Schneider, S.; Fürsich, F. T.; Werner, W. (2009). Sr-isotope stratigraphy of the Upper Jurassic of central Portugal (Lusitanian Basin) based on oyster shells. *International Journal of Earth Sciences* 98(8): 1949-1970. doi:10.1007/s00531-008-0359-3
+- `mocho2014a`: Mocho, P.; Royo-Torres, R.; Ortega, F. (2014). Phylogenetic reassessment of Lourinhasaurus alenquerensis, a basal Macronaria (Sauropoda) from the Upper Jurassic of Portugal. *Zoological Journal of the Linnean Society* 170(4): 875-916. doi:10.1111/zoj.12113
+- `kullberg2013a`: Kullberg, J. C.; Rocha, R. B.; Soares, A. F.; Rey, J.; Terrinha, P.; Azerêdo, A. C.; Callapez, P.; Duarte, L. V.; Kullberg, M. C.; Martins, L.; Miranda, R.; Alves, C.; Mata, J.; Madeira, J.; Mateus, O.; Moreira, M.; Nogueira, C. R. (2013). A Bacia Lusitaniana: Estratigrafia, Paleogeografia e Tectónica [The Lusitanian Basin: stratigraphy, paleogeography and tectonics]. In *Geologia de Portugal, Volume II – Geologia Meso-cenozóica de Portugal*, pp. 989-1141. Escolar Editora, Lisboa.
 
 ## Other references
 

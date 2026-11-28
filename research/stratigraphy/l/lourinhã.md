@@ -1,5 +1,17 @@
 # Lourinhã Formation
 
+## Does the registry hold the Santa Cruz package twice?
+
+*2026-11-27*
+
+**Conclusion.** No. Under Mateus and colleagues' (2017) scheme, which the registry follows, the coastal package is the [Praia Azul](../../../stratigraphy/p/praia-azul.yml) Member of the Lourinhã, and the [Sobral](../../../stratigraphy/s/sobral.yml) entry is limited to the Farta Pão member inland (see [Sobral](../s/sobral.md)). Answers the Open line of the 2026-11-23 entry. Governs the members of [Lourinhã](../../../stratigraphy/l/lourinhã.yml), unchanged.
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Where does the Lourinhã begin, and which beds belong to it?
 
 *2026-11-23*

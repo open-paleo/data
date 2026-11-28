@@ -1,5 +1,19 @@
 # Grès à Reptiles
 
+## Is the bare Grès à Reptiles a Var-only unit, and does Roques-Hautes lie in the Arc Basin?
+
+*2026-11-27*
+
+**Conclusion.** The entry stays the Var unit, and Roques-Hautes lies in the Arc Basin. Buffetaut and Le Loeuff (1991) put most Provence dinosaur bones in the lower Rognacian "Argiles et grès à reptiles", at localities in the Aix basin and "in the smaller synclines of the Upper Var region, farther east", Fox-Amphoux among them. The Var beds thus lie in a basin of their own, the criterion the 2026-09-30 entry uses, even where the same descriptive name is applied to them. The Aix-en-Provence map notice of Catzigras and colleagues (1969), whose sheet covers the eastern Arc Basin, places the finest egg sites "near Sainte-Victoire, at Roques Hautes", above and below the Rognac limestone, in the Rognacian clays and sandstones with reptiles. Le Lœuff and Buffetaut's (1998) "Grès à Reptiles Formation" at Roques-Hautes therefore names the Arc Basin unit; they give that locality no basin. Governs `location.formation: Grès à Reptiles` on [*Variraptor mechinorum*](../../genera/V/Variraptor.yml), unchanged.
+
+**Evidence.**
+- buffetaut1991d, p. 166: "Most of the dinosaur bones from Provence come from the lower part of the Rognacian (“Argiles et grès à reptiles”). They occur at a number of localities in the Aix basin (Matheron, 1869; Lapparent, 1947) and in the smaller synclines of the Upper Var region, farther east (with, notably, the Fox-Amphoux locality; see Lapparent, 1947; Broin et al., 1980)."
+- catzigras1969a, p. 7: "Les plus beaux gisements se trouvent auprès de Sainte-Victoire, à Roques Hautes, au-dessus et au-dessous du calcaire rognacien" ["The finest deposits are found near Sainte-Victoire, at Roques Hautes, above and below the Rognacian limestone", translated].
+
+**Ruled out.** - *Roques-Hautes in the Var unit, from the shared name.* The name form does not track the basin (2026-09-30 entry).
+
+**Open.** Whether the Var beds reach the Campanian. Le Lœuff and Buffetaut (1998) give "Late Campanian or Early Maastrichtian" (p. 105) after Westphal and Durand (1990), which has not been read, and Buffetaut and Le Loeuff (1991), who find "an early Maastrichtian age" likely for most Provence bone sites (pp. 166–167).
+
 ## Are the "Grès à Reptiles" of Provence, the Var and the Hérault one unit?
 
 *2026-09-30*
@@ -21,6 +35,7 @@
 
 ## References
 
+- `buffetaut1991d`: Buffetaut, E.; Le Loeuff, J. (1991). Late Cretaceous dinosaur faunas of Europe: some correlation problems. *Cretaceous Research* 12(2): 159-176. doi:10.1016/S0195-6671(05)80022-9
 - `catzigras1969a`: Catzigras, F.; Colomb, E.; Durand, J. P.; et al. (1969). Carte géologique de la France à 1/50 000, feuille Aix-en-Provence (XXXII-44, n° 1021), notice explicative [Geological map of France at 1:50,000, Aix-en-Provence sheet, explanatory notice]. Bureau de Recherches Géologiques et Minières (BRGM).
 - `tabuce2013a`: Tabuce, R.; Tortosa, T.; Vianey-Liaud, M.; Garcia, G.; Lebrun, R.; Godefroit, P.; Dutour, Y.; Berton, S.; Valentin, X.; Cheylan, G. (2013). New eutherian mammals from the Late Cretaceous of Aix-en-Provence Basin, south-eastern France. *Zoological Journal of the Linnean Society* 169(3): 653-672. doi:10.1111/zoj.12074
 - `leloeuff1998a`: Le Loeuff, J.; Buffetaut, E. (1998). A new dromaeosaurid theropod from the Upper Cretaceous of southern France. *Oryctos* 1: 105-112.
@@ -31,3 +46,7 @@
 - `godefroit2017a`: Godefroit, P.; Garcia, G.; Gomez, B.; Stein, K.; Cincotta, A.; Lefèvre, U.; Valentin, X. (2017). Extreme tooth enlargement in a new Late Cretaceous rhabdodontid dinosaur from Southern France. *Scientific Reports* 7(1). doi:10.1038/s41598-017-13160-2
 - `cojan2006a`: Cojan, I.; Moreau, M. G. (2006). Correlation of terrestrial climatic fluctuations with global signals during the Upper Cretaceous-Danian in a compressive setting (Provence, France). *Journal of Sedimentary Research* 76(3): 589-604. doi:10.2110/jsr.2006.045
 - `díezdíaz2018a`: Díez Díaz, V.; Garcia, G.; Pereda-Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X. (2018). The titanosaurian dinosaur Atsinganosaurus velauciensis (Sauropoda) from the Upper Cretaceous of southern France. New material, phylogenetic affinities, and palaeobiogeographical implications. *Cretaceous Research* 91: 429-456. doi:10.1016/j.cretres.2018.06.015
+
+## Other references
+
+- `westphal1990a`: Westphal, M.; Durand, J. P. (1990). Magnétostratigraphie des séries continentales fluvio-lacustres du Crétacé supérieur dans le synclinal de l'Arc (région d'Aix-en-Provence, France) [Magnetostratigraphy of the Upper Cretaceous continental fluvio-lacustrine series of the Arc syncline (Aix-en-Provence region, France)]. *Bulletin de la Société Géologique de France* 6(4): 609-620. doi:10.2113/gssgfbull.VI.4.609

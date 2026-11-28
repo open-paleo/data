@@ -1,5 +1,22 @@
 # Mata Amarilla
 
+## Is Sickmann and colleagues' Campanian a dispute on the Mata Amarilla, or a Cerro Fortaleza registry question?
+
+*2026-11-27*
+
+**Conclusion.** Both, answered separately. The registry keeps the Mata Amarilla and the [Cerro Fortaleza](../../../stratigraphy/c/cerro-fortaleza.yml) as two formations: Sickmann and colleagues (2018) take the terrestrial beds east past Tres Lagos, rocks once named Mata Amarilla among them, into the Cerro Fortaleza, but Novas and colleagues (2019), the later work, keep the two apart, and the [*Loncosaurus*](../../../genera/L/Loncosaurus.yml) record follows Varela and colleagues (2012) in placing Cerro Pari Aike in the Mata Amarilla. The age is a dispute. Varela and colleagues date a primary tuff in the middle section at 96.23 ± 0.71 Ma, middle Cenomanian, and Novas and colleagues keep the formation Cenomanian on it; Sickmann and colleagues' detrital-zircon maximum ages are all Campanian, one from beds earlier assigned to the lower Mata Amarilla, and they conclude that the deposits east to Tres Lagos are no older than Campanian, without re-dating the tuff. Maximum depositional ages are limits, not ages, so they add no stage. Answers the Open line of the 2026-11-23 entry. Governs the new `dispute` on [Mata Amarilla](../../../stratigraphy/m/mata-amarilla.yml), with `stages` unchanged, and the separate Cerro Fortaleza entry.
+
+**Evidence.**
+- varela2012a, p. 359: zircons "from a tuff layer of the middle section of the Mata Amarilla Formation, yielding a U-Pb concordia age of 96.23±0.71 Ma, which corresponds to the middle Cenomanian".
+- sickmann2018a, p. 719: "Sample VL-1 (YC1σ: 82.1 ± 2.4 Ma; Table 1; Figs 5a, c and 10) from stratigraphy defined as 'lower Mata Amarilla' by Varela (2015) provides a maximum depositional age for the lower part of terrestrial deposits in the eastern part of the study area."
+- sickmann2018a, p. 725: "the terrestrial deposits in the Austral sector of the MAB in the vicinity of Lago Viedma and Lago Argentino east to the town of Tres Lagos are no older than Campanian".
+- novas2019a, p. 274: "Available radimetric dating shows that the Mata Amarilla Formation is Cenomanian in age (approximately 97my; Varela et al., 2012), Cerro Fortaleza Formation is Campanian (around 76.2Ma, based on studies by Sickman et al., 2018)".
+
+**Ruled out.** - *Merging the Mata Amarilla into the Cerro Fortaleza.* Sickmann and colleagues' scheme, which the later Novas and colleagues do not follow.
+- *A Campanian stage from the maximum ages.* Limits, not ages.
+
+**Open.** Whether the beds at the dated tuff are Campanian: a date from the type area, or a reading that answers Sickmann and colleagues.
+
 ## Does Varela and colleagues' upper Albian–lower Cenomanian add the Albian?
 
 *2026-11-26*
@@ -44,8 +61,8 @@
 ## References
 
 - `varela2012a`: Varela, A. N.; Poiré, D. G.; Martin, T.; Gerdes, A.; Goin, F. J.; Gelfo, J. N.; Hoffmann, S. (2012). U-Pb zircon constraints on the age of the Cretaceous Mata Amarilla Formation, Southern Patagonia, Argentina: its relationship with the evolution of the Austral Basin. *Andean Geology* 39(3): 359-379. doi:10.5027/andgeoV39n3-a01
-- `novas2019a`: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L. (2019). Paleontological discoveries in the Chorrillo Formation (upper Campanian-lower Maastrichtian, Upper Cretaceous), Santa Cruz Province, Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales* 21: 217-293. doi:10.22179/revmacn.21.655
 - `sickmann2018a`: Sickmann, Z. T.; Schwartz, T. M.; Graham, S. A. (2018). Refining stratigraphy and tectonic history using detrital zircon maximum depositional age: an example from the Cerro Fortaleza Formation, Austral Basin, southern Patagonia. *Basin Research* 30(4): 708-729. doi:10.1111/bre.12272
+- `novas2019a`: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L. (2019). Paleontological discoveries in the Chorrillo Formation (upper Campanian-lower Maastrichtian, Upper Cretaceous), Santa Cruz Province, Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales* 21: 217-293. doi:10.22179/revmacn.21.655
 
 ## Other references
 

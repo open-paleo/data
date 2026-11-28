@@ -1,5 +1,18 @@
 # Calcareous Grit
 
+## Does *Priodontognathus* go in the Lower Calcareous Grit Formation?
+
+*2026-11-27*
+
+**Conclusion.** No; the record keeps the informal Calcareous Grit. Cope and colleagues (1980) set out a Lower Calcareous Grit Formation in the Lower Oxfordian and an Upper Calcareous Grit Formation in the Upper Oxfordian, and Seeley (1893), the source of the matrix attribution, gives only "Calcareous Grit", so the matrix does not choose between them. Weishampel and colleagues' (2004) "?Lower Calcareous Grit" is a compiler's query with no stated ground. Either formation is Oxfordian, so the stage does not depend on the answer. Governs `location.formation: Calcareous Grit` on [*Priodontognathus phillipsii*](../../../genera/P/Priodontognathus.yml) and `informal: true` on [Calcareous Grit](../../../stratigraphy/c/calcareous-grit.yml), unchanged.
+
+**Evidence.**
+- weishampel2004b, p. 545: "?Lower Calcareous Grit (Seeley 1875; Galton 1980e)".
+
+**Ruled out.** - *The Lower Calcareous Grit Formation, with a hedge.* It would rest on the compiler's query alone.
+
+**Open.** Which of the Calcareous Grits the matrix represents, as before.
+
 ## Where does the Calcareous Grit's Oxfordian come from?
 
 *2026-11-23*
@@ -22,6 +35,7 @@
 
 ## References
 
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `seeley1893a`: Seeley, H. G. (1893). On Omosaurus phillipsi (Seeley). *Annual Report of the Yorkshire Philosophical Society for 1892*: 52-57.
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
 - `cope1980a`: Cope, J. C. W.; Duff, K. L.; Parsons, C. F.; Torrens, H. S.; Wimbledon, W. A.; Wright, J. K. (1980). A correlation of Jurassic rocks in the British Isles. Part Two: Middle and Upper Jurassic. *Geological Society of London Special Report* 15: 1-109.

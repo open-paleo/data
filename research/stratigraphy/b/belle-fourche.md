@@ -1,5 +1,18 @@
 # Belle Fourche
 
+## Does the Canadian Belle Fourche Formation belong in this entry and its dispute?
+
+*2026-11-27*
+
+**Conclusion.** No; the dispute is removed. The entry is the Belle Fourche Member of the Frontier in Wyoming, which holds [*Stegopelta*](../../../genera/S/Stegopelta.yml) and [*Nodosaurus*](../../../genera/N/Nodosaurus.yml). The dispute paired the history of the name, Carpenter and Kirkland's (1998) account of the reassignment that produced the member, with the "Belle Fourche Formation" that Pittman and colleagues (2020) tabulate in Canada, a unit no record names. Neither is a disagreement about this member: the history stays in the Carpenter and Kirkland pointer, and the Canadian unit gets no entry while no record names it ([methods](../../methods.md)). The Pittman pointer, which cited the paper only for the Canadian occurrence, is removed with it. Governs the absent `dispute` and the references on [Belle Fourche](../../../stratigraphy/b/belle-fourche.yml).
+
+**Evidence.**
+- pittman2020c, p. 62, Table 5: "Belle Fourche Formation", Canada, Late Cretaceous, Cenomanian.
+
+**Ruled out.** - *A rank dispute, member against formation.* The two ranks belong to two units in two countries.
+
+**Open.** Nothing.
+
 ## Do Merewether and colleagues (2010) narrow their own Turonian top?
 
 *2026-11-26*
@@ -71,12 +84,12 @@
 
 ## References
 
+- `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
 - `merewether1996a`: Merewether, E. A. (1996). Stratigraphy and tectonic implications of Upper Cretaceous rocks in the Powder River Basin, northeastern Wyoming and southeastern Montana. *U.S. Geological Survey Bulletin* 1917-T. doi:10.3133/b1917t
 - `merewether2010a`: Merewether, E. A.; Cobban, W. A.; Tillman, R. W. (2010). Outcrops, fossils, geophysical logs, and tectonic interpretations of the Upper Cretaceous Frontier Formation and contiguous strata in the Bighorn Basin, Wyoming and Montana. *U.S. Geological Survey Scientific Investigations Report* 2009-5256. doi:10.3133/sir20095256
 - `merewether1979a`: Merewether, E. A.; Cobban, W. A.; Cavanaugh, E. T. (1979). Frontier Formation and equivalent rocks in eastern Wyoming. *The Mountain Geologist* 16: 67-102.
 - `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 249-270.
 - `singer2020a`: Singer, B. S.; Jicha, B. R.; Sawyer, D. A.; Walaszczyk, I.; Buchwaldt, R.; Mutterlose, J. (2020). Geochronology of late Albian–Cenomanian strata in the U.S. Western Interior. *Geological Society of America Bulletin* 133(7-8): 1665-1678. doi:10.1130/B35794.1
-- `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History, New York.
 - `cobban1990a`: Cobban, W. A. (1990). Ammonites and some characteristic bivalves from the Upper Cretaceous Frontier Formation, Natrona County, Wyoming. *U.S. Geological Survey Bulletin* 1917-B. doi:10.3133/b1917b
 - `merewether1984a`: Merewether, E. A.; Blackmon, P. D.; Webb, J. C. (1984). The mid-Cretaceous Frontier Formation near the Moxa Arch, southwestern Wyoming. *United States Geological Survey Professional Paper* 1290. doi:10.3133/pp1290
 

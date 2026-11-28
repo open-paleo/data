@@ -1,5 +1,24 @@
 # Rock Point
 
+## Do the Chama Basin beds date the Rock Point?
+
+*2026-11-27*
+
+**Conclusion.** No; the record covers the true Rock Point and becomes Rhaetian, and the dispute is removed. Every Norian reading in the dispute concerns the Chinle at Ghost Ranch in the Chama Basin: Long and Murry's (1995) "?Early Norian" for beds in Rio Arriba County, Litwin and colleagues' (1991) palynology of the siltstone member, older than the latest Norian, and Rinehart and colleagues' (2009) late Norian for the Whitaker quarry. Whether those beds are Rock Point is unresolved: Lucas and Hunt and Rinehart and colleagues call them so, Zeigler and Geissman (2009) find them "not time equivalent to true Rock Point strata in Utah and Arizona", Cather and colleagues (2013) favor the siltstone member, and the [*Coelophysis*](../../../genera/C/Coelophysis.yml) and [*Daemonosaurus*](../../../genera/D/Daemonosaurus.yml) records name no member for that reason. A reading of beds the records keep out of the unit does not date it, and Novas and colleagues' (2021) "Rhaetian Rock Point Member" at the Coelophysis Quarry falls under the same rule. For the Rock Point of the Four Corners area, Martz and Parker (2017) place the member in an Apachean holochronozone "during the Rhaetian", and Lucas and Hunt (1993) give the Apachean, which they find in the Rock Point of Utah and Colorado, a Rhaetian age, adding that it "might be of late Norian age", which allows the Norian without adopting it ([methods](../../methods.md)). No reading of the true Rock Point gives the Norian. Supersedes the 2026-09-30 conclusion that the Rhaetian is not established. Governs `stages: [Rhaetian]` and the absent `dispute` on [Rock Point](../../../stratigraphy/r/rock-point.yml); no taxon record names the unit.
+
+**Evidence.**
+- long1995a, p. 186: "?Early Norian; upper Petrified Forest or Siltstone or Rock Point Member, Chinle Formation, Rio Arriba County, New Mexico".
+- litwin1991a, p. 280: "these samples are younger than late Carnian, but older than the latest Norian".
+- rinehart2009a, p. 24: "We favor the late Norian age for the Whitaker quarry".
+- zeigler2009a, p. 28: "uppermost strata in northern New Mexico are not time equivalent to true Rock Point strata in Utah and Arizona nor to the Redonda Formation in eastern New Mexico".
+- martz2017a, p. 112: "The Apachean estimated holochron extends from about 207 to 202 Ma (an interval of about 5 million years) during the Rhaetian"; the holochronozone takes in "most of the Owl Rock Member, Rock Point Member, and Church Rock Member".
+- lucas1993a, p. 328: "Apachean footprints are also known from the Rock Point Formation of Utah and Colorado"; p. 329: "We consider Apachean to be of Rhaetian age".
+
+**Ruled out.** - *Norian, from the Chama Basin readings.* They date beds the records do not place in the Rock Point.
+- *Norian, from Lucas and Hunt's hedge.* A possibility they allow, not a reading.
+
+**Open.** Whether the Chama Basin beds at Ghost Ranch are Rock Point. If a later work settles that they are, their Norian readings count and the dispute returns.
+
 ## Who equated the Apachean with the Rhaetian, and on what?
 
 *2026-11-26*
@@ -55,12 +74,15 @@
 
 ## References
 
-- `lucas1993b`: Lucas, S. G. (1993). The Chinle Group: revised stratigraphy and biochronology of Upper Triassic nonmarine strata in the western United States. *Museum of Northern Arizona Bulletin* 59: 27-50.
-- `hunt1991b`: Hunt, A. P. (1991). Redonda Formation and Rock Point Member of the Chinle Formation (southwestern United States): are they Rhaetian (latest Triassic) in age?. *Geological Society of America Abstracts with Programs* 23: 35.
-- `lucas1993a`: Lucas, S. G.; Hunt, A. P. (1993). Tetrapod biochronology of the Chinle Group (Upper Triassic), western United States. *New Mexico Museum of Natural History and Science Bulletin* 3: 327-329.
-- `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
+- `long1995a`: Long, R. A.; Murry, P. A. (1995). Late Triassic (Carnian and Norian) Tetrapods from the Southwestern United States. *New Mexico Museum of Natural History and Science Bulletin* 4: 1-254.
+- `litwin1991a`: Litwin, R. J.; Traverse, A.; Ash, S. R. (1991). Preliminary palynological zonation of the Chinle Formation, southwestern U.S.A., and its correlation to the Newark Supergroup (eastern U.S.A.). *Review of Palaeobotany and Palynology* 68(3-4): 269-287. doi:10.1016/0034-6667(91)90028-2
 - `rinehart2009a`: Rinehart, L. F.; Lucas, S. G.; Heckert, A. B.; Spielmann, J. A.; Celeskey, M. D. (2009). The paleobiology of Coelophysis bauri (Cope) from the Upper Triassic (Apachean) Whitaker quarry, New Mexico, with detailed analysis of a single quarry block. *New Mexico Museum of Natural History and Science Bulletin* 45: 1-260.
 - `zeigler2009a`: Zeigler, K. E.; Geissman, J. W. (2009). Examining new possibilities for the age of Upper Triassic strata in northern New Mexico using magnetostratigraphy. *New Mexico Geology* 31: 42.
+- `martz2017a`: Martz, J. W.; Parker, W. G. (2017). Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology. In *Terrestrial Depositional Systems*, pp. 39-125. doi:10.1016/B978-0-12-803243-5.00002-9
+- `lucas1993a`: Lucas, S. G.; Hunt, A. P. (1993). Tetrapod biochronology of the Chinle Group (Upper Triassic), western United States. *New Mexico Museum of Natural History and Science Bulletin* 3: 327-329.
+- `lucas1993b`: Lucas, S. G. (1993). The Chinle Group: revised stratigraphy and biochronology of Upper Triassic nonmarine strata in the western United States. *Museum of Northern Arizona Bulletin* 59: 27-50.
+- `hunt1991b`: Hunt, A. P. (1991). Redonda Formation and Rock Point Member of the Chinle Formation (southwestern United States): are they Rhaetian (latest Triassic) in age?. *Geological Society of America Abstracts with Programs* 23: 35.
+- `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
 - `cather2013a`: Cather, S. M.; Zeigler, K. E.; Mack, G. H.; Kelley, S. A. (2013). Toward standardization of Phanerozoic stratigraphic nomenclature in New Mexico. *Rocky Mountain Geology* 48(2): 101-124. doi:10.2113/gsrocky.48.2.101
 - `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341
 - `nesbitt2020a`: Nesbitt, S. J.; Sues, H. D. (2020). The osteology of the early-diverging dinosaur Daemonosaurus chauliodus (Archosauria: Dinosauria) from the Coelophysis Quarry (Triassic: Rhaetian) of New Mexico and its relationships to other early dinosaurs. *Zoological Journal of the Linnean Society* 191: 150-179. doi:10.1093/zoolinnean/zlaa080

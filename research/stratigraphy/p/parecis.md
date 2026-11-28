@@ -1,5 +1,17 @@
 # Parecis
 
+## Does Weska's (2006) redefinition move any Mato Grosso record?
+
+*2026-11-27*
+
+**Conclusion.** No; the registry already follows it. The only Mato Grosso record, [*Pycnonemosaurus nevesi*](../../../genera/P/Pycnonemosaurus.yml), has been filed under the Parecis Group since the 2026-09-02 entry on that genus, after Delcourt (2017), who follows Weska (2006) and Bittencourt and Langer (2011). No Mato Grosso record is filed under the [Bauru](../../../stratigraphy/b/bauru.yml). Governs nothing new on [Parecis](../../../stratigraphy/p/parecis.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Parecis take the Santonian from the basalts at its base?
 
 *2026-11-26*

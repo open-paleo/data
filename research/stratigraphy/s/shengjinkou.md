@@ -1,5 +1,19 @@
 # Shengjinkou
 
+## Does Song and colleagues' Wuerho date change the Shengjinkou?
+
+*2026-11-27*
+
+**Conclusion.** No. Song and colleagues (2025) date a tuffaceous sandstone at the top of the Shengjinkou at Wuerho, in the Junggar Basin, two kilometers from the sample of Zheng and colleagues (2023), at 134.27 ± 0.36 Ma, and read it as middle Valanginian; with Zheng and colleagues, that gives two Junggar dates for the formation's top. None of the works read dates or correlates the Hami beds, so the formation stays one unit across both basins, Valanginian, as the earlier 2026-11-27 entry has it. Governs the song2025a citation on [Shengjinkou](../../../stratigraphy/s/shengjinkou.yml), with `stages: [Valanginian]` unchanged.
+
+**Evidence.**
+- song2025a, p. 3: "The only sample WE-01 was collected from the two-meter-thick whitish tuffaceous sandstone layer at the uppermost of the Shengjinkou Formation."
+- song2025a, p. 10: "The new result confirms that the top of the Shengjinkou Formation is middle Valanginian in age".
+
+**Ruled out.** Nothing.
+
+**Open.** A date from the Shengjinkou in the Hami area, as before.
+
 ## Does the Valanginian apply to the Hami Shengjinkou?
 
 *2026-11-27*
@@ -48,6 +62,7 @@
 
 ## References
 
+- `song2025a`: Song, J.; Zhong, Y.; Jiang, S.; Wang, X. (2025). The first ornithocheiromorph humerus from Wuerho (Urho), China, with a new isotopic age of the Tugulu Group. *Anais da Academia Brasileira de Ciências* 97(Suppl. 1): e20240557. doi:10.1590/0001-3765202520240557
 - `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin* 136: 765-773. doi:10.1130/B36795.1
 - `wang2021a`: Wang, X.; Bandeira, K. L. N.; Qiu, R.; Jiang, S.; Cheng, X.; Ma, Y.; Kellner, A. W. A. (2021). The first dinosaurs from the Early Cretaceous Hami Pterosaur Fauna, China. *Scientific Reports* 11(1). doi:10.1038/s41598-021-94273-7
 - `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research* 181: 106271. doi:10.1016/j.cretres.2025.106271
