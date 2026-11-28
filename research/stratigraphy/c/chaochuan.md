@@ -1,5 +1,17 @@
 # Chaochuan
 
+## Does any work read give a lithology for the whole Chaochuan?
+
+*2026-11-27*
+
+**Conclusion.** No; the field stays empty. The descriptions cover separate areas and differ: rhyolite in the Laozhu graben (Ma and colleagues 2016), a basalt–rhyolite suite at Shanmen (Xing and colleagues 1999), and purplish sandstone with igneous rock in the Yongkang Basin, relayed by Chen and colleagues (2013) from the Zhejiang provincial bureau. Governs the absent `lithology` on [Chaochuan](../../../stratigraphy/c/chaochuan.yml).
+
+**Evidence.** None.
+
+**Ruled out.** - *Any one area's description.* None covers the whole unit.
+
+**Open.** Nothing.
+
 ## What do Chen and colleagues (2013) and Ma and colleagues (2016) say about the age of the Chaochuan?
 
 *2026-11-23*
@@ -32,3 +44,4 @@
 
 - `luo2004a`: Luo, Y.; Yu, Y. (2004). 试论永康群时代及区域地层对比 [A tentative discussion on the age of the Yongkang Group and regional stratigraphic correlation]. *Geology in China* 31(4): 395-399. doi:10.12029/gc20040409
 - `cohen2013a`: Cohen, K. M.; Finney, S. C.; Gibbard, P. L.; Fan, J. X. (2013). The ICS International Chronostratigraphic Chart. *Episodes* 36(3): 199-204. doi:10.18814/epiiugs/2013/v36i3/002
+- `xing1999a`: Xing, G.; Yang, Z.; Tao, K. (1999). Sources of Cretaceous bimodal volcanic rocks in the coastal region of southeastern China: constraints of the Sr content and its isotopes. *Acta Geologica Sinica (English Edition)* 73(1): 84-92.

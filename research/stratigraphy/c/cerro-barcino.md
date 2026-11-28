@@ -1,5 +1,17 @@
 # Cerro Barcino
 
+## Does any work read give a lithology for the whole Cerro Barcino?
+
+*2026-11-27*
+
+**Conclusion.** No; the field stays empty. Nullo (1983) describes only the Puesto La Paloma and Cerro Castaño members, the two that crop out on his map sheet, and Page and colleagues (1999) do not describe the formation's rock as a whole; a lithology comes from a work describing the whole unit. Governs the absent `lithology` on [Cerro Barcino](../../../stratigraphy/c/cerro-barcino.yml).
+
+**Evidence.** None.
+
+**Ruled out.** - *Nullo's member descriptions.* Two members on one sheet.
+
+**Open.** A work describing the whole formation, such as one setting out the member scheme of Codignotto and colleagues (1978).
+
 ## Which of the Cerro Barcino's stages survive the rules?
 
 *2026-11-26*

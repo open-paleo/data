@@ -1,5 +1,17 @@
 # La Bocana Roja
 
+## What carries the La Bocana Roja's lithology?
+
+*2026-11-27*
+
+**Conclusion.** Nothing yet; the field is removed. The "red mudstone and tuff" came from Molnar (1974), who relays it from Kilmer's (1963) unpublished Ph.D. thesis and notes that the units "have not been formally validated"; Kane and colleagues' (2022) "fluvial sandstones and mudstones" relays Schile's (1974) M.S. thesis, and their own section is a single 6 m log at one site. A thesis never carries a value alone ([methods](../../methods.md)). Governs the removed `lithology` and the note on molnar1974a on [La Bocana Roja](../../../stratigraphy/l/la-bocana-roja.yml).
+
+**Evidence.** None.
+
+**Ruled out.** - *Kilmer's and Schile's descriptions.* Theses, relayed.
+
+**Open.** A published description of the whole formation.
+
 ## Where does Molnar's late Campanian ceiling come from?
 
 *2026-11-27*
@@ -60,3 +72,4 @@
 ## Other references
 
 - `kulp1961a`: Kulp, J. L. (1961). Geologic time scale. *Science* 133: 1105-1114.
+- `schile1974a`: Schile, C. A. (1974). Sedimentology of the El Gallo Formation (Upper Cretaceous). M.S. thesis, San Diego State University.

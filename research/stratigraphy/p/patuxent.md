@@ -1,5 +1,17 @@
 # Patuxent
 
+## Does Stanford and colleagues' description cover the whole Patuxent?
+
+*2026-11-27*
+
+**Conclusion.** No; the field stays empty. Stanford and colleagues (2011) describe the formation's rock only in "the outcrop belt in Maryland", while giving the formation's belt as running into Virginia to Fredericksburg. Governs the absent `lithology` on [Patuxent](../../../stratigraphy/p/patuxent.yml).
+
+**Evidence.** None.
+
+**Ruled out.** - *The Maryland description.* It covers part of the unit.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Patuxent and its Arundel Clay?
 
 *2026-11-23*
