@@ -1,5 +1,17 @@
 # *Sciurumimus*
 
+## Which member does the *Sciurumimus albersdoerferi* holotype come from?
+
+*2026-11-27*
+
+**Conclusion.** The Arnstorf, the upper subformation of the Torleite in the eastern Southern Franconian Alb, in whose siliceous-plate facies Niebuhr and Pürner (2014) place its site (see [Arnstorf](../../stratigraphy/a/arnstorf.md)). Governs `location.member` on [*Sciurumimus albersdoerferi*](../../../genera/S/Sciurumimus.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Which formation is the *Sciurumimus* holotype from?
 
 *2026-09-03*

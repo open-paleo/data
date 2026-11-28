@@ -1,5 +1,17 @@
 # *Juravenator*
 
+## Which member does the *Juravenator starki* holotype come from?
+
+*2026-11-27*
+
+**Conclusion.** The Arnstorf, the upper subformation of the Torleite in the eastern Southern Franconian Alb, in whose siliceous-plate facies Niebuhr and Pürner (2014) place its site (see [Arnstorf](../../stratigraphy/a/arnstorf.md)). Governs `location.member` on [*Juravenator starki*](../../../genera/J/Juravenator.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is *Juravenator* a coelurosaur?
 
 *2026-10-21*

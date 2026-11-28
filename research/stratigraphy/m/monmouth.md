@@ -1,5 +1,17 @@
 # Monmouth
 
+## Do the Monmouth Group's formations need entries?
+
+*2026-11-27*
+
+**Conclusion.** No. The [*Diplotomodon*](../../../genera/D/Diplotomodon.yml) and [*Ornithotarsus*](../../../genera/O/Ornithotarsus.yml) records name no formation, and mention the Navesink and Mount Laurel only as unsettled possibilities for their horizons. Governs nothing on [Monmouth](../../../stratigraphy/m/monmouth.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Monmouth Group reach the Campanian?
 
 *2026-11-26*

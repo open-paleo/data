@@ -1,5 +1,17 @@
 # Yongkang
 
+## Do the Guantou and Fangyan need entries?
+
+*2026-11-27*
+
+**Conclusion.** No; no record names either, whichever definition of the Yongkang Group is followed. Governs nothing on [Yongkang](../../../stratigraphy/y/yongkang.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Yongkang keep the Turonian?
 
 *2026-11-26*

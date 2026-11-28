@@ -1,5 +1,19 @@
 # Pingling
 
+## Does the Pingling keep formation rank?
+
+*2026-11-27*
+
+**Conclusion.** Yes, by user ruling. Zhang (1984), who names the unit, makes it the Pingling Member of the Shanghu Formation, and Xing and colleagues (2024) follow him; Lü and colleagues (2005), describing *Shixinggia*, and others call it the Pingling Formation. Following Zhang would need a Shanghu Formation entry, and no work read dates the Shanghu: Zhang's "generally accepted as Paleocene" for it cites nothing, and its upper member is undated. The formation rank stays until a work dating the Shanghu is read. Governs `rank` on [Pingling](../../../stratigraphy/p/pingling.yml), unchanged.
+
+**Evidence.**
+- zhang1984a, p. 38: "大塱山组与上湖组坪岭段介形类动物群面貌基本相同，完全可以对比。" ["The ostracod faunas of the Dalangshan Formation and the Pingling Member of the Shanghu Formation are basically the same in aspect and can be fully correlated.", translated].
+- lü2005a, p. 414: "Type locality: Luyuan of Shixing County, Guangdong Province. Pingling Formation, Maastrichtian, Late Cretaceous (Zhao et al., 1991)."
+
+**Ruled out.** Nothing.
+
+**Open.** A dating of the Shanghu Formation.
+
 ## What age do Zhao and colleagues (1991) give the Pingling Formation?
 
 *2026-11-23*
@@ -19,4 +33,10 @@
 
 ## References
 
+- `zhang1984a`: Zhang, X. Q. (1984). On the subdivision and correlation of the Cretaceous system of Sanshui basin of Guangdong. *Experimental Petroleum Geology*: 32-40.
+- `lü2005a`: Lü, J. C.; Zhang, B. K. (2005). A new oviraptorid (theropod: Oviraptorosauria) from the Upper Cretaceous of the Nanxiong Basin, Guangdong province of southern China. *Acta Palaeontologica Sinica* 44(3): 412-422.
 - `zhao1991a`: Zhao, Z. K.; Ye, J.; Li, H. M.; Zhao, Z. H.; Yan, Z. (1991). Extinction of the dinosaurs across the Cretaceous-Tertiary boundary in Nanxiong Basin, Guangdong Province. *Vertebrata PalAsiatica* 29(1): 1-20.
+
+## Other references
+
+- `xing2024b`: Xing, L.; Liang, Z.; Zhang, K.; Wang, D.; Zhang, X.; Persons, W. S., IV; Ren, Z.; Liang, Z.; Xian, M.; Zeng, Q. (2024). Large theropod teeth from the Upper Cretaceous of Guangdong Province, Southern China. *Cretaceous Research* 161: 105914. doi:10.1016/j.cretres.2024.105914

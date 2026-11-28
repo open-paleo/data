@@ -1,5 +1,18 @@
 # Jiufotang
 
+## Does the Jiufotang keep the Albian, and does it take the Jehol as parent?
+
+*2026-11-27*
+
+**Conclusion.** The Albian is dropped, and the formation takes `parent: Jehol`. Supersedes the 2026-11-23 entry on the stages. The Albian rested only on Turner and colleagues (2012), who give the range of *Microraptor gui* as Aptian–Albian in the Jiufotang and of *M. zhaoianus* over the same interval in the Yixian and Jiufotang: ranges of taxa, which do not date a unit. The formation's own dating is He and colleagues' (2004) argon age of 120.3 ± 0.7 Ma, early Aptian, and the same paper gives the Jehol Group as the Yixian and the overlying Jiufotang. With the Aptian alone, the formation lies within the group's Barremian–Aptian. [*Jeholornis prima*](../../../genera/J/Jeholornis.yml), [*Norellraptor barsboldi*](../../../genera/N/Norellraptor.yml) and [*Psittacosaurus meileyingensis*](../../../genera/P/Psittacosaurus.yml), with no horizon reading of their own, follow to the Aptian. Governs `stages: [Aptian]`, `parent: Jehol` and the notes on turner2012a and he2004a on [Jiufotang](../../../stratigraphy/j/jiufotang.yml).
+
+**Evidence.**
+- he2004a, L12605, 1 of 4: "The Jehol Group comprises the Yixian Formation and the overlying Jiufotang Formation."
+
+**Ruled out.** - *Albian.* A taxon's range across units.
+
+**Open.** Nothing.
+
 ## What does He and colleagues' (2004) date give the Jiufotang Formation?
 
 *2026-11-23*
@@ -38,6 +51,7 @@ Supersedes the Aptian the Meileyingzi Beds and *Psittacosaurus meileyingensis* c
 
 ## References
 
+- `turner2012a`: Turner, A. H.; Makovicky, P. J.; Norell, M. A. (2012). A Review of Dromaeosaurid Systematics and Paravian Phylogeny. *Bulletin of the American Museum of Natural History* 371: 1-206. doi:10.1206/748.1
 - `he2004a`: He, H. Y.; Wang, X. L.; Zhou, Z. H.; Wang, F.; Boven, A.; Shi, G. H.; Zhu, R. X. (2004). Timing of the Jiufotang Formation (Jehol Group) in Liaoning, northeastern China, and its implications. *Geophysical Research Letters* 31(12): L12605. doi:10.1029/2004GL019790
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
 - `sereno1988b`: Sereno, P. C.; Chao, S.; Cheng, Z.; Rao, C. (1988). Psittacosaurus meileyingensis (Ornithischia: Ceratopsia), a new psittacosaur from the Lower Cretaceous of northeastern China. *Journal of Vertebrate Paleontology* 8(4): 366-377. doi:10.1080/02724634.1988.10011725
@@ -45,5 +59,4 @@ Supersedes the Aptian the Meileyingzi Beds and *Psittacosaurus meileyingensis* c
 ## Other references
 
 - `zhou2006a`: Zhou, Z.; Zhang, F. (2006). Mesozoic birds of China — a synoptic review. *Vertebrata PalAsiatica* 44(1): 74-98.
-- `turner2012a`: Turner, A. H.; Makovicky, P. J.; Norell, M. A. (2012). A Review of Dromaeosaurid Systematics and Paravian Phylogeny. *Bulletin of the American Museum of Natural History* 371: 1-206. doi:10.1206/748.1
 - `eberth1993a`: Eberth, D. A.; Russell, D. A.; Braman, D. R.; Deino, A. L. (1993). The age of the dinosaur-bearing sediments at Tebch, Inner Mongolia, People's Republic of China. *Canadian Journal of Earth Sciences* 30(10): 2101-2106. doi:10.1139/e93-182

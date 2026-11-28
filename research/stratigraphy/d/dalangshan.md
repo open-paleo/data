@@ -1,5 +1,17 @@
 # Dalangshan
 
+## Do Zhang's members of the Nanxiong Formation need entries?
+
+*2026-11-27*
+
+**Conclusion.** No. Zhang (1984) divides the Nanxiong Formation into the Dafeng, Zhutian and Zhenshui members, but no record names any of them. Governs nothing on [Dalangshan](../../../stratigraphy/d/dalangshan.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Dalangshan?
 
 *2026-11-23*

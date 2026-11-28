@@ -1,5 +1,17 @@
 # Dockum
 
+## Does the Redonda Formation need an entry?
+
+*2026-11-27*
+
+**Conclusion.** No; no record names it. Governs nothing on [Dockum](../../../stratigraphy/d/dockum.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does Martz and Parker's Apachean add the Rhaetian to the Dockum?
 
 *2026-11-27*

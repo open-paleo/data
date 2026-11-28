@@ -1,5 +1,17 @@
 # Purbeck
 
+## Does the Durlston Formation need an entry?
+
+*2026-11-27*
+
+**Conclusion.** No. The records that mention Durlston Bay, [*Owenodon*](../../../genera/O/Owenodon.yml) and [*Echinodon*](../../../genera/E/Echinodon.yml), are filed in the Lulworth, the *Owenodon* dentary coming from the top of the Lulworth below the Durlston's basal Cinder Member; no record names the Durlston. Governs nothing on [Purbeck](../../../stratigraphy/p/purbeck.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the rank and age of the Purbeck?
 
 *2026-11-23*

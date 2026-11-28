@@ -1,5 +1,17 @@
 # *Psittacosaurus*
 
+## Which stage does the *Psittacosaurus meileyingensis* holotype take?
+
+*2026-11-27*
+
+**Conclusion.** The Jiufotang's Aptian, after the formation's Albian was dropped (see [Jiufotang](../../stratigraphy/j/jiufotang.md)); no source read dates the holotype's horizon. Governs `stage` on [*Psittacosaurus meileyingensis*](../../../genera/P/Psittacosaurus.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Which stages does the *Psittacosaurus amitabha* holotype take?
 
 *2026-11-26*

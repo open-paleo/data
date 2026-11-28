@@ -1,5 +1,17 @@
 # Torleite
 
+## Which of the Torleite's subformations does the registry need?
+
+*2026-11-27*
+
+**Conclusion.** Only the Arnstorf, which records name (see [Arnstorf](../a/arnstorf.md)); the other five, the Netzstall, Ebenwies, Fürnried, Engelhardtsberg and Wattendorf, get no entry while no record names them. Governs the child [Arnstorf](../../../stratigraphy/a/arnstorf.yml) of [Torleite](../../../stratigraphy/t/torleite.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## How do Niebuhr and Pürner (2014) define and date the Torleite Formation?
 
 *2026-11-23*

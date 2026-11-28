@@ -1,5 +1,17 @@
 # Hekou
 
+## Do the Hekou Group's formations need entries?
+
+*2026-11-27*
+
+**Conclusion.** No. Xi and colleagues (2018) divide the group into the Zhujiatai, Yanguoxia, Honggucheng and Huazhuang formations, but no record names any of them. Governs nothing on [Hekou](../../../stratigraphy/h/hekou.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does Xi and colleagues' (2018) Hekou Group match this unit?
 
 *2026-11-23*

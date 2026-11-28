@@ -1,5 +1,17 @@
 # Nemegt
 
+## Does Khand and colleagues' Nogoontsav Formation need an entry?
+
+*2026-11-27*
+
+**Conclusion.** No. It is the 20 m of beds above the Nemegt at Nogoon Tsav and Bugiin Tsav, and the one record from Nogoon Tsav, [*Alioramus remotus*](../../../genera/A/Alioramus.yml), comes from the lower Nemegt. Governs nothing on [Nemegt](../../../stratigraphy/n/nemegt.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is Karczewska and Ziembińska-Tworzydło's Lower Campanian a reading?
 
 *2026-11-27*

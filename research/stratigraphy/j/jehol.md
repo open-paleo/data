@@ -1,5 +1,17 @@
 # Jehol
 
+## Does the Jehol Group take the Jiufotang, and the Dabeigou?
+
+*2026-11-27*
+
+**Conclusion.** The Jiufotang, yes; the Dabeigou needs no entry. He and colleagues (2004) give the group as the Yixian and Jiufotang formations, and the Jiufotang, now Aptian, lies within the group's stages (see [Jiufotang](../j/jiufotang.md)). Barrett and Wang (2007) list the Dabeigou with a query, and no record names it. Governs `parent: Jehol` on [Jiufotang](../../../stratigraphy/j/jiufotang.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Which dated sources give the Jehol Group its Barremian–Aptian?
 
 *2026-11-26*

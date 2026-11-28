@@ -1,5 +1,18 @@
 # Irhazer
 
+## Is "Argiles de l'Irhazer" a variant of the Irhazer Group?
+
+*2026-11-27*
+
+**Conclusion.** No. Current usage gives the name to the unranked lower unit of the group, below the Tiourarén Formation (Remes and colleagues 2009; Serrano-Martínez and colleagues 2014); only older usage, which Rauhut and López-Arbarello (2009) relay, applied it to the whole group. No record needs the lower unit as an entry; [*Spinophorosaurus*](../../../genera/S/Spinophorosaurus.yml) stays filed in the group, with its horizon in a location note. Governs the absent `variants` on [Irhazer](../../../stratigraphy/i/irhazer.yml) and the location note on *Spinophorosaurus nigerensis*.
+
+**Evidence.**
+- remes2009a, p. 2: "allow the localization of the site at the base of the Irhazer Group (‘‘Argiles de l’Irhazer’’ below the Tiourarén Formation)".
+
+**Ruled out.** - *A variant.* The name now means a lower unit.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Irhazer Group?
 
 *2026-11-23*
@@ -30,3 +43,4 @@
 - `taquet1976a`: Taquet, P. (1976). Géologie et paléontologie du gisement de Gadoufaoua (Aptien du Niger). *Cahiers de Paléontologie*.
 - `greigert1967a`: Greigert, J.; Pougnet, R. (1967). Notice explicative sur la carte géologique de la République du Niger [Explanatory notes on the geological map of the Republic of Niger]. Éditions du Bureau de Recherches Géologiques et Minières, Paris.
 - `greigert1967b`: Greigert, J.; Pougnet, R. (1967). Essai de description des formations géologiques de la République du Niger [Attempted description of the geological formations of the Republic of Niger]. *Mémoires du Bureau de Recherches Géologiques et Minières* 48: 1-238.
+- `serrano-martínez2014a`: Serrano-Martínez, A.; Ortega, F.; Sciscio, L.; Tent-Manclús, J. E.; Fierro Bandera, I.; Knoll, F. (2014). New theropod remains from the Tiouraren Formation (?Middle Jurassic, Niger) and their bearing on the dental evolution in basal tetanurans. *Proceedings of the Geologists' Association* 126(1): 107-118. doi:10.1016/j.pgeola.2014.10.005
