@@ -1,5 +1,17 @@
 # Bajo de la Carpa
 
+## Does any record take a horizon from Sánchez and Heredia (2006) that Garrido (2010) reassigns?
+
+*2026-11-27*
+
+**Conclusion.** No; no record cites either work for a Portezuelo, Plottier or Bajo de la Carpa horizon. Governs nothing on [Bajo de la Carpa](../../../stratigraphy/b/bajo-de-la-carpa.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is the Balsa Formation a former name for the Bajo de la Carpa?
 
 *2026-11-27*
@@ -88,3 +100,4 @@
 - `legarreta1989a`: Legarreta, L.; Gulisano, C. A. (1989). Análisis estratigráfico secuencial de la Cuenca Neuquina (Triásico superior - Terciario inferior) [Sequential stratigraphic analysis of the Neuquén Basin (Upper Triassic - Lower Tertiary)]. In *Cuencas Sedimentarias Argentinas (Chebli, G.; Spalletti, L., eds.)*, pp. 221-243. Universidad Nacional de Tucumán, Tucumán.
 - `bonaparte1991a`: Bonaparte, J. F. (1991). Los vertebrados fósiles de la Formación Río Colorado, de la Ciudad de Neuquén y Cercanías, Cretácico Superior, Argentina [The vertebrate fossils of the Rio Colorado Formation, from the city of Neuquén and surrounding areas, Upper Cretaceous, Argentina]. *Revista del Museo Argentino de Ciencias Naturales "Bernardino Rivadavia" e Instituto Nacional de Investigación de las Ciencias Naturales: Paleontología* 4(3): 17-123.
 - `cazau1973a`: Cazau, L. B.; Uliana, M. A. (1973). El Cretácico superior continental de la Cuenca Neuquina [The continental Upper Cretaceous of the Neuquén Basin]. In *Actas del V Congreso Geológico Argentino*, pp. 131-163.
+- `sánchez2006a`: Sánchez, M. L.; Heredia, S. (2006). Sedimentología y paleoambientes del Subgrupo Río Neuquén (Cretácico Superior) en la Quebrada de las Chivas, Departamento Confluencia, provincia de Neuquén. *Revista de la Asociación Geológica Argentina* 61(1): 39-56.

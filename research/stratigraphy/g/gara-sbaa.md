@@ -1,5 +1,17 @@
 # Gara Sbaa
 
+## Does any record confuse the Gara Sbaa Formation with the Gara Sbaa Member of the Akrabou?
+
+*2026-11-27*
+
+**Conclusion.** No. [*Rebbachisaurus*](../../../genera/R/Rebbachisaurus.yml) and [*Deltadromeus*](../../../genera/D/Deltadromeus.yml) are filed in the Gara Sbaa Formation, and no record or entry names the Akrabou Formation or its Gara Sbaa Member, a limestone that Ibrahim and colleagues (2020) name. Governs nothing on [Gara Sbaa](../../../stratigraphy/g/gara-sbaa.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What age do the cited works give the Gara Sbaa, and what else does its name denote?
 
 *2026-11-23*

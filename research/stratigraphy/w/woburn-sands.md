@@ -1,5 +1,18 @@
 # Woburn Sands
 
+## Where in the Woburn Sands is the Potton Nodule Bed?
+
+*2026-11-27*
+
+**Conclusion.** Near the base. Casey (1961), now read, puts the derived fossils "in the nodules near the base"; Galton (1985), citing Casey, gives "upper part of Woburn Sands", which misstates him. The bed's notes now say both; its stages are unaffected. Governs the notes on casey1961a and galton1985d on the Potton Nodule Bed of [Woburn Sands](../../../stratigraphy/w/woburn-sands.yml).
+
+**Evidence.**
+- casey1961a, p. 566: "Derived material in the nodules near the base comprised many Upper Jurassic fossils, blocks of Neocomian sandstone, bones of Iguanodon".
+
+**Ruled out.** - *Upper part.* A misrelay of Casey.
+
+**Open.** Nothing.
+
 ## What do Seeley (1874) and Galton (2009) say about the age of the Woburn Sands?
 
 *2026-11-23*
@@ -63,9 +76,9 @@
 
 ## References
 
-- `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.
-- `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
 - `casey1961a`: Casey, R. (1961). The stratigraphical palaeontology of the Lower Greensand. *Palaeontology* 3: 487-621.
+- `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
+- `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.
 - `seeley1874a`: Seeley, H. G. (1874). On the Base of a large Lacertian Cranium from the Potton Sands, presumably Dinosaurian. *Quarterly Journal of the Geological Society of London* 30(1-4): 690-692. doi:10.1144/gsl.jgs.1874.030.01-04.62
 - `naish2007a`: Naish, D.; Martill, D. M. (2007). Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia. *Journal of the Geological Society* 164(3): 493-510. doi:10.1144/0016-76492006-032
 - `naish2008a`: Naish, D.; Martill, D. M. (2008). Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: Ornithischia. *Journal of the Geological Society* 165(3): 613-623. doi:10.1144/0016-76492007-154

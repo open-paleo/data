@@ -1,5 +1,17 @@
 # Nanxiong
 
+## Do the Ganzhou taxa file their formation as the topic note rules?
+
+*2026-11-27*
+
+**Conclusion.** Yes. [*Huanansaurus*](../../../genera/H/Huanansaurus.yml), [*Tongtianlong*](../../../genera/T/Tongtianlong.yml), [*Qianzhousaurus*](../../../genera/Q/Qianzhousaurus.yml) and [*Gannansaurus*](../../../genera/G/Gannansaurus.yml) give the Nanxiong, which the [Nanxiong and Guifeng](../../topics/nanxiong-and-guifeng.md) note keeps for Ganzhou taxa until a source assigns each to a Jiangxi formation. Governs nothing on the four records.
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Which fossils and sites does Jin and colleagues' (2022) Nanxiong–Guifeng equation cover?
 
 *2026-11-23*

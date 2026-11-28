@@ -1,5 +1,18 @@
 # Petrified Forest
 
+## Where is the Placerias Quarry, and do Sandoval County records sit below the member?
+
+*2026-11-27*
+
+**Conclusion.** In the Blue Mesa Member, as Irmis and colleagues (2011) place it after Parker and Martz (2011), not low in the Bluewater Creek; the note on irmis2011a now says so. Neither Irmis and colleagues nor Long and Murry (1995) equates Long and Murry's "Lower Petrified Forest Member" with the Blue Mesa, so their note stays as it is. No genus record cites Lucas and Hunt (1992) or comes from Sandoval County. Governs the notes on irmis2011a and parker2011a on [Petrified Forest](../../../stratigraphy/p/petrified-forest.yml).
+
+**Evidence.**
+- irmis2011a, pp. 264–265: "new stratigraphic fieldwork and mapping demonstrates that the Placerias Quarry is actually within the upper part of the overlying unit, the Blue Mesa Member".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the lower Petrified Forest near San Ysidro carry the member into the Carnian?
 
 *2026-11-23*
@@ -38,6 +51,8 @@
 
 ## References
 
+- `irmis2011a`: Irmis, R. B.; Mundil, R.; Martz, J. W.; Parker, W. G. (2011). High-resolution U–Pb ages from the Upper Triassic Chinle Formation (New Mexico, USA) support a diachronous rise of dinosaurs. *Earth and Planetary Science Letters* 309(3-4): 258-267. doi:10.1016/j.epsl.2011.07.015
+- `parker2011a`: Parker, W. G.; Martz, J. W. (2011). The Late Triassic (Norian) Adamanian–Revueltian tetrapod faunal transition in the Chinle Formation of Petrified Forest National Park, Arizona. *Earth and Environmental Science Transactions of the Royal Society of Edinburgh* 101: 231-260.
 - `lucas1992a`: Lucas, S. G.; Hunt, A. P. (1992). Triassic stratigraphy and paleontology, Chama Basin and adjacent areas, north-central New Mexico. In *San Juan Basin IV (Lucas, S. G.; Kues, B. S.; Williamson, T. E.; Hunt, A. P., eds.)*, pp. 151-172.
 - `martz2017a`: Martz, J. W.; Parker, W. G. (2017). Revised Formulation of the Late Triassic Land Vertebrate "Faunachrons" of Western North America: Recommendations for Codifying Nascent Systems of Vertebrate Biochronology. In *Terrestrial Depositional Systems*, pp. 39-125. doi:10.1016/B978-0-12-803243-5.00002-9
 - `ogg2020a`: Ogg, J. G.; Chen, Z. Q.; Orchard, M. J.; Jiang, H. S. (2020). The Triassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 903-953. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00025-5
@@ -47,3 +62,4 @@
 - `muttoni2004a`: Muttoni, G.; Kent, D. V.; Olsen, P. E.; Di Stefano, P.; Lowrie, W.; Bernasconi, S. M.; Hernández, F. M. (2004). Tethyan magnetostratigraphy from Pizzo Mondello (Sicily) and correlation to the Late Triassic Newark astrochronological polarity time scale. *Geological Society of America Bulletin* 116(9): 1043-1058. doi:10.1130/B25326.1
 - `hüsing2011a`: Hüsing, S. K.; Deenen, M. H. L.; Koopmans, J. G.; Krijgsman, W. (2011). Magnetostratigraphic dating of the proposed Rhaetian GSSP at Steinbergkogel (Upper Triassic, Austria): implications for the Late Triassic time scale. *Earth and Planetary Science Letters* 302(1-2): 203-216. doi:10.1016/j.epsl.2010.12.012
 - `ramezani2011a`: Ramezani, J.; Hoke, G. D.; Fastovsky, D. E.; Bowring, S. A.; Therrien, F.; Dworkin, S. I.; Atchley, S. C.; Nordt, L. C. (2011). High-precision U-Pb zircon geochronology of the Late Triassic Chinle Formation, Petrified Forest National Park (Arizona, USA): temporal constraints on the early evolution of dinosaurs. *Geological Society of America Bulletin* 123(11-12): 2142-2159. doi:10.1130/B30433.1
+- `long1995a`: Long, R. A.; Murry, P. A. (1995). Late Triassic (Carnian and Norian) Tetrapods from the Southwestern United States. *New Mexico Museum of Natural History and Science Bulletin* 4: 1-254.

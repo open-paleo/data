@@ -1,5 +1,17 @@
 # Figuerola
 
+## Do the Areniscas con reptiles need an entry?
+
+*2026-11-27*
+
+**Conclusion.** No. Colombo and Cuevas (1993) say they could take member rank, but no record names them. Governs nothing on [Figuerola](../../../stratigraphy/f/figuerola.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is Fondevilla and colleagues' late Maastrichtian a live dispute?
 
 *2026-11-27*

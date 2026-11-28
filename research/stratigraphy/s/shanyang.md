@@ -1,5 +1,17 @@
 # Shanyang
 
+## Does any record follow Shan (2025) in putting *Qinlingosaurus* in the Shanyang?
+
+*2026-11-27*
+
+**Conclusion.** No. [*Qinlingosaurus*](../../../genera/Q/Qinlingosaurus.yml) is filed in the Hongtuling, after Xue and colleagues (1996), who describe it. Governs nothing on [Shanyang](../../../stratigraphy/s/shanyang.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does Zhao and colleagues' Early Cretaceous date the Shanyang Formation?
 
 *2026-11-23*
@@ -23,3 +35,7 @@
 - `zhao2008a`: Zhao, Q.; Xu, X.; Jia, C.; Dong, Z. (2008). Order Saurischia. In *The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)*, pp. 279-335. Science Press, Beijing.
 - `xue1996a`: Xue, X.; Zhang, Y.; Bi, Y.; Yue, L.; Chen, D. (1996). The development and environmental changes of the intermontane basins in the eastern part of Qinling Mountains. Geological Publishing House, Beijing.
 - `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
+
+## Other references
+
+- `shan2025a`: Shan, B. (2025). The re-description of Liaoningotitan sinensis Zhou et al., 2018. *PeerJ* 13: e19154. doi:10.7717/peerj.19154

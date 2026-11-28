@@ -1,5 +1,17 @@
 # Zhoutian
 
+## Does the Jiangxi Hekou Formation collide with the registry's Hekou?
+
+*2026-11-27*
+
+**Conclusion.** Not yet. The Hekou Formation of the Guifeng Group in Jiangxi is a different unit from the Gansu Hekou Group in the registry, but no record names it; an entry for it would need a disambiguated name and filename. Governs nothing on [Zhoutian](../../../stratigraphy/z/zhoutian.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the Zhoutian's relation to the Hekou Formation?
 
 *2026-11-23*

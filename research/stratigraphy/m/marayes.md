@@ -1,5 +1,18 @@
 # Marayes
 
+## What do Colombi and colleagues (2015) add to the Marayes Group?
+
+*2026-11-27*
+
+**Conclusion.** Bossi's (1976) definition and the place of the Balde de Leyes. They relay that Bossi defines the group with the Esquina Colorada, Carrizal and Quebrada del Barro formations, and they erect the Balde de Leyes Formation on top of the Quebrada del Barro without saying whether it belongs to the group, which partly answers the entry's open question. Governs the pointer to colombi2015a on [Marayes](../../../stratigraphy/m/marayes.yml).
+
+**Evidence.**
+- colombi2015a, p. 447: "Bossi (1976) descarta a la Formación Quebrada de la Mina … y define el Grupo Marayes" ["Bossi (1976) discarded the Quebrada de la Mina Formation … and defines the Marayes Group", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Whether the Balde de Leyes belongs to the Marayes Group.
+
 ## What dates the Marayes Group?
 
 *2026-10-28*
@@ -16,6 +29,7 @@
 
 ## References
 
+- `colombi2015a`: Colombi, C. E.; Santi Malnis, P.; Correa, G. A.; Martínez, R. N.; Fernández, E.; Abelín, D.; Praderio, A.; Apaldetti, C. G.; Alcober, O.; Drovandi, J. (2015). La Formación Balde de Leyes (nov. Nom.), una nueva unidad estratigráfica de la cuenca triásica de Marayes-El Carrizal [The Balde de Leyes Formation, a new stratigraphic unit from the Triassic Marayes-El Carrizal Basin, San Juan]. *Revista de la Asociación Geológica Argentina* 72(4): 445-455.
 - `martínez2017a`: Martínez, R. N.; Apaldetti, C. (2017). A Late Norian-Rhaetian Coelophysid Neotheropod (Dinosauria, Saurischia) from the Quebrada Del Barro Formation, Northwestern Argentina. *Ameghiniana* 54(5): 488-505. doi:10.5710/amgh.09.04.2017.3065
 
 ## Other references

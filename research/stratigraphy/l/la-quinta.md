@@ -1,5 +1,17 @@
 # La Quinta
 
+## Does the La Quinta entry need to list both Venezuela and Colombia?
+
+*2026-11-27*
+
+**Conclusion.** No; registry entries have no country or location field. Governs nothing on [La Quinta](../../../stratigraphy/l/la-quinta.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does Langer and colleagues' Late Triassic start add the Late Triassic?
 
 *2026-11-27*

@@ -1,5 +1,18 @@
 # Fort Crittenden
 
+## Does the Fort Crittenden need members?
+
+*2026-11-27*
+
+**Conclusion.** No. Dalman and colleagues (2018) report the formation "divided informally into five members" by Drewes (1968, 1971a, 1971b), and place [*Crittendenceratops*](../../../genera/C/Crittendenceratops.yml) in the lowest, the shale member, which the record's `part: lower` already gives; no record needs the member scheme. Hayes (1987) is not the source of the members: Sullivan and Lucas (2006) and Dalman and colleagues cite it only for a K/Ar age on the volcanics beneath the formation. Governs nothing on [Fort Crittenden](../../../stratigraphy/f/fort-crittenden.yml).
+
+**Evidence.**
+- dalman2018a, p. 141: "The Fort Crittenden Formation has been divided informally into five members, in ascending order: the shale member, the lower red conglomerate, the brown conglomerate, the upper conglomerate, and the rhyolite tuff members (Drewes, 1968, 1971a, 1971b)."
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Fort Crittenden take a Sonoita group as parent?
 
 *2026-11-27*
@@ -35,6 +48,7 @@
 
 ## References
 
+- `dalman2018a`: Dalman, S. G.; Hodnett, J. P. M.; Lichtig, A. J.; Lucas, S. G. (2018). A new ceratopsid dinosaur (Centrosaurinae: Nasutoceratopsini) from the Fort Crittenden Formation, Upper Cretaceous (Campanian) of Arizona. *New Mexico Museum of Natural History and Science Bulletin* 79: 141-164.
 - `sullivan2006c`: Sullivan, R. M.; Lucas, S. G. (2006). The Kirtlandian land-vertebrate "age" — faunal composition, temporal position and biostratigraphic correlation in the nonmarine Upper Cretaceous of western North America. *New Mexico Museum of Natural History and Science Bulletin* 35: 7-29.
 - `stoyanow1949a`: Stoyanow, A. A. (1949). Lower Cretaceous stratigraphy in southeastern Arizona. *Geological Society of America Memoir* 38: 1-169.
 
@@ -43,3 +57,7 @@
 - `schrader1915a`: Schrader, F. C. (1915). Mineral deposits of the Santa Rita and Patagonia Mountains, Arizona. *U.S. Geological Survey Bulletin* 582: 1-373. doi:10.3133/b582
 - `ratkevich1998a`: Ratkevich, R. (1998). New Cretaceous brachiosaurid dinosaur, Sonorasaurus thompsoni gen. et sp. nov., from Arizona. *Journal of the Arizona-Nevada Academy of Science* 31(1): 71-82.
 - `d'emic2016a`: D'Emic, M. D.; Foreman, B. Z.; Jud, N. A. (2016). Anatomy, systematics, paleoenvironment, growth, and age of the sauropod dinosaur Sonorasaurus thompsoni from the Cretaceous of Arizona, USA. *Journal of Paleontology* 90(1): 102-132. doi:10.1017/jpa.2015.67
+- `drewes1968a`: Drewes, H. (1968). New and revised stratigraphic names in the Santa Rita Mountains of southeastern Arizona.
+- `drewes1971a`: Drewes, H. (1971). Mesozoic stratigraphy of the Santa Rita Mountains, southeast Tucson, Arizona.
+- `drewes1971b`: Drewes, H. (1971). Geologic map of the Mount Wrightson quadrangle, southeast of Tucson, Pima and Santa Cruz counties, Arizona.
+- `hayes1987a`: Hayes, M. J. (1987). Depositional history of Upper Cretaceous Fort Crittenden Formation in southeastern Arizona. *Arizona Geological Society Digest* 18: 315-325.

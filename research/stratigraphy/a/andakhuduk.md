@@ -1,5 +1,18 @@
 # Andakhuduk
 
+## Does Berkey and Morris (1927) name the formation?
+
+*2026-11-27*
+
+**Conclusion.** Yes; it is cited as the naming work, under the name Ondai Sair, already a variant. Berkey and Morris give "The Ondai Sair formation" its type locality on the east side of the Mount Uskuk block and describe its gray sandstones and dark paper-shales. Governs the pointer to berkey1927a on [Andakhuduk](../../../stratigraphy/a/andakhuduk.yml).
+
+**Evidence.**
+- berkey1927a, p. 353: "The Ondai Sair type locality is the reëntrant of sediment on the east side of the Mount Uskuk block".
+
+**Ruled out.** Nothing.
+
+**Open.** The corpus copy lacks the chapter's first page and the measured section.
+
 ## Does Sinitsa's Late Jurassic join the Andakhuduk?
 
 *2026-11-27*
@@ -68,6 +81,7 @@
 
 ## References
 
+- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
 - `sinitsa1993a`: Sinitsa, S. M. (1993). Jurassic and Lower Cretaceous of Central Mongolia. *Trudy Sovmestnaya Rossiisko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 42: 1-236.
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
@@ -78,5 +92,4 @@
 - `vasil'ev1959a`: Vasil'ev, V. G.; Volkhonin, V. S.; Grishin, G. L.; Ivanov, A. Kh.; Marinov, I. A.; Mokshantsev, K. B. (1959). Geologicheskoye stroyenie Mongolskoy Narodnoy Republiki (stratigrafia i tektonika) [Geological structure of the People's Republic of Mongolia (stratigraphy and tectonics)]. Gostoptekhizdat, Leningrad.
 - `shuvalov1975a`: Shuvalov, V. F. (1975). Stratigrafia mezozoya tsentralnoy Mongolii [Mesozoic stratigraphy of central Mongolia]. In *Stratigrafia mezozoiskikh otlozenii Mongolii (Martinson, G. G., and others, eds.)*, pp. 50-112.
 - `krassilov1982a`: Krassilov, V. (1982). Early Cretaceous flora of Mongolia. *Palaeontographica Abteilung B* 181: 1-43.
-- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
 - `shuvalov1980a`: Shuvalov, V. F. (1980). The Jurassic and Lower Cretaceous lacustrine deposits of the East Gobi and distribution of associated fossil fauna and flora. In *The Limnobiosis of the Ancient Lake Basins of Eurasia (Martinson, G. G., ed.)*, pp. 91-118. Nauka, Leningrad.

@@ -1,5 +1,17 @@
 # Yellow Cat
 
+## Does the Yellow Cat need a note on the Buckhorn Conglomerate?
+
+*2026-11-27*
+
+**Conclusion.** No change; the note on sprinkel2012a already records that Sprinkel and colleagues (2012) correlate the member, at least in part, with the Buckhorn Conglomerate. Governs nothing on [Yellow Cat](../../../stratigraphy/y/yellow-cat.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Which of Mori's samples gives 119.2 Ma?
 
 *2026-11-26*
@@ -92,9 +104,9 @@
 
 ## References
 
+- `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
 - `mori2009a`: Mori, H. (2009). Dinosaurian faunas of the Cedar Mountain Formation and LA-ICP-MS detrital zircon ages for three stratigraphic sections. Masters thesis, Brigham Young University.
 - `joeckel2019a`: Joeckel, R. M.; Ludvigson, G. A.; Möller, A.; Hotton, C. L.; Suarez, M. B.; Suarez, C. A.; Sames, B.; Kirkland, J. I.; Hendrix, B. (2019). Chronostratigraphy and terrestrial palaeoclimatology of Berriasian–Hauterivian strata of the Cedar Mountain Formation, Utah, USA. *Geological Society, London, Special Publications* 498(1): 75-100. doi:10.1144/SP498-2018-133
-- `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
 - `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `joeckel2023a`: Joeckel, R. M.; Suarez, C. A.; McLean, N. M.; Möller, A.; Ludvigson, G. A.; Suarez, M. B.; Kirkland, J. I.; Andrew, J.; Kiessling, S.; Hatzell, G. A. (2023). Berriasian–Valanginian geochronology and carbon-isotope stratigraphy of the Yellow Cat Member, Cedar Mountain Formation, eastern Utah, USA. *Geosciences* 13(2): 32. doi:10.3390/geosciences13020032
