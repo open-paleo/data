@@ -1,5 +1,19 @@
 # Ambolafotsy
 
+## Does the Ambolafotsy stay one informal formation?
+
+*2026-11-27*
+
+**Conclusion.** Yes. Farke and Sertich (2013), who describe [*Dahalokely*](../../../genera/D/Dahalokely.yml), call the section "informally termed the 'Ambolafotsy Formation'" with lower, middle and upper units, and place the site in the middle unit. Randrianasolo and Philip (1989), whom they cite, rank the three parts as formations, the Ambolafotsy inférieure, moyenne and supérieure, without calling them formal; the middle one, which holds the site's level, is "Turonien moyen". The record keeps the describing paper's single unit, as it does for the Pingling, with *Dahalokely* at `part: middle`; the Turonian is the same under either scheme. Governs `rank` and `informal` on [Ambolafotsy](../../../stratigraphy/a/ambolafotsy.yml), unchanged.
+
+**Evidence.**
+- farke2013a, p. 2: "The section containing the Dahalokely site is informally termed the ‘‘Ambolafotsy Formation,’’ and is divided into lower, middle (containing the type locality; Figure 1), and upper units [23]."
+- randrianasolo1989a, p. 121: "2 - LES GRÈS DE L'AMBOLAFOTSY MOYENNE (Turonien moyen) : La figure 2 montre les principaux membres de cette formation" ["2 - THE SANDSTONES OF THE MIDDLE AMBOLAFOTSY (Middle Turonian): Figure 2 shows the main members of this formation", translated].
+
+**Ruled out.** - *Three formations.* Not adopted by the describing paper of the one taxon recorded.
+
+**Open.** Nothing.
+
 ## Which parts of the Ambolafotsy are dated by their own fossils?
 
 *2026-11-25*

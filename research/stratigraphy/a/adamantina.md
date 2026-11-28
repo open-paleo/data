@@ -1,5 +1,17 @@
 # Adamantina
 
+## Is Dias and colleagues' Vale do Rio do Peixe Formation a variant of the Adamantina or a narrower unit?
+
+*2026-11-27*
+
+**Conclusion.** Held. The question turns on Paula e Silva and colleagues (2009), who define the Vale do Rio do Peixe Formation, and that work has not been read. Governs nothing yet on [Adamantina](../../../stratigraphy/a/adamantina.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Paula e Silva and colleagues (2009) have not been read.
+
 ## What do the cited works say about the age and the name of the Adamantina?
 
 *2026-11-22*

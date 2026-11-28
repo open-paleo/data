@@ -1,5 +1,18 @@
 # Dakota
 
+## Is the Naturita another name for the Dakota?
+
+*2026-11-27*
+
+**Conclusion.** Yes; it is added to the variants. Kirkland and colleagues (2016) refer the Upper Cretaceous strata above the Cedar Mountain on the Colorado Plateau to the Naturita Formation, after Young (1960, 1965) and later workers, and write "Naturita Formation (= Dakota Formation)" throughout; their Fig. 6 caption gives "Dakota Formation = Naturita Formation.". It is the same rock under another name, not a separate unit. Governs `variants` on [Dakota](../../../stratigraphy/d/dakota.yml).
+
+**Evidence.**
+- kirkland2016a, p. 105: "Young (1960, 1965) proposed to reassign these overlying strata to the Naturita Formation".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Dakota?
 
 *2026-11-23*
@@ -25,6 +38,11 @@
 
 ## References
 
-- `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
+- `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
 - `eaton1960a`: Eaton, T. H., Jr. (1960). A new armored dinosaur from the Cretaceous of Kansas. *The University of Kansas Paleontological Contributions: Vertebrata* 8: 1-24.
+
+## Other references
+
+- `young1960a`: Young, R. G. (1960). Dakota Group of Colorado Plateau. *American Association of Petroleum Geologists Bulletin* 44: 158-194.
+- `young1965a`: Young, R. G. (1965). Type section of the Naturita Formation. *American Association of Petroleum Geologists Bulletin* 49(9): 1512-1531.

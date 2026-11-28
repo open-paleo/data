@@ -1,5 +1,17 @@
 # Cedar Mountain
 
+## Does the Cedar Mountain's extent in southwestern Utah touch any record?
+
+*2026-11-27*
+
+**Conclusion.** No. Kirkland and Madsen (2007) reject the name for southwestern Utah beds that later maps include, but every Cedar Mountain record comes from east-central Utah, so the question changes no record. Governs nothing on [Cedar Mountain](../../../stratigraphy/c/cedar-mountain.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age and extent of the Cedar Mountain?
 
 *2026-11-23*

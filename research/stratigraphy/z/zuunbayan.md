@@ -1,5 +1,17 @@
 # Zuunbayan
 
+## Does the Zuunbayan entry cover Khand and colleagues' Tamtsag Zuunbayan?
+
+*2026-11-27*
+
+**Conclusion.** No; that unit is a homonym no record names. The records in the entry, [*Shamosaurus*](../../../genera/S/Shamosaurus.yml) and [*Mongolostegus*](../../../genera/M/Mongolostegus.yml), come from Khamaryn Us in the East Gobi. Governs nothing on [Zuunbayan](../../../stratigraphy/z/zuunbayan.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Khosbayar (1996) has not been read.
+
 ## Does the Tamtsag basin's Zuunbayan Formation change the age of Zuunbayan?
 
 *2026-11-23*
