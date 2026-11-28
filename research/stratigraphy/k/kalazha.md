@@ -1,5 +1,20 @@
 # Kalazha
 
+## Are Kalaza and Karaza names for the Kalazha?
+
+*2026-11-27*
+
+**Conclusion.** Yes; both are added to the variants. They are romanizations of the same name, each printed consistently as the unit's name: Eberth and colleagues (2001) and Deng and colleagues (2015) write "Kalaza" throughout, Eberth and colleagues noting that others call it the Kalazha, and Wings and colleagues (2012) write "Karaza" for the unit in the Turpan Basin. Upchurch and colleagues (2021) list both as other names for the formation. Hongshan, Keilozo and Huoyanshan, which Upchurch and colleagues, Lucas (2001) and Weishampel and colleagues (2004) also give as equivalents, are not added here. Governs `variants` on [Kalazha](../../../stratigraphy/k/kalazha.yml).
+
+**Evidence.**
+- eberth2001a, p. 1630: "The Kalaza Formation is referred to as the Kalazha Formation by Shen and Mateer (1992)."
+- wings2012a, p. 927: "the Late Jurassic Karaza Formation (Dong 1997)".
+- upchurch2021a, p. e1994414: "The Kalazha Formation (also referred to as the Karaza, Kalaza, or Hongshan Formation".
+
+**Ruled out.** Nothing.
+
+**Open.** Whether Hongshan, Keilozo and Huoyanshan name the same unit; the lists that equate them give no argument.
+
 ## Is the Kalazha one unit across the Turpan and Junggar basins, and what dates it?
 
 *2026-11-27*
@@ -34,12 +49,15 @@
 
 ## References
 
+- `eberth2001a`: Eberth, D. A.; Brinkman, D. B.; Chen, P. J.; Yuan, F. T.; Wu, S. Z.; Li, G.; Cheng, X. S. (2001). Sequence stratigraphy, paleoclimate patterns, and vertebrate fossil preservation in Jurassic–Cretaceous strata of the Junggar Basin, Xinjiang Autonomous Region, People's Republic of China. *Canadian Journal of Earth Sciences* 38(12): 1627-1644. doi:10.1139/e01-067
+- `wings2012a`: Wings, O.; Rabi, M.; Schneider, J. W.; Schwermann, L.; Sun, G.; Zhou, C.-F.; Joyce, W. G. (2012). An enormous Jurassic turtle bone bed from the Turpan Basin of Xinjiang, China. *Naturwissenschaften* 99(11): 925-935. doi:10.1007/s00114-012-0974-5
 - `upchurch2021a`: Upchurch, P.; Mannion, P. D.; Xu, X.; Barrett, P. M. (2021). Re-assessment of the Late Jurassic eusauropod dinosaur Hudiesaurus sinojapanorum Dong, 1997, from the Turpan Basin, China, and the evolution of hyper-robust antebrachia in sauropods. *Journal of Vertebrate Paleontology* 41(4). doi:10.1080/02724634.2021.1994414
 - `deng2015a`: Deng, S. H.; Wang, S. E.; Yang, Z. Y.; Lu, Z. Y.; Li, X.; Hu, Q. Y.; An, C. Z.; Xi, D. P.; Wan, X. Q. (2015). Comprehensive study of the Middle-Upper Jurassic strata in the Junggar Basin, Xinjiang. *Acta Geoscientica Sinica* 36(5): 559-574. doi:10.3975/cagsb.2015.05.06
-- `eberth2001a`: Eberth, D. A.; Brinkman, D. B.; Chen, P. J.; Yuan, F. T.; Wu, S. Z.; Li, G.; Cheng, X. S. (2001). Sequence stratigraphy, paleoclimate patterns, and vertebrate fossil preservation in Jurassic–Cretaceous strata of the Junggar Basin, Xinjiang Autonomous Region, People's Republic of China. *Canadian Journal of Earth Sciences* 38(12): 1627-1644. doi:10.1139/e01-067
 - `fang2015a`: Fang, Y.; Wu, C.; Guo, Z.; Hou, K.; Dong, L.; Wang, L.; Li, L. (2015). Provenance of the southern Junggar Basin in the Jurassic: evidence from detrital zircon geochronology and depositional environments. *Sedimentary Geology* 315: 47-63. doi:10.1016/j.sedgeo.2014.10.014
 
 ## Other references
 
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `fang2016a`: Fang, Y.; Wu, C.; Wang, Y.; Wang, L.; Guo, Z.; Hu, H. (2016). Stratigraphic and sedimentary characteristics of the Upper Jurassic-Lower Cretaceous strata in the Junggar Basin, Central Asia: tectonic and climate implications. *Journal of Asian Earth Sciences* 129: 294-308. doi:10.1016/j.jseaes.2016.09.001
+- `lucas2001b`: Lucas, S. G. (2001). Chinese Fossil Vertebrates. Columbia University Press, New York. doi:10.7312/luca08482
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
