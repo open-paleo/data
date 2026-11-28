@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-11-28T05:01:17.103Z
+  built_at: 2026-11-28T13:52:00.584Z
   clade_count: 187
-  commit: 427fb2f835b200997b2c5609c404948def01d9de
+  commit: 4572dfb1d3a05e3182b5d8e9e63adcfaaea8caeb
   genus_count: 1429
   license: CC-BY-4.0
   paleogeography:
@@ -10,7 +10,7 @@ _metadata:
     citation: "Wright, N.; Zahirovic, S.; Müller, R. D.; Seton, M. (2013). Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10(3): 1529-1541. doi:10.5194/bg-10-1529-2013"
     license: CC-BY-3.0-AU
   schema_version: 0.4.8
-  version: 2026.11.28
+  version: 2026.11.28.2
 timescale:
   chart: ICS International Chronostratigraphic Chart v2024/12
   stages:
@@ -219032,9 +219032,6 @@ stratigraphy:
         - Turonian
       from_ma: 100.5
       to_ma: 89.8
-    dispute:
-      summary: |
-        Member in the United States, formation in Canada. Carpenter and Kirkland (1998) give "Belle Fourche Member (Middle Cenomanian ...), Frontier Formation" and record the reassignment that produced it: "Merewether et al. (1983) and Merewether (1983) revised the Frontier Formation in Wyoming, and reidentified Dunbar's Frontier Formation as the Belle Fourche Member of the Frontier Formation". Their reference list has no Merewether and colleagues 1983; it gives Merewether (1983) and Merewether and colleagues under 1978, the paper printed in 1979. Pittman and colleagues (2020) tabulate a "Belle Fourche Formation" in Canada at the same Cenomanian age.
     references:
       - id: carpenter1998c
         authors: Carpenter, K.; Kirkland, J. I.
@@ -219046,17 +219043,6 @@ stratigraphy:
         pages: 249-270
         notes: |
           Gives the rank, parent and history of the name, and places Nodosaurus textilis in the "Middle Cenomanian" part of the member and Stegopelta landerensis at its base.
-      - id: pittman2020c
-        authors: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X.
-        year: 2020
-        title: The fossil record of Mesozoic and Paleocene pennaraptorans
-        book: "Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)"
-        series: Bulletin of the American Museum of Natural History
-        volume: "440"
-        publisher: American Museum of Natural History, New York
-        pages: 37-95
-        notes: |
-          Uses formation rank for the Canadian occurrence.
       - id: merewether1979a
         authors: Merewether, E. A.; Cobban, W. A.; Cavanaugh, E. T.
         year: 1979
@@ -231551,16 +231537,45 @@ stratigraphy:
         pages: 1-140
   Kalazha:
     rank: formation
-    description: The Kalazha Formation is a formation in Xinjiang, China, dated to the Kimmeridgian to Tithonian stages of the Late Jurassic. Dinosaurs known from it include Hudiesaurus and Rhomaleopakhus.
+    variants:
+      - Kalaza
+      - Karaza
+    description: The Kalazha Formation is a formation in Xinjiang, China, dated to the Kimmeridgian to Tithonian stages of the Late Jurassic and the Early Cretaceous. It is also known as the Kalaza or Karaza. Dinosaurs known from it include Hudiesaurus and Rhomaleopakhus.
     period:
       name:
         - Late Jurassic
+        - Early Cretaceous
       stage:
         - Kimmeridgian
         - Tithonian
       from_ma: 154.8
       to_ma: 143.1
+    dispute:
+      summary: |
+        Kimmeridgian, or Late Jurassic into the Early Cretaceous. Deng and colleagues (2015) date the formation late Kimmeridgian in the Honggou section on the Manas River, inferring the age from the dated top of the underlying Qigu Formation and the rapid deposition of alluvial-fan conglomerate, and find the Tithonian missing at the unconformity beneath the Tugulu Group. Eberth and colleagues (2001), in the Manas section, see a conformable passage up into the Qingshuihe Formation and its Early Cretaceous clam shrimp, and conclude that the Jurassic–Cretaceous boundary lies at the base of or within the formation, so that it "is not entirely Late Jurassic in age". Both works describe the Junggar Basin; none dates the Kalazha of the Turpan Basin, which yielded the taxa recorded here.
     references:
+      - id: deng2015a
+        authors: Deng, S. H.; Wang, S. E.; Yang, Z. Y.; Lu, Z. Y.; Li, X.; Hu, Q. Y.; An, C. Z.; Xi, D. P.; Wan, X. Q.
+        year: 2015
+        title: Comprehensive study of the Middle-Upper Jurassic strata in the Junggar Basin, Xinjiang
+        journal: Acta Geoscientica Sinica
+        volume: "36"
+        issue: "5"
+        pages: 559-574
+        doi: 10.3975/cagsb.2015.05.06
+        notes: |
+          Dates the formation late Kimmeridgian in the Honggou section, Manas River, from the age of the underlying Qigu Formation, and finds the Tithonian missing at the unconformity with the Tugulu Group above.
+      - id: eberth2001a
+        authors: Eberth, D. A.; Brinkman, D. B.; Chen, P. J.; Yuan, F. T.; Wu, S. Z.; Li, G.; Cheng, X. S.
+        year: 2001
+        title: Sequence stratigraphy, paleoclimate patterns, and vertebrate fossil preservation in Jurassic–Cretaceous strata of the Junggar Basin, Xinjiang Autonomous Region, People's Republic of China
+        journal: Canadian Journal of Earth Sciences
+        volume: "38"
+        issue: "12"
+        pages: 1627-1644
+        doi: 10.1139/e01-067
+        notes: |
+          Spells the unit Kalaza; its conformable contact with the Early Cretaceous Qingshuihe Formation at Manas "suggests that the Jurassic–Cretaceous boundary occurs at the base of or within the Kalaza Formation".
       - id: upchurch2021a
         authors: Upchurch, P.; Mannion, P. D.; Xu, X.; Barrett, P. M.
         year: 2021
@@ -231601,6 +231616,24 @@ stratigraphy:
         issue: "1"
         pages: e889701
         doi: 10.1080/02724634.2014.889701
+      - id: wings2012a
+        authors: Wings, O.; Rabi, M.; Schneider, J. W.; Schwermann, L.; Sun, G.; Zhou, C.-F.; Joyce, W. G.
+        year: 2012
+        title: An enormous Jurassic turtle bone bed from the Turpan Basin of Xinjiang, China
+        journal: Naturwissenschaften
+        volume: "99"
+        issue: "11"
+        pages: 925-935
+        doi: 10.1007/s00114-012-0974-5
+        notes: |
+          Prints the unit in the Turpan Basin as "the Late Jurassic Karaza Formation", after Dong (1997).
+      - id: dong1997d
+        authors: Dong, Z.
+        year: 1997
+        title: Vertebrates of the Turpan Basin, the Xinjiang Uygur Autonomous Region, China
+        book: Sino-Japanese Silk Road Dinosaur Expedition
+        publisher: China Ocean Press, Beijing
+        pages: 96-101
   Kallamedu:
     rank: formation
     lithology: medium to coarse-grained sandstone, with interbedded red and green clay
@@ -236706,6 +236739,9 @@ stratigraphy:
         - Santonian
       from_ma: 100.5
       to_ma: 83.6
+    dispute:
+      summary: |
+        Cenomanian, or no older than Campanian. Varela and colleagues (2012) date a primary tuff in the middle section of the formation, at Estancia Mata Amarilla east of Tres Lagos, at 96.23 ± 0.71 Ma, middle Cenomanian, and Novas and colleagues (2019) keep the formation Cenomanian on that date. Sickmann and colleagues (2018) take the terrestrial beds from Lago Viedma and Lago Argentino east past Tres Lagos, including rocks called Mata Amarilla, into their Cerro Fortaleza Formation. Their detrital-zircon maximum depositional ages are all Campanian, one of 82.1 ± 2.4 Ma from beds earlier assigned to the lower Mata Amarilla, and they conclude that these deposits "are no older than Campanian". They do not re-date the tuff, and Novas and colleagues cite the Campanian ages for the Cerro Fortaleza without taking up the case against the Cenomanian.
     references:
       - id: novas2019a
         authors: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L.
@@ -243727,18 +243763,14 @@ stratigraphy:
   Rock Point:
     rank: member
     parent: Chinle
-    description: The Rock Point Member is a member of the Chinle Formation, dated to the Norian to Rhaetian stages of the Late Triassic.
+    description: The Rock Point Member is a member of the Chinle Formation, dated to the Rhaetian stage of the Late Triassic.
     period:
       name:
         - Late Triassic
       stage:
-        - Norian
         - Rhaetian
-      from_ma: 227.3
+      from_ma: 205.7
       to_ma: 201.4
-    dispute:
-      summary: |
-        Norian or Rhaetian. Long and Murry (1995) date the member "?Early Norian", Litwin and colleagues (1991) read an early Norian from palynology, and Rinehart and colleagues (2009), weighing magnetostratigraphy against two biostratigraphies, "favor the late Norian age"; against them Martz and Parker (2017) place most of the member in an Apachean holochronozone falling "during the Rhaetian", and Novas and colleagues (2021) write of "the Rhaetian Rock Point Member". Lucas and Hunt (1993), whom later papers follow in equating the Apachean with the Rhaetian, allow that "it might be of late Norian age". Several papers carry both without choosing, and Nesbitt and Sues (2020) still report the question open. A late Rhaetian to Hettangian reading is sometimes attributed to this unit and should not be: the paper that relays it does so to reject it, and the nearest Hettangian in the literature belongs to the Glen Canyon Group, from which Olsen and Galton expressly exclude these beds.
     references:
       - id: nesbitt2020a
         authors: Nesbitt, S. J.; Sues, H. D.
@@ -245676,6 +245708,17 @@ stratigraphy:
         doi: 10.7312/luca08482
         notes: |
           The third of the Tugulu Group's four formations, "the thin (50–60 m thick) Shengjinkou Formation, gray-green mudstones and shales that have produced a diverse and endemic ichthyofauna". With the Lianmuqin it forms the "Upper Tugulu Group", a fauna "of Tsagantsabian age", a land-vertebrate age the book does not tie to a stage.
+      - id: song2025a
+        authors: Song, J.; Zhong, Y.; Jiang, S.; Wang, X.
+        year: 2025
+        title: The first ornithocheiromorph humerus from Wuerho (Urho), China, with a new isotopic age of the Tugulu Group
+        journal: Anais da Academia Brasileira de Ciências
+        volume: "97"
+        issue: Suppl. 1
+        article_number: e20240557
+        doi: 10.1590/0001-3765202520240557
+        notes: |
+          Dates a tuffaceous sandstone at the top of the formation at Wuerho, in the Junggar Basin, at 134.27 ± 0.36 Ma, and concludes that "the top of the Shengjinkou Formation is middle Valanginian in age".
   Shishugou:
     rank: formation
     lithology: sandstone, siltstone and mudstone, with minor limestone lenses
