@@ -1,5 +1,17 @@
 # Lohan Cura
 
+## Does the Lohan Cura take the Bajada del Agrio Group as parent?
+
+*2026-11-27*
+
+**Conclusion.** No. Leanza (1999) draws the group over the southern Lohan Cura and La Amarga in one figure, but Leanza (2003) confines it to the Huitrín and Rayoso formations and treats the Lohan Cura as part of an unnamed southern interval between the Mendoza and Neuquén groups, only comparable with the Rayoso; the same author narrows his own scheme. Governs the absent `parent` on [Lohan Cura](../../../stratigraphy/l/lohan-cura.yml).
+
+**Evidence.** None.
+
+**Ruled out.** - *Bajada del Agrio Group.* Superseded by its author.
+
+**Open.** Nothing.
+
 ## How do Leanza and Hugo (1995) define the Lohan Cura and bound its age, and what does Garrido (2010) add?
 
 *2026-11-23*
@@ -34,3 +46,4 @@ The two works differ on the upper contact. Leanza and Hugo (1995) have the Cande
 ## Other references
 
 - `leanza1997a`: Leanza, H. A.; Hugo, C. A. (1997). Hoja Geológica 3969-III, Picún Leufú, provincias del Neuquén y Río Negro [Geological Sheet 3969-III, Picún Leufú, Neuquén and Río Negro provinces]. *Boletín del Instituto de Geología y Recursos Minerales, Servicio Geológico Minero Argentino* 218: 1-135.
+- `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.

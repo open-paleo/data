@@ -1,5 +1,19 @@
 # Chubut
 
+## Do the Bajo Barreal and Lago Colhué Huapi belong to the Chubut Group?
+
+*2026-11-27*
+
+**Conclusion.** Yes; both take `parent: Chubut`. Suárez and colleagues (2014) place the Bajo Barreal in the group's Golfo San Jorge succession above the Castillo Formation, and Casal and colleagues (2015) erect the Lago Colhué Huapi Formation within the group as its youngest deposits. Both formations' stages fall within the group's. The Laguna Palacios Formation, which papers differ on as the group's top unit, gets no entry while no record names it. Governs `parent` on [Bajo Barreal](../../../stratigraphy/b/bajo-barreal.yml) and [Lago Colhué Huapi](../../../stratigraphy/l/lago-colhué-huapi.yml).
+
+**Evidence.**
+- suárez2014a, pp. 68–69: the Castillo Formation, "in turn, conformably underlying fluvial deposits with tuff intercalations of the Bajo Barreal and Laguna Palacios formations".
+- casal2015a, p. 77: "permiten proponer una nueva unidad litoestratigráfica dentro del grupo, la Formación Lago Colhué Huapi (nov. nom.)" ["allow us to propose a new lithostratigraphic unit within the group, the Lago Colhué Huapi Formation (nov. nom.)", translated].
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the Chubut Group keep the Hauterivian and Barremian, and what dates its top?
 
 *2026-11-26*
@@ -75,13 +89,13 @@
 
 ## References
 
+- `suárez2014a`: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M. (2014). Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology. *Journal of South American Earth Sciences* 50: 67-74. doi:10.1016/j.jsames.2013.10.008
+- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `nullo1983a`: Nullo, F. E. (1983). Descripción geológica de la Hoja 45c, Pampa de Agnia, provincia del Chubut [Geological description of Sheet 45c, Pampa de Agnia, Chubut Province]. *Boletín del Servicio Geológico Nacional* 199: 1-94.
 - `rauhut2004a`: Rauhut, O. W. M. (2004). Provenance and anatomy of Genyodectes serus, a large-toothed ceratosaur (Dinosauria: Theropoda) from Patagonia. *Journal of Vertebrate Paleontology* 24(4): 894-902. doi:10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
 - `bonaparte1979c`: Bonaparte, J. F.; Gasparini, Z. (1979). Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]. *Actas del VII Congreso Geológico Argentino* 2: 393-406.
-- `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico del Cretácico Superior en la Cuenca del Golfo San Jorge: nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 77-95.
 - `ibiricu2025a`: Ibiricu, L. M.; Lamanna, M. C.; Álvarez, B. N.; Cerda, I. A.; Caglianone, J. L.; Cardozo, N. V.; Luna, M.; Martínez, R. D. (2025). Latest Cretaceous megaraptorid theropod dinosaur sheds light on megaraptoran evolution and palaeobiology. *Nature Communications* 16(1). doi:10.1038/s41467-025-63793-5
 - `martínez1998a`: Martínez, R. D. (1998). Notohypsilophodon comodorensis gen. et sp. nov. un Hypsilophodontidae (Ornitischia: Ornithopoda) del Cretácico Superior de Chubut, Patagonia central, Argentina [Notohypsilophodon comodorensis gen. et sp. nov., a Hypsilophodontidae (Ornithischia: Ornithopoda) from the Upper Cretaceous of Chubut, central Patagonia, Argentina]. *Acta Geologica Leopoldensia* 21(46/47): 119-135.
-- `suárez2014a`: Suárez, M.; Márquez, M.; De La Cruz, R.; Navarrete, C.; Fanning, M. (2014). Cenomanian-? early Turonian minimum age of the Chubut Group, Argentina: SHRIMP U–Pb geochronology. *Journal of South American Earth Sciences* 50: 67-74. doi:10.1016/j.jsames.2013.10.008
 
 ## Other references
 

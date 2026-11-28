@@ -1,5 +1,17 @@
 # Fort Crittenden
 
+## Does the Fort Crittenden take a Sonoita group as parent?
+
+*2026-11-27*
+
+**Conclusion.** No. Stoyanow (1949) named the Sonoita group, with the Fort Buchanan and Fort Crittenden formations, but the later works read, Ratkevich (1998) and D'Emic and colleagues (2016), treat the Fort Crittenden as a formation with no group. Governs the absent `parent` on [Fort Crittenden](../../../stratigraphy/f/fort-crittenden.yml).
+
+**Evidence.** None.
+
+**Ruled out.** - *Sonoita group.* Not taken up by later work.
+
+**Open.** Nothing.
+
 ## What do the cited works say about the age of the Fort Crittenden?
 
 *2026-11-23*
@@ -29,3 +41,5 @@
 ## Other references
 
 - `schrader1915a`: Schrader, F. C. (1915). Mineral deposits of the Santa Rita and Patagonia Mountains, Arizona. *U.S. Geological Survey Bulletin* 582: 1-373. doi:10.3133/b582
+- `ratkevich1998a`: Ratkevich, R. (1998). New Cretaceous brachiosaurid dinosaur, Sonorasaurus thompsoni gen. et sp. nov., from Arizona. *Journal of the Arizona-Nevada Academy of Science* 31(1): 71-82.
+- `d'emic2016a`: D'Emic, M. D.; Foreman, B. Z.; Jud, N. A. (2016). Anatomy, systematics, paleoenvironment, growth, and age of the sauropod dinosaur Sonorasaurus thompsoni from the Cretaceous of Arizona, USA. *Journal of Paleontology* 90(1): 102-132. doi:10.1017/jpa.2015.67

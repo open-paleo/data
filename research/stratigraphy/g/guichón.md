@@ -1,5 +1,17 @@
 # Guichón
 
+## Does the Guichón take the Paysandú Group as parent?
+
+*2026-11-27*
+
+**Conclusion.** Held. Soto and colleagues (2012) and Soto Núñez and colleagues (2026) place the Guichón in the Paysandú Group after Bossi and Navarro (1988), but no work read dates the group, so an entry would have no reading for its period. Governs nothing yet on [Guichón](../../../stratigraphy/g/guichón.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Bossi and Navarro (1988) have not been read.
+
 ## Does a clade's range give the Guichón the Maastrichtian?
 
 *2026-11-26*
@@ -48,3 +60,4 @@
 - `goso2003a`: Goso, C. A.; Perea, D. (2003). El Cretácico post-basáltico de la Cuenca Litoral del Río Uruguay: geología y paleontología [The post-basaltic Cretaceous of the Litoral Basin of the Uruguay River: geology and paleontology]. In *Cuencas sedimentarias de Uruguay: geología, paleontología y recursos naturales. Mesozoico*, pp. 141-169. DIRAC, Facultad de Ciencias, Montevideo.
 - `rusconi1933a`: Rusconi, C. (1933). Sobre reptiles cretáceos del Uruguay (Uruguaysuchus aznarezi n. g. n. sp.) y sus relaciones con los notosúquidos de Patagonia [On Cretaceous reptiles of Uruguay (Uruguaysuchus aznarezi n. g. n. sp.) and their relationships with the notosuchids of Patagonia]. *Boletín del Instituto Geológico del Uruguay* 19: 1-64.
 - `casadío2002a`: Casadío, S.; Manera, T.; Parras, A.; Montalvo, C. I. (2002). Huevos de dinosaurio (Faveloolithidae) del Cretácico Superior de la cuenca del Colorado, provincia de La Pampa, Argentina [Dinosaur eggs (Faveloolithidae) from the Upper Cretaceous of the Colorado Basin, La Pampa Province, Argentina]. *Ameghiniana* 39(3): 285-293.
+- `bossi1988a`: Bossi, J.; Navarro, R. (1988). Geología del Uruguay. Departamento de Publicaciones de la Universidad de la República, Montevideo.

@@ -1,5 +1,17 @@
 # Turney Ranch
 
+## Does the Turney Ranch take the Bisbee Group as parent?
+
+*2026-11-27*
+
+**Conclusion.** Held. Ratkevich (1998) and D'Emic and colleagues (2016) place the formation in the Bisbee Group in their own voice, but neither defines or dates the group, which they take from Dickinson and colleagues (1989). Governs nothing yet on [Turney Ranch](../../../stratigraphy/t/turney-ranch.yml).
+
+**Evidence.** None.
+
+**Ruled out.** Nothing.
+
+**Open.** Dickinson and colleagues (1989) have not been read.
+
 ## What does the K/Ar date near the Sonorasaurus quarry measure?
 
 *2026-11-23*
@@ -42,3 +54,4 @@
 ## Other references
 
 - `scarborough2000a`: Scarborough, R. (2000). Site stratigraphy and depositional environment for Sonorasaurus thompsoni in the Whetstone Mountains, Pima County, Arizona. *Southwest Paleontological Symposium* 7: 73-82.
+- `dickinson1989a`: Dickinson, W. R.; Fiorillo, A. R.; Hall, D. L.; Monreal, R.; Potochnik, A. R.; Swift, P. N. (1989). Cretaceous strata of southern Arizona. In *Geologic Evolution of Arizona, Arizona Geological Society Digest*, pp. 447-461.
